@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta -->
+  <title>Gloss Growth | Sistema de Captación de Pacientes para Clínicas de Medicina Estética</title>
+  <meta name="description" content="Ayudamos a clínicas de medicina estética a conseguir pacientes para tratamientos como Botox, armonización facial y bioestimuladores mediante Meta Ads, SEO Local y optimización de conversión." />
+  <meta name="keywords" content="marketing medicina estética, captación pacientes clínica, Meta Ads estética, SEO local clínicas, Botox marketing, armonización facial publicidad" />
+  <meta name="author" content="Gloss Growth" />
+  <link rel="canonical" href="https://glossgrowth.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://glossgrowth.com/" />
+  <meta property="og:title" content="Gloss Growth | Sistema de Captación de Pacientes para Clínicas de Medicina Estética" />
+  <meta property="og:description" content="Ayudamos a clínicas de medicina estética a conseguir pacientes para tratamientos de alto valor mediante el Sistema GLOSS™." />
+  <meta property="og:image" content="https://glossgrowth.com/assets/images/hero-clinic.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gloss Growth | Sistema de Captación de Pacientes para Clínicas de Medicina Estética" />
+  <meta name="twitter:description" content="Ayudamos a clínicas de medicina estética a conseguir pacientes para tratamientos de alto valor." />
+  <meta name="twitter:image" content="https://glossgrowth.com/assets/images/hero-clinic.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Gloss Growth",
+    "description": "Sistema de captación de pacientes para clínicas de medicina estética. Especialistas en Meta Ads, SEO Local y optimización de conversión.",
+    "url": "https://glossgrowth.com",
+    "logo": "https://glossgrowth.com/assets/logos/logo-horizontal-degradé.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": "Spanish"
+    },
+    "sameAs": [
+      "https://instagram.com/glossgrowthhq"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "David Cárdenas",
+      "jobTitle": "Fundador & Estratega de Marketing Digital"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ CURSOR GLOW ═══ -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="navbar__inner">
+      <a href="#inicio" class="navbar__logo" aria-label="Gloss Growth - Inicio">
+        <img src="assets/logos/logo-horizontal-degradé.svg" alt="Gloss Growth" width="180" height="auto" class="navbar__logo--dark" />
+        <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" width="180" height="auto" class="navbar__logo--light" />
+      </a>
+      <ul class="navbar__links" role="list">
+        <li><a href="#sistema" class="navbar__link">El Sistema</a></li>
+        <li><a href="#resultados" class="navbar__link">Resultados</a></li>
+        <li><a href="#proceso" class="navbar__link">Proceso</a></li>
+        <li><a href="#faq" class="navbar__link">FAQ</a></li>
+      </ul>
+      <button onclick="openWAModal()" class="btn btn--primary btn--sm navbar__cta" id="navbarCta" aria-label="Agendar videollamada">
+        <span>Agenda tu llamada</span>
+        <i data-lucide="calendar" aria-hidden="true"></i>
+      </button>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="navbar__mobile" id="mobileMenu" role="dialog" aria-label="Menú móvil" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#sistema" class="navbar__link">El Sistema</a></li>
+        <li><a href="#resultados" class="navbar__link">Resultados</a></li>
+        <li><a href="#proceso" class="navbar__link">Proceso</a></li>
+        <li><a href="#faq" class="navbar__link">FAQ</a></li>
+      </ul>
+      <button onclick="openWAModal()" class="btn btn--primary w-full">
+        <span>📅 Agenda tu videollamada</span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="inicio">
+
+    <!-- ═══════════════════════════════════════ HERO ══════════ -->
+    <section class="hero" id="hero" aria-label="Propuesta de valor principal">
+      <!-- Background -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__bg-gradient"></div>
+        <div class="hero__bg-noise"></div>
+        <div class="hero__bg-orb hero__bg-orb--1"></div>
+        <div class="hero__bg-orb hero__bg-orb--2"></div>
+      </div>
+
+      <div class="hero__inner">
+        <!-- Left Column -->
+        <div class="hero__content" data-reveal>
+          <!-- Badge -->
+          <div class="hero__badge" data-reveal-delay="0">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            <span>Sistema especializado en medicina estética</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="hero__title" data-reveal-delay="1">
+            Más pacientes para tus tratamientos estéticos
+            <em class="hero__title-accent">de mayor valor.</em>
+          </h1>
+
+          <!-- Body Copy -->
+          <p class="hero__subtitle" data-reveal-delay="2">
+            En Gloss Growth ayudamos a clínicas y centros de medicina estética a conseguir pacientes para procedimientos como ácido hialurónico, Botox, armonización facial y bioestimuladores mediante un sistema de captación que combina Meta Ads, posicionamiento en Google y optimización de conversión.
+          </p>
+
+          <!-- Micro copy -->
+          <div class="hero__micro" data-reveal-delay="3" aria-label="Lo que no hacemos">
+            <span class="hero__micro-item hero__micro-item--no">No vendemos publicaciones.</span>
+            <span class="hero__micro-item hero__micro-item--no">No vendemos seguidores.</span>
+            <span class="hero__micro-item hero__micro-item--yes">Creamos sistemas para hacer crecer clínicas.</span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="hero__ctas" data-reveal-delay="4">
+            <button onclick="openWAModal()" class="btn btn--primary btn--lg btn--magnetic" id="heroCta1" aria-label="Agendar videollamada estratégica">
+              <i data-lucide="calendar" aria-hidden="true"></i>
+              <span>Agenda una videollamada estratégica</span>
+              <div class="btn__ripple" aria-hidden="true"></div>
+            </button>
+            <a href="#resultados" class="btn btn--ghost btn--lg" id="heroCta2" aria-label="Ver caso de éxito">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              <span>Ver caso de éxito</span>
+            </a>
+          </div>
+
+          <!-- Social Proof bar -->
+          <div class="hero__proof" data-reveal-delay="5">
+            <div class="hero__proof-stat">
+              <span class="hero__proof-number" data-counter="47">0</span>
+              <span class="hero__proof-label">conversaciones este mes</span>
+            </div>
+            <div class="hero__proof-divider" aria-hidden="true"></div>
+            <div class="hero__proof-stat">
+              <span class="hero__proof-number" data-counter="6" data-suffix="x">0x</span>
+              <span class="hero__proof-label">promedio de ROAS</span>
+            </div>
+            <div class="hero__proof-divider" aria-hidden="true"></div>
+            <div class="hero__proof-stat">
+              <span class="hero__proof-number" data-counter="100" data-suffix="%">0%</span>
+              <span class="hero__proof-label">enfoque en medicina estética</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Visual -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__image-frame">
+            <img
+              src="assets/images/hero-clinic.jpg"
+              alt="Clínica de medicina estética premium"
+              class="hero__image"
+              loading="eager"
+              fetchpriority="high"
+              width="600"
+              height="700"
+            />
+            <div class="hero__image-overlay"></div>
+
+            <!-- Floating notifications -->
+            <div class="hero__notifications" role="list" aria-label="Mensajes de ejemplo">
+              <div class="hero__notif hero__notif--1" role="listitem" data-notif="0">
+                <div class="hero__notif-icon" aria-hidden="true">📲</div>
+                <div class="hero__notif-content">
+                  <span class="hero__notif-name">María G.</span>
+                  <span class="hero__notif-msg">Hola, quisiera información para Botox.</span>
+                </div>
+                <div class="hero__notif-time" aria-hidden="true">ahora</div>
+              </div>
+              <div class="hero__notif hero__notif--2" role="listitem" data-notif="1">
+                <div class="hero__notif-icon" aria-hidden="true">📲</div>
+                <div class="hero__notif-content">
+                  <span class="hero__notif-name">Valentina R.</span>
+                  <span class="hero__notif-msg">¿Qué precio tiene la armonización facial?</span>
+                </div>
+                <div class="hero__notif-time" aria-hidden="true">hace 2 min</div>
+              </div>
+              <div class="hero__notif hero__notif--3" role="listitem" data-notif="2">
+                <div class="hero__notif-icon" aria-hidden="true">📲</div>
+                <div class="hero__notif-content">
+                  <span class="hero__notif-name">Carolina M.</span>
+                  <span class="hero__notif-msg">Quisiera agendar una valoración.</span>
+                </div>
+                <div class="hero__notif-time" aria-hidden="true">hace 5 min</div>
+              </div>
+            </div>
+
+            <!-- Mini Dashboard -->
+            <div class="hero__dashboard" aria-label="Métricas del sistema">
+              <div class="hero__dashboard-header">
+                <div class="hero__dashboard-dot" aria-hidden="true"></div>
+                <span>Gloss Dashboard</span>
+                <span class="hero__dashboard-live" aria-label="En vivo">LIVE</span>
+              </div>
+              <div class="hero__dashboard-metrics">
+                <div class="hero__metric">
+                  <span class="hero__metric-value" data-counter="47">0</span>
+                  <span class="hero__metric-label">Conversaciones</span>
+                </div>
+                <div class="hero__metric">
+                  <span class="hero__metric-value">4.8x</span>
+                  <span class="hero__metric-label">ROAS</span>
+                </div>
+                <div class="hero__metric">
+                  <span class="hero__metric-value" data-counter="23">0</span>
+                  <span class="hero__metric-label">Citas agend.</span>
+                </div>
+              </div>
+              <div class="hero__dashboard-bar" aria-hidden="true">
+                <div class="hero__dashboard-progress"></div>
+              </div>
+              <div class="hero__dashboard-ctr">
+                <span>CTR promedio</span>
+                <span class="hero__dashboard-ctr-value">3.2%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-label="Desplázate hacia abajo">
+        <div class="hero__scroll-line" aria-hidden="true"></div>
+        <span>Descubre el sistema</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECCIÓN 2: LA OPORTUNIDAD ═══ -->
+    <section class="section section--light oportunidad" id="oportunidad" aria-labelledby="oportunidad-title">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="section__tag">La Oportunidad</div>
+          <h2 class="section__title" id="oportunidad-title">
+            La medicina estética está creciendo.<br />
+            <span class="text-gradient">La pregunta es si tu clínica está creciendo con ella.</span>
+          </h2>
+        </div>
+
+        <div class="oportunidad__body" data-reveal>
+          <div class="oportunidad__text">
+            <p class="lead">Cada vez más personas buscan tratamientos para prevenir y tratar los signos del envejecimiento.</p>
+            <div class="oportunidad__treatments" aria-label="Tratamientos en demanda">
+              <span class="oportunidad__pill">Botox</span>
+              <span class="oportunidad__pill">Ácido hialurónico</span>
+              <span class="oportunidad__pill">Bioestimuladores</span>
+              <span class="oportunidad__pill">Armonización facial</span>
+              <span class="oportunidad__pill">Rejuvenecimiento</span>
+            </div>
+            <p class="oportunidad__tension">
+              La demanda sigue aumentando...<br />
+              <strong>pero también la cantidad de clínicas ofreciendo exactamente los mismos procedimientos.</strong>
+            </p>
+            <div class="oportunidad__insight">
+              <div class="oportunidad__insight-icon" aria-hidden="true">
+                <i data-lucide="lightbulb"></i>
+              </div>
+              <p>Hoy ya no basta con ser un excelente profesional. También necesitas que las <strong>personas correctas te encuentren antes que a tu competencia.</strong></p>
+            </div>
+          </div>
+
+          <div class="oportunidad__stats" aria-label="Estadísticas del mercado">
+            <div class="stat-card stat-card--glow" data-reveal>
+              <div class="stat-card__icon" aria-hidden="true"><i data-lucide="trending-up"></i></div>
+              <div class="stat-card__value" data-counter="47" data-suffix="B" data-prefix="$">$0B</div>
+              <div class="stat-card__label">Mercado global medicina estética 2025</div>
+              <div class="stat-card__bar" aria-hidden="true"><div class="stat-card__bar-fill" style="--fill: 75%"></div></div>
+            </div>
+            <div class="stat-card" data-reveal>
+              <div class="stat-card__icon" aria-hidden="true"><i data-lucide="users"></i></div>
+              <div class="stat-card__value" data-counter="72" data-suffix="%">0%</div>
+              <div class="stat-card__label">de búsquedas de tratamientos ocurren en Google</div>
+              <div class="stat-card__bar" aria-hidden="true"><div class="stat-card__bar-fill" style="--fill: 72%"></div></div>
+            </div>
+            <div class="stat-card" data-reveal>
+              <div class="stat-card__icon" aria-hidden="true"><i data-lucide="smartphone"></i></div>
+              <div class="stat-card__value" data-counter="89" data-suffix="%">0%</div>
+              <div class="stat-card__label">de pacientes contacta por WhatsApp o redes sociales</div>
+              <div class="stat-card__bar" aria-hidden="true"><div class="stat-card__bar-fill" style="--fill: 89%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECCIÓN 3: EL PROBLEMA ═══ -->
+    <section class="section section--dark problema" id="problema" aria-labelledby="problema-title">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="section__tag section__tag--light">El Problema</div>
+          <h2 class="section__title section__title--light" id="problema-title">
+            ¿Por qué muchas clínicas siguen teniendo<br />
+            <span class="text-gradient">espacios libres en agenda?</span>
+          </h2>
+        </div>
+
+        <div class="problema__cards">
+          <div class="problema__card" data-reveal>
+            <div class="problema__card-icon" aria-hidden="true">
+              <i data-lucide="x-circle"></i>
+            </div>
+            <h3 class="problema__card-title">Dependen únicamente de recomendaciones.</h3>
+            <p class="problema__card-body">El voz a voz funciona, pero no escala. Esperar a que los pacientes lleguen solos limita severamente el crecimiento de cualquier clínica.</p>
+          </div>
+          <div class="problema__card" data-reveal>
+            <div class="problema__card-icon" aria-hidden="true">
+              <i data-lucide="x-circle"></i>
+            </div>
+            <h3 class="problema__card-title">Publican contenido sin una estrategia para captar pacientes.</h3>
+            <p class="problema__card-body">Crear contenido sin una estrategia de conversión detrás es un esfuerzo que rara vez se traduce en citas reales o facturación.</p>
+          </div>
+          <div class="problema__card" data-reveal>
+            <div class="problema__card-icon" aria-hidden="true">
+              <i data-lucide="x-circle"></i>
+            </div>
+            <h3 class="problema__card-title">No aparecen cuando alguien busca tratamientos cerca de ellos.</h3>
+            <p class="problema__card-body">Sin presencia optimizada en Google Maps y SEO Local, tu clínica es invisible para miles de personas que buscan activamente tus servicios.</p>
+          </div>
+        </div>
+
+        <div class="problema__conclusion" data-reveal>
+          <div class="problema__conclusion-line" aria-hidden="true"></div>
+          <p class="problema__conclusion-text">
+            El problema normalmente <strong>no es la calidad del servicio.</strong><br />
+            Es que los pacientes terminan encontrando primero <strong>otra clínica.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECCIÓN 4: EL SISTEMA ═══ -->
+    <section class="section sistema" id="sistema" aria-labelledby="sistema-title">
+      <div class="sistema__bg" aria-hidden="true">
+        <div class="sistema__bg-pattern"></div>
+      </div>
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="section__tag">Nuestro Sistema</div>
+          <h2 class="section__title" id="sistema-title">El Sistema Gloss Growth™</h2>
+          <p class="section__subtitle">
+            No implementamos exactamente la misma estrategia para todas las clínicas.<br />
+            <strong>Primero analizamos tu negocio. Después construimos el sistema según tus objetivos.</strong>
+          </p>
+        </div>
+
+        <!-- Flow diagram -->
+        <div class="sistema__flow" id="sistemaFlow" aria-label="Flujo del Sistema Gloss Growth">
+          <div class="flow__step flow__step--start" data-flow-step="0">
+            <div class="flow__node">
+              <div class="flow__node-inner">
+                <i data-lucide="user" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="flow__label">Paciente potencial</div>
+            <div class="flow__sublabel">Busca un tratamiento</div>
+          </div>
+
+          <div class="flow__arrow" data-flow-step="1" aria-hidden="true"><i data-lucide="chevron-down"></i></div>
+
+          <div class="flow__step flow__step--channels" data-flow-step="2">
+            <div class="flow__channels" aria-label="Canales de captación">
+              <div class="flow__channel flow__channel--google">
+                <div class="flow__node">
+                  <div class="flow__node-inner">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="22" height="22"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  </div>
+                </div>
+                <span>Google</span>
+              </div>
+              <div class="flow__channel flow__channel--meta">
+                <div class="flow__node">
+                  <div class="flow__node-inner">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="#E1306C"/></svg>
+                  </div>
+                </div>
+                <span>Instagram</span>
+              </div>
+              <div class="flow__channel flow__channel--fb">
+                <div class="flow__node">
+                  <div class="flow__node-inner">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="22" height="22"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#1877F2"/></svg>
+                  </div>
+                </div>
+                <span>Facebook</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow__arrow" data-flow-step="3" aria-hidden="true"><i data-lucide="chevron-down"></i></div>
+
+          <div class="flow__step" data-flow-step="4">
+            <div class="flow__node">
+              <div class="flow__node-inner"><i data-lucide="layout" aria-hidden="true"></i></div>
+            </div>
+            <div class="flow__label">Landing Page</div>
+            <div class="flow__sublabel">Optimizada para conversión</div>
+          </div>
+
+          <div class="flow__arrow" data-flow-step="5" aria-hidden="true"><i data-lucide="chevron-down"></i></div>
+
+          <div class="flow__step" data-flow-step="6">
+            <div class="flow__node flow__node--whatsapp">
+              <div class="flow__node-inner">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="#25D366"/></svg>
+              </div>
+            </div>
+            <div class="flow__label">WhatsApp</div>
+            <div class="flow__sublabel">Conversaciones optimizadas</div>
+          </div>
+
+          <div class="flow__arrow" data-flow-step="7" aria-hidden="true"><i data-lucide="chevron-down"></i></div>
+
+          <div class="flow__step" data-flow-step="8">
+            <div class="flow__node">
+              <div class="flow__node-inner"><i data-lucide="calendar-check" aria-hidden="true"></i></div>
+            </div>
+            <div class="flow__label">Agenda</div>
+            <div class="flow__sublabel">Cita confirmada</div>
+          </div>
+
+          <div class="flow__arrow" data-flow-step="9" aria-hidden="true"><i data-lucide="chevron-down"></i></div>
+
+          <div class="flow__step flow__step--patient" data-flow-step="10">
+            <div class="flow__node flow__node--success">
+              <div class="flow__node-inner"><i data-lucide="heart" aria-hidden="true"></i></div>
+            </div>
+            <div class="flow__label">Paciente</div>
+            <div class="flow__sublabel">¡Tratamiento realizado!</div>
+          </div>
+
+          <div class="flow__arrow" data-flow-step="11" aria-hidden="true"><i data-lucide="chevron-down"></i></div>
+
+          <div class="flow__step" data-flow-step="12">
+            <div class="flow__node flow__node--reviews">
+              <div class="flow__node-inner"><i data-lucide="star" aria-hidden="true"></i></div>
+            </div>
+            <div class="flow__label">Reseñas</div>
+            <div class="flow__sublabel">Más autoridad en Google</div>
+          </div>
+
+          <div class="flow__arrow" data-flow-step="13" aria-hidden="true"><i data-lucide="chevron-down"></i></div>
+
+          <div class="flow__step flow__step--end" data-flow-step="14">
+            <div class="flow__node flow__node--glow">
+              <div class="flow__node-inner"><i data-lucide="zap" aria-hidden="true"></i></div>
+            </div>
+            <div class="flow__label">Más posicionamiento</div>
+            <div class="flow__sublabel">→ Más pacientes → Más crecimiento</div>
+          </div>
+        </div>
+
+        <!-- Services below -->
+        <div class="sistema__services" data-reveal>
+          <p class="sistema__services-intro">Dependiendo de la situación actual de tu clínica podemos implementar:</p>
+          <div class="sistema__services-grid">
+            <div class="sistema__service-item">
+              <i data-lucide="check-circle" aria-hidden="true"></i>
+              <span>Campañas en Meta Ads.</span>
+            </div>
+            <div class="sistema__service-item">
+              <i data-lucide="check-circle" aria-hidden="true"></i>
+              <span>Posicionamiento en Google Maps.</span>
+            </div>
+            <div class="sistema__service-item">
+              <i data-lucide="check-circle" aria-hidden="true"></i>
+              <span>SEO Local.</span>
+            </div>
+            <div class="sistema__service-item">
+              <i data-lucide="check-circle" aria-hidden="true"></i>
+              <span>Landing Pages enfocadas en conversión.</span>
+            </div>
+            <div class="sistema__service-item">
+              <i data-lucide="check-circle" aria-hidden="true"></i>
+              <span>Optimización de WhatsApp.</span>
+            </div>
+            <div class="sistema__service-item">
+              <i data-lucide="check-circle" aria-hidden="true"></i>
+              <span>Remarketing.</span>
+            </div>
+            <div class="sistema__service-item">
+              <i data-lucide="check-circle" aria-hidden="true"></i>
+              <span>Estrategia de reseñas.</span>
+            </div>
+            <div class="sistema__service-item">
+              <i data-lucide="check-circle" aria-hidden="true"></i>
+              <span>Optimización del perfil de Google.</span>
+            </div>
+          </div>
+          <div class="sistema__disclaimer">
+            <i data-lucide="info" aria-hidden="true"></i>
+            <p>No todas las clínicas necesitan todo. <strong>Cada estrategia se diseña específicamente para cada negocio.</strong></p>
+          </div>
+        </div>
+
+        <!-- GLOSS System modules -->
+        <div class="gloss-modules" data-reveal aria-label="Módulos del Sistema GLOSS™">
+          <div class="gloss-module" id="glow">
+            <div class="gloss-module__badge">✨ GLOW</div>
+            <h3 class="gloss-module__title">Atracción de pacientes mediante Meta Ads.</h3>
+            <p class="gloss-module__body">Campañas segmentadas en Instagram y Facebook dirigidas a personas que ya tienen interés en tus tratamientos.</p>
+          </div>
+          <div class="gloss-module" id="local-glow">
+            <div class="gloss-module__badge">📍 LOCAL GLOW</div>
+            <h3 class="gloss-module__title">Posicionamiento en Google Maps y SEO Local.</h3>
+            <p class="gloss-module__body">Que tu clínica aparezca primero cuando alguien busca un tratamiento cerca de ti.</p>
+          </div>
+          <div class="gloss-module" id="glow-chat">
+            <div class="gloss-module__badge">💬 GLOW CHAT</div>
+            <h3 class="gloss-module__title">Optimización de WhatsApp para aumentar conversiones.</h3>
+            <p class="gloss-module__body">Convertimos cada conversación en una cita. Scripts, automatizaciones y seguimiento estratégico.</p>
+          </div>
+          <div class="gloss-module" id="glow-scale">
+            <div class="gloss-module__badge">📈 GLOW SCALE</div>
+            <h3 class="gloss-module__title">Optimización continua y escalamiento de campañas.</h3>
+            <p class="gloss-module__body">No hacemos campañas y las dejamos corriendo. Optimizamos constantemente para crecer mes a mes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECCIÓN 5: CASO DE ÉXITO ═══ -->
+    <section class="section section--neutral resultados" id="resultados" aria-labelledby="resultados-title">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="section__tag">Caso de Éxito</div>
+          <h2 class="section__title" id="resultados-title">
+            De no llegar a fin de mes<br />
+            <span class="text-gradient">a multiplicar su facturación.</span>
+          </h2>
+          <div class="caso__client-badge">
+            <img src="assets/testimonios/zen-spa-logo.svg" alt="Zen Spa Logo" class="caso__client-img caso__client-img--logo" loading="lazy" width="60" height="auto" />
+            <div>
+              <strong>ZEN SPA</strong>
+              <span>Spa & Bienestar · Colombia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="caso__timeline">
+          <!-- Before -->
+          <div class="caso__timeline-phase caso__timeline-phase--before" data-reveal aria-label="Situación anterior">
+            <div class="caso__phase-header">
+              <div class="caso__phase-dot caso__phase-dot--before" aria-hidden="true"></div>
+              <h3 class="caso__phase-title">Antes.</h3>
+            </div>
+            <ul class="caso__list" role="list">
+              <li class="caso__list-item caso__list-item--negative">
+                <i data-lucide="circle-x" aria-hidden="true"></i>
+                Dependían completamente del voz a voz.
+              </li>
+              <li class="caso__list-item caso__list-item--negative">
+                <i data-lucide="circle-x" aria-hidden="true"></i>
+                Tenían dificultades para cubrir los gastos mensuales.
+              </li>
+              <li class="caso__list-item caso__list-item--negative">
+                <i data-lucide="circle-x" aria-hidden="true"></i>
+                No aparecían cuando los turistas buscaban spas en la zona.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Timeline arrow -->
+          <div class="caso__timeline-connector" aria-hidden="true">
+            <div class="caso__timeline-line"></div>
+            <div class="caso__timeline-arrow"><i data-lucide="arrow-right"></i></div>
+          </div>
+
+          <!-- What we did -->
+          <div class="caso__timeline-phase caso__timeline-phase--process" data-reveal aria-label="Lo que implementamos">
+            <div class="caso__phase-header">
+              <div class="caso__phase-dot caso__phase-dot--process" aria-hidden="true"></div>
+              <h3 class="caso__phase-title">Lo que hicimos.</h3>
+            </div>
+            <ul class="caso__list" role="list">
+              <li class="caso__list-item caso__list-item--process">
+                <i data-lucide="check-circle" aria-hidden="true"></i>
+                Reestructuración de servicios.
+              </li>
+              <li class="caso__list-item caso__list-item--process">
+                <i data-lucide="check-circle" aria-hidden="true"></i>
+                SEO Local.
+              </li>
+              <li class="caso__list-item caso__list-item--process">
+                <i data-lucide="check-circle" aria-hidden="true"></i>
+                Optimización de Google Business.
+              </li>
+              <li class="caso__list-item caso__list-item--process">
+                <i data-lucide="check-circle" aria-hidden="true"></i>
+                Estrategia para captar turistas durante temporadas de parapente.
+              </li>
+              <li class="caso__list-item caso__list-item--process">
+                <i data-lucide="check-circle" aria-hidden="true"></i>
+                Campañas dirigidas a los servicios de mayor valor.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Timeline arrow -->
+          <div class="caso__timeline-connector" aria-hidden="true">
+            <div class="caso__timeline-line"></div>
+            <div class="caso__timeline-arrow"><i data-lucide="arrow-right"></i></div>
+          </div>
+
+          <!-- Results -->
+          <div class="caso__timeline-phase caso__timeline-phase--after" data-reveal aria-label="Resultados obtenidos">
+            <div class="caso__phase-header">
+              <div class="caso__phase-dot caso__phase-dot--after" aria-hidden="true"></div>
+              <h3 class="caso__phase-title">Resultados.</h3>
+            </div>
+            <div class="caso__results-grid">
+              <div class="caso__result-card">
+                <span class="caso__result-icon" aria-hidden="true">📈</span>
+                <span class="caso__result-value">x6</span>
+                <span class="caso__result-label">Facturación multiplicada</span>
+              </div>
+              <div class="caso__result-card">
+                <span class="caso__result-icon" aria-hidden="true">📲</span>
+                <span class="caso__result-value">↑↑↑</span>
+                <span class="caso__result-label">Conversaciones captadas</span>
+              </div>
+              <div class="caso__result-card">
+                <span class="caso__result-icon" aria-hidden="true">⭐</span>
+                <span class="caso__result-value">+45</span>
+                <span class="caso__result-label">Reseñas nuevas en Google</span>
+              </div>
+              <div class="caso__result-card">
+                <span class="caso__result-icon" aria-hidden="true">📍</span>
+                <span class="caso__result-value">#1</span>
+                <span class="caso__result-label">Posicionamiento local</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECCIÓN 6: CÓMO TRABAJAMOS ═══ -->
+    <section class="section proceso" id="proceso" aria-labelledby="proceso-title">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="section__tag">Cómo Trabajamos</div>
+          <h2 class="section__title" id="proceso-title">Así trabajamos</h2>
+        </div>
+
+        <div class="proceso__steps">
+          <div class="proceso__step" data-reveal>
+            <div class="proceso__step-number" aria-hidden="true">01</div>
+            <div class="proceso__step-content">
+              <h3 class="proceso__step-title">Analizamos tu clínica.</h3>
+              <p class="proceso__step-body">No hacemos propuestas genéricas. Primero entendemos dónde está el problema.</p>
+            </div>
+            <div class="proceso__step-icon" aria-hidden="true"><i data-lucide="search"></i></div>
+          </div>
+
+          <div class="proceso__step" data-reveal>
+            <div class="proceso__step-number" aria-hidden="true">02</div>
+            <div class="proceso__step-content">
+              <h3 class="proceso__step-title">Detectamos los procedimientos con mayor potencial.</h3>
+              <p class="proceso__step-body">No siempre conviene anunciar todo. Muchas veces es más rentable enfocarse en 2 o 3 tratamientos específicos.</p>
+            </div>
+            <div class="proceso__step-icon" aria-hidden="true"><i data-lucide="target"></i></div>
+          </div>
+
+          <div class="proceso__step" data-reveal>
+            <div class="proceso__step-number" aria-hidden="true">03</div>
+            <div class="proceso__step-content">
+              <h3 class="proceso__step-title">Diseñamos la estrategia.</h3>
+              <p class="proceso__step-body">Dependiendo del caso puede incluir Meta Ads, Google, SEO Local, Landing Pages o una combinación de ellas.</p>
+            </div>
+            <div class="proceso__step-icon" aria-hidden="true"><i data-lucide="layers"></i></div>
+          </div>
+
+          <div class="proceso__step" data-reveal>
+            <div class="proceso__step-number" aria-hidden="true">04</div>
+            <div class="proceso__step-content">
+              <h3 class="proceso__step-title">Implementamos.</h3>
+              <p class="proceso__step-body">Lanzamos el sistema y comenzamos a optimizarlo.</p>
+            </div>
+            <div class="proceso__step-icon" aria-hidden="true"><i data-lucide="rocket"></i></div>
+          </div>
+
+          <div class="proceso__step" data-reveal>
+            <div class="proceso__step-number" aria-hidden="true">05</div>
+            <div class="proceso__step-content">
+              <h3 class="proceso__step-title">Escalamos.</h3>
+              <p class="proceso__step-body">Conforme llegan datos y resultados, optimizamos para seguir creciendo.</p>
+            </div>
+            <div class="proceso__step-icon" aria-hidden="true"><i data-lucide="trending-up"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECCIÓN 7: ¿PARA QUIÉN? ═══ -->
+    <section class="section section--dark para-quien" id="para-quien" aria-labelledby="para-quien-title">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="section__tag section__tag--light">¿Trabajamos con cualquier clínica?</div>
+          <h2 class="section__title section__title--light" id="para-quien-title">No.</h2>
+          <p class="section__subtitle section__subtitle--light">Y eso es precisamente lo que nos permite obtener mejores resultados.</p>
+        </div>
+
+        <div class="para-quien__content" data-reveal>
+          <div class="para-quien__description">
+            <p>Trabajamos únicamente con clínicas y centros de medicina estética que:</p>
+          </div>
+          <div class="para-quien__criteria">
+            <div class="para-quien__criterion">
+              <div class="para-quien__criterion-icon" aria-hidden="true"><i data-lucide="check"></i></div>
+              <span>quieran crecer.</span>
+            </div>
+            <div class="para-quien__criterion">
+              <div class="para-quien__criterion-icon" aria-hidden="true"><i data-lucide="check"></i></div>
+              <span>tengan disponibilidad para recibir nuevos pacientes.</span>
+            </div>
+            <div class="para-quien__criterion">
+              <div class="para-quien__criterion-icon" aria-hidden="true"><i data-lucide="check"></i></div>
+              <span>estén dispuestos a invertir en publicidad.</span>
+            </div>
+          </div>
+          <div class="para-quien__values">
+            <div class="para-quien__value">
+              <i data-lucide="link" aria-hidden="true"></i>
+              <div>
+                <strong>No buscamos volumen.</strong>
+                <p>Buscamos relaciones de largo plazo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECCIÓN 8: TESTIMONIOS ═══ -->
+    <section class="section testimonios" id="testimonios" aria-labelledby="testimonios-title">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="section__tag">Casos Reales</div>
+          <h2 class="section__title" id="testimonios-title">Lo que dicen nuestros clientes</h2>
+          <p class="section__subtitle">Resultados reales de clínicas y centros que confiaron en el Sistema GLOSS™</p>
+        </div>
+
+        <!-- ── CLIENTE 1: ZEN SPA ── -->
+        <div class="cliente-case" data-reveal aria-label="Caso Zen Spa">
+          <div class="cliente-case__header">
+            <div class="cliente-case__logo-wrap">
+              <img src="assets/testimonios/zen-spa-logo.svg" alt="Logo Zen Spa" class="cliente-case__logo" loading="lazy" width="120" height="auto" />
+            </div>
+            <div class="cliente-case__meta">
+              <div class="cliente-case__stars-row" aria-label="5 estrellas en Google y Facebook" role="img">
+                <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                <span class="cliente-case__stars-label">5.0 · Google Maps & IA</span>
+              </div>
+              <span class="cliente-case__location"><i data-lucide="map-pin" aria-hidden="true"></i> Colombia</span>
+            </div>
+          </div>
+
+          <div class="cliente-case__body">
+            <div class="cliente-case__media">
+              <img src="assets/testimonios/zen-spa-sala-opt.jpg" alt="Interior sala Zen Spa" class="cliente-case__photo" loading="lazy" width="480" height="320" />
+            </div>
+            <div class="cliente-case__content">
+              <div class="cliente-case__embed-wrap">
+                <p class="cliente-case__embed-label"><i data-lucide="facebook" aria-hidden="true"></i> Reseña en Facebook</p>
+                <div class="cliente-case__embed">
+                  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fzenspa.wc%2Fposts%2Fpfbid02dFtTKiYXwhqTiRYPvRZdeYHweh7MG5WHwmP9Yxz5uUmTVvYq2waQ3pXZEbqCsbmVl&show_text=true&width=500" width="100%" height="209" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Reseña Zen Spa en Facebook" loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="cliente-case__captures">
+                <div class="cliente-case__capture-card">
+                  <span class="cliente-case__capture-label">📊 Meta Ads Manager</span>
+                  <img src="assets/testimonios/zen-spa-meta-ads.png" alt="Captura Meta Ads Zen Spa" class="cliente-case__capture-img" loading="lazy" width="400" height="auto" />
+                </div>
+                <div class="cliente-case__capture-card">
+                  <span class="cliente-case__capture-label">📈 Resultados de campaña</span>
+                  <img src="assets/testimonios/zen-spa-resultados.png" alt="Resultados Zen Spa" class="cliente-case__capture-img" loading="lazy" width="400" height="auto" />
+                </div>
+                <div class="cliente-case__capture-card">
+                  <span class="cliente-case__capture-label">📍 SEO Local — Posición #1 Google Maps</span>
+                  <img src="assets/testimonios/zen-spa-ranking-google.jpg" alt="Ranking #1 Google Maps Zen Spa" class="cliente-case__capture-img" loading="lazy" width="400" height="auto" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CLIENTE 2: MONICA SKIN CARE ── -->
+        <div class="cliente-case cliente-case--alt" data-reveal aria-label="Caso Monica Skin Care">
+          <div class="cliente-case__header">
+            <div class="cliente-case__logo-wrap cliente-case__logo-wrap--monica">
+              <img src="assets/testimonios/monica-skin-care-logo.svg" alt="Logo Monica Skin Care" class="cliente-case__logo cliente-case__logo--gold" loading="lazy" width="72" height="auto" />
+              <span class="cliente-case__brand-name">Monica Skin Care</span>
+            </div>
+            <div class="cliente-case__meta">
+              <div class="cliente-case__stars-row" aria-label="5 estrellas Google" role="img">
+                <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                <span class="cliente-case__stars-label">5.0 · Google Reviews</span>
+              </div>
+              <span class="cliente-case__location"><i data-lucide="map-pin" aria-hidden="true"></i> Colombia</span>
+            </div>
+          </div>
+
+          <div class="cliente-case__body">
+            <div class="cliente-case__media">
+              <div class="cliente-case__profile-wrap">
+                <img src="assets/testimonios/monica-foto-perfil.jpg" alt="Mónica — Monica Skin Care" class="cliente-case__profile-photo" loading="lazy" width="110" height="110" />
+                <div class="cliente-case__profile-info">
+                  <strong>Mónica</strong>
+                  <span>Fundadora · Monica Skin Care</span>
+                </div>
+              </div>
+            </div>
+            <div class="cliente-case__content">
+              <div class="cliente-case__embed-wrap">
+                <p class="cliente-case__embed-label"><i data-lucide="facebook" aria-hidden="true"></i> Reseña en Facebook</p>
+                <div class="cliente-case__embed">
+                  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonicaskincareinc%2Fposts%2Fpfbid0KqhKHVnVo8bh1vDd1FLSnsw4emKpZcL5iGPc5cXLRXboehteVQTABDQgCQwpfdtel&show_text=true&width=500" width="100%" height="228" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Reseña Monica Skin Care en Facebook" loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="cliente-case__captures">
+                <div class="cliente-case__capture-card">
+                  <span class="cliente-case__capture-label">📊 Meta Ads Manager</span>
+                  <img src="assets/testimonios/monica-meta-ads.png" alt="Captura Meta Ads Monica Skin Care" class="cliente-case__capture-img" loading="lazy" width="400" height="auto" />
+                </div>
+                <div class="cliente-case__capture-card">
+                  <span class="cliente-case__capture-label">📈 Resultados de campaña</span>
+                  <img src="assets/testimonios/monica-resultados.png" alt="Resultados Monica Skin Care" class="cliente-case__capture-img" loading="lazy" width="400" height="auto" />
+                </div>
+                <div class="cliente-case__capture-card">
+                  <span class="cliente-case__capture-label">📈 Resultados adicionales</span>
+                  <img src="assets/testimonios/monica-resultados-extra.jpeg" alt="Resultados adicionales Monica" class="cliente-case__capture-img" loading="lazy" width="400" height="auto" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── CLIENTES ADICIONALES ── -->
+        <div class="clientes-extras" data-reveal aria-label="Más clientes satisfechos">
+          <h3 class="clientes-extras__title">Más clínicas que ya crecen con el sistema</h3>
+          <div class="clientes-extras__grid">
+
+            <!-- Dra. Laura Erazo -->
+            <div class="cliente-mini">
+              <div class="cliente-mini__header">
+                <img src="assets/testimonios/laura-erazo-perfil.png" alt="Dra. Laura Erazo" class="cliente-mini__avatar" loading="lazy" width="48" height="48" />
+                <div>
+                  <strong class="cliente-mini__name">Dra. Laura Erazo</strong>
+                  <span class="cliente-mini__role">Especialista en Ácido Hialurónico</span>
+                  <span class="cliente-mini__location"><i data-lucide="map-pin" aria-hidden="true"></i> Colombia</span>
+                </div>
+              </div>
+              <blockquote class="cliente-mini__quote">
+                "Desde que implementamos el sistema, tenemos agenda llena semanas por adelantado. Los pacientes llegan ya informados y listos para el procedimiento."
+              </blockquote>
+              <div class="cliente-mini__captures">
+                <div class="cliente-mini__capture">
+                  <span class="cliente-case__capture-label">📊 Meta Ads</span>
+                  <img src="assets/testimonios/laura-erazo-meta-ads.png" alt="Meta Ads Dra. Laura Erazo" loading="lazy" width="300" height="auto" />
+                </div>
+                <div class="cliente-mini__capture">
+                  <span class="cliente-case__capture-label">📈 Resultados</span>
+                  <img src="assets/testimonios/laura-erazo-resultados.png" alt="Resultados Dra. Laura Erazo" loading="lazy" width="300" height="auto" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Dr. Carlos Mario Rojas -->
+            <div class="cliente-mini">
+              <div class="cliente-mini__header">
+                <img src="assets/testimonios/carlos-mario-perfil.png" alt="Dr. Carlos Mario Rojas" class="cliente-mini__avatar" loading="lazy" width="48" height="48" />
+                <div>
+                  <strong class="cliente-mini__name">Dr. Carlos Mario Rojas</strong>
+                  <span class="cliente-mini__role">Servicio de Botox</span>
+                  <span class="cliente-mini__location"><i data-lucide="map-pin" aria-hidden="true"></i> Barcelona, España</span>
+                </div>
+              </div>
+              <blockquote class="cliente-mini__quote">
+                "Nunca pensé que un sistema así podría funcionar en España. Los resultados superaron todas mis expectativas desde el primer mes."
+              </blockquote>
+              <div class="cliente-mini__captures">
+                <div class="cliente-mini__capture cliente-mini__capture--vertical">
+                  <span class="cliente-case__capture-label">💬 Mensaje de Carlos Mario</span>
+                  <img src="assets/testimonios/carlos-mario-whatsapp.jpeg" alt="WhatsApp Dr. Carlos Mario Rojas" loading="lazy" width="300" height="auto" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── GOOGLE REVIEWS DISEÑO ── -->
+        <div class="google-reviews" data-reveal aria-label="Reseñas en Google">
+          <div class="google-reviews__header">
+            <svg viewBox="0 0 24 24" class="google-reviews__gicon" aria-hidden="true" width="26" height="26"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            <h3 class="google-reviews__title">Reseñas en Google</h3>
+          </div>
+          <div class="google-reviews__grid">
+            <!-- Zen Spa -->
+            <div class="google-review-card">
+              <div class="google-review-card__business">
+                <img src="assets/testimonios/zen-spa-logo.svg" alt="Zen Spa" class="google-review-card__logo" width="32" height="32" />
+                <div>
+                  <strong>Zen Spa</strong>
+                  <div class="google-review-card__stars" aria-label="5 estrellas en Google" role="img">
+                    <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                    <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                    <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                    <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                    <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                    <span class="google-review-card__count">5.0 (Google Maps & IA)</span>
+                  </div>
+                </div>
+              </div>
+              <p class="google-review-card__body">
+                Zen Spa cuenta con calificación de 5 estrellas en Google y posicionamiento #1 en búsquedas locales. El sistema atrae constantemente a <strong>pacientes extranjeros</strong> y posiciona la clínica en las <strong>recomendaciones de Inteligencia Artificial</strong>.
+              </p>
+              <div class="google-review-card__cta">
+                <i data-lucide="sparkles" aria-hidden="true"></i>
+                <span>Recomendado por IA y Google Maps</span>
+              </div>
+            </div>
+            <!-- Monica Skin Care -->
+            <div class="google-review-card">
+              <div class="google-review-card__business">
+                <div class="google-review-card__initials" aria-hidden="true">M</div>
+                <div>
+                  <strong>Monica Skin Care</strong>
+                  <div class="google-review-card__stars" aria-label="5 estrellas en Google" role="img">
+                    <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                    <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                    <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                    <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                    <i data-lucide="star" class="star-filled" aria-hidden="true"></i>
+                    <span class="google-review-card__count">5.0 estrellas</span>
+                  </div>
+                </div>
+              </div>
+              <p class="google-review-card__body">
+                "Excelente atención y resultados increíbles. El equipo es muy profesional y los tratamientos se notan desde la primera sesión. 100% recomendada."
+              </p>
+              <span class="google-review-card__author">— Reseña verificada en Google</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECCIÓN 9: FAQ ═══════════ -->
+    <section class="section section--light faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="section__tag">Preguntas Frecuentes</div>
+          <h2 class="section__title" id="faq-title">Preguntas frecuentes</h2>
+        </div>
+
+        <div class="faq__list" role="list">
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq1-answer" id="faq1-btn">
+              <span>¿Cuándo comenzaré a ver resultados?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq1-answer" role="region" aria-labelledby="faq1-btn" hidden>
+              <p>Las campañas normalmente comienzan a generar conversaciones desde el primer mes. El volumen dependerá del presupuesto, la ciudad, la competencia y la rapidez con la que se atiendan los prospectos.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq2-answer" id="faq2-btn">
+              <span>¿Necesito miles de seguidores?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq2-answer" role="region" aria-labelledby="faq2-btn" hidden>
+              <p>No. Nuestro objetivo no es conseguir seguidores. Nuestro objetivo es generar pacientes.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq3-answer" id="faq3-btn">
+              <span>¿Necesito invertir en publicidad?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq3-answer" role="region" aria-labelledby="faq3-btn" hidden>
+              <p>Sí. Nosotros construimos el sistema. La inversión publicitaria depende de cada clínica y se define según los objetivos.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq4-answer" id="faq4-btn">
+              <span>¿Solo hacen anuncios?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq4-answer" role="region" aria-labelledby="faq4-btn" hidden>
+              <p>No. También desarrollamos estrategias de posicionamiento en Google, SEO Local, landing pages y optimización del proceso comercial cuando realmente aportan valor.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq5-answer" id="faq5-btn">
+              <span>¿Trabajan únicamente en Colombia?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq5-answer" role="region" aria-labelledby="faq5-btn" hidden>
+              <p>No. Podemos trabajar con clínicas en cualquier país de habla hispana.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq6-answer" id="faq6-btn">
+              <span>¿Cuál es la inversión mínima recomendada en publicidad?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq6-answer" role="region" aria-labelledby="faq6-btn" hidden>
+              <p>Cada clínica es diferente, pero normalmente recomendamos empezar con un presupuesto que permita obtener suficientes datos para optimizar las campañas y generar resultados consistentes.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq7-answer" id="faq7-btn">
+              <span>¿Necesito firmar un contrato a largo plazo?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq7-answer" role="region" aria-labelledby="faq7-btn" hidden>
+              <p>No. Nuestro objetivo es construir relaciones por resultados, no por obligación.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq8-answer" id="faq8-btn">
+              <span>¿Qué pasa si ya tengo una persona que maneja mis redes sociales?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq8-answer" role="region" aria-labelledby="faq8-btn" hidden>
+              <p>No hay ningún problema. Podemos trabajar en conjunto. Nuestro enfoque es atraer pacientes, no reemplazar a tu community manager.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq9-answer" id="faq9-btn">
+              <span>¿Qué procedimientos funcionan mejor con este sistema?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq9-answer" role="region" aria-labelledby="faq9-btn" hidden>
+              <p>Generalmente Botox, ácido hialurónico, armonización facial, bioestimuladores y otros tratamientos de alto valor, aunque la estrategia se adapta a cada clínica.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq10-answer" id="faq10-btn">
+              <span>¿Qué pasa si mi clínica apenas está comenzando?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq10-answer" role="region" aria-labelledby="faq10-btn" hidden>
+              <p>También podemos ayudarte. Diseñamos estrategias tanto para clínicas nuevas como para negocios que ya llevan años en el mercado.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq11-answer" id="faq11-btn">
+              <span>¿Pueden trabajar si mi clínica está en otra ciudad o país?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq11-answer" role="region" aria-labelledby="faq11-btn" hidden>
+              <p>Sí. Trabajamos de forma remota con clínicas de diferentes ciudades y países de habla hispana.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq12-answer" id="faq12-btn">
+              <span>¿Cómo sé si este sistema es para mi clínica?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq12-answer" role="region" aria-labelledby="faq12-btn" hidden>
+              <p>Antes de empezar realizamos una reunión donde analizamos tu negocio y te decimos con total honestidad si realmente podemos ayudarte.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq13-answer" id="faq13-btn">
+              <span>¿Qué diferencia a Gloss Growth de otras agencias?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq13-answer" role="region" aria-labelledby="faq13-btn" hidden>
+              <p>No buscamos aumentar seguidores ni alcance. Nuestro objetivo es generar conversaciones con personas interesadas en tus tratamientos y convertirlas en pacientes.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq14-answer" id="faq14-btn">
+              <span>¿Qué necesito para comenzar?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq14-answer" role="region" aria-labelledby="faq14-btn" hidden>
+              <p>Únicamente una videollamada inicial para conocer tu clínica, entender tus objetivos y definir la estrategia más adecuada para tu negocio.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem" data-reveal>
+            <button class="faq__question" aria-expanded="false" aria-controls="faq15-answer" id="faq15-btn">
+              <span>¿Qué pasa si ya he probado anuncios y no funcionaron?</span>
+              <i data-lucide="plus" class="faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer" id="faq15-answer" role="region" aria-labelledby="faq15-btn" hidden>
+              <p>En muchos casos el problema no son los anuncios, sino la estrategia detrás de ellos. Analizamos qué ocurrió, identificamos las oportunidades de mejora y construimos un sistema enfocado en atraer pacientes de mayor calidad, no simplemente más clics.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SECCIÓN 10: CALCULADORA ═══ -->
+    <section class="section calculadora" id="calculadora" aria-labelledby="calculadora-title">
+      <div class="calculadora__bg" aria-hidden="true">
+        <div class="calculadora__bg-gradient"></div>
+      </div>
+      <div class="container">
+        <div class="section__header" data-reveal>
+          <div class="section__tag">Calculadora de Crecimiento</div>
+          <h2 class="section__title" id="calculadora-title">
+            Calcula cuánto vale para ti<br />
+            <span class="text-gradient">conseguir nuevos pacientes</span>
+          </h2>
+          <p class="section__subtitle">¿Cuánto representa un nuevo paciente para tu clínica?</p>
+        </div>
+
+        <div class="calculadora__tool" data-reveal role="form" aria-label="Calculadora de ingresos potenciales">
+          <div class="calculadora__inputs">
+            <div class="calculadora__field">
+              <label for="avgProcedure" class="calculadora__label">
+                <i data-lucide="dollar-sign" aria-hidden="true"></i>
+                ¿Cuánto facturas en promedio por un procedimiento?
+              </label>
+              <div class="calculadora__input-wrap">
+                <span class="calculadora__currency" aria-hidden="true">$</span>
+                <input
+                  type="number"
+                  id="avgProcedure"
+                  name="avgProcedure"
+                  class="calculadora__input"
+                  placeholder="500.000"
+                  min="0"
+                  step="10000"
+                  aria-describedby="avgProcedure-hint"
+                />
+              </div>
+              <span class="calculadora__hint" id="avgProcedure-hint">Ej: $500.000 por sesión de Botox</span>
+            </div>
+
+            <div class="calculadora__field">
+              <label for="newPatients" class="calculadora__label">
+                <i data-lucide="users" aria-hidden="true"></i>
+                ¿Cuántos pacientes adicionales te gustaría conseguir cada mes?
+              </label>
+              <div class="calculadora__input-wrap">
+                <input
+                  type="number"
+                  id="newPatients"
+                  name="newPatients"
+                  class="calculadora__input calculadora__input--no-prefix"
+                  placeholder="20"
+                  min="0"
+                  step="1"
+                  aria-describedby="newPatients-hint"
+                />
+              </div>
+              <span class="calculadora__hint" id="newPatients-hint">¿Cuántas citas adicionales al mes?</span>
+            </div>
+          </div>
+
+          <div class="calculadora__divider" aria-hidden="true"></div>
+
+          <div class="calculadora__results" aria-live="polite" aria-atomic="true">
+            <div class="calculadora__result-card calculadora__result-card--monthly">
+              <div class="calculadora__result-icon" aria-hidden="true"><i data-lucide="calendar"></i></div>
+              <div class="calculadora__result-label">Ingresos potenciales mensuales</div>
+              <div class="calculadora__result-value" id="monthlyResult" aria-label="Resultado mensual">$0</div>
+            </div>
+            <div class="calculadora__result-arrow" aria-hidden="true"><i data-lucide="trending-up"></i></div>
+            <div class="calculadora__result-card calculadora__result-card--annual">
+              <div class="calculadora__result-icon" aria-hidden="true"><i data-lucide="bar-chart-2"></i></div>
+              <div class="calculadora__result-label">Potencial anual</div>
+              <div class="calculadora__result-value" id="annualResult" aria-label="Resultado anual">$0</div>
+            </div>
+          </div>
+
+          <div class="calculadora__cta-text" data-reveal>
+            <p>Ahora imagina mantener ese crecimiento durante los próximos 12 meses.</p>
+            <a href="#cta" class="btn btn--primary btn--lg btn--magnetic" id="calcCta">
+              <i data-lucide="calendar" aria-hidden="true"></i>
+              <span>Agenda una videollamada estratégica</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ CTA FINAL ══════════════ -->
+    <section class="section cta-final" id="cta" aria-labelledby="cta-title">
+      <div class="cta-final__bg" aria-hidden="true">
+        <div class="cta-final__bg-img" style="background-image: url('assets/images/hero-clinic.jpg')"></div>
+        <div class="cta-final__bg-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="cta-final__content" data-reveal>
+          <div class="section__tag section__tag--light">Siguiente Paso</div>
+          <h2 class="cta-final__title" id="cta-title">
+            Tu clínica no necesita más publicaciones.<br />
+            <em>Necesita un sistema.</em>
+          </h2>
+          <p class="cta-final__body">
+            Necesita un sistema que haga que las personas correctas lleguen a tu WhatsApp cuando ya están buscando un tratamiento.
+          </p>
+          <div class="cta-final__card">
+            <h3 class="cta-final__card-title">Agenda una videollamada estratégica.</h3>
+            <p class="cta-final__card-body">Analizaremos tu clínica, identificaremos las mejores oportunidades de crecimiento y te mostraremos exactamente cómo lo implementaríamos en tu caso.</p>
+            <a href="https://wa.me/573145904933?text=Hola,%20quisiera%20agendar%20una%20videollamada%20estratégica" class="btn btn--primary btn--xl btn--magnetic" id="ctaFinal" target="_blank" rel="noopener noreferrer" aria-label="Agendar videollamada en WhatsApp">
+              <i data-lucide="calendar" aria-hidden="true"></i>
+              <span>📅 Agendar videollamada</span>
+              <div class="btn__ripple" aria-hidden="true"></div>
+            </a>
+            <p class="cta-final__reassurance">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+              Sin compromisos. Analizamos tu caso y te decimos con honestidad si podemos ayudarte.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════ FOOTER ═════════════════ -->
+  <footer class="footer" role="contentinfo" aria-label="Pie de página">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" aria-label="Gloss Growth - Volver al inicio">
+          <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" width="160" height="auto" class="footer__logo" />
+        </a>
+        <p class="footer__tagline">Brillo para tu marca. Crecimiento para tu negocio.</p>
+      </div>
+
+      <div class="footer__links">
+        <nav aria-label="Navegación del footer">
+          <ul role="list">
+            <li><a href="#sistema">El Sistema</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__contact">
+        <h3 class="footer__contact-title">Conecta con nosotros</h3>
+        <div class="footer__social">
+          <a href="https://wa.me/573145904933" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Gloss Growth">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://instagram.com/glossgrowth" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Gloss Growth">
+            <i data-lucide="instagram" aria-hidden="true"></i>
+            Instagram
+          </a>
+          <a href="mailto:glossgrowthhq@gmail.com" class="footer__social-link" aria-label="Email de Gloss Growth">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            glossgrowthhq@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2025 Gloss Growth. Todos los derechos reservados.</p>
+      <div class="footer__legal">
+        <a href="#" aria-label="Política de privacidad">Política de privacidad</a>
+        <a href="#" aria-label="Términos de servicio">Términos de servicio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════ WHATSAPP MODAL ═══ -->
+  <div id="wa-modal" class="wa-modal" role="dialog" aria-modal="true" aria-labelledby="wa-modal-title" aria-hidden="true">
+    <div class="wa-modal__backdrop" onclick="closeWAModal()"></div>
+    <div class="wa-modal__panel">
+      <button class="wa-modal__close" onclick="closeWAModal()" aria-label="Cerrar formulario">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="wa-modal__header">
+        <div class="wa-modal__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div>
+          <h2 class="wa-modal__title" id="wa-modal-title">Cuéntanos sobre tu clínica</h2>
+          <p class="wa-modal__subtitle">En segundos te llegará directo a nuestro WhatsApp con toda la info lista.</p>
+        </div>
+      </div>
+
+      <form class="wa-modal__form" id="waForm" onsubmit="sendToWhatsApp(event)" novalidate>
+        <div class="wa-form__group">
+          <label class="wa-form__label" for="wa-nombre">
+            <i data-lucide="user" aria-hidden="true"></i> Tu nombre
+          </label>
+          <input type="text" id="wa-nombre" name="nombre" class="wa-form__input" placeholder="Ej: María González" required autocomplete="given-name" />
+        </div>
+
+        <div class="wa-form__group">
+          <label class="wa-form__label" for="wa-negocio">
+            <i data-lucide="building-2" aria-hidden="true"></i> Nombre de tu clínica o negocio
+          </label>
+          <input type="text" id="wa-negocio" name="negocio" class="wa-form__input" placeholder="Ej: Clínica Estética Aurora" required />
+        </div>
+
+        <div class="wa-form__row">
+          <div class="wa-form__group">
+            <label class="wa-form__label" for="wa-trabajadores">
+              <i data-lucide="users" aria-hidden="true"></i> ¿Cuántas personas trabajan ahí?
+            </label>
+            <select id="wa-trabajadores" name="trabajadores" class="wa-form__input wa-form__select" required>
+              <option value="" disabled selected>Selecciona...</option>
+              <option value="Solo yo">Solo yo</option>
+              <option value="2 a 5 personas">2 a 5 personas</option>
+              <option value="6 a 15 personas">6 a 15 personas</option>
+              <option value="Más de 15 personas">Más de 15 personas</option>
+            </select>
+          </div>
+
+          <div class="wa-form__group">
+            <label class="wa-form__label" for="wa-ubicacion">
+              <i data-lucide="map-pin" aria-hidden="true"></i> Ciudad / País
+            </label>
+            <input type="text" id="wa-ubicacion" name="ubicacion" class="wa-form__input" placeholder="Ej: Medellín, Colombia" required />
+          </div>
+        </div>
+
+        <div class="wa-form__group">
+          <label class="wa-form__label" for="wa-servicio">
+            <i data-lucide="sparkles" aria-hidden="true"></i> ¿Qué servicio quieres potenciar?
+          </label>
+          <select id="wa-servicio" name="servicio" class="wa-form__input wa-form__select" required>
+            <option value="" disabled selected>Selecciona el tratamiento principal...</option>
+            <option value="Botox 💉">Botox 💉</option>
+            <option value="Ácido hialurónico ✨">Ácido hialurónico ✨</option>
+            <option value="Armonización facial 🌸">Armonización facial 🌸</option>
+            <option value="Bioestimuladores ⚡">Bioestimuladores ⚡</option>
+            <option value="Rejuvenecimiento 🌿">Rejuvenecimiento 🌿</option>
+            <option value="Varios tratamientos 🏥">Varios tratamientos 🏥</option>
+            <option value="Otro servicio 💬">Otro servicio 💬</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg w-full wa-form__submit" id="waSubmitBtn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>Enviar por WhatsApp 🚀</span>
+          <div class="btn__ripple"></div>
+        </button>
+
+        <p class="wa-form__disclaimer">
+          <i data-lucide="lock" aria-hidden="true"></i>
+          Tu información es confidencial. Solo la usamos para preparar tu asesoría.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Modal Logic -->
+  <script>
+    var WA_NUMBER = '573145904933';
+
+    function openWAModal() {
+      var modal = document.getElementById('wa-modal');
+      modal.setAttribute('aria-hidden', 'false');
+      modal.classList.add('wa-modal--open');
+      document.body.style.overflow = 'hidden';
+      // Re-init lucide icons inside modal
+      if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+      // Focus first input
+      setTimeout(function() {
+        var first = modal.querySelector('input');
+        if (first) first.focus();
+      }, 200);
+    }
+
+    function closeWAModal() {
+      var modal = document.getElementById('wa-modal');
+      modal.setAttribute('aria-hidden', 'true');
+      modal.classList.remove('wa-modal--open');
+      document.body.style.overflow = '';
+    }
+
+    // Close on ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeWAModal();
+    });
+
+    function sendToWhatsApp(e) {
+      e.preventDefault();
+      var nombre      = document.getElementById('wa-nombre').value.trim();
+      var negocio     = document.getElementById('wa-negocio').value.trim();
+      var trabajadores = document.getElementById('wa-trabajadores').value;
+      var ubicacion   = document.getElementById('wa-ubicacion').value.trim();
+      var servicio    = document.getElementById('wa-servicio').value;
+
+      if (!nombre || !negocio || !trabajadores || !ubicacion || !servicio) {
+        // Highlight empty fields
+        [document.getElementById('wa-nombre'), document.getElementById('wa-negocio'),
+         document.getElementById('wa-trabajadores'), document.getElementById('wa-ubicacion'),
+         document.getElementById('wa-servicio')].forEach(function(el) {
+          if (!el.value.trim()) el.classList.add('wa-form__input--error');
+          else el.classList.remove('wa-form__input--error');
+        });
+        return;
+      }
+
+      var message =
+        '¡Hola Gloss Growth! 👋 Quiero saber más sobre el Sistema GLOSS™.\n\n' +
+        '📋 *Mi información:*\n' +
+        '👤 Nombre: ' + nombre + '\n' +
+        '🏥 Clínica/Negocio: ' + negocio + '\n' +
+        '👥 Equipo: ' + trabajadores + '\n' +
+        '📍 Ubicación: ' + ubicacion + '\n' +
+        '✨ Servicio a potenciar: ' + servicio + '\n\n' +
+        '¿Podemos agendar una videollamada estratégica? 🚀';
+
+      var encoded = encodeURIComponent(message);
+      var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encoded;
+
+      window.open(url, '_blank', 'noopener,noreferrer');
+      closeWAModal();
+    }
+
+    // Remove error class on input
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.wa-form__input').forEach(function(el) {
+        el.addEventListener('input', function() { el.classList.remove('wa-form__input--error'); });
+      });
+    });
+  </script>
+
+  <!-- Main JS -->
+  <script src="app.js" defer></script>
+</body>
+</html>
