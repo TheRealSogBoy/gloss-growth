@@ -74,34 +74,21 @@
   <!-- ═══════════════════════════════════════ NAVBAR ═══════ -->
   <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
     <div class="navbar__inner">
-      <a href="#inicio" class="navbar__logo" aria-label="Gloss Growth - Inicio">
-        <img src="assets/logos/logo-horizontal-degradé.svg" alt="Gloss Growth" width="180" height="auto" class="navbar__logo--dark" />
-        <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" width="180" height="auto" class="navbar__logo--light" />
-      </a>
-      <ul class="navbar__links" role="list">
-        <li><a href="#sistema" class="navbar__link">El Sistema</a></li>
-        <li><a href="#resultados" class="navbar__link">Resultados</a></li>
-        <li><a href="#proceso" class="navbar__link">Proceso</a></li>
-        <li><a href="#faq" class="navbar__link">FAQ</a></li>
-      </ul>
+      <div class="navbar__brand">
+        <a href="#inicio" class="navbar__logo" aria-label="Gloss Growth - Inicio">
+          <img src="assets/logos/logo-horizontal-degradé.svg" alt="Gloss Growth" width="160" height="auto" class="navbar__logo--dark" />
+          <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" width="160" height="auto" class="navbar__logo--light" />
+        </a>
+        <div class="navbar__vimo" aria-label="Powered by VIMO">
+          <span class="navbar__vimo-divider" aria-hidden="true">|</span>
+          <span class="navbar__vimo-text">Powered by</span>
+          <img src="assets/logos/vimo-agencia-ia-logo-light.webp" alt="VIMO Agencia IA" width="60" height="auto" class="navbar__vimo-logo navbar__vimo-logo--light" />
+          <img src="assets/logos/vimo-agencia-ia-logo-dark.webp" alt="VIMO Agencia IA" width="60" height="auto" class="navbar__vimo-logo navbar__vimo-logo--dark" />
+        </div>
+      </div>
       <button onclick="openWAModal()" class="btn btn--primary btn--sm navbar__cta" id="navbarCta" aria-label="Agendar videollamada">
         <span>Agenda tu llamada</span>
         <i data-lucide="calendar" aria-hidden="true"></i>
-      </button>
-      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <!-- Mobile Menu -->
-    <div class="navbar__mobile" id="mobileMenu" role="dialog" aria-label="Menú móvil" aria-hidden="true">
-      <ul role="list">
-        <li><a href="#sistema" class="navbar__link">El Sistema</a></li>
-        <li><a href="#resultados" class="navbar__link">Resultados</a></li>
-        <li><a href="#proceso" class="navbar__link">Proceso</a></li>
-        <li><a href="#faq" class="navbar__link">FAQ</a></li>
-      </ul>
-      <button onclick="openWAModal()" class="btn btn--primary w-full">
-        <span>📅 Agenda tu videollamada</span>
       </button>
     </div>
   </nav>

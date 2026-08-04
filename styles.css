@@ -366,6 +366,13 @@ input {
   gap: var(--space-8);
 }
 
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+}
+
 .navbar__logo {
   display: flex;
   align-items: center;
@@ -375,86 +382,56 @@ input {
 .navbar__logo--dark { display: none; }
 .navbar__logo--light { display: block; }
 
-.navbar__links {
+.navbar__vimo {
   display: flex;
   align-items: center;
-  gap: var(--space-6);
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
 }
 
-.navbar__link {
-  font-size: var(--text-sm);
-  font-weight: var(--weight-medium);
-  color: rgba(255,255,255,0.85);
-  transition: color var(--transition-base);
-  position: relative;
+.navbar__vimo-divider {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.85rem;
+  margin-right: 0.15rem;
 }
 
-.navbar__link::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: var(--color-rosa);
-  transition: width var(--transition-base);
+.navbar.scrolled .navbar__vimo-divider {
+  color: rgba(0, 0, 0, 0.2);
 }
 
-.navbar__link:hover { color: var(--color-white); }
-.navbar__link:hover::after { width: 100%; }
-
-.navbar.scrolled .navbar__link {
-  color: var(--color-text-soft);
+.navbar.scrolled .navbar__vimo {
+  color: var(--color-text-muted);
 }
-.navbar.scrolled .navbar__link:hover { color: var(--color-borgona); }
-.navbar.scrolled .navbar__link::after { background: var(--color-borgona); }
+
+.navbar__vimo-logo {
+  height: 15px;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.navbar__vimo-logo--dark { display: none; }
+.navbar__vimo-logo--light { display: block; }
+
+.navbar.scrolled .navbar__vimo-logo--dark { display: block; }
+.navbar.scrolled .navbar__vimo-logo--light { display: none; }
+
+.navbar__links {
+  display: none !important;
+}
 
 .navbar__cta {
   padding: var(--space-2) var(--space-5);
   font-size: var(--text-xs);
+  display: flex !important;
 }
 
-.navbar__hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  padding: var(--space-2);
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.navbar__hamburger span {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: var(--color-white);
-  border-radius: var(--radius-full);
-  transition: all var(--transition-base);
-}
-
-.navbar.scrolled .navbar__hamburger span { background: var(--color-dark); }
-
-.navbar__hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-.navbar__hamburger.open span:nth-child(2) { opacity: 0; transform: translateX(-10px); }
-.navbar__hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-
+.navbar__hamburger,
 .navbar__mobile {
-  display: none;
-  flex-direction: column;
-  gap: var(--space-4);
-  padding: var(--space-6) var(--container-px);
-  background: rgba(250,250,249,0.98);
-  backdrop-filter: blur(20px);
-  border-top: 1px solid var(--color-border);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height var(--transition-slow), padding var(--transition-slow);
-}
-
-.navbar__mobile.open {
-  max-height: 400px;
-  display: flex;
+  display: none !important;
 }
 
 .navbar__mobile ul {
@@ -2500,10 +2477,10 @@ input {
 
   .gloss-modules { grid-template-columns: 1fr 1fr; }
 
-  .navbar__links { display: none; }
-  .navbar__cta   { display: none; }
-  .navbar__hamburger { display: flex; }
-  .navbar__mobile { display: flex; }
+  .navbar__links { display: none !important; }
+  .navbar__cta { display: flex !important; }
+  .navbar__hamburger { display: none !important; }
+  .navbar__mobile { display: none !important; }
 
   .calculadora__inputs { grid-template-columns: 1fr; }
   .calculadora__results { flex-direction: column; }
