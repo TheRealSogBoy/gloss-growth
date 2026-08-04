@@ -306,6 +306,18 @@ input {
   transform: translateY(-1px);
 }
 
+.hero .btn--ghost {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hero .btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff !important;
+}
+
 /* Ripple effect */
 .btn__ripple {
   position: absolute;
