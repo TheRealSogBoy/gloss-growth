@@ -721,6 +721,20 @@ input {
   animation: fadeInUp 1s ease 0.5s forwards;
 }
 
+/* Corrección de color para el botón secundario del Hero */
+#heroCta2,
+#heroCta2 span,
+#heroCta2 i {
+  color: #ffffff !important;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+#heroCta2:hover {
+  opacity: 1;
+  color: #ffffff !important;
+}
+
 .hero__proof {
   display: flex;
   align-items: center;
