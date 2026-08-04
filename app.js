@@ -208,9 +208,8 @@ function initHeroAnimations() {
   notifs.forEach((notif, i) => {
     const delay = 1200 + i * 600;
     setTimeout(() => {
-      notif.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(0.34,1.56,0.64,1)';
+      notif.style.transition = 'opacity 0.6s ease';
       notif.style.opacity = '1';
-      notif.style.transform = 'translateX(0)';
     }, delay);
   });
 
@@ -229,8 +228,8 @@ function setupNotifLoop(notifs) {
     setInterval(() => {
       notifs.forEach((n, i) => {
         if (i === currentIndex) {
-          n.style.transform = 'translateX(0) scale(1.02)';
-          setTimeout(() => { n.style.transform = 'translateX(0) scale(1)'; }, 300);
+          n.style.transform = 'scale(1.02)';
+          setTimeout(() => { n.style.transform = 'scale(1)'; }, 300);
         }
       });
       currentIndex = (currentIndex + 1) % notifs.length;
