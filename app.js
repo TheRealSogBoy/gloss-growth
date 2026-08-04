@@ -418,92 +418,51 @@ function initCalculator() {
 
   if (!avgInput || !patientsInput || !monthlyResult || !annualResult) return;
 
-  let animationFrame;
-  let currentMonthly = 0;
-  let currentAnnual  = 0;
+  const formatter = new Intl.NumberFormat('es-CO', {
+    style: 'currency',
+    currency: 'COP',
+    maximumFractionDigits: 0
+  });
 
-  function formatCurrency(value) {
-    if (value === 0) return '$0';
-    return new Intl.NumberFormat('es-CO', {
-      style: 'currency',
-      currency: 'COP',
-      maximumFractionDigits: 0,
-    }).format(value);
-  }
-
-  function animateToValue(currentRef, target, setter, el) {
-    cancelAnimationFrame(animationFrame);
-
-    const start    = performance.now();
-    const duration = 600;
-    const from     = currentRef;
-
-    function step(now) {
-      const elapsed  = now - start;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased    = 1 - Math.pow(1 - progress, 3);
-      const value    = Math.round(from + (target - from) * eased);
-
-      el.textContent = formatCurrency(value);
-
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(step);
-      } else {
-        el.textContent = formatCurrency(target);
-      }
-    }
-
-    animationFrame = requestAnimationFrame(step);
-    return target;
-  }
-
-  function parseCleanNumber(valStr) {
-    if (!valStr) return 0;
-    const digitsOnly = valStr.toString().replace(/[^0-9]/g, '');
-    return parseFloat(digitsOnly) || 0;
+  // Limpieza estricta: extrae SÓLO dígitos numéricos
+  function getNumericValue(val) {
+    if (!val) return 0;
+    const clean = val.toString().replace(/\D/g, '');
+    return parseInt(clean, 10) || 0;
   }
 
   function calculate() {
-    const avg      = parseCleanNumber(avgInput.value);
-    const patients = parseCleanNumber(patientsInput.value);
+    const avg      = getNumericValue(avgInput.value);
+    const patients = getNumericValue(patientsInput.value);
+
     const monthly  = avg * patients;
     const annual   = monthly * 12;
 
-    // Visual feedback
-    if (monthly > 0) {
-      monthlyResult.style.transform = 'scale(1.05)';
-      annualResult.style.transform  = 'scale(1.05)';
-      setTimeout(() => {
-        monthlyResult.style.transform = 'scale(1)';
-        annualResult.style.transform  = 'scale(1)';
-      }, 200);
-    }
-
-    currentMonthly = animateToValue(currentMonthly, monthly, null, monthlyResult);
-    currentAnnual  = animateToValue(currentAnnual,  annual,  null, annualResult);
-
-    // Add transition to result values
-    monthlyResult.style.transition = 'transform 0.2s ease';
-    annualResult.style.transition  = 'transform 0.2s ease';
+    // Pintar resultados directamente formateados
+    monthlyResult.textContent = monthly > 0 ? formatter.format(monthly) : '$0';
+    annualResult.textContent  = annual > 0  ? formatter.format(annual)  : '$0';
   }
 
   avgInput.addEventListener('input', calculate);
   patientsInput.addEventListener('input', calculate);
 
-  // Format input on blur
+  // Auto-formateo dinámico al salir del campo
   avgInput.addEventListener('blur', () => {
-    const val = parseCleanNumber(avgInput.value);
+    const val = getNumericValue(avgInput.value);
     if (val > 0) {
       avgInput.value = val.toLocaleString('es-CO');
     }
   });
 
   avgInput.addEventListener('focus', () => {
-    const val = parseCleanNumber(avgInput.value);
+    const val = getNumericValue(avgInput.value);
     if (val > 0) {
-      avgInput.value = val.toString();
+      avgInput.value = val;
     }
   });
+
+  // Ejecutar cálculo inicial
+  calculate();
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
