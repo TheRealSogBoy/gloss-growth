@@ -424,10 +424,10 @@ function initCalculator() {
     maximumFractionDigits: 0
   });
 
-  // Limpieza estricta: extrae SÓLO dígitos numéricos
+  // Limpieza estricta: extrae SÓLO dígitos numéricos puros (0-9)
   function getNumericValue(val) {
-    if (!val) return 0;
-    const clean = val.toString().replace(/\D/g, '');
+    if (val === undefined || val === null) return 0;
+    const clean = val.toString().replace(/[^0-9]/g, '');
     return parseInt(clean, 10) || 0;
   }
 
@@ -438,15 +438,16 @@ function initCalculator() {
     const monthly  = avg * patients;
     const annual   = monthly * 12;
 
-    // Pintar resultados directamente formateados
+    // Pintar resultados formateados con moneda colombiana COP
     monthlyResult.textContent = monthly > 0 ? formatter.format(monthly) : '$0';
     annualResult.textContent  = annual > 0  ? formatter.format(annual)  : '$0';
   }
 
+  // Escuchar eventos input en ambos campos
   avgInput.addEventListener('input', calculate);
   patientsInput.addEventListener('input', calculate);
 
-  // Auto-formateo dinámico al salir del campo
+  // Formateo visual con puntos de miles al perder el foco (blur)
   avgInput.addEventListener('blur', () => {
     const val = getNumericValue(avgInput.value);
     if (val > 0) {
@@ -454,14 +455,22 @@ function initCalculator() {
     }
   });
 
+  // Al enfocar (focus), mostrar número limpio sin puntos para facilitar edición
   avgInput.addEventListener('focus', () => {
     const val = getNumericValue(avgInput.value);
     if (val > 0) {
-      avgInput.value = val;
+      avgInput.value = val.toString();
     }
   });
 
-  // Ejecutar cálculo inicial
+  patientsInput.addEventListener('blur', () => {
+    const val = getNumericValue(patientsInput.value);
+    if (val > 0) {
+      patientsInput.value = val.toString();
+    }
+  });
+
+  // Cálculo inicial inmediato al cargar
   calculate();
 }
 
