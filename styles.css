@@ -781,19 +781,19 @@ input {
   border-radius: var(--radius-2xl);
   overflow: hidden;
   box-shadow:
-    0 0 0 1px rgba(255,255,255,0.08),
+    0 0 0 1px rgba(255,255,255,0.12),
     0 30px 80px rgba(0,0,0,0.5),
     var(--shadow-glow);
   aspect-ratio: 4/5;
-  max-height: 580px;
   width: 100%;
+  max-height: 600px;
 }
 
 .hero__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   transform: scale(1.02);
   transition: transform 8s ease;
 }
@@ -806,12 +806,12 @@ input {
   background: linear-gradient(
     180deg,
     transparent 0%,
-    transparent 40%,
-    rgba(20,8,10,0.6) 100%
+    transparent 45%,
+    rgba(20,8,10,0.55) 100%
   );
 }
 
-/* Floating Notifications */
+/* Floating Notifications (Glassmorphism) */
 .hero__notifications {
   position: absolute;
   top: var(--space-6);
@@ -826,19 +826,38 @@ input {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(16px);
-  border-radius: var(--radius-xl);
-  padding: var(--space-3) var(--space-4);
-  box-shadow: var(--shadow-lg);
-  min-width: 240px;
-  max-width: 280px;
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  min-width: 250px;
+  max-width: 290px;
   opacity: 0;
   transform: translateX(-30px);
-  border: 1px solid rgba(140,37,54,0.08);
 }
 
-.hero__notif-icon { font-size: 1.25rem; flex-shrink: 0; }
+.hero__notif-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(253,164,175,0.18);
+  border: 1px solid rgba(253,164,175,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-rosa);
+}
+
+.hero__notif-icon i,
+.hero__notif-icon svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-rosa);
+}
 
 .hero__notif-content {
   display: flex;
@@ -851,12 +870,12 @@ input {
 .hero__notif-name {
   font-size: var(--text-xs);
   font-weight: var(--weight-semi);
-  color: var(--color-borgona);
+  color: #ffffff;
 }
 
 .hero__notif-msg {
-  font-size: var(--text-xs);
-  color: var(--color-text-soft);
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.85);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -864,7 +883,7 @@ input {
 
 .hero__notif-time {
   font-size: 10px;
-  color: var(--color-muted);
+  color: rgba(255, 255, 255, 0.5);
   flex-shrink: 0;
 }
 
