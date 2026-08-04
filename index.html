@@ -124,7 +124,7 @@
           <!-- Badge -->
           <div class="hero__badge" data-reveal-delay="0">
             <span class="hero__badge-dot" aria-hidden="true"></span>
-            <span>Sistema especializado en medicina estética</span>
+            <span>Sistema especializado en medicina estética · Powered by VIMO</span>
           </div>
 
           <!-- Headline -->
@@ -158,20 +158,20 @@
             </a>
           </div>
 
-          <!-- Social Proof bar -->
+          <!-- Proof / Stats -->
           <div class="hero__proof" data-reveal-delay="5">
             <div class="hero__proof-stat">
-              <span class="hero__proof-number" data-counter="47">0</span>
-              <span class="hero__proof-label">conversaciones este mes</span>
+              <span class="hero__proof-number" data-counter="6">0</span>
+              <span class="hero__proof-label">veces más facturación</span>
             </div>
             <div class="hero__proof-divider" aria-hidden="true"></div>
             <div class="hero__proof-stat">
-              <span class="hero__proof-number" data-counter="6" data-suffix="x">0x</span>
-              <span class="hero__proof-label">promedio de ROAS</span>
+              <span class="hero__proof-number">#1</span>
+              <span class="hero__proof-label">en Google Maps</span>
             </div>
             <div class="hero__proof-divider" aria-hidden="true"></div>
             <div class="hero__proof-stat">
-              <span class="hero__proof-number" data-counter="100" data-suffix="%">0%</span>
+              <span class="hero__proof-number">100%</span>
               <span class="hero__proof-label">enfoque en medicina estética</span>
             </div>
           </div>
@@ -218,34 +218,6 @@
                 <div class="hero__notif-time" aria-hidden="true">hace 5 min</div>
               </div>
             </div>
-
-            <!-- Mini Dashboard -->
-            <div class="hero__dashboard" aria-label="Métricas del sistema">
-              <div class="hero__dashboard-header">
-                <div class="hero__dashboard-dot" aria-hidden="true"></div>
-                <span>Gloss Dashboard</span>
-                <span class="hero__dashboard-live" aria-label="En vivo">LIVE</span>
-              </div>
-              <div class="hero__dashboard-metrics">
-                <div class="hero__metric">
-                  <span class="hero__metric-value" data-counter="47">0</span>
-                  <span class="hero__metric-label">Conversaciones</span>
-                </div>
-                <div class="hero__metric">
-                  <span class="hero__metric-value">4.8x</span>
-                  <span class="hero__metric-label">ROAS</span>
-                </div>
-                <div class="hero__metric">
-                  <span class="hero__metric-value" data-counter="23">0</span>
-                  <span class="hero__metric-label">Citas agend.</span>
-                </div>
-              </div>
-              <div class="hero__dashboard-bar" aria-hidden="true">
-                <div class="hero__dashboard-progress"></div>
-              </div>
-              <div class="hero__dashboard-ctr">
-                <span>CTR promedio</span>
-                <span class="hero__dashboard-ctr-value">3.2%</span>
               </div>
             </div>
           </div>
@@ -1178,13 +1150,12 @@
               <div class="calculadora__input-wrap">
                 <span class="calculadora__currency" aria-hidden="true">$</span>
                 <input
-                  type="number"
+                  type="text"
+                  inputmode="numeric"
                   id="avgProcedure"
                   name="avgProcedure"
                   class="calculadora__input"
                   placeholder="500.000"
-                  min="0"
-                  step="10000"
                   aria-describedby="avgProcedure-hint"
                 />
               </div>
@@ -1198,13 +1169,12 @@
               </label>
               <div class="calculadora__input-wrap">
                 <input
-                  type="number"
+                  type="text"
+                  inputmode="numeric"
                   id="newPatients"
                   name="newPatients"
                   class="calculadora__input calculadora__input--no-prefix"
                   placeholder="20"
-                  min="0"
-                  step="1"
                   aria-describedby="newPatients-hint"
                 />
               </div>
@@ -1217,16 +1187,20 @@
           <div class="calculadora__results" aria-live="polite" aria-atomic="true">
             <div class="calculadora__result-card calculadora__result-card--monthly">
               <div class="calculadora__result-icon" aria-hidden="true"><i data-lucide="calendar"></i></div>
-              <div class="calculadora__result-label">Ingresos potenciales mensuales</div>
+              <div class="calculadora__result-label">Facturación adicional estimada/mes</div>
               <div class="calculadora__result-value" id="monthlyResult" aria-label="Resultado mensual">$0</div>
             </div>
             <div class="calculadora__result-arrow" aria-hidden="true"><i data-lucide="trending-up"></i></div>
             <div class="calculadora__result-card calculadora__result-card--annual">
               <div class="calculadora__result-icon" aria-hidden="true"><i data-lucide="bar-chart-2"></i></div>
-              <div class="calculadora__result-label">Potencial anual</div>
+              <div class="calculadora__result-label">Facturación adicional proyectada/año</div>
               <div class="calculadora__result-value" id="annualResult" aria-label="Resultado anual">$0</div>
             </div>
           </div>
+
+          <p class="calculadora__disclaimer">
+            *Cálculo de ingresos brutos directos por primera cita/procedimiento. No incluye la recurrencia anual ni retoques del paciente.
+          </p>
 
           <div class="calculadora__cta-text" data-reveal>
             <p>Ahora imagina mantener ese crecimiento durante los próximos 12 meses.</p>
@@ -1316,6 +1290,10 @@
 
     <div class="footer__bottom">
       <p class="footer__copyright">&copy; 2025 Gloss Growth. Todos los derechos reservados.</p>
+      <div class="footer__vimo" aria-label="Powered by VIMO">
+        <span>Powered by</span>
+        <img src="assets/logos/vimo-agencia-ia-logo-light.webp" alt="VIMO Agencia IA" width="75" height="auto" class="footer__vimo-logo" />
+      </div>
       <div class="footer__legal">
         <a href="#" aria-label="Política de privacidad">Política de privacidad</a>
         <a href="#" aria-label="Términos de servicio">Términos de servicio</a>

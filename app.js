@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initSmoothScroll();
   initParallax();
-  initHeroDashboard();
 });
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -215,24 +214,6 @@ function initHeroAnimations() {
     }, delay);
   });
 
-  // Animate the dashboard
-  const dashboard = document.querySelector('.hero__dashboard');
-  if (dashboard) {
-    setTimeout(() => {
-      dashboard.style.transition = 'opacity 0.7s ease, transform 0.7s cubic-bezier(0.34,1.56,0.64,1)';
-      dashboard.style.opacity = '1';
-      dashboard.style.transform = 'translateY(0)';
-    }, 2000);
-  }
-
-  // Dashboard progress bar
-  const progress = document.querySelector('.hero__dashboard-progress');
-  if (progress) {
-    setTimeout(() => {
-      progress.style.width = '73%';
-    }, 2500);
-  }
-
   // Loop notification fade in/out
   setupNotifLoop(notifs);
 }
@@ -255,26 +236,6 @@ function setupNotifLoop(notifs) {
       currentIndex = (currentIndex + 1) % notifs.length;
     }, interval);
   }, 4000);
-}
-
-/* ═══════════════════════════════════════════════════════════════════════
-   HERO DASHBOARD LIVE EFFECT
-   ═══════════════════════════════════════════════════════════════════════ */
-
-function initHeroDashboard() {
-  // Simulate live counter updates
-  const dashMetrics = document.querySelectorAll('.hero__dashboard .hero__metric-value');
-  if (dashMetrics.length === 0) return;
-
-  setInterval(() => {
-    const firstMetric = dashMetrics[0];
-    if (!firstMetric) return;
-    const current = parseInt(firstMetric.textContent, 10) || 47;
-    const shouldIncrement = Math.random() > 0.7;
-    if (shouldIncrement) {
-      firstMetric.textContent = current + 1;
-    }
-  }, 8000);
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -497,9 +458,15 @@ function initCalculator() {
     return target;
   }
 
+  function parseCleanNumber(valStr) {
+    if (!valStr) return 0;
+    const digitsOnly = valStr.toString().replace(/[^0-9]/g, '');
+    return parseFloat(digitsOnly) || 0;
+  }
+
   function calculate() {
-    const avg      = parseFloat(avgInput.value.replace(/[^0-9.]/g, '')) || 0;
-    const patients = parseInt(patientsInput.value, 10) || 0;
+    const avg      = parseCleanNumber(avgInput.value);
+    const patients = parseCleanNumber(patientsInput.value);
     const monthly  = avg * patients;
     const annual   = monthly * 12;
 
@@ -526,14 +493,17 @@ function initCalculator() {
 
   // Format input on blur
   avgInput.addEventListener('blur', () => {
-    const val = parseFloat(avgInput.value.replace(/[^0-9.]/g, ''));
-    if (!isNaN(val) && val > 0) {
+    const val = parseCleanNumber(avgInput.value);
+    if (val > 0) {
       avgInput.value = val.toLocaleString('es-CO');
     }
   });
 
   avgInput.addEventListener('focus', () => {
-    avgInput.value = avgInput.value.replace(/[^0-9]/g, '');
+    const val = parseCleanNumber(avgInput.value);
+    if (val > 0) {
+      avgInput.value = val.toString();
+    }
   });
 }
 

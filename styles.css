@@ -771,13 +771,15 @@ input {
     0 30px 80px rgba(0,0,0,0.5),
     var(--shadow-glow);
   aspect-ratio: 4/5;
+  max-height: 580px;
+  width: 100%;
 }
 
 .hero__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   transform: scale(1.02);
   transition: transform 8s ease;
 }
@@ -2162,7 +2164,15 @@ input {
   flex-shrink: 0;
 }
 
-.calculadora__result-arrow svg { width: 24px; height: 24px; }
+.calculadora__disclaimer {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  text-align: center;
+  line-height: 1.5;
+  margin-top: calc(-1 * var(--space-4));
+  margin-bottom: var(--space-6);
+  opacity: 0.85;
+}
 
 .calculadora__cta-text {
   text-align: center;
@@ -2351,11 +2361,32 @@ input {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
+  flex-wrap: wrap;
 }
 
 .footer__copyright {
   font-size: var(--text-xs);
   color: rgba(255,255,255,0.3);
+}
+
+.footer__vimo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.04em;
+}
+
+.footer__vimo-logo {
+  height: 16px;
+  width: auto;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.footer__vimo:hover .footer__vimo-logo {
+  opacity: 1;
 }
 
 .footer__legal {
