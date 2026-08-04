@@ -2871,37 +2871,64 @@ input {
 
 .cliente-case__captures {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
+
 .cliente-case__capture-card {
   background: var(--color-bg-warm);
   border: 1px solid var(--color-border);
-  border-radius: 12px;
-  overflow: hidden;
+  border-radius: 16px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
+  height: auto !important; /* Evita espacios vacíos verticales */
+  overflow: hidden;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
+
 .cliente-case__capture-card:hover {
   box-shadow: 0 6px 20px rgba(53,41,37,0.1);
   transform: translateY(-2px);
 }
+
 .cliente-case__capture-label {
   display: block;
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--color-borgona);
-  padding: 0.5rem 0.75rem 0.35rem;
-  background: rgba(140,37,54,0.05);
+  padding: 0.25rem 0.5rem;
+  background: rgba(140,37,54,0.06);
+  border-radius: 6px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  width: fit-content;
 }
+
+/* Las capturas de Meta Ads y Resultados (horizontales) ocupan 1 columna */
+.cliente-case__capture-card:nth-child(1),
+.cliente-case__capture-card:nth-child(2) {
+  grid-column: span 1;
+}
+
+@media (max-width: 768px) {
+  .cliente-case__captures {
+    grid-template-columns: 1fr;
+  }
+  .cliente-case__capture-card:nth-child(1),
+  .cliente-case__capture-card:nth-child(2) {
+    grid-column: span 1;
+  }
+}
+
 .cliente-case__capture-img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: auto !important;
+  max-height: none !important;
   object-fit: contain;
+  border-radius: 8px;
+  margin-top: 8px;
 }
 
 .caso__client-img--logo {
@@ -2910,13 +2937,6 @@ input {
   border-radius: 0 !important;
   border: none !important;
   padding: 0 !important;
-}
-
-@media (max-width: 768px) {
-  .cliente-case__body { grid-template-columns: 1fr; }
-  .cliente-case__photo { height: 180px; }
-  .cliente-case { padding: 1.25rem; }
-  .cliente-case__captures { grid-template-columns: 1fr; }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
