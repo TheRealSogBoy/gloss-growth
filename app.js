@@ -424,59 +424,51 @@ function initCalculator() {
     maximumFractionDigits: 0
   });
 
-  // PARSER PERFECTO: Extrae únicamente dígitos numéricos puros (0-9)
-  function parsePureDigits(val) {
+  function getNumericValue(val) {
     if (val === undefined || val === null) return 0;
     const clean = val.toString().replace(/[^0-9]/g, '');
     return parseInt(clean, 10) || 0;
   }
 
-  function formatThousands(num) {
-    if (!num || num <= 0) return '';
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-  }
-
   function calculate() {
-    const avg      = parsePureDigits(avgInput.value);
-    const patients = parsePureDigits(patientsInput.value);
+    const avg      = getNumericValue(avgInput.value);
+    const patients = getNumericValue(patientsInput.value);
 
     const monthly  = avg * patients;
     const annual   = monthly * 12;
 
-    // Pintar resultados formateados con moneda COP
     monthlyResult.textContent = monthly > 0 ? formatter.format(monthly) : '$0';
     annualResult.textContent  = annual > 0  ? formatter.format(annual)  : '$0';
   }
 
-  // EVENTOS EN TIEMPO REAL AL ESCRIBIR
-  function onAvgInput() {
-    const num = parsePureDigits(avgInput.value);
-    if (num > 0) {
-      const formatted = formatThousands(num);
-      if (avgInput.value !== formatted) {
-        avgInput.value = formatted;
-      }
+  avgInput.addEventListener('input', calculate);
+  patientsInput.addEventListener('input', calculate);
+
+  // Formateo visual al salir del campo (blur) sin intervenir mientras se escribe
+  avgInput.addEventListener('blur', () => {
+    const val = getNumericValue(avgInput.value);
+    if (val > 0) {
+      avgInput.value = val.toLocaleString('es-CO');
     }
     calculate();
-  }
+  });
 
-  function onPatientsInput() {
-    const num = parsePureDigits(patientsInput.value);
-    if (num > 0 && patientsInput.value !== num.toString()) {
-      patientsInput.value = num.toString();
+  // Al enfocar (focus), dejar número limpio sin puntos para fácil edición
+  avgInput.addEventListener('focus', () => {
+    const val = getNumericValue(avgInput.value);
+    if (val > 0) {
+      avgInput.value = val.toString();
+    }
+  });
+
+  patientsInput.addEventListener('blur', () => {
+    const val = getNumericValue(patientsInput.value);
+    if (val > 0) {
+      patientsInput.value = val.toString();
     }
     calculate();
-  }
+  });
 
-  avgInput.addEventListener('input', onAvgInput);
-  avgInput.addEventListener('keyup', onAvgInput);
-  avgInput.addEventListener('change', onAvgInput);
-
-  patientsInput.addEventListener('input', onPatientsInput);
-  patientsInput.addEventListener('keyup', onPatientsInput);
-  patientsInput.addEventListener('change', onPatientsInput);
-
-  // Ejecutar cálculo inicial de inmediato
   calculate();
 }
 

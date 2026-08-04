@@ -2181,11 +2181,12 @@ input {
 
 .calculadora__result-value {
   font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2.2vw, 1.85rem);
+  font-size: clamp(1rem, 2.2vw, 1.6rem) !important;
   font-weight: var(--weight-medium);
   color: var(--color-borgona);
   line-height: 1.2;
-  white-space: nowrap;
+  white-space: nowrap !important;
+  overflow: visible !important;
   transition: all var(--transition-base);
 }
 
