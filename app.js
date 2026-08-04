@@ -572,10 +572,7 @@ function initParallax() {
   function onScroll() {
     const scrollY = window.scrollY;
 
-    // Parallax hero image (very subtle)
-    if (heroImage) {
-      heroImage.style.transform = `scale(1.02) translateY(${scrollY * 0.08}px)`;
-    }
+    // Hero image stays fixed (no parallax translateY)
 
     // Orbs move slightly
     heroBgOrbs.forEach((orb, i) => {
