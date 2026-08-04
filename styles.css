@@ -629,6 +629,7 @@ input {
   border: 1px solid rgba(253,164,175,0.25);
   border-radius: var(--radius-full);
   padding: var(--space-2) var(--space-4);
+  margin-top: 1.5rem;
   margin-bottom: var(--space-6);
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.1s forwards;
