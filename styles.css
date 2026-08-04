@@ -3182,26 +3182,136 @@ input {
 .star-filled { color: #f59e0b; fill: #f59e0b; }
 .star-half   { color: #f59e0b; opacity: 0.5; }
 
-/* FORZAR NOTIFICACIONES DENTRO DEL MARCO */
+/* ═══════════════════════════════════════════════════════════════════════
+   HERO NOTIFICATIONS - DEFINITIVE OVERRIDE (NO CLIPPING, INLINE SVG)
+   ═══════════════════════════════════════════════════════════════════════ */
 .hero__visual {
+  position: relative !important;
   overflow: visible !important;
 }
 
 .hero__notifications {
   position: absolute !important;
-  top: 30px !important;
-  left: 20px !important; /* Desplaza el contenedor a la derecha */
+  top: 24px !important;
+  left: 20px !important;
   right: auto !important;
   width: calc(100% - 40px) !important;
-  max-width: 340px !important;
+  max-width: 300px !important;
   transform: none !important;
-  z-index: 10 !important;
+  z-index: 20 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  pointer-events: none;
 }
 
 .hero__notif {
+  position: relative !important;
   left: 0 !important;
   margin-left: 0 !important;
   transform: none !important;
   width: 100% !important;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35) !important;
+  background: rgba(25, 10, 15, 0.88) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 16px !important;
+  padding: 10px 14px !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+.hero__notif-icon {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 10px !important;
+  background: rgba(253, 164, 175, 0.2) !important;
+  border: 1px solid rgba(253, 164, 175, 0.35) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  color: var(--color-rosa) !important;
+}
+
+.hero__notif-icon svg {
+  width: 18px !important;
+  height: 18px !important;
+  color: var(--color-rosa) !important;
+  stroke: var(--color-rosa) !important;
+  display: block !important;
+}
+
+.hero__notif-name {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 0.82rem !important;
+}
+
+.hero__notif-msg {
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-size: 0.78rem !important;
+}
+
+.hero__notif-time {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 0.7rem !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   CAPTURAS DE PRUEBA SOCIAL - LAYOUT ADAPTATIVO SIN ESPACIOS EN BLANCO
+   ═══════════════════════════════════════════════════════════════════════ */
+.cliente-case__captures {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 1.25rem !important;
+  margin-top: 1.25rem !important;
+  align-items: start !important; /* CRITICAL: prevents empty vertical white space */
+}
+
+.cliente-case__capture-card {
+  background: var(--color-bg-warm) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 16px !important;
+  padding: 14px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: auto !important;
+  align-self: start !important; /* CRITICAL: no empty space below horizontal cards */
+  overflow: hidden !important;
+}
+
+/* Capturas horizontales (Meta Ads y Resultados) */
+.cliente-case__capture-card:nth-child(1),
+.cliente-case__capture-card:nth-child(2) {
+  grid-column: span 1 !important;
+}
+
+/* Captura vertical (Google Maps Ranking #1) */
+.cliente-case__capture-card:nth-child(3) {
+  grid-column: span 2 !important;
+  max-width: 360px !important;
+  margin-inline: auto !important;
+  width: 100% !important;
+}
+
+.cliente-case__capture-img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  border-radius: 8px !important;
+  margin-top: 8px !important;
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  .cliente-case__captures {
+    grid-template-columns: 1fr !important;
+  }
+  .cliente-case__capture-card:nth-child(1),
+  .cliente-case__capture-card:nth-child(2),
+  .cliente-case__capture-card:nth-child(3) {
+    grid-column: span 1 !important;
+    max-width: 100% !important;
+  }
 }
