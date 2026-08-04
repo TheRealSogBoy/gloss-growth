@@ -411,64 +411,53 @@ function initFAQ() {
    ═══════════════════════════════════════════════════════════════════════ */
 
 function initCalculator() {
-  const avgInput      = document.getElementById('avgProcedure');
-  const patientsInput = document.getElementById('newPatients');
-  const monthlyResult = document.getElementById('monthlyResult');
-  const annualResult  = document.getElementById('annualResult');
+  var avgInput      = document.getElementById('avgProcedure');
+  var patientsInput = document.getElementById('newPatients');
+  var monthlyBox    = document.getElementById('monthlyResult');
+  var annualBox     = document.getElementById('annualResult');
 
-  if (!avgInput || !patientsInput || !monthlyResult || !annualResult) return;
+  if (!avgInput || !patientsInput || !monthlyBox || !annualBox) return;
 
-  const formatter = new Intl.NumberFormat('es-CO', {
-    style: 'currency',
-    currency: 'COP',
-    maximumFractionDigits: 0
-  });
-
-  function getNumericValue(val) {
-    if (val === undefined || val === null) return 0;
-    const clean = val.toString().replace(/[^0-9]/g, '');
-    return parseInt(clean, 10) || 0;
+  // ── STEP 1: Strip everything that is not 0-9 ──
+  function stripToDigits(str) {
+    return (str || '').replace(/[^0-9]/g, '');
   }
 
+  // ── STEP 2: Manual thousands formatter (dots every 3 digits) ──
+  function dotThousands(n) {
+    var s = n.toString();
+    var result = '';
+    var count = 0;
+    for (var i = s.length - 1; i >= 0; i--) {
+      if (count > 0 && count % 3 === 0) {
+        result = '.' + result;
+      }
+      result = s[i] + result;
+      count++;
+    }
+    return result;
+  }
+
+  // ── STEP 3: Core calculation ──
   function calculate() {
-    const avg      = getNumericValue(avgInput.value);
-    const patients = getNumericValue(patientsInput.value);
+    var rawAvg      = stripToDigits(avgInput.value);
+    var rawPatients = stripToDigits(patientsInput.value);
 
-    const monthly  = avg * patients;
-    const annual   = monthly * 12;
+    var avg      = rawAvg      ? parseInt(rawAvg, 10)      : 0;
+    var patients = rawPatients ? parseInt(rawPatients, 10) : 0;
 
-    monthlyResult.textContent = monthly > 0 ? formatter.format(monthly) : '$0';
-    annualResult.textContent  = annual > 0  ? formatter.format(annual)  : '$0';
+    var monthly = avg * patients;
+    var annual  = monthly * 12;
+
+    monthlyBox.textContent = monthly > 0 ? '$' + dotThousands(monthly) : '$0';
+    annualBox.textContent  = annual  > 0 ? '$' + dotThousands(annual)  : '$0';
   }
 
+  // ── STEP 4: Wire up input events (no blur/focus manipulation) ──
   avgInput.addEventListener('input', calculate);
   patientsInput.addEventListener('input', calculate);
 
-  // Formateo visual al salir del campo (blur) sin intervenir mientras se escribe
-  avgInput.addEventListener('blur', () => {
-    const val = getNumericValue(avgInput.value);
-    if (val > 0) {
-      avgInput.value = val.toLocaleString('es-CO');
-    }
-    calculate();
-  });
-
-  // Al enfocar (focus), dejar número limpio sin puntos para fácil edición
-  avgInput.addEventListener('focus', () => {
-    const val = getNumericValue(avgInput.value);
-    if (val > 0) {
-      avgInput.value = val.toString();
-    }
-  });
-
-  patientsInput.addEventListener('blur', () => {
-    const val = getNumericValue(patientsInput.value);
-    if (val > 0) {
-      patientsInput.value = val.toString();
-    }
-    calculate();
-  });
-
+  // Initial run
   calculate();
 }
 
