@@ -722,17 +722,23 @@ input {
 }
 
 /* Corrección de color para el botón secundario del Hero */
-#heroCta2,
-#heroCta2 span,
-#heroCta2 i {
+#heroCta2, 
+#heroCta2 span, 
+#heroCta2 i,
+#heroCta2 svg {
   color: #ffffff !important;
-  opacity: 0.9;
-  transition: opacity 0.3s ease, color 0.3s ease;
+  stroke: #ffffff !important;
+  opacity: 0.95 !important;
+  transition: opacity 0.3s ease, color 0.3s ease, stroke 0.3s ease;
 }
 
-#heroCta2:hover {
-  opacity: 1;
+#heroCta2:hover,
+#heroCta2:hover span,
+#heroCta2:hover i,
+#heroCta2:hover svg {
   color: #ffffff !important;
+  stroke: #ffffff !important;
+  opacity: 1 !important;
 }
 
 .hero__proof {
@@ -814,12 +820,13 @@ input {
 /* Floating Notifications (Glassmorphism) */
 .hero__notifications {
   position: absolute;
-  top: var(--space-6);
-  left: calc(-1 * var(--space-8));
+  top: 20px;
+  left: 20px;
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  z-index: 2;
+  z-index: 5;
+  max-width: calc(100% - 40px);
 }
 
 .hero__notif {
@@ -831,12 +838,13 @@ input {
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;
-  padding: 0.75rem 1rem;
+  padding: 12px 16px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
-  min-width: 250px;
-  max-width: 290px;
+  min-width: unset;
+  width: max-content;
+  max-width: 100%;
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(0);
 }
 
 .hero__notif-icon {
