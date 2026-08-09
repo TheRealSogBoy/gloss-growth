@@ -66,6 +66,67 @@ function setupExportButtons() {
 }
 
 /**
+ * Converts an image URL to a clean inline Base64 Data URL to prevent tainted canvas security errors
+ */
+function imageToDataUrl(url) {
+  return new Promise((resolve) => {
+    // If already data URL, return as is
+    if (url.startsWith('data:')) {
+      return resolve(url);
+    }
+
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    
+    img.onload = () => {
+      try {
+        const c = document.createElement('canvas');
+        c.width = img.naturalWidth || img.width || 300;
+        c.height = img.naturalHeight || img.height || 300;
+        const ctx = c.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        const dataUrl = c.toDataURL('image/png');
+        resolve(dataUrl);
+      } catch (e) {
+        fetchBlobFallback(url, resolve);
+      }
+    };
+
+    img.onerror = () => {
+      fetchBlobFallback(url, resolve);
+    };
+
+    img.src = url;
+  });
+}
+
+function fetchBlobFallback(url, resolve) {
+  fetch(url)
+    .then(res => res.blob())
+    .then(blob => {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result);
+      reader.onerror = () => resolve(null);
+      reader.readAsDataURL(blob);
+    })
+    .catch(() => resolve(null));
+}
+
+/**
+ * Pre-inlines all <img> src attributes inside an element to Base64 data URLs before html2canvas capture
+ */
+async function inlineImagesInElement(element) {
+  const images = Array.from(element.querySelectorAll('img'));
+  for (const img of images) {
+    if (!img.src || img.src.startsWith('data:')) continue;
+    const dataUrl = await imageToDataUrl(img.src);
+    if (dataUrl) {
+      img.src = dataUrl;
+    }
+  }
+}
+
+/**
  * Renders a 1080x1350 slide canvas element to PNG or WebP blob and triggers download
  */
 async function exportSingleSlide(slideId, format = 'png', btnElement = null) {
@@ -83,13 +144,16 @@ async function exportSingleSlide(slideId, format = 'png', btnElement = null) {
   }
 
   try {
+    // Pre-inline all images inside the target slide to prevent Tainted Canvas security errors
+    await inlineImagesInElement(slideElement);
+
     // Render using html2canvas at scale 1 (native 1080x1350)
     const canvas = await html2canvas(slideElement, {
       scale: 1,
       width: 1080,
       height: 1350,
       useCORS: true,
-      allowTaint: true,
+      allowTaint: false, // Must be false so canvas remains untainted and toBlob works!
       backgroundColor: '#14080a',
       logging: false,
       onclone: (clonedDoc) => {
@@ -107,12 +171,19 @@ async function exportSingleSlide(slideId, format = 'png', btnElement = null) {
     const slideNumber = slideId.replace('slide-', '');
     const filename = `GlossGrowth_HQ_Carrusel_Slide_${slideNumber}.${extension}`;
 
-    // Convert canvas to Blob
+    // Convert canvas to Blob safely
     canvas.toBlob((blob) => {
       if (!blob) {
-        throw new Error('Canvas conversion failed');
+        // Fallback to dataURL download if blob fails
+        const dataUrl = canvas.toDataURL(mimeType, 0.95);
+        const link = document.createElement('a');
+        link.download = filename;
+        link.href = dataUrl;
+        link.click();
+      } else {
+        saveAs(blob, filename);
       }
-      saveAs(blob, filename);
+
       if (btnElement) {
         btnElement.innerHTML = `✅ ¡Descargado!`;
         setTimeout(() => {
@@ -157,12 +228,15 @@ async function exportAllSlides(format = 'png', mainBtn = null) {
     }
 
     try {
+      // Pre-inline all images inside target slide
+      await inlineImagesInElement(slideElement);
+
       const canvas = await html2canvas(slideElement, {
         scale: 1,
         width: 1080,
         height: 1350,
         useCORS: true,
-        allowTaint: true,
+        allowTaint: false,
         backgroundColor: '#14080a',
         logging: false,
         onclone: (clonedDoc) => {
@@ -186,7 +260,15 @@ async function exportAllSlides(format = 'png', mainBtn = null) {
         // Fallback: Individual downloads with delay
         await new Promise(resolve => {
           canvas.toBlob((blob) => {
-            saveAs(blob, filename);
+            if (blob) {
+              saveAs(blob, filename);
+            } else {
+              const dataUrl = canvas.toDataURL(mimeType, 0.95);
+              const link = document.createElement('a');
+              link.download = filename;
+              link.href = dataUrl;
+              link.click();
+            }
             setTimeout(resolve, 600);
           }, mimeType, 0.95);
         });
