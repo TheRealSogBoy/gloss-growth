@@ -261,7 +261,7 @@ body {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   ACTUAL 1080 x 1350 PX SLIDE CANVAS (EXPORT TARGET & 85% FILL)
+   ACTUAL 1080 x 1350 PX SLIDE CANVAS (EXACT 20% BOTTOM SAFE MARGIN)
    ═══════════════════════════════════════════════════════════════════════ */
 .slide-canvas {
   width: 1080px;
@@ -277,7 +277,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px 70px 40px;
+  padding: 60px 70px 50px;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -289,7 +289,7 @@ body {
   justify-content: space-between;
   width: 100%;
   z-index: 10;
-  height: 46px;
+  height: 48px;
 }
 
 .slide-header__brand {
@@ -324,7 +324,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-/* Slide Content Core Container (Expands evenly across 85% of Canvas) */
+/* Slide Content Core Container (Strict Top 80% Content Zone) */
 .slide-body {
   position: relative;
   z-index: 10;
@@ -332,12 +332,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 22px;
   margin-top: 20px;
-  margin-bottom: 15px; /* Slight 12-15% bottom margin */
+  margin-bottom: 210px; /* EXACT 20% BOTTOM SAFE MARGIN RESERVED! */
 }
 
-/* Slide Footer (Clean Bottom Boundary) */
+/* Slide Footer (Clean Bottom Boundary at Exact 20% Zone) */
 .slide-footer {
   display: flex;
   align-items: center;
@@ -345,7 +345,7 @@ body {
   width: 100%;
   z-index: 10;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
-  padding-top: 20px;
+  padding-top: 24px;
   margin-top: auto;
 }
 
@@ -368,7 +368,7 @@ body {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   TYPOGRAPHY & REUSABLE SLIDE COMPONENTS (LARGE HIGH-IMPACT SCALE)
+   TYPOGRAPHY & REUSABLE SLIDE COMPONENTS (ENHANCED BODY TEXT SCALE)
    ═══════════════════════════════════════════════════════════════════════ */
 .slide-pill {
   display: inline-flex;
@@ -388,7 +388,7 @@ body {
 
 .slide-hook-question {
   font-family: var(--font-display);
-  font-size: 52px;
+  font-size: 54px;
   font-weight: 600;
   color: var(--color-rosa);
   letter-spacing: 0.08em;
@@ -423,14 +423,14 @@ body {
 }
 
 .slide-subtitle {
-  font-size: 32px;
+  font-size: 34px;
   line-height: 1.42;
   color: var(--color-text-main);
   font-weight: 400;
 }
 
 .slide-secondary-text {
-  font-size: 34px;
+  font-size: 36px;
   line-height: 1.38;
   color: rgba(255, 255, 255, 0.95);
   font-weight: 500;
@@ -550,20 +550,20 @@ body {
 .profile-card {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 32px;
   background: rgba(30, 12, 16, 0.85);
   border: 1px solid rgba(253, 164, 175, 0.3);
   border-radius: 28px;
-  padding: 26px 30px;
+  padding: 28px 32px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 
 .profile-card__img-wrap {
-  width: 140px;
-  height: 140px;
+  width: 155px;
+  height: 155px;
   border-radius: 50%;
-  border: 3px solid var(--color-rosa);
+  border: 4px solid var(--color-rosa);
   box-shadow: 0 0 30px rgba(253, 164, 175, 0.4);
   overflow: hidden;
   flex-shrink: 0;
@@ -578,18 +578,18 @@ body {
 .profile-card__info {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .profile-card__name {
   font-family: var(--font-display);
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 600;
   color: #ffffff;
 }
 
 .profile-card__role {
-  font-size: 19px;
+  font-size: 22px;
   color: var(--color-rosa);
   font-weight: 600;
 }
@@ -598,18 +598,18 @@ body {
 .comparison-grid {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
   width: 100%;
 }
 
 .comp-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
-  padding: 24px 28px;
+  border-radius: 22px;
+  padding: 28px 32px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .comp-card--highlight {
@@ -619,28 +619,28 @@ body {
 }
 
 .comp-card__badge {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 .comp-card__badge--warn { color: #f87171; }
 .comp-card__badge--success { color: var(--color-rosa); }
 
 .comp-card__text {
-  font-size: 21px;
+  font-size: 26px;
   color: var(--color-text-main);
-  line-height: 1.4;
+  line-height: 1.42;
 }
 
 /* Slide 4: Connected System Steps */
 .system-flow {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
   position: relative;
   width: 100%;
 }
@@ -648,11 +648,11 @@ body {
 .system-step {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 24px;
   background: rgba(30, 12, 16, 0.8);
   border: 1px solid rgba(253, 164, 175, 0.22);
-  border-radius: 20px;
-  padding: 18px 24px;
+  border-radius: 22px;
+  padding: 20px 26px;
   position: relative;
   z-index: 2;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
@@ -660,14 +660,14 @@ body {
 
 .system-step__num {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 700;
   color: var(--color-rosa);
   background: rgba(253, 164, 175, 0.14);
   border: 1px solid rgba(253, 164, 175, 0.3);
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -681,7 +681,7 @@ body {
 }
 
 .system-step__title {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   color: #ffffff;
   letter-spacing: 0.05em;
@@ -689,9 +689,9 @@ body {
 }
 
 .system-step__desc {
-  font-size: 19px;
+  font-size: 21px;
   color: var(--color-text-main);
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 /* Slide 5: Result Callout Card */
@@ -699,34 +699,34 @@ body {
   background: linear-gradient(135deg, rgba(90, 26, 38, 0.95) 0%, rgba(40, 12, 18, 0.95) 100%);
   border: 2px solid rgba(253, 164, 175, 0.45);
   border-radius: 28px;
-  padding: 34px 28px;
+  padding: 36px 30px;
   text-align: center;
   box-shadow: 0 20px 50px rgba(140, 37, 54, 0.45), inset 0 0 25px rgba(253, 164, 175, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   width: 100%;
 }
 
 .statements-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-top: 4px;
+  gap: 14px;
+  margin-top: 6px;
   width: 100%;
 }
 
 .statement-item {
   display: flex;
   align-items: center;
-  gap: 14px;
-  font-size: 21px;
+  gap: 16px;
+  font-size: 24px;
   color: var(--color-text-main);
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 16px 24px;
-  border-radius: 16px;
+  padding: 18px 26px;
+  border-radius: 18px;
 }
 
 .statement-item--yes {
@@ -737,7 +737,7 @@ body {
 }
 
 .statement-icon {
-  font-size: 22px;
+  font-size: 24px;
   flex-shrink: 0;
 }
 
