@@ -330,9 +330,9 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 40px;
-  margin: 30px 0;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 25px 0;
 }
 
 /* Slide Footer */
@@ -342,21 +342,21 @@ body {
   justify-content: space-between;
   width: 100%;
   z-index: 10;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding-top: 30px;
 }
 
 .slide-footer__logo {
-  height: 38px;
+  height: 42px;
   width: auto;
 }
 
 .slide-footer__badge {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--color-text-muted);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .slide-footer__badge span {
@@ -365,26 +365,39 @@ body {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   TYPOGRAPHY & REUSABLE SLIDE COMPONENTS
+   TYPOGRAPHY & REUSABLE SLIDE COMPONENTS (F-PATTERN SCANNABLE)
    ═══════════════════════════════════════════════════════════════════════ */
 .slide-pill {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(253, 164, 175, 0.12);
-  border: 1px solid rgba(253, 164, 175, 0.3);
-  padding: 10px 24px;
+  gap: 12px;
+  background: rgba(253, 164, 175, 0.14);
+  border: 1px solid rgba(253, 164, 175, 0.35);
+  padding: 14px 28px;
   border-radius: 999px;
   color: var(--color-rosa);
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.slide-hook-question {
+  font-family: var(--font-display);
+  font-size: 46px;
   font-weight: 600;
+  color: var(--color-rosa);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  line-height: 1.1;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .slide-title-lg {
   font-family: var(--font-display);
-  font-size: 64px;
+  font-size: 72px;
   line-height: 1.1;
   font-weight: 500;
   color: #ffffff;
@@ -401,75 +414,93 @@ body {
 
 .slide-title-md {
   font-family: var(--font-display);
-  font-size: 52px;
+  font-size: 58px;
   line-height: 1.15;
   font-weight: 500;
   color: #ffffff;
 }
 
 .slide-subtitle {
-  font-size: 24px;
-  line-height: 1.5;
+  font-size: 28px;
+  line-height: 1.45;
   color: var(--color-text-main);
   font-weight: 400;
 }
 
-.slide-subtitle strong {
+.slide-secondary-text {
+  font-size: 30px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.slide-subtitle strong,
+.slide-secondary-text strong {
   color: #ffffff;
   font-weight: 600;
 }
 
-/* Highlighted Big Numbers */
+/* Highlighted Big Numbers (F-Pattern Key Visual Anchor) */
 .big-number-wrap {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   align-items: flex-start;
+  width: 100%;
 }
 
 .big-number {
   font-family: var(--font-display);
-  font-size: 160px;
+  font-size: 230px;
   font-weight: 300;
-  line-height: 0.9;
+  line-height: 0.82;
   letter-spacing: -0.04em;
-  background: linear-gradient(135deg, #ffffff 0%, #fda4af 50%, #8c2536 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #fda4af 45%, #8c2536 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 15px 30px rgba(140, 37, 54, 0.4));
+  filter: drop-shadow(0 20px 40px rgba(140, 37, 54, 0.5));
 }
 
 .big-number-label {
-  font-size: 32px;
+  font-family: var(--font-body);
+  font-size: 46px;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 8px;
 }
 
-/* Treatment Tags Grid */
+/* Treatment Tags Grid (Expanded Space Distribution) */
 .treatment-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 10px;
+  gap: 16px;
+  margin-top: 15px;
+  width: 100%;
 }
 
 .treatment-tag {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 12px 24px;
-  border-radius: 12px;
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--color-text-main);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(253, 164, 175, 0.3);
+  padding: 18px 30px;
+  border-radius: 18px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
+  flex: 1 1 auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 .treatment-tag svg {
   color: var(--color-rosa);
+  width: 26px;
+  height: 26px;
 }
 
 /* Glass Card Component */
