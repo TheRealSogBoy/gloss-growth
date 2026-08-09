@@ -23,60 +23,13 @@
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════ APP HEADER ═══════ -->
-  <header class="app-header">
-    <div class="app-header__brand">
-      <img src="../assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss & Growth HQ" class="app-header__logo" />
-      <div class="app-header__title-wrap">
-        <h1 class="app-header__title">Creador & Exportador de Carrusel Instagram</h1>
-        <span class="app-header__subtitle">6 Slides · Formato Vertical 4:5 (1080 × 1350 px)</span>
-      </div>
-    </div>
-
-    <div class="app-header__actions">
-      <button class="btn-studio btn-studio--secondary" id="toggleEditable">
-        <i data-lucide="edit-3"></i> Editar Textos Live
-      </button>
-      <button class="btn-studio btn-studio--primary" id="exportAllPng">
-        <i data-lucide="download"></i> Descargar Todo (PNG)
-      </button>
-      <button class="btn-studio btn-studio--secondary" id="exportAllWebp">
-        <i data-lucide="image"></i> Descargar Todo (WebP)
-      </button>
-      <a href="../index.html" class="btn-studio btn-studio--secondary btn-studio--icon" title="Volver al Sitio Web">
-        <i data-lucide="globe"></i>
-      </a>
-    </div>
-  </header>
-
-  <!-- ═══════════════════════════════════════ WORKSPACE ═══════ -->
+  <!-- ═══════════════════════════════════════ PURE SLIDES CANVAS GRID ═══════ -->
   <main class="workspace">
     
-    <div class="workspace__info">
-      <div class="workspace__info-text">
-        <strong>Pieza Principal Fijada de Instagram (Gloss & Growth HQ)</strong> — 
-        Previsualiza los 6 artboards y descárgalos individualmente o en lote en formato PNG o WebP a 1080 × 1350 px.
-      </div>
-      <div class="slide-pill">
-        <i data-lucide="sparkles"></i> 1080 × 1350 PX · ALTA RESOLUCIÓN
-      </div>
-    </div>
-
-    <!-- 6 SLIDES PREVIEW & EXPORT CANVAS GRID -->
     <div class="slides-grid">
 
       <!-- ── SLIDE 1 — PORTADA ─────────────────────────────────────────── -->
       <div class="slide-card-wrap">
-        <div class="slide-card-wrap__header">
-          <div class="slide-card-wrap__title">
-            <i data-lucide="layers"></i> Slide 01 · Portada Principal
-          </div>
-          <div class="slide-card-wrap__actions">
-            <button class="btn-mini" data-export-slide="slide-1" data-format="png">PNG</button>
-            <button class="btn-mini" data-export-slide="slide-1" data-format="webp">WebP</button>
-          </div>
-        </div>
-
         <div class="slide-viewport">
           <div class="slide-canvas" id="slide-1">
             <!-- Background Image & Vignette -->
@@ -134,16 +87,6 @@
 
       <!-- ── SLIDE 2 — QUIÉNES SOMOS ────────────────────────────────────── -->
       <div class="slide-card-wrap">
-        <div class="slide-card-wrap__header">
-          <div class="slide-card-wrap__title">
-            <i data-lucide="user-check"></i> Slide 02 · Quiénes Somos
-          </div>
-          <div class="slide-card-wrap__actions">
-            <button class="btn-mini" data-export-slide="slide-2" data-format="png">PNG</button>
-            <button class="btn-mini" data-export-slide="slide-2" data-format="webp">WebP</button>
-          </div>
-        </div>
-
         <div class="slide-viewport">
           <div class="slide-canvas" id="slide-2">
             <!-- Slide Top Header -->
@@ -195,16 +138,6 @@
 
       <!-- ── SLIDE 3 — EL PROBLEMA ──────────────────────────────────────── -->
       <div class="slide-card-wrap">
-        <div class="slide-card-wrap__header">
-          <div class="slide-card-wrap__title">
-            <i data-lucide="alert-triangle"></i> Slide 03 · El Problema
-          </div>
-          <div class="slide-card-wrap__actions">
-            <button class="btn-mini" data-export-slide="slide-3" data-format="png">PNG</button>
-            <button class="btn-mini" data-export-slide="slide-3" data-format="webp">WebP</button>
-          </div>
-        </div>
-
         <div class="slide-viewport">
           <div class="slide-canvas" id="slide-3">
             <!-- Slide Top Header -->
@@ -266,16 +199,6 @@
 
       <!-- ── SLIDE 4 — EL SISTEMA ───────────────────────────────────────── -->
       <div class="slide-card-wrap">
-        <div class="slide-card-wrap__header">
-          <div class="slide-card-wrap__title">
-            <i data-lucide="cpu"></i> Slide 04 · El Sistema
-          </div>
-          <div class="slide-card-wrap__actions">
-            <button class="btn-mini" data-export-slide="slide-4" data-format="png">PNG</button>
-            <button class="btn-mini" data-export-slide="slide-4" data-format="webp">WebP</button>
-          </div>
-        </div>
-
         <div class="slide-viewport">
           <div class="slide-canvas" id="slide-4">
             <!-- Slide Top Header -->
@@ -350,16 +273,6 @@
 
       <!-- ── SLIDE 5 — EL RESULTADO ─────────────────────────────────────── -->
       <div class="slide-card-wrap">
-        <div class="slide-card-wrap__header">
-          <div class="slide-card-wrap__title">
-            <i data-lucide="trending-up"></i> Slide 05 · El Resultado
-          </div>
-          <div class="slide-card-wrap__actions">
-            <button class="btn-mini" data-export-slide="slide-5" data-format="png">PNG</button>
-            <button class="btn-mini" data-export-slide="slide-5" data-format="webp">WebP</button>
-          </div>
-        </div>
-
         <div class="slide-viewport">
           <div class="slide-canvas" id="slide-5">
             <!-- Slide Top Header -->
@@ -422,16 +335,6 @@
 
       <!-- ── SLIDE 6 — CTA ──────────────────────────────────────────────── -->
       <div class="slide-card-wrap">
-        <div class="slide-card-wrap__header">
-          <div class="slide-card-wrap__title">
-            <i data-lucide="send"></i> Slide 06 · Llamado a la Acción
-          </div>
-          <div class="slide-card-wrap__actions">
-            <button class="btn-mini" data-export-slide="slide-6" data-format="png">PNG</button>
-            <button class="btn-mini" data-export-slide="slide-6" data-format="webp">WebP</button>
-          </div>
-        </div>
-
         <div class="slide-viewport">
           <div class="slide-canvas" id="slide-6">
             <!-- Slide Top Header -->
