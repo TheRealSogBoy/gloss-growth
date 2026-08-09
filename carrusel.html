@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrusel Instagram 1080x1350 | Gloss & Growth HQ</title>
+  
+  <!-- Fonts: Cormorant Garamond + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Export Engine Libraries (html2canvas + JSZip + FileSaver) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+  <!-- Studio Stylesheet -->
+  <link rel="stylesheet" href="./carrusel.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ APP HEADER ═══════ -->
+  <header class="app-header">
+    <div class="app-header__brand">
+      <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss & Growth HQ" class="app-header__logo" />
+      <div class="app-header__title-wrap">
+        <h1 class="app-header__title">Creador & Exportador de Carrusel Instagram</h1>
+        <span class="app-header__subtitle">6 Slides · Formato Vertical 4:5 (1080 × 1350 px)</span>
+      </div>
+    </div>
+
+    <div class="app-header__actions">
+      <button class="btn-studio btn-studio--secondary" id="toggleEditable">
+        <i data-lucide="edit-3"></i> Editar Textos Live
+      </button>
+      <button class="btn-studio btn-studio--primary" id="exportAllPng">
+        <i data-lucide="download"></i> Descargar Todo (PNG)
+      </button>
+      <button class="btn-studio btn-studio--secondary" id="exportAllWebp">
+        <i data-lucide="image"></i> Descargar Todo (WebP)
+      </button>
+      <a href="index.html" class="btn-studio btn-studio--secondary btn-studio--icon" title="Volver al Sitio Web">
+        <i data-lucide="globe"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════ WORKSPACE ═══════ -->
+  <main class="workspace">
+    
+    <div class="workspace__info">
+      <div class="workspace__info-text">
+        <strong>Pieza Principal Fijada de Instagram (Gloss & Growth HQ)</strong> — 
+        Previsualiza los 6 artboards y descárgalos individualmente o en lote en formato PNG o WebP a 1080 × 1350 px.
+      </div>
+      <div class="slide-pill">
+        <i data-lucide="sparkles"></i> 1080 × 1350 PX · ALTA RESOLUCIÓN
+      </div>
+    </div>
+
+    <!-- 6 SLIDES PREVIEW & EXPORT CANVAS GRID -->
+    <div class="slides-grid">
+
+      <!-- ── SLIDE 1 — PORTADA ─────────────────────────────────────────── -->
+      <div class="slide-card-wrap">
+        <div class="slide-card-wrap__header">
+          <div class="slide-card-wrap__title">
+            <i data-lucide="layers"></i> Slide 01 · Portada Principal
+          </div>
+          <div class="slide-card-wrap__actions">
+            <button class="btn-mini" data-export-slide="slide-1" data-format="png">PNG</button>
+            <button class="btn-mini" data-export-slide="slide-1" data-format="webp">WebP</button>
+          </div>
+        </div>
+
+        <div class="slide-viewport">
+          <div class="slide-canvas" id="slide-1">
+            <!-- Background Image & Vignette -->
+            <div class="slide-bg-img" style="background-image: url('assets/images/hero-gloss-growth-background.png');"></div>
+            <div class="slide-bg-overlay"></div>
+
+            <!-- Slide Top Header -->
+            <div class="slide-header">
+              <div class="slide-header__brand">
+                <img src="assets/logos/logo-simbolo-degradé.svg" alt="Symbol" class="slide-header__symbol" />
+                <span class="slide-header__tag">GLOSS & GROWTH HQ</span>
+              </div>
+              <span class="slide-header__number">01 / 06</span>
+            </div>
+
+            <!-- Slide Content Body -->
+            <div class="slide-body">
+              <div class="slide-pill">
+                <i data-lucide="target"></i> MEDICINA ESTÉTICA
+              </div>
+
+              <div class="big-number-wrap">
+                <span class="slide-subtitle">¿QUIERES</span>
+                <span class="big-number">5–10</span>
+                <span class="big-number-label">PACIENTES NUEVOS AL MES?</span>
+              </div>
+
+              <p class="slide-subtitle" style="font-size: 22px; color: var(--color-text-muted);">
+                Especialmente para tratamientos de medicina estética de alto valor:
+              </p>
+
+              <div class="treatment-tags">
+                <div class="treatment-tag">
+                  <i data-lucide="sparkles"></i> Botox / Toxina Botulínica
+                </div>
+                <div class="treatment-tag">
+                  <i data-lucide="sparkles"></i> Ácido Hialurónico
+                </div>
+                <div class="treatment-tag">
+                  <i data-lucide="sparkles"></i> Armonización Facial
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Footer -->
+            <div class="slide-footer">
+              <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" class="slide-footer__logo" />
+              <div class="slide-footer__badge">
+                <span>Desliza para ver más</span> <i data-lucide="arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SLIDE 2 — QUIÉNES SOMOS ────────────────────────────────────── -->
+      <div class="slide-card-wrap">
+        <div class="slide-card-wrap__header">
+          <div class="slide-card-wrap__title">
+            <i data-lucide="user-check"></i> Slide 02 · Quiénes Somos
+          </div>
+          <div class="slide-card-wrap__actions">
+            <button class="btn-mini" data-export-slide="slide-2" data-format="png">PNG</button>
+            <button class="btn-mini" data-export-slide="slide-2" data-format="webp">WebP</button>
+          </div>
+        </div>
+
+        <div class="slide-viewport">
+          <div class="slide-canvas" id="slide-2">
+            <!-- Slide Top Header -->
+            <div class="slide-header">
+              <div class="slide-header__brand">
+                <img src="assets/logos/logo-simbolo-degradé.svg" alt="Symbol" class="slide-header__symbol" />
+                <span class="slide-header__tag">GLOSS & GROWTH HQ</span>
+              </div>
+              <span class="slide-header__number">02 / 06</span>
+            </div>
+
+            <!-- Slide Content Body -->
+            <div class="slide-body">
+              <div class="slide-pill">
+                <i data-lucide="award"></i> PRESENTACIÓN INTEGRADA
+              </div>
+
+              <h2 class="slide-title-lg">
+                Soy David y hago parte de <em>Gloss & Growth HQ.</em>
+              </h2>
+
+              <div class="profile-card">
+                <div class="profile-card__img-wrap">
+                  <img src="assets/images/david-cardenas.webp" alt="David Cárdenas" class="profile-card__img" />
+                </div>
+                <div class="profile-card__info">
+                  <span class="profile-card__name">David Cárdenas</span>
+                  <span class="profile-card__role">Estratega de Crecimiento · Gloss & Growth HQ</span>
+                </div>
+              </div>
+
+              <div class="glass-card">
+                <p class="slide-subtitle" style="font-size: 24px; line-height: 1.55;">
+                  Llevamos <strong>2 años trabajando específicamente en el sector estético</strong>, ayudando a profesionales de medicina estética a desarrollar estrategias para atraer nuevos pacientes y crecer.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide Footer -->
+            <div class="slide-footer">
+              <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" class="slide-footer__logo" />
+              <div class="slide-footer__badge">
+                Powered by <span>VIMO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SLIDE 3 — EL PROBLEMA ──────────────────────────────────────── -->
+      <div class="slide-card-wrap">
+        <div class="slide-card-wrap__header">
+          <div class="slide-card-wrap__title">
+            <i data-lucide="alert-triangle"></i> Slide 03 · El Problema
+          </div>
+          <div class="slide-card-wrap__actions">
+            <button class="btn-mini" data-export-slide="slide-3" data-format="png">PNG</button>
+            <button class="btn-mini" data-export-slide="slide-3" data-format="webp">WebP</button>
+          </div>
+        </div>
+
+        <div class="slide-viewport">
+          <div class="slide-canvas" id="slide-3">
+            <!-- Slide Top Header -->
+            <div class="slide-header">
+              <div class="slide-header__brand">
+                <img src="assets/logos/logo-simbolo-degradé.svg" alt="Symbol" class="slide-header__symbol" />
+                <span class="slide-header__tag">GLOSS & GROWTH HQ</span>
+              </div>
+              <span class="slide-header__number">03 / 06</span>
+            </div>
+
+            <!-- Slide Content Body -->
+            <div class="slide-body">
+              <div class="slide-pill" style="color: #f87171; border-color: rgba(248, 113, 113, 0.3); background: rgba(248, 113, 113, 0.1);">
+                <i data-lucide="alert-circle"></i> EL DESAFÍO HABITUAL
+              </div>
+
+              <h2 class="slide-title-md">
+                Tener redes sociales no garantiza tener pacientes nuevos.
+              </h2>
+
+              <p class="slide-subtitle" style="font-size: 22px; color: var(--color-text-muted);">
+                Puedes publicar tus tratamientos, mostrar resultados y recibir recomendaciones... pero si dependes únicamente del alcance orgánico y del voz a voz, tu crecimiento puede quedar limitado.
+              </p>
+
+              <div class="comparison-grid">
+                <!-- Presencia Orgánica -->
+                <div class="comp-card">
+                  <div class="comp-card__badge comp-card__badge--warn">
+                    <i data-lucide="x-circle"></i> PRESENCIA DIGITAL ORGÁNICA
+                  </div>
+                  <p class="comp-card__text">
+                    Publicar contenido sin un sistema de captación activa genera visibilidad, pero pocas citas confirmadas.
+                  </p>
+                </div>
+
+                <!-- Captación Activa -->
+                <div class="comp-card comp-card--highlight">
+                  <div class="comp-card__badge comp-card__badge--success">
+                    <i data-lucide="check-circle-2"></i> CAPTACIÓN ACTIVA GLOSS™
+                  </div>
+                  <p class="comp-card__text" style="font-weight: 600; color: #ffffff;">
+                    Tráfico calificado hacia conversaciones por WhatsApp y agendamiento constante de pacientes de alto valor.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Footer -->
+            <div class="slide-footer">
+              <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" class="slide-footer__logo" />
+              <div class="slide-footer__badge">
+                <span>Solución Estratégica</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SLIDE 4 — EL SISTEMA ───────────────────────────────────────── -->
+      <div class="slide-card-wrap">
+        <div class="slide-card-wrap__header">
+          <div class="slide-card-wrap__title">
+            <i data-lucide="cpu"></i> Slide 04 · El Sistema
+          </div>
+          <div class="slide-card-wrap__actions">
+            <button class="btn-mini" data-export-slide="slide-4" data-format="png">PNG</button>
+            <button class="btn-mini" data-export-slide="slide-4" data-format="webp">WebP</button>
+          </div>
+        </div>
+
+        <div class="slide-viewport">
+          <div class="slide-canvas" id="slide-4">
+            <!-- Slide Top Header -->
+            <div class="slide-header">
+              <div class="slide-header__brand">
+                <img src="assets/logos/logo-simbolo-degradé.svg" alt="Symbol" class="slide-header__symbol" />
+                <span class="slide-header__tag">GLOSS & GROWTH HQ</span>
+              </div>
+              <span class="slide-header__number">04 / 06</span>
+            </div>
+
+            <!-- Slide Content Body -->
+            <div class="slide-body">
+              <div class="slide-pill">
+                <i data-lucide="git-merge"></i> SISTEMA ESTRATÉGICO
+              </div>
+
+              <h2 class="slide-title-md">
+                No se trata simplemente de hacer publicidad.
+              </h2>
+
+              <p class="slide-subtitle" style="font-size: 22px; color: var(--color-text-muted); margin-bottom: 10px;">
+                Construimos una estrategia alrededor de tus tratamientos para:
+              </p>
+
+              <!-- 4 System Nodes -->
+              <div class="system-flow">
+                <div class="system-step">
+                  <div class="system-step__num">01</div>
+                  <div class="system-step__info">
+                    <span class="system-step__title">ATRAER</span>
+                    <span class="system-step__desc">Personas nuevas calificadas para tratamientos de alto valor.</span>
+                  </div>
+                </div>
+
+                <div class="system-step">
+                  <div class="system-step__num">02</div>
+                  <div class="system-step__info">
+                    <span class="system-step__title">CONVERTIR</span>
+                    <span class="system-step__desc">El interés inicial en conversaciones reales y citas agendadas.</span>
+                  </div>
+                </div>
+
+                <div class="system-step">
+                  <div class="system-step__num">03</div>
+                  <div class="system-step__info">
+                    <span class="system-step__title">SEGUIR</span>
+                    <span class="system-step__desc">Cada oportunidad de paciente para no perder prospectos.</span>
+                  </div>
+                </div>
+
+                <div class="system-step">
+                  <div class="system-step__num">04</div>
+                  <div class="system-step__info">
+                    <span class="system-step__title">OPTIMIZAR</span>
+                    <span class="system-step__desc">Lo que mejor funciona para escalar el volumen cada mes.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Footer -->
+            <div class="slide-footer">
+              <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" class="slide-footer__logo" />
+              <div class="slide-footer__badge">
+                <span>Ecosistema de Conversión</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SLIDE 5 — EL RESULTADO ─────────────────────────────────────── -->
+      <div class="slide-card-wrap">
+        <div class="slide-card-wrap__header">
+          <div class="slide-card-wrap__title">
+            <i data-lucide="trending-up"></i> Slide 05 · El Resultado
+          </div>
+          <div class="slide-card-wrap__actions">
+            <button class="btn-mini" data-export-slide="slide-5" data-format="png">PNG</button>
+            <button class="btn-mini" data-export-slide="slide-5" data-format="webp">WebP</button>
+          </div>
+        </div>
+
+        <div class="slide-viewport">
+          <div class="slide-canvas" id="slide-5">
+            <!-- Slide Top Header -->
+            <div class="slide-header">
+              <div class="slide-header__brand">
+                <img src="assets/logos/logo-simbolo-degradé.svg" alt="Symbol" class="slide-header__symbol" />
+                <span class="slide-header__tag">GLOSS & GROWTH HQ</span>
+              </div>
+              <span class="slide-header__number">05 / 06</span>
+            </div>
+
+            <!-- Slide Content Body -->
+            <div class="slide-body">
+              <div class="slide-pill">
+                <i data-lucide="bar-chart-2"></i> OBJETIVO PRINCIPAL
+              </div>
+
+              <!-- Main Result Callout Card -->
+              <div class="result-box">
+                <span class="slide-subtitle" style="font-size: 22px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-rosa);">
+                  EL RESULTADO ESPERADO
+                </span>
+                <span class="big-number" style="font-size: 150px; line-height: 0.85;">5–10</span>
+                <span class="big-number-label" style="font-size: 34px;">PACIENTES NUEVOS AL MES</span>
+
+                <div class="treatment-tags" style="justify-content: center; margin-top: 15px;">
+                  <div class="treatment-tag">Botox</div>
+                  <div class="treatment-tag">Ácido Hialurónico</div>
+                  <div class="treatment-tag">Armonización Facial</div>
+                </div>
+              </div>
+
+              <!-- Clarity Statements -->
+              <div class="statements-list">
+                <div class="statement-item">
+                  <span class="statement-icon">❌</span>
+                  <span>No queremos vender seguidores.</span>
+                </div>
+                <div class="statement-item">
+                  <span class="statement-icon">❌</span>
+                  <span>No queremos vender likes.</span>
+                </div>
+                <div class="statement-item statement-item--yes">
+                  <span class="statement-icon">✅</span>
+                  <span>Queremos ayudarte a generar nuevas oportunidades de pacientes.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Footer -->
+            <div class="slide-footer">
+              <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" class="slide-footer__logo" />
+              <div class="slide-footer__badge">
+                <span>Resultados de Alto Valor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SLIDE 6 — CTA ──────────────────────────────────────────────── -->
+      <div class="slide-card-wrap">
+        <div class="slide-card-wrap__header">
+          <div class="slide-card-wrap__title">
+            <i data-lucide="send"></i> Slide 06 · Llamado a la Acción
+          </div>
+          <div class="slide-card-wrap__actions">
+            <button class="btn-mini" data-export-slide="slide-6" data-format="png">PNG</button>
+            <button class="btn-mini" data-export-slide="slide-6" data-format="webp">WebP</button>
+          </div>
+        </div>
+
+        <div class="slide-viewport">
+          <div class="slide-canvas" id="slide-6">
+            <!-- Slide Top Header -->
+            <div class="slide-header">
+              <div class="slide-header__brand">
+                <img src="assets/logos/logo-simbolo-degradé.svg" alt="Symbol" class="slide-header__symbol" />
+                <span class="slide-header__tag">GLOSS & GROWTH HQ</span>
+              </div>
+              <span class="slide-header__number">06 / 06</span>
+            </div>
+
+            <!-- Slide Content Body -->
+            <div class="slide-body">
+              <div class="slide-pill">
+                <i data-lucide="message-circle"></i> SIGUIENTE PASO
+              </div>
+
+              <h2 class="slide-title-lg" style="text-align: center;">
+                ¿Quieres saber cómo podríamos ayudarte?
+              </h2>
+
+              <p class="slide-subtitle" style="text-align: center; font-size: 24px; max-width: 800px; margin: 0 auto; color: var(--color-text-main);">
+                Escríbenos por WhatsApp. Cuéntanos qué tratamientos quieres potenciar y revisamos tu situación.
+              </p>
+
+              <!-- CTA Card -->
+              <div class="cta-card">
+                <button class="btn-cta-big">
+                  <i data-lucide="message-square"></i> HABLEMOS
+                </button>
+                <span style="font-size: 18px; color: var(--color-text-muted);">
+                  Agenda una videollamada de valoración estratégica
+                </span>
+              </div>
+
+              <!-- Contact Badges -->
+              <div class="contact-badges">
+                <div class="contact-badge">
+                  <i data-lucide="phone"></i> +57 314 5904933
+                </div>
+                <div class="contact-badge">
+                  <i data-lucide="instagram"></i> @glossgrowthhq
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide Footer -->
+            <div class="slide-footer">
+              <img src="assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" class="slide-footer__logo" />
+              <div class="slide-footer__badge">
+                Powered by <span>VIMO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Studio Script -->
+  <script src="./carrusel.js"></script>
+
+</body>
+</html>
