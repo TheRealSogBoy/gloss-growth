@@ -22,38 +22,748 @@
   <!-- Fonts: Cormorant Garamond + Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <!-- External Stylesheet with cache bust -->
+  <link rel="stylesheet" href="../styles.css?v=3.2" />
+  <link rel="stylesheet" href="/styles.css?v=3.2" />
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="../styles.css?v=2.1" />
+  <!-- Self-contained Critical Legal Styles (guarantees perfect rendering on all mobile & desktop devices) -->
+  <style>
+    :root {
+      --color-borgona: #8c2536;
+      --color-borgona-dark: #6b1a28;
+      --color-borgona-light: #a83248;
+      --color-rosa: #fda4af;
+      --color-rosa-light: #ffe4e8;
+      --color-dark: #352925;
+      --color-dark-soft: #4a3830;
+      --color-cream: #f2ecc2;
+      --color-cream-soft: #faf7ed;
+      --gradient-brand: linear-gradient(135deg, #8c2536 0%, #ad4a59 43%, #fda4af 100%);
+      --gradient-brand-h: linear-gradient(90deg, #8c2536 0%, #ad4a59 43%, #fda4af 100%);
+      --gradient-dark: linear-gradient(135deg, #100a09 0%, #1f1210 50%, #2a1413 100%);
+      --color-white: #ffffff;
+      --color-bg: #fafaf9;
+      --color-bg-warm: #fbf7f4;
+      --color-border: rgba(140, 37, 54, 0.12);
+      --color-muted: #8a7570;
+      --color-text: #1a0f0d;
+      --color-text-soft: #42332e;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --container-max: 1240px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body.legal-page {
+      font-family: var(--font-body);
+      background-color: var(--color-bg-warm);
+      color: var(--color-text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* ── STICKY NAVBAR ─────────────────────────────────────────────── */
+    .legal-navbar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 500;
+      background: rgba(16, 10, 9, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.85rem 1.25rem;
+      transition: background 0.3s ease;
+    }
+
+    .legal-navbar__inner {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .legal-navbar__logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .legal-navbar__logo img {
+      height: 34px;
+      width: auto;
+      max-width: 170px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .legal-navbar__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.95rem;
+      border-radius: 9999px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .legal-navbar__btn:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.35);
+      color: var(--color-rosa);
+    }
+
+    .legal-navbar__btn svg {
+      width: 15px;
+      height: 15px;
+      stroke-width: 2;
+    }
+
+    /* ── HERO ──────────────────────────────────────────────────────── */
+    .legal-hero {
+      position: relative;
+      background: var(--gradient-dark);
+      color: #ffffff;
+      padding: 2.5rem 1.25rem 3.5rem 1.25rem;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .legal-hero__bg-orb {
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(circle, rgba(140, 37, 54, 0.35) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+      filter: blur(40px);
+    }
+
+    .legal-hero__inner {
+      position: relative;
+      z-index: 2;
+      max-width: var(--container-max);
+      margin: 0 auto;
+    }
+
+    .legal-hero__breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 1rem;
+    }
+
+    .legal-hero__breadcrumb a {
+      color: var(--color-rosa);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .legal-hero__breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .legal-hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.3rem 0.8rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-rosa-light);
+      margin-bottom: 1rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .legal-hero__badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-rosa);
+      box-shadow: 0 0 8px var(--color-rosa);
+    }
+
+    .legal-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5.5vw, 3.8rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 0.85rem;
+    }
+
+    .legal-hero__title-accent {
+      font-style: italic;
+      font-weight: 300;
+      background: var(--gradient-brand-h);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .legal-hero__meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem;
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 1.75rem;
+    }
+
+    .legal-hero__meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .legal-hero__meta-item svg {
+      width: 16px;
+      height: 16px;
+      color: var(--color-rosa);
+    }
+
+    .legal-hero__intro {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      max-width: 900px;
+      backdrop-filter: blur(12px);
+    }
+
+    .legal-hero__intro p {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .legal-hero__intro p + p {
+      margin-top: 0.75rem;
+    }
+
+    /* ── MAIN CONTENT LAYOUT ───────────────────────────────────────── */
+    .legal-section {
+      background: var(--color-bg-warm);
+      padding: 3rem 1.25rem 5rem 1.25rem;
+    }
+
+    .legal-layout {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    /* ── STICKY SIDEBAR (DESKTOP) ─────────────────────────────────── */
+    .legal-sidebar {
+      position: sticky;
+      top: 85px;
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: 1.25rem;
+      box-shadow: 0 2px 12px rgba(53, 41, 37, 0.04);
+      max-height: calc(100vh - 110px);
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-border) transparent;
+    }
+
+    .legal-sidebar__header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-borgona);
+      padding-bottom: 0.75rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .legal-sidebar__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .legal-sidebar__link {
+      display: flex;
+      align-items: baseline;
+      gap: 0.45rem;
+      padding: 0.45rem 0.55rem;
+      font-size: 0.8rem;
+      color: var(--color-text-soft);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.15s ease;
+      line-height: 1.35;
+    }
+
+    .legal-sidebar__num {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--color-muted);
+      flex-shrink: 0;
+    }
+
+    .legal-sidebar__link:hover {
+      background: var(--color-cream-soft);
+      color: var(--color-borgona);
+    }
+
+    .legal-sidebar__link.active {
+      background: var(--color-rosa-light);
+      color: var(--color-borgona-dark);
+      font-weight: 600;
+    }
+
+    .legal-sidebar__link.active .legal-sidebar__num {
+      color: var(--color-borgona);
+    }
+
+    /* ── MOBILE ACCORDION TOC ──────────────────────────────────────── */
+    .legal-toc-mobile {
+      display: none;
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: 14px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 2px 8px rgba(53, 41, 37, 0.04);
+    }
+
+    .legal-toc-mobile summary {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-borgona);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+      list-style: none;
+    }
+
+    .legal-toc-mobile summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .legal-toc-mobile__title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .legal-toc-mobile__badge {
+      font-size: 0.7rem;
+      font-weight: 500;
+      background: var(--color-rosa-light);
+      color: var(--color-borgona);
+      padding: 0.2rem 0.5rem;
+      border-radius: 9999px;
+    }
+
+    .legal-toc-mobile .legal-sidebar__list {
+      margin-top: 1rem;
+      max-height: 280px;
+      overflow-y: auto;
+      border-top: 1px solid var(--color-border);
+      padding-top: 0.75rem;
+    }
+
+    /* ── LEGAL CONTENT ARTICLE ─────────────────────────────────────── */
+    .legal-content {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      padding: clamp(1.5rem, 4vw, 3.25rem);
+      box-shadow: 0 4px 20px rgba(53, 41, 37, 0.04);
+      max-width: 860px;
+    }
+
+    .legal-block {
+      padding-bottom: 2.25rem;
+      margin-bottom: 2.25rem;
+      border-bottom: 1px solid rgba(140, 37, 54, 0.09);
+      scroll-margin-top: 95px;
+    }
+
+    .legal-block:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    .legal-block__header {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-bottom: 1rem;
+    }
+
+    .legal-block__number {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-borgona);
+      background: var(--color-rosa-light);
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .legal-block__title {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+      font-weight: 600;
+      color: var(--color-dark);
+      line-height: 1.2;
+    }
+
+    .legal-block__body {
+      color: var(--color-text-soft);
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    .legal-block__body p {
+      margin-bottom: 1rem;
+    }
+
+    .legal-block__body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-list {
+      list-style: none;
+      margin: 0 0 1rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .legal-list li {
+      position: relative;
+      padding-left: 1.35rem;
+      line-height: 1.55;
+      color: var(--color-text-soft);
+    }
+
+    .legal-list li::before {
+      content: "";
+      position: absolute;
+      left: 0.2rem;
+      top: 0.55em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-borgona);
+      opacity: 0.8;
+    }
+
+    .legal-callout {
+      background: var(--color-cream-soft);
+      border-left: 3px solid var(--color-borgona);
+      border-radius: 0 10px 10px 0;
+      padding: 0.9rem 1.15rem;
+      margin: 1.15rem 0;
+      font-size: 0.9rem;
+      color: var(--color-dark-soft);
+      line-height: 1.6;
+    }
+
+    .legal-callout--info {
+      background: #fdf2f4;
+      border-left-color: var(--color-borgona);
+    }
+
+    .legal-contact-card {
+      background: var(--color-bg-warm);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1rem;
+    }
+
+    .legal-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--color-dark);
+      font-size: 0.9rem;
+    }
+
+    .legal-contact-item svg {
+      color: var(--color-borgona);
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    .legal-contact-item a {
+      color: var(--color-borgona);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ── FOOTER ────────────────────────────────────────────────────── */
+    .legal-footer {
+      background: #100a09;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 3.5rem 1.25rem 2rem 1.25rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .legal-footer__inner {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1.5fr;
+      gap: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .legal-footer__brand a {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+    }
+
+    .legal-footer__brand img {
+      height: 32px;
+      width: auto;
+    }
+
+    .legal-footer__tagline {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .legal-footer__title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .legal-footer__links ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .legal-footer__links a {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s ease;
+    }
+
+    .legal-footer__links a:hover {
+      color: var(--color-rosa);
+    }
+
+    .legal-footer__social {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .legal-footer__social a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s ease;
+    }
+
+    .legal-footer__social a:hover {
+      color: var(--color-rosa);
+    }
+
+    .legal-footer__social svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .legal-footer__bottom {
+      max-width: var(--container-max);
+      margin: 1.75rem auto 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .legal-footer__vimo {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .legal-footer__vimo img {
+      height: 15px;
+      width: auto;
+    }
+
+    .legal-footer__legal-links {
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    .legal-footer__legal-links a {
+      color: rgba(255, 255, 255, 0.4);
+      text-decoration: none;
+    }
+
+    .legal-footer__legal-links a:hover {
+      color: var(--color-rosa);
+    }
+
+    /* ── RESPONSIVE BREAKPOINTS ────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .legal-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .legal-sidebar {
+        display: none;
+      }
+      .legal-toc-mobile {
+        display: block;
+      }
+      .legal-footer__inner {
+        grid-template-columns: 1fr 1fr;
+      }
+      .legal-footer__brand {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .legal-navbar {
+        padding: 0.7rem 1rem;
+      }
+      .legal-navbar__logo img {
+        height: 28px;
+        max-width: 135px;
+      }
+      .legal-navbar__btn {
+        padding: 0.35rem 0.75rem;
+        font-size: 0.76rem;
+      }
+      .legal-hero {
+        padding: 1.75rem 1rem 2.5rem 1rem;
+      }
+      .legal-section {
+        padding: 1.75rem 0.85rem 3.5rem 0.85rem;
+      }
+      .legal-content {
+        padding: 1.35rem 1rem;
+        border-radius: 14px;
+      }
+      .legal-block__number {
+        font-size: 1.05rem;
+        width: 30px;
+        height: 30px;
+      }
+      .legal-block__title {
+        font-size: 1.25rem;
+      }
+      .legal-contact-card {
+        grid-template-columns: 1fr;
+      }
+      .legal-footer__inner {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+      .legal-footer__brand {
+        grid-column: span 1;
+      }
+      .legal-footer__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
 <body class="legal-page">
 
   <!-- ═══════════════════════════════════════ NAVBAR ═══════ -->
-  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
-    <div class="navbar__inner">
-      <a href="../" class="navbar__logo" aria-label="Gloss Growth - Inicio">
-        <img src="../assets/logos/logo-horizontal-degradé.svg" alt="Gloss Growth" width="180" height="auto" class="navbar__logo--dark" />
-        <img src="../assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" width="180" height="auto" class="navbar__logo--light" />
+  <header class="legal-navbar">
+    <div class="legal-navbar__inner">
+      <a href="../" class="legal-navbar__logo" aria-label="Gloss Growth - Inicio">
+        <img src="../assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" />
       </a>
-      <div style="display: flex; align-items: center; gap: 0.75rem;">
-        <a href="../" class="btn btn--ghost btn--sm" aria-label="Volver al inicio" style="color: var(--color-white); border-color: rgba(255,255,255,0.2);">
-          <i data-lucide="arrow-left" aria-hidden="true"></i>
-          <span>Volver al inicio</span>
-        </a>
-      </div>
+      <a href="../" class="legal-navbar__btn" aria-label="Volver al inicio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span>Volver al inicio</span>
+      </a>
     </div>
-  </nav>
+  </header>
 
   <!-- ═══════════════════════════════════════ HERO ══════════ -->
-  <header class="legal-hero" id="inicio">
-    <div class="legal-hero__bg" aria-hidden="true"></div>
+  <section class="legal-hero" id="inicio">
+    <div class="legal-hero__bg-orb" aria-hidden="true"></div>
     <div class="legal-hero__inner">
       <nav class="legal-hero__breadcrumb" aria-label="Migas de pan">
-        <a href="../"><i data-lucide="home" style="width: 14px; height: 14px;"></i> Inicio</a>
+        <a href="../">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width: 13px; height: 13px; stroke-width: 2;"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Inicio
+        </a>
         <span>/</span>
         <span style="color: rgba(255,255,255,0.9);">Política de Privacidad</span>
       </nav>
@@ -69,11 +779,11 @@
 
       <div class="legal-hero__meta">
         <div class="legal-hero__meta-item">
-          <i data-lucide="calendar" aria-hidden="true"></i>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="stroke-width: 2;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
           <span>Última actualización: <strong>25 de septiembre de 2026</strong></span>
         </div>
         <div class="legal-hero__meta-item">
-          <i data-lucide="shield-check" aria-hidden="true"></i>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="stroke-width: 2;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
           <span>Protección de Datos & Confidencialidad</span>
         </div>
       </div>
@@ -87,7 +797,7 @@
         </p>
       </div>
     </div>
-  </header>
+  </section>
 
   <!-- ═══════════════════════════════════════ MAIN CONTENT ══════════ -->
   <main class="legal-section">
@@ -96,7 +806,7 @@
       <!-- Sticky Sidebar Index (Desktop) -->
       <aside class="legal-sidebar" aria-label="Índice de la Política de Privacidad">
         <div class="legal-sidebar__header">
-          <i data-lucide="list" style="width: 16px; height: 16px;"></i>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width: 15px; height: 15px; stroke-width: 2;"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
           <span>Índice de Contenido</span>
         </div>
         <ul class="legal-sidebar__list" role="list">
@@ -125,11 +835,11 @@
         <!-- Mobile TOC Accordion -->
         <details class="legal-toc-mobile">
           <summary>
-            <span style="display: flex; align-items: center; gap: 0.5rem;">
-              <i data-lucide="list" style="width: 16px; height: 16px;"></i>
-              <span>Ver índice de secciones (1 a 16)</span>
+            <span class="legal-toc-mobile__title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width: 16px; height: 16px; stroke-width: 2;"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+              <span>Índice de secciones (1 a 16)</span>
             </span>
-            <i data-lucide="chevron-down" style="width: 16px; height: 16px;"></i>
+            <span class="legal-toc-mobile__badge">Tocar para ver</span>
           </summary>
           <ul class="legal-sidebar__list" role="list">
             <li><a href="#sec-1" class="legal-sidebar__link"><span class="legal-sidebar__num">01.</span> Información que podemos recopilar</a></li>
@@ -496,14 +1206,14 @@
             </p>
             <div class="legal-contact-card">
               <div class="legal-contact-item">
-                <i data-lucide="mail" aria-hidden="true"></i>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="stroke-width: 2;"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
                 <div>
                   <span style="display: block; font-size: 0.75rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.05em;">Correo Electrónico Oficial</span>
                   <a href="mailto:glossgrowthhq@gmail.com">glossgrowthhq@gmail.com</a>
                 </div>
               </div>
               <div class="legal-contact-item">
-                <i data-lucide="message-circle" aria-hidden="true"></i>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="stroke-width: 2;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 <div>
                   <span style="display: block; font-size: 0.75rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.05em;">Canal de WhatsApp</span>
                   <a href="https://wa.me/573145904933" target="_blank" rel="noopener noreferrer">+57 314 590 4933</a>
@@ -519,80 +1229,61 @@
   </main>
 
   <!-- ═══════════════════════════════════════ FOOTER ═════════════════ -->
-  <footer class="footer" role="contentinfo" aria-label="Pie de página">
-    <div class="footer__inner">
-      <div class="footer__brand">
+  <footer class="legal-footer" role="contentinfo" aria-label="Pie de página">
+    <div class="legal-footer__inner">
+      <div class="legal-footer__brand">
         <a href="../" aria-label="Gloss Growth - Volver al inicio">
-          <img src="../assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" width="160" height="auto" class="footer__logo" />
+          <img src="../assets/logos/logo-horizontal-invertido-degradé.svg" alt="Gloss Growth" />
         </a>
-        <p class="footer__tagline">Brillo para tu marca. Crecimiento para tu negocio.</p>
+        <p class="legal-footer__tagline">Brillo para tu marca. Crecimiento para tu negocio.</p>
       </div>
 
-      <div class="footer__links">
-        <nav aria-label="Navegación del footer">
-          <ul role="list">
-            <li><a href="../#sistema">El Sistema</a></li>
-            <li><a href="../#resultados">Resultados</a></li>
-            <li><a href="../#proceso">Proceso</a></li>
-            <li><a href="../#faq">FAQ</a></li>
-          </ul>
-        </nav>
+      <div class="legal-footer__links">
+        <h4 class="legal-footer__title">Navegación</h4>
+        <ul role="list">
+          <li><a href="../#sistema">El Sistema</a></li>
+          <li><a href="../#resultados">Resultados</a></li>
+          <li><a href="../#proceso">Proceso</a></li>
+          <li><a href="../#faq">FAQ</a></li>
+        </ul>
       </div>
 
-      <div class="footer__contact">
-        <h3 class="footer__contact-title">Conecta con nosotros</h3>
-        <div class="footer__social">
-          <a href="https://wa.me/573145904933" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Gloss Growth">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <div class="legal-footer__contact">
+        <h4 class="legal-footer__title">Contacto</h4>
+        <div class="legal-footer__social">
+          <a href="https://wa.me/573145904933" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Gloss Growth">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             WhatsApp
           </a>
-          <a href="https://instagram.com/glossgrowth" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Gloss Growth">
-            <i data-lucide="instagram" aria-hidden="true"></i>
+          <a href="https://instagram.com/glossgrowth" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Gloss Growth">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="stroke-width: 2;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             Instagram
           </a>
-          <a href="mailto:glossgrowthhq@gmail.com" class="footer__social-link" aria-label="Email de Gloss Growth">
-            <i data-lucide="mail" aria-hidden="true"></i>
+          <a href="mailto:glossgrowthhq@gmail.com" aria-label="Email de Gloss Growth">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="stroke-width: 2;"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
             glossgrowthhq@gmail.com
           </a>
         </div>
       </div>
     </div>
 
-    <div class="footer__bottom">
-      <p class="footer__copyright">&copy; 2026 Gloss Growth. Todos los derechos reservados.</p>
-      <div class="footer__vimo" aria-label="Powered by VIMO">
+    <div class="legal-footer__bottom">
+      <p>&copy; 2026 Gloss Growth. Todos los derechos reservados.</p>
+      <div class="legal-footer__vimo" aria-label="Powered by VIMO">
         <span>Powered by</span>
-        <img src="../assets/logos/vimo-agencia-ia-logo-light.webp" alt="VIMO Agencia IA" width="75" height="auto" class="footer__vimo-logo" />
+        <img src="../assets/logos/vimo-agencia-ia-logo-light.webp" alt="VIMO Agencia IA" />
       </div>
-      <div class="footer__legal">
+      <div class="legal-footer__legal-links">
         <a href="#inicio" aria-label="Política de privacidad">Política de privacidad</a>
-        <a href="/terminos-del-servicio" aria-label="Términos del Servicio">Términos del Servicio</a>
+        <a href="../terminos-del-servicio" aria-label="Términos del Servicio">Términos del Servicio</a>
       </div>
     </div>
   </footer>
 
-  <!-- Script for icons, active navigation and navbar behavior -->
+  <!-- Script for active navigation and smooth scroll -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // 1. Init Lucide Icons
-      if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
-      }
-
-      // 2. Navbar Scroll Behavior
-      var navbar = document.getElementById('navbar');
-      function updateNavbar() {
-        if (!navbar) return;
-        if (window.scrollY > 50) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      }
-      window.addEventListener('scroll', updateNavbar, { passive: true });
-      updateNavbar();
-
-      // 3. Highlight Active Link in Sidebar on Scroll
+      // 1. Highlight Active Link in Sidebar on Scroll
       var sections = document.querySelectorAll('.legal-block');
       var navLinks = document.querySelectorAll('.legal-sidebar__link');
 
@@ -610,14 +1301,14 @@
           }
         });
       }, {
-        rootMargin: '-20% 0px -65% 0px'
+        rootMargin: '-15% 0px -70% 0px'
       });
 
       sections.forEach(function(sec) {
         observer.observe(sec);
       });
 
-      // 4. Smooth scroll on click
+      // 2. Smooth scroll on click
       navLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
           var targetId = this.getAttribute('href');
@@ -626,7 +1317,6 @@
             if (targetElem) {
               e.preventDefault();
               targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              // Close mobile TOC details if open
               var mobileToc = document.querySelector('.legal-toc-mobile');
               if (mobileToc && mobileToc.hasAttribute('open')) {
                 mobileToc.removeAttribute('open');
