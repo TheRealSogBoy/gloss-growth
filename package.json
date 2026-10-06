@@ -1,0 +1,11 @@
+{
+  "name": "gloss-growth-v2-source",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Codigo fuente y herramientas de construccion de Gloss Growth Web V2",
+  "scripts": {
+    "build": "node gloss-flat-assets-v2/build.mjs",
+    "check": "node --check gloss-flat-assets-v2/server.js && node --check gloss-flat-assets-v2/build.mjs && node --check gloss-flat-assets-v2/form.js && node --check gloss-flat-assets-v2/editorial.js && node --check gloss-flat-assets-v2/navigation.js && node --check gloss-flat-assets-v2/motion.js",
+    "start": "node gloss-flat-assets-v2/server.js"
+  }
+}

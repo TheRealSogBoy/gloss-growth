@@ -1,0 +1,318 @@
+{
+  "comparacion-qa": {
+    "comparison": [
+      {
+        "width": 390,
+        "top": 187.734375
+      },
+      {
+        "width": 390,
+        "top": 187.546875
+      }
+    ],
+    "images": [
+      {
+        "width": 1440,
+        "broken": [],
+        "emptyViewer": null
+      },
+      {
+        "width": 390,
+        "broken": [],
+        "emptyViewer": null
+      }
+    ],
+    "errors": []
+  },
+  "evidencias": [
+    {
+      "width": 1440,
+      "viewersPassed": 9,
+      "frames": [
+        {
+          "url": "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fzenspa.wc%2Fposts%2Fpfbid02dFtTKiYXwhqTiRYPvRZdeYHweh7MG5WHwmP9Yxz5uUmTVvYq2waQ3pXZEbqCsbmVl&show_text=true&width=500",
+          "text": "Zen Spa Bienestar Roldanillo\nhace aproximadamente 8 meses\n\n¡Súper recomendados! ✨ La verda"
+        },
+        {
+          "url": "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonicaskincareinc%2Fposts%2Fpfbid0KqhKHVnVo8bh1vDd1FLSnsw4emKpZcL5iGPc5cXLRXboehteVQTABDQgCQwpfdtel&show_text=true&width=500",
+          "text": "Monica Skin Care Inc\nhace aproximadamente 3 meses\n\nExcelente trabajo el de David, de verda"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "viewersPassed": 9,
+      "frames": [
+        {
+          "url": "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fzenspa.wc%2Fposts%2Fpfbid02dFtTKiYXwhqTiRYPvRZdeYHweh7MG5WHwmP9Yxz5uUmTVvYq2waQ3pXZEbqCsbmVl&show_text=true&width=500",
+          "text": "Zen Spa Bienestar Roldanillo\nhace aproximadamente 8 meses\n\n¡Súper recomendados! ✨ La verda"
+        },
+        {
+          "url": "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmonicaskincareinc%2Fposts%2Fpfbid0KqhKHVnVo8bh1vDd1FLSnsw4emKpZcL5iGPc5cXLRXboehteVQTABDQgCQwpfdtel&show_text=true&width=500",
+          "text": "Monica Skin Care Inc\nhace aproximadamente 3 meses\n\nExcelente trabajo el de David, de verda"
+        }
+      ]
+    }
+  ],
+  "navegacion": {
+    "faqPassed": 15,
+    "anchor": {
+      "hash": "#resultados",
+      "top": 188.234375
+    },
+    "first": "wa-modal__close",
+    "wrapLast": "waSubmitBtn",
+    "wrapFirst": "wa-modal__close",
+    "privacyUrl": "http://127.0.0.1:8765/gloss-flat-assets-v2/politica-de-privacidad/",
+    "privacyAnchor": "#sec-16",
+    "back": "http://127.0.0.1:8765/gloss-flat-assets-v2/",
+    "carousel": {
+      "slides": 6,
+      "broken": []
+    }
+  },
+  "navegador": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "broken": [
+        ""
+      ],
+      "fonts": [
+        {
+          "family": "Zodiak",
+          "status": "loaded"
+        },
+        {
+          "family": "Zodiak",
+          "status": "loaded"
+        },
+        {
+          "family": "Plus Jakarta Sans",
+          "status": "loaded"
+        }
+      ],
+      "headings": [],
+      "faq": true,
+      "monthly": "$10.000.000",
+      "annual": "$120.000.000",
+      "invalid": 5,
+      "wa": {
+        "url": "https://wa.me/573145904933?text=%C2%A1Hola%20Gloss%20Growth!%20%F0%9F%91%8B%20Quiero%20saber%20m%C3%A1s%20sobre%20el%20Sistema%20GLOSS%E2%84%A2.%0A%0A%F0%9F%93%8B%20*Mi%20informaci%C3%B3n%3A*%0A%F0%9F%91%A4%20Nombre%3A%20Prueba%20QA%0A%F0%9F%8F%A5%20Cl%C3%ADnica%2FNegocio%3A%20Cl%C3%ADnica%20de%20prueba%0A%F0%9F%91%A5%20Equipo%3A%202%20a%205%20personas%0A%F0%9F%93%8D%20Ubicaci%C3%B3n%3A%20Bogot%C3%A1%2C%20Colombia%0A%E2%9C%A8%20Servicio%20a%20potenciar%3A%20Botox%20%F0%9F%92%89%0A%0A%C2%BFPodemos%20agendar%20una%20videollamada%20estrat%C3%A9gica%3F%20%F0%9F%9A%80",
+        "closed": "true",
+        "focus": "navbarCta"
+      },
+      "escapeClosed": "true",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "broken": [
+        ""
+      ],
+      "fonts": [
+        {
+          "family": "Zodiak",
+          "status": "loaded"
+        },
+        {
+          "family": "Zodiak",
+          "status": "loaded"
+        },
+        {
+          "family": "Plus Jakarta Sans",
+          "status": "loaded"
+        }
+      ],
+      "headings": [],
+      "faq": true,
+      "monthly": "$10.000.000",
+      "annual": "$120.000.000",
+      "invalid": 5,
+      "wa": {
+        "url": "https://wa.me/573145904933?text=%C2%A1Hola%20Gloss%20Growth!%20%F0%9F%91%8B%20Quiero%20saber%20m%C3%A1s%20sobre%20el%20Sistema%20GLOSS%E2%84%A2.%0A%0A%F0%9F%93%8B%20*Mi%20informaci%C3%B3n%3A*%0A%F0%9F%91%A4%20Nombre%3A%20Prueba%20QA%0A%F0%9F%8F%A5%20Cl%C3%ADnica%2FNegocio%3A%20Cl%C3%ADnica%20de%20prueba%0A%F0%9F%91%A5%20Equipo%3A%202%20a%205%20personas%0A%F0%9F%93%8D%20Ubicaci%C3%B3n%3A%20Bogot%C3%A1%2C%20Colombia%0A%E2%9C%A8%20Servicio%20a%20potenciar%3A%20Botox%20%F0%9F%92%89%0A%0A%C2%BFPodemos%20agendar%20una%20videollamada%20estrat%C3%A9gica%3F%20%F0%9F%9A%80",
+        "closed": "true",
+        "focus": "navbarCta"
+      },
+      "escapeClosed": "true",
+      "errors": []
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "broken": [
+        ""
+      ],
+      "fonts": [
+        {
+          "family": "Zodiak",
+          "status": "loaded"
+        },
+        {
+          "family": "Zodiak",
+          "status": "loaded"
+        },
+        {
+          "family": "Plus Jakarta Sans",
+          "status": "loaded"
+        }
+      ],
+      "headings": [],
+      "faq": true,
+      "monthly": "$10.000.000",
+      "annual": "$120.000.000",
+      "invalid": 5,
+      "wa": {
+        "url": "https://wa.me/573145904933?text=%C2%A1Hola%20Gloss%20Growth!%20%F0%9F%91%8B%20Quiero%20saber%20m%C3%A1s%20sobre%20el%20Sistema%20GLOSS%E2%84%A2.%0A%0A%F0%9F%93%8B%20*Mi%20informaci%C3%B3n%3A*%0A%F0%9F%91%A4%20Nombre%3A%20Prueba%20QA%0A%F0%9F%8F%A5%20Cl%C3%ADnica%2FNegocio%3A%20Cl%C3%ADnica%20de%20prueba%0A%F0%9F%91%A5%20Equipo%3A%202%20a%205%20personas%0A%F0%9F%93%8D%20Ubicaci%C3%B3n%3A%20Bogot%C3%A1%2C%20Colombia%0A%E2%9C%A8%20Servicio%20a%20potenciar%3A%20Botox%20%F0%9F%92%89%0A%0A%C2%BFPodemos%20agendar%20una%20videollamada%20estrat%C3%A9gica%3F%20%F0%9F%9A%80",
+        "closed": "true",
+        "focus": "navbarCta"
+      },
+      "escapeClosed": "true",
+      "errors": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "broken": [
+        ""
+      ],
+      "fonts": [
+        {
+          "family": "Zodiak",
+          "status": "loaded"
+        },
+        {
+          "family": "Zodiak",
+          "status": "loaded"
+        },
+        {
+          "family": "Plus Jakarta Sans",
+          "status": "loaded"
+        }
+      ],
+      "headings": [],
+      "faq": true,
+      "monthly": "$10.000.000",
+      "annual": "$120.000.000",
+      "invalid": 5,
+      "wa": {
+        "url": "https://wa.me/573145904933?text=%C2%A1Hola%20Gloss%20Growth!%20%F0%9F%91%8B%20Quiero%20saber%20m%C3%A1s%20sobre%20el%20Sistema%20GLOSS%E2%84%A2.%0A%0A%F0%9F%93%8B%20*Mi%20informaci%C3%B3n%3A*%0A%F0%9F%91%A4%20Nombre%3A%20Prueba%20QA%0A%F0%9F%8F%A5%20Cl%C3%ADnica%2FNegocio%3A%20Cl%C3%ADnica%20de%20prueba%0A%F0%9F%91%A5%20Equipo%3A%202%20a%205%20personas%0A%F0%9F%93%8D%20Ubicaci%C3%B3n%3A%20Bogot%C3%A1%2C%20Colombia%0A%E2%9C%A8%20Servicio%20a%20potenciar%3A%20Botox%20%F0%9F%92%89%0A%0A%C2%BFPodemos%20agendar%20una%20videollamada%20estrat%C3%A9gica%3F%20%F0%9F%9A%80",
+        "closed": "true",
+        "focus": "navbarCta"
+      },
+      "escapeClosed": "true",
+      "errors": []
+    },
+    {
+      "route": "politica-de-privacidad/",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "title": "Política de Privacidad | Gloss & Growth HQ",
+      "blocks": 16,
+      "errors": []
+    },
+    {
+      "route": "politica-de-privacidad/",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "title": "Política de Privacidad | Gloss & Growth HQ",
+      "blocks": 16,
+      "errors": []
+    },
+    {
+      "route": "terminos-del-servicio/",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "title": "Términos del Servicio | Gloss & Growth HQ",
+      "blocks": 24,
+      "errors": []
+    },
+    {
+      "route": "terminos-del-servicio/",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "title": "Términos del Servicio | Gloss & Growth HQ",
+      "blocks": 24,
+      "errors": []
+    },
+    {
+      "route": "politica-de-privacidad.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "title": "Política de Privacidad | Gloss & Growth HQ",
+      "blocks": 16,
+      "errors": []
+    },
+    {
+      "route": "politica-de-privacidad.html",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "title": "Política de Privacidad | Gloss & Growth HQ",
+      "blocks": 16,
+      "errors": []
+    },
+    {
+      "route": "terminos-del-servicio.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "title": "Términos del Servicio | Gloss & Growth HQ",
+      "blocks": 24,
+      "errors": []
+    },
+    {
+      "route": "terminos-del-servicio.html",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "title": "Términos del Servicio | Gloss & Growth HQ",
+      "blocks": 24,
+      "errors": []
+    }
+  ],
+  "preservacion": {
+    "protectedFiles": 66,
+    "changedProtectedFiles": [],
+    "pages": [
+      {
+        "page": "index.html",
+        "controlsMatch": true,
+        "textMatch": true
+      },
+      {
+        "page": "politica-de-privacidad.html",
+        "controlsMatch": true,
+        "textMatch": true
+      },
+      {
+        "page": "terminos-del-servicio.html",
+        "controlsMatch": true,
+        "textMatch": true
+      },
+      {
+        "page": "carrusel\\index.html",
+        "controlsMatch": true,
+        "textMatch": true
+      },
+      {
+        "page": "politica-de-privacidad\\index.html",
+        "controlsMatch": true,
+        "textMatch": true
+      },
+      {
+        "page": "terminos-del-servicio\\index.html",
+        "controlsMatch": true,
+        "textMatch": true
+      }
+    ],
+    "brokenReferences": [],
+    "outsideReferences": []
+  }
+}

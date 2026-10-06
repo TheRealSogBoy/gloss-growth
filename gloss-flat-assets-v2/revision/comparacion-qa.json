@@ -1,0 +1,25 @@
+{
+  "comparison": [
+    {
+      "width": 390,
+      "top": 187.734375
+    },
+    {
+      "width": 390,
+      "top": 187.546875
+    }
+  ],
+  "images": [
+    {
+      "width": 1440,
+      "broken": [],
+      "emptyViewer": null
+    },
+    {
+      "width": 390,
+      "broken": [],
+      "emptyViewer": null
+    }
+  ],
+  "errors": []
+}

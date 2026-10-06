@@ -6,3 +6,8 @@ node_modules/
 Thumbs.db
 .DS_Store
 
+# Build output and manifests
+dist/
+**/dist/
+BUILD_MANIFEST.json
+**/BUILD_MANIFEST.json

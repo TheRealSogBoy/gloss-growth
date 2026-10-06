@@ -1,0 +1,154 @@
+[
+  {
+    "name": "sweep",
+    "source": "C:\\Users\\santi\\OneDrive\\Escritorio\\GLOSS & GROWTH\\Diseño Gráfico\\FLAT_SYSTEM\\04_BRAND_SHAPES\\GG_SHAPE_FLAT_01_GROWTH_SWEEP.png",
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      33,
+      21,
+      1221,
+      921
+    ],
+    "webSize": [
+      480,
+      364
+    ],
+    "bytes": 29358
+  },
+  {
+    "name": "curve",
+    "source": "C:\\Users\\santi\\OneDrive\\Escritorio\\GLOSS & GROWTH\\Diseño Gráfico\\FLAT_SYSTEM\\04_BRAND_SHAPES\\GG_SHAPE_FLAT_02_GROWTH_CURVE.png",
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      51,
+      53,
+      1199,
+      1150
+    ],
+    "webSize": [
+      500,
+      478
+    ],
+    "bytes": 36954
+  },
+  {
+    "name": "underline-long",
+    "source": "C:\\Users\\santi\\OneDrive\\Escritorio\\GLOSS & GROWTH\\Diseño Gráfico\\FLAT_SYSTEM\\04_BRAND_SHAPES\\GG_SHAPE_FLAT_03_UNDERLINE_LONG.png",
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      66,
+      495,
+      1188,
+      725
+    ],
+    "webSize": [
+      900,
+      184
+    ],
+    "bytes": 28424
+  },
+  {
+    "name": "underline-short",
+    "source": "C:\\Users\\santi\\OneDrive\\Escritorio\\GLOSS & GROWTH\\Diseño Gráfico\\FLAT_SYSTEM\\04_BRAND_SHAPES\\GG_SHAPE_FLAT_04_UNDERLINE_SHORT.png",
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      210,
+      232,
+      1022,
+      736
+    ],
+    "webSize": [
+      640,
+      397
+    ],
+    "bytes": 30682
+  },
+  {
+    "name": "wave",
+    "source": "C:\\Users\\santi\\OneDrive\\Escritorio\\GLOSS & GROWTH\\Diseño Gráfico\\FLAT_SYSTEM\\04_BRAND_SHAPES\\GG_SHAPE_FLAT_05_SOFT_WAVE.png",
+    "originalSize": [
+      2172,
+      724
+    ],
+    "crop": [
+      34,
+      43,
+      2144,
+      626
+    ],
+    "webSize": [
+      1400,
+      387
+    ],
+    "bytes": 77316
+  },
+  {
+    "name": "arrow",
+    "source": "C:\\Users\\santi\\OneDrive\\Escritorio\\GLOSS & GROWTH\\Diseño Gráfico\\FLAT_SYSTEM\\04_BRAND_SHAPES\\GG_SHAPE_FLAT_11_EDITORIAL_ARROW.png",
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      109,
+      197,
+      1138,
+      1120
+    ],
+    "webSize": [
+      400,
+      359
+    ],
+    "bytes": 11994
+  },
+  {
+    "name": "photo-frame",
+    "source": "C:\\Users\\santi\\OneDrive\\Escritorio\\GLOSS & GROWTH\\Diseño Gráfico\\FLAT_SYSTEM\\04_BRAND_SHAPES\\GG_SHAPE_FLAT_12_PHOTO_MASK_ORGANIC.png",
+    "originalSize": [
+      1254,
+      1254
+    ],
+    "crop": [
+      37,
+      53,
+      1222,
+      1206
+    ],
+    "webSize": [
+      1000,
+      973
+    ],
+    "bytes": 230416
+  },
+  {
+    "name": "growth-path",
+    "source": "C:\\Users\\santi\\OneDrive\\Escritorio\\GLOSS & GROWTH\\Diseño Gráfico\\FLAT_SYSTEM\\05_EDITORIAL_GRAPHICS\\GG_EDITORIAL_FLAT_01_GROWTH_PATH.png",
+    "originalSize": [
+      2172,
+      724
+    ],
+    "crop": [
+      37,
+      19,
+      2149,
+      708
+    ],
+    "webSize": [
+      1000,
+      326
+    ],
+    "bytes": 73696
+  }
+]

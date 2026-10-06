@@ -1,0 +1,10 @@
+{
+  "name": "gloss-growth-selected",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node --check server.js && node --check build.mjs && node --check form.js && node --check editorial.js && node --check navigation.js && node --check motion.js",
+    "start": "node server.js"
+  }
+}

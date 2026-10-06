@@ -1,0 +1,38 @@
+{
+  "protectedFiles": 66,
+  "changedProtectedFiles": [],
+  "pages": [
+    {
+      "page": "index.html",
+      "controlsMatch": true,
+      "textMatch": true
+    },
+    {
+      "page": "politica-de-privacidad.html",
+      "controlsMatch": true,
+      "textMatch": true
+    },
+    {
+      "page": "terminos-del-servicio.html",
+      "controlsMatch": true,
+      "textMatch": true
+    },
+    {
+      "page": "carrusel\\index.html",
+      "controlsMatch": true,
+      "textMatch": true
+    },
+    {
+      "page": "politica-de-privacidad\\index.html",
+      "controlsMatch": true,
+      "textMatch": true
+    },
+    {
+      "page": "terminos-del-servicio\\index.html",
+      "controlsMatch": true,
+      "textMatch": true
+    }
+  ],
+  "brokenReferences": [],
+  "outsideReferences": []
+}

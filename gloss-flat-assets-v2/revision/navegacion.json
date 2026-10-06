@@ -1,0 +1,17 @@
+{
+  "faqPassed": 15,
+  "anchor": {
+    "hash": "#resultados",
+    "top": 188.234375
+  },
+  "first": "wa-modal__close",
+  "wrapLast": "waSubmitBtn",
+  "wrapFirst": "wa-modal__close",
+  "privacyUrl": "http://127.0.0.1:8765/gloss-flat-assets-v2/politica-de-privacidad/",
+  "privacyAnchor": "#sec-16",
+  "back": "http://127.0.0.1:8765/gloss-flat-assets-v2/",
+  "carousel": {
+    "slides": 6,
+    "broken": []
+  }
+}
