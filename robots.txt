@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /revision/
+Disallow: /comparar.html
+Disallow: /carrusel/
+Sitemap: https://glossgrowthhq.com/sitemap.xml
