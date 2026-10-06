@@ -1,0 +1,31 @@
+/* Motion only: no content, geometry or brand changes. */
+@media(prefers-reduced-motion:no-preference){
+ .btn{transition:background .25s,color .25s,border-color .25s,transform .25s cubic-bezier(.22,1,.36,1)}
+ .btn span{transition:transform .25s cubic-bezier(.22,1,.36,1)}
+ .site-header{transition:box-shadow .3s}
+ .site-header .brand,.site-header .btn{transition:transform .3s cubic-bezier(.22,1,.36,1),background .25s}
+ .site-header.is-scrolled{box-shadow:0 3px 14px #3529250b}
+ .site-header.is-scrolled .brand{transform:scale(.96)}
+ .site-header.is-scrolled .btn{transform:scale(.98)}
+ .site-header nav a,.text-link,.footer-grid a{background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-size:0 1px;background-position:0 100%;transition:background-size .25s,color .25s}
+ .faq__question span{transition:transform .3s cubic-bezier(.22,1,.36,1)}
+ .motion-enabled .patient-path .motion-in .path-arrow{transform-origin:left center;animation:gloss-line-x .7s cubic-bezier(.22,1,.36,1) var(--motion-delay,0ms) backwards}
+ .motion-enabled .patient-path .motion-in .path-node{animation:gloss-node .65s cubic-bezier(.22,1,.36,1) var(--motion-delay,0ms) backwards}
+ .motion-enabled .process-list .motion-in .process-number{animation:gloss-number .6s cubic-bezier(.22,1,.36,1) var(--motion-delay,0ms) backwards}
+ @media(max-width:900px){.motion-enabled .patient-path li.motion-in::after{transform-origin:center top;animation:gloss-line-y .65s cubic-bezier(.22,1,.36,1) var(--motion-delay,0ms) backwards}}
+ @media(hover:hover) and (pointer:fine){
+  .btn:hover{transform:translateY(-2px) scale(1.01)}
+  .site-header.is-scrolled .btn:hover{transform:translateY(-2px) scale(1)}
+  .btn:hover span{transform:translate(3px,-2px)}
+  .site-header nav a:hover,.text-link:hover,.footer-grid a:hover{background-size:100% 1px;text-decoration:none}
+  .service-row>svg{transition:transform .3s;color:var(--burgundy)}
+  .service-row:hover>svg{transform:translateY(-3px)}
+  .evidence-open{transition:border-color .25s,box-shadow .25s}
+  .evidence-open:hover{box-shadow:0 4px 12px #35292509}
+ }
+}
+@keyframes gloss-line-x{from{transform:scaleX(0);opacity:.3}to{transform:scaleX(1);opacity:1}}
+@keyframes gloss-line-y{from{transform:scaleY(0);opacity:.3}to{transform:scaleY(1);opacity:1}}
+@keyframes gloss-node{from{transform:scale(.94);opacity:.4}to{transform:scale(1);opacity:1}}
+@keyframes gloss-number{from{transform:translateY(10px);opacity:.3}to{transform:none;opacity:1}}
+@media(prefers-reduced-motion:reduce){.site-header.is-scrolled .brand,.site-header.is-scrolled .btn{transform:none}.motion-in{animation:none!important}}
