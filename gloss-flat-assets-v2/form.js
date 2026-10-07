@@ -62,6 +62,26 @@
       var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encoded;
 
       fallback.href=url;
+
+      // Conversion REAL: Meta Lead + GA4 generate_lead
+      try {
+        if (typeof window.fbq === 'function') {
+          window.fbq('track', 'Lead');
+        }
+      } catch (err) {
+        console.warn('Meta Pixel Lead tracking error:', err);
+      }
+
+      try {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'generate_lead', {
+            method: 'diagnostic_form'
+          });
+        }
+      } catch (err) {
+        console.warn('GA4 generate_lead tracking error:', err);
+      }
+
       try {
         const popup=window.open('about:blank','_blank');
         if(!popup) throw new Error('blocked');
