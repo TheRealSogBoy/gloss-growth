@@ -35,8 +35,8 @@
   --shadow-slide:        0 30px 80px rgba(0, 0, 0, 0.6), 0 0 40px rgba(140, 37, 54, 0.2);
 
   /* Typography */
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Zodiak', serif;
+  --font-body:    'Plus Jakarta Sans', sans-serif;
 }
 
 /* Reset & Studio App Layout */

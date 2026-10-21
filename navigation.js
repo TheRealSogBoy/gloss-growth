@@ -1,6 +1,7 @@
 'use strict';
 document.addEventListener('DOMContentLoaded',()=>{
  const toggle=document.querySelector('.menu-toggle'),nav=document.getElementById('main-nav');
+ if(!toggle||!nav)return;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)'),desktop=matchMedia('(min-width:901px)');
  let animation=null,version=0;
  const setOpen=open=>{

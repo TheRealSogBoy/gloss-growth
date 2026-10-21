@@ -1,0 +1,705 @@
+/* ==========================================================================
+   GLOSS & GROWTH — RESULTADOS Y CASOS DOCUMENTADOS
+   Estética flat, editorial, premium y minimalista
+   Tipografía de títulos: Zodiak, serif (--font-display)
+   ========================================================================== */
+
+/* Masthead */
+.results-masthead {
+  padding: 64px 0 52px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper, #FAF7EB);
+}
+
+.results-masthead .breadcrumb {
+  margin-bottom: 20px;
+}
+
+.results-masthead h1 {
+  font-family: var(--font-display, "Zodiak", Georgia, serif);
+  font-size: clamp(38px, 4.4vw, 58px);
+  color: var(--burgundy);
+  letter-spacing: -0.04em;
+  line-height: 1.14;
+  margin: 0 0 16px;
+  max-width: 860px;
+}
+
+.results-masthead .masthead-lead {
+  font-family: var(--font-body, "Plus Jakarta Sans", system-ui, sans-serif);
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 760px;
+  margin: 0;
+  color: var(--ink);
+}
+
+.results-notice {
+  margin-top: 28px;
+  padding: 18px 22px;
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--burgundy);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #55443d;
+  max-width: 860px;
+}
+
+/* Secciones */
+.results-section {
+  padding: 80px 0;
+}
+
+.results-section + .results-section {
+  border-top: 1px solid var(--line);
+}
+
+.results-section-header {
+  margin-bottom: 48px;
+  max-width: 780px;
+}
+
+.results-section-header .eyebrow {
+  margin-bottom: 6px;
+}
+
+.results-section-header h2 {
+  font-family: var(--font-display, "Zodiak", Georgia, serif);
+  font-size: clamp(32px, 3.5vw, 46px);
+  color: var(--burgundy);
+  margin: 8px 0 12px;
+  line-height: 1.2;
+}
+
+.results-section-header p {
+  font-size: 17px;
+  color: #55443d;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Casos Protagonistas */
+.case-hero {
+  background: var(--paper, #FAF7EB);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--burgundy);
+  padding: 48px;
+  margin-bottom: 56px;
+  border-radius: 4px;
+}
+
+.case-hero:last-child {
+  margin-bottom: 0;
+}
+
+.case-hero-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
+}
+
+.case-hero-title h2 {
+  font-family: var(--font-display, "Zodiak", Georgia, serif);
+  font-size: clamp(32px, 3.8vw, 48px);
+  color: var(--burgundy);
+  margin: 6px 0 12px;
+  line-height: 1.2;
+}
+
+.case-hero-title p {
+  font-size: 17px;
+  line-height: 1.65;
+  max-width: 700px;
+  color: var(--ink);
+  margin: 0;
+}
+
+.case-hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+
+.case-hero-kpis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.case-hero-kpi {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  padding: 14px 18px;
+  min-width: 135px;
+  border-radius: 3px;
+}
+
+.case-hero-kpi strong {
+  display: block;
+  font-family: var(--font-display, "Zodiak", Georgia, serif);
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.15;
+  color: var(--burgundy);
+  margin-bottom: 6px;
+}
+
+.case-hero-kpi span {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #55443d;
+  font-weight: 500;
+}
+
+/* Grid de contenido del caso */
+.case-hero-body {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.case-hero-narrative {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.case-narrative-block h3 {
+  font-size: 12.5px;
+  font-family: var(--font-body, "Plus Jakarta Sans", system-ui, sans-serif);
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  margin: 0 0 8px;
+}
+
+.case-narrative-block p {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0;
+}
+
+.case-hero-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Evidencias visuales del caso */
+.case-hero .proof,
+.compact-project-card .proof,
+.compact-project-visual {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.case-hero .proof button,
+.compact-project-card .proof button,
+.compact-project-visual button {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+}
+
+.case-hero .proof img,
+.compact-project-card .proof img,
+.compact-project-visual img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  transition: transform 0.25s;
+}
+
+.case-hero .proof button:hover img,
+.compact-project-visual button:hover img {
+  transform: scale(1.02);
+}
+
+.case-hero-aside .proof--portrait button {
+  padding: 8px;
+  background: #FFFFFF;
+}
+
+.case-hero-aside .proof--portrait img {
+  width: 100%;
+  max-width: 360px;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+/* Evidencia visual a ancho completo — SIN RECORTE AGRESIVO */
+.case-full-evidence {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.evidence-header {
+  margin-bottom: 14px;
+}
+
+.evidence-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--burgundy);
+  background: rgba(140, 37, 54, 0.08);
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+.evidence-badge-tag i {
+  width: 14px;
+  height: 14px;
+}
+
+.evidence-note {
+  font-size: 14px;
+  color: #55443d;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.proof--full-evidence {
+  width: 100%;
+  margin: 0;
+}
+
+.proof--full-evidence button {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  text-align: left;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.proof--full-evidence button:hover {
+  border-color: var(--burgundy);
+  box-shadow: 0 4px 16px rgba(53, 41, 37, 0.08);
+}
+
+.proof--full-evidence img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+.proof--full-evidence figcaption {
+  margin-top: 10px;
+  font-size: 13.5px;
+  color: #55443d;
+  line-height: 1.5;
+}
+
+.case-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  min-width: 0;
+  max-width: 100%;
+}
+
+.case-evidence-grid .proof {
+  margin: 0;
+  min-width: 0;
+}
+
+.case-evidence-grid .proof img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+  background: #ffffff;
+  display: block;
+}
+
+.case-evidence-grid figcaption {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #66564d;
+  margin-top: 8px;
+}
+
+/* Tarjeta Testimonio Facebook */
+.case-fb-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.case-fb-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 12px;
+}
+
+.case-fb-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+
+.case-fb-badge img {
+  width: 18px;
+  height: 18px;
+}
+
+.case-fb-embed-wrap {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.case-fb-embed-wrap iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block;
+  border: none;
+}
+
+.case-fb-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--burgundy);
+  text-decoration: none;
+}
+
+.case-fb-action:hover {
+  text-decoration: underline;
+}
+
+/* Casos Secundarios Importantes */
+.secondary-cases-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.secondary-case-card {
+  background: var(--paper, #FAF7EB);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--burgundy);
+  border-radius: 4px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.secondary-case-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.secondary-case-avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.secondary-case-logo {
+  max-width: 140px;
+  max-height: 44px;
+  object-fit: contain;
+}
+
+.secondary-case-header h3 {
+  font-family: var(--font-display, "Zodiak", Georgia, serif);
+  font-size: 24px;
+  color: var(--burgundy);
+  margin: 2px 0 0;
+  line-height: 1.2;
+}
+
+.secondary-case-work {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #77665f;
+  margin: 0;
+}
+
+.secondary-case-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0;
+}
+
+
+.secondary-case-metrics-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  margin: 12px 0 16px;
+}
+.secondary-case-metric {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.secondary-case-metric strong {
+  font-family: var(--font-display, "Zodiak", Georgia, serif);
+  font-size: 24px;
+  color: var(--burgundy);
+}
+
+.secondary-case-metric span {
+  font-size: 12.5px;
+  color: #55443d;
+}
+
+.secondary-case-visual {
+  width: 100%;
+}
+
+.secondary-case-visual button {
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.secondary-case-visual img {
+  width: 100%;
+  height: auto;
+  max-height: 340px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Casos Pequeños Complementarios (Laura y Carlos) */
+.complementary-cases-block {
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 1px dashed var(--line);
+}
+
+.complementary-cases-header {
+  margin-bottom: 20px;
+}
+
+.complementary-cases-header h3 {
+  font-family: var(--font-display, "Zodiak", Georgia, serif);
+  font-size: 20px;
+  color: var(--dark);
+  margin: 0 0 6px;
+}
+
+.complementary-cases-header p {
+  font-size: 14px;
+  color: #66564d;
+  margin: 0;
+}
+
+.complementary-cases-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.complementary-case-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.complementary-case-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.complementary-case-info h4 {
+  font-family: var(--font-display, "Zodiak", Georgia, serif);
+  font-size: 17px;
+  color: var(--burgundy);
+  margin: 0 0 4px;
+}
+
+.complementary-case-info p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #55443d;
+  margin: 0;
+}
+
+/* CTA Final */
+.final-cta {
+  overflow: hidden !important;
+  position: relative;
+}
+
+.final-cta .wrap {
+  position: relative;
+}
+
+.final-wave {
+  max-width: 100%;
+  pointer-events: none;
+}
+
+/* Responsivo */
+@media (max-width: 960px) {
+  .case-hero-body {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .secondary-cases-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .complementary-cases-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-hero {
+    padding: 28px 20px;
+  }
+
+  .case-hero-head {
+    padding-bottom: 20px;
+    margin-bottom: 24px;
+  }
+
+  .case-hero-kpi {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 120px;
+  }
+
+  .secondary-case-card {
+    padding: 24px 18px;
+  }
+
+  .final-wave {
+    right: 0 !important;
+    bottom: -40px !important;
+    max-width: 120px !important;
+  }
+}
+
+/* Sierva María deliverables pills and external link */
+.case-hero-kpi--feature {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 14px 18px !important;
+}
+
+.case-hero-kpi--feature strong {
+  font-family: var(--font-display, "Zodiak", Georgia, serif) !important;
+  font-size: 19px !important;
+  color: var(--burgundy) !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 4px !important;
+  line-height: 1.2 !important;
+}
+
+.case-hero-kpi--feature span {
+  font-size: 12.5px !important;
+  line-height: 1.4 !important;
+  color: #55443d !important;
+}
+
+.case-external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--burgundy);
+  text-decoration: none;
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  margin-top: 14px;
+}
+
+.case-external-link:hover {
+  background: var(--burgundy);
+  color: #FFFFFF;
+  border-color: var(--burgundy);
+}
