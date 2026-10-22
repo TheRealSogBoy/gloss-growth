@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KBSJJ2LSLT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KBSJJ2LSLT');
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1551818823651884');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Calculadoras de Rentabilidad Estética | Herramientas Gloss Growth</title>
+<meta content="Calculadora interactiva de costos y rentabilidad por tratamiento estético (Botox, Ácido Hialurónico, Limpieza Facial) y simulador de captación publicitaria en WhatsApp." name="description"/>
+<meta content="Gloss Growth" name="author"/>
+<link href="https://glossgrowthhq.com/recursos/herramientas/" rel="canonical"/>
+<link href="../../brand/symbol-burgundy.svg" rel="icon" type="image/svg+xml"/>
+<meta content="website" property="og:type"/>
+<meta content="https://glossgrowthhq.com/recursos/herramientas/" property="og:url"/>
+<meta content="Calculadoras de Rentabilidad Estética | Herramientas Gloss Growth" property="og:title"/>
+<meta content="Calcula en segundos el costo real por sesión, margen neto y retorno de pauta publicitaria de tus tratamientos estéticos." property="og:description"/>
+<meta content="Gloss Growth" property="og:site_name"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Calculadoras de Rentabilidad Estética | Gloss Growth" name="twitter:title"/>
+<meta content="Herramientas financieras y comerciales interactivas para clínicas estéticas." name="twitter:description"/>
+<script defer src="../../vendor/lucide.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de Costos y Rentabilidad por Tratamiento Estético",
+  "url": "https://glossgrowthhq.com/recursos/herramientas/",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "All",
+  "description": "Herramienta interactiva para calcular costo unitario, utilidad neta, margen porcentual y retorno de inversión publicitaria en tratamientos de medicina estética y belleza.",
+  "creator": {
+    "@type": "Organization",
+    "name": "Gloss & Growth",
+    "url": "https://glossgrowthhq.com/"
+  }
+}
+</script>
+<link href="../../homepage.css" rel="stylesheet"/>
+<link href="../../expansion.css" rel="stylesheet"/>
+<link href="../../motion.css?v=1" rel="stylesheet"/>
+<link href="../calculadora-publicidad/calculadora.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="../../" aria-label="Gloss Growth, inicio">
+      <img src="../../brand/horizontal-burgundy.svg" alt="Gloss Growth" loading="eager" decoding="async">
+    </a>
+    <nav id="main-nav" aria-label="Navegación principal">
+      <a href="../../">Inicio</a>
+      <a href="../../metodo/">Método Gloss</a>
+      <a href="../../servicios/">Servicios</a>
+      <a href="../../resultados/">Resultados</a>
+      <a href="../" aria-current="page">Recursos</a>
+      <a href="../../nosotros/">Nosotros</a>
+    </nav>
+    <button class="btn" id="navbarCta" type="button" onclick="openWAModal()">Solicitar diagnóstico <span aria-hidden="true">↗</span></button>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" type="button">Menú <span aria-hidden="true">☰</span></button>
+  </div>
+</header>
+
+<main id="inicio" tabindex="-1">
+  <!-- MASTHEAD FUNCIONAL -->
+  <section class="page-masthead">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Migas de pan">
+        <a href="../../">Inicio</a>
+        <span aria-hidden="true">/</span>
+        <a href="../">Recursos</a>
+        <span aria-hidden="true">/</span>
+        <span>Herramientas Interactivas</span>
+      </nav>
+      <div class="masthead-grid">
+        <div class="masthead-copy">
+          <p class="eyebrow">Laboratorio Financiero y Comercial</p>
+          <h1>Calculadoras interactivas para <em>conocer tus márgenes reales antes de pautar.</em></h1>
+          <p class="masthead-lead">Muchos centros estéticos promocionan tratamientos sin haber calculado cuánto les cuesta realmente cada sesión en cabina o cuánto pueden invertir por paciente adquirido. Usa estas dos herramientas con tus propios datos.</p>
+          <div class="masthead-actions">
+            <a class="btn" href="#calc-tratamiento">01. Costos por Tratamiento <span aria-hidden="true">↓</span></a>
+            <a class="btn btn--outline" href="#calc-publicidad">02. ROAS y Rentabilidad Publicitaria <span aria-hidden="true">↓</span></a>
+            <a class="btn btn--cream" href="../calculadora-publicidad/">Versión dedicada completa <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="masthead-meta" aria-label="Características de las herramientas">
+          <div class="masthead-meta-item">
+            <span>Privacidad total</span>
+            <strong>Los cálculos ocurren 100% en tu navegador</strong>
+          </div>
+          <div class="masthead-meta-item">
+            <span>Transparencia matemática</span>
+            <strong>Fórmulas explícitas sin promedios de mercado inventados</strong>
+          </div>
+          <div class="masthead-meta-item">
+            <span>Moneda base</span>
+            <strong>Pesos colombianos (COP) · Editable</strong>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CALCULADORAS -->
+  <section class="section problem">
+    <div class="wrap">
+
+      <!-- =================================================================
+           HERRAMIENTA 01: CALCULADORA DE COSTOS Y RENTABILIDAD POR TRATAMIENTO
+           ================================================================= -->
+      <article class="calculator-shell" id="calc-tratamiento">
+        <header class="calculator-header">
+          <div>
+            <span class="status-pill">Herramienta 01 · Principal</span>
+            <h2>Calculadora de Costos y Rentabilidad por Tratamiento Estético</h2>
+            <p style="margin-top:10px;max-width:740px;">Determina con rigor los costos variables directos, el margen de contribución real, la cuota estimada de costos fijos y el resultado proyectado por sesión individual o paquete multicita.</p>
+          </div>
+        </header>
+
+        <!-- BARRA DE EJEMPLOS RÁPIDOS (ILUSTRATIVOS) -->
+        <div class="preset-bar" role="region" aria-label="Ejemplos ilustrativos de llenado rápido">
+          <span>Cargar ejemplo ilustrativo:</span>
+          <button class="preset-btn" type="button" data-preset-tratamiento="toxina">Toxina Botulínica</button>
+          <button class="preset-btn" type="button" data-preset-tratamiento="hialuronico">Ácido Hialurónico</button>
+          <button class="preset-btn" type="button" data-preset-tratamiento="hydrafacial">Protocolo Facial</button>
+          <button class="preset-btn" type="button" data-preset-tratamiento="paquete">Paquete Corporal (6 sesiones)</button>
+          <button class="preset-btn" type="button" data-preset-tratamiento="limpiar">Reiniciar valores</button>
+        </div>
+
+        <div class="calc-grid">
+          <!-- COLUMNA DE INPUTS -->
+          <div class="calc-inputs">
+            <div class="calc-form-group">
+              <label class="calc-label" for="t-nombre">1. Nombre del tratamiento o protocolo</label>
+              <span class="calc-hint">Identifica el procedimiento que deseas evaluar.</span>
+              <input class="calc-input" id="t-nombre" type="text" value="Aplicación de Toxina Botulínica (3 zonas)"/>
+            </div>
+
+            <div class="calc-form-group">
+              <label class="calc-label" for="t-tipo">2. Modalidad del servicio</label>
+              <span class="calc-hint">Selecciona si evalúas un procedimiento individual o un paquete de varias sesiones.</span>
+              <select class="calc-input" id="t-tipo">
+                <option value="individual" selected>Tratamiento o sesión individual</option>
+                <option value="paquete">Paquete de varias sesiones</option>
+              </select>
+            </div>
+
+            <!-- CAMPOS CONDICIONALES DE PAQUETE -->
+            <div class="calc-form-row" id="t-group-paquete" style="display:none;background:rgba(140,37,54,0.03);border:1px dashed rgba(140,37,54,0.25);border-radius:10px;padding:12px;margin-bottom:14px;">
+              <div class="calc-form-group" style="margin-bottom:0;">
+                <label class="calc-label" for="t-sesiones-paquete">Sesiones del paquete</label>
+                <span class="calc-hint">Total de citas incluidas.</span>
+                <input class="calc-input" id="t-sesiones-paquete" type="number" min="2" max="50" step="1" value="6"/>
+              </div>
+              <div class="calc-form-group" style="margin-bottom:0;">
+                <label class="calc-label" for="t-modo-costos-paquete">Ingreso de insumos y honorarios</label>
+                <span class="calc-hint">Criterio de digitación:</span>
+                <select class="calc-input" id="t-modo-costos-paquete">
+                  <option value="por-sesion" selected>Por cada sesión (se multiplica por las sesiones)</option>
+                  <option value="total-paquete">Total acumulado del paquete completo</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="calc-form-row">
+              <div class="calc-form-group">
+                <label class="calc-label" for="t-precio" id="t-label-precio">3. Precio efectivo de venta (COP)</label>
+                <span class="calc-hint" id="t-hint-precio">Valor total cobrado al paciente (neto de descuentos).</span>
+                <input class="calc-input" id="t-precio" type="number" min="0" step="5000" value="950000"/>
+              </div>
+              <div class="calc-form-group">
+                <label class="calc-label" for="t-insumos" id="t-label-insumos">4. Costo de insumos y consumibles (COP)</label>
+                <span class="calc-hint" id="t-hint-insumos">Vial, jeringas, ampollas, anestesia, descartables.</span>
+                <input class="calc-input" id="t-insumos" type="number" min="0" step="5000" value="290000"/>
+              </div>
+            </div>
+
+            <div class="calc-form-row">
+              <div class="calc-form-group">
+                <label class="calc-label" for="t-tiempo">5. Tiempo en consultorio / cabina (minutos)</label>
+                <span class="calc-hint">Duración por sesión. (0 = no se calcula por hora).</span>
+                <input class="calc-input" id="t-tiempo" type="number" min="0" step="5" value="45"/>
+              </div>
+              <div class="calc-form-group">
+                <label class="calc-label" for="t-honorarios" id="t-label-honorarios">6. Honorario profesional variable (COP)</label>
+                <span class="calc-hint" id="t-hint-honorarios">Pago variable a profesional o costo de tu tiempo directo.</span>
+                <input class="calc-input" id="t-honorarios" type="number" min="0" step="5000" value="140000"/>
+              </div>
+            </div>
+
+            <div class="calc-form-row">
+              <div class="calc-form-group">
+                <label class="calc-label" for="t-fijos">7. Gastos fijos asignados (COP)</label>
+                <span class="calc-hint">Fracción estimada de arriendo, recepción, servicios por venta.</span>
+                <input class="calc-input" id="t-fijos" type="number" min="0" step="5000" value="65000"/>
+              </div>
+              <div class="calc-form-group">
+                <label class="calc-label" for="t-comision">8. Comisión datáfono / pasarela (%)</label>
+                <span class="calc-hint">Porcentaje bancario o comisión directa sobre el precio.</span>
+                <input class="calc-input" id="t-comision" type="number" min="0" max="100" step="0.5" value="3.5"/>
+              </div>
+            </div>
+
+            <div class="calc-form-group">
+              <label class="calc-label" for="t-sesiones">9. Ventas / atenciones proyectadas al mes</label>
+              <span class="calc-hint">Cantidad mensual de procedimientos o paquetes (admite 0).</span>
+              <input class="calc-input" id="t-sesiones" type="number" min="0" step="1" value="24"/>
+            </div>
+          </div>
+
+          <!-- COLUMNA DE RESULTADOS EN TIEMPO REAL -->
+          <div class="calc-results-panel" aria-live="polite">
+            <p class="eyebrow" style="margin-bottom:6px;color:var(--burgundy);">Resultado para: <span id="t-out-name">Aplicación de Toxina Botulínica (3 zonas)</span></p>
+
+            <div class="calc-primary-kpi">
+              <span>Margen de contribución por venta (antes de fijos)</span>
+              <strong id="t-out-margen-contribucion">$486.750 COP</strong>
+              <div id="t-out-margen-contribucion-pct" style="font-size:13px;font-weight:600;color:var(--burgundy);margin-top:4px;">51,2% del precio de venta</div>
+            </div>
+
+            <div class="calc-kpi-grid">
+              <div class="calc-kpi-box">
+                <span>Costos variables directos</span>
+                <strong id="t-out-costo-variable">$463.250 COP</strong>
+              </div>
+              <div class="calc-kpi-box">
+                <span>Margen de contribución (%)</span>
+                <strong id="t-out-margen-bruto">51,2%</strong>
+              </div>
+              <div class="calc-kpi-box">
+                <span>Costos fijos asignados</span>
+                <strong id="t-out-costo-fijo-unit">$65.000 COP</strong>
+              </div>
+              <div class="calc-kpi-box">
+                <span>Resultado tras fijos asignados</span>
+                <strong id="t-out-utilidad-sesion">$421.750 COP</strong>
+              </div>
+              <div class="calc-kpi-box">
+                <span>Margen tras fijos (%)</span>
+                <strong id="t-out-margen-neto">44,4%</strong>
+              </div>
+              <div class="calc-kpi-box">
+                <span>Resultado por hora clínica</span>
+                <strong id="t-out-utilidad-hora">$562.333 COP/h</strong>
+              </div>
+              <div class="calc-kpi-box">
+                <span>Facturación mensual proyectada</span>
+                <strong id="t-out-ingreso-mensual">$22.800.000 COP</strong>
+              </div>
+              <div class="calc-kpi-box">
+                <span>Resultado mensual proyectado</span>
+                <strong id="t-out-utilidad-mensual" style="color:var(--burgundy);">$10.122.000 COP</strong>
+              </div>
+            </div>
+
+            <div class="cost-bar-wrap">
+              <span style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;display:block;margin-bottom:8px;">Estructura del precio</span>
+              <div class="cost-bar-track" aria-hidden="true">
+                <div class="cost-bar-seg--direct" id="t-bar-direct" style="width:49%"></div>
+                <div class="cost-bar-seg--fixed" id="t-bar-fixed" style="width:7%"></div>
+                <div class="cost-bar-seg--profit" id="t-bar-profit" style="width:44%"></div>
+              </div>
+              <div class="cost-bar-legend">
+                <span><i class="legend-dot cost-bar-seg--direct"></i> Variables (Insumos + Honorarios + Pasarela)</span>
+                <span><i class="legend-dot cost-bar-seg--fixed"></i> Fijos asignados</span>
+                <span><i class="legend-dot cost-bar-seg--profit"></i> Resultado tras fijos</span>
+              </div>
+            </div>
+
+            <div class="calc-diagnostic-note" id="t-out-diagnostic">
+              <!-- Se inyecta dinámicamente con estructura 3 partes -->
+            </div>
+
+            <button class="btn" style="width:100%" type="button" onclick="openWAModal()">Diseñar estrategia para este tratamiento <span aria-hidden="true">↗</span></button>
+            <button class="btn btn--outline" id="btn-export-treatment-to-calc" style="width:100%;margin-top:10px;" type="button">Simular punto de equilibrio publicitario <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+
+        <!-- FÓRMULAS EXPLICADAS -->
+        <div class="formula-box">
+          <div class="formula-item">
+            <strong>Fórmula 01 · Margen de Contribución Unitario</strong>
+            <code>Margen Contribución = Precio − (Insumos + Honorarios Variables + Comisiones)</code>
+            <p>Representa el dinero real que aporta cada venta para absorber gastos fijos de la clínica y marketing.</p>
+          </div>
+          <div class="formula-item">
+            <strong>Fórmula 02 · Resultado Estimado tras Costos Fijos</strong>
+            <code>Resultado Estimado = Margen Contribución − Gastos Fijos Asignados</code>
+            <p>Excedente operativo estimado. La cuota fija asignada es un prorrateo de referencia, no un costo directo de la venta.</p>
+          </div>
+          <div class="formula-item">
+            <strong>Fórmula 03 · Rentabilidad por Hora Clínica</strong>
+            <code>Resultado/Hora = (Resultado tras fijos ÷ Minutos totales) × 60</code>
+            <p>Mide el rendimiento del tiempo en cabina. Si la duración es 0 minutos, la métrica no se calcula.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- =================================================================
+           HERRAMIENTA 02: CALCULADORA DE ROAS Y RENTABILIDAD PUBLICITARIA
+           ================================================================= -->
+      <article class="calculator-shell" id="calc-publicidad" style="margin-bottom:0">
+        <header class="calculator-header">
+          <div>
+            <span class="status-pill">Herramienta 02 · Principal</span>
+            <h2>Calculadora de ROAS y Rentabilidad Publicitaria</h2>
+            <p style="margin-top:10px;max-width:740px;">Calcula el ROAS que necesitas para recuperar tu inversión y analiza cuánto dinero puede dejar realmente tu publicidad en estética, spas y clínicas. Sin supuestos forzados de WhatsApp ni métricas inventadas.</p>
+          </div>
+        </header>
+
+        <!-- SELECTOR PRINCIPAL DE EXPERIENCIA (UNA SOLA HERRAMIENTA, MISMO MOTOR) -->
+        <div class="calc-mode-switcher" role="tablist" aria-label="Modalidad de análisis publicitario" style="margin-bottom:20px;">
+          <button class="calc-mode-btn active" id="mode-btn-plan" type="button" role="tab" aria-selected="true" data-mode="plan">
+            <span aria-hidden="true">📊</span> Planificar publicidad y equilibrio
+          </button>
+          <button class="calc-mode-btn" id="mode-btn-real" type="button" role="tab" aria-selected="false" data-mode="real">
+            <span aria-hidden="true">🔍</span> Analizar resultados reales
+          </button>
+        </div>
+
+        <!-- BARRA DE PRESETS Y EJEMPLOS RÁPIDOS -->
+        <div class="calc-preset-bar" role="region" aria-label="Escenarios de prueba">
+          <span>Cargar escenario de prueba:</span>
+          <button class="calc-preset-btn" type="button" data-preset="casoA">Caso A: Spa Masaje ($1.2M pauta / $600k gestión)</button>
+          <button class="calc-preset-btn" type="button" data-preset="casoB">Caso B: Con Meta $600k de ganancia</button>
+          <button class="calc-preset-btn" type="button" data-preset="casoD">Caso D: Campaña Real en Equilibrio</button>
+          <button class="calc-preset-btn" type="button" data-preset="casoE">Caso E: Alto ROAS / Margen Bajo</button>
+          <button class="calc-preset-btn btn-reset" type="button" id="btn-reset-values">Restablecer valores</button>
+        </div>
+
+        <div class="calc-main-grid">
+          <!-- COLUMNA IZQUIERDA: FORMULARIOS DE ENTRADA (PLAN / REAL) -->
+          <div class="calc-form-column">
+
+            <!-- FORMULARIO MODO PLANIFICAR -->
+            <div id="panel-form-plan">
+              <!-- BLOQUE A: SERVICIO Y RENTABILIDAD -->
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">A</span> Servicio y Margen de Contribución
+                </h3>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="plan-business-type">Tipo de negocio estético</label>
+                    <span class="hint">Adapta ejemplos y referencias conceptuales.</span>
+                    <select class="calc-control" id="plan-business-type">
+                      <option value="spa" selected>Spa y bienestar</option>
+                      <option value="estetica">Centro de estética</option>
+                      <option value="clinica">Clínica o consultorio estético</option>
+                      <option value="independiente">Profesional independiente</option>
+                      <option value="otro">Otro negocio de servicios</option>
+                    </select>
+                  </div>
+                  <div class="calc-field">
+                    <label for="plan-service-type">Tipo de oferta</label>
+                    <span class="hint">Modelo del tratamiento o paquete comercial.</span>
+                    <select class="calc-control" id="plan-service-type">
+                      <option value="individual" selected>Tratamiento o sesión individual</option>
+                      <option value="paquete">Paquete de varias sesiones</option>
+                      <option value="agregado">Análisis agregado de diferentes servicios</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="calc-field" id="field-wrap-service-name">
+                  <label for="plan-service-name">Nombre del tratamiento o paquete</label>
+                  <span class="hint">Opcional para identificar este escenario de análisis.</span>
+                  <input class="calc-control" id="plan-service-name" type="text" value="Masaje Relajante en Pareja (60 min)">
+                </div>
+
+                <!-- FILA CONDICIONAL PARA PAQUETES -->
+                <div class="calc-field" id="field-wrap-package-sessions" style="display:none;background:var(--calc-cream-light);padding:12px;border-radius:8px;border:1px dashed var(--calc-border);">
+                  <label for="plan-package-sessions">Número de sesiones incluidas en el paquete</label>
+                  <span class="hint">Total de citas en cabina del protocolo (ej. 4, 6, 8 o 10 sesiones).</span>
+                  <input class="calc-control" id="plan-package-sessions" type="number" min="2" max="50" step="1" value="6">
+                </div>
+
+                <!-- PRECIO EFECTIVO -->
+                <div class="calc-field" id="field-wrap-price">
+                  <label for="plan-price" id="plan-label-price">Precio efectivo de venta (COP)</label>
+                  <span class="hint" id="plan-hint-price">Valor cobrado al paciente por el tratamiento o paquete (neto de descuentos).</span>
+                  <input class="calc-control" id="plan-price" type="number" min="0" step="10000" value="200000">
+                </div>
+
+                <!-- COSTOS VARIABLES / MARGEN -->
+                <div class="calc-field" id="field-wrap-var-costs">
+                  <label>Costos variables de la venta</label>
+                  <span class="hint">Insumos consumibles, honorarios variables y comisión pasarela por cada venta.</span>
+                  
+                  <div class="calc-subtoggle" role="group" aria-label="Modalidad de costos variables">
+                    <button class="calc-subtoggle-btn active" id="btn-cost-amount" type="button" data-cost-mode="amount">Monto en pesos ($)</button>
+                    <button class="calc-subtoggle-btn" id="btn-cost-percent" type="button" data-cost-mode="percent">Porcentaje (%)</button>
+                  </div>
+
+                  <div id="wrap-cost-amount">
+                    <input class="calc-control" id="plan-var-cost-amount" type="number" min="0" step="5000" value="80000" aria-label="Costo variable directo por venta en pesos colombianos">
+                    <span class="hint" style="margin-top:4px;">Insumos y honorarios variables directos de cada venta.</span>
+                  </div>
+
+                  <div id="wrap-cost-percent" style="display:none;">
+                    <input class="calc-control" id="plan-var-cost-percent" type="number" min="0" max="100" step="1" value="40" aria-label="Porcentaje de costo variable directo sobre el precio">
+                    <span class="hint" style="margin-top:4px;">Porcentaje del precio que representan los costos directos de la venta.</span>
+                  </div>
+                </div>
+
+                <!-- CAMPO EXCLUSIVO PARA MODO AGREGADO -->
+                <div class="calc-field" id="field-wrap-direct-margin" style="display:none;">
+                  <label for="plan-direct-margin">Margen de contribución promedio (%)</label>
+                  <span class="hint">Margen ponderado de tu cartera de tratamientos (anterior a costos fijos y marketing).</span>
+                  <input class="calc-control" id="plan-direct-margin" type="number" min="1" max="100" step="1" value="60">
+                </div>
+              </div>
+
+              <!-- BLOQUE B: INVERSIÓN PUBLICITARIA -->
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">B</span> Inversión de Marketing y Período
+                </h3>
+
+                <div class="calc-field">
+                  <label for="plan-ad-spend">1. Presupuesto directo en anuncios (COP)</label>
+                  <span class="hint">Monto pagado directamente a Meta Ads, Google Ads o TikTok Ads.</span>
+                  <input class="calc-control" id="plan-ad-spend" type="number" min="0" step="100000" value="1200000">
+                </div>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="plan-management-fee">2. Honorarios de gestión (COP)</label>
+                    <span class="hint">Pago a agencia o especialista (opcional).</span>
+                    <input class="calc-control" id="plan-management-fee" type="number" min="0" step="50000" value="600000">
+                  </div>
+                  <div class="calc-field">
+                    <label for="plan-other-costs">3. Otros costos de marketing (COP)</label>
+                    <span class="hint">Diseño, software o creativos (opcional).</span>
+                    <input class="calc-control" id="plan-other-costs" type="number" min="0" step="50000" value="0">
+                  </div>
+                </div>
+
+                <div class="calc-field">
+                  <label for="plan-period">4. Período del análisis</label>
+                  <span class="hint">Todos los importes ingresados corresponden a este lapso temporal.</span>
+                  <select class="calc-control" id="plan-period">
+                    <option value="mensual" selected>Mensual (30 días)</option>
+                    <option value="quincenal">Quincenal (15 días)</option>
+                    <option value="campana">Campaña puntual (período específico)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- BLOQUE C: META DE CONTRIBUCIÓN ECONÓMICA (OPCIONAL) -->
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">C</span> Meta Financiera Deseada (Opcional)
+                </h3>
+                <div class="calc-field">
+                  <label for="plan-desired-result">Resultado de contribución deseado (COP)</label>
+                  <span class="hint">¿Cuánto dinero quieres que quede después de cubrir publicidad, gestión y costos variables? (0 = calcular solo punto de equilibrio).</span>
+                  <input class="calc-control" id="plan-desired-result" type="number" min="0" step="100000" value="0">
+                </div>
+              </div>
+
+              <!-- BLOQUE D: VALIDACIÓN DE CAPACIDAD INSTALADA (OPCIONAL) -->
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">D</span> Capacidad Operativa Declarada (Opcional)
+                </h3>
+                <div class="calc-field">
+                  <label for="plan-capacity">¿Cuántas atenciones adicionales puedes realizar en este período?</label>
+                  <span class="hint">Cupos libres reales en cabina. Si se completa, la calculadora validará si la meta es físicamente viable sin saturar tu agenda.</span>
+                  <input class="calc-control" id="plan-capacity" type="number" min="1" step="1" placeholder="Ej. 20 citas disponibles">
+                </div>
+              </div>
+            </div>
+
+            <!-- FORMULARIO MODO RESULTADOS REALES -->
+            <div id="panel-form-real" style="display:none;">
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">1</span> Inversión Ejecutada en Campaña
+                </h3>
+
+                <div class="calc-field">
+                  <label for="real-ad-spend">Gasto real en anuncios (COP)</label>
+                  <span class="hint">Importe facturado directamente por Meta, Google o TikTok.</span>
+                  <input class="calc-control" id="real-ad-spend" type="number" min="0" step="50000" value="1200000">
+                </div>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="real-fee">Honorarios de gestión del período (COP)</label>
+                    <span class="hint">Honorarios pagados a la agencia o profesional.</span>
+                    <input class="calc-control" id="real-fee" type="number" min="0" step="50000" value="600000">
+                  </div>
+                  <div class="calc-field">
+                    <label for="real-other">Otros costos aplicables (COP)</label>
+                    <span class="hint">Creativos, plataformas o herramientas adicionales.</span>
+                    <input class="calc-control" id="real-other" type="number" min="0" step="50000" value="0">
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">2</span> Ingresos Atribuidos y Costos del Servicio
+                </h3>
+
+                <div class="calc-field">
+                  <label for="real-revenue">Ingresos atribuidos a la publicidad (COP)</label>
+                  <span class="hint">Ventas reales generadas por pacientes captados a través de la campaña.</span>
+                  <input class="calc-control" id="real-revenue" type="number" min="0" step="100000" value="3000000">
+                </div>
+
+                <div class="calc-field">
+                  <label>Costos variables de esas ventas</label>
+                  <span class="hint">Selecciona cómo ingresar los costos directos de los procedimientos prestados.</span>
+                  <div class="calc-subtoggle" role="group" aria-label="Modalidad costos reales">
+                    <button class="calc-subtoggle-btn active" id="btn-real-cost-amount" type="button" data-real-cost-mode="amount">Total en pesos ($)</button>
+                    <button class="calc-subtoggle-btn" id="btn-real-cost-percent" type="button" data-real-cost-mode="percent">Margen de contribución (%)</button>
+                  </div>
+
+                  <div id="wrap-real-cost-amount">
+                    <input class="calc-control" id="real-var-cost" type="number" min="0" step="50000" value="1200000" aria-label="Costo variable total de las ventas en pesos colombianos">
+                    <span class="hint" style="margin-top:4px;">Costo total de insumos, comisiones y honorarios variables de esas ventas.</span>
+                  </div>
+
+                  <div id="wrap-real-cost-percent" style="display:none;">
+                    <input class="calc-control" id="real-margin-pct" type="number" min="1" max="100" step="1" value="60" aria-label="Margen de contribución porcentual promedio">
+                    <span class="hint" style="margin-top:4px;">Margen porcentual promedio de los servicios vendidos.</span>
+                  </div>
+                </div>
+
+                <div class="calc-field">
+                  <label for="real-target">Meta de ganancia establecida (opcional)</label>
+                  <span class="hint">Resultado que esperabas obtener tras costos y marketing (0 = evaluar solo si cubrió costos).</span>
+                  <input class="calc-control" id="real-target" type="number" min="0" step="100000" value="0">
+                </div>
+              </div>
+
+              <!-- APARTADO SECUNDARIO OPCIONAL: EMBUDO COMERCIAL -->
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">3</span> Métricas Comerciales de Embudo (Opcional)
+                </h3>
+                <p class="hint" style="margin-bottom:14px;">Estos datos son opcionales. Permiten derivar el costo por cita, costo por venta y CAC por paciente nuevo.</p>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="real-sales-count">Tratamientos o ventas</label>
+                    <input class="calc-control" id="real-sales-count" type="number" min="0" step="1" placeholder="Ej. 15 ventas">
+                  </div>
+                  <div class="calc-field">
+                    <label for="real-patients-count">Pacientes nuevos captados</label>
+                    <input class="calc-control" id="real-patients-count" type="number" min="0" step="1" placeholder="Ej. 12 pacientes">
+                  </div>
+                </div>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="real-chats-count">Conversaciones iniciadas</label>
+                    <input class="calc-control" id="real-chats-count" type="number" min="0" step="1" placeholder="Ej. 120 chats">
+                  </div>
+                  <div class="calc-field">
+                    <label for="real-appts-count">Citas agendadas</label>
+                    <input class="calc-control" id="real-appts-count" type="number" min="0" step="1" placeholder="Ej. 25 citas">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- COLUMNA DERECHA: RESULTADOS EN TIEMPO REAL (STICKY) -->
+          <div class="calc-results-column">
+            <div class="calc-results-hero" aria-live="polite">
+
+              <!-- KPI PRINCIPAL DESTACADO -->
+              <div class="hero-main-kpi" id="hero-main-box">
+                <span class="label" id="hero-kpi-label">ROAS de equilibrio requerido</span>
+                <strong class="value" id="hero-kpi-value">2,50x</strong>
+                <span class="subtext" id="hero-kpi-subtext">Genera $3.000.000 COP en ventas para cubrir $1.800.000 COP de marketing total con un margen del 60,0%.</span>
+              </div>
+
+              <!-- GRID DE MÉTRICAS COMPLEMENTARIAS -->
+              <div class="kpi-grid-4" id="kpi-grid-results">
+                <div class="kpi-box" id="kpi-box-1">
+                  <span class="kpi-lbl" id="kpi-lbl-1">Facturación de equilibrio</span>
+                  <strong class="kpi-val" id="kpi-val-1">$3.000.000 COP</strong>
+                  <span class="kpi-detail" id="kpi-det-1">Ingresos necesarios en pauta</span>
+                </div>
+                <div class="kpi-box" id="kpi-box-2">
+                  <span class="kpi-lbl" id="kpi-lbl-2">Ventas necesarias</span>
+                  <strong class="kpi-val" id="kpi-val-2">15 ventas</strong>
+                  <span class="kpi-detail" id="kpi-det-2">Tratamientos a vender</span>
+                </div>
+                <div class="kpi-box" id="kpi-box-3">
+                  <span class="kpi-lbl" id="kpi-lbl-3">ROAS solo pauta</span>
+                  <strong class="kpi-val" id="kpi-val-3">1,67x</strong>
+                  <span class="kpi-detail" id="kpi-det-3">Equilibrio sin incluir honorarios</span>
+                </div>
+                <div class="kpi-box" id="kpi-box-4">
+                  <span class="kpi-lbl" id="kpi-lbl-4">Margen de contribución</span>
+                  <strong class="kpi-val" id="kpi-val-4">60,0%</strong>
+                  <span class="kpi-detail" id="kpi-det-4">$120.000 COP por venta</span>
+                </div>
+              </div>
+
+              <!-- TARJETA DE DIAGNÓSTICO EN TRES PARTES BASADO EN EVIDENCIA -->
+              <div class="calc-diagnosis-card healthy" id="diagnosis-card">
+                <div class="diag-header" id="diag-header">
+                  <span aria-hidden="true">✔</span> <span id="diag-title">Objetivos de equilibrio calculados</span>
+                </div>
+                <div class="diag-item" id="diag-fact-wrap">
+                  <strong>Hecho matemático:</strong> <span id="diag-fact-text">—</span>
+                </div>
+                <div class="diag-item" id="diag-meaning-wrap">
+                  <strong>Qué significa para el negocio:</strong> <span id="diag-meaning-text">—</span>
+                </div>
+                <div class="diag-item" id="diag-rec-wrap">
+                  <strong>Revisión recomendada:</strong> <span id="diag-rec-text">—</span>
+                </div>
+              </div>
+
+              <!-- BOTÓN DE CONTACTO DISCRETO -->
+              <button class="btn" style="width:100%" type="button" onclick="openWAModal()">
+                Analizar mi clínica con el equipo de Gloss <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- MATRIZ DE ESCENARIOS (ELEMENTO DIFERENCIADOR DE LA METODOLOGÍA) -->
+        <section class="matrix-section" id="matrix-container" aria-label="Matriz de escenarios cruzando inversión y ROAS" style="margin-top:32px;">
+          <div class="matrix-header">
+            <div>
+              <span class="status-pill" style="margin-bottom:8px;">Metodología Financiera</span>
+              <h3 style="font-family:var(--font-serif, 'Zodiak', serif);font-size:22px;color:var(--calc-charcoal);margin-bottom:4px;">Matriz de Escenarios: Presupuesto en Anuncios vs. Niveles de ROAS</h3>
+              <p style="font-size:14px;color:var(--calc-charcoal-muted);margin:0;">Comprueba qué resultado económico deja tu pauta según el presupuesto invertido (filas) y el ROAS obtenido (columnas). Clic en cualquier celda para desglosarla.</p>
+            </div>
+            <div class="matrix-legend">
+              <span class="legend-chip"><i class="legend-dot loss"></i> Pérdida</span>
+              <span class="legend-chip"><i class="legend-dot breakeven"></i> Equilibrio</span>
+              <span class="legend-chip"><i class="legend-dot profit"></i> Ganancia</span>
+            </div>
+          </div>
+
+          <div class="matrix-scroll-hint" aria-hidden="true">
+            <span>⟵ Desliza horizontalmente para ver todos los niveles de ROAS ⟶</span>
+          </div>
+          <div class="matrix-table-wrap">
+            <table class="matrix-table" id="matrix-table">
+              <thead id="matrix-thead">
+                <!-- Generado por JS -->
+              </thead>
+              <tbody id="matrix-tbody">
+                <!-- Generado por JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- INSPECTOR DE CELDA SELECCIONADA -->
+          <div class="matrix-cell-inspector" id="matrix-inspector">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+              <strong id="inspector-title" style="color:var(--calc-burgundy);font-size:15px;">Detalle del escenario seleccionado</strong>
+              <button type="button" id="btn-close-inspector" style="background:none;border:none;cursor:pointer;font-weight:bold;color:var(--calc-charcoal-muted);">✕ Cerrar</button>
+            </div>
+            <p id="inspector-desc" style="font-size:13.5px;line-height:1.5;margin-bottom:0;color:var(--calc-charcoal);"></p>
+          </div>
+        </section>
+
+        <!-- COSTOS FIJOS DEL NEGOCIO COMPLETO (OPCIONAL) -->
+        <details class="calc-collapsible-drawer" style="margin-top:20px;">
+          <summary class="calc-collapsible-summary">
+            <span>Análisis Operativo Global del Negocio Completo (Opcional)</span>
+            <span aria-hidden="true">▾</span>
+          </summary>
+          <div class="calc-collapsible-content">
+            <p style="font-size:14px;color:var(--calc-charcoal-muted);margin-bottom:18px;max-width:760px;">
+              Una campaña publicitaria no tiene por qué pagar por sí sola toda la estructura fija de un spa o clínica. En esta sección puedes sumar los gastos fijos mensuales y los ingresos orgánicos/recurrentes para estimar el <strong>resultado operativo global</strong> con todos los costos incluidos.
+            </p>
+
+            <div class="calc-row-2">
+              <div class="calc-field">
+                <label for="fix-rent">Arriendo o canon de local (COP)</label>
+                <input class="calc-control" id="fix-rent" type="number" min="0" step="100000" placeholder="Ej. 2.000.000">
+              </div>
+              <div class="calc-field">
+                <label for="fix-payroll">Nómina fija mensual (COP)</label>
+                <input class="calc-control" id="fix-payroll" type="number" min="0" step="100000" placeholder="Ej. 3.500.000">
+              </div>
+            </div>
+
+            <div class="calc-row-2">
+              <div class="calc-field">
+                <label for="fix-utilities">Servicios públicos y aseo (COP)</label>
+                <input class="calc-control" id="fix-utilities" type="number" min="0" step="50000" placeholder="Ej. 400.000">
+              </div>
+              <div class="calc-field">
+                <label for="fix-software">Software, datáfonos y plataformas fijas (COP)</label>
+                <input class="calc-control" id="fix-software" type="number" min="0" step="50000" placeholder="Ej. 250.000">
+              </div>
+            </div>
+
+            <div class="calc-row-2">
+              <div class="calc-field">
+                <label for="fix-admin">Administración y honorarios contables (COP)</label>
+                <input class="calc-control" id="fix-admin" type="number" min="0" step="50000" placeholder="Ej. 350.000">
+              </div>
+              <div class="calc-field">
+                <label for="fix-other">Otros gastos fijos de operación (COP)</label>
+                <input class="calc-control" id="fix-other" type="number" min="0" step="50000" placeholder="Ej. 100.000">
+              </div>
+            </div>
+
+            <hr style="border:none;border-top:1px solid var(--calc-border-light);margin:20px 0;">
+
+            <div class="calc-row-2">
+              <div class="calc-field">
+                <label for="fix-other-rev">Ingresos mensuales de otros canales (COP)</label>
+                <span class="hint">Ventas orgánicas, pacientes recurrentes o referidos.</span>
+                <input class="calc-control" id="fix-other-rev" type="number" min="0" step="500000" placeholder="Ej. 10.000.000">
+              </div>
+              <div class="calc-field">
+                <label for="fix-other-margin">Margen promedio de esos otros canales (%)</label>
+                <span class="hint">Margen de contribución estimado de los servicios orgánicos.</span>
+                <input class="calc-control" id="fix-other-margin" type="number" min="1" max="100" step="1" value="50">
+              </div>
+            </div>
+
+            <div style="background:#FFFFFF;border:1px solid var(--calc-border);border-radius:10px;padding:18px;margin-top:16px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+                <div>
+                  <span style="font-size:12px;font-weight:700;text-transform:uppercase;color:var(--calc-charcoal-muted);display:block;">Resultado operativo estimado con los costos incluidos</span>
+                  <strong id="out-operating-result" style="font-size:24px;font-family:var(--font-serif, 'Zodiak', serif);color:var(--calc-charcoal);">$0 COP</strong>
+                </div>
+                <div style="text-align:right;font-size:13px;color:var(--calc-charcoal-muted);">
+                  Total gastos fijos sumados: <strong id="out-fixed-sum" style="color:var(--calc-charcoal);">$0 COP</strong>
+                </div>
+              </div>
+              <p style="font-size:12px;color:var(--calc-charcoal-muted);margin:8px 0 0 0;">
+                Nota: Esta cifra es un resultado operativo estimado con los costos declarados. No constituye EBITDA auditado formal al no contemplar amortizaciones ni deducciones tributarias completas.
+              </p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid footer-grid--expanded">
+      <div>
+        <img src="../../brand/vertical-cream.svg" alt="Gloss Growth" class="footer-logo" loading="lazy" decoding="async">
+        <p>Estrategia y crecimiento<br>para el negocio de la estética.</p>
+      </div>
+      <nav aria-label="Firma y Soluciones">
+        <p class="eyebrow">Firma</p>
+        <a href="../../">Inicio</a>
+        <a href="../../metodo/">Método Gloss</a>
+        <a href="../../servicios/">Servicios y Planes</a>
+        <a href="../../resultados/">Resultados y Casos</a>
+        <a href="../../nosotros/">Nosotros</a>
+      </nav>
+      <nav aria-label="Recursos y Conocimiento">
+        <p class="eyebrow">Recursos</p>
+        <a href="../">Centro de Recursos</a>
+        <a href="../../blog/">Blog Editorial</a>
+        <a href="../investigaciones/">Gloss Insights</a>
+        <a href="./" aria-current="page">Calculadoras</a>
+        <a href="../plantillas/">Plantillas y Guías</a>
+      </nav>
+      <div class="footer-contact">
+        <p class="eyebrow">Hablemos</p>
+        <a href="https://wa.me/573145904933" target="_blank" rel="noopener noreferrer">WhatsApp · +57 314 590 4933 ↗</a>
+        <a href="https://www.instagram.com/glossgrowthhq/" target="_blank" rel="noopener noreferrer">Instagram · @glossgrowthhq ↗</a>
+        <a href="mailto:glossgrowthhq@gmail.com">glossgrowthhq@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Gloss Growth. Todos los derechos reservados.</span>
+      <div>
+        <a href="../../politica-de-privacidad/">Política de privacidad</a>
+        <a href="../../terminos-del-servicio/">Términos del servicio</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL WHATSAPP -->
+<div aria-hidden="true" aria-labelledby="wa-modal-title" aria-modal="true" class="wa-modal" id="wa-modal" role="dialog">
+  <div class="wa-modal__backdrop" onclick="closeWAModal()"></div>
+  <div class="wa-modal__panel">
+    <button aria-label="Cerrar formulario" class="wa-modal__close" onclick="closeWAModal()">
+      <i data-lucide="x"></i>
+    </button>
+    <div class="wa-modal__header">
+      <div>
+        <h2 class="wa-modal__title" id="wa-modal-title">Solicita tu diagnóstico</h2>
+        <p class="wa-modal__subtitle">Cuéntanos sobre tu negocio. Prepararemos tu mensaje para continuar por WhatsApp.</p>
+      </div>
+    </div>
+    <form class="wa-modal__form" id="waForm" novalidate onsubmit="sendToWhatsApp(event)">
+      <div class="wa-form__group">
+        <label class="wa-form__label" for="wa-nombre"><i aria-hidden="true" data-lucide="user"></i> Tu nombre</label>
+        <input aria-describedby="wa-nombre-error" autocomplete="given-name" class="wa-form__input" id="wa-nombre" maxlength="180" name="nombre" placeholder="Ej: María González" required type="text"/>
+        <p class="wa-form__error" hidden id="wa-nombre-error">Completa este campo para continuar.</p>
+      </div>
+      <div class="wa-form__group">
+        <label class="wa-form__label" for="wa-negocio"><i aria-hidden="true" data-lucide="building-2"></i> Nombre de tu clínica o negocio</label>
+        <input aria-describedby="wa-negocio-error" class="wa-form__input" id="wa-negocio" maxlength="180" name="negocio" placeholder="Ej: Clínica Estética Aurora" required type="text"/>
+        <p class="wa-form__error" hidden id="wa-negocio-error">Completa este campo para continuar.</p>
+      </div>
+      <div class="wa-form__row">
+        <div class="wa-form__group">
+          <label class="wa-form__label" for="wa-trabajadores"><i aria-hidden="true" data-lucide="users"></i> ¿Cuántas personas trabajan ahí?</label>
+          <select aria-describedby="wa-trabajadores-error" class="wa-form__input wa-form__select" id="wa-trabajadores" name="trabajadores" required>
+            <option disabled selected value="">Selecciona...</option>
+            <option value="Solo yo">Solo yo</option>
+            <option value="2 a 5 personas">2 a 5 personas</option>
+            <option value="6 a 15 personas">6 a 15 personas</option>
+            <option value="Más de 15 personas">Más de 15 personas</option>
+          </select>
+          <p class="wa-form__error" hidden id="wa-trabajadores-error">Completa este campo para continuar.</p>
+        </div>
+        <div class="wa-form__group">
+          <label class="wa-form__label" for="wa-ubicacion"><i aria-hidden="true" data-lucide="map-pin"></i> Ciudad / País</label>
+          <input aria-describedby="wa-ubicacion-error" class="wa-form__input" id="wa-ubicacion" maxlength="180" name="ubicacion" placeholder="Ej: Medellín, Colombia" required type="text"/>
+          <p class="wa-form__error" hidden id="wa-ubicacion-error">Completa este campo para continuar.</p>
+        </div>
+      </div>
+      <div class="wa-form__group">
+        <label class="wa-form__label" for="wa-servicio"><i aria-hidden="true" data-lucide="sparkles"></i> ¿Qué servicio quieres potenciar?</label>
+        <select aria-describedby="wa-servicio-error" class="wa-form__input wa-form__select" id="wa-servicio" name="servicio" required>
+          <option disabled selected value="">Selecciona el tratamiento principal...</option>
+          <option value="Botox 💉">Botox 💉</option>
+          <option value="Ácido hialurónico ✨">Ácido hialurónico ✨</option>
+          <option value="Armonización facial 🌸">Armonización facial 🌸</option>
+          <option value="Bioestimuladores ⚡">Bioestimuladores ⚡</option>
+          <option value="Rejuvenecimiento 🌿">Rejuvenecimiento 🌿</option>
+          <option value="Varios tratamientos 🏥">Varios tratamientos 🏥</option>
+          <option value="Otro servicio 💬">Otro servicio 💬</option>
+        </select>
+        <p class="wa-form__error" hidden id="wa-servicio-error">Completa este campo para continuar.</p>
+      </div>
+      <button class="btn btn--primary btn--lg w-full wa-form__submit" id="waSubmitBtn" type="submit">Continuar por WhatsApp ↗</button>
+      <p class="wa-form__disclaimer"><i aria-hidden="true" data-lucide="lock"></i> Tu información es confidencial. Solo la usamos para preparar tu asesoría.</p>
+      <input aria-hidden="true" autocomplete="off" class="wa-honeypot" name="website" tabindex="-1" type="text"/>
+      <p aria-live="polite" id="wa-status" role="status"></p>
+      <a hidden href="https://wa.me/573145904933" id="wa-fallback" rel="noopener noreferrer" target="_blank">Continuar en WhatsApp</a>
+    </form>
+  </div>
+</div>
+
+<script defer src="../../form.js"></script>
+<script defer src="../../editorial.js?v=motion-1"></script>
+<script defer src="../../navigation.js?v=motion-1"></script>
+<script defer src="../../motion.js?v=1"></script>
+<script src="../calculadora-publicidad/calculadora-engine.js"></script>
+<script src="../calculadora-publicidad/calculadora-app.js"></script>
+<script src="tools.js"></script>
+</body>
+</html>
