@@ -207,10 +207,12 @@
 }
 
 .masthead-grid {
-  display: grid;
-  grid-template-columns: 1.35fr 0.65fr;
-  gap: 56px;
-  align-items: end;
+  display: block;
+  max-width: 960px;
+}
+
+.masthead-copy {
+  max-width: 940px;
 }
 
 .masthead-copy h1 {
@@ -2070,9 +2072,16 @@
   .dim-deliverables {
     grid-column: 1;
   }
+  .article-layout {
+    grid-template-columns: 100%;
+    gap: 32px;
+  }
   .article-sidebar,
   .calc-results-panel {
     position: static;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
   .footer-grid--expanded nav {
     display: flex;
@@ -2123,4 +2132,43 @@
   .footer-grid--expanded {
     grid-template-columns: 1fr;
   }
+  .resource-pillar-card {
+    padding: 24px 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .resource-pillar-card h3 {
+    font-size: 26px;
+  }
+  .final-cta {
+    overflow: hidden;
+  }
+  .final-cta .wrap {
+    overflow: hidden;
+  }
+  .final-wave {
+    width: 140px;
+    right: 0;
+    bottom: -90px;
+    opacity: .45;
+    max-width: 100%;
+  }
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+  max-width: 100%;
+}
+.footer-brand img {
+  max-width: 160px;
+  height: auto;
+}
+.footer-brand p {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }

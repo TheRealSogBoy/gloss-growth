@@ -64,7 +64,9 @@
   gap: 8px;
   margin-bottom: 24px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+  max-width: 100%;
 }
 
 .ap-tab-btn {
@@ -94,15 +96,22 @@
 /* Layout Grid */
 .ap-layout {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
   gap: 32px;
   margin-top: 24px;
   align-items: start;
+  min-width: 0;
+  max-width: 100%;
 }
 
 @media (max-width: 980px) {
   .ap-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ap-form-col,
+  .ap-results-col {
+    min-width: 0;
+    max-width: 100%;
   }
 }
 
@@ -143,6 +152,19 @@
 }
 
 @media (max-width: 600px) {
+  .ap-form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ap-card {
+    padding: 18px 14px;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .ap-field {
+    min-width: 0;
+    max-width: 100%;
+  }
   .ap-field.col-span-2 {
     grid-column: span 1;
   }
@@ -180,9 +202,15 @@
 /* KPI Grid */
 .ap-kpi-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 440px) {
+  .ap-kpi-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .ap-kpi-box {

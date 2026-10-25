@@ -475,35 +475,21 @@
   // =========================================================================
 
   function handleAudienceChange() {
-    const aud = dom.audience.value;
-    if (aud === 'responsable_negocio') {
-      dom.specialty.value = 'negocio_marketing';
-    } else if (dom.specialty.value === 'negocio_marketing') {
-      dom.specialty.value = 'medicina_estetica';
-    }
+    // Modo B2C exclusivo para generación de contenido a pacientes
   }
 
   function populateTreatments() {
     if (!isInitialized) return;
-    const aud = dom.audience.value;
-    const spec = dom.specialty.value;
+    const spec = dom.specialty ? dom.specialty.value : 'medicina_estetica';
     dom.treatment.innerHTML = '';
 
-    if (aud === 'responsable_negocio' || spec === 'negocio_marketing') {
-      const opt = document.createElement('option');
-      opt.value = '';
-      opt.textContent = 'Gestión, Rentabilidad y Costos de Cabina';
-      dom.treatment.appendChild(opt);
-      return;
-    }
-
-    const treatments = GlossContentEngine.getTreatments(spec, aud);
+    const treatments = GlossContentEngine.getTreatments(spec === 'todas' ? null : spec, 'paciente');
     const defaultOpt = document.createElement('option');
     defaultOpt.value = '';
     defaultOpt.textContent = `Todos los tratamientos de ${getSpecialtyLabel(spec)}`;
     dom.treatment.appendChild(defaultOpt);
 
-    treatments.forEach(t => {
+    treatments.filter(t => t.categoria !== 'negocio_marketing' && t.id !== 'negocio_marketing').forEach(t => {
       const opt = document.createElement('option');
       opt.value = t.id;
       opt.textContent = t.nombre_habitual;
@@ -513,7 +499,7 @@
 
   function populateIdeasTreatments() {
     if (!isInitialized || !dom.ideasTreatment) return;
-    const spec = dom.ideasSpecialty.value;
+    const spec = dom.ideasSpecialty ? dom.ideasSpecialty.value : 'todas';
     dom.ideasTreatment.innerHTML = '';
 
     const defaultOpt = document.createElement('option');
@@ -521,8 +507,8 @@
     defaultOpt.textContent = 'Todos los tratamientos del área';
     dom.ideasTreatment.appendChild(defaultOpt);
 
-    const treatments = GlossContentEngine.getTreatments(spec === 'todas' ? null : spec);
-    treatments.forEach(t => {
+    const treatments = GlossContentEngine.getTreatments(spec === 'todas' ? null : spec, 'paciente');
+    treatments.filter(t => t.categoria !== 'negocio_marketing' && t.id !== 'negocio_marketing').forEach(t => {
       const opt = document.createElement('option');
       opt.value = t.id;
       opt.textContent = t.nombre_habitual;
@@ -535,24 +521,12 @@
     dom.reelTreatment.innerHTML = '';
     const treatments = GlossContentEngine.getTreatments();
 
-    const groupClinical = document.createElement('optgroup');
-    groupClinical.label = 'Tratamientos Clínicos y Spa';
-    const groupB2B = document.createElement('optgroup');
-    groupB2B.label = 'Gestión, Finanzas y Rentabilidad B2B';
-
-    treatments.forEach(t => {
+    treatments.filter(t => t.categoria !== 'negocio_marketing' && t.id !== 'negocio_marketing').forEach(t => {
       const opt = document.createElement('option');
       opt.value = t.id;
       opt.textContent = `${t.nombre_habitual} (${getSpecialtyLabel(t.categoria)})`;
-      if (t.categoria === 'negocio_marketing') {
-        groupB2B.appendChild(opt);
-      } else {
-        groupClinical.appendChild(opt);
-      }
+      dom.reelTreatment.appendChild(opt);
     });
-
-    dom.reelTreatment.appendChild(groupClinical);
-    dom.reelTreatment.appendChild(groupB2B);
   }
 
   function getSpecialtyLabel(key) {
@@ -606,30 +580,29 @@
 
   async function handleGenerate(isInitialLoad = false) {
     if (!isInitialized) return;
-    const engineMode = dom.engine ? dom.engine.value : 'local';
 
-    // Si es la carga inicial de la página y el motor es Gemini pero no hay token en sesión,
-    // usamos la biblioteca local para mostrar tarjetas de demostración inmediatas sin interrumpir al usuario.
-    const hasDevToken = Boolean(sessionStorage.getItem('gloss_dev_token'));
-    if (isInitialLoad && !hasDevToken && engineMode.startsWith('gemini')) {
+    // Si es la carga inicial de la página, usamos la biblioteca local para mostrar tarjetas
+    // de demostración inmediatas sin latencia de red.
+    if (isInitialLoad) {
       return generateWithLocalEngine();
     }
 
-    if (engineMode === 'local') {
-      return generateWithLocalEngine();
+    // Modo predeterminado: Gemini AI con fallback silencioso a biblioteca local si hay error
+    try {
+      await handleGenerateGemini('gemini_completo');
+    } catch (err) {
+      console.warn('Fallo en Gemini AI. Aplicando fallback a biblioteca local:', err);
+      generateWithLocalEngine();
     }
-
-    // Modo Gemini AI (completo o rápido)
-    await handleGenerateGemini(engineMode);
   }
 
   function generateWithLocalEngine() {
     const options = {
-      audience: dom.audience.value,
-      specialty: dom.specialty.value,
-      treatment_id: dom.treatment.value || null,
-      objective: dom.objective.value,
-      format: dom.format.value,
+      audience: dom.audience?.value || 'paciente',
+      specialty: dom.specialty ? dom.specialty.value : 'todas',
+      treatment_id: dom.treatment ? dom.treatment.value : null,
+      objective: dom.objective ? dom.objective.value : 'educar',
+      format: dom.format ? dom.format.value : 'todos',
       platform: dom.platform ? dom.platform.value : 'instagram_reels',
       intensity: parseInt(dom.intensity ? dom.intensity.value : 3, 10),
       style: dom.style ? dom.style.value : 'Clínico y prudente',
@@ -882,21 +855,31 @@
       </header>
 
       <div class="ec-card-body">
-        <div class="ec-screen-box">
-          <span class="ec-screen-label">Texto en pantalla (Zona segura central)</span>
-          <p class="ec-screen-text" contenteditable="false" data-editable="textual">${escapeHtml(triad.textual)}</p>
-        </div>
-        <div class="ec-verbal-box">
-          <span class="ec-box-label"><span aria-hidden="true">🎙️</span> Gancho hablado (0-3 segundos)</span>
+        <!-- GANCHO HABLADO (PROTAGONISTA PRINCIPAL) -->
+        <div class="ec-verbal-hero">
+          <span class="ec-verbal-badge"><span aria-hidden="true">🎙️</span> Gancho hablado a cámara</span>
           <blockquote class="ec-verbal-quote" contenteditable="false" data-editable="verbal">“${escapeHtml(triad.verbal)}”</blockquote>
         </div>
-        <div class="ec-visual-box">
-          <span class="ec-box-label"><span aria-hidden="true">🎬</span> Escena visual inicial (0-2s)</span>
-          <p class="ec-visual-desc" contenteditable="false" data-editable="visual">${escapeHtml(triad.visual)}</p>
-        </div>
-        <div class="ec-sync-pill">
-          <span aria-hidden="true">⮂</span> <strong>Sincronía:</strong> ${escapeHtml(triad.synchronization_pattern)}
-        </div>
+
+        <!-- GUÍA DE GRABACIÓN RECOGIDA (CÁMARA Y TEXTO EN PANTALLA) -->
+        <details class="ec-recording-guide-drawer">
+          <summary class="ec-recording-guide-summary">
+            <span>🎥 Ver guía de grabación (cámara y texto en pantalla)</span>
+          </summary>
+          <div class="ec-recording-guide-content">
+            <div class="ec-screen-box">
+              <span class="ec-screen-label">Texto en pantalla (Zona segura central)</span>
+              <p class="ec-screen-text" contenteditable="false" data-editable="textual">${escapeHtml(triad.textual)}</p>
+            </div>
+            <div class="ec-visual-box">
+              <span class="ec-box-label"><span aria-hidden="true">🎬</span> Dirección de cámara y acción inicial (0–1s)</span>
+              <p class="ec-visual-desc" contenteditable="false" data-editable="visual">${escapeHtml(triad.visual)}</p>
+            </div>
+            <div class="ec-sync-pill">
+              <span aria-hidden="true">⮂</span> <strong>Sincronía:</strong> ${escapeHtml(triad.synchronization_pattern || 'Tríada simultánea')}
+            </div>
+          </div>
+        </details>
 
         <div class="ec-details-drawer">
           <button class="ec-details-toggle" type="button" aria-expanded="false">
@@ -911,11 +894,11 @@
 
       <footer class="ec-card-footer">
         <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          <button class="ec-btn-card-action btn-copy-proposal" type="button" title="Copiar propuesta en Markdown">
-            <span aria-hidden="true">📋</span> Copiar propuesta
-          </button>
           <button class="ec-btn-card-action btn-copy-verbal" type="button" title="Copiar solo gancho hablado">
             <span aria-hidden="true">💬</span> Copiar gancho
+          </button>
+          <button class="ec-btn-card-action btn-copy-proposal" type="button" title="Copiar propuesta en Markdown">
+            <span aria-hidden="true">📋</span> Copiar propuesta
           </button>
         </div>
         <div style="display: flex; gap: 8px; flex-wrap: wrap;">
@@ -1048,28 +1031,29 @@
   // GESTIÓN: GENERADOR DE IDEAS (FASE 3)
   // =========================================================================
 
-  function handleGenerateIdeas() {
+  async function handleGenerateIdeas() {
     if (!isInitialized) return;
     const options = {
-      audience: dom.ideasAudience.value,
-      specialty: dom.ideasSpecialty.value,
-      treatment_id: dom.ideasTreatment.value || null,
-      funnel_stage: dom.ideasFunnel.value || null,
-      angle: dom.ideasAngle.value || null,
-      count: parseInt(dom.ideasCount.value || 6, 10)
+      audience: dom.ideasAudience?.value || 'paciente',
+      specialty: dom.ideasSpecialty ? dom.ideasSpecialty.value : 'todas',
+      treatment_id: dom.ideasTreatment ? dom.ideasTreatment.value : null,
+      funnel_stage: dom.ideasFunnel ? dom.ideasFunnel.value : null,
+      angle: dom.ideasAngle ? dom.ideasAngle.value : null,
+      count: parseInt(dom.ideasCount?.value || 6, 10)
     };
 
-    if (dom.ideasEngine && dom.ideasEngine.value === 'gemini_ai') {
-      return handleGenerateIdeasGemini(options);
-    }
-
     try {
-      currentIdeasBatch = GlossContentEngine.generateIdeas(options);
-      renderIdeas(currentIdeasBatch);
-      showToast(`Se generaron ${currentIdeasBatch.items.length} ideas estructuradas.`);
+      await handleGenerateIdeasGemini(options);
     } catch (err) {
-      console.error('Error al generar ideas:', err);
-      showToast('Error generando ideas.');
+      console.warn('Fallo en Gemini AI para ideas. Fallback a biblioteca local:', err);
+      try {
+        currentIdeasBatch = GlossContentEngine.generateIdeas(options);
+        renderIdeas(currentIdeasBatch);
+        showToast(`Se generaron ${currentIdeasBatch.items.length} ideas estructuradas (Biblioteca local).`);
+      } catch (innerErr) {
+        console.error('Error al generar ideas locales:', innerErr);
+        showToast('Error generando ideas.');
+      }
     }
   }
 
@@ -1255,31 +1239,33 @@
   // GESTIÓN: ESTRUCTURADOR DE REELS (FASE 3)
   // =========================================================================
 
-  function handleGenerateReel() {
+  async function handleGenerateReel() {
     if (!isInitialized) return;
-    if (dom.reelEngine && dom.reelEngine.value === 'gemini_ai') {
-      return handleGenerateReelGemini();
-    }
-    const treatmentId = dom.reelTreatment.value || 'rinomodelacion';
-    const structureId = dom.reelStructure.value || 'doble_caida';
-    const duration = parseInt(dom.reelDuration.value || 50, 10);
-    const tone = dom.reelTone.value || 'Clínico y prudente';
-    const customHook = dom.reelCustomHook.value.trim() || null;
-
     try {
-      currentScript = GlossContentEngine.generateReelScript({
-        treatment_id: treatmentId,
-        structure_id: structureId,
-        duration_seconds: duration,
-        tone: tone,
-        custom_hook_verbal: customHook,
-        available_assets: getSelectedAssets()
-      });
-      renderReelSheet(currentScript);
-      showToast(`Guion de rodaje estructurado (${currentScript.beats.length} beats).`);
+      await handleGenerateReelGemini();
     } catch (err) {
-      console.error('Error al generar guion de Reel:', err);
-      showToast('Error estructurando guion de Reel.');
+      console.warn('Fallo en Gemini AI para Reel. Fallback a biblioteca local:', err);
+      const treatmentId = dom.reelTreatment?.value || 'rinomodelacion';
+      const structureId = dom.reelStructure?.value || 'doble_caida';
+      const duration = parseInt(dom.reelDuration?.value || 50, 10);
+      const tone = dom.reelTone?.value || 'Clínico y prudente';
+      const customHook = dom.reelCustomHook?.value?.trim() || null;
+
+      try {
+        currentScript = GlossContentEngine.generateReelScript({
+          treatment_id: treatmentId,
+          structure_id: structureId,
+          duration_seconds: duration,
+          tone: tone,
+          custom_hook_verbal: customHook,
+          available_assets: getSelectedAssets()
+        });
+        renderReelSheet(currentScript);
+        showToast(`Guion de rodaje estructurado (${currentScript.beats.length} beats, Biblioteca local).`);
+      } catch (innerErr) {
+        console.error('Error al generar guion de Reel local:', innerErr);
+        showToast('Error estructurando guion de Reel.');
+      }
     }
   }
 
@@ -1836,38 +1822,40 @@
     if (!isInitialized || !dom.carouselTreatment) return;
     const treatments = GlossContentEngine.getTreatments();
     dom.carouselTreatment.innerHTML = '';
-    treatments.forEach(t => {
+    treatments.filter(t => (t.categoria || t.specialty) !== 'negocio_marketing' && (t.id || t.treatment_id) !== 'negocio_marketing').forEach(t => {
       const opt = document.createElement('option');
-      opt.value = t.treatment_id;
-      opt.textContent = `${t.name} (${t.specialty || 'General'})`;
+      opt.value = t.id || t.treatment_id;
+      opt.textContent = `${t.nombre_habitual || t.name} (${getSpecialtyLabel(t.categoria || t.specialty)})`;
       dom.carouselTreatment.appendChild(opt);
     });
   }
 
-  function handleGenerateCarousel() {
+  async function handleGenerateCarousel() {
     if (!isInitialized) return;
-    if (dom.carouselEngine && dom.carouselEngine.value === 'gemini_ai') {
-      return handleGenerateCarouselGemini();
-    }
-    const treatmentId = dom.carouselTreatment ? dom.carouselTreatment.value : 'rinomodelacion';
-    const archetypeId = dom.carouselArchetype ? dom.carouselArchetype.value : 'SPLIT_VERSUS';
-    const objective = dom.carouselObjective ? dom.carouselObjective.value : 'autoridad_tecnica';
-    const slidesCount = dom.carouselSlidesCount ? parseInt(dom.carouselSlidesCount.value, 10) : 6;
-    const customHook = dom.carouselCustomHook ? dom.carouselCustomHook.value.trim() : null;
-
     try {
-      currentCarousel = GlossContentEngine.generateCarousel({
-        treatment_id: treatmentId,
-        archetype_id: archetypeId,
-        objective: objective,
-        slides_count: slidesCount,
-        custom_hook_verbal: customHook
-      });
-      renderCarouselSheet(currentCarousel);
-      showToast(`Guion de carrusel estructurado (${currentCarousel.slides.length} láminas).`);
+      await handleGenerateCarouselGemini();
     } catch (err) {
-      console.error('Error al generar carrusel:', err);
-      showToast('Error generando carrusel.');
+      console.warn('Fallo en Gemini AI para carrusel. Fallback a biblioteca local:', err);
+      const treatmentId = dom.carouselTreatment ? dom.carouselTreatment.value : 'rinomodelacion';
+      const archetypeId = dom.carouselArchetype ? dom.carouselArchetype.value : 'SPLIT_VERSUS';
+      const objective = dom.carouselObjective ? dom.carouselObjective.value : 'autoridad_tecnica';
+      const slidesCount = dom.carouselSlidesCount ? parseInt(dom.carouselSlidesCount.value, 10) : 6;
+      const customHook = dom.carouselCustomHook ? dom.carouselCustomHook.value.trim() : null;
+
+      try {
+        currentCarousel = GlossContentEngine.generateCarousel({
+          treatment_id: treatmentId,
+          archetype_id: archetypeId,
+          objective: objective,
+          slides_count: slidesCount,
+          custom_hook_verbal: customHook
+        });
+        renderCarouselSheet(currentCarousel);
+        showToast(`Guion de carrusel estructurado (${currentCarousel.slides.length} láminas, Biblioteca local).`);
+      } catch (innerErr) {
+        console.error('Error al generar carrusel local:', innerErr);
+        showToast('Error generando carrusel.');
+      }
     }
   }
 
@@ -2297,40 +2285,42 @@
     if (!isInitialized || !dom.storiesTreatment) return;
     const treatments = GlossContentEngine.getTreatments();
     dom.storiesTreatment.innerHTML = '';
-    treatments.forEach(t => {
+    treatments.filter(t => (t.categoria || t.specialty) !== 'negocio_marketing' && (t.id || t.treatment_id) !== 'negocio_marketing').forEach(t => {
       const opt = document.createElement('option');
-      opt.value = t.treatment_id;
-      opt.textContent = `${t.name} (${t.specialty || 'General'})`;
+      opt.value = t.id || t.treatment_id;
+      opt.textContent = `${t.nombre_habitual || t.name} (${getSpecialtyLabel(t.categoria || t.specialty)})`;
       dom.storiesTreatment.appendChild(opt);
     });
   }
 
-  function handleGenerateStories() {
+  async function handleGenerateStories() {
     if (!isInitialized) return;
-    if (dom.storiesEngine && dom.storiesEngine.value === 'gemini_ai') {
-      return handleGenerateStoriesGemini();
-    }
-    const treatmentId = dom.storiesTreatment ? dom.storiesTreatment.value : 'rinomodelacion';
-    const categoryId = dom.storiesCategory ? dom.storiesCategory.value : 'one_shot';
-    const structureId = dom.storiesStructure ? dom.storiesStructure.value : 'bomba';
-    const count = dom.storiesCount ? parseInt(dom.storiesCount.value, 10) : 4;
-    const formatMode = dom.storiesFormatMode ? dom.storiesFormatMode.value : 'talking_head';
-    const customTopic = dom.storiesCustomTopic ? dom.storiesCustomTopic.value.trim() : null;
-
     try {
-      currentStoriesSequence = GlossContentEngine.generateStoriesSequence({
-        treatment_id: treatmentId,
-        category_id: categoryId,
-        structure_id: structureId,
-        count: count,
-        format_mode: formatMode,
-        custom_topic: customTopic
-      });
-      renderStoriesSheet(currentStoriesSequence);
-      showToast(`Secuencia de historias estructurada (${currentStoriesSequence.stories.length} historias).`);
+      await handleGenerateStoriesGemini();
     } catch (err) {
-      console.error('Error al generar historias:', err);
-      showToast('Error generando historias.');
+      console.warn('Fallo en Gemini AI para historias. Fallback a biblioteca local:', err);
+      const treatmentId = dom.storiesTreatment ? dom.storiesTreatment.value : 'rinomodelacion';
+      const categoryId = dom.storiesCategory ? dom.storiesCategory.value : 'one_shot';
+      const structureId = dom.storiesStructure ? dom.storiesStructure.value : 'bomba';
+      const count = dom.storiesCount ? parseInt(dom.storiesCount.value, 10) : 4;
+      const formatMode = dom.storiesFormatMode ? dom.storiesFormatMode.value : 'talking_head';
+      const customTopic = dom.storiesCustomTopic ? dom.storiesCustomTopic.value.trim() : null;
+
+      try {
+        currentStoriesSequence = GlossContentEngine.generateStoriesSequence({
+          treatment_id: treatmentId,
+          category_id: categoryId,
+          structure_id: structureId,
+          count: count,
+          format_mode: formatMode,
+          custom_topic: customTopic
+        });
+        renderStoriesSheet(currentStoriesSequence);
+        showToast(`Secuencia de historias estructurada (${currentStoriesSequence.stories.length} historias, Biblioteca local).`);
+      } catch (innerErr) {
+        console.error('Error al generar historias locales:', innerErr);
+        showToast('Error generando historias.');
+      }
     }
   }
 

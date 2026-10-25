@@ -119,18 +119,6 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
         <h2 id="form-heading-ganchos" class="visually-hidden" style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); border: 0;">Configuración de ganchos</h2>
         <form id="ec-form" onsubmit="return false;">
           <div class="ec-form-grid">
-            <!-- Audiencia -->
-            <div class="ec-field-group">
-              <label class="ec-label" for="ec-audience">
-                <span>Audiencia objetivo</span>
-                <span class="ec-hint">Público meta</span>
-              </label>
-              <select class="ec-select" id="ec-audience" name="audience">
-                <option value="paciente" selected>Pacientes (Consumidor final / B2C)</option>
-                <option value="responsable_negocio">Directores y Dueños de Clínica (B2B)</option>
-              </select>
-            </div>
-
             <!-- Especialidad -->
             <div class="ec-field-group">
               <label class="ec-label" for="ec-specialty">
@@ -143,7 +131,6 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
                 <option value="estetica_corporal">Estética Corporal y Moldeo</option>
                 <option value="depilacion">Depilación Láser</option>
                 <option value="spa_bienestar">Spa y Bienestar</option>
-                <option value="negocio_marketing">Gestión y Rentabilidad</option>
               </select>
             </div>
 
@@ -190,18 +177,6 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
               </select>
             </div>
 
-            <!-- Motor Editorial (Gemini AI vs Biblioteca) -->
-            <div class="ec-field-group">
-              <label class="ec-label" for="ec-engine">
-                <span>Motor Editorial</span>
-                <span class="ec-hint">Inteligencia Artificial o Plantillas</span>
-              </label>
-              <select class="ec-select" id="ec-engine" name="engine">
-                <option value="gemini_completo" selected>Google Gemini AI — Modo Completo (Tríada)</option>
-                <option value="gemini_rapido">Google Gemini AI — Modo Rápido (Frases orales)</option>
-                <option value="local">Biblioteca Local (200 ganchos canónicos)</option>
-              </select>
-            </div>
 
             <!-- Cantidad -->
             <div class="ec-field-group">
@@ -328,13 +303,6 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
         <form id="ec-ideas-form" onsubmit="return false;">
           <div class="ec-form-grid">
             <div class="ec-field-group">
-              <label class="ec-label" for="ec-ideas-audience">Audiencia</label>
-              <select class="ec-select" id="ec-ideas-audience">
-                <option value="paciente" selected>Pacientes (B2C)</option>
-                <option value="responsable_negocio">Directores de Clínica (B2B)</option>
-              </select>
-            </div>
-            <div class="ec-field-group">
               <label class="ec-label" for="ec-ideas-specialty">Especialidad</label>
               <select class="ec-select" id="ec-ideas-specialty">
                 <option value="todas">Todas las especialidades</option>
@@ -343,7 +311,6 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
                 <option value="estetica_corporal">Estética Corporal y Moldeo</option>
                 <option value="depilacion">Depilación Láser</option>
                 <option value="spa_bienestar">Spa y Bienestar</option>
-                <option value="negocio_marketing">Gestión y Rentabilidad</option>
               </select>
             </div>
             <div class="ec-field-group">
@@ -382,16 +349,7 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
                 <option value="12">12 ideas (plan mensual)</option>
               </select>
             </div>
-            <div class="ec-field-group">
-              <label class="ec-label" for="ec-ideas-engine">
-                <span>Motor editorial</span>
-                <span class="ec-hint">Inteligencia artificial</span>
-              </label>
-              <select class="ec-select" id="ec-ideas-engine">
-                <option value="gemini_ai" selected>✨ Google Gemini AI (Semántico y personalizado)</option>
-                <option value="local_catalogo">📚 Catálogo local (Determinista)</option>
-              </select>
-            </div>
+
           </div>
           <div class="ec-panel-actions">
             <button class="ec-btn-primary" id="ec-btn-generate-ideas" type="submit">
@@ -469,17 +427,6 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
                 <option value="Clínico y prudente" selected>Clínico y prudente (Médico especialista)</option>
                 <option value="Pedagógico y cercano">Pedagógico y cercano (Didáctico sin tecnicismos)</option>
                 <option value="Desmitificador / Revelador">Desmitificador y revelador</option>
-                <option value="Estratégico / Rentabilidad">Estratégico y financiero (B2B)</option>
-              </select>
-            </div>
-            <div class="ec-field-group">
-              <label class="ec-label" for="ec-reel-engine">
-                <span>Motor editorial</span>
-                <span class="ec-hint">Inteligencia artificial</span>
-              </label>
-              <select class="ec-select" id="ec-reel-engine">
-                <option value="gemini_ai" selected>✨ Google Gemini AI (Guion adaptado y original)</option>
-                <option value="local_plantilla">📐 Plantilla canónica local</option>
               </select>
             </div>
           </div>
@@ -558,16 +505,7 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
                 <option value="10">10 láminas (Máximo permitido Instagram)</option>
               </select>
             </div>
-            <div class="ec-field-group">
-              <label class="ec-label" for="ec-carousel-engine">
-                <span>Motor editorial</span>
-                <span class="ec-hint">Inteligencia artificial</span>
-              </label>
-              <select class="ec-select" id="ec-carousel-engine">
-                <option value="gemini_ai" selected>✨ Google Gemini AI (Slides inéditas con límite de Sweller)</option>
-                <option value="local_plantilla">📚 Arquetipo canónico local</option>
-              </select>
-            </div>
+
           </div>
 
           <div class="ec-field-group" style="margin-bottom: 20px;">
@@ -658,16 +596,7 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
               </label>
               <input class="ec-input" id="ec-stories-custom-topic" placeholder="Ej: Qué esperar en la primera semana tras la aplicación..." type="text"/>
             </div>
-            <div class="ec-field-group">
-              <label class="ec-label" for="ec-stories-engine">
-                <span>Motor editorial</span>
-                <span class="ec-hint">Inteligencia artificial</span>
-              </label>
-              <select class="ec-select" id="ec-stories-engine">
-                <option value="gemini_ai" selected>✨ Google Gemini AI (Secuencia 9:16 con stickers ergonómicos)</option>
-                <option value="local_plantilla">📱 Secuencia canónica local</option>
-              </select>
-            </div>
+
           </div>
 
           <div class="ec-panel-actions">
