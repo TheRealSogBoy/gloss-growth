@@ -1,0 +1,572 @@
+/* ==========================================================================
+   GLOSS INSIGHTS · ESTILOS DE PUBLICACIÓN EDITORIAL Y ESTUDIOS SECTORIALES
+   Identidad: Borgoña #8C2536 | Rosa #FDA4AF | Crema #F2ECC2 | Tinta #352925
+   ========================================================================== */
+
+/* Cabecera Editorial del Volumen */
+.insights-hero {
+  background: var(--paper-warm, #FAF7F2);
+  border-bottom: 1px solid var(--line, #E5DCD0);
+  padding: 48px 0 56px 0;
+}
+
+.insights-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .insights-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.insights-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.insights-vol-pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--burgundy, #8C2536);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.insights-date-pill {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(140, 37, 54, 0.08);
+  color: var(--burgundy, #8C2536);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.insights-doc-tag {
+  font-size: 12px;
+  color: #66564D;
+}
+
+.insights-title {
+  font-family: var(--font-display, "Zodiak", serif);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.15;
+  color: var(--ink, #1F1917);
+  margin: 0 0 16px 0;
+  font-weight: 600;
+}
+
+.insights-subtitle {
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 1.5;
+  color: #55443D;
+  margin: 0 0 24px 0;
+  max-width: 720px;
+}
+
+.insights-cover-wrap {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(44, 9, 19, 0.12), 0 2px 8px rgba(44, 9, 19, 0.06);
+  border: 1px solid rgba(140, 37, 54, 0.15);
+  background: #FFFFFF;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.insights-cover-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Barra de Acciones de Documentos */
+.insights-actions-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.btn-pdf-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--burgundy, #8C2536);
+  color: #FFFFFF !important;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(140, 37, 54, 0.2);
+}
+
+.btn-pdf-download:hover {
+  background: #6E1C2A;
+  transform: translateY(-1px);
+  color: #FFFFFF !important;
+}
+
+.btn-pdf-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  color: var(--burgundy, #8C2536) !important;
+  border: 1px solid var(--line, #E5DCD0);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-pdf-view:hover {
+  background: var(--paper-warm, #FAF7F2);
+  border-color: var(--burgundy, #8C2536);
+  color: var(--burgundy, #8C2536) !important;
+}
+
+.btn-pdf-pending {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #F3F1EC;
+  color: #8A7E78 !important;
+  border: 1px dashed #D0C6BB;
+  font-size: 13.5px;
+  font-weight: 500;
+  padding: 11px 18px;
+  border-radius: 6px;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+/* Cuadrículas de Métricas Clave */
+.insights-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin: 32px 0 40px 0;
+}
+
+.insights-metric-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line, #E5DCD0);
+  border-radius: 8px;
+  padding: 20px;
+  border-top: 3px solid var(--burgundy, #8C2536);
+  box-sizing: border-box;
+}
+
+.insights-metric-card--blue {
+  border-top-color: #244B7A;
+}
+
+.insights-metric-card--green {
+  border-top-color: #2E6B4F;
+}
+
+.insights-metric-card--amber {
+  border-top-color: #A0641A;
+}
+
+.insights-metric-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #7A6961;
+  margin-bottom: 6px;
+}
+
+.insights-metric-val {
+  font-family: var(--font-display, "Zodiak", serif);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ink, #1F1917);
+  margin-bottom: 8px;
+}
+
+.insights-metric-sub {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #55443D;
+  margin: 0;
+}
+
+.insights-metric-source {
+  display: block;
+  font-size: 11px;
+  color: #8C7B73;
+  margin-top: 8px;
+}
+
+/* Cajas de Gráficos Visuales */
+.insights-chart-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line, #E5DCD0);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 28px 0;
+  box-sizing: border-box;
+}
+
+.insights-chart-header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #EFEAE3;
+  padding-bottom: 12px;
+}
+
+.insights-chart-title {
+  font-family: var(--font-display, "Zodiak", serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink, #1F1917);
+  margin: 0 0 4px 0;
+}
+
+.insights-chart-desc {
+  font-size: 13px;
+  color: #66564D;
+  margin: 0;
+}
+
+.insights-chart-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+
+.insights-chart-footer {
+  font-size: 11.5px;
+  line-height: 1.4;
+  color: #7A6961;
+  background: #FAF7F2;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+/* Barras Horizontales en HTML/CSS */
+.chart-bar-group {
+  margin-bottom: 16px;
+}
+
+.chart-bar-label-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink, #1F1917);
+  margin-bottom: 6px;
+}
+
+.chart-bar-track {
+  width: 100%;
+  height: 24px;
+  background: #F0ECE5;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.chart-bar-fill {
+  height: 100%;
+  background: var(--burgundy, #8C2536);
+  border-radius: 4px 0 0 4px;
+  transition: width 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.chart-bar-fill--secondary {
+  background: #A34E5E;
+}
+
+.chart-bar-fill--tertiary {
+  background: #D98291;
+  color: #2C0913;
+}
+
+.chart-bar-fill--blue {
+  background: #244B7A;
+}
+
+.chart-bar-fill--muted {
+  background: #B3A59E;
+}
+
+/* Cajas de Aviso Regulatorio y Limitaciones */
+.insights-notice {
+  background: #FFF8E6;
+  border: 1px solid #F0C36D;
+  border-left: 4px solid #D9822B;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 24px 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #613C00;
+}
+
+.insights-notice strong {
+  color: #4A2E00;
+}
+
+.insights-citation {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--burgundy, #8C2536);
+  background: rgba(140, 37, 54, 0.08);
+  border-radius: 4px;
+  padding: 1px 5px;
+  margin: 0 2px;
+  text-decoration: none;
+  vertical-align: super;
+}
+
+.insights-citation:hover {
+  background: var(--burgundy, #8C2536);
+  color: #FFFFFF;
+}
+
+/* Hoja de Ruta de 90 Días */
+.roadmap-phases {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 28px 0;
+}
+
+@media (max-width: 800px) {
+  .roadmap-phases {
+    grid-template-columns: 1fr;
+  }
+}
+
+.roadmap-phase-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line, #E5DCD0);
+  border-radius: 8px;
+  padding: 22px 18px;
+  box-sizing: border-box;
+  border-top: 4px solid var(--burgundy, #8C2536);
+}
+
+.roadmap-phase-card:nth-child(2) {
+  border-top-color: #A34E5E;
+}
+
+.roadmap-phase-card:nth-child(3) {
+  border-top-color: #2E6B4F;
+}
+
+.roadmap-phase-num {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #7A6961;
+  margin-bottom: 6px;
+}
+
+.roadmap-phase-title {
+  font-family: var(--font-display, "Zodiak", serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink, #1F1917);
+  margin: 0 0 12px 0;
+}
+
+.roadmap-phase-list {
+  padding-left: 18px;
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #55443D;
+}
+
+.roadmap-phase-list li + li {
+  margin-top: 8px;
+}
+
+/* Lista de Fuentes Bibliográficas */
+.biblio-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.biblio-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line, #E5DCD0);
+  font-size: 13px;
+  line-height: 1.5;
+  color: #4D3D36;
+}
+
+.biblio-num {
+  font-weight: 700;
+  color: var(--burgundy, #8C2536);
+  min-width: 24px;
+}
+
+.biblio-desc strong {
+  color: var(--ink, #1F1917);
+}
+
+.biblio-link {
+  color: var(--burgundy, #8C2536);
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+/* Tarjeta Destacada de Volumen en Índice */
+.volume-featured-card {
+  background: #FFFFFF;
+  border: 1px solid var(--line, #E5DCD0);
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  margin-bottom: 36px;
+  box-shadow: 0 8px 24px rgba(44, 9, 19, 0.05);
+}
+
+@media (max-width: 768px) {
+  .volume-featured-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.volume-featured-cover {
+  background: var(--paper-warm, #FAF7F2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  border-right: 1px solid var(--line, #E5DCD0);
+}
+
+@media (max-width: 768px) {
+  .volume-featured-cover {
+    border-right: none;
+    border-bottom: 1px solid var(--line, #E5DCD0);
+  }
+}
+
+.volume-featured-cover img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(44, 9, 19, 0.1);
+}
+
+.volume-featured-body {
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .volume-featured-body {
+    padding: 24px;
+  }
+}
+
+.volume-featured-body h3 {
+  font-family: var(--font-display, "Zodiak", serif);
+  font-size: 24px;
+  margin: 8px 0 12px 0;
+  line-height: 1.25;
+}
+
+.volume-featured-body p {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #55443D;
+  margin: 0 0 20px 0;
+}
+
+/* ==========================================================================
+   BLINDAJE RESPONSIVE PARA ARTÍCULOS E INVESTIGACIONES
+   Garantiza 0 px de desborde horizontal en 1024px, 768px y móviles
+   ========================================================================== */
+.article-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr) !important;
+  gap: 36px !important;
+  align-items: start;
+}
+
+.article-prose {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+.final-cta {
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.final-cta .wrap {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.final-wave {
+  max-width: 100% !important;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .article-layout {
+    grid-template-columns: 100% !important;
+    gap: 28px !important;
+  }
+  .article-sidebar {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
