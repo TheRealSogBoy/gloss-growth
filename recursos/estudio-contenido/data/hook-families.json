@@ -1,0 +1,316 @@
+[
+  {
+    "codigo": "NEG",
+    "nombre": "Error, alerta y pérdida",
+    "descripcion_mecanismo": "Identifica un riesgo, costo oculto, complicación clínica prevenible o mal hábito del paciente/gestor.",
+    "emocion_prevalente": "Alerta / Prevención",
+    "requisito_entrega": "Debe revelar un error identificable y su correspondiente corrección técnica o médica sin alarmismo falso.",
+    "apertura_tipica": "Verbal / Textual",
+    "intensidad_defecto": 4,
+    "narrativas_preferidas": [
+      "problema_invisible",
+      "check",
+      "faq",
+      "doble_caida"
+    ],
+    "formatos_recomendados": [
+      "talking_head",
+      "broll",
+      "carrusel"
+    ],
+    "total_hooks": 20
+  },
+  {
+    "codigo": "AUTO",
+    "nombre": "Autoidentificación y diagnóstico",
+    "descripcion_mecanismo": "Despierta el reconocimiento inmediato («Esto me pasa a mí») a través de un síntoma, sensación o situación cotidiana.",
+    "emocion_prevalente": "Identificación / Empatía",
+    "requisito_entrega": "Debe brindar una explicación o una ruta de valoración profesional clara, sin emitir diagnósticos médicos automatizados.",
+    "apertura_tipica": "Verbal / Textual",
+    "intensidad_defecto": 2,
+    "narrativas_preferidas": [
+      "faq",
+      "objection",
+      "problema_invisible",
+      "vacio_informacion"
+    ],
+    "formatos_recomendados": [
+      "talking_head",
+      "carrusel"
+    ],
+    "total_hooks": 17
+  },
+  {
+    "codigo": "GAP",
+    "nombre": "Curiosidad y revelación",
+    "descripcion_mecanismo": "Plantea una laguna informativa específica que desafía el conocimiento común del paciente sobre un tratamiento.",
+    "emocion_prevalente": "Intriga / Sorpresa",
+    "requisito_entrega": "Debe ofrecer una respuesta sustantiva y concreta, evitando crear un misterio vacío que no se resuelve en el contenido.",
+    "apertura_tipica": "Verbal / Textual",
+    "intensidad_defecto": 3,
+    "narrativas_preferidas": [
+      "vacio_informacion",
+      "faq",
+      "doble_caida"
+    ],
+    "formatos_recomendados": [
+      "talking_head",
+      "broll",
+      "carrusel"
+    ],
+    "total_hooks": 38
+  },
+  {
+    "codigo": "CONTRA",
+    "nombre": "Contracorriente y desmitificación",
+    "descripcion_mecanismo": "Cuestiona una creencia popular o un mito arraigado en la cultura estética con respaldo anatómico y fisiológico.",
+    "emocion_prevalente": "Sorpresa / Desacuerdo constructivo",
+    "requisito_entrega": "Debe aportar contexto, matices clínicos y explicaciones fisiológicas reales que justifiquen la postura.",
+    "apertura_tipica": "Verbal / Textual",
+    "intensidad_defecto": 4,
+    "narrativas_preferidas": [
+      "problema_invisible",
+      "versus",
+      "doble_caida"
+    ],
+    "formatos_recomendados": [
+      "talking_head",
+      "carrusel"
+    ],
+    "total_hooks": 12
+  },
+  {
+    "codigo": "ENEM",
+    "nombre": "Enemigo común y exposición",
+    "descripcion_mecanismo": "Expone una práctica perjudicial de la industria clandestina, la informalidad estética o hábitos nocivos para la salud.",
+    "emocion_prevalente": "Indignación / Solidaridad y protección",
+    "requisito_entrega": "Debe señalar la mala práctica con ética, promoviendo la seguridad del paciente y los estándares médicos legales.",
+    "apertura_tipica": "Verbal / Textual",
+    "intensidad_defecto": 4,
+    "narrativas_preferidas": [
+      "problema_invisible",
+      "check",
+      "case"
+    ],
+    "formatos_recomendados": [
+      "talking_head",
+      "carrusel"
+    ],
+    "total_hooks": 3
+  },
+  {
+    "codigo": "DEMO",
+    "nombre": "Demostración y efecto observable",
+    "descripcion_mecanismo": "Muestra directamente la causa física, el funcionamiento técnico del equipo o el cambio observable en cabina.",
+    "emocion_prevalente": "Asombro / Comprensión visual",
+    "requisito_entrega": "Debe presentar una demostración veraz acompañada de la explicación clínica o técnica correspondiente.",
+    "apertura_tipica": "Visual",
+    "intensidad_defecto": 3,
+    "narrativas_preferidas": [
+      "process",
+      "faq",
+      "transformacion_5s"
+    ],
+    "formatos_recomendados": [
+      "demostracion",
+      "broll"
+    ],
+    "total_hooks": 1
+  },
+  {
+    "codigo": "COMP",
+    "nombre": "Comparación y decisión",
+    "descripcion_mecanismo": "Contrapone dos alternativas (procedimiento A vs procedimiento B, tecnología A vs B) según indicaciones precisas.",
+    "emocion_prevalente": "Claridad / Duda resuelta",
+    "requisito_entrega": "Debe establecer criterios objetivos para elegir sin forzar un \"ganador universal\" falso.",
+    "apertura_tipica": "Textual / Visual",
+    "intensidad_defecto": 2,
+    "narrativas_preferidas": [
+      "versus",
+      "check",
+      "faq"
+    ],
+    "formatos_recomendados": [
+      "carrusel",
+      "broll",
+      "talking_head"
+    ],
+    "total_hooks": 11
+  },
+  {
+    "codigo": "AUT",
+    "nombre": "Autoridad y criterio experto",
+    "descripcion_mecanismo": "Transmite el razonamiento clínico, la experiencia diagnóstica o los protocolos de habilitación de un profesional titulado.",
+    "emocion_prevalente": "Confianza / Seguridad",
+    "requisito_entrega": "Debe exhibir el proceso de pensamiento del especialista y los protocolos de bioseguridad exigidos por la ley.",
+    "apertura_tipica": "Verbal / Visual",
+    "intensidad_defecto": 2,
+    "narrativas_preferidas": [
+      "faq",
+      "process",
+      "check",
+      "case"
+    ],
+    "formatos_recomendados": [
+      "talking_head",
+      "demostracion"
+    ],
+    "total_hooks": 14
+  },
+  {
+    "codigo": "PROOF",
+    "nombre": "Testimonios y experiencia verificable",
+    "descripcion_mecanismo": "Aporta evidencia basada en la vivencia documentada del paciente o un caso clínico real con consentimiento explícito.",
+    "emocion_prevalente": "Confianza / Validación social",
+    "requisito_entrega": "Debe contextualizar el caso como una respuesta biológica individual, sin prometer resultados idénticos para todos.",
+    "apertura_tipica": "Visual / Verbal",
+    "intensidad_defecto": 3,
+    "narrativas_preferidas": [
+      "case",
+      "transformacion_5s",
+      "process"
+    ],
+    "formatos_recomendados": [
+      "testimonio",
+      "broll"
+    ],
+    "total_hooks": 4
+  },
+  {
+    "codigo": "UTIL",
+    "nombre": "Guía, preparación y explicación",
+    "descripcion_mecanismo": "Proporciona valor práctico inmediato: checklists pre/post procedimiento, recomendaciones de cuidado o pasos operativos.",
+    "emocion_prevalente": "Alivio / Claridad de acción",
+    "requisito_entrega": "Debe presentar instrucciones claras y aplicables que preparen al paciente para su cita o protejan su inversión.",
+    "apertura_tipica": "Textual / Verbal",
+    "intensidad_defecto": 2,
+    "narrativas_preferidas": [
+      "check",
+      "faq",
+      "vacio_informacion",
+      "versus"
+    ],
+    "formatos_recomendados": [
+      "carrusel",
+      "talking_head"
+    ],
+    "total_hooks": 14
+  },
+  {
+    "codigo": "STORY",
+    "nombre": "Historia y transformación",
+    "descripcion_mecanismo": "Estructura una narrativa de tensión, superación de una inseguridad estética y resolución clínica profesional.",
+    "emocion_prevalente": "Empatía / Identificación humana",
+    "requisito_entrega": "Debe mantener un arco narrativo sobrio y verídico, evitando dramatizaciones sensacionalistas.",
+    "apertura_tipica": "Verbal / Visual",
+    "intensidad_defecto": 3,
+    "narrativas_preferidas": [
+      "transformacion_5s",
+      "doble_caida",
+      "case"
+    ],
+    "formatos_recomendados": [
+      "talking_head",
+      "broll"
+    ],
+    "total_hooks": 6
+  },
+  {
+    "codigo": "FOMO",
+    "nombre": "Oportunidad, actualidad y tendencia",
+    "descripcion_mecanismo": "Comunica una oportunidad de temporada, cupos limitados por agenda médica o la llegada de una nueva indicación aprobada.",
+    "emocion_prevalente": "Interés / Oportunidad temporal",
+    "requisito_entrega": "Debe mantener total honestidad en las condiciones comerciales y nunca generar urgencia médica fabricada.",
+    "apertura_tipica": "Textual / Visual",
+    "intensidad_defecto": 4,
+    "narrativas_preferidas": [
+      "offer",
+      "process"
+    ],
+    "formatos_recomendados": [
+      "anuncio",
+      "carrusel"
+    ],
+    "total_hooks": 9
+  },
+  {
+    "codigo": "EXP",
+    "nombre": "Prueba, evaluación y experimento",
+    "descripcion_mecanismo": "Examina qué sucede cuando se prueba una técnica, producto o protocolo en condiciones clínicas controladas.",
+    "emocion_prevalente": "Curiosidad / Escepticismo científico",
+    "requisito_entrega": "Debe detallar el método y el resultado clínico observado con honestidad intelectual.",
+    "apertura_tipica": "Visual / Verbal",
+    "intensidad_defecto": 3,
+    "narrativas_preferidas": [
+      "case",
+      "process",
+      "versus",
+      "doble_caida"
+    ],
+    "formatos_recomendados": [
+      "demostracion",
+      "talking_head"
+    ],
+    "total_hooks": 8
+  },
+  {
+    "codigo": "INTER",
+    "nombre": "Interacción, reto y test",
+    "descripcion_mecanismo": "Invita a la audiencia a participar activamente eligiendo una opción, resolviendo una trivia o autoevaluando hábitos.",
+    "emocion_prevalente": "Lúdica / Curiosidad participativa",
+    "requisito_entrega": "Debe brindar retroalimentación educativa y clarificar que los tests no reemplazan la consulta médica presencial.",
+    "apertura_tipica": "Textual / Visual",
+    "intensidad_defecto": 2,
+    "narrativas_preferidas": [
+      "faq",
+      "check",
+      "versus"
+    ],
+    "formatos_recomendados": [
+      "carrusel",
+      "talking_head"
+    ],
+    "total_hooks": 3
+  },
+  {
+    "codigo": "EFF",
+    "nombre": "Ahorro, facilidad y optimización",
+    "descripcion_mecanismo": "Destaca la conveniencia en tiempos de sesión, recuperación más ágil o costo-beneficio de protocolos combinados.",
+    "emocion_prevalente": "Alivio / Optimización de recursos",
+    "requisito_entrega": "Debe basarse en eficiencias reales del protocolo sin prometer resultados mágicos o instantáneos.",
+    "apertura_tipica": "Verbal / Visual",
+    "intensidad_defecto": 2,
+    "narrativas_preferidas": [
+      "check",
+      "process",
+      "versus",
+      "faq"
+    ],
+    "formatos_recomendados": [
+      "carrusel",
+      "broll",
+      "talking_head"
+    ],
+    "total_hooks": 24
+  },
+  {
+    "codigo": "ASP",
+    "nombre": "Deseo, aspiración y mejora",
+    "descripcion_mecanismo": "Conecta con el anhelo del paciente de verse renovado, armónico y seguro de su imagen corporal y facial.",
+    "emocion_prevalente": "Entusiasmo / Aspiración estética positiva",
+    "requisito_entrega": "Debe orientar el deseo hacia expectativas realistas y armonía sutil, alejándose de cánones inalcanzables.",
+    "apertura_tipica": "Visual / Verbal",
+    "intensidad_defecto": 3,
+    "narrativas_preferidas": [
+      "transformacion_5s",
+      "offer",
+      "process"
+    ],
+    "formatos_recomendados": [
+      "broll",
+      "testimonio",
+      "anuncio"
+    ],
+    "total_hooks": 16
+  }
+]

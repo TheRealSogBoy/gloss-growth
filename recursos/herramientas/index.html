@@ -62,6 +62,8 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
 <link href="../../homepage.css" rel="stylesheet"/>
 <link href="../../expansion.css" rel="stylesheet"/>
 <link href="../../motion.css?v=1" rel="stylesheet"/>
+<link href="../currency-picker.css" rel="stylesheet"/>
+<link href="../shared-storage.css" rel="stylesheet"/>
 <link href="../calculadora-publicidad/calculadora.css" rel="stylesheet"/>
 </head>
 <body>
@@ -98,29 +100,18 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
       </nav>
       <div class="masthead-grid">
         <div class="masthead-copy">
-          <p class="eyebrow">Laboratorio Financiero y Comercial</p>
-          <h1>Calculadoras interactivas para <em>conocer tus márgenes reales antes de pautar.</em></h1>
-          <p class="masthead-lead">Muchos centros estéticos promocionan tratamientos sin haber calculado cuánto les cuesta realmente cada sesión en cabina o cuánto pueden invertir por paciente adquirido. Usa estas dos herramientas con tus propios datos.</p>
+          <p class="eyebrow">Finanzas y Gestión</p>
+          <h1>Herramientas para <em>gestionar mejor tu centro estético</em></h1>
+          <p class="masthead-lead">Calcula cuánto deja cada tratamiento, cuánto necesita vender tu publicidad para ser rentable y cuántas citas puedes atender con los recursos disponibles.</p>
           <div class="masthead-actions">
             <a class="btn" href="#calc-tratamiento">01. Costos por Tratamiento <span aria-hidden="true">↓</span></a>
             <a class="btn btn--outline" href="#calc-publicidad">02. ROAS y Rentabilidad Publicitaria <span aria-hidden="true">↓</span></a>
             <a class="btn btn--cream" href="../calculadora-publicidad/">Versión dedicada completa <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--outline" href="../capacidad-instalada/">03. Capacidad Instalada <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--outline" href="../inversion-aparatologia/">04. Inversión en Aparatología <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--outline" href="../estudio-contenido/">05. Estudio de Contenido <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <aside class="masthead-meta" aria-label="Características de las herramientas">
-          <div class="masthead-meta-item">
-            <span>Privacidad total</span>
-            <strong>Los cálculos ocurren 100% en tu navegador</strong>
-          </div>
-          <div class="masthead-meta-item">
-            <span>Transparencia matemática</span>
-            <strong>Fórmulas explícitas sin promedios de mercado inventados</strong>
-          </div>
-          <div class="masthead-meta-item">
-            <span>Moneda base</span>
-            <strong>Pesos colombianos (COP) · Editable</strong>
-          </div>
-        </aside>
       </div>
     </div>
   </section>
@@ -137,10 +128,28 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
           <div>
             <span class="status-pill">Herramienta 01 · Principal</span>
             <h2>Calculadora de Costos y Rentabilidad por Tratamiento Estético</h2>
-            <p style="margin-top:10px;max-width:740px;">Determina con rigor los costos variables directos, el margen de contribución real, la cuota estimada de costos fijos y el resultado proyectado por sesión individual o paquete multicita.</p>
+            <p style="margin-top:10px;max-width:740px;">Analiza costos, márgenes y punto de equilibrio. Simula descuentos, promociones, paquetes y combos antes de modificar tus precios.</p>
           </div>
         </header>
 
+        <!-- TOOLBAR: MONEDA Y GESTIÓN DE ANÁLISIS GUARDADOS -->
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin:16px 0 20px;">
+          <div id="t-currency-picker-container"></div>
+          <div id="t-storage-container"></div>
+        </div>
+
+        <!-- SUB-NAVEGACIÓN ENTRE RENTABILIDAD HABITUAL Y SIMULADOR DE PROMOCIONES -->
+        <div class="treatment-subnav" role="tablist" aria-label="Secciones de la herramienta" style="display:flex;gap:10px;margin:20px 0 16px 0;flex-wrap:wrap;">
+          <button class="calc-mode-btn active" id="tab-btn-regular" type="button" role="tab" aria-selected="true" data-treatment-tab="regular">
+            <span aria-hidden="true">📋</span> 01. Rentabilidad habitual
+          </button>
+          <button class="calc-mode-btn" id="tab-btn-promos" type="button" role="tab" aria-selected="false" data-treatment-tab="promos">
+            <span aria-hidden="true">🏷️</span> 02. Simular precios y promociones
+          </button>
+        </div>
+
+        <!-- PANEL 01: RENTABILIDAD HABITUAL -->
+        <div id="panel-treatment-regular">
         <!-- BARRA DE EJEMPLOS RÁPIDOS (ILUSTRATIVOS) -->
         <div class="preset-bar" role="region" aria-label="Ejemplos ilustrativos de llenado rápido">
           <span>Cargar ejemplo ilustrativo:</span>
@@ -154,6 +163,12 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
         <div class="calc-grid">
           <!-- COLUMNA DE INPUTS -->
           <div class="calc-inputs">
+            <div class="calc-form-group">
+              <label class="calc-label" for="t-business-name">Nombre del negocio</label>
+              <span class="calc-hint">Opcional. Identifica tu clínica o centro en los reportes exportados y al copiar.</span>
+              <input class="calc-input" id="t-business-name" type="text" placeholder="Escribe el nombre de tu clínica o centro estético" maxlength="120"/>
+            </div>
+
             <div class="calc-form-group">
               <label class="calc-label" for="t-nombre">1. Nombre del tratamiento o protocolo</label>
               <span class="calc-hint">Identifica el procedimiento que deseas evaluar.</span>
@@ -297,8 +312,256 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
 
             <button class="btn" style="width:100%" type="button" onclick="openWAModal()">Diseñar estrategia para este tratamiento <span aria-hidden="true">↗</span></button>
             <button class="btn btn--outline" id="btn-export-treatment-to-calc" style="width:100%;margin-top:10px;" type="button">Simular punto de equilibrio publicitario <span aria-hidden="true">↗</span></button>
+            <button class="btn btn--outline" id="t-btn-export-aparatologia" style="width:100%;margin-top:10px;" type="button">Exportar datos a Calculadora de Aparatología <span aria-hidden="true">↗</span></button>
+            <div style="display:flex;gap:10px;margin-top:10px;">
+              <button class="btn btn--outline" id="t-btn-copy" style="flex:1;" type="button">Copiar resultados</button>
+              <button class="btn btn--primary" id="t-btn-pdf" style="flex:1;" type="button">Descargar reporte PDF</button>
+            </div>
+            <button class="btn btn--outline" id="btn-goto-promos" style="width:100%;margin-top:10px;" type="button">Simular precios y promociones para este tratamiento <span aria-hidden="true">→</span></button>
           </div>
         </div>
+        </div> <!-- Fin de #panel-treatment-regular -->
+
+        <!-- PANEL 02: SIMULADOR DE PRECIOS Y PROMOCIONES -->
+        <div id="panel-treatment-promos" style="display:none;margin-top:20px;">
+          <div style="background:rgba(140,37,54,0.04);border:1px solid rgba(140,37,54,0.15);border-radius:12px;padding:16px 20px;margin-bottom:24px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;">
+            <div>
+              <span class="status-pill" style="font-size:11px;">Módulo Integrado</span>
+              <h3 style="font-size:18px;margin:4px 0 4px 0;color:var(--burgundy);">Simulador de Precios y Promociones</h3>
+              <p style="font-size:13px;color:var(--charcoal-muted);margin:0;max-width:680px;">Evalúa qué sucede con tu margen de contribución si aplicas descuentos, ofertas 2×1, paquetes, combos o si necesitas calcular un precio mínimo según tu margen deseado.</p>
+            </div>
+            <div id="promo-base-badge" style="background:#FFFFFF;border:1px solid rgba(140,37,54,0.2);border-radius:8px;padding:8px 14px;font-size:12px;">
+              Tratamiento base: <strong id="promo-badge-name">Aplicación de Toxina Botulínica (3 zonas)</strong><br>
+              Tarifa habitual: <strong id="promo-badge-price">$950.000 COP</strong> · Costo variable directo: <strong id="promo-badge-cost">$463.250 COP</strong>
+            </div>
+          </div>
+
+          <!-- SELECTOR DE MODALIDAD DEL SIMULADOR -->
+          <div class="calc-mode-switcher" role="tablist" aria-label="Modalidad de promoción" style="margin-bottom:24px;display:flex;flex-wrap:wrap;gap:8px;">
+            <button class="calc-mode-btn active" type="button" role="tab" aria-selected="true" data-promo-modality="discount">
+              <span>% Descuento</span>
+            </button>
+            <button class="calc-mode-btn" type="button" role="tab" aria-selected="false" data-promo-modality="custom-price">
+              <span>Precio personalizado</span>
+            </button>
+            <button class="calc-mode-btn" type="button" role="tab" aria-selected="false" data-promo-modality="two-for-one">
+              <span>Promoción 2×1</span>
+            </button>
+            <button class="calc-mode-btn" type="button" role="tab" aria-selected="false" data-promo-modality="package">
+              <span>Paquete de sesiones</span>
+            </button>
+            <button class="calc-mode-btn" type="button" role="tab" aria-selected="false" data-promo-modality="combo">
+              <span>Combo de tratamientos</span>
+            </button>
+            <button class="calc-mode-btn" type="button" role="tab" aria-selected="false" data-promo-modality="target-price">
+              <span>Precio según margen objetivo</span>
+            </button>
+          </div>
+
+          <div class="calc-grid">
+            <!-- COLUMNA IZQUIERDA: INPUTS DINÁMICOS SEGÚN MODALIDAD -->
+            <div class="calc-inputs" id="promo-inputs-container">
+              <!-- MODALIDAD A: DESCUENTO -->
+              <div class="promo-modality-panel" id="promo-panel-discount">
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-discount-pct">Porcentaje de descuento a simular (%)</label>
+                  <span class="calc-hint">Ingresa el descuento ofrecido sobre la tarifa habitual.</span>
+                  <input class="calc-input" id="promo-discount-pct" type="number" min="0" max="100" step="0.5" value="20"/>
+                </div>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-discount-commission">Comisión porcentual sobre la venta promocional (%)</label>
+                  <span class="calc-hint">Porcentaje cobrado por datáfono, pasarela o comisión profesional sobre el precio rebajado.</span>
+                  <input class="calc-input" id="promo-discount-commission" type="number" min="0" max="100" step="0.1" value="0"/>
+                </div>
+              </div>
+
+              <!-- MODALIDAD B: PRECIO PERSONALIZADO -->
+              <div class="promo-modality-panel" id="promo-panel-custom-price" style="display:none;">
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-custom-price">Nuevo precio promocional propuesto</label>
+                  <span class="calc-hint">Escribe la tarifa directa que deseas evaluar (ej. $85.000).</span>
+                  <input class="calc-input" id="promo-custom-price" type="number" min="0" step="1000" placeholder="Ej. 850000"/>
+                </div>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-custom-commission">Comisión porcentual sobre la venta (%)</label>
+                  <span class="calc-hint">Comisión calculada sobre el nuevo precio propuesto.</span>
+                  <input class="calc-input" id="promo-custom-commission" type="number" min="0" max="100" step="0.1" value="0"/>
+                </div>
+              </div>
+
+              <!-- MODALIDAD C: 2x1 -->
+              <div class="promo-modality-panel" id="promo-panel-two-for-one" style="display:none;">
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-2x1-type">Tipo de oferta 2×1</label>
+                  <span class="calc-hint">Recuerda: se realizan 2 atenciones en cabina. Se consideran los costos de ambas.</span>
+                  <select class="calc-input" id="promo-2x1-type">
+                    <option value="2x1" selected>2×1 tradicional (2 sesiones por el precio de 1)</option>
+                    <option value="second50">Segunda sesión al 50% de descuento (1,5× precio habitual)</option>
+                  </select>
+                </div>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-2x1-commission">Comisión porcentual sobre la venta (%)</label>
+                  <span class="calc-hint">Comisión sobre el ingreso total cobrado en la promoción.</span>
+                  <input class="calc-input" id="promo-2x1-commission" type="number" min="0" max="100" step="0.1" value="0"/>
+                </div>
+              </div>
+
+              <!-- MODALIDAD D: PAQUETE DE SESIONES -->
+              <div class="promo-modality-panel" id="promo-panel-package" style="display:none;">
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-pack-sessions">Número de sesiones incluidas (2 a 24)</label>
+                  <span class="calc-hint">Total de citas o sesiones que recibirá el paciente.</span>
+                  <input class="calc-input" id="promo-pack-sessions" type="number" min="2" max="24" step="1" value="8"/>
+                </div>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-pack-price">Precio total ofrecido por el paquete</label>
+                  <span class="calc-hint">Tarifa total que pagará el paciente por todas las sesiones.</span>
+                  <input class="calc-input" id="promo-pack-price" type="number" min="0" step="10000" placeholder="Ej. 800000"/>
+                </div>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-pack-cost-per-session">Costo variable unitario por sesión</label>
+                  <span class="calc-hint">Insumos y honorarios directos por cada cita prestada.</span>
+                  <input class="calc-input" id="promo-pack-cost-per-session" type="number" min="0" step="1000"/>
+                </div>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-pack-extra-cost">Costos adicionales específicos del paquete</label>
+                  <span class="calc-hint">Kit para el paciente, crema de apoyo en casa u otros insumos no repetidos.</span>
+                  <input class="calc-input" id="promo-pack-extra-cost" type="number" min="0" step="1000" value="0"/>
+                </div>
+                <div class="calc-form-group" style="background:rgba(140,37,54,0.03);border:1px dashed rgba(140,37,54,0.25);border-radius:8px;padding:10px 14px;">
+                  <label class="calc-label" style="font-size:12px;margin-bottom:4px;" for="promo-pack-base-is-pack">¿El tratamiento base en pestaña 01 ya era un paquete?</label>
+                  <select class="calc-input" id="promo-pack-base-is-pack" style="font-size:12px;padding:6px 10px;">
+                    <option value="no" selected>No, el costo base era por sesión individual (multiplicar por N sesiones)</option>
+                    <option value="yes">Sí, el costo base ya era el total del paquete (no multiplicar de nuevo)</option>
+                  </select>
+                </div>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-pack-commission">Comisión porcentual sobre el paquete (%)</label>
+                  <input class="calc-input" id="promo-pack-commission" type="number" min="0" max="100" step="0.1" value="0"/>
+                </div>
+              </div>
+
+              <!-- MODALIDAD E: COMBO DE TRATAMIENTOS -->
+              <div class="promo-modality-panel" id="promo-panel-combo" style="display:none;">
+                <p style="font-size:13px;color:var(--charcoal-muted);margin-bottom:12px;">Combina entre 2 y 5 tratamientos en una sola oferta. Cada servicio conserva sus propios costos e insumos.</p>
+                <div id="promo-combo-items-list" style="display:flex;flex-direction:column;gap:10px;margin-bottom:14px;">
+                  <!-- Filas dinámicas de tratamientos en el combo -->
+                </div>
+                <button class="btn btn--outline" id="btn-add-combo-item" type="button" style="font-size:12px;padding:6px 12px;margin-bottom:14px;">+ Añadir tratamiento al combo</button>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-combo-price">Precio promocional ofrecido por el combo conjunto</label>
+                  <span class="calc-hint">Tarifa total del paquete combinado.</span>
+                  <input class="calc-input" id="promo-combo-price" type="number" min="0" step="5000" placeholder="Ej. 240000"/>
+                </div>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-combo-commission">Comisión porcentual sobre la venta del combo (%)</label>
+                  <input class="calc-input" id="promo-combo-commission" type="number" min="0" max="100" step="0.1" value="0"/>
+                </div>
+              </div>
+
+              <!-- MODALIDAD F: PRECIO SEGÚN MARGEN OBJETIVO -->
+              <div class="promo-modality-panel" id="promo-panel-target-price" style="display:none;">
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-target-margin-pct">Margen de contribución deseado (%)</label>
+                  <span class="calc-hint">¿Qué porcentaje de la tarifa necesitas conservar tras costos directos? (ej. 40%).</span>
+                  <input class="calc-input" id="promo-target-margin-pct" type="number" min="1" max="99" step="1" value="40"/>
+                </div>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-target-var-cost">Costo variable directo unitario</label>
+                  <span class="calc-hint">Insumos y honorarios por sesión (pre-cargado del tratamiento).</span>
+                  <input class="calc-input" id="promo-target-var-cost" type="number" min="0" step="1000"/>
+                </div>
+                <div class="calc-form-group">
+                  <label class="calc-label" for="promo-target-commission-pct">Comisión porcentual sobre la venta (%)</label>
+                  <span class="calc-hint">Comisión sobre ingresos (ej. 10%). Se recalcula estrictamente sobre el precio final.</span>
+                  <input class="calc-input" id="promo-target-commission-pct" type="number" min="0" max="99" step="0.1" value="0"/>
+                </div>
+                <div id="promo-impossible-warning" style="display:none;background:#FEF2F2;border:1px solid #F87171;color:#991B1B;padding:10px 14px;border-radius:8px;font-size:12px;margin-top:10px;">
+                  <strong>Margen inalcanzable:</strong> La suma del margen deseado y las comisiones porcentuales es igual o superior al 100%. Bajo este modelo matemático no existe un precio finito factible.
+                </div>
+              </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: RESULTADOS COMPARATIVOS -->
+            <div class="calc-results">
+              <div class="calc-results-header">
+                <span class="calc-results-title">Comparativa Financiera</span>
+                <span style="font-size:11px;color:var(--charcoal-muted);font-weight:600;" id="promo-modality-badge">Descuento Porcentual</span>
+              </div>
+
+              <!-- TABLA COMPARATIVA DIRECTA -->
+              <div style="overflow-x:auto;margin-bottom:18px;">
+                <table style="width:100%;border-collapse:collapse;font-size:12px;text-align:left;">
+                  <thead>
+                    <tr style="background:var(--burgundy);color:#FFFFFF;">
+                      <th style="padding:8px 10px;border-radius:6px 0 0 0;">Concepto</th>
+                      <th style="padding:8px 10px;text-align:right;">Tarifa Habitual</th>
+                      <th style="padding:8px 10px;text-align:right;">Oferta / Promo</th>
+                      <th style="padding:8px 10px;text-align:right;border-radius:0 6px 0 0;">Diferencia</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom:1px solid rgba(0,0,0,0.06);">
+                      <td style="padding:8px 10px;font-weight:600;">Precio de venta</td>
+                      <td style="padding:8px 10px;text-align:right;" id="promo-row-reg-price">—</td>
+                      <td style="padding:8px 10px;text-align:right;font-weight:700;" id="promo-row-pro-price">—</td>
+                      <td style="padding:8px 10px;text-align:right;" id="promo-row-diff-price">—</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid rgba(0,0,0,0.06);background:rgba(0,0,0,0.015);">
+                      <td style="padding:8px 10px;font-weight:600;">Costos variables</td>
+                      <td style="padding:8px 10px;text-align:right;" id="promo-row-reg-cost">—</td>
+                      <td style="padding:8px 10px;text-align:right;" id="promo-row-pro-cost">—</td>
+                      <td style="padding:8px 10px;text-align:right;" id="promo-row-diff-cost">—</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid rgba(0,0,0,0.06);background:rgba(140,37,54,0.04);">
+                      <td style="padding:8px 10px;font-weight:700;color:var(--burgundy);">Margen de contribución ($)</td>
+                      <td style="padding:8px 10px;text-align:right;" id="promo-row-reg-contrib">—</td>
+                      <td style="padding:8px 10px;text-align:right;font-weight:700;color:var(--burgundy);" id="promo-row-pro-contrib">—</td>
+                      <td style="padding:8px 10px;text-align:right;font-weight:700;" id="promo-row-diff-contrib">—</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid rgba(0,0,0,0.06);">
+                      <td style="padding:8px 10px;font-weight:600;">Margen de contribución (%)</td>
+                      <td style="padding:8px 10px;text-align:right;" id="promo-row-reg-margin-pct">—</td>
+                      <td style="padding:8px 10px;text-align:right;font-weight:700;" id="promo-row-pro-margin-pct">—</td>
+                      <td style="padding:8px 10px;text-align:right;" id="promo-row-diff-margin-pct">—</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- KPI BOXES DE LA PROMOCIÓN -->
+              <div class="calc-kpis-grid" style="grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px;">
+                <div class="calc-kpi-box">
+                  <span id="promo-kpi-1-label">Tarifa promocional</span>
+                  <strong id="promo-out-price">—</strong>
+                </div>
+                <div class="calc-kpi-box">
+                  <span>Margen de contribución</span>
+                  <strong id="promo-out-contrib" style="color:var(--burgundy);">—</strong>
+                </div>
+                <div class="calc-kpi-box">
+                  <span>Margen sobre venta promo</span>
+                  <strong id="promo-out-margin-pct">—</strong>
+                </div>
+                <div class="calc-kpi-box">
+                  <span>Variación vs. venta habitual</span>
+                  <strong id="promo-out-diff-contrib">—</strong>
+                </div>
+              </div>
+
+              <!-- DIAGNÓSTICO E INTERPRETACIÓN COMERCIAL -->
+              <div class="calc-diagnostic-note" id="promo-out-diagnostic">
+                <!-- Se inyecta dinámicamente -->
+              </div>
+
+              <div style="display:flex;gap:10px;margin-top:14px;">
+                <button class="btn btn--outline" id="promo-btn-copy" style="flex:1;" type="button">Copiar simulación</button>
+                <button class="btn btn--primary" id="promo-btn-pdf" style="flex:1;" type="button">Descargar reporte PDF</button>
+              </div>
+              <button class="btn btn--outline" id="btn-back-to-regular" style="width:100%;margin-top:10px;" type="button">← Volver a rentabilidad habitual</button>
+            </div>
+          </div>
+        </div> <!-- Fin de #panel-treatment-promos -->
 
         <!-- FÓRMULAS EXPLICADAS -->
         <div class="formula-box">
@@ -328,7 +591,7 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
           <div>
             <span class="status-pill">Herramienta 02 · Principal</span>
             <h2>Calculadora de ROAS y Rentabilidad Publicitaria</h2>
-            <p style="margin-top:10px;max-width:740px;">Calcula el ROAS que necesitas para recuperar tu inversión y analiza cuánto dinero puede dejar realmente tu publicidad en estética, spas y clínicas. Sin supuestos forzados de WhatsApp ni métricas inventadas.</p>
+            <p style="margin-top:10px;max-width:740px;">Calcula cuánto necesitas vender para recuperar tu inversión publicitaria y cuánto debe facturar tu negocio para cubrir sus gastos.</p>
           </div>
         </header>
 
@@ -340,6 +603,9 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
           <button class="calc-mode-btn" id="mode-btn-real" type="button" role="tab" aria-selected="false" data-mode="real">
             <span aria-hidden="true">🔍</span> Analizar resultados reales
           </button>
+          <button class="calc-mode-btn" id="mode-btn-breakeven" type="button" role="tab" aria-selected="false" data-mode="breakeven">
+            <span aria-hidden="true">🏢</span> Punto de equilibrio del negocio
+          </button>
         </div>
 
         <!-- BARRA DE PRESETS Y EJEMPLOS RÁPIDOS -->
@@ -349,6 +615,7 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
           <button class="calc-preset-btn" type="button" data-preset="casoB">Caso B: Con Meta $600k de ganancia</button>
           <button class="calc-preset-btn" type="button" data-preset="casoD">Caso D: Campaña Real en Equilibrio</button>
           <button class="calc-preset-btn" type="button" data-preset="casoE">Caso E: Alto ROAS / Margen Bajo</button>
+          <button class="calc-preset-btn" type="button" data-preset="casoBreakevenG">Caso G: Equilibrio del Negocio ($7M fijos / 60% margen)</button>
           <button class="calc-preset-btn btn-reset" type="button" id="btn-reset-values">Restablecer valores</button>
         </div>
 
@@ -363,6 +630,13 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
                 <h3 class="calc-card-title">
                   <span class="badge-num">A</span> Servicio y Margen de Contribución
                 </h3>
+
+                <!-- Nombre del Negocio (Opcional) -->
+                <div class="calc-field" style="margin-bottom:14px;">
+                  <label for="plan-business-name">Nombre del negocio</label>
+                  <input class="calc-control" id="plan-business-name" type="text" placeholder="Escribe el nombre de tu clínica o centro estético" maxlength="120">
+                  <span class="hint">Opcional. Identifica tu clínica o centro en el reporte PDF y al copiar resultados.</span>
+                </div>
 
                 <div class="calc-row-2">
                   <div class="calc-field">
@@ -592,10 +866,195 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
               </div>
             </div>
 
+            <!-- ==================== FORMULARIO MODO PUNTO DE EQUILIBRIO ==================== -->
+            <div id="panel-form-breakeven" style="display:none;">
+              <!-- Nombre de la clínica o spa -->
+              <div class="calc-field" style="margin-bottom:14px;">
+                <label for="be-business-name">Nombre del negocio</label>
+                <input class="calc-control" id="be-business-name" type="text" placeholder="Escribe el nombre de tu clínica o centro estético" maxlength="120">
+                <span class="hint">Opcional. Identifica tu clínica o centro en el reporte PDF y al copiar resultados.</span>
+              </div>
+
+              <!-- BLOQUE 1: GASTOS FIJOS OPERATIVOS MENSUALES -->
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">A</span> Gastos Fijos Operativos Mensuales
+                </h3>
+                <p style="font-size:12px;color:var(--calc-charcoal-muted);margin-bottom:14px;">Compromisos estructurales independientes del volumen de atenciones prestadas.</p>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="be-rent">Arriendo o alquiler de sede</label>
+                    <input class="calc-control" id="be-rent" type="number" min="0" step="50000" value="2000000">
+                  </div>
+                  <div class="calc-field">
+                    <label for="be-payroll">Nómina fija mensual</label>
+                    <input class="calc-control" id="be-payroll" type="number" min="0" step="50000" value="3000000">
+                  </div>
+                </div>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="be-utilities">Servicios públicos (agua, luz, gas, internet)</label>
+                    <input class="calc-control" id="be-utilities" type="number" min="0" step="10000" value="500000">
+                  </div>
+                  <div class="calc-field">
+                    <label for="be-admin">Administración de edificio / sede</label>
+                    <input class="calc-control" id="be-admin" type="number" min="0" step="10000" value="500000">
+                  </div>
+                </div>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="be-software">Software y suscripciones clínicas</label>
+                    <input class="calc-control" id="be-software" type="number" min="0" step="10000" value="0">
+                  </div>
+                  <div class="calc-field">
+                    <label for="be-accounting">Contabilidad y asesoría legal</label>
+                    <input class="calc-control" id="be-accounting" type="number" min="0" step="10000" value="0">
+                  </div>
+                </div>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="be-insurance">Seguros y pólizas de responsabilidad</label>
+                    <input class="calc-control" id="be-insurance" type="number" min="0" step="10000" value="0">
+                  </div>
+                  <div class="calc-field">
+                    <label for="be-maintenance">Mantenimiento fijo de aparatología</label>
+                    <input class="calc-control" id="be-maintenance" type="number" min="0" step="10000" value="0">
+                  </div>
+                </div>
+
+                <div class="calc-field">
+                  <label for="be-other-fixed">Otros gastos fijos del período</label>
+                  <input class="calc-control" id="be-other-fixed" type="number" min="0" step="50000" value="1000000">
+                </div>
+
+                <div style="background:rgba(140,37,54,0.04);border:1px solid rgba(140,37,54,0.15);border-radius:8px;padding:8px 12px;font-size:12px;display:flex;justify-content:space-between;align-items:center;">
+                  <span>Total gastos fijos operativos:</span>
+                  <strong id="be-total-fixed-badge" style="color:var(--calc-burgundy);font-size:13px;">$7.000.000 COP</strong>
+                </div>
+              </div>
+
+              <!-- BLOQUE 2: COSTOS DE MARKETING DEL PERÍODO -->
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">B</span> Costos de Marketing del Período
+                </h3>
+                <p style="font-size:12px;color:var(--calc-charcoal-muted);margin-bottom:14px;">Inversiones en adquisición y retención para el mismo período analizado (puede ser $0 si no inviertes).</p>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="be-ad-spend">Inversión publicitaria mensual (Pauta)</label>
+                    <input class="calc-control" id="be-ad-spend" type="number" min="0" step="50000" value="1200000">
+                  </div>
+                  <div class="calc-field">
+                    <label for="be-agency-fee">Honorarios de agencia o especialista</label>
+                    <input class="calc-control" id="be-agency-fee" type="number" min="0" step="50000" value="800000">
+                  </div>
+                </div>
+
+                <div class="calc-field" style="background:rgba(0,0,0,0.02);padding:10px 12px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);margin-bottom:12px;">
+                  <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:12px;font-weight:600;margin:0;">
+                    <input type="checkbox" id="be-agency-included" style="accent-color:var(--calc-burgundy);width:16px;height:16px;">
+                    Los honorarios de gestión ya están contemplados en mis gastos fijos (no duplicar)
+                  </label>
+                </div>
+
+                <div class="calc-field">
+                  <label for="be-other-marketing">Otros gastos de marketing (diseño, video, eventos)</label>
+                  <input class="calc-control" id="be-other-marketing" type="number" min="0" step="50000" value="0">
+                </div>
+
+                <div style="background:rgba(140,37,54,0.04);border:1px solid rgba(140,37,54,0.15);border-radius:8px;padding:8px 12px;font-size:12px;display:flex;justify-content:space-between;align-items:center;">
+                  <span>Total marketing: <strong id="be-total-marketing-badge">$2.000.000 COP</strong></span>
+                  <span>Total a absorber (T): <strong id="be-total-costs-badge" style="color:var(--calc-burgundy);font-size:13px;">$9.000.000 COP</strong></span>
+                </div>
+              </div>
+
+              <!-- BLOQUE 3: MARGEN DE CONTRIBUCIÓN DEL NEGOCIO -->
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">C</span> Margen de Contribución del Negocio
+                </h3>
+
+                <div class="calc-mode-switcher" role="tablist" style="margin-bottom:14px;display:flex;gap:8px;">
+                  <button class="calc-mode-btn active" type="button" role="tab" aria-selected="true" data-be-margin-mode="simple" style="font-size:12px;padding:6px 14px;">
+                    Opción A: Margen global estimado
+                  </button>
+                  <button class="calc-mode-btn" type="button" role="tab" aria-selected="false" data-be-margin-mode="mix" style="font-size:12px;padding:6px 14px;">
+                    Opción B: Mezcla de tratamientos
+                  </button>
+                </div>
+
+                <!-- OPCION A: MARGEN SIMPLE -->
+                <div id="be-margin-simple-panel">
+                  <div class="calc-field">
+                    <label for="be-global-margin-pct">Margen de contribución global estimado (%)</label>
+                    <input class="calc-control" id="be-global-margin-pct" type="number" min="1" max="99" step="0.5" value="60">
+                    <span class="hint">Por cada $100 que facturas, aproximadamente $60 quedan después de los costos variables directos para absorber gastos fijos y marketing.</span>
+                  </div>
+                </div>
+
+                <!-- OPCION B: MEZCLA DE TRATAMIENTOS -->
+                <div id="be-margin-mix-panel" style="display:none;">
+                  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+                    <label for="be-mix-share-type" style="font-size:12px;font-weight:600;margin:0;">Ponderar por:</label>
+                    <select class="calc-control" id="be-mix-share-type" style="width:auto;font-size:12px;padding:4px 8px;">
+                      <option value="appointments" selected>Cantidad relativa de citas</option>
+                      <option value="revenue_pct">% de ingresos de cada servicio</option>
+                    </select>
+                  </div>
+
+                  <div id="be-mix-items-list">
+                    <!-- Filas dinámicas de la mezcla -->
+                  </div>
+
+                  <div style="display:flex;gap:8px;margin-bottom:12px;">
+                    <button class="btn btn--outline" id="btn-add-mix-item" type="button" style="font-size:11px;padding:6px 12px;flex:1;">+ Añadir tratamiento a la mezcla</button>
+                    <button class="btn btn--outline" id="btn-import-treatment-mix" type="button" style="font-size:11px;padding:6px 12px;flex:1;">Importar de Tratamientos ↗</button>
+                  </div>
+
+                  <div style="background:rgba(140,37,54,0.04);border:1px solid rgba(140,37,54,0.15);border-radius:8px;padding:8px 12px;font-size:12px;display:flex;justify-content:space-between;align-items:center;">
+                    <span>Margen global ponderado resultante:</span>
+                    <strong id="be-mix-weighted-badge" style="color:var(--calc-burgundy);font-size:13px;">53,3%</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BLOQUE 4: FACTURACIÓN ACTUAL Y METAS -->
+              <div class="calc-card">
+                <h3 class="calc-card-title">
+                  <span class="badge-num">D</span> Facturación Mensual y Metas (Opcional)
+                </h3>
+
+                <div class="calc-row-2">
+                  <div class="calc-field">
+                    <label for="be-current-revenue">Facturación mensual actual o esperada</label>
+                    <input class="calc-control" id="be-current-revenue" type="number" min="0" step="100000" value="12000000">
+                    <span class="hint">Ingresos totales del centro para evaluar resultado operativo.</span>
+                  </div>
+                  <div class="calc-field">
+                    <label for="be-target-profit">Resultado operativo deseado (Meta de ganancia)</label>
+                    <input class="calc-control" id="be-target-profit" type="number" min="0" step="100000" value="3000000">
+                    <span class="hint">Excedente mensual que te gustaría generar tras cubrir gastos.</span>
+                  </div>
+                </div>
+
+                <div class="calc-field">
+                  <label for="be-average-ticket">Ticket promedio por atención (Opcional)</label>
+                  <input class="calc-control" id="be-average-ticket" type="number" min="0" step="10000" value="150000">
+                  <span class="hint">Permite estimar la cantidad de citas requeridas para alcanzar el equilibrio o tu meta.</span>
+                </div>
+              </div>
+            </div>
+
+
           </div>
 
           <!-- COLUMNA DERECHA: RESULTADOS EN TIEMPO REAL (STICKY) -->
-          <div class="calc-results-column">
+          <div class="calc-results-column" id="panel-results-plan">
             <div class="calc-results-hero" aria-live="polite">
 
               <!-- KPI PRINCIPAL DESTACADO -->
@@ -649,8 +1108,81 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
               <button class="btn" style="width:100%" type="button" onclick="openWAModal()">
                 Analizar mi clínica con el equipo de Gloss <span aria-hidden="true">↗</span>
               </button>
+              <div style="display:flex;gap:10px;margin-top:10px;">
+                <button class="btn btn--outline" id="btn-copy-summary" style="flex:1;" type="button">Copiar resultados</button>
+                <button class="btn btn--primary" id="btn-print-pdf" style="flex:1;" type="button">Descargar reporte PDF</button>
+              </div>
             </div>
           </div>
+
+          <!-- ==================== RESULTADOS MODO PUNTO DE EQUILIBRIO ==================== -->
+          <div class="calc-results-column" id="panel-results-breakeven" style="display:none;">
+            <div class="calc-card" style="border-top:3px solid var(--calc-burgundy);">
+              <div class="calc-results-header">
+                <div>
+                  <span class="calc-badge-status" style="background:rgba(140,37,54,0.1);color:var(--calc-burgundy);">Análisis Financiero Global</span>
+                  <h3 class="calc-card-title" style="margin-top:6px;">Punto de Equilibrio del Negocio</h3>
+                </div>
+              </div>
+
+              <!-- KPIs CLAVE -->
+              <div class="calc-kpis-grid" style="grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px;">
+                <div class="calc-kpi-box" style="grid-column:1/-1;background:rgba(140,37,54,0.05);border:1px solid rgba(140,37,54,0.2);">
+                  <span style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">Facturación mensual mínima para equilibrio</span>
+                  <strong id="be-out-breakeven-revenue" style="font-size:26px;color:var(--calc-burgundy);">$15.000.000 COP</strong>
+                  <span style="font-size:11px;color:var(--calc-charcoal-muted);margin-top:4px;">Nivel de ventas para absorber gastos sin pérdidas</span>
+                </div>
+                <div class="calc-kpi-box">
+                  <span>Gastos totales a absorber (T)</span>
+                  <strong id="be-out-total-costs">$9.000.000 COP</strong>
+                </div>
+                <div class="calc-kpi-box">
+                  <span>Resultado operativo actual</span>
+                  <strong id="be-out-operating-result" style="color:#991B1B;">-$1.800.000 COP</strong>
+                </div>
+                <div class="calc-kpi-box">
+                  <span>Facturación meta requerida</span>
+                  <strong id="be-out-target-revenue">$20.000.000 COP</strong>
+                </div>
+                <div class="calc-kpi-box">
+                  <span>Atenciones estimadas equilibrio</span>
+                  <strong id="be-out-appointments">100 citas</strong>
+                </div>
+              </div>
+
+              <!-- TABLA DE SENSIBILIDAD DE ESCENARIOS -->
+              <div style="margin-bottom:18px;">
+                <span style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;display:block;margin-bottom:8px;">Sensibilidad según nivel de facturación</span>
+                <div style="overflow-x:auto;">
+                  <table style="width:100%;border-collapse:collapse;font-size:11.5px;text-align:left;">
+                    <thead>
+                      <tr style="background:var(--calc-burgundy);color:#FFFFFF;">
+                        <th style="padding:6px 8px;border-radius:4px 0 0 0;">Escenario</th>
+                        <th style="padding:6px 8px;text-align:right;">Facturación</th>
+                        <th style="padding:6px 8px;text-align:right;">Costos Var.</th>
+                        <th style="padding:6px 8px;text-align:right;">Contribución</th>
+                        <th style="padding:6px 8px;text-align:right;border-radius:0 4px 0 0;">Resultado</th>
+                      </tr>
+                    </thead>
+                    <tbody id="be-scenarios-table-body">
+                      <!-- Filas dinámicas generadas por Engine.calculateBusinessScenarios -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- DIAGNÓSTICO EN 3 PARTES -->
+              <div class="calc-diagnostic-note" id="be-out-diagnostic" style="margin-bottom:18px;">
+                <!-- Se inyecta dinámicamente -->
+              </div>
+
+              <div style="display:flex;gap:10px;">
+                <button class="btn btn--outline" id="be-btn-copy" style="flex:1;" type="button">Copiar resultados</button>
+                <button class="btn btn--primary" id="be-btn-pdf" style="flex:1;" type="button">Descargar reporte PDF</button>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <!-- MATRIZ DE ESCENARIOS (ELEMENTO DIFERENCIADOR DE LA METODOLOGÍA) -->
@@ -882,6 +1414,10 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
 <script defer src="../../editorial.js?v=motion-1"></script>
 <script defer src="../../navigation.js?v=motion-1"></script>
 <script defer src="../../motion.js?v=1"></script>
+<script src="../../vendor/jspdf.umd.min.js"></script>
+<script src="../currency-picker.js"></script>
+<script src="../shared-storage.js"></script>
+<script src="../report-engine.js"></script>
 <script src="../calculadora-publicidad/calculadora-engine.js"></script>
 <script src="../calculadora-publicidad/calculadora-app.js"></script>
 <script src="tools.js"></script>

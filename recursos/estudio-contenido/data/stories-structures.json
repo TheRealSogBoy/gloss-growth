@@ -1,0 +1,247 @@
+{
+  "categories": [
+    {
+      "id": "urgencia",
+      "nombre": "Urgencia y Cierre de Agenda",
+      "descripcion": "Comunicación de cupos reales, fechas límite legítimas o avisos de cierre de agenda para incentivar la toma de decisión sin inventar falsas escaseces.",
+      "icono": "⏳",
+      "requiere_datos_reales": true,
+      "advertencia_etica": "Solo afirmar escasez o plazos si existen fechas o cupos comprobables del centro. Prohibido inventar ofertas o cupos ficticios."
+    },
+    {
+      "id": "one_shot",
+      "nombre": "One Shot (Impacto Rápido)",
+      "descripcion": "Historia única o de 2 láminas de alto impacto con una reflexión clínica, tip inmediato de cuidado facial o desmitificación veloz.",
+      "icono": "🎯",
+      "requiere_datos_reales": false,
+      "advertencia_etica": "Enfocar en valor técnico concreto y aplicable en menos de 15 segundos."
+    },
+    {
+      "id": "lead_magnet",
+      "nombre": "Lead Magnet y Recursos Gratuitos",
+      "descripcion": "Entrega de guías de preparación previa, calculadoras financieras, plantillas de cuidado o checklists a cambio de interacción por mensaje directo.",
+      "icono": "🎁",
+      "requiere_datos_reales": false,
+      "advertencia_etica": "El recurso prometido debe existir y ser entregado de inmediato por mensaje o enlace."
+    },
+    {
+      "id": "libre_humanizacion",
+      "nombre": "Libre y Humanización de Clínica",
+      "descripcion": "Detrás de cámaras, día a día del equipo, protocolos de esterilización, preparación de cabinas o valores del centro para generar cercanía y confianza.",
+      "icono": "🤍",
+      "requiere_datos_reales": false,
+      "advertencia_etica": "Mantener sobriedad clínica sin caer en frivolidad ni exponer intimidad de pacientes sin consentimiento."
+    },
+    {
+      "id": "encuestas",
+      "nombre": "Encuestas e Interacción",
+      "descripcion": "Uso de stickers interactivos (encuestas, barras deslizantes, cajas de preguntas) para cualificar la audiencia y recopilar objeciones reales.",
+      "icono": "📊",
+      "requiere_datos_reales": false,
+      "advertencia_etica": "Las preguntas deben responder a dudas legítimas del paciente, no a sesgos obvios de venta."
+    }
+  ],
+  "structures": [
+    {
+      "id": "bomba",
+      "nombre": "Soltamos la Bomba",
+      "categoria_principal": "one_shot",
+      "descripcion": "Apertura con una declaración contraria al sentido común o revelación técnica inesperada que rompe el scroll pasivo.",
+      "duracion_historias": { "min": 3, "max": 4 },
+      "pasos": [
+        {
+          "orden": 1,
+          "rol": "BOMBA",
+          "nombre": "Declaración contundente",
+          "proposito": "Romper el patrón con un hecho o mito clínico desconcertante.",
+          "sugerencia_sticker": "cuestionario_o_encuesta"
+        },
+        {
+          "orden": 2,
+          "rol": "CONTEXTO",
+          "nombre": "Por qué casi nadie lo explica",
+          "proposito": "Respaldar la afirmación con criterio anatómico o financiero.",
+          "sugerencia_sticker": "ninguno"
+        },
+        {
+          "orden": 3,
+          "rol": "SOLUCION",
+          "nombre": "El abordaje correcto",
+          "proposito": "Presentar la técnica o protocolo seguro que aplica el centro.",
+          "sugerencia_sticker": "slider_emoji"
+        },
+        {
+          "orden": 4,
+          "rol": "CTA",
+          "nombre": "Llamado a la acción contextual",
+          "proposito": "Invitar a responder la historia o agendar consulta de valoración.",
+          "sugerencia_sticker": "enlace_o_mensaje"
+        }
+      ]
+    },
+    {
+      "id": "de_x_a_y",
+      "nombre": "De X a Y (Transformación)",
+      "categoria_principal": "libre_humanizacion",
+      "descripcion": "Recorrido de transformación responsable desde el punto de partida del paciente (duda o malestar) hasta el resultado armónico y seguro.",
+      "duracion_historias": { "min": 3, "max": 4 },
+      "pasos": [
+        {
+          "orden": 1,
+          "rol": "PUNTO_X",
+          "nombre": "El punto de partida (Estado X)",
+          "proposito": "Mostrar la inquietud común o la incomodidad inicial del paciente.",
+          "sugerencia_sticker": "encuesta"
+        },
+        {
+          "orden": 2,
+          "rol": "PROCESO",
+          "nombre": "La decisión técnica responsable",
+          "proposito": "Explicar el plan de tratamiento individualizado sin atajos mágicos.",
+          "sugerencia_sticker": "ninguno"
+        },
+        {
+          "orden": 3,
+          "rol": "ESTADO_Y",
+          "nombre": "El resultado armónico (Estado Y)",
+          "proposito": "Destacar la satisfacción, naturalidad o bienestar recuperado.",
+          "sugerencia_sticker": "slider_emoji"
+        },
+        {
+          "orden": 4,
+          "rol": "CTA",
+          "nombre": "Paso a paso para tu caso",
+          "proposito": "Abrir canal para que el paciente consulte por su propio caso.",
+          "sugerencia_sticker": "enlace_o_mensaje"
+        }
+      ]
+    },
+    {
+      "id": "pregunta_respuesta",
+      "nombre": "Pregunta → Respuesta",
+      "categoria_principal": "encuestas",
+      "descripcion": "Resolución de dudas frecuentes mediante el sticker de caja de preguntas para demostrar autoridad clínica directa.",
+      "duracion_historias": { "min": 3, "max": 4 },
+      "pasos": [
+        {
+          "orden": 1,
+          "rol": "PREGUNTA",
+          "nombre": "Caja de preguntas real",
+          "proposito": "Mostrar la duda del paciente tal como suele plantearse en cabina.",
+          "sugerencia_sticker": "caja_preguntas"
+        },
+        {
+          "orden": 2,
+          "rol": "RESPUESTA_TECNICA",
+          "nombre": "Respuesta médica o profesional",
+          "proposito": "Aclarar la inquietud con terminología clara, empática y rigurosa.",
+          "sugerencia_sticker": "ninguno"
+        },
+        {
+          "orden": 3,
+          "rol": "CRITERIO_SEGURIDAD",
+          "nombre": "Advertencia o factor clave",
+          "proposito": "Mencionar habilitación, viales sellados o limitaciones clínicas.",
+          "sugerencia_sticker": "encuesta"
+        },
+        {
+          "orden": 4,
+          "rol": "CTA",
+          "nombre": "Invitación a valoración presencial",
+          "proposito": "Recordar que ningún diagnóstico en redes sustituye la consulta médica.",
+          "sugerencia_sticker": "enlace_o_mensaje"
+        }
+      ]
+    },
+    {
+      "id": "problema_explicacion_cta",
+      "nombre": "Problema → Explicación → CTA",
+      "categoria_principal": "lead_magnet",
+      "descripcion": "Estructura pedagógica por excelencia: identifica un dolor concreto, explica su causa anatómica y ofrece la vía de solución.",
+      "duracion_historias": { "min": 3, "max": 4 },
+      "pasos": [
+        {
+          "orden": 1,
+          "rol": "PROBLEMA",
+          "nombre": "Dolor o síntoma visible",
+          "proposito": "Describir el problema estético o de gestión con precisión milimétrica.",
+          "sugerencia_sticker": "encuesta"
+        },
+        {
+          "orden": 2,
+          "rol": "EXPLICACION",
+          "nombre": "Causa real subyacente",
+          "proposito": "Explicar por qué los remedios caseros o atajos no resuelven la causa.",
+          "sugerencia_sticker": "ninguno"
+        },
+        {
+          "orden": 3,
+          "rol": "SOLUCION_CENTRO",
+          "nombre": "Protocolo profesional idóneo",
+          "proposito": "Presentar el tratamiento de cabina con parámetros de seguridad.",
+          "sugerencia_sticker": "slider_emoji"
+        },
+        {
+          "orden": 4,
+          "rol": "CTA",
+          "nombre": "Acción directa o descarga",
+          "proposito": "Facilitar el contacto o la descarga de la guía correspondiente.",
+          "sugerencia_sticker": "enlace_o_mensaje"
+        }
+      ]
+    },
+    {
+      "id": "demostracion_servicio",
+      "nombre": "Demostración de Servicio en Cabina",
+      "categoria_principal": "urgencia",
+      "descripcion": "Recorrido paso a paso por la experiencia real en cabina, desde la bienvenida y asepsia hasta las sensaciones del paciente.",
+      "duracion_historias": { "min": 4, "max": 5 },
+      "pasos": [
+        {
+          "orden": 1,
+          "rol": "PREPARACION",
+          "nombre": "Asepsia y cabina habilitada",
+          "proposito": "Transmitir pulcritud: instrumental esterilizado y viales originales.",
+          "sugerencia_sticker": "ninguno"
+        },
+        {
+          "orden": 2,
+          "rol": "APLICACION",
+          "nombre": "Técnica en ejecución",
+          "proposito": "Mostrar la calma, precisión y cuidado durante el procedimiento.",
+          "sugerencia_sticker": "slider_emoji"
+        },
+        {
+          "orden": 3,
+          "rol": "SENSACION",
+          "nombre": "Experiencia y confort del paciente",
+          "proposito": "Describir cómo se siente el tratamiento (sin dolor, fresco, relajante).",
+          "sugerencia_sticker": "encuesta"
+        },
+        {
+          "orden": 4,
+          "rol": "POSTRADA",
+          "nombre": "Cuidados posteriores indispensables",
+          "proposito": "Demostrar que el seguimiento post-sesión es prioritario para el centro.",
+          "sugerencia_sticker": "ninguno"
+        },
+        {
+          "orden": 5,
+          "rol": "CTA",
+          "nombre": "Disponibilidad real de agenda",
+          "proposito": "Informar fechas de agenda abierta con llamado directo a agendar.",
+          "sugerencia_sticker": "enlace_o_mensaje"
+        }
+      ]
+    }
+  ],
+  "interactive_stickers": [
+    { "id": "ninguno", "nombre": "Sin sticker interactivo", "icono": "👁️" },
+    { "id": "encuesta", "nombre": "Encuesta (2 opciones)", "icono": "📊" },
+    { "id": "caja_preguntas", "nombre": "Caja de preguntas abierta", "icono": "❓" },
+    { "id": "slider_emoji", "nombre": "Barra deslizante de emoji", "icono": "🔥" },
+    { "id": "enlace_o_mensaje", "nombre": "Sticker de enlace / DM", "icono": "🔗" },
+    { "id": "cuenta_regresiva", "nombre": "Cuenta regresiva (Urgencia real)", "icono": "⏳" },
+    { "id": "cuestionario_o_encuesta", "nombre": "Cuestionario (Trivia A/B/C)", "icono": "💡" }
+  ]
+}

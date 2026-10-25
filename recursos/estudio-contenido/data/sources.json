@@ -1,0 +1,306 @@
+[
+  {
+    "id": 1,
+    "title": "Trends in Surgical and Nonsurgical Aesthetic Procedures (ISAPS Global Survey)",
+    "institution": "Sociedad Internacional de Cirugía Plástica Estética (ISAPS) / ResearchGate",
+    "url": "https://www.researchgate.net/publication/382897693_Trends_in_Surgical_and_Nonsurgical_Aesthetic_Procedures_A_14-Year_Analysis_of_Global_ISAPS_Data",
+    "type": "industry_report",
+    "relevance_summary": "Datos epidemiológicos globales y demográficos sobre volumen de procedimientos de toxina botulínica y rellenos dérmicos."
+  },
+  {
+    "id": 2,
+    "title": "ISAPS Global Survey 2024 - Non-surgical procedures Colombia",
+    "institution": "ISAPS",
+    "url": "https://www.isaps.org/discover/media-centre/isaps-global-survey-2024/",
+    "type": "industry_report",
+    "relevance_summary": "Posición de Colombia en el ranking mundial de procedimientos estéticos no quirúrgicos."
+  },
+  {
+    "id": 3,
+    "title": "Turismo médico en Colombia y crecimiento del mercado estético",
+    "institution": "Portafolio Colombia",
+    "url": "https://www.portafolio.co/negocios/turismo-medico-en-colombia-crece-la-llegada-de-extranjeros-para-procedimientos-esteticos-602932",
+    "type": "market_guide",
+    "relevance_summary": "Impacto económico de pacientes extranjeros y centros estéticos en Bogotá y Medellín."
+  },
+  {
+    "id": 4,
+    "title": "Cirugía plástica y seguridad del paciente en procedimientos estéticos",
+    "institution": "Sociedad Colombiana de Cirugía Plástica Estética y Reconstructiva (SCCP)",
+    "url": "https://cirugiaplastica.org.co/seguridad-del-paciente/",
+    "type": "clinical_study",
+    "relevance_summary": "Directrices deontológicas y recomendaciones de bioseguridad en procedimientos invasivos."
+  },
+  {
+    "id": 5,
+    "title": "Políticas de Salud y Apariencia Personal en Publicidad Digital",
+    "institution": "Meta Advertising Standards",
+    "url": "https://transparency.meta.com/es-la/policies/ad-standards/content-specific-restrictions/personal-health-and-appearance/",
+    "type": "advertising_policy",
+    "relevance_summary": "Reglas estrictas que prohíben resaltar atributos personales negativos o generar inseguridad corporal."
+  },
+  {
+    "id": 6,
+    "title": "Políticas de Salud y Medicamentos en Google Ads",
+    "institution": "Google Advertising Policies",
+    "url": "https://support.google.com/adspolicy/answer/176031?hl=es",
+    "type": "advertising_policy",
+    "relevance_summary": "Restricciones de pauta para servicios médicos, medicamentos con receta y tratamientos no aprobados."
+  },
+  {
+    "id": 7,
+    "title": "Ley 711 de 2001 - Reglamentación del ejercicio de la cosmetología en Colombia",
+    "institution": "Congreso de la República de Colombia / Secretaría del Senado",
+    "url": "http://www.secretariasenado.gov.co/senado/basedoc/ley_0711_2001.html",
+    "type": "legal",
+    "relevance_summary": "Delimita estrictamente las competencias de las cosmetólogas prohibiendo procedimientos invasivos médicos."
+  },
+  {
+    "id": 8,
+    "title": "Resolución 3100 de 2019 - Sistema Único de Habilitación de Prestadores de Servicios de Salud (REPS)",
+    "institution": "Ministerio de Salud y Protección Social de Colombia",
+    "url": "https://www.minsalud.gov.co/Normatividad_Nuevo/Resoluci%C3%B3n%20No.%203100%20de%202019.pdf",
+    "type": "legal",
+    "relevance_summary": "Condiciones de habilitación técnica, infraestructura y dotación obligatoria para consultorios médicos estéticos."
+  },
+  {
+    "id": 9,
+    "title": "Ley 1480 de 2011 - Estatuto del Consumidor y Publicidad Engañosa",
+    "institution": "Superintendencia de Industria y Comercio (SIC)",
+    "url": "https://colombiamove.com/blog/anuncio-sin-publicidad-enganosa-precio-estado-garantia-colombia/",
+    "type": "legal",
+    "relevance_summary": "Sanciones por publicidad engañosa, información veraz en precios y prohibición de promesas milagrosas."
+  },
+  {
+    "id": 10,
+    "title": "Tipos de Ácido Hialurónico: Densidades, Marcas y Usos Clínicos",
+    "institution": "Aesthetic Medical Journal / Dr. Luis Devoz",
+    "url": "https://www.aestheticbyluisdevoz.com/blog/tipos-acido-hialuronico/",
+    "type": "clinical_study",
+    "relevance_summary": "Clasificación reológica de geles de ácido hialurónico según viscoelasticidad y reticulación BDDE."
+  },
+  {
+    "id": 11,
+    "title": "Complicaciones derivadas del uso de ácido hialurónico y su manejo",
+    "institution": "Victoria Prats Aesthetic Medicine",
+    "url": "https://victoriaprats.com/complicaciones-rellenos-acido-hialuronico/",
+    "type": "clinical_study",
+    "relevance_summary": "Protocolos de reversión, identificación de granulomas y necrosis por oclusión."
+  },
+  {
+    "id": 12,
+    "title": "Protocolo de Hialuronidasa y Manejo de Complicaciones Vasculares",
+    "institution": "Sociedad Española de Medicina Estética (SEME) / Scribd",
+    "url": "https://es.scribd.com/document/453845206/protocolo-de-hialuronidasa",
+    "type": "clinical_study",
+    "relevance_summary": "Dosificación en unidades de hialuronidasa según severidad de la isquemia tisular."
+  },
+  {
+    "id": 13,
+    "title": "Radiesse e Hidroxiapatita de Calcio: Bioestimulación Dérmica",
+    "institution": "Aesthetic Medical Bogotá",
+    "url": "https://www.aestheticbyluisdevoz.com/radiesse/",
+    "type": "clinical_study",
+    "relevance_summary": "Eficacia de las microesferas de CaHA en la neocologénesis y firmeza del tercio inferior facial."
+  },
+  {
+    "id": 14,
+    "title": "Profhilo y NAHYCO Technology: Biorremodelación Celular",
+    "institution": "Naturalness Medicina Estética Medellín",
+    "url": "https://naturalness.com.co/profhilo/",
+    "type": "clinical_study",
+    "relevance_summary": "Complejos híbridos térmicos de ácido hialurónico no reticulado y técnica BAP."
+  },
+  {
+    "id": 15,
+    "title": "Ácido hialurónico: complicaciones y riesgos en medicina estética 2026",
+    "institution": "Estudio Derma Clínico",
+    "url": "https://www.estudioderma.com/post/acido-hialuronico-complicaciones-manejo-2026",
+    "type": "clinical_study",
+    "relevance_summary": "Revisión contemporánea del manejo de efectos adversos en inyectables dérmicos."
+  },
+  {
+    "id": 16,
+    "title": "Manejo de complicaciones vasculares no oculares por rellenos dérmicos",
+    "institution": "Dialnet / Universidad de La Rioja",
+    "url": "https://dialnet.unirioja.es/descarga/articulo/10506506.pdf",
+    "type": "clinical_study",
+    "relevance_summary": "Algoritmo de tratamiento inmediato ante sospecha de isquemia cutánea en territorio facial."
+  },
+  {
+    "id": 17,
+    "title": "Complicaciones oftalmológicas y rellenos dérmicos: análisis de riesgos",
+    "institution": "Revista SEME",
+    "url": "https://www.seme.org/revista/articulos/complicaciones-oftalmologicas-y-rellenos-dermicos-analisis-de-riesgos-y-tratamientos/pdf",
+    "type": "clinical_study",
+    "relevance_summary": "Mecanismos de embolización retrógrada hacia la arteria central de la retina durante rinomodelación."
+  },
+  {
+    "id": 18,
+    "title": "Marco legal de la aplicación de toxina botulínica por profesionales de la salud en Colombia",
+    "institution": "Escuela Amina Ariza",
+    "url": "https://escuelaaminariza.edu.co/puede-un-medico-general-aplicar-botox-en-colombia/",
+    "type": "legal",
+    "relevance_summary": "Competencias de médicos generales y especialistas frente a la aplicación de neuromoduladores."
+  },
+  {
+    "id": 19,
+    "title": "Enfermedad por inyección de rellenos sintéticos permanentes (Biopolímeros)",
+    "institution": "SciELO / Cirugía Plástica Ibero-Latinoamericana",
+    "url": "https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0376-78922022000300006",
+    "type": "clinical_study",
+    "relevance_summary": "Fisiopatología de la respuesta a cuerpo extraño y migración tisular de silicona industrial."
+  },
+  {
+    "id": 20,
+    "title": "Protocolo de Atención en Alogenosis Iatrogénica por Sustancias Modelantes",
+    "institution": "Instituto de Evaluación Tecnológica en Salud (IETS Colombia)",
+    "url": "https://iets.org.co/wp-content/uploads/2025/08/Protocolo-de-atencion-Alogenosis.pdf",
+    "type": "legal",
+    "relevance_summary": "Guía clínica nacional para el diagnóstico y abordaje multidisciplinario de biopolímeros."
+  },
+  {
+    "id": 21,
+    "title": "Aplicación de biopolímeros como problema de salud pública en Colombia",
+    "institution": "ResearchGate / Universidad del Valle",
+    "url": "https://www.researchgate.net/publication/354198941_Aplicacion-biopolimeros-problema-salud-publica-Cali",
+    "type": "clinical_study",
+    "relevance_summary": "Epidemiología de las complicaciones por inyección clandestina de biopolímeros en el suroccidente colombiano."
+  },
+  {
+    "id": 22,
+    "title": "Meta Ads para clínicas estéticas: optimización y cumplimiento normativo",
+    "institution": "Playmedic Healthcare Marketing",
+    "url": "https://www.playmedic.com/blog/meta-ads-para-clinicas/",
+    "type": "market_guide",
+    "relevance_summary": "Estrategias de pauta publicitaria en Meta Ads sin activar algoritmos de baneo en sector salud."
+  },
+  {
+    "id": 23,
+    "title": "Láser Soprano vs Diodo: comparativa de tecnología y confort",
+    "institution": "Kclinik",
+    "url": "https://kclinik.com/blog/laser-soprano-y-diodo-comparativa/",
+    "type": "clinical_study",
+    "relevance_summary": "Diferencias técnicas entre el disparo estático y la tecnología In-Motion de barrido continuo."
+  },
+  {
+    "id": 24,
+    "title": "Láser de Diodo vs Luz Pulsada Intensa (IPL): Guía para Clínicas",
+    "institution": "MLKJ Global Medical Devices",
+    "url": "https://mlkjglobal.com/es/blogs/laser-de-diodo-vs-ipl-para-depilacion/",
+    "type": "market_guide",
+    "relevance_summary": "Análisis de potencia óptica, profundidad de penetración folicular y seguridad en fototipos oscuros."
+  },
+  {
+    "id": 25,
+    "title": "Comparativa clínica de IPL frente a depilación láser médica",
+    "institution": "Sanitas Biblioteca de Salud",
+    "url": "https://www.sanitas.es/biblioteca-de-salud/estetica/depilacion/comparativa-ipl-laser",
+    "type": "clinical_study",
+    "relevance_summary": "Efectividad a largo plazo y número de sesiones requeridas según tecnología lumínica."
+  },
+  {
+    "id": 26,
+    "title": "Agencias y estrategias de marketing en el sector salud en Bogotá",
+    "institution": "Agencia Digital AMD",
+    "url": "https://agenciadigitalamd.com/marketing-digital/agencias-marketing-sector-salud-bogota/",
+    "type": "market_guide",
+    "relevance_summary": "Tendencias de captación digital de pacientes en Bogotá y ciudades intermedias."
+  },
+  {
+    "id": 27,
+    "title": "Publicidad efectiva con Google Ads para centros médicos",
+    "institution": "Juan C. Támara Marketing Médico",
+    "url": "https://juanctamara.com/como-hacer-publicidad-con-google-ads/",
+    "type": "market_guide",
+    "relevance_summary": "Estructuración de campañas de búsqueda para intenciones comerciales de alta conversión médica."
+  },
+  {
+    "id": 28,
+    "title": "Razonamiento Cuantitativo, Modelos de Rentabilidad y LTV en Servicios",
+    "institution": "RPubs Analytics",
+    "url": "https://rpubs.com/jseferino/RAZ_CUANT2",
+    "type": "market_guide",
+    "relevance_summary": "Cálculo de margen de contribución, absorción de costos fijos y valor de vida del cliente."
+  },
+  {
+    "id": 29,
+    "title": "Resolución 3100 de 2019: dotación y requisitos para consultorios estéticos",
+    "institution": "Allers Colombia Guías Técnicas",
+    "url": "https://www.allers.com.co/guias/resolucion-3100-de-2019-habilitacion/",
+    "type": "legal",
+    "relevance_summary": "Checklist exhaustivo de instrumental, desinfección y condiciones físicas para habilitación de cabinas."
+  },
+  {
+    "id": 30,
+    "title": "Marketing para Odontólogos y Especialistas Estéticos en Colombia",
+    "institution": "Medifolios",
+    "url": "https://medifolios.net/articulos/marketing-para-odontologos.php",
+    "type": "market_guide",
+    "relevance_summary": "Protocolos de atención telefónica y WhatsApp para agendamiento de citas de valoración."
+  },
+  {
+    "id": 31,
+    "title": "Publicidad de medicina estética y cirugía plástica en Meta y TikTok",
+    "institution": "Yuppi Agency",
+    "url": "https://yuppiagency.com/publicidad-cirugia-plastica-meta-tiktok/",
+    "type": "market_guide",
+    "relevance_summary": "Casos prácticos de aprobación de anuncios y prevención de sanciones algorítmicas."
+  },
+  {
+    "id": 32,
+    "title": "Clinical Guidelines on the Management of Acne Vulgaris and Chemical Peels",
+    "institution": "American Academy of Dermatology (AAD)",
+    "url": "https://www.aad.org/member/clinical-quality/guidelines/acne",
+    "type": "clinical_study",
+    "relevance_summary": "Guía clínica de consenso sobre grados de acné, uso de hidroxiácidos y riesgos de sobre-exfoliación en la barrera cutánea."
+  },
+  {
+    "id": 33,
+    "title": "The Diagnosis and Treatment of Peripheral Lymphedema: 2020 Consensus Document",
+    "institution": "International Society of Lymphology (ISL)",
+    "url": "https://lymphology.org/consensus-document/",
+    "type": "clinical_study",
+    "relevance_summary": "Consenso internacional sobre maniobras de drenaje linfático manual (Vodder/Leduc), presiones seguras y fisiología linfática."
+  },
+  {
+    "id": 34,
+    "title": "Cryolipolysis for Noninvasive Body Contouring: Clinical Safety and Paradoxical Adipose Hyperplasia (PAH)",
+    "institution": "Aesthetic Surgery Journal / FDA MedWatch",
+    "url": "https://academic.oup.com/asj/article/38/7/775/4836070",
+    "type": "clinical_study",
+    "relevance_summary": "Estudios de seguridad sobre apoptosis inducida por frío, membranas anticongelantes y tasa de hiperplasia adiposa paradójica (PAH)."
+  },
+  {
+    "id": 35,
+    "title": "Anatomical Safety and Vascular Danger Zones in Tear Trough and Midface Injections",
+    "institution": "Plastic and Reconstructive Surgery Journal",
+    "url": "https://journals.lww.com/plasreconsurg/Fulltext/2021/01000/Anatomy_of_the_Tear_Trough_and_Midface.18.aspx",
+    "type": "clinical_study",
+    "relevance_summary": "Mapeo anatómico de la arteria infraorbitaria y angular, técnica con cánula 27G y prevención de complicaciones en ojeras."
+  },
+  {
+    "id": 36,
+    "title": "Botulinum Toxin Type A for Masseteric Hypertrophy and Bruxism: A Systematic Review",
+    "institution": "Journal of Oral and Maxillofacial Surgery",
+    "url": "https://www.joms.org/article/S0278-2391(17)31326-8/fulltext",
+    "type": "clinical_study",
+    "relevance_summary": "Dosimetría clínica en unidades, zona de seguridad posterior para evitar el risorio y eficacia en bruxismo masticatorio."
+  },
+  {
+    "id": 37,
+    "title": "Consensus on Botulinum Toxin Injection for Primary Focal Axillary Hyperhidrosis",
+    "institution": "International Journal of Dermatology",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/ijd.15280",
+    "type": "clinical_study",
+    "relevance_summary": "Técnica de inyección intradérmica en cuadrícula, test de Minor y durabilidad clínica de 6 a 9 meses en sudoración axilar."
+  },
+  {
+    "id": 38,
+    "title": "Manual de Bioseguridad y Buenas Prácticas en Spas y Centros de Bienestar",
+    "institution": "Asociación Colombiana de Spas y Termalismo (ACOS) / MinSalud",
+    "url": "https://www.minsalud.gov.co/salud/publica/Ambiental/Paginas/bioseguridad-estetica.aspx",
+    "type": "legal",
+    "relevance_summary": "Protocolos de higiene en cabinas húmedas, desinfección de jacuzzis, lencería y requisitos normativos para centros de relajación."
+  }
+]

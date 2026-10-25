@@ -1,0 +1,1719 @@
+[
+  {
+    "id": "toxina_botulinica_facial",
+    "nombre_habitual": "Toxina Botulínica (Tercio Superior)",
+    "nombres_alternativos": [
+      "Bótox",
+      "aplicación de bótox",
+      "perfilamiento con toxina",
+      "neuromodulador",
+      "Dysport",
+      "Xeomin"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Inyección de una proteína purificada que relaja temporalmente los músculos faciales para suavizar y prevenir arrugas dinámicas en frente, entrecejo y contorno de ojos.",
+    "que_busca_paciente": "Verse menos enojado o cansado, prevenir líneas marcadas permanentemente y atenuar el envejecimiento facial.",
+    "dudas_frecuentes": [
+      "¿Cuánto dura el efecto?",
+      "¿Duele la inyección?",
+      "¿Cuándo se empieza a notar el resultado?"
+    ],
+    "objeciones": [
+      "Precio elevado para una duración de 4 a 5 meses",
+      "Miedo a resultados artificiales o pérdida de expresión"
+    ],
+    "miedos": [
+      "Quedar con cara de cera o inexpresivo",
+      "Caída del párpado (ptosis palpebral)",
+      "Dependencia biológica post-tratamiento"
+    ],
+    "expectativas_irreales": "Borrar el 100% de las arrugas al instante (tarda de 3 a 14 días y no elimina surcos estáticos dérmicos profundos).",
+    "confusiones_comunes": "Confundir el bótox con el ácido hialurónico (creer erróneamente que la toxina da volumen o rellena labios).",
+    "diferencias_clave": "La toxina botulínica relaja la contracción muscular; el ácido hialurónico rellena y provee soporte estructural a los tejidos.",
+    "temas_tecnicos": "Hiperactividad muscular, arrugas estáticas vs dinámicas, mecanismo neuromodulador, dosificación en unidades internacionales.",
+    "cuidados_recuperacion": "No acostarse en posición horizontal durante las 4 horas posteriores, evitar ejercicio intenso y no masajear la zona tratada el primer día.",
+    "oportunidades_comerciales": "Protocolos preventivos tipo Baby Botox para menores de 30 años; esquemas de retoque programado cada 4-5 meses.",
+    "angulos_emocionales": "La seguridad de sonreír sin temor a las \"patas de gallo\"; lucir descansado y fresco en entornos profesionales.",
+    "demostracion_autoridad": "Mapeo anatómico muscular personalizado frente al paciente; reconstitución visible del vial con solución salina.",
+    "temas_polemicos": "Aplicación preventiva en menores de 22 años; formación de anticuerpos y resistencia biológica a marcas con proteínas complejantes.",
+    "material_visual_sugerido": [
+      "Músculo contrayéndose antes vs relajación posterior",
+      "Diseño de puntos anatómicos con lápiz dérmico blanco",
+      "Reconstitución de toxina"
+    ],
+    "limites_clinicos_regulatorios": "No prometer duraciones superiores a 6 meses (media biológica de 3 a 5 meses). Procedimiento médico exclusivo (Ley 711 de 2001).",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      1,
+      2,
+      7,
+      18
+    ]
+  },
+  {
+    "id": "acido_hialuronico_relleno",
+    "nombre_habitual": "Ácido Hialurónico (Labios y Surcos)",
+    "nombres_alternativos": [
+      "Relleno de labios",
+      "relleno de surcos nasogenianos",
+      "perfilamiento labial",
+      "hidratación labial",
+      "fillers dérmicos"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Aplicación de gel biocompatible de ácido hialurónico reticulado para hidratar, definir contornos, corregir asimetrías o reponer volumen en tejidos blandos.",
+    "que_busca_paciente": "Labios simétricos y proporcionados, atenuar líneas nasogenianas y proyectar estructuras faciales con armonía.",
+    "dudas_frecuentes": [
+      "¿Se va a sentir duro o con grumos?",
+      "¿Voy a quedar con boca de pato?",
+      "¿Cuánto dura la hinchazón inicial?"
+    ],
+    "objeciones": [
+      "Miedo a la migración del gel sobre el labio superior",
+      "Desconfianza por ofertas excesivamente económicas en el mercado"
+    ],
+    "miedos": [
+      "Necrosis tisular por oclusión vascular arterial",
+      "Inyección accidental de polímeros industriales adulterados",
+      "Dolor intolerable durante la punción"
+    ],
+    "expectativas_irreales": "Duplicar el tamaño de los labios en una sola jeringa sin riesgo de migración o edema excesivo.",
+    "confusiones_comunes": "Creer que cualquier bulto es permanente; no saber que el ácido hialurónico puro es 100% reversible con hialuronidasa.",
+    "diferencias_clave": "Ácido hialurónico no reticulado (solo hidrata dérmicamente) vs reticulado con enlaces BDDE (aporta volumen y soporte estructural).",
+    "temas_tecnicos": "Reología del gel, módulo elástico G prima (G'), viscosidad dinámica, técnica de inyección con microcánula vs aguja afilada.",
+    "cuidados_recuperacion": "Aplicar hielo local indirecto, no masajear agresivamente, evitar saunas, piscinas y bebidas muy calientes durante 48 horas.",
+    "oportunidades_comerciales": "Paquetes de armonización labial progresiva en 2 sesiones; combinación con perfilamiento de mentón para balance de perfil.",
+    "angulos_emocionales": "Recuperar la sensualidad y la confianza al usar labial; disimular el aspecto de amargura que generan las comisuras caídas.",
+    "demostracion_autoridad": "Explicación del plano anatómico de seguridad; verificación de la arteria facial mediante palpación y aspiración previa.",
+    "temas_polemicos": "La técnica rusa descontrolada (Russian Lips) que sobrepasa el reborde bermellón provocando migración masiva; rellenos clandestinos a bajo costo.",
+    "material_visual_sugerido": [
+      "Textura del gel reológico expulsado de la jeringa",
+      "Paso a paso de hidratación con cánula",
+      "Comparativa de perfil antes y después"
+    ],
+    "limites_clinicos_regulatorios": "Obligatoriedad de contar con stock inmediato de hialuronidasa en cabina ante riesgo de isquemia. Uso médico exclusivo.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      10,
+      11,
+      12,
+      15,
+      16
+    ]
+  },
+  {
+    "id": "bioestimuladores_colageno",
+    "nombre_habitual": "Bioestimuladores de Colágeno (Radiesse / Sculptra)",
+    "nombres_alternativos": [
+      "Hidroxiapatita de calcio",
+      "ácido poli-L-láctico",
+      "bioestimulación dérmica",
+      "inductor de colágeno"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Inyección de microesferas biocompatibles que activan los fibroblastos para inducir una neocologénesis progresiva y restaurar la firmeza dérmica.",
+    "que_busca_paciente": "Tensar la piel flácida de mejillas, mandíbula o cuello sin añadir volumen desproporcionado ni transformar los rasgos.",
+    "dudas_frecuentes": [
+      "¿En cuánto tiempo se nota el colágeno nuevo?",
+      "¿Me va a engordar la cara?",
+      "¿Cuántas sesiones necesito?"
+    ],
+    "objeciones": [
+      "El resultado no es inmediato como el ácido hialurónico",
+      "Costo por vial superior a los rellenos convencionales"
+    ],
+    "miedos": [
+      "Formación de nódulos o granulomas subcutáneos",
+      "Que la piel quede rígida o endurecida"
+    ],
+    "expectativas_irreales": "Esperar un lifting quirúrgico en flacidez grado IV solo con inyectables.",
+    "confusiones_comunes": "Creer que Radiesse y Sculptra actúan igual: Radiesse utiliza hidroxiapatita de calcio con vectorizado mecánico inmediato; Sculptra usa PLLA con respuesta inflamatoria controlada.",
+    "diferencias_clave": "Bioestimulador (genera colágeno propio de tipo I y III) vs Relleno volumétrico (retiene agua y rellena espacio físico).",
+    "temas_tecnicos": "Activación de fibroblastos, neocologénesis, elastogénesis, vectorización en abanico subdérmica profunda.",
+    "cuidados_recuperacion": "Protocolo de masaje 5-5-5 en caso de ácido poli-L-láctico (5 minutos, 5 veces al día por 5 días) o reposo relativo con Radiesse.",
+    "oportunidades_comerciales": "Planes semestrales de redensificación facial y corporal (glúteos, cuello, brazos).",
+    "angulos_emocionales": "La satisfacción de una piel firme y tersa sin que nadie note qué procedimiento te realizaste; envejecer con dignidad estructural.",
+    "demostracion_autoridad": "Explicación histológica de la regeneración celular; dilución personalizada según espesor cutáneo del paciente.",
+    "temas_polemicos": "Inyecciones superficiales que provocan nódulos visibles difíciles de disolver al no existir una enzima reversora directa como la hialuronidasa.",
+    "material_visual_sugerido": [
+      "Esquema de vectores tensores en rostro",
+      "Preparación y homogeneización del producto",
+      "Pellizco de elasticidad antes vs 90 días después"
+    ],
+    "limites_clinicos_regulatorios": "El resultado óptimo tarda de 60 a 90 días. No se debe inyectar en labios ni en el área periocular.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      1,
+      13,
+      14
+    ]
+  },
+  {
+    "id": "redensificadores_profhilo",
+    "nombre_habitual": "Redensificadores Tisulares (Profhilo / Skinboosters)",
+    "nombres_alternativos": [
+      "Profhilo",
+      "ácido hialurónico térmico no reticulado",
+      "biorremodelador celular",
+      "skin booster"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Complejo híbrido cooperativo de ácido hialurónico de alto y bajo peso molecular estabilizado térmicamente para remodelación tisular y bio-remodelación.",
+    "que_busca_paciente": "Efecto de hidratación extrema (\"Glass Skin\"), luminosidad profunda, atenuar líneas de deshidratación y mejorar elasticidad.",
+    "dudas_frecuentes": [
+      "¿Esto da volumen?",
+      "¿Son muchas inyecciones?",
+      "¿Por qué se aplican solo 5 puntos por lado?"
+    ],
+    "objeciones": [
+      "Si no cambia mi forma ni mis arrugas profundas, ¿por qué cuesta lo que un relleno?"
+    ],
+    "miedos": [
+      "Que los bultos iniciales (pápulas) en los puntos de inyección no desaparezcan."
+    ],
+    "expectativas_irreales": "Esperar que Profhilo rellene un surco nasogeniano profundo o levante un pómulo caído.",
+    "confusiones_comunes": "Confundir un biorremodelador con una mesoterapia multivitamínica común o con un relleno con reticulación química (BDDE).",
+    "diferencias_clave": "Profhilo no tiene reticulación química por BDDE; fluye libremente por el plano subcutáneo estimulando receptores de colágeno y elastina.",
+    "temas_tecnicos": "Técnica BAP (Bio Aesthetic Points), dispersión tisular de alta fluidez, estimulación de queratinocitos y adipocitos.",
+    "cuidados_recuperacion": "Las pápulas se reabsorben en 24 a 36 horas; evitar exposición solar directa y maquillaje pesado el primer día.",
+    "oportunidades_comerciales": "Protocolo de choque de 2 sesiones espaciadas por 30 días, repetible dos veces al año (primavera/otoño).",
+    "angulos_emocionales": "La sensación de no necesitar bases de maquillaje pesadas; lucir una piel jugosa y radiante de forma natural.",
+    "demostracion_autoridad": "Explicación de la tecnología NAHYCO y marcación de los 5 puntos anatómicos de seguridad (BAP).",
+    "temas_polemicos": "Clínicas que promocionan mesoterapias genéricas con ácido hialurónico simple haciéndolas pasar por tratamientos de bio-remodelación avanzada.",
+    "material_visual_sugerido": [
+      "Marcación de los 5 puntos BAP en el rostro",
+      "Dispersión del gel bajo la piel",
+      "Brillo cutáneo natural en luz diurna"
+    ],
+    "limites_clinicos_regulatorios": "Requiere protocolo médico de 2 sesiones para resultados óptimos. No es un sustituto de los fillers volumétricos.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      10,
+      14
+    ]
+  },
+  {
+    "id": "complicaciones_hialuronidasa",
+    "nombre_habitual": "Manejo de Emergencias y Hialuronidasa",
+    "nombres_alternativos": [
+      "Disolución de ácido hialurónico",
+      "reversión de fillers",
+      "protocolo de oclusión vascular"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Aplicación de la enzima soluble hialuronidasa para degradar depósitos de ácido hialurónico por sobrecorrección, asimetría o urgencia vascular por isquemia.",
+    "que_busca_paciente": "Corregir un procedimiento mal realizado en otra clínica, eliminar migración de labios (\"bigote de ácido\") o salvar tejido en necrosis.",
+    "dudas_frecuentes": [
+      "¿La hialuronidasa se come mi ácido hialurónico natural?",
+      "¿Duele la disolución?",
+      "¿Cuándo puedo volver a inyectarme?"
+    ],
+    "objeciones": [
+      "Tener que pagar para deshacer un tratamiento previo fallido"
+    ],
+    "miedos": [
+      "Alergia a la enzima (shock anafiláctico)",
+      "Quedar con la piel flácida o vacía tras retirar el producto"
+    ],
+    "expectativas_irreales": "Creer que la hialuronidasa disuelve biopolímeros, silicona líquida o metacrilato (solo degrada ácido hialurónico genuino).",
+    "confusiones_comunes": "Asumir que cualquier hematoma normal es una oclusión vascular; o por el contrario, ignorar dolor punzante y palidez tisular.",
+    "diferencias_clave": "Disolución electiva estética (dosis bajas y controladas) vs Protocolo de rescate vascular de alta dosis (inyección horaria de emergencia).",
+    "temas_tecnicos": "Unidades de hialuronidasa, prueba de alergia previa, test de tiempo de llenado capilar, ecografía Doppler cutánea de alta resolución.",
+    "cuidados_recuperacion": "Hinchazón y eritema transitorio por 48 horas; esperar de 2 a 3 semanas antes de colocar un nuevo relleno en la zona.",
+    "oportunidades_comerciales": "Servicio especializado de consulta de rescate y segundas opiniones médicas.",
+    "angulos_emocionales": "El alivio psicológico de recuperar el rostro natural tras una mala experiencia estética; quitarse el estigma de la sobrecorrección.",
+    "demostracion_autoridad": "Conocimiento exhaustivo del mapa vascular facial (arteria angular, labial superior, supratroclear); ecógrafo en consulta.",
+    "temas_polemicos": "Profesionales clandestinos que inyectan rellenos sin tener hialuronidasa en cabina por ahorrarse el costo del fármaco.",
+    "material_visual_sugerido": [
+      "Disolución in vitro de ácido hialurónico en tubo de ensayo en segundos",
+      "Ecografía mostrando la bolsa de gel antes de disolver"
+    ],
+    "limites_clinicos_regulatorios": "Fármaco de prescripción y manejo estrictamente médico. La oclusión vascular no atendida en 24-48h provoca necrosis irreversible.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      11,
+      12,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "id": "retiro_biopolimeros_asia",
+    "nombre_habitual": "Retiro de Biopolímeros y Manejo del Síndrome ASIA",
+    "nombres_alternativos": [
+      "Alogenosis iatrogénica",
+      "extracción de biopolímeros",
+      "cirugía abierta de polímeros",
+      "alogenosis glútea"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Abordaje quirúrgico reconstructivo para la extracción de materiales modelantes no degradables (silicona, polimetilmetacrilato, parafinas) y control de la respuesta autoinmune.",
+    "que_busca_paciente": "Detener los dolores crónicos, frenar la migración del material, prevenir necrosis cutánea y salvar su salud general.",
+    "dudas_frecuentes": [
+      "¿Se puede retirar el 100% del biopolímero?",
+      "¿La cicatriz es muy grande?",
+      "¿Me puedo hacer lipoláser para sacarlo?"
+    ],
+    "objeciones": [
+      "Costos elevados de la cirugía reconstructiva y tiempos prolongados de recuperación"
+    ],
+    "miedos": [
+      "Muerte por embolia pulmonar, deformidad estética irreversible, dolor crónico postoperatorio"
+    ],
+    "expectativas_irreales": "Creer que un equipo láser o una cánula de liposucción convencional puede \"derretir y aspirar\" el biopolímero sin cirugía abierta.",
+    "confusiones_comunes": "Confundir el dolor articular o cansancio general con otras patologías sin vincularlo al Síndrome Autoinmune Inducido por Adyuvantes (ASIA).",
+    "diferencias_clave": "Cirugía abierta reconstructiva (visión directa con conservación de colgajos) vs Procedimientos cerrados a ciegas (alto riesgo de perforación y calor que licúa el tejido).",
+    "temas_tecnicos": "Respuesta autoinmune por adyuvantes, resonancia magnética con protocolo para biopolímeros, técnicas de mapeo de infiltración.",
+    "cuidados_recuperacion": "Uso de drenajes, fajas postquirúrgicas, terapia física especializada, control reumatológico continuo.",
+    "oportunidades_comerciales": "Alianzas multidisciplinarias entre cirujanos plásticos reconstructivos, reumatólogos y psicólogos.",
+    "angulos_emocionales": "Sanar el cuerpo y perdonarse por haber confiado en personas inescrupulosas en el pasado; salvar la propia vida.",
+    "demostracion_autoridad": "Experiencia quirúrgica documentada; respaldo en los consensos clínicos del IETS y la Sociedad Colombiana de Cirugía Plástica.",
+    "temas_polemicos": "Inescrupulosos que ofrecen retirar biopolímeros con láser lipólisis en consultorios clandestinos, provocando quemaduras y sepsis fatales.",
+    "material_visual_sugerido": [
+      "Resonancia magnética contrastada evidenciando la infiltración en tejido muscular",
+      "Ilustración anatómica de la cirugía abierta"
+    ],
+    "limites_clinicos_regulatorios": "Ninguna cirugía retira el 100% de las microesferas infiltradas en fibras musculares. Solo cirujanos plásticos titulados en quirófano.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      4,
+      19,
+      20,
+      21
+    ]
+  },
+  {
+    "id": "microneedling_peelings",
+    "nombre_habitual": "Microneedling y Peelings Químicos (Dermapen)",
+    "nombres_alternativos": [
+      "Dermapen",
+      "terapia de inducción de colágeno",
+      "peeling químico médico",
+      "exfoliación química profunda"
+    ],
+    "categoria": "estetica_facial",
+    "descripcion_clinica": "Microperforaciones dérmicas controladas combinadas con ácidos exfoliantes (glicólico, salicílico, TCA) para renovar el estrato córneo y atenuar cicatrices y máculas.",
+    "que_busca_paciente": "Cerrar poros dilatados, emparejar el tono facial, atenuar cicatrices atróficas de acné y manchas solares.",
+    "dudas_frecuentes": [
+      "¿Me voy a descamar mucho?",
+      "¿Duele el Dermapen?",
+      "¿En cuántas sesiones se borran las manchas?"
+    ],
+    "objeciones": [
+      "Temor a que la piel quede roja y no poder trabajar al día siguiente"
+    ],
+    "miedos": [
+      "Pigmentación post-inflamatoria (manchas más oscuras)",
+      "Infecciones bacterianas por mala higiene post-cabina"
+    ],
+    "expectativas_irreales": "Eliminar manchas hormonales profundas de melasma en una sola sesión de peeling suave.",
+    "confusiones_comunes": "Comprar rodillos dermaroller caseros en internet pensando que hacen lo mismo que un dispositivo médico con microagujas estériles verticales.",
+    "diferencias_clave": "Peeling superficial (estrato córneo, cosmetológico) vs Peeling medio/profundo con TCA o fenol (dermis papilar/reticular, exclusivamente médico).",
+    "temas_tecnicos": "Profundidad de punción (0.25 mm a 2.5 mm), pH del ácido vs pKa, neutralización química, fotoprotección de amplio espectro.",
+    "cuidados_recuperacion": "No arrancar los pellejitos durante la descamación; hidratación intensiva y protección solar estricta cada 3 horas.",
+    "oportunidades_comerciales": "Paquetes anuales de renovación cutánea (3 sesiones en otoño/invierno); venta cruzada de sueros cosmecéuticos domiciliarios.",
+    "angulos_emocionales": "Recuperar la seguridad de salir sin maquillaje tras años de luchar contra las marcas del acné juvenil.",
+    "demostracion_autoridad": "Diagnóstico fotográfico con lámpara de Wood para diferenciar melasma epidérmico de dérmico; apertura de cartucho estéril desechable.",
+    "temas_polemicos": "Centros no médicos aplicando peelings de TCA al 30% que provocan quemaduras químicas de segundo grado y cicatrices hipertróficas.",
+    "material_visual_sugerido": [
+      "Cartucho de microagujas operando a velocidad en cámara lenta",
+      "Evolución de la descamación controlada día 1 al día 5"
+    ],
+    "limites_clinicos_regulatorios": "Peelings profundos son de competencia médica exclusiva (Ley 711). Contraindicado en acné inflamatorio activo quístico.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "id": "moldeamiento_corporal_aparatologia",
+    "nombre_habitual": "Moldeamiento Corporal con Aparatología",
+    "nombres_alternativos": [
+      "Cavitación",
+      "radiofrecuencia corporal",
+      "criolipólisis",
+      "contorno corporal",
+      "reducción de medidas"
+    ],
+    "categoria": "estetica_corporal",
+    "descripcion_clinica": "Aplicación de ondas ultrasónicas, térmicas o criogénicas sobre el tejido adiposo para destruir adipocitos localizados y promover el drenaje linfático.",
+    "que_busca_paciente": "Bajar centímetros en abdomen, flancos o muslos; reducir la celulitis y tonificar piel flácida.",
+    "dudas_frecuentes": [
+      "¿Cuántos centímetros voy a bajar?",
+      "¿La grasa eliminada vuelve a salir?",
+      "¿Es doloroso?"
+    ],
+    "objeciones": [
+      "Requerir de 6 a 10 sesiones consecutivas para ver cambios notorios; miedo a perder el dinero"
+    ],
+    "miedos": [
+      "Quemaduras por frío extremo en criolipólisis descalibrada; aumento de flacidez al vaciar la grasa."
+    ],
+    "expectativas_irreales": "Perder 15 kilos de peso corporal acostado en una camilla (no es tratamiento contra la obesidad).",
+    "confusiones_comunes": "Confundir radiofrecuencia (tensado de colágeno para flacidez) con cavitación (destrucción de grasa mediante implosión de microburbujas).",
+    "diferencias_clave": "Criolipólisis (muerte celular programada por apoptosis por frío) vs Cavitación ultrasónica (lisis celular por resonancia acústica).",
+    "temas_tecnicos": "Metabolismo hepático de los triglicéridos liberados, impedancia tisular, temperatura dérmica óptima (40-42°C), drenaje linfático.",
+    "cuidados_recuperacion": "Consumir mínimo 2 litros de agua para facilitar la depuración linfática; realizar actividad aeróbica post-sesión.",
+    "oportunidades_comerciales": "Planes \"Operación Verano\" combinando tecnología de moldeamiento con asesoría nutricional integral.",
+    "angulos_emocionales": "Volver a lucir la ropa guardada con orgullo; sentirse ligera y cómoda en el día a día.",
+    "demostracion_autoridad": "Medición antropométrica rigurosa con plicómetro y cinta métrica; calibración técnica de la máquina frente al paciente.",
+    "temas_polemicos": "Clínicas que prometen \"lipoescultura sin cirugía milagrosa\" violando las normas de publicidad engañosa de la SIC y de Meta.",
+    "material_visual_sugerido": [
+      "Toma de medidas estandarizada",
+      "Manípulo de cavitación generando ondas acústicas en gel",
+      "Medición térmica con cámara infrarroja"
+    ],
+    "limites_clinicos_regulatorios": "Contraindicado en pacientes con dislipidemia severa, insuficiencia hepática o marcapasos. No sustituye la cirugía bariátrica.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      9,
+      29
+    ]
+  },
+  {
+    "id": "depilacion_laser_diodo",
+    "nombre_habitual": "Depilación Láser (Soprano / Diodo)",
+    "nombres_alternativos": [
+      "Láser Diodo",
+      "Soprano Titanium",
+      "depilación médica",
+      "fotodepilación láser"
+    ],
+    "categoria": "depilacion",
+    "descripcion_clinica": "Emisión de pulsos de luz altamente concentrados (longitud de onda de 808 a 1064 nm) absorbidos selectivamente por la melanina del folículo piloso para su fototermólisis.",
+    "que_busca_paciente": "Olvidarse de la rasuración constante, erradicar la foliculitis (pelos encarnados) y aclarar manchas en zonas de roce.",
+    "dudas_frecuentes": [
+      "¿Duele mucho?",
+      "¿Sirve si soy de piel morena?",
+      "¿Cuántas sesiones necesito para no ver vellos?"
+    ],
+    "objeciones": [
+      "El costo inicial de un paquete de 8 sesiones comparado con cuchillas de afeitar"
+    ],
+    "miedos": [
+      "Quemaduras dérmicas por exceso de potencia; dolor intolerable en zona de bikini"
+    ],
+    "expectativas_irreales": "Quedar 100% libre de vellos de por vida en solo 3 sesiones (el vello responde a fases de crecimiento anágena, catágena y telógena).",
+    "confusiones_comunes": "Creer que la Luz Pulsada Intensa (IPL) de bajo costo es igual a un láser de Diodo médico con cabezal de zafiro refrigerado.",
+    "diferencias_clave": "Diodo convencional (disparo estático, mayor molestia) vs Tecnología In-Motion (barrido continuo dinámico con calentamiento gradual, virtualmente indoloro).",
+    "temas_tecnicos": "Fototermólisis selectiva, cromóforo diana (melanina), duración del pulso en milisegundos, fluencia en J/cm², enfriamiento por contacto.",
+    "cuidados_recuperacion": "No exponerse al sol sin fotoprotección 50+; no arrancar el vello con pinzas o cera entre sesiones (usar solo cuchilla).",
+    "oportunidades_comerciales": "Membresías anuales de mantenimiento; ofertas de zona pequeña (axilas/bozo) como gancho de entrada para cuerpo completo.",
+    "angulos_emocionales": "La libertad espontánea de vestirse sin preocuparse por si te depilaste; terminar con la piel irritada por la cuchilla.",
+    "demostracion_autoridad": "Mapeo del fototipo cutáneo en escala de Fitzpatrick; ajuste de parámetros según grosor y color del vello.",
+    "temas_polemicos": "Estéticas clandestinas que alquilan máquinas IPL chinas de 500W y las publicitan engañosamente como \"Láser Médico Soprano\".",
+    "material_visual_sugerido": [
+      "Cabezal con escarcha de zafiro refrigerado a -4°C",
+      "Manípulo deslizándose en barrido con gel frío"
+    ],
+    "limites_clinicos_regulatorios": "Término \"definitivo 100%\" prohibido legalmente por la SIC; lo correcto es \"reducción permanente y progresiva del vello\".",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      23,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "rinomodelacion",
+    "nombre_habitual": "Rinomodelación sin Cirugía",
+    "nombres_alternativos": [
+      "Relleno de nariz con ácido hialurónico",
+      "perfilamiento nasal",
+      "rinoplastia no quirúrgica"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Inyección estratégica de ácido hialurónico de alta densidad en el dorso y punta nasal para rectificar el perfil y disimular gibas óseas.",
+    "que_busca_paciente": "Corregir la giba nasal o levantar la punta de la nariz sin someterse a una rinoplastia quirúrgica ni quirófano.",
+    "dudas_frecuentes": [
+      "¿Cuánto dura el resultado?",
+      "¿Se me va a ensanchar la nariz?",
+      "¿Duele el procedimiento?"
+    ],
+    "objeciones": [
+      "Temor a que la nariz se vea más grande o con volumen indeseado al agregar producto"
+    ],
+    "miedos": [
+      "Necrosis de la piel nasal o ceguera por embolización de la arteria oftálmica (riesgo vascular severo)"
+    ],
+    "expectativas_irreales": "Esperar achicar o estrechar una nariz ancha con relleno (el relleno solo suma volumen, no reduce tejido óseo ni cartilaginoso).",
+    "confusiones_comunes": "Creer que la rinomodelación puede corregir problemas respiratorios funcionales (como desviación del tabique nasal).",
+    "diferencias_clave": "Rinomodelación con ácido hialurónico (reversible, 12-18 meses) vs Inyección de biopolímeros o metacrilato (permanente y altamente destructivo).",
+    "temas_tecnicos": "Arteria dorsal de la nariz, arteria angular, plano supraperióstico estricto, microcánula vs aguja, aspiración previa obligatoria.",
+    "cuidados_recuperacion": "No usar gafas pesadas sobre el dorso durante 2 semanas; evitar presionar o apoyar la nariz al dormir.",
+    "oportunidades_comerciales": "Protocolo combinado de rinomodelación con perfilamiento de mentón para optimizar el perfil estético facial (perfiloplastia).",
+    "angulos_emocionales": "Superar el complejo de tomarse fotos de perfil; lucir un rostro armónico sin pasar por el postoperatorio de una cirugía.",
+    "demostracion_autoridad": "Conocimiento topográfico vascular minucioso; manejo de instrumental con cánula para evitar entrar en vasos sanguíneos.",
+    "temas_polemicos": "Inyecciones en zonas de altísimo riesgo por cosmetólogos sin formación médica que han provocado casos de amaurosis (ceguera) y necrosis de la punta nasal.",
+    "material_visual_sugerido": [
+      "Marcación de ángulos nasofrontal y nasolabial",
+      "Visualización del perfil antes e inmediatamente después"
+    ],
+    "limites_clinicos_regulatorios": "Zona de alto riesgo vascular. Reservado estrictamente a médicos con entrenamiento formal en complicaciones vasculares.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      11,
+      16,
+      17
+    ]
+  },
+  {
+    "id": "hilos_tensores",
+    "nombre_habitual": "Hilos Tensores y de Sustentación (PDO)",
+    "nombres_alternativos": [
+      "Hilos de polidioxanona",
+      "hilos espiculados",
+      "lifting no quirúrgico con hilos",
+      "hilos rusos"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Inserción subcutánea de suturas biocompatibles reabsorbibles dotadas de espículas que traccionan los tejidos y estimulan colágeno perilesional.",
+    "que_busca_paciente": "Reposicionar pómulos caídos, tensar el óvalo facial y atenuar el \"jowl\" (descolgamiento mandibular) sin cicatrices quirúrgicas.",
+    "dudas_frecuentes": [
+      "¿Se sienten los hilos al tacto?",
+      "¿Duele al gesticular o masticar?",
+      "¿Cuánto dura la tensión?"
+    ],
+    "objeciones": [
+      "Duración del efecto tensor menor a una cirugía (8 a 14 meses)",
+      "Costo por hilo elevado"
+    ],
+    "miedos": [
+      "Que un hilo se rompa, se desplace o asome por la piel; hoyuelos o pliegues visibles en la cara"
+    ],
+    "expectativas_irreales": "Esperar que sustituya un lifting cérvico-facial quirúrgico en pacientes con exceso cutáneo severo.",
+    "confusiones_comunes": "Confundir hilos monofilamento (solo revitalizan colágeno fino) con hilos espiculados / COG (diseñados para tracción mecánica y soporte).",
+    "diferencias_clave": "Hilos reabsorbibles de Polidioxanona (PDO) o Ácido Poliláctico (PLLA) vs Hilos no reabsorbibles de silicona o polipropileno (prohibidos por complicaciones crónicas).",
+    "temas_tecnicos": "Plano del SMAS superficial, vectores de tracción antigravitatoria, espiculación bidireccional, punto de anclaje fascial.",
+    "cuidados_recuperacion": "No abrir la boca excesivamente (evitar citas odontológicas) por 2 semanas; dormir boca arriba; evitar masajes faciales.",
+    "oportunidades_comerciales": "Protocolos de tensión mandibular combinados con bioestimuladores en la zona malar para un efecto lifting sinérgico.",
+    "angulos_emocionales": "Ver desvanecerse la pesadez de las mejillas y recuperar la firmeza de la línea mandibular que se tenía años atrás.",
+    "demostracion_autoridad": "Diseño vectorial en consulta; verificación del anclaje fascial seguro y simetría milimétrica.",
+    "temas_polemicos": "Colocación en planos demasiado superficiales que genera retracciones visibles y extrusión del hilo, requiriendo retiro quirúrgico.",
+    "material_visual_sugerido": [
+      "Diseño de los vectores de tracción en mejilla",
+      "Tracción suave del hilo mostrando la tensión inmediata del tejido"
+    ],
+    "limites_clinicos_regulatorios": "Procedimiento mínimamente invasivo estrictamente médico (Ley 711). No indicado para pieles muy pesadas o con elastosis solar severa.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "id": "limpieza_facial",
+    "nombre_habitual": "Limpieza Facial Profunda y Cosmiatría",
+    "nombres_alternativos": [
+      "Higiene facial profesional",
+      "limpieza con espátula ultrasónica",
+      "hidrafacial",
+      "extracción de comedones"
+    ],
+    "categoria": "estetica_facial",
+    "descripcion_clinica": "Protocolo de higiene cutánea que combina exfoliación mecánica/enzimática, desincrustación de impurezas mediante vapor de ozono y alta frecuencia.",
+    "que_busca_paciente": "Eliminar puntos negros, retirar células muertas, descongestionar los poros y dejar el rostro fresco y limpio.",
+    "dudas_frecuentes": [
+      "¿Me va a doler la extracción?",
+      "¿Quedaré con marcas o granitos después?",
+      "¿Cada cuánto tiempo debo hacérmela?"
+    ],
+    "objeciones": [
+      "Creer que una limpieza en casa con jabón o exfoliante comercial cumple la misma función"
+    ],
+    "miedos": [
+      "Que le pellizquen la piel y queden cicatrices permanentes o brotes acneicos severos"
+    ],
+    "expectativas_irreales": "Creer que una sola limpieza elimina el acné hormonal crónico para siempre.",
+    "confusiones_comunes": "Confundir una limpieza facial con un peeling químico de grado médico; o creer que reventar pústulas inflamadas es parte de la limpieza.",
+    "diferencias_clave": "Higiene facial básica cosmetológica vs Limpieza médica profunda con principios activos estériles y tecnología hidrodérmica.",
+    "temas_tecnicos": "Bacterias anaeróbicas (Cutibacterium acnes), seborrea, emulsión epicutánea, descongestión con ozono, acción bactericida de la alta frecuencia.",
+    "cuidados_recuperacion": "No tocarse el rostro con las manos sucias, cambiar la funda de la almohada esa noche, no aplicar maquillaje las primeras 12 horas.",
+    "oportunidades_comerciales": "Tratamiento \"puerta de entrada\" (Loss Leader) para fidelizar al paciente y diagnosticar necesidades de medicina estética o aparatología.",
+    "angulos_emocionales": "La sensación de alivio y frescura de una piel que respira; iniciar un nuevo hábito de autocuidado y bienestar personal.",
+    "demostracion_autoridad": "Protocolo estricto de bioseguridad: gasas estériles, apósitos calmantes, diagnóstico minucioso con lámpara lupa.",
+    "temas_polemicos": "Estéticas informales que manipulan lesiones quísticas activas sin guantes ni desinfección, propagando infecciones cutáneas severas.",
+    "material_visual_sugerido": [
+      "Espátula ultrasónica desprendiendo impurezas con microgotas de agua",
+      "Láser o alta frecuencia con destello azul calmante"
+    ],
+    "limites_clinicos_regulatorios": "Procedimiento cosmético no invasivo permitido para cosmetólogas tituladas (Ley 711). Prohibida la prescripción de retinoides orales o corticoides.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "id": "perfilamiento_mandibular_menton",
+    "nombre_habitual": "Perfilamiento Mandibular y Mentón",
+    "nombres_alternativos": [
+      "Marcación mandibular",
+      "proyección de mentón",
+      "armonización de ángulo mandibular",
+      "definición del óvalo facial"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Aplicación supraperióstica de ácido hialurónico de alto módulo elástico (G') o hidroxiapatita de calcio para proyectar la sínfisis mentoniana y definir el reborde de la mandíbula.",
+    "que_busca_paciente": "Definir el borde de la mandíbula, disimular papada incipiente por retracción ósea, proyectar un mentón retruido y estilizar el perfil.",
+    "dudas_frecuentes": [
+      "¿Se va a ver muy masculino o cuadrado si soy mujer?",
+      "¿Se siente duro al masticar?",
+      "¿Cuántas jeringas se necesitan para notar cambio?"
+    ],
+    "objeciones": [
+      "Costo acumulado de requerir 2 a 4 jeringas para una marcación completa",
+      "Temor a ensanchar excesivamente el tercio inferior"
+    ],
+    "miedos": [
+      "Asimetrías visibles en el mentón",
+      "Dolor en el periostio durante la aplicación",
+      "Compromiso de la arteria facial o submentoniana"
+    ],
+    "expectativas_irreales": "Eliminar papada grasa severa solo con relleno óseo (la adiposidad submentoniana abundante requiere lipopapada o enzimas).",
+    "confusiones_comunes": "Creer que la marcación mandibular adelgaza la cara por sí sola; lo que hace es generar tensión y contraste visual de sombra.",
+    "diferencias_clave": "Proyección anterior de mentón (adelanta el punto de soporte) vs Marcación del ángulo goniaco (ensancha o define la esquina posterior).",
+    "temas_tecnicos": "Línea de Ricketts, plano de Frankfurt, triángulo estético de Powell, densidad viscoelástica, abordaje con microcánula 22G/25G vs aguja.",
+    "cuidados_recuperacion": "No apoyar el mentón sobre las manos, dormir boca arriba durante 5 días y evitar masajes en la mandíbula.",
+    "oportunidades_comerciales": "Paquetes de armonización de perfil (perfiloplastia combinando mentón + nariz o labios); suscripciones de mantenimiento anual.",
+    "angulos_emocionales": "Recuperar la seguridad en fotos de perfil; transformar una mandíbula débil en una presencia firme y armónica.",
+    "demostracion_autoridad": "Mapeo cefalométrico de perfil frente al espejo; palpación de la escotadura antegonial para evitar la arteria facial.",
+    "temas_polemicos": "Sobrecorrección tipo \"bloque cuadrado\" que masculiniza rostros femeninos por exceso de volumen en el gonión.",
+    "material_visual_sugerido": [
+      "Medición con calibrador de ángulos faciales",
+      "B-roll de microcánula en plano supraperióstico",
+      "Comparativa fotográfica de perfil"
+    ],
+    "limites_clinicos_regulatorios": "Procedimiento médico inyectable exclusivo (Ley 711). Contraindicado en infecciones odontológicas activas.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      1,
+      10,
+      13,
+      35
+    ]
+  },
+  {
+    "id": "relleno_ojeras_acido_hialuronico",
+    "nombre_habitual": "Relleno de Ojeras (Surco Lagrimal / Tear Trough)",
+    "nombres_alternativos": [
+      "Tratamiento de ojeras hundidas",
+      "ácido hialurónico periocular",
+      "corrección del canal lagrimal"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Inyección profunda de ácido hialurónico de baja concentración y mínima higroscopicidad en el surco nasoyugal para corregir la depresión anatómica de la ojera.",
+    "que_busca_paciente": "Quitarse el aspecto de cansancio crónico, borrar el hundimiento bajo los ojos y unificar el plano de la mejilla.",
+    "dudas_frecuentes": [
+      "¿Esto quita el color oscuro morado o marrón?",
+      "¿Me van a salir bolsas si me pongo relleno?",
+      "¿Es muy peligroso por los ojos?"
+    ],
+    "objeciones": [
+      "Miedo al dolor por ser una zona tan cercana al ojo",
+      "Desconfianza tras ver casos de ojeras hinchadas o azuladas en redes"
+    ],
+    "miedos": [
+      "Efecto Tyndall (coloración azulada bajo la piel)",
+      "Edema malar persistente",
+      "Ceguera por embolización vascular"
+    ],
+    "expectativas_irreales": "Esperar que el relleno aclare la pigmentación melánica o vascular superficial (el relleno solo corrige el hundimiento estructural).",
+    "confusiones_comunes": "Confundir ojera hundida (candidata a relleno) con ojera con bolsa grasa prominente (candidata a blefaroplastia quirúrgica, no a relleno).",
+    "diferencias_clave": "Ácido hialurónico de baja reticulación que no absorbe agua en exceso vs geles hidrofílicos que provocan bolsas matutinas.",
+    "temas_tecnicos": "Ligamento retináculo lagrimal (ORL), plano preperióstico profundo, vasos infraorbitarios, técnica retrógrada con cánula 27G.",
+    "cuidados_recuperacion": "Dormir con cabeza ligeramente elevada las primeras 48 horas; no frotarse los ojos vigorosamente.",
+    "oportunidades_comerciales": "Combinación con toxina botulínica en patas de gallo y tratamiento despigmentante tópico periocular.",
+    "angulos_emocionales": "Dejar de escuchar el comentario «te ves cansada o enferma» a pesar de haber dormido 8 horas; mirarse al espejo con frescura.",
+    "demostracion_autoridad": "Test de pellizco (Snap Test) para evaluar laxitud cutánea; marcación del reborde infraorbitario; técnica estricta con microcánula.",
+    "temas_polemicos": "Inyecciones superficiales con aguja realizadas por personas inexpertas que provocan granulomas y bolsas linfáticas crónicas.",
+    "material_visual_sugerido": [
+      "Lápiz blanco delimitando el surco lagrimal",
+      "Iluminación cenital mostrando la sombra del hundimiento vs plano corregido"
+    ],
+    "limites_clinicos_regulatorios": "Zona de riesgo vascular crítico. Uso médico facultativo obligatorio. Contraindicado en edema palpebral crónico.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      10,
+      11,
+      15,
+      17,
+      35
+    ]
+  },
+  {
+    "id": "toxina_maseteros_bruxismo",
+    "nombre_habitual": "Toxina Botulínica en Maseteros (Bruxismo y Adelgazamiento)",
+    "nombres_alternativos": [
+      "Bótox para bruxismo",
+      "adelgazamiento facial con toxina",
+      "relajación de mandíbula"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Inyección intramuscular profunda de neuromodulador en el vientre del músculo masetero para reducir la hiperactividad masticatoria y atenuar la hipertrofia muscular.",
+    "que_busca_paciente": "Aliviar el dolor mandibular y dolor de cabeza matutino por apretar los dientes; afinar la forma cuadrada de la cara.",
+    "dudas_frecuentes": [
+      "¿Voy a perder fuerza para masticar carne o alimentos duros?",
+      "¿Se me va a caer la piel de las mejillas?",
+      "¿Cuánto tarda en afilarse el rostro?"
+    ],
+    "objeciones": [
+      "Tener que retocar cada 5 a 6 meses para mantener el efecto relajante",
+      "Precio por número de unidades requeridas (25-40 unidades por lado)"
+    ],
+    "miedos": [
+      "Asimetría en la sonrisa por afectación del músculo risorio",
+      "Dificultad para gesticular"
+    ],
+    "expectativas_irreales": "Esperar que el rostro se afine en 48 horas (la relajación inicia a los 7 días, pero la atrofia estética del músculo toma de 4 a 8 semanas).",
+    "confusiones_comunes": "Creer que el bótox en maseteros reemplaza la placa o férula miorrelajante odontológica (son abordajes complementarios).",
+    "diferencias_clave": "Toxina para indicación funcional médica (bruxismo/dolor) vs afinamiento puramente estético de la línea mandibular.",
+    "temas_tecnicos": "Zona segura de inyección delimitada por el conducto parotídeo (Stensen) y la arteria facial; profundidad intramuscular.",
+    "cuidados_recuperacion": "No masticar chicle ni alimentos excesivamente duros durante 3 días; no acostarse en las primeras 4 horas.",
+    "oportunidades_comerciales": "Alianzas con clínicas odontológicas y maxilofaciales para derivación de pacientes bruxópatas.",
+    "angulos_emocionales": "Despertar por fin sin tensión en la mandíbula y sin dolor cervical; recuperar la suavidad visual en el rostro.",
+    "demostracion_autoridad": "Palpación bilateral con el paciente apretando las muelas para aislar el vientre posterior y anterior del masetero.",
+    "temas_polemicos": "Inyección fuera de zona segura que alcanza el músculo risorio, provocando una sonrisa congelada o torcida temporalmente.",
+    "material_visual_sugerido": [
+      "Palpación del músculo al apretar",
+      "Esquema gráfico del masetero y nervio marginal de la mandíbula"
+    ],
+    "limites_clinicos_regulatorios": "Procedimiento médico que requiere conocimiento exhaustivo de la anatomía orofacial. No aplicar en miastenia gravis.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      1,
+      2,
+      7,
+      18,
+      36
+    ]
+  },
+  {
+    "id": "toxina_hiperhidrosis",
+    "nombre_habitual": "Toxina Botulínica para Hiperhidrosis (Sudoración Excesiva)",
+    "nombres_alternativos": [
+      "Bótox axilar",
+      "tratamiento de sudoración en axilas y palmas",
+      "bloqueo de sudor con toxina"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Microinyecciones intradérmicas de toxina botulínica que bloquean la liberación de acetilcolina en las glándulas sudoríparas ecrinas axilares o palmares.",
+    "que_busca_paciente": "Dejar de mojar la ropa con manchas de sudor, evitar el mal olor asociado y no sentir vergüenza al levantar los brazos o dar la mano.",
+    "dudas_frecuentes": [
+      "¿Si no sudo por las axilas el sudor se va para otra parte?",
+      "¿Duele mucho en las manos?",
+      "¿Cuánto tiempo dura el efecto seco?"
+    ],
+    "objeciones": [
+      "Inversión económica alta al requerir un vial completo de 100 unidades",
+      "Temor al dolor en palmas"
+    ],
+    "miedos": [
+      "Pérdida de fuerza transitoria en la pinza digital (en manos)",
+      "Que no funcione en su grado de sudor"
+    ],
+    "expectativas_irreales": "Creer que el tratamiento dura años (la denervación química reversible dura típicamente entre 6 y 9 meses en axilas).",
+    "confusiones_comunes": "Creer que genera sudoración compensatoria severa como la simpatectomía quirúrgica (la toxina local no genera compensación sistémica).",
+    "diferencias_clave": "Toxina botulínica dérmica (bloqueo periférico) vs antitranspirantes clínicos con cloruro de aluminio tópicos (irritantes).",
+    "temas_tecnicos": "Test de Minor (almidón y yodo para mapear áreas de hiperhidrosis activa), inyección intradérmica en cuadrícula cada 1.5 cm.",
+    "cuidados_recuperacion": "No usar desodorante con alcohol el primer día; no realizar sauna ni ejercicio intenso las primeras 24 horas.",
+    "oportunidades_comerciales": "Campañas de temporada previas a épocas de calor, matrimonios o presentaciones corporativas clave.",
+    "angulos_emocionales": "La libertad de vestir camisas de color claro o seda sin el miedo constante a las aureolas de sudor; seguridad en reuniones.",
+    "demostracion_autoridad": "Ejecución del Test de Minor en cabina mostrando el viraje de color azul oscuro antes y la ausencia de sudor a los 15 días.",
+    "temas_polemicos": "Centros que subdosifican la toxina (aplicando menos de 50 unidades por axila) para abaratar el precio, provocando fallas terapéuticas.",
+    "material_visual_sugerido": [
+      "Test de Minor cambiando a tono oscuro en axila",
+      "Cuadrícula milimétrica de inyección"
+    ],
+    "limites_clinicos_regulatorios": "Fármaco médico de prescripción. Contraindicado en infecciones activas en el área axilar.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      1,
+      2,
+      7,
+      37
+    ]
+  },
+  {
+    "id": "relleno_pomulos_soporte_facial",
+    "nombre_habitual": "Relleno de Pómulos y Soporte Malar",
+    "nombres_alternativos": [
+      "Proyección malar",
+      "reposición del tercio medio",
+      "lifting de mejillas con ácido hialurónico"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Inyección profunda supraperióstica de ácido hialurónico reticulado en los puntos de soporte del arco cigomático y eminencia malar para reposicionar tejidos caídos.",
+    "que_busca_paciente": "Recuperar el volumen perdido en mejillas, levantar sutilmente el surco nasogeniano y devolver la luminosidad al centro del rostro.",
+    "dudas_frecuentes": [
+      "¿Me voy a ver cachetona o con cara redonda?",
+      "¿Se siente el producto al dormir de lado?",
+      "¿Cuánto dura?"
+    ],
+    "objeciones": [
+      "Miedo a quedar con facciones artificiales o exageradas",
+      "Costo por jeringa"
+    ],
+    "miedos": [
+      "Sobrecorrección visible («cara de ardilla»)",
+      "Asimetrías entre ambos pómulos"
+    ],
+    "expectativas_irreales": "Esperar que levantar el pómulo estire por completo un jowl o descolgamiento mandibular severo en pieles añosas.",
+    "confusiones_comunes": "Creer que el relleno de pómulos es para dar volumen hacia adelante cuando su objetivo principal en rejuvenecimiento es dar soporte posterior y lateral.",
+    "diferencias_clave": "Soporte profundo en hueso cigomático (efecto tensor sutil) vs inyección en grasa superficial (que ensancha y congestiona el rostro).",
+    "temas_tecnicos": "Puntos de Maurício de Maio (MD Codes CK1 a CK5), plano supraperióstico vs compartimentos grasos superficiales, reología con alto elastic modulus.",
+    "cuidados_recuperacion": "No dormir boca abajo durante 7 días; no usar gafas de sol muy pesadas que presionen la zona malar en las primeras 48 horas.",
+    "oportunidades_comerciales": "Protocolo escalonado de rejuvenecimiento global (Full Face) iniciando por el tercio medio como cimiento.",
+    "angulos_emocionales": "Ver desvanecerse la mirada triste y cansada sin que nadie descubra que te hiciste un procedimiento médico.",
+    "demostracion_autoridad": "Explicación del triángulo de la juventud invertido y análisis de soporte óseo con espejo en mano.",
+    "temas_polemicos": "La tendencia de inyectar volúmenes masivos en pómulos que bloquean la sonrisa natural y achican los ojos al sonreír.",
+    "material_visual_sugerido": [
+      "Marcación de los vectores MD Codes en pómulo",
+      "Luz lateral mostrando el punto culminante de luz natural en el pómulo"
+    ],
+    "limites_clinicos_regulatorios": "Procedimiento estrictamente médico. Respetar límites de dosis (1-2 ml totales iniciales).",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      1,
+      10,
+      15,
+      35
+    ]
+  },
+  {
+    "id": "enzimas_recombinantes_faciales",
+    "nombre_habitual": "Enzimas Recombinantes Faciales (Papada y Fibrosis)",
+    "nombres_alternativos": [
+      "Lipoenzimas faciales",
+      "enzimas biológicas PBSerum",
+      "reducción de papada enzimática"
+    ],
+    "categoria": "medicina_estetica",
+    "descripcion_clinica": "Aplicación subdérmica de un cóctel liofilizado de lipasa, colagenasa e hialuronidasa recombinantes de segunda generación para lisar adipocitos submentonianos y degradar fibrosis.",
+    "que_busca_paciente": "Eliminar el doble mentón (papada) y compactar la piel submentoniana sin entrar a quirófano.",
+    "dudas_frecuentes": [
+      "¿Cuánto dura la inflamación posterior?",
+      "¿Cuántas sesiones se necesitan?",
+      "¿La grasa vuelve a acumularse?"
+    ],
+    "objeciones": [
+      "Inflamación visible durante 3 a 5 días post-sesión",
+      "Requerir protocolo de 2 a 3 sesiones para resultados notables"
+    ],
+    "miedos": [
+      "Dolor ardoroso durante la infiltración",
+      "Flacidez residual tras disolver la grasa"
+    ],
+    "expectativas_irreales": "Esperar que las enzimas reduzcan exceso cutáneo flácido sin grasa (en flacidez pura se requiere aparatología o bioestimulador).",
+    "confusiones_comunes": "Confundir enzimas recombinantes purificadas (altamente selectivas) con quemadores o mesoterapias lipolíticas genéricas.",
+    "diferencias_clave": "Lipasa (rompe triglicéridos) + Colagenasa (elimina fibrosis y tensa piel) + Hialuronidasa (drena edema) actuando en sinergia.",
+    "temas_tecnicos": "Grasa preplatismal vs subplatismal (las enzimas solo deben aplicarse en grasa preplatismal), profundidad de aguja de 6-8 mm.",
+    "cuidados_recuperacion": "Uso de mentonera o banda compresiva elástica nocturna durante 5 días; hidratación abundante y dieta baja en carbohidratos 48h.",
+    "oportunidades_comerciales": "Paquetes combinados de 3 sesiones de enzimas con radiofrecuencia posterior para retracción dérmica óptima.",
+    "angulos_emocionales": "Recuperar un ángulo de cuello limpio y definido; sentirse libre al tomarse fotos espontáneas desde cualquier ángulo.",
+    "demostracion_autoridad": "Delimitación anatómica del compartimento graso preplatismal pinzando la papada para proteger la glándula submandibular.",
+    "temas_polemicos": "Inyecciones demasiado profundas que atraviesan el platisma o alcanzan la rama marginal del nervio facial por técnica descuidada.",
+    "material_visual_sugerido": [
+      "Reconstitución del vial liofilizado estéril",
+      "Medición del panículo graso submentoniano con plicómetro"
+    ],
+    "limites_clinicos_regulatorios": "Medicamento inyectable de prescripción médica exclusiva. No aplicar en grasa subplatismal profunda.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      11,
+      29
+    ]
+  },
+  {
+    "id": "facial_express_hidratacion",
+    "nombre_habitual": "Facial Express e Hidratación Flash",
+    "nombres_alternativos": [
+      "Limpieza facial express",
+      "glow facial",
+      "facial de cabina para eventos",
+      "higiene facial rápida"
+    ],
+    "categoria": "estetica_facial",
+    "descripcion_clinica": "Protocolo cosmético no invasivo de 30 a 40 minutos que combina doble higiene superficial, exfoliación enzimática suave, mascarilla hidrófila y sueros vitamínicos con masaje de drenaje facial.",
+    "que_busca_paciente": "Lucir piel luminosa, fresca y descansada antes de una fiesta, boda o sesión de fotos sin enrojecimiento ni tiempo de recuperación.",
+    "dudas_frecuentes": [
+      "¿Quedaré con la cara roja?",
+      "¿Me puedo maquillar inmediatamente después?",
+      "¿Hacen extracciones dolorosas?"
+    ],
+    "objeciones": [
+      "Pensar que por ser rápido no genera beneficios visibles frente a una limpieza de 90 minutos"
+    ],
+    "miedos": [
+      "Que les aparezcan granitos al día siguiente del evento"
+    ],
+    "expectativas_irreales": "Esperar que un facial express extraiga comedones enquistados profundos o cure el acné crónico.",
+    "confusiones_comunes": "Confundir un protocolo de luminosidad inmediata (sin extracciones agresivas) con una limpieza profunda de grado médico.",
+    "diferencias_clave": "Enfoque en oxigenación dérmica y barrera cutánea sin inflamación vs protocolos mecánicos de descongestión profunda.",
+    "temas_tecnicos": "Exfoliantes enzimáticos (papaína y bromelaína), ácido hialurónico de bajo peso molecular tópico, activos iluminadores.",
+    "cuidados_recuperacion": "Aplicar protector solar; la piel queda lista para maquillar o lucir al natural de inmediato.",
+    "oportunidades_comerciales": "Suscripciones mensuales recurrentes («Viernes de Glow»); paquetes de fidelización y regalo.",
+    "angulos_emocionales": "Darse un respiro en una jornada estresante y salir con el rostro radiante y lleno de vida.",
+    "demostracion_autoridad": "Diagnóstico inicial de deshidratación con medidor cutáneo digital en segundos; aplicación de toallas tibias aromatizadas.",
+    "temas_polemicos": "Centros que usan sueros genéricos de baja calidad con fragancias irritantes que arruinan la piel antes de un evento.",
+    "material_visual_sugerido": [
+      "Mascarilla de velo con activos brillando con luz cálida",
+      "Masaje facial con rodillos de cuarzo frío"
+    ],
+    "limites_clinicos_regulatorios": "Tratamiento cosmético superficial no invasivo (Ley 711). Seguro para realizar periódicamente.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "id": "protocolo_acne_cosmiatrico",
+    "nombre_habitual": "Protocolo de Acné y Seborregulación Cosmiátrica",
+    "nombres_alternativos": [
+      "Tratamiento para piel acneica",
+      "limpieza facial purificante",
+      "control de sebo y poros"
+    ],
+    "categoria": "estetica_facial",
+    "descripcion_clinica": "Higiene dérmica especializada para pieles grasas y con tendencia acneica que incluye desincrustación controlada, aplicación de ácido salicílico al 2%, alta frecuencia bactericida y mascarilla descongestionante de arcilla y zinc.",
+    "que_busca_paciente": "Bajar la inflamación de los brotes, desobstruir poros tapados, controlar el brillo facial y evitar que salgan nuevas espinillas.",
+    "dudas_frecuentes": [
+      "¿Me van a quedar marcas si me hacen extracciones?",
+      "¿Se me va a brotar más la piel los primeros días (purga)?",
+      "¿Cuántas sesiones necesito para controlar el brote?"
+    ],
+    "objeciones": [
+      "Miedo al dolor durante la extracción de comedones",
+      "Frustración por haber probado cremas comerciales sin éxito"
+    ],
+    "miedos": [
+      "Cicatrices permanentes por mala manipulación",
+      "Infección cruzada por falta de higiene"
+    ],
+    "expectativas_irreales": "Creer que las limpiezas cosmiátricas curan el acné quístico severo de origen hormonal sin tratamiento médico dermatológico.",
+    "confusiones_comunes": "Creer que lavar la cara cinco veces al día con jabones fuertes cura el acné (lo empeora al dañar la barrera lipídica cutánea).",
+    "diferencias_clave": "Extracción profesional con aguja estéril 30G y gasa desinfectada vs apretarse los granos con las uñas en el baño de casa.",
+    "temas_tecnicos": "Cutibacterium acnes, queratinización infundibular folicular, comedogénesis, acción queratolítica del ácido salicílico.",
+    "cuidados_recuperacion": "No tocarse la cara con manos sucias; no aplicar maquillaje pesado en 24h; usar limpiador suave y fotoprotector oil-free.",
+    "oportunidades_comerciales": "Paquetes de control mensual para adolescentes y adultos jóvenes; venta de rutina básica seborreguladora para casa.",
+    "angulos_emocionales": "Quitarse la angustia de mirarse al espejo por las mañanas; recuperar la libertad de salir a la calle sin capas gruesas de maquillaje.",
+    "demostracion_autoridad": "Protocolo estricto con guantes y campo estéril; uso de lámpara de Wood para evaluar bacterias y secreción sebácea.",
+    "temas_polemicos": "Cosmetólogas que recetan antibióticos orales o isotretinoína sin ser médicos, cometiendo delito de intrusismo profesional.",
+    "material_visual_sugerido": [
+      "Alta frecuencia con chisporroteo de gas ozono bactericida",
+      "Extracción limpia de un filamento sebáceo"
+    ],
+    "limites_clinicos_regulatorios": "El acné inflamatorio quístico severo requiere derivación obligatoria al dermatólogo médico. La cosmetóloga trata comedones y sebo superficial (Ley 711).",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      29,
+      32
+    ]
+  },
+  {
+    "id": "despigmentacion_manchas_faciales",
+    "nombre_habitual": "Protocolo Despigmentante para Manchas y Tono Irregular",
+    "nombres_alternativos": [
+      "Tratamiento de melasma superficial",
+      "aclaramiento de manchas solares",
+      "protocolo antimanchas cosmiátrico"
+    ],
+    "categoria": "estetica_facial",
+    "descripcion_clinica": "Aplicación de agentes cosmecéuticos despigmentantes tópicos (ácido tranexámico, ácido kójico, arbutina, niacinamida) combinados con exfoliación suave para inhibir la síntesis de melanina y acelerar la renovación epidérmica.",
+    "que_busca_paciente": "Aclarar manchas oscuras en mejillas, frente o labio superior causadas por sol, embarazo o anticonceptivos; emparejar el tono de la piel.",
+    "dudas_frecuentes": [
+      "¿La mancha se quita para siempre?",
+      "¿El tratamiento me va a pelar mucho la cara?",
+      "¿Puedo salir a la calle durante el tratamiento?"
+    ],
+    "objeciones": [
+      "Tratamiento que requiere constancia de meses y disciplina absoluta con el bloqueador solar",
+      "Miedo al efecto rebote"
+    ],
+    "miedos": [
+      "Que la mancha se oscurezca más por inflamación (hiperpigmentación post-inflamatoria)",
+      "Quedar con manchas blancas (hipopigmentación)"
+    ],
+    "expectativas_irreales": "Esperar que un melasma dérmico profundo de 10 años de evolución desaparezca en 15 días con un solo tratamiento.",
+    "confusiones_comunes": "Confundir pecas o léntigos solares superficiales con melasma hormonal difuso (tienen mecanismos y respuestas biológicas distintas).",
+    "diferencias_clave": "Despigmentación progresiva respetuosa de la barrera cutánea vs quemaduras con ácidos agresivos que provocan rebote melánico.",
+    "temas_tecnicos": "Inhibición de la enzima tirosinasa, melanosomas, melanocitos hiperreactivos, protección frente a radiación UVA, UVB y luz azul HEV.",
+    "cuidados_recuperacion": "Reaplicación estricta de protector solar 50+ cada 3 horas, evitar fuentes de calor intenso (sauna, cocinas) que activan melanocitos.",
+    "oportunidades_comerciales": "Kits de tratamiento integral cabina + rutina domiciliaria despigmentante de continuidad; seguimientos fotográficos.",
+    "angulos_emocionales": "Poder dejar la base cubritiva en casa y sentirse cómoda y segura con la piel al natural bajo la luz del día.",
+    "demostracion_autoridad": "Diagnóstico fotográfico con luz polarizada para mapear la profundidad de la pigmentación antes de iniciar.",
+    "temas_polemicos": "Productos milagrosos de redes sociales que contienen hidroquinona al 10% sin supervisión médica provocando ocronosis exógena irreversible.",
+    "material_visual_sugerido": [
+      "Lámpara de Wood mostrando fluorescencia de manchas epidérmicas",
+      "Aplicación de mascarilla oclusiva despigmentante"
+    ],
+    "limites_clinicos_regulatorios": "El melasma no tiene cura definitiva, se controla. Prohibido garantizar eliminación al 100% (Ley 1480 y SIC).",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      9,
+      29,
+      32
+    ]
+  },
+  {
+    "id": "peelings_quimicos_superficiales",
+    "nombre_habitual": "Peelings Químicos Superficiales (Glicólico / Mandélico / Láctico)",
+    "nombres_alternativos": [
+      "Exfoliación química superficial",
+      "peeling de alfahidroxiácidos",
+      "renovación epidérmica en cabina"
+    ],
+    "categoria": "estetica_facial",
+    "descripcion_clinica": "Aplicación tópica de soluciones de hidroxiácidos a concentraciones seguras para disolver las uniones intercelulares del estrato córneo, estimulando la exfoliación celular fisiológica.",
+    "que_busca_paciente": "Mejorar la textura áspera de la piel, afinar poros abiertos, aportar brillo inmediato y atenuar líneas finas.",
+    "dudas_frecuentes": [
+      "¿Se me va a caer la piel a tiras como una serpiente?",
+      "¿Arde mucho al aplicarlo?",
+      "¿Cuánto dura la rojez?"
+    ],
+    "objeciones": [
+      "Temor a quemaduras químicas en la cara",
+      "Duda sobre si es apto en pieles morenas o sensibles"
+    ],
+    "miedos": [
+      "Quemaduras dérmicas por dejar el ácido más tiempo del debido",
+      "Aparición de costras"
+    ],
+    "expectativas_irreales": "Esperar que un peeling superficial elimine cicatrices deprimidas de acné (las cicatrices requieren microagujas o láser ablativo).",
+    "confusiones_comunes": "Creer que todos los peelings son iguales; un peeling de ácido mandélico no irrita pieles sensibles, mientras que el glicólico penetra más rápido.",
+    "diferencias_clave": "Peeling químico superficial (actúa en estrato córneo, seguro para cosmetólogas) vs peeling profundo de fenol/TCA 50% (exclusivo de médicos).",
+    "temas_tecnicos": "pH de la fórmula, pKa del ácido, porcentaje de ácido libre, tiempo de exposición en minutos, neutralización química con bicarbonato.",
+    "cuidados_recuperacion": "No rascarse ni retirar pielecitas si hay descamación fina; hidratación reparadora y fotoprotección obligatoria.",
+    "oportunidades_comerciales": "Planes de otoño/invierno de 3 a 4 sesiones quincenales para renovar la piel tras las vacaciones de sol.",
+    "angulos_emocionales": "Sentir la piel suave como la de un bebé al tacto; renovarse por dentro y por fuera.",
+    "demostracion_autoridad": "Cronómetro en mano durante la aplicación y prueba de neutralización con solución buffer frente al paciente.",
+    "temas_polemicos": "Uso indebido de ácidos industriales no cosméticos comprados por internet sin registro sanitario INVIMA.",
+    "material_visual_sugerido": [
+      "Pincel aplicador distribuyendo el gel de peeling con precisión",
+      "Cronómetro marcando los minutos de contacto"
+    ],
+    "limites_clinicos_regulatorios": "Cosmetólogas tituladas habilitadas solo para exfoliaciones superficiales que no rebasen la membrana basal epidérmica (Ley 711).",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      29,
+      32
+    ]
+  },
+  {
+    "id": "hidratacion_profunda_facial",
+    "nombre_habitual": "Hidratación Profunda con Ultrasonido y Sueros",
+    "nombres_alternativos": [
+      "Sonoforesis facial",
+      "baño de hidratación dérmica",
+      "nutrición celular facial",
+      "velo de colágeno"
+    ],
+    "categoria": "estetica_facial",
+    "descripcion_clinica": "Uso de ondas ultrasónicas continuas para aumentar la permeabilidad de la membrana cutánea (sonoforesis), facilitando la penetración de activos de ácido hialurónico, péptidos y ceramidas.",
+    "que_busca_paciente": "Calmar la piel tirante, descamada o irritada por el clima o el estrés; restaurar la elasticidad y suavidad cutánea.",
+    "dudas_frecuentes": [
+      "¿Esto duele o da toques eléctricos?",
+      "¿Es apto para pieles con rosácea?",
+      "¿Cuánto dura el efecto de suavidad?"
+    ],
+    "objeciones": [
+      "Considerar que una crema hidratante comercial cara hace exactamente lo mismo"
+    ],
+    "miedos": [
+      "Reacciones alérgicas a los sueros utilizados"
+    ],
+    "expectativas_irreales": "Esperar que la hidratación tópica con ultrasonido sustituya un inyectable voluminizador de arrugas profundas.",
+    "confusiones_comunes": "Confundir falta de agua (deshidratación, reversible en cualquier tipo de piel) con falta de grasa (piel seca biológica).",
+    "diferencias_clave": "Penetración potenciada por vibración acústica molecular vs aplicación pasiva manual de una crema sobre la capa córnea.",
+    "temas_tecnicos": "Sonoforesis a 1-3 MHz, cavitación acústica de baja intensidad, manto hidrolipídico, factor natural de hidratación (NMF).",
+    "cuidados_recuperacion": "Beber agua suficiente tras la sesión; mantener la rutina de hidratación en casa.",
+    "oportunidades_comerciales": "Ideal como tratamiento complementario post-peeling, post-láser o para pacientes en tratamiento médico con secantes.",
+    "angulos_emocionales": "La sensación placentera de alivio cuando la piel deja de picar o sentirse acartonada; relajación sensorial absoluta.",
+    "demostracion_autoridad": "Medición del porcentaje de hidratación de la piel con córneo-medidor antes del ultrasonido (ej: 28%) y después (ej: 65%).",
+    "temas_polemicos": "Publicitar la sonoforesis con nombres como \"inyección de ácido sin agujas\", lo cual es publicidad engañosa sancionada por la SIC.",
+    "material_visual_sugerido": [
+      "Manípulo de ultrasonido con gotas de suero nebulizándose en micropartículas",
+      "Masaje descongestionante relajante"
+    ],
+    "limites_clinicos_regulatorios": "Tratamiento no invasivo seguro apto para todo fototipo. Respetar límites de potencia del equipo.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      9,
+      29
+    ]
+  },
+  {
+    "id": "radiofrecuencia_facial",
+    "nombre_habitual": "Radiofrecuencia Facial Tensora (Efecto Lifting sin Agujas)",
+    "nombres_alternativos": [
+      "Radiofrecuencia tripolar facial",
+      "lifting térmico no quirúrgico",
+      "tensado cutáneo facial"
+    ],
+    "categoria": "estetica_facial",
+    "descripcion_clinica": "Emisión de corriente electromagnética de alta frecuencia que genera un calentamiento controlado en la dermis profunda (39°C a 42°C), contrayendo las fibras de colágeno existentes y estimulando la neocolagénesis.",
+    "que_busca_paciente": "Tensar la piel flácida de mejillas y cuello, definir el contorno mandibular y dar un aspecto firme y descansado.",
+    "dudas_frecuentes": [
+      "¿Quema o duele el calor?",
+      "¿Cuántas sesiones se necesitan para ver tensión real?",
+      "¿Daña los rellenos de ácido hialurónico?"
+    ],
+    "objeciones": [
+      "Tener que asistir a un paquete de 6 a 8 sesiones semanales para ver resultados acumulativos"
+    ],
+    "miedos": [
+      "Quemaduras térmicas dérmicas por cabezales estáticos o termómetros mal calibrados"
+    ],
+    "expectativas_irreales": "Esperar que sustituya a una cirugía de ritidectomía (lifting quirúrgico) cuando existe descolgamiento severo.",
+    "confusiones_comunes": "Creer que una sola sesión de prueba logra resultados permanentes (la primera sesión genera un edema térmico bonito pero temporal).",
+    "diferencias_clave": "Radiofrecuencia capacitiva/resistiva no invasiva (actúa por calor dérmico) vs radiofrecuencia fraccionada con microagujas médicas.",
+    "temas_tecnicos": "Frecuencia de 0.5 a 1.5 MHz, temperatura diana en epidermis (40-42°C), glicerol conductor, choque térmico de proteínas HSP47.",
+    "cuidados_recuperacion": "Evitar lavar la cara con agua helada inmediatamente para no cortar el estímulo térmico; fotoprotección.",
+    "oportunidades_comerciales": "Paquetes de choque de 6 sesiones + sesión de mantenimiento bimestral; combo con mascarilla tensora.",
+    "angulos_emocionales": "Sentir la piel firme, compacta y levantada al tocarse el rostro; prevenir el envejecimiento prematuro sin dolor.",
+    "demostracion_autoridad": "Monitoreo continuo de la temperatura con termómetro infrarrojo digital en pantalla durante toda la sesión.",
+    "temas_polemicos": "Aplicar radiofrecuencia directa sobre zonas recién inyectadas con toxina botulínica o ácido hialurónico, acelerando su degradación.",
+    "material_visual_sugerido": [
+      "Termómetro láser marcando 41.5°C sobre la mejilla en tiempo real",
+      "Movimiento circular suave del manípulo con gel"
+    ],
+    "limites_clinicos_regulatorios": "Contraindicado en pacientes con marcapasos, prótesis metálicas en la zona a tratar, embarazo o acné inflamatorio agudo.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "id": "drenaje_linfatico_manual",
+    "nombre_habitual": "Drenaje Linfático Manual (Postquirúrgico y Bienestar)",
+    "nombres_alternativos": [
+      "DLM Vodder",
+      "masaje postquirúrgico de lipoescultura",
+      "drenaje de líquidos corporales"
+    ],
+    "categoria": "estetica_corporal",
+    "descripcion_clinica": "Técnica de masaje manual terapéutico suave, lento y rítmico que sigue las vías anatómicas linfáticas para reabsorber edemas, eliminar toxinas y acelerar la recuperación tisular tras una cirugía plástica o retención hídrica.",
+    "que_busca_paciente": "Bajar la hinchazón dura después de una liposucción o abdominoplastia, aliviar el dolor postoperatorio y prevenir seromas o fibrosis.",
+    "dudas_frecuentes": [
+      "¿El drenaje tiene que doler para que sirva?",
+      "¿Cuándo puedo empezar después de mi cirugía?",
+      "¿Cuántas sesiones necesito?"
+    ],
+    "objeciones": [
+      "Tener que pagar paquetes de 10 a 20 sesiones tras haber gastado en la cirugía plástica"
+    ],
+    "miedos": [
+      "Que el terapeuta apriete con fuerza y rompa suturas internas o provoque hemorragias"
+    ],
+    "expectativas_irreales": "Creer que el drenaje linfático adelgaza o quema grasa (drena líquido intersticial, no reduce tejido adiposo).",
+    "confusiones_comunes": "Confundir un drenaje linfático verdadero (maniobras suaves de menos de 40 mmHg de presión) con masajes reductores agresivos.",
+    "diferencias_clave": "Método Vodder o Leduc (sin dolor, apertura de cadenas ganglionares) vs maniobras bruscas que inflaman más el tejido quirúrgico.",
+    "temas_tecnicos": "Linfangiones, cisterna de Pecquet, ganglios axilares e inguinales, presión tangencial suave, dirección centrípeta.",
+    "cuidados_recuperacion": "Uso correcto de la faja postquirúrgica según indicación del cirujano plástico; hidratación con agua abundante.",
+    "oportunidades_comerciales": "Convenios directos con cirujanos plásticos para atención postoperatoria domiciliaria o en cabina.",
+    "angulos_emocionales": "El inmenso alivio físico cuando la piel desinflama y el cuerpo vuelve a sentirse propio tras una cirugía difícil.",
+    "demostracion_autoridad": "Certificación específica en método Vodder/Leduc; comunicación directa y reporte de evolución con el cirujano tratante.",
+    "temas_polemicos": "Centros clandestinos que realizan masajes violentos con palos o nudillos sobre pacientes recién operadas, provocando necrosis y dehiscencias.",
+    "material_visual_sugerido": [
+      "Manos realizando maniobras lentas en onda sobre el abdomen",
+      "Gráfico anatómico de las cadenas ganglionares"
+    ],
+    "limites_clinicos_regulatorios": "Contraindicado en infecciones activas, trombosis venosa profunda aguda e insuficiencia cardíaca congestiva.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      4,
+      7,
+      8,
+      33
+    ]
+  },
+  {
+    "id": "masajes_moldeadores_manuales",
+    "nombre_habitual": "Masajes Reductores y Maderoterapia",
+    "nombres_alternativos": [
+      "Masaje moldeador manual",
+      "maderoterapia corporal",
+      "masaje anticelulítico manual"
+    ],
+    "categoria": "estetica_corporal",
+    "descripcion_clinica": "Protocolo de maniobras manuales vigorosas de amasamiento, fricción y percusión combinado con instrumentos anatómicos de madera pulida para estimular la microcirculación y movilizar adiposidad.",
+    "que_busca_paciente": "Moldear la cintura, levantar glúteos, atenuar la celulitis visible y compactar zonas con grasa blanda.",
+    "dudas_frecuentes": [
+      "¿Es verdad que entre más moretones salgan, mejor quedó el masaje?",
+      "¿Cuántos centímetros puedo reducir?",
+      "¿Duele mucho?"
+    ],
+    "objeciones": [
+      "Requerir muchas sesiones continuas (10 a 12) y esfuerzo con la alimentación para notar cambios duraderos"
+    ],
+    "miedos": [
+      "Quedar con hematomas morados extensos o dolor muscular agudo"
+    ],
+    "expectativas_irreales": "Pensar que la madera o las manos \"deshacen\" la grasa mágicamente sin que el paciente ajuste su déficit calórico.",
+    "confusiones_comunes": "Asumir que los hematomas son señal de efectividad; los moretones son microtraumatismos vasculares que pueden causar flacidez.",
+    "diferencias_clave": "Maderoterapia técnica controlada (reactiva drenaje e hiperemia sin romper vasos) vs masajes salvajes que lesionan capilares.",
+    "temas_tecnicos": "Copa sueca, rodillo estriado, tabla moldeadora, vasodilatación periférica, estimulación del sistema circulatorio.",
+    "cuidados_recuperacion": "No ingerir comidas pesadas tras el masaje; beber agua; realizar ejercicio cardiovascular para quemar la energía movilizada.",
+    "oportunidades_comerciales": "Paquetes 2x1 en zonas combinadas (cintura + espalda baja); bonos de mantenimiento semanal.",
+    "angulos_emocionales": "Ver cómo se marca la cintura al mirarse en el espejo con ropa ajustada; motivación para cuidar el estilo de vida.",
+    "demostracion_autoridad": "Explicar por qué la técnica ética NO deja moratones; toma de medidas con cinta métrica en puntos anatómicos fijos.",
+    "temas_polemicos": "Masajistas empíricas que dejan a las pacientes llenas de moretones afirmando que \"la grasa se rompe a golpes\".",
+    "material_visual_sugerido": [
+      "Movimiento fluido de la copa sueca sobre flancos",
+      "Demostración de los diferentes instrumentos de madera"
+    ],
+    "limites_clinicos_regulatorios": "Tratamiento cosmético no invasivo (Ley 711). Contraindicado en fragilidad capilar severa, varices inflamadas o embarazo.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      9,
+      29
+    ]
+  },
+  {
+    "id": "radiofrecuencia_corporal_flacidez",
+    "nombre_habitual": "Radiofrecuencia Corporal para Flacidez",
+    "nombres_alternativos": [
+      "Tensado cutáneo corporal",
+      "radiofrecuencia para abdomen y glúteos",
+      "reafirmación dérmica corporal"
+    ],
+    "categoria": "estetica_corporal",
+    "descripcion_clinica": "Aplicación de ondas de radiofrecuencia multipolar en zonas con laxitud dérmica para inducir hipertermia controlada a nivel reticular, provocando contracción de colágeno y tensado tisular.",
+    "que_busca_paciente": "Pegar la piel suelta del abdomen tras un embarazo o pérdida de peso; reafirmar brazos («alas de murciélago») y glúteos.",
+    "dudas_frecuentes": [
+      "¿Esto quita la piel colgante excesiva?",
+      "¿En cuántas sesiones se nota la piel más dura?",
+      "¿Se puede combinar con cavitación?"
+    ],
+    "objeciones": [
+      "Proceso progresivo que requiere entre 6 y 10 sesiones; costo del tratamiento completo"
+    ],
+    "miedos": [
+      "Quemaduras por cabezal caliente; que no tense lo suficiente"
+    ],
+    "expectativas_irreales": "Esperar que la radiofrecuencia recoja un faldón cutáneo grado III (la piel colgante masiva requiere abdominoplastia quirúrgica).",
+    "confusiones_comunes": "Confundir flacidez de la piel (tratable con radiofrecuencia) con flacidez del músculo (que requiere ejercicio de fuerza o electroestimulación).",
+    "diferencias_clave": "Tratamiento del continente (la piel y su colágeno) vs tratamiento del contenido (grasa o masa muscular).",
+    "temas_tecnicos": "Temperatura dérmica diana de 41°C a 43°C sostenida durante 10 minutos por cuadrante, neocolagénesis tipo I.",
+    "cuidados_recuperacion": "Mantener la piel hidratada con cremas ricas en centella asiática o rosa mosqueta; fotoprotección si hay exposición.",
+    "oportunidades_comerciales": "Planes \"Postparto Glow\" (después de la lactancia); paquetes combinados con cavitación o drenaje.",
+    "angulos_emocionales": "Recuperar la seguridad de ponerse un traje de baño de dos piezas sin la incomodidad de la piel arrugada en el abdomen.",
+    "demostracion_autoridad": "Prueba de pellizco cutáneo evaluando el rebote elástico antes y después de completar el ciclo de sesiones.",
+    "temas_polemicos": "Clínicas que prometen \"abdominoplastia sin cirugía\" a mujeres con diástasis de rectos severa, engañando con resultados irreales.",
+    "material_visual_sugerido": [
+      "Termómetro infrarrojo controlando la temperatura del abdomen",
+      "Cabezal multipolar con luces LED terapéuticas"
+    ],
+    "limites_clinicos_regulatorios": "Contraindicado con dispositivos electrónicos implantados, DIU de cobre en zona abdominal baja o zonas con pérdida de sensibilidad.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      9,
+      29
+    ]
+  },
+  {
+    "id": "criolipolisis_adiposidad_localizada",
+    "nombre_habitual": "Criolipólisis Localizada (Congelación de Grasa)",
+    "nombres_alternativos": [
+      "CoolSculpting",
+      "congelación de adipocitos",
+      "lipo sin cirugía por frío",
+      "crioescultura"
+    ],
+    "categoria": "estetica_corporal",
+    "descripcion_clinica": "Aplicación de succión por vacío y enfriamiento controlado (-5°C a -10°C) sobre pliegues de grasa localizada durante 45-60 minutos, induciendo apoptosis en los adipocitos sin lesionar la piel.",
+    "que_busca_paciente": "Eliminar el rollito de grasa rebelde en abdomen bajo, flancos («love handles») o espalda que no desaparece con dieta ni ejercicio.",
+    "dudas_frecuentes": [
+      "¿La grasa congelada vuelve a salir?",
+      "¿Duele el frío?",
+      "¿Cuándo se notan los resultados?"
+    ],
+    "objeciones": [
+      "El resultado no es inmediato; toma de 6 a 12 semanas para que el sistema inmunológico metabolice las células muertas"
+    ],
+    "miedos": [
+      "Quemaduras por congelación (necrosis cutánea) por membranas anticongelantes defectuosas",
+      "Hiperplasia adiposa paradójica (efecto rebote raro)"
+    ],
+    "expectativas_irreales": "Pensar que la criolipólisis adelgaza 10 kilos de peso corporal o que trata la grasa visceral profunda alrededor de los órganos.",
+    "confusiones_comunes": "Creer que cualquier máquina de frío barata es igual; los equipos médicos homologados cuentan con sensores térmicos que previenen quemaduras.",
+    "diferencias_clave": "Apoptosis celular definitiva (la célula grasa muere y se elimina) vs vaciamiento temporal de lípidos por calor.",
+    "temas_tecnicos": "Cristalización de lípidos intracelulares, fagocitosis por macrófagos, membrana con gel crioprotector estéril de un solo uso.",
+    "cuidados_recuperacion": "Masaje vigoroso inmediato post-aplicador (aumenta 68% la eficacia de la lisis); hematoma o entumecimiento temporal por 1-2 semanas.",
+    "oportunidades_comerciales": "Venta por número de aplicadores («ciclos»); valoración de contorno corporal integral.",
+    "angulos_emocionales": "La satisfacción de abotonar ese jean que apretaba sin necesidad de pasar por una cirugía con anestesia general.",
+    "demostracion_autoridad": "Verificación del grosor del pliegue adiposo con plicómetro (mínimo 2.5 cm para ser candidato); apertura del crioprotector original.",
+    "temas_polemicos": "Máquinas chinas sin registro INVIMA que no congelan a la temperatura adecuada o congelan sin control causando quemaduras graves.",
+    "material_visual_sugerido": [
+      "Colocación de la membrana anticongelante húmeda",
+      "Aplicador succionando el pliegue adiposo en cámara lenta"
+    ],
+    "limites_clinicos_regulatorios": "Contraindicado en crioglobulinemia, hemoglobinuria paroxística por frío o hernias umbilicales en la zona de succión.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      9,
+      29,
+      34
+    ]
+  },
+  {
+    "id": "tratamiento_celulitis_vacuoterapia",
+    "nombre_habitual": "Tratamiento para Celulitis y Vacuoterapia (Presoterapia / Endermología)",
+    "nombres_alternativos": [
+      "Endermologie",
+      "presoterapia secuencial",
+      "masaje subdérmico no invasivo",
+      "tratamiento de piel de naranja"
+    ],
+    "categoria": "estetica_corporal",
+    "descripcion_clinica": "Terapia combinada que utiliza succión continua con rodillos motorizados (vacuoterapia) y compresión neumática ascendente (presoterapia) para descompactar tabiques fibróticos y activar el retorno venoso.",
+    "que_busca_paciente": "Suavizar los hoyuelos de la celulitis en glúteos y muslos, aliviar la pesadez de piernas cansadas y mejorar el aspecto de piel de naranja.",
+    "dudas_frecuentes": [
+      "¿La celulitis se quita para siempre?",
+      "¿Rompe vasitos o empeora las varices?",
+      "¿Por qué se usa una malla corporal?"
+    ],
+    "objeciones": [
+      "Tratamiento de mantenimiento continuo; si se abandona por completo y no se cuida la dieta, los hoyuelos reaparecen"
+    ],
+    "miedos": [
+      "Aparición de telangiectasias (arañitas vasculares)",
+      "Flacidez por estiramiento excesivo"
+    ],
+    "expectativas_irreales": "Esperar eliminar celulitis grado IV (nódulos duros y dolorosos) en tres sesiones de spa.",
+    "confusiones_comunes": "Creer que la celulitis es solo grasa; es una alteración que involucra tabiques de colágeno fibrótico, microcirculación y retención hídrica.",
+    "diferencias_clave": "Presoterapia secuencial (drena edema y pesadez de piernas) vs Vacuoterapia con rodillos (descompacta adherencias fibrosas).",
+    "temas_tecnicos": "Paniculopatía edematofibroesclerótica (PEFE), estasis microcirculatoria, presión neumática en mmHg, malla de poliamida.",
+    "cuidados_recuperacion": "Consumir agua baja en sodio; evitar ropa excesivamente apretada que corte la circulación; caminar 30 minutos al día.",
+    "oportunidades_comerciales": "Planes \"Piernas Ligeras y Firmes\" combinando 8 sesiones de endermología con presoterapia.",
+    "angulos_emocionales": "Sentirse cómoda y segura al usar faldas, shorts o vestidos cortos sin preocuparse por la textura de los muslos.",
+    "demostracion_autoridad": "Clasificación del tipo de celulitis en consulta (edematosa, blanda o compacta) para elegir los parámetros exactos.",
+    "temas_polemicos": "Vender paquetes masivos de \"adiós definitivo a la celulitis\" prometiendo erradicación total, lo cual es fisiológicamente imposible.",
+    "material_visual_sugerido": [
+      "Botas de presoterapia inflándose secuencialmente",
+      "Manípulo de rodillos deslizándose sobre la malla corporal"
+    ],
+    "limites_clinicos_regulatorios": "Contraindicado en tromboflebitis, trombosis venosa profunda activa o infecciones dérmicas bacterianas.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      9,
+      29
+    ]
+  },
+  {
+    "id": "enzimas_recombinantes_corporales",
+    "nombre_habitual": "Enzimas Recombinantes Corporales (Grasa Localizada y Fibrosis)",
+    "nombres_alternativos": [
+      "PBSerum corporal",
+      "enzimas para fibrosis postquirúrgica",
+      "lipolisis enzimática médica"
+    ],
+    "categoria": "estetica_corporal",
+    "descripcion_clinica": "Infiltración médica subcutánea de cócteles liofilizados de colagenasa, lipasa e hialuronidasa de alta pureza para degradar adherencias de fibrosis postquirúrgica y reducir panículos grasos rebeldes.",
+    "que_busca_paciente": "Corregir ondulaciones duras e irregularidades (fibrosis) dejadas por una liposucción anterior, o reducir grasa en abdomen y flancos.",
+    "dudas_frecuentes": [
+      "¿Esto duele más que una mesoterapia?",
+      "¿Se inflama mucho la zona?",
+      "¿En cuántas sesiones se alisa la piel?"
+    ],
+    "objeciones": [
+      "Costo superior a las mesoterapias convencionales por ser tecnología recombinante liofilizada"
+    ],
+    "miedos": [
+      "Hematomas extensos",
+      "Falta de resultado si la fibrosis es muy antigua"
+    ],
+    "expectativas_irreales": "Esperar que sustituya una lipoescultura completa de cuerpo entero (son para áreas localizadas y correcciones).",
+    "confusiones_comunes": "Confundir las enzimas recombinantes biológicas (seguras y biodegradables) con sustancias modelantes prohibidas o cócteles homeopáticos.",
+    "diferencias_clave": "Colagenasa (degrada puentes rígidos de colágeno fibrótico) + Lipasa (vacía adipocitos) con precisión molecular enzimática.",
+    "temas_tecnicos": "Fibrosis post-traumática, colágeno tipo I desorganizado, liofilización al vacío, inyección en abanico con cánula o aguja.",
+    "cuidados_recuperacion": "Uso de faja compresiva durante 7 días; drenaje linfático suave complementario a partir de las 48 horas.",
+    "oportunidades_comerciales": "Servicio de rescate y segundas opiniones para pacientes insatisfechas con resultados de cirugías plásticas previas.",
+    "angulos_emocionales": "Recuperar la textura lisa del abdomen tras meses de angustia por una fibrosis dura y dolorosa tras una cirugía.",
+    "demostracion_autoridad": "Palpación diagnóstica delimitando los cordones fibróticos frente al paciente; reconstitución con solución salina estéril en cabina.",
+    "temas_polemicos": "Aplicación de productos no certificados que prometen ser enzimas pero contienen detergentes químicos no autorizados.",
+    "material_visual_sugerido": [
+      "Viales liofilizados con precinto de seguridad INVIMA",
+      "Esquema de las fibras de fibrosis disolviéndose"
+    ],
+    "limites_clinicos_regulatorios": "Procedimiento inyectable estrictamente médico (Ley 711 de 2001). No apto en mujeres embarazadas o lactantes.",
+    "procedimiento_medico": true,
+    "fuentes_relacionadas": [
+      4,
+      7,
+      8,
+      11,
+      29
+    ]
+  },
+  {
+    "id": "depilacion_cera_convencional",
+    "nombre_habitual": "Depilación con Cera y Métodos Tradicionales",
+    "nombres_alternativos": [
+      "Depilación con cera española",
+      "cera tibia de miel",
+      "depilación convencional"
+    ],
+    "categoria": "depilacion",
+    "descripcion_clinica": "Extracción mecánica del vello desde la raíz folicular mediante la aplicación y tracción de ceras cosméticas vegetales o minerales tibias/calientes.",
+    "que_busca_paciente": "Retirar el vello corporal de forma rápida y económica antes de unas vacaciones, con una piel lisa durante 2 a 3 semanas.",
+    "dudas_frecuentes": [
+      "¿La cera causa manchas en las axilas y bikini?",
+      "¿Hace que la piel se cuelgue o pierda elasticidad?",
+      "¿Duele mucho?"
+    ],
+    "objeciones": [
+      "Tener que esperar a que el vello crezca varios milímetros para poder depilarse de nuevo"
+    ],
+    "miedos": [
+      "Quemaduras por cera demasiado caliente",
+      "Pelos encarnados (foliculitis) e infecciones bacterianas"
+    ],
+    "expectativas_irreales": "Creer que la cera debilita el vello al punto de eliminarlo definitivamente (el folículo permanece activo y se regenera).",
+    "confusiones_comunes": "Reutilizar la cera en centros informales pensando que el calor mata todas las bacterias (es una práctica antihigiénica prohibida).",
+    "diferencias_clave": "Cera elástica española (se retira sin bandas, menor tracción de la piel) vs cera en bandas de papel (mayor agresión epidérmica).",
+    "temas_tecnicos": "Temperatura de fusión (38-42°C), dirección de aplicación a favor del pelo y tracción en contra, foliculitis por fricción.",
+    "cuidados_recuperacion": "No exponerse al sol en 48 horas; no usar ropa ajustada ni saunas el primer día; aplicar gel de aloe vera calmante.",
+    "oportunidades_comerciales": "Servicio puente para pacientes que aún no quieren invertir en láser; venta de lociones exfoliantes antibacteriales para casa.",
+    "angulos_emocionales": "Sentirse limpia y libre de vello para una ocasión especial de forma rápida y accesible.",
+    "demostracion_autoridad": "Protocolo de cera descartable de un solo uso frente al paciente; termostato visible garantizando temperatura adecuada.",
+    "temas_polemicos": "Estéticas informales que filtran y reciclan la cera usada entre diferentes pacientes, violando normas de bioseguridad sanitaria.",
+    "material_visual_sugerido": [
+      "Termo-cera profesional con espátula desechable",
+      "Textura elástica de la cera vegetal"
+    ],
+    "limites_clinicos_regulatorios": "Prohibida la reutilización de ceras depilatorias según normatividad sanitaria de la Secretaría de Salud y Resolución 3100.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "id": "fotodepilacion_ipl",
+    "nombre_habitual": "Fotodepilación con Luz Pulsada Intensa (IPL)",
+    "nombres_alternativos": [
+      "Depilación IPL",
+      "fotodepilación cosmética",
+      "reducción de vello con luz pulsada"
+    ],
+    "categoria": "depilacion",
+    "descripcion_clinica": "Uso de una fuente lumínica policromática de amplio espectro no coherente que emite pulsos de luz filtrados para calentar progresivamente los folículos pilosos.",
+    "que_busca_paciente": "Disminuir la cantidad y grosor del vello corporal con un tratamiento menos costoso que el láser diodo médico.",
+    "dudas_frecuentes": [
+      "¿En qué se diferencia del láser de diodo?",
+      "¿Sirve si soy de piel trigueña u oscura?",
+      "¿Cuántas sesiones se necesitan?"
+    ],
+    "objeciones": [
+      "Requerir mayor número de sesiones (10 a 14) que el láser de diodo médico y tener mayor tasa de repoblación del vello"
+    ],
+    "miedos": [
+      "Quemaduras superficiales en pieles bronceadas o fototipos altos (IV y V)"
+    ],
+    "expectativas_irreales": "Creer que un equipo IPL portátil casero de internet tiene la misma potencia que un equipo profesional de cabina.",
+    "confusiones_comunes": "Creer que la IPL es un láser; la luz pulsada es policromática y divergente, mientras que el láser es monocromático y colimado.",
+    "diferencias_clave": "IPL (luz difusa, versátil para manchas pero menos selectiva para vello profundo) vs Láser Diodo 808nm (precisión y profundidad folicular).",
+    "temas_tecnicos": "Filtros de corte óptico (590 nm, 640 nm, 690 nm), ancho de pulso, fluencia en julios, gel conductor transparente obligatorio.",
+    "cuidados_recuperacion": "No tomar el sol ni usar autobronceadores antes ni después de la sesión; fotoprotección estricta.",
+    "oportunidades_comerciales": "Planes económicos de entrada para depilación de zonas corporales amplias; combinación con fotorrejuvenecimiento facial.",
+    "angulos_emocionales": "Ver cómo el vello sale cada vez más fino y ralo sin gastar un presupuesto elevado.",
+    "demostracion_autoridad": "Explicación honesta de los límites de la tecnología IPL frente al láser de diodo según el fototipo y color de vello.",
+    "temas_polemicos": "Clínicas que promocionan equipos IPL engañosamente llamándolos \"láser diodo\", configurando publicidad engañosa sancionada por la SIC.",
+    "material_visual_sugerido": [
+      "Destello de luz pulsada a través del gel conductor",
+      "Filtros ópticos intercambiables del cabezal"
+    ],
+    "limites_clinicos_regulatorios": "Contraindicado en fototipos altos V y VI por alto riesgo de quemaduras térmicas en la epidermis. Uso cosmetológico (Ley 711).",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "mantenimiento_depilacion_laser",
+    "nombre_habitual": "Sesiones de Mantenimiento de Depilación Láser",
+    "nombres_alternativos": [
+      "Retoques de depilación láser",
+      "mantenimiento anual de láser",
+      "control folicular"
+    ],
+    "categoria": "depilacion",
+    "descripcion_clinica": "Protocolo de sesiones espaciadas (1 o 2 veces al año) diseñado para eliminar vellos residuales aislados que despiertan por cambios hormonales o reactivación de folículos telógenos.",
+    "que_busca_paciente": "Conservar los resultados obtenidos en su paquete inicial de depilación láser y mantener la piel perfectamente suave año tras año.",
+    "dudas_frecuentes": [
+      "¿Por qué me volvieron a salir algunos vellos si ya terminé mi paquete?",
+      "¿Tengo que comprar otro paquete completo de 8 sesiones?",
+      "¿Duele menos que las primeras sesiones?"
+    ],
+    "objeciones": [
+      "Pensar que si el láser era \"definitivo\" no deberían necesitarse sesiones de retoque nunca más"
+    ],
+    "miedos": [
+      "Que el vello vuelva a crecer con la misma fuerza que al inicio"
+    ],
+    "expectativas_irreales": "Creer que el cuerpo humano no tiene capacidad biológica de generar nuevos folículos ante estímulos hormonales (embarazo, tiroides, SOP).",
+    "confusiones_comunes": "Creer que el tratamiento inicial fracasó; en realidad, ningún tratamiento destruye folículos que estaban inactivos biológicamente durante el ciclo inicial.",
+    "diferencias_clave": "Ciclo inicial de ataque (sesiones mensuales continuas) vs retoques de preservación anuales.",
+    "temas_tecnicos": "Vellos residuales miniaturizados (baja melanina), ajuste de fluencia y pulso corto para atrapar pelo fino sin quemar la piel.",
+    "cuidados_recuperacion": "Mismos cuidados que una sesión normal: no exponerse al sol 48 horas antes y después; hidratación.",
+    "oportunidades_comerciales": "Membresías anuales de mantenimiento o planes VIP de suscripción recurrente para pacientes fidelizados.",
+    "angulos_emocionales": "La tranquilidad de saber que tu inversión en depilación está protegida a largo plazo y tu piel siempre lista.",
+    "demostracion_autoridad": "Explicación del ciclo biológico del pelo con gráficos didácticos; ajuste de parámetros para pelo fino residual.",
+    "temas_polemicos": "Centros que obligan al paciente a comprar un paquete de 10 sesiones nuevas cuando solo necesita 1 o 2 retoques anuales.",
+    "material_visual_sugerido": [
+      "Lupa dermatológica revisando un vello fino residual",
+      "Disparo rápido del cabezal láser en zona localizada"
+    ],
+    "limites_clinicos_regulatorios": "Término \"definitivo\" no debe utilizarse sin aclarar la necesidad de retoques fisiológicos individuales.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      23,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "masaje_relajante_descontracturante",
+    "nombre_habitual": "Masaje Relajante y Terapia Descontracturante",
+    "nombres_alternativos": [
+      "Masaje antiestrés",
+      "terapia de relajación muscular",
+      "masaje sueco y tejido profundo"
+    ],
+    "categoria": "spa_bienestar",
+    "descripcion_clinica": "Terapia manual que combina técnicas de effleurage y petrissage sueco con presiones específicas sobre puntos gatillo miofasciales, utilizando aceites botánicos aromatizados para liberar tensión acumulada.",
+    "que_busca_paciente": "Desconectar la mente del estrés diario, aliviar dolores musculares en cuello, hombros y espalda baja, y mejorar la calidad del sueño.",
+    "dudas_frecuentes": [
+      "¿Quedaré con dolor al día siguiente si es descontracturante?",
+      "¿Qué aceite usan en la piel?",
+      "¿Es solo para mujeres?"
+    ],
+    "objeciones": [
+      "Considerar el masaje como un \"lujo innecesario\" en vez de una inversión en salud mental y física"
+    ],
+    "miedos": [
+      "Que el terapeuta manipule con fuerza zonas vertebrales sensibles o lesione una articulación"
+    ],
+    "expectativas_irreales": "Esperar que un masaje relajante de 50 minutos cure una hernia discal crónica o una contractura muscular de 5 años.",
+    "confusiones_comunes": "Confundir un masaje relajante suave de spa con fisioterapia clínica de rehabilitación traumatológica.",
+    "diferencias_clave": "Masaje relajante sensorial (presión suave/media, aromaterapia) vs descontracturante (presión profunda sobre nódulos miofasciales).",
+    "temas_tecnicos": "Puntos gatillo (trigger points), fascia muscular, disminución de cortisol salival, liberación de endorfinas y serotonina.",
+    "cuidados_recuperacion": "Beber agua tibia para eliminar toxinas movilizadas; reposar y no realizar ejercicios extenuantes el resto del día.",
+    "oportunidades_comerciales": "Suscripciones mensuales de bienestar corporativo o planes de viernes de desconexión; combos con exfoliación.",
+    "angulos_emocionales": "Ese suspiro profundo cuando la tensión de los hombros por fin desaparece; reencontrarse con la calma interior.",
+    "demostracion_autoridad": "Acreditación del terapeuta en anatomía muscular y quiromasaje; personalización de la presión según preferencia del cliente.",
+    "temas_polemicos": "Spas informales con terapeutas no capacitados que realizan maniobras articulares bruscas (crujidos) sin titulación quiropráctica.",
+    "material_visual_sugerido": [
+      "Aceite tibio vertiéndose sobre la espalda con luz tenue de velas",
+      "Movimiento acompasado de manos en hombros"
+    ],
+    "limites_clinicos_regulatorios": "Terapia de bienestar no invasiva. Contraindicado en cuadros de fiebre, trombosis, infecciones agudas o fracturas recientes.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      38
+    ]
+  },
+  {
+    "id": "masajes_pareja_experiencias_spa",
+    "nombre_habitual": "Rituales Spa y Masajes en Pareja",
+    "nombres_alternativos": [
+      "Spa para dos",
+      "experiencia romántica de bienestar",
+      "masaje simultáneo en cabina dúo"
+    ],
+    "categoria": "spa_bienestar",
+    "descripcion_clinica": "Experiencia inmersiva de relajación compartida en cabina doble ambientada con aromaterapia, música relajante y cromoterapia, con dos terapeutas coordinados simultáneamente.",
+    "que_busca_paciente": "Celebrar un aniversario, cumpleaños o fecha especial compartiendo un momento íntimo de paz y desconexión con su pareja.",
+    "dudas_frecuentes": [
+      "¿Estamos los dos en la misma habitación?",
+      "¿Qué incluye la experiencia (copa, jacuzzi)?",
+      "¿Podemos elegir masajes diferentes?"
+    ],
+    "objeciones": [
+      "Precios percibidos como altos comparados con masajes individuales"
+    ],
+    "miedos": [
+      "Falta de privacidad o cabinas frías y poco acogedoras"
+    ],
+    "expectativas_irreales": "Esperar que un paquete básico incluya circuito hídrico privado sin haberlo contratado previamente.",
+    "confusiones_comunes": "Creer que un spa en pareja es solo para aniversarios románticos; también es muy demandado entre madres e hijas o mejores amigas.",
+    "diferencias_clave": "Coordinación sincrónica de dos terapeutas en cabina dúo con ambientación acústica y térmica especializada.",
+    "temas_tecnicos": "Sincronía de maniobras manuales, aceites botánicos con esencias de lavanda o eucalipto, ambientación a 24°C constante.",
+    "cuidados_recuperacion": "Disfrutar del tiempo de desconexión en la sala de relajación; hidratación con té herbal infusionado.",
+    "oportunidades_comerciales": "Temporadas pico: San Valentín, Día de Amor y Amistad, fines de semana festivos y aniversarios; upsells de flores o copas.",
+    "angulos_emocionales": "Regalar un recuerdo inolvidable en vez de un objeto material; reconectar con la pareja en un entorno de paz absoluta.",
+    "demostracion_autoridad": "Cuidado milimétrico de los protocolos de bienvenida, puntualidad y discreción del personal de cabina.",
+    "temas_polemicos": "Publicidad engañosa donde muestran fotos de jacuzzis de lujo de stock que no corresponden a las instalaciones reales del centro.",
+    "material_visual_sugerido": [
+      "Cabina doble con camillas paralelas iluminadas con velas",
+      "Copa de infusión herbal de cortesía"
+    ],
+    "limites_clinicos_regulatorios": "Servicio de bienestar cosmético. Cumplimiento estricto de condiciones de higiene y lencería desechable o esterilizada.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      38
+    ]
+  },
+  {
+    "id": "bonos_regalo_rituales_spa",
+    "nombre_habitual": "Bonos de Regalo y Paquetes de Experiencias Spa",
+    "nombres_alternativos": [
+      "Gift cards de spa",
+      "tarjeta de regalo de bienestar",
+      "bono de experiencia relax"
+    ],
+    "categoria": "spa_bienestar",
+    "descripcion_clinica": "Comercialización de créditos o paquetes cerrados de experiencias de spa y cuidado personal presentados en formato de tarjeta física de lujo o bono digital con código de canje.",
+    "que_busca_paciente": "Hacer un regalo elegante, original y garantizado para una persona querida sin preocuparse por equivocarse en la talla o el gusto.",
+    "dudas_frecuentes": [
+      "¿Cuánto tiempo de vigencia tiene el bono para canjearse?",
+      "¿Se puede cambiar por otros servicios si la persona prefiere otro?",
+      "¿Viene en empaque físico para entregar?"
+    ],
+    "objeciones": [
+      "Miedo a que el bono caduque antes de que la persona tenga tiempo de ir al spa"
+    ],
+    "miedos": [
+      "Que al canjear el bono atiendan a la persona con menor calidad que a un cliente que paga en efectivo"
+    ],
+    "expectativas_irreales": "Pretender canjear un bono vencido hace un año sin consultar las políticas de caducidad estipuladas en la ley del consumidor.",
+    "confusiones_comunes": "Confundir un bono de monto abierto (saldo en dinero para gastar) con un bono de experiencia cerrada (que garantiza un paquete exacto).",
+    "diferencias_clave": "Regalo experiencial emocional (bienestar, autocuidado) vs regalo material convencional.",
+    "temas_tecnicos": "Control de códigos únicos de canje en sistema, trazabilidad en software de gestión, políticas de términos y condiciones claras.",
+    "cuidados_recuperacion": "Agendar la cita con anticipación, especialmente para fines de semana.",
+    "oportunidades_comerciales": "Pico de ventas en Navidad, Día de la Madre, Amor y Amistad; convenios corporativos de bienestar para empleados.",
+    "angulos_emocionales": "Ver la cara de felicidad y agradecimiento de quien recibe una invitación a desconectar y cuidarse.",
+    "demostracion_autoridad": "Presentación impecable del packaging del bono (caja de regalo, tarjeta texturizada, lazo corporativo) que transmite lujo.",
+    "temas_polemicos": "Spas que ponen trabas abusivas para agendar a personas con bonos de regalo, reservando los mejores horarios solo a clientes directos.",
+    "material_visual_sugerido": [
+      "Unboxing de la caja de regalo física del spa",
+      "Tarjeta de bono de regalo con sello lacrado o diseño refinado"
+    ],
+    "limites_clinicos_regulatorios": "Cumplimiento del Estatuto del Consumidor (Ley 1480): vigencia clara no inferior a los límites legales, términos explícitos.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      9,
+      38
+    ]
+  },
+  {
+    "id": "masaje_piedras_volcanicas",
+    "nombre_habitual": "Masaje con Piedras Volcánicas Calientes (Hot Stones)",
+    "nombres_alternativos": [
+      "Terapia geotermal",
+      "masaje con piedras basálticas calientes",
+      "ritual geotermal de relajación"
+    ],
+    "categoria": "spa_bienestar",
+    "descripcion_clinica": "Técnica de termoterapia corporal que utiliza piedras basálticas lisas ricas en minerales calentadas a 45-50°C, deslizándolas sobre la musculatura para relajar tejidos mediante calor húmedo sostenido.",
+    "que_busca_paciente": "Aliviar tensiones musculares profundas, mejorar la circulación periférica y experimentar una relajación física y térmica envolvente.",
+    "dudas_frecuentes": [
+      "¿Las piedras queman la piel?",
+      "¿Se quedan quietas o dan masaje con ellas?",
+      "¿Es seguro si tengo presión alta?"
+    ],
+    "objeciones": [
+      "Pensar que es un masaje estático donde solo te ponen piedras encima y no te masajean"
+    ],
+    "miedos": [
+      "Quemaduras por piedras recalentadas en calentadores no profesionales"
+    ],
+    "expectativas_irreales": "Esperar que el calor de las piedras sustituya un tratamiento traumatológico para lesiones agudas.",
+    "confusiones_comunes": "Creer que son piedras de río comunes; las piedras basálticas de origen volcánico retienen el calor por mucho más tiempo de forma uniforme.",
+    "diferencias_clave": "Masaje activo con la piedra lubricada con aceite sobre la piel vs piedras estáticas colocadas sobre chakras o puntos energéticos.",
+    "temas_tecnicos": "Calentador profesional de piedras con termostato (45-50°C), piedras de basalto volcánico ricas en hierro y magnesio, dilatación vascular.",
+    "cuidados_recuperacion": "No salir al frío inmediatamente después de la sesión; abrigarse bien y beber agua tibia con infusión.",
+    "oportunidades_comerciales": "Servicio estrella en épocas de lluvia, frío o para personas mayores con dolores articulares crónicos por frío.",
+    "angulos_emocionales": "La sensación reconfortante del calor derritiendo la rigidez de la espalda; una pausa de calidez en medio del frío.",
+    "demostracion_autoridad": "Comprobación de la temperatura de la piedra en el antebrazo del terapeuta antes de tocar la espalda del cliente.",
+    "temas_polemicos": "Spas que calientan piedras en ollas de cocina o microondas sin control de temperatura provocando quemaduras dérmicas graves.",
+    "material_visual_sugerido": [
+      "Piedras negras volcánicas humeantes en el agua del calentador",
+      "Deslizamiento suave de la piedra aceitada en la espalda"
+    ],
+    "limites_clinicos_regulatorios": "Contraindicado en hipertensión descontrolada, insuficiencia cardíaca, várices severas o zonas con inflamación aguda.",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      38
+    ]
+  },
+  {
+    "id": "hidroterapia_exfoliacion_corporal",
+    "nombre_habitual": "Circuito de Hidroterapia y Exfoliación Corporal Completa",
+    "nombres_alternativos": [
+      "Ritual corporal exfoliante y jacuzzi",
+      "baño de sales marinas y turbinas",
+      "peeling corporal e hidratación"
+    ],
+    "categoria": "spa_bienestar",
+    "descripcion_clinica": "Protocolo de bienestar que combina inmersión en tina de hidromasaje o jacuzzi con sales minerales y chorros a presión, seguido de exfoliación mecánica de cuerpo entero y envoltura corporal nutritiva.",
+    "que_busca_paciente": "Renovar la piel de todo el cuerpo, eliminar asperezas en codos y rodillas, desintoxicar los poros y relajar la musculatura con agua tibia.",
+    "dudas_frecuentes": [
+      "¿Tengo que llevar vestido de baño?",
+      "¿El agua del jacuzzi se cambia para cada cliente?",
+      "¿Cuánto tiempo dura todo el circuito?"
+    ],
+    "objeciones": [
+      "Requerir instalaciones amplias y tener un tiempo de duración más prolongado (90 a 120 minutos)"
+    ],
+    "miedos": [
+      "Falta de higiene en tinas o jacuzzis compartidos (infecciones dérmicas)"
+    ],
+    "expectativas_irreales": "Esperar que el hidromasaje reduzca grasa localizada sin ser una terapia deportiva o médica.",
+    "confusiones_comunes": "Confundir una tina común con un jacuzzi con sistema de recirculación, filtrado bacteriano y desinfección grado spa.",
+    "diferencias_clave": "Efecto hidroterápico (flotación, presión hidrostática y temperatura) combinado con exfoliación mecánica profunda de cuerpo entero.",
+    "temas_tecnicos": "Sales marinas de Epsom (ricas en sulfato de magnesio), exfoliante de bambú o azúcar moreno con aceites nutritivos, temperatura a 36-38°C.",
+    "cuidados_recuperacion": "No exponerse al sol inmediatamente tras la exfoliación corporal completa; hidratación dérmica diaria.",
+    "oportunidades_comerciales": "Paquetes de preparación de la piel para novias («Bridal Spa») o rituales de renovación previos a vacaciones de verano.",
+    "angulos_emocionales": "Sentir la piel tan suave como la seda de la cabeza a los pies y una ligereza corporal absoluta como si flotaras.",
+    "demostracion_autoridad": "Protocolo estricto de vaciado, limpieza y desinfección visible de la tina de hidromasaje entre cada usuario.",
+    "temas_polemicos": "Centros que no limpian los ductos internos de las boquillas de hidromasaje, acumulando bacterias (Pseudomonas) y hongos.",
+    "material_visual_sugerido": [
+      "Chorros de hidromasaje burbujeando con sales minerales",
+      "Exfoliante de sales deslizándose sobre los hombros"
+    ],
+    "limites_clinicos_regulatorios": "Normas estrictas de bioseguridad en áreas húmedas bajo supervisión de salud pública (Resolución 3100 y Secretaría de Salud).",
+    "procedimiento_medico": false,
+    "fuentes_relacionadas": [
+      7,
+      8,
+      38
+    ]
+  }
+]

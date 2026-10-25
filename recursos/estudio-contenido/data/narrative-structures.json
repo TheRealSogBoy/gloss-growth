@@ -1,0 +1,601 @@
+{
+  "structures": [
+    {
+      "id": "doble_caida",
+      "nombre": "Doble Caída",
+      "fuente": "andrea",
+      "duracion_estimada_segundos": {
+        "min": 35,
+        "max": 70
+      },
+      "descripcion": "Mantiene la atención del espectador cuando una explicación tiene dos niveles reales de tensión o un segundo obstáculo oculto.",
+      "pasos": [
+        {
+          "orden": 1,
+          "nombre_paso": "Afirmación intrigante / Gancho primario",
+          "duracion_segundos": "0-5s",
+          "proposito_editorial": "Detener el scroll con una afirmación paradójica o un dilema no resuelto.",
+          "indicacion_visual": "Contacto visual directo a cámara o corte dinámico con movimiento corporal.",
+          "indicacion_verbal": "Enunciar la primera premisa con cadencia firme sin revelar el giro final."
+        },
+        {
+          "orden": 2,
+          "nombre_paso": "Respuesta parcial o primera capa visible",
+          "duracion_segundos": "5-20s",
+          "proposito_editorial": "Presentar la explicación tradicional o lo que la mayoría asume que es la solución.",
+          "indicacion_visual": "B-roll de apoyo o toma media mostrando el tratamiento en acción.",
+          "indicacion_verbal": "«La mayoría cree que esto se soluciona haciendo X... y en parte es verdad»."
+        },
+        {
+          "orden": 3,
+          "nombre_paso": "Segunda variable que altera la interpretación",
+          "duracion_segundos": "20-40s",
+          "proposito_editorial": "Introducir el segundo obstáculo o matiz clínico/financiero que nadie menciona.",
+          "indicacion_visual": "Cambio de plano cerrado o apoyo en gráfico/esquema.",
+          "indicacion_verbal": "«Pero lo que casi nadie evalúa es que entra a jugar este segundo factor crítico»."
+        },
+        {
+          "orden": 4,
+          "nombre_paso": "Resolución completa y aprendizaje",
+          "duracion_segundos": "40-60s",
+          "proposito_editorial": "Entregar la síntesis técnica o médica que unifica ambas variables de forma accionable.",
+          "indicacion_visual": "Profesional explicando con calma o mostrando el resultado correcto.",
+          "indicacion_verbal": "Explicar con precisión cómo abordar ambas variables en consulta real."
+        },
+        {
+          "orden": 5,
+          "nombre_paso": "Llamado a la acción contextual",
+          "duracion_segundos": "60-70s",
+          "proposito_editorial": "Guiar al espectador hacia el siguiente paso de valor o agendamiento.",
+          "indicacion_visual": "Texto en pantalla con palabra clave para interacción o valoración.",
+          "indicacion_verbal": "«Comenta VALORACIÓN para evaluar tu caso de forma personalizada»."
+        }
+      ],
+      "mecanismos_optimos": [
+        "GAP",
+        "STORY",
+        "NEG",
+        "CONTRA"
+      ],
+      "advertencias_regulatorias": "No inventar un \"segundo secreto\" artificial si el tratamiento tiene una respuesta médica directa y simple."
+    },
+    {
+      "id": "vacio_informacion",
+      "nombre": "Vacío de Información (Information Gap)",
+      "fuente": "andrea",
+      "duracion_estimada_segundos": {
+        "min": 15,
+        "max": 60
+      },
+      "descripcion": "Organiza una duda de interés genuino y entrega la respuesta de manera progresiva y didáctica.",
+      "pasos": [
+        {
+          "orden": 1,
+          "nombre_paso": "Pregunta o deseo de interés genuino",
+          "duracion_segundos": "0-4s",
+          "proposito_editorial": "Abrir un vacío cognitivo que el espectador necesite cerrar de inmediato.",
+          "indicacion_visual": "Primer plano o texto grande interrogativo superpuesto.",
+          "indicacion_verbal": "Lanzar la pregunta directa con entonación de curiosidad natural."
+        },
+        {
+          "orden": 2,
+          "nombre_paso": "Razón por la que este dato importa",
+          "duracion_segundos": "4-15s",
+          "proposito_editorial": "Vincular la respuesta con la seguridad, el resultado o el dinero del paciente/gestor.",
+          "indicacion_visual": "Transición a B-roll de cabina o demostración de instrumento.",
+          "indicacion_verbal": "«Saber esto antes de tu cita te ahorra dinero y evita resultados indeseados»."
+        },
+        {
+          "orden": 3,
+          "nombre_paso": "Respuesta sustantiva y concreta",
+          "duracion_segundos": "15-35s",
+          "proposito_editorial": "Despejar el misterio con datos anatómicos, biológicos o comerciales verificables.",
+          "indicacion_visual": "Demostración práctica o profesional explicando con ademanes precisos.",
+          "indicacion_verbal": "Entregar la respuesta médica o técnica sin rodeos ni ambigüedades."
+        },
+        {
+          "orden": 4,
+          "nombre_paso": "Demostración o aplicación práctica",
+          "duracion_segundos": "35-50s",
+          "proposito_editorial": "Ilustrar cómo se traduce esa respuesta en una cita de valoración real.",
+          "indicacion_visual": "B-roll del profesional evaluando la zona o manipulando el producto original.",
+          "indicacion_verbal": "«Por eso en clínica siempre evaluamos primero este parámetro clave»."
+        },
+        {
+          "orden": 5,
+          "nombre_paso": "Cierre con criterio editorial / CTA",
+          "duracion_segundos": "50-60s",
+          "proposito_editorial": "Invitar a guardar la información o consultar con su especialista.",
+          "indicacion_visual": "Gráfico animado de botón guardar o caja de comentarios.",
+          "indicacion_verbal": "«Guarda este video para tu próxima visita al especialista»."
+        }
+      ],
+      "mecanismos_optimos": [
+        "GAP",
+        "UTIL",
+        "AUTO"
+      ],
+      "advertencias_regulatorias": "Prohibido prometer \"revelar el secreto de las celebridades\" si la respuesta es un protocolo médico estándar."
+    },
+    {
+      "id": "problema_invisible",
+      "nombre": "Problema Invisible",
+      "fuente": "andrea",
+      "duracion_estimada_segundos": {
+        "min": 25,
+        "max": 60
+      },
+      "descripcion": "Cuestiona una explicación superficial y expone la verdadera variable causal que el paciente no estaba considerando.",
+      "pasos": [
+        {
+          "orden": 1,
+          "nombre_paso": "Problema aparente o síntoma visible",
+          "duracion_segundos": "0-5s",
+          "proposito_editorial": "Enfocar la queja común del paciente (manchas, flacidez, cansancio facial).",
+          "indicacion_visual": "Toma de la zona afectada o gesto de insatisfacción frente al espejo.",
+          "indicacion_verbal": "«Crees que tus líneas de expresión son solo por la edad... pero mira esto»."
+        },
+        {
+          "orden": 2,
+          "nombre_paso": "Variable invisible o causa de fondo",
+          "duracion_segundos": "5-20s",
+          "proposito_editorial": "Desvelar el mecanismo fisiológico subyacente (pérdida de soporte óseo, deshidratación profunda, fotodaño).",
+          "indicacion_visual": "Diagrama anatómico, cráneo médico o modelo tridimensional de la piel.",
+          "indicacion_verbal": "«El verdadero problema está ocurriendo en las capas profundas de grasa y hueso»."
+        },
+        {
+          "orden": 3,
+          "nombre_paso": "Evidencia o ejemplo ilustrado",
+          "duracion_segundos": "20-35s",
+          "proposito_editorial": "Demostrar por qué los tratamientos superficiales fracasan cuando se ignora la causa real.",
+          "indicacion_visual": "Comparativa visual entre tratar el síntoma vs tratar la causa estructural.",
+          "indicacion_verbal": "«Si solo aplicas una crema superficial, la estructura sigue cediendo»."
+        },
+        {
+          "orden": 4,
+          "nombre_paso": "Solución, criterio o ruta correcta",
+          "duracion_segundos": "35-50s",
+          "proposito_editorial": "Presentar el protocolo médico adecuado (bioestimulación, reposición de soporte).",
+          "indicacion_visual": "Profesional en consulta realizando un examen exhaustivo.",
+          "indicacion_verbal": "«Por eso la solución médica pasa por restaurar primero el soporte dérmico»."
+        },
+        {
+          "orden": 5,
+          "nombre_paso": "Cierre accionable",
+          "duracion_segundos": "50-60s",
+          "proposito_editorial": "Llamar a un diagnóstico profesional presencial.",
+          "indicacion_visual": "Cartel de agenda o enlace en biografía.",
+          "indicacion_verbal": "«Agenda tu diagnóstico facial computarizado en el enlace de nuestro perfil»."
+        }
+      ],
+      "mecanismos_optimos": [
+        "NEG",
+        "CONTRA",
+        "ENEM",
+        "AUTO"
+      ],
+      "advertencias_regulatorias": "No afirmar que una sola variable patológica aplica al 100% de los pacientes; enfatizar la individualidad biológica."
+    },
+    {
+      "id": "transformacion_5s",
+      "nombre": "Transformación de 5 Segundos",
+      "fuente": "andrea",
+      "duracion_estimada_segundos": {
+        "min": 15,
+        "max": 45
+      },
+      "descripcion": "Presenta rápidamente el antes, detonante y después narrativos sin sugerir falsamente que el procedimiento toma 5 segundos reales.",
+      "pasos": [
+        {
+          "orden": 1,
+          "nombre_paso": "Situación inicial / Estado previo",
+          "duracion_segundos": "0-3s",
+          "proposito_editorial": "Captar el estado de partida del paciente o el centro con empatía.",
+          "indicacion_visual": "Fotografía clínica estandarizada de inicio (luz neutra, sin maquillaje) o plano de apertura.",
+          "indicacion_verbal": "«Así llegó nuestra paciente buscando recuperar la frescura de su mirada»."
+        },
+        {
+          "orden": 2,
+          "nombre_paso": "Detonante del cambio / Acción precisa",
+          "duracion_segundos": "3-7s",
+          "proposito_editorial": "Mostrar el momento cumbre del protocolo técnico ejecutado.",
+          "indicacion_visual": "Clip de 2 segundos de la técnica con instrumental estéril y guantes quirúrgicos.",
+          "indicacion_verbal": "«Diseñamos un protocolo personalizado combinando neuromodulador y soporte dérmico»."
+        },
+        {
+          "orden": 3,
+          "nombre_paso": "Situación final / Resultado visible",
+          "duracion_segundos": "7-15s",
+          "proposito_editorial": "Revelar el resultado a los 15-30 días post-tratamiento.",
+          "indicacion_visual": "Misma iluminación y ángulo clínico mostrando la evolución armoniosa.",
+          "indicacion_verbal": "«Y este es su resultado real a las tres semanas: natural, expresivo y descansado»."
+        },
+        {
+          "orden": 4,
+          "nombre_paso": "Explicación técnica de por qué se logró",
+          "duracion_segundos": "15-30s",
+          "proposito_editorial": "Educar en que la armonía depende del criterio anatómico y no del volumen excesivo.",
+          "indicacion_visual": "Médico explicando el mapa de vectores utilizado.",
+          "indicacion_verbal": "«El éxito no estuvo en rellenar, sino en respetar su anatomía muscular»."
+        },
+        {
+          "orden": 5,
+          "nombre_paso": "Aplicación y llamado a la acción",
+          "duracion_segundos": "30-40s",
+          "proposito_editorial": "Cierre ético recordando que cada rostro es único.",
+          "indicacion_visual": "Placa corporativa con registro REPS de la clínica.",
+          "indicacion_verbal": "«Escríbenos para evaluar tu anatomía en una cita de valoración»."
+        }
+      ],
+      "mecanismos_optimos": [
+        "STORY",
+        "DEMO",
+        "PROOF",
+        "ASP"
+      ],
+      "advertencias_regulatorias": "Estrictamente prohibido usar filtros digitales de belleza o iluminación engañosa. Los resultados varían según cada organismo."
+    },
+    {
+      "id": "faq",
+      "nombre": "Pregunta Frecuente / Consulta Directa (FAQ)",
+      "fuente": "gloss",
+      "duracion_estimada_segundos": {
+        "min": 20,
+        "max": 40
+      },
+      "descripcion": "Responde una duda recurrente del paciente de manera concisa, transparente y desprovista de tecnicismos incomprensibles.",
+      "pasos": [
+        {
+          "orden": 1,
+          "nombre_paso": "Pregunta tal como la formula el paciente",
+          "duracion_segundos": "0-3s",
+          "proposito_editorial": "Plantear la duda en lenguaje coloquial para generar sintonía inmediata.",
+          "indicacion_visual": "Burbuja de sticker de preguntas de Instagram o texto en pantalla.",
+          "indicacion_verbal": "«¿Si me pongo toxina botulínica a los 25 años mi piel se va a volver dependiente?»"
+        },
+        {
+          "orden": 2,
+          "nombre_paso": "Respuesta categórica y clara",
+          "duracion_segundos": "3-10s",
+          "proposito_editorial": "Dar un no rotundo o una respuesta afirmativa sin rodeos.",
+          "indicacion_visual": "Profesional asintiendo o negando con mirada segura.",
+          "indicacion_verbal": "«No, en absoluto. Y te explico exactamente por qué ocurre todo lo contrario»."
+        },
+        {
+          "orden": 3,
+          "nombre_paso": "Explicación biológica o técnica sencilla",
+          "duracion_segundos": "10-25s",
+          "proposito_editorial": "Describir el mecanismo de acción de forma analógica y comprensible.",
+          "indicacion_visual": "B-roll de simulación o demostración con modelo.",
+          "indicacion_verbal": "«La toxina solo da una pausa a la contracción repetitiva que quiebra el colágeno...»"
+        },
+        {
+          "orden": 4,
+          "nombre_paso": "Cierre con recomendación de valoración",
+          "duracion_segundos": "25-35s",
+          "proposito_editorial": "Fomentar la consulta personalizada antes de tomar decisiones.",
+          "indicacion_visual": "Texto inferior con detalles de ubicación y contacto.",
+          "indicacion_verbal": "«¿Tienes más dudas? Déjalas en comentarios y las respondo en el próximo video»."
+        }
+      ],
+      "mecanismos_optimos": [
+        "AUTO",
+        "GAP",
+        "UTIL",
+        "AUT"
+      ],
+      "advertencias_regulatorias": "No convertir la respuesta en un diagnóstico universal para condiciones dermatológicas complejas."
+    },
+    {
+      "id": "check",
+      "nombre": "Checklist de Seguridad y Criterios (CHECK)",
+      "fuente": "gloss",
+      "duracion_estimada_segundos": {
+        "min": 30,
+        "max": 50
+      },
+      "descripcion": "Entrega una lista de verificación indispensable que el paciente debe revisar antes de someterse a cualquier procedimiento.",
+      "pasos": [
+        {
+          "orden": 1,
+          "nombre_paso": "Advertencia o situación de chequeo",
+          "duracion_segundos": "0-4s",
+          "proposito_editorial": "Alertar sobre los riesgos de no verificar las condiciones mínimas del centro.",
+          "indicacion_visual": "Gesto de stop a cámara o texto: «Antes de hacerte X, revisa esto»",
+          "indicacion_verbal": "«Tres cosas que debes exigirle a tu clínica antes de permitir que toquen tu rostro»."
+        },
+        {
+          "orden": 2,
+          "nombre_paso": "Criterio 1: Habilitación y profesional",
+          "duracion_segundos": "4-15s",
+          "proposito_editorial": "Exigir título médico habilitado y registro REPS (Ley 711 / Res. 3100).",
+          "indicacion_visual": "Texto en pantalla: «1. Registro médico y distintivo de habilitación»",
+          "indicacion_verbal": "«Primero: que quien aplique sea médico especialista con habilitación visible»."
+        },
+        {
+          "orden": 3,
+          "nombre_paso": "Criterio 2: Registro INVIMA del producto",
+          "duracion_segundos": "15-25s",
+          "proposito_editorial": "Asegurar que la jeringa o vial se abra y verifique en presencia del paciente.",
+          "indicacion_visual": "Primer plano del holograma y lote de la caja del insumo original.",
+          "indicacion_verbal": "«Segundo: que el producto se destape frente a ti con registro sanitario INVIMA vigente»."
+        },
+        {
+          "orden": 4,
+          "nombre_paso": "Criterio 3: Plan de manejo de urgencias",
+          "duracion_segundos": "25-35s",
+          "proposito_editorial": "Verificar la disponibilidad inmediata de hialuronidasa y protocolos de contingencia.",
+          "indicacion_visual": "Vial de hialuronidasa en botiquín de emergencia de la clínica.",
+          "indicacion_verbal": "«Tercero: que cuenten con protocolo y stock para cualquier eventualidad»."
+        },
+        {
+          "orden": 5,
+          "nombre_paso": "Demostración y llamado a guardar la lista",
+          "duracion_segundos": "35-45s",
+          "proposito_editorial": "Lograr alto ratio de guardados en la plataforma.",
+          "indicacion_visual": "Resumen gráfico de los 3 puntos en una sola lámina.",
+          "indicacion_verbal": "«Guarda este checklist para que nunca comprometas tu salud por un descuento»."
+        }
+      ],
+      "mecanismos_optimos": [
+        "NEG",
+        "UTIL",
+        "EFF",
+        "ENEM",
+        "AUT"
+      ],
+      "advertencias_regulatorias": "Mantener la lista estrictamente apegada a la normatividad sanitaria colombiana sin difamar marcas comerciales homologadas."
+    },
+    {
+      "id": "versus",
+      "nombre": "Comparativa Directa A vs B (VERSUS)",
+      "fuente": "gloss",
+      "duracion_estimada_segundos": {
+        "min": 30,
+        "max": 55
+      },
+      "descripcion": "Contrapone dos tratamientos o tecnologías afines para orientar al paciente según su necesidad anatómica específica.",
+      "pasos": [
+        {
+          "orden": 1,
+          "nombre_paso": "Presentación de A vs B y criterio de choque",
+          "duracion_segundos": "0-4s",
+          "proposito_editorial": "Establecer la comparativa gráfica en pantalla dividida.",
+          "indicacion_visual": "Pantalla dividida con producto A a la izquierda y producto B a la derecha.",
+          "indicacion_verbal": "«¿Radiesse o Ácido Hialurónico? No hacen lo mismo y aquí te explico la diferencia»."
+        },
+        {
+          "orden": 2,
+          "nombre_paso": "Indicaciones y objetivo de la Opción A",
+          "duracion_segundos": "4-15s",
+          "proposito_editorial": "Definir el propósito primario de la primera alternativa.",
+          "indicacion_visual": "Resaltado del lado A con B-roll de su textura o aplicación.",
+          "indicacion_verbal": "«El ácido hialurónico aporta volumen hídrico inmediato y define estructuras»."
+        },
+        {
+          "orden": 3,
+          "nombre_paso": "Indicaciones y objetivo de la Opción B",
+          "duracion_segundos": "15-25s",
+          "proposito_editorial": "Definir el propósito primario de la segunda alternativa.",
+          "indicacion_visual": "Resaltado del lado B mostrando cómo estimula los fibroblastos.",
+          "indicacion_verbal": "«Los bioestimuladores no dan volumen: generan colágeno nuevo para tensar piel flácida»."
+        },
+        {
+          "orden": 4,
+          "nombre_paso": "Diferencia en durabilidad y recuperación",
+          "duracion_segundos": "25-40s",
+          "proposito_editorial": "Comparar tiempos biológicos de acción y curva de resultados.",
+          "indicacion_visual": "Línea de tiempo gráfica de 0 a 18 meses.",
+          "indicacion_verbal": "«El hialurónico se ve hoy; el bioestimulador alcanza su pico a los tres meses»."
+        },
+        {
+          "orden": 5,
+          "nombre_paso": "Síntesis y orientación de decisión",
+          "duracion_segundos": "40-50s",
+          "proposito_editorial": "Enfatizar que la elección final depende de la valoración clínica personalizada.",
+          "indicacion_visual": "Profesional en toma central sintetizando la recomendación.",
+          "indicacion_verbal": "«No existe uno mejor que otro: existe el adecuado para la calidad de tu piel»."
+        }
+      ],
+      "mecanismos_optimos": [
+        "COMP",
+        "CONTRA",
+        "UTIL",
+        "EFF"
+      ],
+      "advertencias_regulatorias": "Nunca descalificar un procedimiento médico homologado para favorecer otro; explicar las indicaciones precisas de cada uno."
+    },
+    {
+      "id": "process",
+      "nombre": "Paso a Paso Procedimental en Cabina (PROCESS)",
+      "fuente": "gloss",
+      "duracion_estimada_segundos": {
+        "min": 30,
+        "max": 60
+      },
+      "descripcion": "Documenta la secuencia real de atención en cabina para desmitificar el dolor y transmitir máxima bioseguridad.",
+      "pasos": [
+        {
+          "orden": 1,
+          "nombre_paso": "Apertura con preparación de cabina",
+          "duracion_segundos": "0-4s",
+          "proposito_editorial": "Generar satisfacción visual y tranquilidad con la asepsia del entorno.",
+          "indicacion_visual": "Plano cenital o macro de bandeja quirúrgica estéril preparándose.",
+          "indicacion_verbal": "«Así se vive una sesión real de armonización facial paso a paso»."
+        },
+        {
+          "orden": 2,
+          "nombre_paso": "Mapeo anatómico y anestesia tópica",
+          "duracion_segundos": "4-15s",
+          "proposito_editorial": "Mostrar el rigor técnico del diseño previo antes de cualquier aplicación.",
+          "indicacion_visual": "Médico trazando líneas guía con lápiz dérmico blanco en el rostro.",
+          "indicacion_verbal": "«Primero medimos las proporciones faciales y aplicamos anestesia para máximo confort»."
+        },
+        {
+          "orden": 3,
+          "nombre_paso": "Ejecución técnica controlada",
+          "duracion_segundos": "15-30s",
+          "proposito_editorial": "Exhibir la destreza y delicadeza en la manipulación de la cánula o aguja.",
+          "indicacion_visual": "Ángulo lateral limpio donde se aprecia el cuidado en la punción.",
+          "indicacion_verbal": "«Trabajamos con microcánula para minimizar cualquier riesgo de hematomas»."
+        },
+        {
+          "orden": 4,
+          "nombre_paso": "Cuidados inmediatos y recomendaciones",
+          "duracion_segundos": "30-45s",
+          "proposito_editorial": "Explicar las pautas post-tratamiento que el paciente debe seguir en casa.",
+          "indicacion_visual": "Entrega de kit post-tratamiento o colocación de compresa fría.",
+          "indicacion_verbal": "«Finalizamos con fotoprotección y las pautas para las próximas 24 horas»."
+        },
+        {
+          "orden": 5,
+          "nombre_paso": "Resultado al salir de cabina y despedida",
+          "duracion_segundos": "45-55s",
+          "proposito_editorial": "Demostrar que el paciente se reincorpora a su vida social sin incapacidad severa.",
+          "indicacion_visual": "Paciente sonriendo frente al espejo con expresión de tranquilidad.",
+          "indicacion_verbal": "«Un procedimiento seguro, sutil y sin interrumpir tu rutina diaria»."
+        }
+      ],
+      "mecanismos_optimos": [
+        "DEMO",
+        "AUT",
+        "UTIL",
+        "EFF"
+      ],
+      "advertencias_regulatorias": "Evitar planos sangrientos o explícitamente gráficos que violen las políticas de contenido de Meta y TikTok."
+    },
+    {
+      "id": "case",
+      "nombre": "Caso Clínico y Desempaque de Caso (CASE)",
+      "fuente": "gloss",
+      "duracion_estimada_segundos": {
+        "min": 35,
+        "max": 65
+      },
+      "descripcion": "Analiza un caso clínico documentado con fines estrictamente pedagógicos, desglosando el razonamiento médico y la evolución.",
+      "pasos": [
+        {
+          "orden": 1,
+          "nombre_paso": "Presentación del motivo de consulta",
+          "duracion_segundos": "0-5s",
+          "proposito_editorial": "Exponer la inquietud inicial con la que llegó el paciente (caso anónimo autorizado).",
+          "indicacion_visual": "Ficha clínica en tableta o fotografía médica inicial estandarizada.",
+          "indicacion_verbal": "«Paciente femenina de 42 años que consultó por flacidez en el tercio inferior»."
+        },
+        {
+          "orden": 2,
+          "nombre_paso": "Diagnóstico diferencial del especialista",
+          "duracion_segundos": "5-15s",
+          "proposito_editorial": "Detallar por qué se descartaron ciertos tratamientos y se eligió el protocolo final.",
+          "indicacion_visual": "Médico frente a pantalla explicando los vectores de soporte perdidos.",
+          "indicacion_verbal": "«Determinamos que no requería volumen adicional, sino redefinición del marco mandibular»."
+        },
+        {
+          "orden": 3,
+          "nombre_paso": "Protocolo ejecutado y sesiones programadas",
+          "duracion_segundos": "15-30s",
+          "proposito_editorial": "Explicar la sinergia de técnicas aplicadas a lo largo de las semanas.",
+          "indicacion_visual": "Esquema de dos sesiones combinando hidroxiapatita cálcica y radiofrecuencia.",
+          "indicacion_verbal": "«Diseñamos un plan de dos fases espaciadas por 60 días para dar tiempo biológico»."
+        },
+        {
+          "orden": 4,
+          "nombre_paso": "Evolución y seguimiento fotográfico",
+          "duracion_segundos": "30-45s",
+          "proposito_editorial": "Mostrar la respuesta tisular real a los 90 días.",
+          "indicacion_visual": "Fotos clínicas pareadas con idéntico encuadre, ángulo e iluminación.",
+          "indicacion_verbal": "«A los 90 días observamos una retracción tisular natural con firmeza recuperada»."
+        },
+        {
+          "orden": 5,
+          "nombre_paso": "Conclusión y enseñanza para el espectador",
+          "duracion_segundos": "45-60s",
+          "proposito_editorial": "Extraer una lección sobre la importancia del diagnóstico frente a las modas pasajeras.",
+          "indicacion_visual": "Profesional cerrando la ficha clínica y mirando a cámara.",
+          "indicacion_verbal": "«La medicina estética bien aplicada no transforma quién eres: restaura tu mejor versión»."
+        }
+      ],
+      "mecanismos_optimos": [
+        "PROOF",
+        "AUT",
+        "EXP",
+        "STORY"
+      ],
+      "advertencias_regulatorias": "Requiere consentimiento informado firmado para fines académicos/docentes. Prohibido usar material de terceros o stock no autorizado."
+    },
+    {
+      "id": "offer",
+      "nombre": "Presentación de Protocolo / Oferta con Filtro (OFFER)",
+      "fuente": "gloss",
+      "duracion_estimada_segundos": {
+        "min": 25,
+        "max": 45
+      },
+      "descripcion": "Comunica una propuesta de valor o protocolo especial de temporada con total transparencia en precios, condiciones y contraindicaciones.",
+      "pasos": [
+        {
+          "orden": 1,
+          "nombre_paso": "Presentación del protocolo específico",
+          "duracion_segundos": "0-4s",
+          "proposito_editorial": "Nombrar con claridad el tratamiento o paquete sin nombres de fantasía engañosos.",
+          "indicacion_visual": "Texto en pantalla nítido con el nombre del protocolo y atmósfera del centro.",
+          "indicacion_verbal": "«Protocolo de Revitalización Dérmica Profunda para esta temporada»."
+        },
+        {
+          "orden": 2,
+          "nombre_paso": "Qué incluye exactamente la propuesta",
+          "duracion_segundos": "4-15s",
+          "proposito_editorial": "Enumerar los insumos y fases incluidas para que el paciente sepa por qué paga.",
+          "indicacion_visual": "Iconografía o texto limpio con los 3 componentes del paquete.",
+          "indicacion_verbal": "«Incluye valoración médica, jeringa original de 1 ml y cita de control a los 15 días»."
+        },
+        {
+          "orden": 3,
+          "nombre_paso": "Para quién está indicado y contraindicaciones",
+          "duracion_segundos": "15-25s",
+          "proposito_editorial": "Filtrar de inmediato para evitar expectativas erróneas o pacientes no candidatos.",
+          "indicacion_visual": "Texto aclaratorio de contraindicaciones (ej. embarazo, lactancia, infecciones activas).",
+          "indicacion_verbal": "«Ideal para pieles apagadas o con pérdida de luminosidad; sujeto a valoración médica»."
+        },
+        {
+          "orden": 4,
+          "nombre_paso": "Condiciones de agenda y vigencia transparente",
+          "duracion_segundos": "25-35s",
+          "proposito_editorial": "Informar la vigencia sin fabricar falsas urgencias que presionen indebidamente.",
+          "indicacion_visual": "Calendario con fechas disponibles en la sede correspondiente.",
+          "indicacion_verbal": "«Disponibilidad para las primeras 15 valoraciones agendadas este mes en nuestra sede»."
+        },
+        {
+          "orden": 5,
+          "nombre_paso": "Llamado a solicitar valoración previa",
+          "duracion_segundos": "35-45s",
+          "proposito_editorial": "Canalizar las consultas hacia el canal de atención oficial (WhatsApp/web).",
+          "indicacion_visual": "Botón con número oficial de WhatsApp de la clínica o enlace web.",
+          "indicacion_verbal": "«Escribe al WhatsApp del perfil para verificar si eres candidato a este protocolo»."
+        }
+      ],
+      "mecanismos_optimos": [
+        "FOMO",
+        "ASP",
+        "UTIL"
+      ],
+      "advertencias_regulatorias": "Cumplir con el Estatuto del Consumidor (Ley 1480): precio total visible, condiciones claras y sujeción indispensable a criterio médico."
+    }
+  ],
+  "objection_variant": {
+    "id": "objection_variant",
+    "nombre": "Variante para Objeciones Frecuentes",
+    "descripcion": "Estructura ágil superpuesta para neutralizar objeciones de precio, dolor o mitos.",
+    "secuencia": [
+      "Duda o queja verbalizada textualmente por el paciente",
+      "Qué información técnica o médica suele faltar en esa conversación",
+      "Respuesta verificable con datos anatómicos o regulatorios",
+      "Siguiente paso seguro hacia la cita de valoración"
+    ],
+    "narrativas_base_compatibles": [
+      "faq",
+      "versus",
+      "problema_invisible"
+    ]
+  }
+}

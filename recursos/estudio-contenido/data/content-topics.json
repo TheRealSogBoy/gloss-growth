@@ -1,0 +1,3814 @@
+[
+  {
+    "topic_id": "B2C_01",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "acido_hialuronico_relleno",
+    "angle": "errores",
+    "problem": "Migración de producto y aspecto artificial («bigote de ácido»).",
+    "value_proposition": "Explicar por qué ocurre la migración labial (exceso de presión mecánica o producto inadecuado) y cómo la hialuronidasa disuelve el exceso con seguridad.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Migración de producto y aspecto artificial («bigote de ácido»).",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      11,
+      12
+    ]
+  },
+  {
+    "topic_id": "B2C_02",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_botulinica_facial",
+    "angle": "mito",
+    "problem": "Creer que al pasar el efecto de la toxina la piel se cae o se arruga más.",
+    "value_proposition": "Explicar la pausa muscular preventiva. Demostrar fisiológicamente que el músculo recupera su fuerza natural sin inducir descolgamiento extra.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Creer que al pasar el efecto de la toxina la piel se cae o se arruga más.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      2,
+      18
+    ]
+  },
+  {
+    "topic_id": "B2C_03",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "bioestimuladores_colageno",
+    "angle": "comparacion",
+    "problem": "Confundir dar volumen hídrico con inducir firmeza estructural propia.",
+    "value_proposition": "Radiesse vs Ácido Hialurónico: cuál necesitas si deseas rellenar un surco hundido vs si necesitas tensar piel flácida estimulando colágeno.",
+    "objective": "educar",
+    "suggested_format": "broll",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Confundir dar volumen hídrico con inducir firmeza estructural propia.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      10,
+      13
+    ]
+  },
+  {
+    "topic_id": "B2C_04",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "rinomodelacion",
+    "angle": "objecion",
+    "problem": "La punta nasal que cae hacia abajo al sonreír («nariz de bruja»).",
+    "value_proposition": "Por qué un protocolo médico combina soporte con ácido hialurónico y una microdosis de toxina en el músculo depresor del tabique nasal.",
+    "objective": "objecion",
+    "suggested_format": "demostracion",
+    "funnel_stage": "decision",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: La punta nasal que cae hacia abajo al sonreír («nariz de bruja»).",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      10,
+      16,
+      17
+    ]
+  },
+  {
+    "topic_id": "B2C_05",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_laser_diodo",
+    "angle": "educar",
+    "problem": "Depilación láser inefectiva en pacientes con desórdenes hormonales.",
+    "value_proposition": "Síndrome de Ovario Poliquístico (SOP) y láser: por qué el cuerpo activa nuevos folículos y requiere un protocolo de mantenimiento adaptado.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Depilación láser inefectiva en pacientes con desórdenes hormonales.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      23,
+      24,
+      25
+    ]
+  },
+  {
+    "topic_id": "B2C_06",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "hilos_tensores",
+    "angle": "confianza",
+    "problem": "Miedo al dolor y temor a que los hilos se noten o se transparenten bajo la piel.",
+    "value_proposition": "Demostrar el plano subcutáneo correcto de inserción, el efecto de la anestesia local y por qué los hilos bien colocados son imperceptibles.",
+    "objective": "confianza",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Miedo al dolor y temor a que los hilos se noten o se transparenten bajo la piel.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_07",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "retiro_biopolimeros_asia",
+    "angle": "autoridad",
+    "problem": "El riesgo fatal del láser lipólisis en glúteos inyectados con biopolímeros.",
+    "value_proposition": "Por qué aplicar calor a un biopolímero funde la piel sana y agrava el Síndrome ASIA. La cirugía abierta reconstructiva como única vía segura.",
+    "objective": "confianza",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: El riesgo fatal del láser lipólisis en glúteos inyectados con biopolímeros.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      4,
+      19,
+      20,
+      21
+    ]
+  },
+  {
+    "topic_id": "B2C_08",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "redensificadores_profhilo",
+    "angle": "tendencias",
+    "problem": "Obsesión por la tendencia Glass Skin sin entender la hidratación profunda.",
+    "value_proposition": "Cómo Profhilo logra en 10 minutos la hidratación dérmica profunda que ningún sérum tópico de ácido hialurónico puede alcanzar en capas profundas.",
+    "objective": "atraer",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Obsesión por la tendencia Glass Skin sin entender la hidratación profunda.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      14
+    ]
+  },
+  {
+    "topic_id": "B2C_09",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "moldeamiento_corporal_aparatologia",
+    "angle": "errores",
+    "problem": "Contratar paquetes de aparatología corporal creyendo que son para «bajar de peso».",
+    "value_proposition": "La cavitación y radiofrecuencia moldean y reducen medidas, no adelgazan obesidad. Explicación cruda de la diferencia clínica.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Contratar paquetes de aparatología corporal creyendo que son para «bajar de peso».",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      9,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_10",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "acido_hialuronico_relleno",
+    "angle": "conversion",
+    "problem": "Promociones clandestinas de relleno a precios sospechosamente bajos ($300.000 COP).",
+    "value_proposition": "Por qué una jeringa original homologada con registro INVIMA cuesta más desde el laboratorio y qué riesgos sanitarios corres comprando precio.",
+    "objective": "conversion",
+    "suggested_format": "anuncio",
+    "funnel_stage": "decision",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Promociones clandestinas de relleno a precios sospechosamente bajos ($300.000 COP).",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      9,
+      10,
+      11
+    ]
+  },
+  {
+    "topic_id": "B2C_11",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_botulinica_facial",
+    "angle": "curiosidad",
+    "problem": "Inmunidad adquirida y menor duración percibida del bótox.",
+    "value_proposition": "¿Sientes que el bótox ya no te dura? Explicación médica de la formación de anticuerpos contra proteínas complejantes y cuándo rotar a toxinas purificadas.",
+    "objective": "atraer",
+    "suggested_format": "talking_head",
+    "funnel_stage": "retencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Inmunidad adquirida y menor duración percibida del bótox.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      1,
+      2
+    ]
+  },
+  {
+    "topic_id": "B2C_12",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "limpieza_facial",
+    "angle": "mito",
+    "problem": "Creer que pellizcar o exprimir pústulas activas limpia el rostro.",
+    "value_proposition": "El riesgo severo de provocar cicatrices atróficas y máculas pigmentarias post-inflamatorias. Cómo un protocolo de cabina con exfoliantes suaves es superior.",
+    "objective": "educar",
+    "suggested_format": "demostracion",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Creer que pellizcar o exprimir pústulas activas limpia el rostro.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2B_01",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "gestion_financiera",
+    "problem": "Campañas publicitarias que solo atraen curiosos sin liquidez ni intención de compra.",
+    "value_proposition": "Cómo calcular el Costo de Adquisición de Clientes (CAC) y crear anuncios en Meta que filtren por dolor real y capacidad de pago, no por descuentos vacíos.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Campañas publicitarias que solo atraen curiosos sin liquidez ni intención de compra.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      22,
+      27
+    ]
+  },
+  {
+    "topic_id": "B2B_02",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "ventas",
+    "problem": "Pacientes que dejan en «visto» en WhatsApp al recibir la lista de precios.",
+    "value_proposition": "Guiones de cierre clínico en WhatsApp: por qué enviar el precio de un tratamiento complejo sin valoración previa destruye la tasa de conversión.",
+    "objective": "conversion",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Pacientes que dejan en «visto» en WhatsApp al recibir la lista de precios.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      22,
+      30
+    ]
+  },
+  {
+    "topic_id": "B2B_03",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "rentabilidad",
+    "problem": "Saturación de agenda con servicios básicos de bajo margen (limpiezas faciales sencillas).",
+    "value_proposition": "Estructurar la limpieza facial como un servicio de entrada (Loss Leader) con una ruta de derivación hacia tratamientos de alto margen (bioestimuladores).",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Saturación de agenda con servicios básicos de bajo margen (limpiezas faciales sencillas).",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      28
+    ]
+  },
+  {
+    "topic_id": "B2B_04",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "normativa",
+    "problem": "Bloqueos y suspensiones de cuentas publicitarias en Meta y Google por políticas de salud.",
+    "value_proposition": "Políticas de apariencia personal: qué palabras clave provocan el baneo de Business Manager y cómo redactar copys de ganancia positiva sin promesas irreales.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Bloqueos y suspensiones de cuentas publicitarias en Meta y Google por políticas de salud.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      5,
+      22,
+      31
+    ]
+  },
+  {
+    "topic_id": "B2B_05",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "gestion_operativa",
+    "problem": "Adquisición de aparatología costosa sin calcular el punto de equilibrio de la máquina.",
+    "value_proposition": "Matriz financiera de amortización: cuántas sesiones mensuales a qué tarifa necesitas vender para pagar la cuota de leasing del láser o la radiofrecuencia.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Adquisición de aparatología costosa sin calcular el punto de equilibrio de la máquina.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      28,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2B_06",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "normativa",
+    "problem": "Riesgo de sellamiento de sede por la Secretaría de Salud bajo la Resolución 3100 de 2019.",
+    "value_proposition": "Auditoría de habilitación REPS: áreas de esterilización, botiquín de emergencia, contratos de residuos biológicos y distintivos exigidos en Colombia.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Riesgo de sellamiento de sede por la Secretaría de Salud bajo la Resolución 3100 de 2019.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2B_07",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "ventas",
+    "problem": "Fugas de pacientes entre la primera y la segunda sesión en tratamientos paquetizados.",
+    "value_proposition": "Sistemas automatizados de seguimiento post-consulta y citas de control para asegurar la recompra y maximizar el Valor de Vida del Cliente (LTV).",
+    "objective": "conversion",
+    "suggested_format": "talking_head",
+    "funnel_stage": "retencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Fugas de pacientes entre la primera y la segunda sesión en tratamientos paquetizados.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      22,
+      28
+    ]
+  },
+  {
+    "topic_id": "SEM_01",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_botulinica_facial",
+    "angle": "educar",
+    "problem": "Término coloquial «patas de gallo» vs diagnóstico de arrugas periorbitarias dinámicas.",
+    "value_proposition": "Cómo se produce la contracción del músculo orbicular de los ojos y por qué tratarlas a tiempo evita que se conviertan en surcos estáticos permanentes.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Término coloquial «patas de gallo» vs diagnóstico de arrugas periorbitarias dinámicas.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      2
+    ]
+  },
+  {
+    "topic_id": "SEM_02",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "acido_hialuronico_relleno",
+    "angle": "mito",
+    "problem": "Término «cara de almohada» (Pillow Face) por sobrecorrección de fillers dérmicos.",
+    "value_proposition": "La pérdida de límites anatómicos por sobrellenado en pómulos y labios; cómo revertir el exceso y restaurar la naturalidad.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Término «cara de almohada» (Pillow Face) por sobrecorrección de fillers dérmicos.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      11,
+      15
+    ]
+  },
+  {
+    "topic_id": "SEM_03",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "acido_hialuronico_relleno",
+    "angle": "errores",
+    "problem": "Término «boca de pato» por proyección anterior excesiva en el plano bermellón.",
+    "value_proposition": "La importancia de respetar el plano anteroposterior y las proporciones doradas labiales (1:1.6) para evitar la eversión desproporcionada.",
+    "objective": "educar",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Término «boca de pato» por proyección anterior excesiva en el plano bermellón.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      11
+    ]
+  },
+  {
+    "topic_id": "SEM_04",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "microneedling_peelings",
+    "angle": "educar",
+    "problem": "Término «marcas de acné» diferenciando cicatrices atróficas de máculas pigmentarias.",
+    "value_proposition": "Una mancha roja o marrón es hiperpigmentación post-inflamatoria tratable con despigmentantes; un huequito requiere microagujas o subcisión dérmica.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Término «marcas de acné» diferenciando cicatrices atróficas de máculas pigmentarias.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8
+    ]
+  },
+  {
+    "topic_id": "SEM_05",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "moldeamiento_corporal_aparatologia",
+    "angle": "errores",
+    "problem": "Término «conejos / llantitas» vs panículo adiposo localizado resistente.",
+    "value_proposition": "Por qué ciertas acumulaciones grasas no ceden con dieta general y requieren aparatología focalizada que destruya la membrana adipocitaria.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Término «conejos / llantitas» vs panículo adiposo localizado resistente.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      9,
+      29
+    ]
+  },
+  {
+    "topic_id": "SEM_06",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "bioestimuladores_colageno",
+    "angle": "educar",
+    "problem": "Término «descolgamiento / piel caída» vs ptosis tisular por reabsorción ósea facial.",
+    "value_proposition": "El envejecimiento facial no es solo pérdida de colágeno en la piel, sino reabsorción de los compartimentos grasos profundos y del reborde óseo facial.",
+    "objective": "educar",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Término «descolgamiento / piel caída» vs ptosis tisular por reabsorción ósea facial.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      13,
+      14
+    ]
+  },
+  {
+    "topic_id": "GAP_01",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "microneedling_peelings",
+    "angle": "tendencias",
+    "problem": "Estatus regulatorio y aplicación de exosomas en Colombia.",
+    "value_proposition": "Clarificar el estado actual de los exosomas regenerativos: uso tópico tras microagujas vs inyección intradérmica que aún carece de resolución definitiva en INVIMA.",
+    "objective": "atraer",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Estatus regulatorio y aplicación de exosomas en Colombia.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verification_required",
+    "citations": [
+      7,
+      8
+    ]
+  },
+  {
+    "topic_id": "GAP_02",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "gestion_financiera",
+    "problem": "Métricas de retención y LTV en clínicas fuera de las capitales principales.",
+    "value_proposition": "Cómo adaptar la estrategia financiera de retención cuando los datos promedio de Lifetime Value metropolitanos no reflejan la realidad de centros provinciales.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Métricas de retención y LTV en clínicas fuera de las capitales principales.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verification_required",
+    "citations": [
+      22,
+      28
+    ]
+  },
+  {
+    "topic_id": "GAP_03",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_laser_diodo",
+    "angle": "educar",
+    "problem": "Láser de barrido dinámico (baja fluencia) vs láser estático en hiperandrogenismo.",
+    "value_proposition": "Debate clínico abierto sobre la tasa de recidiva folicular en pacientes con hirsutismo severo al usar tecnologías SHR frente a diodo convencional de alta fluencia.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Toma en cabina o plano medio del profesional abordando el problema: Láser de barrido dinámico (baja fluencia) vs láser estático en hiperandrogenismo.",
+    "information_requirements": [
+      "anamnesis_paciente",
+      "valoracion_clinica_previa"
+    ],
+    "verification_status": "verification_required",
+    "citations": [
+      23,
+      24
+    ]
+  },
+  {
+    "topic_id": "B2C_013",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "perfilamiento_mandibular_menton",
+    "angle": "curiosidad",
+    "problem": "¿Por qué un mentón hacia atrás (retruido) acentúa la papada aunque estés delgada?",
+    "value_proposition": "La falta de soporte óseo mandibular deja los tejidos blandos sin anclaje anterior; proyectar el mentón estira la piel submentoniana.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Profesional mostrando con regla o calibrador la línea estética de perfil en paciente o modelo anatómico.",
+    "information_requirements": [
+      "fotografia_perfil_estandarizada",
+      "evaluacion_oclusion_dental"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      10,
+      35
+    ]
+  },
+  {
+    "topic_id": "B2C_014",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "perfilamiento_mandibular_menton",
+    "angle": "objecion",
+    "problem": "Miedo a que el perfilamiento mandibular masculinice o endurezca facciones femeninas.",
+    "value_proposition": "En mujeres se trabaja afinando hacia el centro y definiendo la sombra goniaca sutil sin ensanchar lateralmente.",
+    "objective": "confianza",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Trazado con lápiz blanco comparando vectores de armonización femenina vs marcación masculina.",
+    "information_requirements": [
+      "analisis_de_proporciones_faciales"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      10,
+      35
+    ]
+  },
+  {
+    "topic_id": "B2C_015",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "relleno_ojeras_acido_hialuronico",
+    "angle": "errores",
+    "problem": "Tratar bolsas grasas infraorbitarias con relleno de ácido hialurónico.",
+    "value_proposition": "Si hay bolsa prominente, inyectar relleno aumenta el volumen y empeora el edema; el relleno solo sirve para surco hundido.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Esquema anatómico claro de ojera hundida (valle) vs ojera con protrusión de bolsa grasa (montaña).",
+    "information_requirements": [
+      "palpacion_reborde_infraorbitario",
+      "snap_test_laxitud"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      11,
+      35
+    ]
+  },
+  {
+    "topic_id": "B2C_016",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "relleno_ojeras_acido_hialuronico",
+    "angle": "preguntas",
+    "problem": "¿Por qué algunas ojeras quedan con coloración azulada o bultos tras inyectarse (Efecto Tyndall)?",
+    "value_proposition": "Ocurre cuando el gel se inyecta demasiado superficial en la dermis en vez de pegado al hueso, refractando la luz en tono azul.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Médico explicando el plano supraperióstico profundo con microcánula vs punción con aguja superficial.",
+    "information_requirements": [
+      "historia_de_rellenos_previos"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      11,
+      15,
+      35
+    ]
+  },
+  {
+    "topic_id": "B2C_017",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_maseteros_bruxismo",
+    "angle": "experiencia",
+    "problem": "Despertar con dolor de cabeza, tensión mandibular y dientes desgastados por bruxar de noche.",
+    "value_proposition": "La toxina botulínica reduce la fuerza excesiva involuntaria del masetero sin impedir masticar con normalidad.",
+    "objective": "atraer",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Paciente o médico tocándose el ángulo de la mandíbula al apretar los dientes mostrando la contractura.",
+    "information_requirements": [
+      "diagnostico_bruxismo_o_cefalea_tensional",
+      "frecuencia_de_apriete"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      1,
+      2,
+      36
+    ]
+  },
+  {
+    "topic_id": "B2C_018",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_maseteros_bruxismo",
+    "angle": "comparaciones",
+    "problem": "Toxina en maseteros vs cirugía de bichectomía para adelgazar el rostro.",
+    "value_proposition": "La toxina afina el músculo masticatorio posterior; la bichectomía retira grasa media. No son equivalentes ni para el mismo paciente.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Pantalla dividida: ubicación anatómica de la bolsa de Bichat vs vientre del músculo masetero.",
+    "information_requirements": [
+      "evaluacion_de_grasa_vs_musculo"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      36
+    ]
+  },
+  {
+    "topic_id": "B2C_019",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_hiperhidrosis",
+    "angle": "curiosidad",
+    "problem": "¿Cómo funciona el Test de Minor con yodo y almidón para mapear la sudoración axilar?",
+    "value_proposition": "El sudor activo reacciona virando a color azul oscuro milimétrico, permitiendo inyectar la toxina exactamente donde se necesita.",
+    "objective": "educar",
+    "suggested_format": "demostracion",
+    "funnel_stage": "atencion",
+    "visual_brief": "Demostración visual del polvo de almidón tornándose azul marino en la axila donde brota el sudor.",
+    "information_requirements": [
+      "test_de_alergia_al_yodo"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      37
+    ]
+  },
+  {
+    "topic_id": "B2C_020",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_hiperhidrosis",
+    "angle": "objecion",
+    "problem": "Miedo a que el sudor bloqueado en las axilas \"salga el doble\" por la espalda o pies.",
+    "value_proposition": "La toxina botulínica bloquea únicamente los receptores locales sin alterar el sistema termorregulador central del cuerpo.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Médico explicando el mecanismo parasimpático local de la acetilcolina en cabina.",
+    "information_requirements": [
+      "historia_de_sudoracion_compensatoria"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      37
+    ]
+  },
+  {
+    "topic_id": "B2C_021",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "relleno_pomulos_soporte_facial",
+    "angle": "comparaciones",
+    "problem": "Rellenar el surco nasogeniano directamente vs reponer el soporte malar en pómulos.",
+    "value_proposition": "Inyectar solo en el surco añade peso al centro de la cara; reponer el pómulo levanta la mejilla y suaviza el surco por tracción.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Diagrama con flechas de vectorización: caída de la mejilla sobre el surco vs soporte en hueso cigomático.",
+    "information_requirements": [
+      "grado_de_ptosis_del_tercio_medio"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      10,
+      35
+    ]
+  },
+  {
+    "topic_id": "B2C_022",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "relleno_pomulos_soporte_facial",
+    "angle": "mitos",
+    "problem": "Mito: «Si me pongo pómulos me voy a ver con la cara hinchada o redonda».",
+    "value_proposition": "El soporte profundo en hueso da definición y estiliza; la cara hinchada ocurre cuando inyectan en grasa superficial con producto barato.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Médico señalando el arco cigomático lateral en un cráneo anatómico didáctico.",
+    "information_requirements": [
+      "fototipo_y_estructura_osea_previa"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      10,
+      35
+    ]
+  },
+  {
+    "topic_id": "B2C_023",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "enzimas_recombinantes_faciales",
+    "angle": "preguntas",
+    "problem": "¿Qué diferencia hay entre enzimas recombinantes y la lipopapada quirúrgica?",
+    "value_proposition": "Las enzimas disuelven grasa y compactan piel sin cánula quirúrgica ni quirófano; la cirugía retira volúmenes mayores de una sola vez.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Tabla comparativa: tiempo de cabina, anestesia, inflamación y sesiones requeridas.",
+    "information_requirements": [
+      "medicion_del_espesor_del_pliegue_submentoniano"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      7,
+      8,
+      11
+    ]
+  },
+  {
+    "topic_id": "B2C_024",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "enzimas_recombinantes_faciales",
+    "angle": "errores",
+    "problem": "Aplicar enzimas lipolíticas en una papada donde solo sobra piel flácida.",
+    "value_proposition": "Si no hay grasa preplatismal, la lipasa no tiene diana biológica y puede empeorar la flacidez; se necesita bioestimulación.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Prueba de pinzamiento del cuello diferenciando piel laxa de panículo adiposo real.",
+    "information_requirements": [
+      "evaluacion_de_laxitud_platismal"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      11
+    ]
+  },
+  {
+    "topic_id": "B2C_025",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_botulinica_facial",
+    "angle": "preguntas",
+    "problem": "¿Qué es exactamente el Baby Botox y para quién está indicado?",
+    "value_proposition": "Dosis reducidas y distribuidas para suavizar primeras líneas conservando movilidad gestual completa en menores de 30 años.",
+    "objective": "atraer",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Paciente joven gesticulando suavemente frente a la cámara con expresión natural.",
+    "information_requirements": [
+      "edad_del_paciente",
+      "lineas_dinamicas_incipientes"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      1,
+      2
+    ]
+  },
+  {
+    "topic_id": "B2C_026",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_botulinica_facial",
+    "angle": "seguridad",
+    "problem": "Las 4 horas posteriores a la aplicación de bótox: qué está prohibido hacer.",
+    "value_proposition": "No acostarse horizontal, no agachar la cabeza de golpe, no masajear la frente y no hacer ejercicio pesado para evitar difusión a otros músculos.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Checklist gráfico animado de las primeras 4 horas post-procedimiento.",
+    "information_requirements": [
+      "hora_exacta_de_aplicacion"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      2,
+      18
+    ]
+  },
+  {
+    "topic_id": "B2C_027",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "acido_hialuronico_relleno",
+    "angle": "experiencia",
+    "problem": "¿Cómo evolucionan los labios durante los primeros 14 días tras el relleno?",
+    "value_proposition": "Día 1-3 inflamación y asimetría temporal, día 4-7 integración tisular, día 14 resultado desinflamado y definitivo.",
+    "objective": "confianza",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Cronología fotográfica día a día de la integración normal del ácido hialurónico.",
+    "information_requirements": [
+      "sensibilidad_a_hematomas",
+      "consentimiento_fotografico"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      10,
+      11
+    ]
+  },
+  {
+    "topic_id": "B2C_028",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "acido_hialuronico_relleno",
+    "angle": "mitos",
+    "problem": "Mito: «Si me pongo ácido hialurónico en los labios se me van a estirar y al disolverse quedarán arrugados».",
+    "value_proposition": "El ácido hialurónico estimula hidratación dérmica; al reabsorberse naturalmente, los labios vuelven a su estado original o con mejor calidad.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Médico mostrando la reabsorción enzimática natural y la hidratación biológica.",
+    "information_requirements": [
+      "dosis_previa_inyectada"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      11
+    ]
+  },
+  {
+    "topic_id": "B2C_029",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "bioestimuladores_colageno",
+    "angle": "curiosidad",
+    "problem": "¿Por qué los bioestimuladores alcanzan su mejor resultado a los 3 meses y no al salir de cabina?",
+    "value_proposition": "El producto activa fibroblastos biológicos que tardan semanas en sintetizar redes nuevas de colágeno tipo I y elastina.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Animación o esquema mostrando el ciclo de síntesis de colágeno a 30, 60 y 90 días.",
+    "information_requirements": [
+      "estado_nutricional_y_habitos_del_paciente"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      13,
+      14
+    ]
+  },
+  {
+    "topic_id": "B2C_030",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "bioestimuladores_colageno",
+    "angle": "preguntas",
+    "problem": "¿En qué zonas del cuerpo se pueden aplicar bioestimuladores además del rostro?",
+    "value_proposition": "Cuello, escote, cara interna de brazos, abdomen postparto y glúteos para celulitis y firmeza.",
+    "objective": "atraer",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Mapa corporal destacando las áreas aprobadas para bioestimulación de colágeno.",
+    "information_requirements": [
+      "evaluacion_de_flacidez_corporal"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      13,
+      14
+    ]
+  },
+  {
+    "topic_id": "B2C_031",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "redensificadores_profhilo",
+    "angle": "demostracion",
+    "problem": "¿Cómo se distribuye Profhilo en el rostro con solo 5 puntos de inyección por lado (técnica BAP)?",
+    "value_proposition": "Su alta fluidez térmica permite que el producto difunda por la matriz subcutánea abarcando todo el tercio medio e inferior.",
+    "objective": "educar",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Demostración de los 5 puntos anatómicos de seguridad dibujados en el rostro.",
+    "information_requirements": [
+      "ausencia_de_infeccion_activa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      14
+    ]
+  },
+  {
+    "topic_id": "B2C_032",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "complicaciones_hialuronidasa",
+    "angle": "seguridad",
+    "problem": "Signos de alarma tras un relleno de ácido hialurónico: cuándo acudir a urgencias de inmediato.",
+    "value_proposition": "Dolor punzante desproporcionado, piel que se pone pálida/blanquecina o moteada como mármol indican compromiso vascular urgente.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Infografía sobria y clara con el semáforo de síntomas normales vs signos de alarma vascular.",
+    "information_requirements": [
+      "tiempo_transcurrido_desde_inyeccion"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      11,
+      12,
+      16
+    ]
+  },
+  {
+    "topic_id": "B2C_033",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "rinomodelacion",
+    "angle": "errores",
+    "problem": "Hacerse rinomodelación con productos permanentes o biopolímeros en vez de ácido hialurónico.",
+    "value_proposition": "La nariz tiene vascularización terminal; sustancias permanentes destruyen la piel nasal. Solo se debe usar ácido hialurónico reversible.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Médico explicando el mapa arterial de la punta y dorso nasal en cabina.",
+    "information_requirements": [
+      "cirugias_nasales_previas_rinoplastia"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      16,
+      17
+    ]
+  },
+  {
+    "topic_id": "B2C_034",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "hilos_tensores",
+    "angle": "preguntas",
+    "problem": "¿Qué pasa si un hilo tensor se desplaza o asoma por la piel?",
+    "value_proposition": "El médico tratante puede retirarlo o recortarlo de forma ambulatoria y estéril en minutos sin complicaciones graves.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Profesional mostrando el material reabsorbible de polidioxanona con guantes estériles.",
+    "information_requirements": [
+      "tiempo_de_colocacion_del_hilo"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_035",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "facial_express_hidratacion",
+    "angle": "captacion",
+    "problem": "Piel apagada y deshidratada a 48 horas de un evento importante.",
+    "value_proposition": "Un protocolo flash sin extracciones invasivas que devuelve la jugosidad y luz al rostro sin rojeces.",
+    "objective": "conversion",
+    "suggested_format": "anuncio",
+    "funnel_stage": "decision",
+    "visual_brief": "B-roll estético de velo facial luminoso y masaje con globos de cristal frío.",
+    "information_requirements": [
+      "fecha_del_evento"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7,
+      8
+    ]
+  },
+  {
+    "topic_id": "B2C_036",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "protocolo_acne_cosmiatrico",
+    "angle": "mitos",
+    "problem": "Mito: «Si tengo piel con acné no debo usar cremas hidratantes porque me sacan más grasa».",
+    "value_proposition": "La piel deshidratada sobreproduce sebo para compensar; se requiere hidratación no comedogénica en gel con ácido hialurónico.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Demostración de textura en gel transparente oil-free absorbiéndose al instante en la mano.",
+    "information_requirements": [
+      "rutina_actual_de_limpieza"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_037",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "protocolo_acne_cosmiatrico",
+    "angle": "demostracion",
+    "problem": "¿Cómo actúa la alta frecuencia con gas ozono en un granito inflamado?",
+    "value_proposition": "La corriente genera ozono gaseoso superficial que oxigena el poro y destruye las bacterias anaeróbicas del acné.",
+    "objective": "educar",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Electrodo de vidrio de alta frecuencia encendiéndose con brillo violeta cerca de la piel.",
+    "information_requirements": [
+      "ausencia_de_marcapasos_o_implantes_metalicos"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_038",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "despigmentacion_manchas_faciales",
+    "angle": "errores",
+    "problem": "Usar limón, bicarbonato o vinagre para aclarar manchas en casa.",
+    "value_proposition": "Los remedios caseros alteran el pH y causan fitofotodermatitis, provocando quemaduras y manchas tres veces más oscuras con el sol.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Cosmetóloga mostrando los ingredientes caseros prohibidos vs suero despigmentante estéril.",
+    "information_requirements": [
+      "antecedentes_de_remedios_caseros"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_039",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "despigmentacion_manchas_faciales",
+    "angle": "preguntas",
+    "problem": "¿Por qué el melasma vuelve a aparecer si ya se había aclarado?",
+    "value_proposition": "El melanocito tiene memoria biológica; el calor, el sol sin reaplicar filtro o las hormonas lo reactivan.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "retencion",
+    "visual_brief": "Infografía sobre los tres disparadores del melasma: calor, radiación UV y cambios hormonales.",
+    "information_requirements": [
+      "habitos_de_fotoproteccion"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_040",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "peelings_quimicos_superficiales",
+    "angle": "comparaciones",
+    "problem": "Ácido Glicólico vs Ácido Mandélico vs Ácido Salicílico: cuál necesita tu tipo de piel.",
+    "value_proposition": "Glicólico para textura y antiedad, mandélico para pieles sensibles y manchas, salicílico para poros y grasa.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Tabla comparativa limpia mostrando el tamaño molecular de cada ácido y su indicación.",
+    "information_requirements": [
+      "tipo_de_piel_fototipo"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_041",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "peelings_quimicos_superficiales",
+    "angle": "mitos",
+    "problem": "Mito: «Un peeling que no descama ni arde no funcionó».",
+    "value_proposition": "Los peelings superficiales modernos renuevan la piel a nivel celular microscópico sin necesidad de provocar quemaduras evidentes.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Cosmetóloga aplicando suavemente el gel exfoliante con brocha en cabina.",
+    "information_requirements": [
+      "sensibilidad_cutanea_previa"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_042",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "hidratacion_profunda_facial",
+    "angle": "experiencia",
+    "problem": "Piel desvitalizada y tirante tras viajar en avión o trabajar muchas horas bajo aire acondicionado.",
+    "value_proposition": "La sonoforesis con ácido hialurónico recarga las reservas de agua en las capas profundas de la epidermis en una sesión.",
+    "objective": "atraer",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "B-roll relajante del manípulo ultrasónico deslizando gotas brillantes sobre el pómulo.",
+    "information_requirements": [
+      "tiempo_de_exposicion_a_clima_seco"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7,
+      8
+    ]
+  },
+  {
+    "topic_id": "B2C_043",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "radiofrecuencia_facial",
+    "angle": "curiosidad",
+    "problem": "¿Por qué la radiofrecuencia facial se siente tibia y relajante en lugar de dolorosa?",
+    "value_proposition": "El calor controlado a 40-42°C estimula el colágeno sin quemar la superficie de la piel gracias al gel conductor.",
+    "objective": "confianza",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Termómetro digital mostrando la temperatura en pantalla durante el paso del manípulo.",
+    "information_requirements": [
+      "ausencia_de_rosacea_activa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_044",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "radiofrecuencia_facial",
+    "angle": "objecion",
+    "problem": "Tengo rellenos en la cara: ¿puedo hacerme radiofrecuencia facial?",
+    "value_proposition": "Debe evitarse sobre la zona exacta donde hay ácido hialurónico reciente para no acelerar su reabsorción térmica.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Profesional delimitando en un mapa facial las zonas con y sin rellenos.",
+    "information_requirements": [
+      "fecha_y_tipo_de_rellenos_previos"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_045",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "limpieza_facial",
+    "angle": "preguntas",
+    "problem": "¿Cada cuánto tiempo es recomendable hacerse una limpieza facial profesional?",
+    "value_proposition": "Cada 28 a 30 días en pieles mixtas o grasas (acompañando el ciclo de renovación epidérmica), y cada 6 a 8 semanas en pieles secas.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "retencion",
+    "visual_brief": "Calendario mensual interactivo marcando el ciclo biológico de descamación celular.",
+    "information_requirements": [
+      "biotipo_cutaneo"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_046",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "microneedling_peelings",
+    "angle": "seguridad",
+    "problem": "El peligro de comprar \"Dermarollers\" caseros por internet para pasárselos en el baño.",
+    "value_proposition": "Los rodillos entran en ángulo rasgando la piel y no se pueden esterilizar en casa, provocando infecciones bacterianas severas.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Comparativa gráfica entre punción vertical 90° con cartucho estéril vs rodillo manual arrancando epidermis.",
+    "information_requirements": [
+      "antecedentes_de_autotratamientos"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_047",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "drenaje_linfatico_manual",
+    "angle": "mitos",
+    "problem": "Mito postquirúrgico: «El drenaje de la lipo tiene que doler y hacerte llorar para que funcione».",
+    "value_proposition": "El drenaje linfático verdadero es suave y no doloroso. Maniobras violentas aumentan la inflamación y rompen vasos.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Fisioterapeuta demostrando la presión suave de pluma requerida para abrir capilares linfáticos.",
+    "information_requirements": [
+      "dias_postoperatorios",
+      "tipo_de_cirugia_realizada"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      4,
+      33
+    ]
+  },
+  {
+    "topic_id": "B2C_048",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "drenaje_linfatico_manual",
+    "angle": "preguntas",
+    "problem": "¿Por qué se forman zonas duras («fibrosis») después de una lipoescultura y cómo prevenirlas?",
+    "value_proposition": "Es colágeno cicatrizal desorganizado; el drenaje linfático temprano y continuo ayuda a que las capas sanen de forma plana.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Infografía del espacio subcutáneo post-cánula y cómo fluye el líquido intersticial.",
+    "information_requirements": [
+      "autorizacion_del_cirujano_plastico"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      4,
+      20,
+      33
+    ]
+  },
+  {
+    "topic_id": "B2C_049",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "masajes_moldeadores_manuales",
+    "angle": "errores",
+    "problem": "Creer que salir llena de moretones de un masaje reductor significa que se eliminó grasa.",
+    "value_proposition": "Los moretones son hematomas por rotura capilar que dañan los tejidos y causan flacidez a futuro.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Cosmetóloga explicando por qué la maderoterapia profesional y moldeamiento manual ético no deben dejar morados.",
+    "information_requirements": [
+      "presencia_de_fragilidad_capilar"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      9,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_050",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "masajes_moldeadores_manuales",
+    "angle": "experiencia",
+    "problem": "¿Qué se siente en una sesión de maderoterapia para moldear cintura y espalda?",
+    "value_proposition": "Maniobras rítmicas con copas y rodillos de madera que reactivan la circulación y drenan líquidos sin dolor excesivo.",
+    "objective": "atraer",
+    "suggested_format": "broll",
+    "funnel_stage": "consideracion",
+    "visual_brief": "B-roll fluido y profesional de la copa sueca perfilando el contorno del flanco.",
+    "information_requirements": [
+      "zonas_objetivo_del_paciente"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_051",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "radiofrecuencia_corporal_flacidez",
+    "angle": "comparaciones",
+    "problem": "Flacidez muscular vs flacidez de piel: por qué el gimnasio solo resuelve una de las dos.",
+    "value_proposition": "El ejercicio tonifica el músculo debajo, pero si la piel perdió colágeno y elastina, requiere estímulo térmico para retraerse.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Gráfico dividiendo músculo profundo vs dermis superficial con fibras de colágeno desordenadas.",
+    "information_requirements": [
+      "cambios_recientes_de_peso"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_052",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "criolipolisis_adiposidad_localizada",
+    "angle": "seguridad",
+    "problem": "La membrana anticongelante en criolipólisis: el elemento que jamás puede faltar.",
+    "value_proposition": "Protege la epidermis del congelamiento directo; aplicar el manípulo sin membrana original provoca necrosis cutánea por frío.",
+    "objective": "confianza",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Apertura del sobre estéril de la membrana anticongelante con su número de lote visible.",
+    "information_requirements": [
+      "inspeccion_cutanea_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      29,
+      34
+    ]
+  },
+  {
+    "topic_id": "B2C_053",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "criolipolisis_adiposidad_localizada",
+    "angle": "curiosidad",
+    "problem": "¿Por qué la criolipólisis no congela los músculos ni la sangre alrededor de la grasa?",
+    "value_proposition": "Los lípidos de las células grasas cristalizan a temperaturas más altas que el agua del resto de los tejidos (sensibilidad selectiva).",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Explicación didáctica con modelo de adipocito cristalizando a -8°C.",
+    "information_requirements": [
+      "grosor_del_paniculo_adiposo"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      34
+    ]
+  },
+  {
+    "topic_id": "B2C_054",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "tratamiento_celulitis_vacuoterapia",
+    "angle": "preguntas",
+    "problem": "¿Cuáles son los 3 tipos de celulitis y por qué no todas se tratan igual?",
+    "value_proposition": "Celulitis edematosa (retención de líquido), blanda (flacidez) y compacta (tabiques duros); cada una exige distinta tecnología.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Tres láminas ilustradas detallando características visuales y palpatorias de cada tipo.",
+    "information_requirements": [
+      "evaluacion_clinica_de_retencion_de_liquidos"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_055",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "tratamiento_celulitis_vacuoterapia",
+    "angle": "experiencia",
+    "problem": "Presoterapia para piernas cansadas: qué siente una persona que pasa todo el día de pie.",
+    "value_proposition": "Un inflado secuencial en ondas que bombea la sangre de regreso hacia el corazón, quitando pesadez e hinchazón en 30 minutos.",
+    "objective": "atraer",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "Cámara lenta de las cámaras de aire inflando gradualmente de pies a muslos en ambiente de spa.",
+    "information_requirements": [
+      "ausencia_de_trombosis_venosa"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_056",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "enzimas_recombinantes_corporales",
+    "angle": "preguntas",
+    "problem": "¿Cómo deshacen las enzimas de colagenasa los cordones duros de fibrosis en el abdomen?",
+    "value_proposition": "La colagenasa rompe selectivamente los enlaces de colágeno fibrótico desorganizado permitiendo que la piel vuelva a aplanarse.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Médico explicando el mecanismo enzimático de degradación tisular con modelo esquemático.",
+    "information_requirements": [
+      "historia_quirurgica_previa"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      4,
+      7,
+      11
+    ]
+  },
+  {
+    "topic_id": "B2C_057",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_cera_convencional",
+    "angle": "seguridad",
+    "problem": "La regla de oro en depilación con cera: exigir que sea 100% desechable.",
+    "value_proposition": "Filtrar y recalentar cera usada transmite hongos, bacterias y virus cutáneos entre personas. Exige ver la cera salir del paquete.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Espátula desechable y cera nueva vertiéndose en recipiente individual limpio.",
+    "information_requirements": [
+      "inspeccion_visual_de_cabina"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_058",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_cera_convencional",
+    "angle": "comparaciones",
+    "problem": "Cera vs Rasuradora: por qué la cuchilla engrosa la sensación del pelo y la cera no.",
+    "value_proposition": "La cuchilla corta el pelo transversalmente en su parte más gruesa; la cera extrae el bulbo haciendo que nazca con punta fina.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Gráfico del corte biselado de la cuchilla vs extracción folicular con cera.",
+    "information_requirements": [
+      "frecuencia_de_depilacion_habitual"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      23,
+      25
+    ]
+  },
+  {
+    "topic_id": "B2C_059",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "fotodepilacion_ipl",
+    "angle": "comparaciones",
+    "problem": "IPL vs Láser Diodo: cuál duele menos y cuál requiere menos sesiones.",
+    "value_proposition": "El láser diodo con cabezal frío destruye folículos más profundos en menos sesiones; la IPL es más lenta pero accesible.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Tabla comparativa frente a frente: longitud de onda, fototipos aptos y promedio de sesiones.",
+    "information_requirements": [
+      "fototipo_fitzpatrick",
+      "color_del_vello"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      24,
+      25
+    ]
+  },
+  {
+    "topic_id": "B2C_060",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "mantenimiento_depilacion_laser",
+    "angle": "preguntas",
+    "problem": "¿Por qué salen vellitos aislados 1 año después de terminar mi tratamiento láser?",
+    "value_proposition": "Folículos que estaban en fase de reposo absoluto (telógena) despiertan por cambios hormonales normales; 1 retoque los elimina.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "retencion",
+    "visual_brief": "Especialista mostrando el ciclo de las 3 fases del vello (anágena, catágena, telógena).",
+    "information_requirements": [
+      "fecha_de_finalizacion_del_paquete"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      23,
+      24
+    ]
+  },
+  {
+    "topic_id": "B2C_061",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_laser_diodo",
+    "angle": "errores",
+    "problem": "Depilarse con cera o pinzas entre sesiones de depilación láser.",
+    "value_proposition": "Si arrancas la raíz con cera, el láser no tiene blanco (melanina) al cual disparar en la siguiente sesión, perdiendo tu dinero.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Gesto de advertencia mostrando una pinza de depilar con una cruz roja.",
+    "information_requirements": [
+      "metodo_de_depilacion_entre_sesiones"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      23,
+      25
+    ]
+  },
+  {
+    "topic_id": "B2C_062",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_laser_diodo",
+    "angle": "experiencia",
+    "problem": "¿Qué se siente con la tecnología de barrido continuo (Soprano In-Motion)?",
+    "value_proposition": "Una sensación de masaje tibio con cabezal de zafiro frío a -4°C que neutraliza el calor del disparo en la piel.",
+    "objective": "confianza",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "Primer plano del cabezal escarchado con frío deslizándose con gel sobre la pierna.",
+    "information_requirements": [
+      "sensibilidad_al_dolor_del_paciente"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      23
+    ]
+  },
+  {
+    "topic_id": "B2C_063",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "masaje_relajante_descontracturante",
+    "angle": "experiencia",
+    "problem": "Sobrecarga de cortisol y tensión en el cuello por estrés laboral acumulado.",
+    "value_proposition": "Maniobras profundas de amasamiento y aromaterapia que reducen la presión arterial y liberan endorfinas en 60 minutos.",
+    "objective": "atraer",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma cenital con iluminación suave de velas y aceite aromático cayendo sobre la espalda.",
+    "information_requirements": [
+      "zonas_de_mayor_dolor_o_tension"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_064",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "masaje_relajante_descontracturante",
+    "angle": "preguntas",
+    "problem": "¿Es normal sentir algo de cansancio o agujetas al día siguiente de un masaje descontracturante?",
+    "value_proposition": "Sí; los músculos contracturados liberaron ácido láctico acumulado. Hidratarse bien hace que el alivio sea total.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "retencion",
+    "visual_brief": "Terapeuta entregando una infusión caliente de hierbas relajantes al paciente en cabina.",
+    "information_requirements": [
+      "intensidad_de_presion_tolerada"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_065",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "masajes_pareja_experiencias_spa",
+    "angle": "captacion",
+    "problem": "¿Qué regalarle a tu pareja por aniversario que no sea otra cena o ropa?",
+    "value_proposition": "Una experiencia compartida de 90 minutos de desconexión en cabina privada con masajes coordinados y ambientación sensorial.",
+    "objective": "conversion",
+    "suggested_format": "anuncio",
+    "funnel_stage": "decision",
+    "visual_brief": "Cabina doble decorada con detalles románticos discretos y copas de infusión espumosa.",
+    "information_requirements": [
+      "fecha_especial_a_celebrar"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_066",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "bonos_regalo_rituales_spa",
+    "angle": "curiosidad",
+    "problem": "¿Por qué regalar tiempo y bienestar supera a cualquier regalo material?",
+    "value_proposition": "Los estudios demuestran que las experiencias generan memorias emocionales duraderas; los objetos pierden novedad en semanas.",
+    "objective": "atraer",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Unboxing elegante de la caja física del bono de regalo con lazo satinado corporativo.",
+    "information_requirements": [
+      "ocasion_del_obsequio"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      9,
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_067",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "bonos_regalo_rituales_spa",
+    "angle": "preguntas",
+    "problem": "¿Cómo funciona la vigencia y el canje de un bono de regalo en nuestro spa?",
+    "value_proposition": "Vigencia transparente de 6 a 12 meses, canjeable por la experiencia asignada o transferible por otros servicios si lo prefieres.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "decision",
+    "visual_brief": "Recepcionista mostrando la tarjeta de regalo y el sistema digital de reserva con código QR.",
+    "information_requirements": [
+      "numero_de_bono_o_codigo_de_compra"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      9,
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_068",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "masaje_piedras_volcanicas",
+    "angle": "experiencia",
+    "problem": "El efecto relajante del calor húmedo del basalto volcánico en días fríos o lluviosos.",
+    "value_proposition": "Las piedras volcánicas retienen minerales y calor constante a 48°C que penetran en el músculo profundo relajándolo sin dolor.",
+    "objective": "atraer",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "Piedras negras redondas pulidas sumergiéndose en agua tibia aromática con vapor suave.",
+    "information_requirements": [
+      "ausencia_de_sensibilidad_alterada_al_calor"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_069",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "hidroterapia_exfoliacion_corporal",
+    "angle": "demostracion",
+    "problem": "¿Cómo prepara la piel del cuerpo una exfoliación con sales marinas antes de hidratarla?",
+    "value_proposition": "Retira células muertas y abre los poros; el agua tibia hidromasajea los músculos y la piel absorbe un 80% más de nutrientes.",
+    "objective": "educar",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Exfoliante de sales con microgránulos puliendo suavemente la piel del hombro y brazo.",
+    "information_requirements": [
+      "ausencia_de_heridas_abiertas_o_quemaduras_solares"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      8,
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_070",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_botulinica_facial",
+    "angle": "curiosidad",
+    "problem": "¿Por qué a las personas que hacen mucho ejercicio de alta intensidad les dura menos el bótox?",
+    "value_proposition": "El metabolismo acelerado y la gesticulación intensa durante el esfuerzo físico aumentan la velocidad de reinervación neuromuscular.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Profesional comparando el metabolismo muscular en atletas vs personas sedentarias.",
+    "information_requirements": [
+      "frecuencia_de_actividad_fisica"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      1,
+      2
+    ]
+  },
+  {
+    "topic_id": "B2C_071",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_botulinica_facial",
+    "angle": "experiencia",
+    "problem": "Sonrisa gingival (mostrar mucha encía al sonreír): cómo se relaja en 5 minutos.",
+    "value_proposition": "Dos microgotas de neuromodulador en el músculo elevador del labio superior suavizan la elevación sin cambiar la forma de la boca.",
+    "objective": "atraer",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Demostración de los 2 puntos específicos a los lados de las alas de la nariz con lápiz blanco.",
+    "information_requirements": [
+      "milimetros_de_exposicion_gingival"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      2,
+      18
+    ]
+  },
+  {
+    "topic_id": "B2C_072",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "acido_hialuronico_relleno",
+    "angle": "preguntas",
+    "problem": "Código de barras (arrugas verticales sobre el labio superior): cómo tratarlas sin engordar la boca.",
+    "value_proposition": "Se utiliza ácido hialurónico no voluminizador de baja viscosidad en técnica de blanching superficial para rellenar surcos finos.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Técnica de blanching mostrando el microblanqueamiento transitorio que borra la línea.",
+    "information_requirements": [
+      "profundidad_de_las_arrugas_peribucales"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      11
+    ]
+  },
+  {
+    "topic_id": "B2C_073",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "acido_hialuronico_relleno",
+    "angle": "objecion",
+    "problem": "Tengo los labios asimétricos por naturaleza: ¿el ácido hialurónico los puede emparejar?",
+    "value_proposition": "Sí; el médico deposita microdosis selectivas en el lado deficiente para equilibrar el bermellón y el arco de cupido.",
+    "objective": "confianza",
+    "suggested_format": "demostracion",
+    "funnel_stage": "decision",
+    "visual_brief": "Calibración milimétrica con regla dérmica de la comisura izquierda vs derecha.",
+    "information_requirements": [
+      "asimetria_dinamica_vs_estatica"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      10,
+      11
+    ]
+  },
+  {
+    "topic_id": "B2C_074",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "bioestimuladores_colageno",
+    "angle": "experiencia",
+    "problem": "Manos envejecidas con venas y tendones marcados: cómo rejuvenecerlas con bioestimulación.",
+    "value_proposition": "La hidroxiapatita de calcio diluida en el dorso de las manos redensifica la dermis fina, ocultando los relieves vasculares.",
+    "objective": "atraer",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "B-roll en plano macro del dorso de la mano con textura firme y luminosa.",
+    "information_requirements": [
+      "evaluacion_de_atrofia_grasa_en_manos"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      13,
+      14
+    ]
+  },
+  {
+    "topic_id": "B2C_075",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "bioestimuladores_colageno",
+    "angle": "curiosidad",
+    "problem": "Flacidez y líneas horizontales en el cuello («anillos de Venus»): qué protocolo funciona.",
+    "value_proposition": "La piel del cuello es un 30% más delgada que la facial; requiere bioestimuladores muy diluidos o ácido hialurónico térmico.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Médico explicando el espesor de la piel del cuello sobre una maqueta cutánea.",
+    "information_requirements": [
+      "grado_de_elastosis_solar_cervical"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      13,
+      14
+    ]
+  },
+  {
+    "topic_id": "B2C_076",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "redensificadores_profhilo",
+    "angle": "preguntas",
+    "problem": "¿Profhilo se puede aplicar en cuello, escote o brazos?",
+    "value_proposition": "Sí; existen protocolos específicos para cuello y cuerpo que devuelven elasticidad y brillo sin añadir volumen artificial.",
+    "objective": "atraer",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Esquema de puntos de inyección en escote y cara interna de brazos.",
+    "information_requirements": [
+      "zonas_con_deshidratacion_tisular"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      14
+    ]
+  },
+  {
+    "topic_id": "B2C_077",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "complicaciones_hialuronidasa",
+    "angle": "experiencia",
+    "problem": "Llevo 2 años con un relleno de labios mal puesto: ¿la hialuronidasa todavía lo puede disolver?",
+    "value_proposition": "Sí; los rellenos de ácido hialurónico encapsulados o migrados responden a la enzima incluso años después de colocados.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Médico explicando la acción enzimática sobre enlaces cruzados antiguos en consulta.",
+    "information_requirements": [
+      "marca_o_tipo_de_producto_inyectado_originalmente"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      11,
+      12,
+      15
+    ]
+  },
+  {
+    "topic_id": "B2C_078",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "retiro_biopolimeros_asia",
+    "angle": "curiosidad",
+    "problem": "¿Qué síntomas generales provoca el Síndrome ASIA cuando hay biopolímeros en el cuerpo?",
+    "value_proposition": "Fatiga crónica no explicada, dolores musculares y articulares, caída de cabello y brotes autoinmunes por respuesta inflamatoria.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Listado claro de síntomas reumatológicos asociados al síndrome por adyuvantes.",
+    "information_requirements": [
+      "tiempo_de_inyeccion_del_material"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      4,
+      19,
+      20
+    ]
+  },
+  {
+    "topic_id": "B2C_079",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "rinomodelacion",
+    "angle": "experiencia",
+    "problem": "¿Se puede usar gafas o lentes de sol después de una rinomodelación?",
+    "value_proposition": "Se debe evitar el apoyo directo de monturas pesadas en el dorso durante 14 días para no desplazar el gel mientras se fija.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "decision",
+    "visual_brief": "Médico indicando la zona de apoyo de las almohadillas de las gafas en la nariz.",
+    "information_requirements": [
+      "uso_de_lentes_recetados_diarios"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      10,
+      16
+    ]
+  },
+  {
+    "topic_id": "B2C_080",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "hilos_tensores",
+    "angle": "comparaciones",
+    "problem": "Hilos espiculados de tracción vs hilos monofilamento lisos: por qué tienen funciones distintas.",
+    "value_proposition": "Los espiculados traccionan y reposicionan tejidos caídos; los lisos forman una malla intradérmica para redensificar colágeno fino.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Primer plano macro comparando las espículas de un hilo tensor vs la superficie lisa del monofilamento.",
+    "information_requirements": [
+      "objetivo_del_paciente_levantar_vs_mejorar_piel"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_081",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "perfilamiento_mandibular_menton",
+    "angle": "captacion",
+    "problem": "Pack Armonización de Perfil: mentón + labios para un equilibrio facial completo.",
+    "value_proposition": "Un enfoque integral que equilibra la proyección de la nariz, boca y barbilla en una sola sesión de valoración médica.",
+    "objective": "conversion",
+    "suggested_format": "anuncio",
+    "funnel_stage": "decision",
+    "visual_brief": "Silueta limpia de perfil con los puntos dorados de proporción de Ricketts.",
+    "information_requirements": [
+      "cita_de_valoracion_presencial"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      1,
+      10,
+      35
+    ]
+  },
+  {
+    "topic_id": "B2C_082",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "relleno_ojeras_acido_hialuronico",
+    "angle": "demostracion",
+    "problem": "¿Por qué en ojeras siempre se debe inyectar con microcánula y no con aguja afilada?",
+    "value_proposition": "La punta roma de la cánula empuja los vasos sanguíneos sin cortarlos, eliminando casi a cero el riesgo de embolia vascular.",
+    "objective": "confianza",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Punta roma redondeada de la microcánula deslizándose sobre un guante sin pincharlo.",
+    "information_requirements": [
+      "anatomia_vascular_del_paciente"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      11,
+      17,
+      35
+    ]
+  },
+  {
+    "topic_id": "B2C_083",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "limpieza_facial",
+    "angle": "demostracion",
+    "problem": "Espátula ultrasónica: cómo desincrusta puntos negros con vibración de agua.",
+    "value_proposition": "Vibra a 28.000 Hz pulverizando el agua en microgotas que barren grasa y células muertas sin maltratar la piel.",
+    "objective": "atraer",
+    "suggested_format": "demostracion",
+    "funnel_stage": "atencion",
+    "visual_brief": "Vapor de microgotas desprendiéndose del borde metálico de la espátula ultrasónica en cámara lenta.",
+    "information_requirements": [
+      "tolerancia_a_la_vibracion_facial"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_084",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "protocolo_acne_cosmiatrico",
+    "angle": "experiencia",
+    "problem": "La frustración del \"efecto purga\" al iniciar un tratamiento de acné: qué significa realmente.",
+    "value_proposition": "Los comedones microscópicos bajo la piel salen a la superficie al acelerar la renovación; dura de 2 a 4 semanas y luego la piel se limpia.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Cosmetóloga explicando con empatía la línea de tiempo de la purga cutánea.",
+    "information_requirements": [
+      "tiempo_de_inicio_del_tratamiento_actual"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_085",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "despigmentacion_manchas_faciales",
+    "angle": "curiosidad",
+    "problem": "¿Por qué la luz azul del celular y el computador mancha tanto como el sol en pieles con melasma?",
+    "value_proposition": "La radiación de onda corta estimula los receptores de opsina en los melanocitos, activando la síntesis de pigmento oscuro.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Pantalla de celular iluminando un rostro y gráfico de la longitud de onda de luz azul (400-500 nm).",
+    "information_requirements": [
+      "horas_diarias_frente_a_pantallas"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_086",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "peelings_quimicos_superficiales",
+    "angle": "experiencia",
+    "problem": "Los 3 días después de un peeling químico: cómo lavar la cara y qué crema usar.",
+    "value_proposition": "Limpiador syndet sin espuma, agua tibia sin frotar con toalla y crema con ceramidas para restaurar la barrera sin ardor.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Guía paso a paso de la rutina de cuidado suave post-peeling en el lavabo.",
+    "information_requirements": [
+      "tipo_de_peeling_aplicado"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7,
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_087",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "hidratacion_profunda_facial",
+    "angle": "mitos",
+    "problem": "Mito: «Tomar 3 litros de agua al día es suficiente para que la piel de la cara no esté seca».",
+    "value_proposition": "El agua ingerida llega primero a los órganos vitales; si la barrera lipídica cutánea está rota, el agua se evapora de la piel.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Vaso de agua vs capa lipídica de la piel impidiendo la evaporación transdérmica (TEWL).",
+    "information_requirements": [
+      "ingesta_de_agua_y_humedad_ambiental"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_088",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "radiofrecuencia_facial",
+    "angle": "experiencia",
+    "problem": "El efecto \"Flash Cenicienta\" de la primera sesión de radiofrecuencia: por qué dura 48 horas.",
+    "value_proposition": "La contracción inicial tensa de inmediato; las sesiones posteriores son las que construyen colágeno nuevo permanente.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Cosmetóloga mostrando la textura firme y luminosa al tacto inmediatamente al terminar la sesión.",
+    "information_requirements": [
+      "expectativa_de_durabilidad_del_paciente"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_089",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "microneedling_peelings",
+    "angle": "preguntas",
+    "problem": "¿A qué profundidad deben entrar las microagujas en Dermapen para no dejar cicatrices?",
+    "value_proposition": "En cosmetología se trabaja entre 0.25 mm y 0.75 mm para permeabilizar; profundidades mayores de 1.5 mm son médicas.",
+    "objective": "educar",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Dial del dispositivo de microagujas girando entre las marcas milimétricas de profundidad.",
+    "information_requirements": [
+      "espesor_de_la_zona_a_tratar"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_090",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "facial_express_hidratacion",
+    "angle": "curiosidad",
+    "problem": "¿Por qué la piel luce más luminosa inmediatamente después de retirar una mascarilla de velo con ácido hialurónico?",
+    "value_proposition": "La oclusión física impide la evaporación e hidrata el estrato córneo multiplicando el reflejo de la luz natural.",
+    "objective": "atraer",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "Retiro suave de la mascarilla de celulosa dejando un brillo natural jugoso en el rostro.",
+    "information_requirements": [
+      "sensibilidad_a_conservantes_cosmeticos"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7
+    ]
+  },
+  {
+    "topic_id": "B2C_091",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "drenaje_linfatico_manual",
+    "angle": "curiosidad",
+    "problem": "¿Hacia dónde va el líquido que drena el masaje postquirúrgico?",
+    "value_proposition": "Las maniobras dirigen la linfa hacia los ganglios axilares e inguinales, donde pasa al torrente venoso y se filtra por el riñón.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Diagrama del recorrido de las vías linfáticas hacia el conducto torácico y sistema urinario.",
+    "information_requirements": [
+      "funcion_renal_basica"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      33
+    ]
+  },
+  {
+    "topic_id": "B2C_092",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "masajes_moldeadores_manuales",
+    "angle": "mitos",
+    "problem": "Mito: «La grasa se puede orinar después de un masaje reductor fuerte».",
+    "value_proposition": "La orina elimina agua y toxinas metabólicas; la grasa movilizada debe oxidarse como energía en el hígado mediante déficit calórico.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Cosmetóloga aclarando la fisiología del metabolismo de triglicéridos en cabina.",
+    "information_requirements": [
+      "habitos_nutricionales_del_paciente"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      9
+    ]
+  },
+  {
+    "topic_id": "B2C_093",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "radiofrecuencia_corporal_flacidez",
+    "angle": "preguntas",
+    "problem": "Estrías rojas vs estrías blancas: ¿cuáles responden mejor a la radiofrecuencia corporal?",
+    "value_proposition": "Las rojas o violáceas aún tienen vascularización activa y colágeno regenerable; las blancas son cicatrices maduras que requieren microagujas.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Comparativa visual en macro de estría rubra vascularizada vs estría alba atrófica.",
+    "information_requirements": [
+      "antiguedad_de_las_estrias"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_094",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "criolipolisis_adiposidad_localizada",
+    "angle": "objecion",
+    "problem": "¿Qué pasa con la piel si se congela la grasa? ¿Queda colgando o se adapta?",
+    "value_proposition": "Al ser una eliminación progresiva durante 3 meses, la piel se readapta gradualmente sin el choque de vacío repentino de una cirugía.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Especialista demostrando la elasticidad cutánea del área tratada.",
+    "information_requirements": [
+      "calidad_y_laxitud_de_la_piel_previa"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      34
+    ]
+  },
+  {
+    "topic_id": "B2C_095",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "tratamiento_celulitis_vacuoterapia",
+    "angle": "mitos",
+    "problem": "Mito: «La celulitis es solo cuestión de sobrepeso; las personas delgadas no tienen».",
+    "value_proposition": "Afecta al 90% de las mujeres independientemente del peso debido a la estructura vertical de los tabiques de colágeno femeninos.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Comparativa anatómica entre tabiques de colágeno masculinos (en red cruzada) vs femeninos (verticales en cámara).",
+    "information_requirements": [
+      "historial_hormonal_y_familiar"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_096",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "moldeamiento_corporal_aparatologia",
+    "angle": "experiencia",
+    "problem": "El zumbido agudo en el oído durante la sesión de cavitación: por qué se escucha.",
+    "value_proposition": "Las ondas de ultrasonido a 40 kHz viajan por conducción ósea hasta el tímpano; es un sonido inocuo que confirma que el equipo está emitiendo.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Cosmetóloga mostrando cómo una gota de agua implosiona sobre el manípulo encendido.",
+    "information_requirements": [
+      "ausencia_de_tinnitus_previo"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      9,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_097",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "enzimas_recombinantes_corporales",
+    "angle": "experiencia",
+    "problem": "¿Cómo es la recuperación tras infiltrar enzimas recombinantes en el abdomen?",
+    "value_proposition": "Inflamación leve y sensación de calor durante 48 horas; uso de faja suave y retorno a actividades normales al día siguiente.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "decision",
+    "visual_brief": "Médico explicando los cuidados de compresión suave y consumo de agua.",
+    "information_requirements": [
+      "actividad_laboral_del_paciente"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7,
+      11
+    ]
+  },
+  {
+    "topic_id": "B2C_098",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_laser_diodo",
+    "angle": "preguntas",
+    "problem": "Depilación láser en hombres: cómo erradicar la foliculitis de la barba y cuello.",
+    "value_proposition": "El láser elimina el pelo rizado que se clava en la piel, terminando con los granitos dolorosos tras afeitarse.",
+    "objective": "atraer",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Paciente masculino mostrando zona del cuello sin irritación tras 4 sesiones de láser.",
+    "information_requirements": [
+      "grosor_del_vello_de_la_barba"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      23,
+      25
+    ]
+  },
+  {
+    "topic_id": "B2C_099",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_laser_diodo",
+    "angle": "curiosidad",
+    "problem": "¿Por qué la depilación láser no funciona en canas o vellos completamente rubios?",
+    "value_proposition": "El láser busca el pigmento oscuro (melanina) como diana térmica; las canas carecen de melanina, por lo que el haz de luz no genera calor.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Diagrama del cromóforo diana: folículo oscuro absorbiendo energía vs pelo blanco sin absorción.",
+    "information_requirements": [
+      "porcentaje_de_canas_en_la_zona"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      23,
+      24
+    ]
+  },
+  {
+    "topic_id": "B2C_100",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_cera_convencional",
+    "angle": "preguntas",
+    "problem": "¿Por qué la cera tibia no se debe aplicar dos veces seguidas sobre la misma zona?",
+    "value_proposition": "Retirar la cera en la misma piel arrastra capas epidérmicas vivas, causando irritación severa y quemadura mecánica.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Cosmetóloga explicando la técnica correcta de pase único por área.",
+    "information_requirements": [
+      "sensibilidad_al_calor_del_paciente"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_101",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "fotodepilacion_ipl",
+    "angle": "seguridad",
+    "problem": "El riesgo de usar IPL sobre piel recién bronceada en vacaciones de playa.",
+    "value_proposition": "La melanina superficial del bronceado absorbe la luz en la epidermis, provocando quemaduras y manchas blancas deseadas.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Advertencia visual sobre esperar mínimo 15 días tras exposición solar intensa.",
+    "information_requirements": [
+      "dias_desde_la_ultima_exposicion_solar"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      24,
+      25
+    ]
+  },
+  {
+    "topic_id": "B2C_102",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "mantenimiento_depilacion_laser",
+    "angle": "captacion",
+    "problem": "Plan Anual de Retoques Láser: mantén tu piel libre de vello todo el año sin pagar paquetes nuevos.",
+    "value_proposition": "Dos sesiones de control al año programadas para eliminar vellos residuales a tarifa preferencial.",
+    "objective": "conversion",
+    "suggested_format": "anuncio",
+    "funnel_stage": "retencion",
+    "visual_brief": "Tarjeta de membresía digital con calendario de sesiones de control.",
+    "information_requirements": [
+      "historial_de_sesiones_completadas"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      23
+    ]
+  },
+  {
+    "topic_id": "B2C_103",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "masaje_relajante_descontracturante",
+    "angle": "curiosidad",
+    "problem": "¿Por qué un masaje de 50 minutos ayuda a dormir profundamente esa misma noche?",
+    "value_proposition": "La estimulación del sistema parasimpático reduce el cortisol y activa la síntesis de melatonina y serotonina.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Terapeuta preparando aceites esenciales de lavanda y manzanilla en difusor.",
+    "information_requirements": [
+      "patrones_de_insomnio_del_cliente"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_104",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "masajes_pareja_experiencias_spa",
+    "angle": "experiencia",
+    "problem": "Cómo se diseña un ritual de spa para dos personas sin interrupciones ni ruidos.",
+    "value_proposition": "Cabinas insonorizadas, temperatura constante a 24°C, música en frecuencia relajante de 432 Hz y privacidad absoluta.",
+    "objective": "confianza",
+    "suggested_format": "broll",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Recorrido en plano secuencia entrando a la cabina doble con luz cálida y velas.",
+    "information_requirements": [
+      "preferencias_de_musica_y_aroma"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_105",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "bonos_regalo_rituales_spa",
+    "angle": "experiencia",
+    "problem": "Regalo corporativo de fin de año para colaboradores: por qué un bono de spa supera a una ancheta tradicional.",
+    "value_proposition": "Reconocer el esfuerzo del equipo premiándolos con salud mental, descanso y renovación física.",
+    "objective": "conversion",
+    "suggested_format": "anuncio",
+    "funnel_stage": "decision",
+    "visual_brief": "Colaborador abriendo con sonrisa una tarjeta personalizada de spa con mensaje de agradecimiento.",
+    "information_requirements": [
+      "numero_de_bonos_corporativos"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      9,
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_106",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "masaje_piedras_volcanicas",
+    "angle": "mitos",
+    "problem": "Mito: «Las piedras volcánicas son solo para relajarse, no quitan contracturas de espalda».",
+    "value_proposition": "El calor sostenido penetra hasta 3 cm en el tejido muscular, permitiendo al terapeuta deshacer contracturas profundas con menos dolor.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Terapeuta deslizando la piedra caliente sobre los músculos paravertebrales de la espalda.",
+    "information_requirements": [
+      "nivel_de_contractura_muscular"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_107",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "hidroterapia_exfoliacion_corporal",
+    "angle": "captacion",
+    "problem": "Ritual Novia Radiante («Bridal Glow»): prepara tu piel 3 días antes de la boda.",
+    "value_proposition": "Exfoliación corporal con sales nutritivas y jacuzzi relajante para lucir vestido de novia con piel de terciopelo.",
+    "objective": "conversion",
+    "suggested_format": "anuncio",
+    "funnel_stage": "decision",
+    "visual_brief": "Detalle de toallas bordadas, flores blancas y agua cristalina con sales marinas.",
+    "information_requirements": [
+      "fecha_exacta_de_la_boda"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_108",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_botulinica_facial",
+    "angle": "curiosidad",
+    "problem": "Nefertiti Lift: cómo relajar las cuerdas del cuello con toxina botulínica.",
+    "value_proposition": "Microinyecciones en las bandas platismales impiden que el músculo tire de las mejillas hacia abajo, redefiniendo la mandíbula.",
+    "objective": "atraer",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Paciente contrayendo el cuello mostrando las bandas del platisma y el médico marcando los puntos.",
+    "information_requirements": [
+      "fuerza_de_contraccion_platismal"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      2,
+      18
+    ]
+  },
+  {
+    "topic_id": "B2C_109",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "acido_hialuronico_relleno",
+    "angle": "preguntas",
+    "problem": "Sienes hundidas (fosa temporal vacía): por qué hacen ver el rostro esquelético y cansado.",
+    "value_proposition": "Reponer el volumen temporal con ácido hialurónico profundo equilibra la parte superior del rostro y levanta la cola de la ceja.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Diagrama del tercio superior mostrando la concavidad temporal vs plano redondeado armónico.",
+    "information_requirements": [
+      "espesor_del_musculo_temporal"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      10,
+      35
+    ]
+  },
+  {
+    "topic_id": "B2C_110",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_botulinica_facial",
+    "angle": "comparaciones",
+    "problem": "Botox vs Dysport vs Xeomin: ¿cuál es la diferencia real entre marcas comerciales?",
+    "value_proposition": "Todas usan toxina botulínica tipo A; difieren en proteínas complejantes y peso molecular, lo que influye en la difusión y pureza inmunológica.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Tabla comparativa objetiva de los viales de laboratorio homologados con registro INVIMA.",
+    "information_requirements": [
+      "antecedentes_de_resistencia_a_marcas_previas"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      1,
+      2
+    ]
+  },
+  {
+    "topic_id": "B2C_111",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "acido_hialuronico_relleno",
+    "angle": "experiencia",
+    "problem": "Lóbulo de la oreja arrugado o rasgado por aretes pesados: rejuvenecimiento en 10 minutos.",
+    "value_proposition": "Una microgota de ácido hialurónico da turgencia al lóbulo y permite que los aretes vuelvan a lucir firmes sin descolgarse.",
+    "objective": "atraer",
+    "suggested_format": "demostracion",
+    "funnel_stage": "atencion",
+    "visual_brief": "Lóbulo de la oreja desinflado antes vs turgente y relleno sosteniendo un pendiente.",
+    "information_requirements": [
+      "evaluacion_de_desgarro_completo_vs_parcial"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      10
+    ]
+  },
+  {
+    "topic_id": "B2C_112",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "toxina_botulinica_facial",
+    "angle": "seguridad",
+    "problem": "El grave peligro de las \"Botox Parties\" clandestinas en casas o salones de belleza.",
+    "value_proposition": "Inyectar sin cadena de frío, sin habilitación médica y sin equipo de emergencia arriesga parálisis faciales e infecciones graves.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Médico frente al distintivo oficial de habilitación de la Secretaría de Salud y nevera biomédica.",
+    "information_requirements": [
+      "verificacion_de_habilitacion_reps"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      18,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_113",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "complicaciones_hialuronidasa",
+    "angle": "demostracion",
+    "problem": "Ecografía cutánea de alta resolución: cómo localiza los depósitos de relleno antes de disolverlos.",
+    "value_proposition": "El ecógrafo permite ver la bolsa de gel en pantalla en tiempo real para infiltrar la enzima con precisión milimétrica.",
+    "objective": "confianza",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Sonda ecográfica sobre el labio mostrando la imagen anecoica del ácido hialurónico en el monitor.",
+    "information_requirements": [
+      "ecografo_dermatologico_disponible"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      11,
+      12,
+      16
+    ]
+  },
+  {
+    "topic_id": "B2C_114",
+    "audience": "paciente",
+    "specialty": "medicina_estetica",
+    "treatment_id": "bioestimuladores_colageno",
+    "angle": "seguridad",
+    "problem": "Tengo una enfermedad autoinmune (lupus, artritis): ¿me puedo aplicar bioestimuladores de colágeno?",
+    "value_proposition": "Están contraindicados en patologías autoinmunes activas por riesgo de granulomas; se evalúan alternativas no inmunogénicas.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Médico revisando historia clínica detallada en consulta de valoración.",
+    "information_requirements": [
+      "diagnostico_reumatologico_actual",
+      "medicamentos_inmunosupresores"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      4,
+      13,
+      19
+    ]
+  },
+  {
+    "topic_id": "B2C_115",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "protocolo_acne_cosmiatrico",
+    "angle": "curiosidad",
+    "problem": "Eritema post-inflamatorio (marcas rojas) vs Hiperpigmentación (marcas marrones) tras un grano.",
+    "value_proposition": "La marca roja son capilares dilatados tratables con niacinamida y luz calmante; la marrón es melanina que requiere despigmentantes.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Macro fotografía comparando mácula eritematosa vascular vs mácula pigmentaria melánica.",
+    "information_requirements": [
+      "antiguedad_de_las_marcas_de_acne"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_116",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "limpieza_facial",
+    "angle": "mitos",
+    "problem": "Mito: «Los poros de la piel se pueden abrir y cerrar con vapor y hielo».",
+    "value_proposition": "Los poros no son músculos, no tienen esfínteres; el vapor ablanda el sebo para facilitar la extracción y el frío descongestiona el edema.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Vaporizador de ozono funcionando en cabina mientras la cosmetóloga explica la estructura del folículo.",
+    "information_requirements": [
+      "nivel_de_congestion_sebacea"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_117",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "peelings_quimicos_superficiales",
+    "angle": "comparaciones",
+    "problem": "Exfoliación con café o azúcar en casa vs exfoliación química en cabina.",
+    "value_proposition": "Los granos de café tienen bordes filosos microscópicos que generan microdesgarros en la piel; los ácidos disuelven uniones de forma homogénea.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Microscopía simulada: aristas filosas del grano de café vs acción química suave del alfahidroxiácido.",
+    "information_requirements": [
+      "habitos_de_exfoliacion_casera"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_118",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "facial_express_hidratacion",
+    "angle": "seguridad",
+    "problem": "Piel con rosácea o cuperosis: qué tratamientos faciales están prohibidos y cuáles calman.",
+    "value_proposition": "Prohibido el vapor caliente, fricciones mecánicas y ácidos agresivos; indicados sueros con centella asiática, avena y frío descongestionante.",
+    "objective": "confianza",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Lámina dividida: lista roja de agentes irritantes vs lista verde de activos calmantes para rosácea.",
+    "information_requirements": [
+      "diagnostico_de_rosacea_o_piel_reactiva"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_119",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "limpieza_facial",
+    "angle": "experiencia",
+    "problem": "La técnica de la doble limpieza nocturna: por qué cambia la textura de las pieles con puntos negros.",
+    "value_proposition": "Un limpiador en aceite o bálsamo disuelve el protector solar y sebo; un limpiador acuoso retira sudor y partículas sin irritar.",
+    "objective": "educar",
+    "suggested_format": "demostracion",
+    "funnel_stage": "atencion",
+    "visual_brief": "Demostración de emulsión del aceite con agua volviéndose lechosa y enjuagando sin dejar rastro graso.",
+    "information_requirements": [
+      "uso_diario_de_maquillaje_o_fotoprotector_resistente"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7
+    ]
+  },
+  {
+    "topic_id": "B2C_120",
+    "audience": "paciente",
+    "specialty": "estetica_facial",
+    "treatment_id": "despigmentacion_manchas_faciales",
+    "angle": "experiencia",
+    "problem": "Manchas del embarazo (cloasma gravídico): cuándo es seguro empezar el tratamiento despigmentante.",
+    "value_proposition": "Tras finalizar el periodo de lactancia materna, cuando las hormonas se estabilizan y es seguro usar cosmecéuticos activos.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Cosmetóloga explicando las fases seguras de tratamiento postparto en cabina.",
+    "information_requirements": [
+      "estado_de_lactancia_materna"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      32
+    ]
+  },
+  {
+    "topic_id": "B2C_121",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "drenaje_linfatico_manual",
+    "angle": "experiencia",
+    "problem": "Piernas y tobillos hinchados al final del día por tomar pastillas anticonceptivas o trabajar sentada.",
+    "value_proposition": "El drenaje linfático manual activa el retorno linfático profundo y venoso, aliviando la pesadez y reduciendo el contorno del tobillo.",
+    "objective": "atraer",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma del tobillo y pierna recibiendo maniobras suaves de evacuación ganglionar.",
+    "information_requirements": [
+      "uso_de_anticonceptivos_orales_u_hormonas"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      33
+    ]
+  },
+  {
+    "topic_id": "B2C_122",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "masajes_moldeadores_manuales",
+    "angle": "preguntas",
+    "problem": "¿Puedo hacerme maderoterapia si tengo arañitas vasculares en las piernas?",
+    "value_proposition": "No se debe pasar madera ni presiones fuertes sobre telangiectasias porque el roce mecánico puede romper los capilares frágiles.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Primer plano de arañitas vasculares marcando la zona que se debe esquivar en masajes vigorosos.",
+    "information_requirements": [
+      "presencia_de_varices_o_telangiectasias"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_123",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "criolipolisis_adiposidad_localizada",
+    "angle": "captacion",
+    "problem": "Flancos masculinos («los gorditos del pantalón»): cómo eliminarlos en 1 sesión de criolipólisis.",
+    "value_proposition": "Diseño específico para hombres: aplicadores curvos que congelan la grasa lateral sin requerir incapacidad laboral.",
+    "objective": "conversion",
+    "suggested_format": "anuncio",
+    "funnel_stage": "decision",
+    "visual_brief": "Paciente masculino en camilla leyendo su celular tranquilamente durante el ciclo de frío.",
+    "information_requirements": [
+      "densidad_del_tejido_graso_lateral"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      34
+    ]
+  },
+  {
+    "topic_id": "B2C_124",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "drenaje_linfatico_manual",
+    "angle": "preguntas",
+    "problem": "¿Cuánto tiempo después de una cesárea se puede iniciar el drenaje linfático en abdomen?",
+    "value_proposition": "A partir de la semana 2 o 3 con autorización del obstetra, trabajando a distancia de la cicatriz quirúrgica.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Fisioterapeuta mostrando maniobras suaves y respetuosas alrededor del área abdominal.",
+    "information_requirements": [
+      "estado_de_cicatrizacion_de_la_herida_quirurgica"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      4,
+      33
+    ]
+  },
+  {
+    "topic_id": "B2C_125",
+    "audience": "paciente",
+    "specialty": "estetica_corporal",
+    "treatment_id": "tratamiento_celulitis_vacuoterapia",
+    "angle": "curiosidad",
+    "problem": "¿Por qué comer mucha sal acentúa los hoyuelos de la celulitis en 24 horas?",
+    "value_proposition": "El exceso de sodio retiene agua en el espacio intersticial, empujando las células grasas contra los tabiques de colágeno tensos.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Gráfico animado: tejido con edema acuoso tensando los hoyuelos vs tejido desinflamado.",
+    "information_requirements": [
+      "habitos_de_consumo_de_sodio"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_126",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_laser_diodo",
+    "angle": "preguntas",
+    "problem": "¿Por qué la sesión de depilación láser se siente más molesta durante la menstruación?",
+    "value_proposition": "La fluctuación de estrógenos y prostaglandinas baja el umbral del dolor y aumenta la sensibilidad de los receptores dérmicos.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Cosmetóloga recomendando en calendario agendar la sesión fuera de los días del periodo menstrual.",
+    "information_requirements": [
+      "fase_del_ciclo_menstrual"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      23
+    ]
+  },
+  {
+    "topic_id": "B2C_127",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_laser_diodo",
+    "angle": "experiencia",
+    "problem": "Axilas oscurecidas y manchadas por la cuchilla de afeitar: cómo el láser las aclara.",
+    "value_proposition": "Al eliminar el vello de raíz se acaba la irritación por fricción y el engrosamiento de la piel, devolviendo el tono natural de la axila.",
+    "objective": "atraer",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "Toma limpia de axila suave y uniforme con luz clara natural.",
+    "information_requirements": [
+      "grado_de_hiperpigmentacion_por_friccion"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      23,
+      24
+    ]
+  },
+  {
+    "topic_id": "B2C_128",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_laser_diodo",
+    "angle": "seguridad",
+    "problem": "¿Se puede hacer depilación láser en pieles morenas o negras sin quemarse?",
+    "value_proposition": "Sí; con equipos de láser diodo o Nd:YAG que utilizan pulsos largos para calentar el folículo profundo sin afectar la melanina de la epidermis.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Especialista configurando el ancho de pulso en pantalla táctil para fototipos altos.",
+    "information_requirements": [
+      "escala_de_fitzpatrick_fototipo_iv_a_vi"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      23,
+      25
+    ]
+  },
+  {
+    "topic_id": "B2C_129",
+    "audience": "paciente",
+    "specialty": "depilacion",
+    "treatment_id": "depilacion_cera_convencional",
+    "angle": "experiencia",
+    "problem": "Depilación con cera en zona íntima (bikini brasileño): cómo prepararse para minimizar el dolor.",
+    "value_proposition": "Exfoliar suavemente 24h antes, no tomar café antes de la cita y pedir cera elástica sin bandas para cuidar la piel.",
+    "objective": "confianza",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Checklist gráfico de preparación previa para depilación en cabina.",
+    "information_requirements": [
+      "tolerancia_al_dolor_y_longitud_del_vello"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      7,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2C_130",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "masaje_relajante_descontracturante",
+    "angle": "experiencia",
+    "problem": "Masaje craneofacial para personas que sufren de bruxismo y tensión por pantallas.",
+    "value_proposition": "Maniobras específicas sobre el cuero cabelludo, sienes y cuello que descongestionan la cabeza y alivian la fatiga ocular.",
+    "objective": "atraer",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "Presión suave y precisa con las yemas de los dedos en la zona temporal y cuero cabelludo con luz tenue.",
+    "information_requirements": [
+      "horas_de_trabajo_frente_a_pantallas"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_131",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "bonos_regalo_rituales_spa",
+    "angle": "captacion",
+    "problem": "Cumpleaños de tu mejor amiga: regálale una tarde de spa inolvidable.",
+    "value_proposition": "Paquete consentidor que incluye masaje relajante, exfoliación facial y copa de celebración en sala de relax.",
+    "objective": "conversion",
+    "suggested_format": "anuncio",
+    "funnel_stage": "decision",
+    "visual_brief": "Dos amigas sonrientes con batas blancas de spa disfrutando de un té en reposo.",
+    "information_requirements": [
+      "fecha_del_cumpleanos"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      9,
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_132",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "masajes_pareja_experiencias_spa",
+    "angle": "preguntas",
+    "problem": "¿Es verdad que el spa en pareja ayuda a reducir los conflictos causados por el estrés de la rutina?",
+    "value_proposition": "Compartir una hora de silencio y relajación profunda disminuye la reactividad emocional y favorece el diálogo afectivo.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Terapeuta de spa explicando el impacto de la desconexión sensorial en parejas en consulta.",
+    "information_requirements": [
+      "disponibilidad_de_agenda_para_dos"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2C_133",
+    "audience": "paciente",
+    "specialty": "spa_bienestar",
+    "treatment_id": "hidroterapia_exfoliacion_corporal",
+    "angle": "curiosidad",
+    "problem": "¿Por qué las sales de Epsom (sulfato de magnesio) en el jacuzzi alivian el dolor muscular?",
+    "value_proposition": "El magnesio se absorbe tópicamente facilitando la relajación de las fibras musculares contraídas y bajando la inflamación.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Sales blancas minerales cristalinas disolviéndose en el agua caliente del jacuzzi.",
+    "information_requirements": [
+      "ausencia_de_heridas_abiertas"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      38
+    ]
+  },
+  {
+    "topic_id": "B2B_008",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "anuncios_pauta",
+    "problem": "¿Cómo redactar anuncios en Meta Ads para estética sin que el algoritmo rechace la cuenta por políticas de salud?",
+    "value_proposition": "Eliminar el enfoque en defectos corporales y enfocarse en la ganancia positiva (frescura, bienestar, armonía) sin prometer resultados mágicos.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Captura de pantalla de la política de Meta Ads resaltando palabras permitidas vs palabras sancionadas.",
+    "information_requirements": [
+      "acceso_a_administrador_de_anuncios"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      5,
+      22,
+      31
+    ]
+  },
+  {
+    "topic_id": "B2B_009",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "anuncios_pauta",
+    "problem": "Por qué los anuncios con videos grabados por el médico superan en 3x a las fotos de stock en tasa de agendamiento.",
+    "value_proposition": "La confianza médica es personal; los pacientes buscan ponerse en manos de un profesional visible, no de un folleto publicitario genérico.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Especialista en su consultorio con bata explicando un procedimiento mirando directo al lente.",
+    "information_requirements": [
+      "disponibilidad_del_medico_para_grabar"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      22,
+      31
+    ]
+  },
+  {
+    "topic_id": "B2B_010",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "anuncios_pauta",
+    "problem": "Campañas de mensajes a WhatsApp que colapsan la recepción con \"curiosos\" que no tienen presupuesto.",
+    "value_proposition": "Implementar preguntas filtro de cualificación o formularios instantáneos que filtren por capacidad de pago antes de derivar al chat.",
+    "objective": "conversion",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Flujo visual: Anuncio → Pregunta filtro de cualificación → Chat con lead de alto valor.",
+    "information_requirements": [
+      "costo_por_lead_actual"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      22,
+      27
+    ]
+  },
+  {
+    "topic_id": "B2B_011",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "anuncios_pauta",
+    "problem": "Google Search vs Meta Ads: cuándo invertir en búsqueda de alta intención en estética.",
+    "value_proposition": "Google captura al paciente que ya decidió operarse y busca \"clínica en Bogotá\"; Meta despierta el deseo latente en quien hace scroll.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Comparativa gráfica entre captura de demanda existente (Google) vs generación de nueva demanda (Meta).",
+    "information_requirements": [
+      "presupuesto_mensual_de_pauta"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      26,
+      27
+    ]
+  },
+  {
+    "topic_id": "B2B_012",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "autoridad",
+    "problem": "La trampa del contenido viral: por qué tener millones de vistas en TikTok no siempre llena la agenda de la clínica.",
+    "value_proposition": "El humor y los bailes atraen público infantil o internacional; el contenido de criterio médico atrae pacientes locales con poder adquisitivo.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Gráfico comparando alcance geográfico disperso vs conversiones locales en el radio de la clínica.",
+    "information_requirements": [
+      "analisis_de_metricas_de_audiencia_local"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      22,
+      30
+    ]
+  },
+  {
+    "topic_id": "B2B_013",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "autoridad",
+    "problem": "Cómo mostrar la trastienda de la clínica (asepsia, desempacado y bioseguridad) como arma de venta ética.",
+    "value_proposition": "La transparencia del producto original y el rigor de habilitación convierten la desconfianza del sector clandestino en tu mayor fortaleza.",
+    "objective": "confianza",
+    "suggested_format": "broll",
+    "funnel_stage": "consideracion",
+    "visual_brief": "B-roll cinematográfico de la preparación del campo estéril y apertura del sello INVIMA frente a cámara.",
+    "information_requirements": [
+      "protocolos_de_asepsia_documentados"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2B_014",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "autoridad",
+    "problem": "Publicación de casos clínicos y la Ley de Ética Médica: cómo mostrar resultados sin infringir la ley.",
+    "value_proposition": "Consentimiento informado firmado para docencia/redes, iluminación homogénea idéntica, sin retoque digital de Photoshop (Ley 1480 y Ley 23).",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Checklist legal para publicación ética de casos de antes y después pareados.",
+    "information_requirements": [
+      "formato_de_consentimiento_informado_audiovisual"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "topic_id": "B2B_015",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "ventas_whatsapp",
+    "problem": "El error más costoso de la recepcionista: enviar el PDF con la lista de precios a quien solo preguntó \"¿cuánto cuesta?\".",
+    "value_proposition": "Entregar el precio frío sin diagnóstico destruye el valor; se debe responder con empatía, filtrar la necesidad y guiar hacia la valoración.",
+    "objective": "conversion",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Captura de chat con el guion erróneo («cuesta $1.200.000») vs el guion consultivo que agenda citas.",
+    "information_requirements": [
+      "tasa_actual_de_agendamiento_en_whatsapp"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      22,
+      30
+    ]
+  },
+  {
+    "topic_id": "B2B_016",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "ventas_whatsapp",
+    "problem": "Tiempo de respuesta en WhatsApp: la caída del 70% en conversión si tardas más de 15 minutos en responder.",
+    "value_proposition": "El paciente estético cotiza en 3 clínicas a la vez; quien responde con agilidad y calidez se queda con la cita de valoración.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Gráfico de embudo mostrando la caída drástica de agendamiento según minutos de demora en contestar.",
+    "information_requirements": [
+      "tiempo_promedio_de_primera_respuesta"
+    ],
+    "verification_status": "research_claim",
+    "citations": [
+      22,
+      30
+    ]
+  },
+  {
+    "topic_id": "B2B_017",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "ventas_whatsapp",
+    "problem": "Guion de 3 toques para reactivar conversaciones que dejaron en \"visto\" la propuesta de cita.",
+    "value_proposition": "Mensaje de seguimiento de cortesía a las 24 horas y oferta de cupo de agenda a las 72 horas recupera hasta un 22% de pacientes perdidos.",
+    "objective": "conversion",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Plantillas de texto listas para copiar y pegar en WhatsApp Business.",
+    "information_requirements": [
+      "base_de_chats_inactivos_en_whatsapp"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      22,
+      30
+    ]
+  },
+  {
+    "topic_id": "B2B_018",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "operaciones_agenda",
+    "problem": "La fuga silenciosa de dinero: cómo calcular el impacto de un 25% de ausentismo (no-shows) en tu clínica.",
+    "value_proposition": "Cada hora de cabina vacía sigue pagando arriendo y nómina; calcular tu costo fijo horario demuestra la urgencia de cobrar depósito.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Fórmula matemática del costo fijo por hora de cabina desocupada en pantalla.",
+    "information_requirements": [
+      "gastos_fijos_mensuales",
+      "horas_de_operacion_de_cabina"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      28
+    ]
+  },
+  {
+    "topic_id": "B2B_019",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "operaciones_agenda",
+    "problem": "Cobro de depósito o abono previo para apartar cita de valoración: cómo implementarlo sin perder pacientes.",
+    "value_proposition": "Comunicarlo como un abono abonable al tratamiento final filtra a los curiosos no calificados y reduce el ausentismo a menos del 5%.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Directora de clínica explicando el protocolo de pago seguro con enlace de pasarela local.",
+    "information_requirements": [
+      "pasarela_de_pagos_digital_habilitada"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      28,
+      30
+    ]
+  },
+  {
+    "topic_id": "B2B_020",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "operaciones_agenda",
+    "problem": "Secuencia automatizada de confirmación por WhatsApp a 48h, 24h y 2h antes de la cita.",
+    "value_proposition": "Solicitar confirmación con botón \"Confirmo mi asistencia\" permite liberar con anticipación los cupos cancelados.",
+    "objective": "conversion",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Cronograma visual de los tres mensajes automatizados previos a la cita médica.",
+    "information_requirements": [
+      "software_de_agenda_o_crm_con_api_whatsapp"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      22,
+      28
+    ]
+  },
+  {
+    "topic_id": "B2B_021",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "seo_local_reputacion",
+    "problem": "Cómo aparecer en el \"Local Pack\" de los primeros 3 resultados de Google Maps en tu ciudad.",
+    "value_proposition": "Completar el 100% de la categoría principal, subir fotos reales geolocalizadas y acumular reseñas con palabras clave del servicio.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Captura de pantalla de la búsqueda en Google Maps mostrando las 3 clínicas destacadas arriba.",
+    "information_requirements": [
+      "ficha_verificada_en_google_business_profile"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      26,
+      27
+    ]
+  },
+  {
+    "topic_id": "B2B_022",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "seo_local_reputacion",
+    "problem": "Protocolo para pedir reseñas de 5 estrellas en Google al paciente satisfecho antes de salir de la clínica.",
+    "value_proposition": "Tener una placa acrílica con código QR directo en recepción y enviar el enlace por WhatsApp justo tras la cita multiplica por 4 las reseñas.",
+    "objective": "conversion",
+    "suggested_format": "demostracion",
+    "funnel_stage": "retencion",
+    "visual_brief": "Paciente escaneando con su celular el código QR elegante en el mostrador de recepción.",
+    "information_requirements": [
+      "enlace_corto_directo_a_resenas_de_google"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      26,
+      30
+    ]
+  },
+  {
+    "topic_id": "B2B_023",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "seo_local_reputacion",
+    "problem": "Cómo responder profesionalmente a una reseña negativa o injusta de 1 estrella en Google.",
+    "value_proposition": "Nunca responder con agresión; agradecer el comentario, lamentar la discrepancia y ofrecer resolver el caso por canal privado médico.",
+    "objective": "confianza",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Ejemplo de respuesta modelo impecable que genera confianza en los futuros pacientes que leen.",
+    "information_requirements": [
+      "protocolo_de_atencion_al_usuario_pqrs"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      9,
+      30
+    ]
+  },
+  {
+    "topic_id": "B2B_024",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "fidelizacion_ltv",
+    "problem": "El calendario de reactivación a los 4 y 6 meses: por qué el 60% de tus ingresos debe provenir de pacientes recurrentes.",
+    "value_proposition": "Adquirir un paciente nuevo cuesta 5 veces más que reactivar a uno que ya confía en tu mano; automatiza el recordatorio de retoque.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "retencion",
+    "visual_brief": "Línea de tiempo de la relación con el paciente: Inyección → Control a los 15 días → Mensaje a los 5 meses.",
+    "information_requirements": [
+      "base_de_datos_con_fechas_de_tratamiento"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      22,
+      28
+    ]
+  },
+  {
+    "topic_id": "B2B_025",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "fidelizacion_ltv",
+    "problem": "Cómo diseñar una membresía o suscripción anual de cuidado facial para tener flujo de caja predecible.",
+    "value_proposition": "Cobro recurrente mensual que incluye una higiene dérmica y descuento exclusivo en inyectables médicos.",
+    "objective": "conversion",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Estructura de niveles de membresía (Silver, Gold, Platinum) para centros estéticos.",
+    "information_requirements": [
+      "capacidad_instalada_disponible_en_cabinas"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      28
+    ]
+  },
+  {
+    "topic_id": "B2B_026",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "fidelizacion_ltv",
+    "problem": "Protocolo de seguimiento post-consulta a las 24 horas y cita de control obligatoria a los 15 días.",
+    "value_proposition": "La llamada o mensaje de control de enfermería para verificar la evolución y resolver dudas consolida la lealtad y previene reclamos.",
+    "objective": "confianza",
+    "suggested_format": "talking_head",
+    "funnel_stage": "retencion",
+    "visual_brief": "Enfermera en cabina realizando llamada de seguimiento con la ficha clínica abierta.",
+    "information_requirements": [
+      "protocolo_de_seguimiento_clinico"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      4,
+      8
+    ]
+  },
+  {
+    "topic_id": "B2B_027",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "gestion_financiera",
+    "problem": "El error de fijar precios copiando las tarifas de la clínica de enfrente.",
+    "value_proposition": "Si tu competidor tiene arriendo más bajo o usa productos sin registro, copiar su precio destruirá tu margen operativo sin que lo notes.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Consultor financiero explicando el margen de contribución unitario frente a una calculadora.",
+    "information_requirements": [
+      "costos_directos_de_insumos_por_sesion"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      28
+    ]
+  },
+  {
+    "topic_id": "B2B_028",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "gestion_financiera",
+    "problem": "Cómo calcular el Costo por Hora de Cabina Ocupada (arriendo + nómina + depreciación + servicios).",
+    "value_proposition": "Conocer que tu cabina cuesta $85.000 COP por hora activa te impide vender servicios que no alcancen a cubrir el costo base.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Desglose en gráfico de torta de los costos fijos horarios de una cabina médica.",
+    "information_requirements": [
+      "estado_financiero_mensual_del_centro"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      28
+    ]
+  },
+  {
+    "topic_id": "B2B_029",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "gestion_financiera",
+    "problem": "Comprar equipo propio vs Rentar aparatología por días en fase de validación de un servicio.",
+    "value_proposition": "Alquilar permite medir la demanda real de los pacientes antes de endeudarse con un crédito o leasing de $150 millones de pesos.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Comparativa financiera de la Calculadora de Aparatología de Gloss Growth.",
+    "information_requirements": [
+      "tarifa_diaria_de_alquiler_de_maquinaria"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      28,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2B_030",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "normativa_legal",
+    "problem": "Los 7 estándares obligatorios del Sistema Único de Habilitación (Resolución 3100 de 2019) para consultorios estéticos.",
+    "value_proposition": "Talento humano titulado, infraestructura con pisos lavables, dotación calibrada, medicamentos con INVIMA, procesos prioritarios e historia clínica.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "atencion",
+    "visual_brief": "Lista de verificación oficial de la Secretaría de Salud para visitas de inspección y vigilancia.",
+    "information_requirements": [
+      "codigo_reps_de_la_sede"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2B_031",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "normativa_legal",
+    "problem": "El riesgo de cierre y demandas penales por permitir que cosmetólogas apliquen inyectables (Ley 711 de 2001).",
+    "value_proposition": "La ley prohíbe taxativamente procedimientos invasivos en manos no médicas; la responsabilidad civil y penal recae directamente sobre el dueño del centro.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "atencion",
+    "visual_brief": "Artículo exacto de la Ley 711 proyectado en pantalla con advertencia jurídica.",
+    "information_requirements": [
+      "titulacion_academica_del_personal_contratado"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      7,
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2B_032",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "normativa_legal",
+    "problem": "Manejo de residuos biosanitarios y cortopunzantes: cómo evitar sanciones de la Secretaría de Salud.",
+    "value_proposition": "Contrato vigente con empresa de recolección de riesgo biológico, guardián rígido para agujas con fecha de cierre y ruta sanitaria interna señalizada.",
+    "objective": "educar",
+    "suggested_format": "demostracion",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Guardián rojo para descarte de agujas y bolsa roja de residuos biosanitarios debidamente rotulada.",
+    "information_requirements": [
+      "contrato_pgirh_vigente"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      8,
+      29
+    ]
+  },
+  {
+    "topic_id": "B2B_033",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "normativa_legal",
+    "problem": "Consentimiento informado digital con firma biométrica: cómo blindar legalmente al médico y a la clínica.",
+    "value_proposition": "Firmar digitalmente con registro de IP, fecha y lectura de riesgos específicos del procedimiento evita disputas legales por expectativas no cumplidas.",
+    "objective": "confianza",
+    "suggested_format": "carrusel",
+    "funnel_stage": "decision",
+    "visual_brief": "Paciente firmando consentimiento informado en tableta con lápiz óptico en sala de espera.",
+    "information_requirements": [
+      "software_de_firma_digital_homologado"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      4,
+      7,
+      9
+    ]
+  },
+  {
+    "topic_id": "B2B_034",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "gestion_financiera",
+    "problem": "Cuándo y cómo subir los precios en tu centro estético sin provocar fuga masiva de pacientes.",
+    "value_proposition": "Avisar con 30 días de antelación ofreciendo pre-compra de paquetes a tarifa anterior recompensa la lealtad y genera un pico de liquidez inmediata.",
+    "objective": "conversion",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Directora financiera explicando la estrategia de ventana de oportunidad previa al reajuste de precios.",
+    "information_requirements": [
+      "margen_operativo_y_tasa_de_inflacion"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      28
+    ]
+  },
+  {
+    "topic_id": "B2B_035",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "anuncios_pauta",
+    "problem": "Cómo medir el ROAS real (Retorno de Inversión en Publicidad) deduciendo el costo del insumo médico.",
+    "value_proposition": "Un ROAS de 4x en facturación bruta puede ser negativo si no descuentas el costo de los viales de toxina o jeringas de ácido hialurónico.",
+    "objective": "educar",
+    "suggested_format": "carrusel",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Uso de la Calculadora de ROAS y Punto de Equilibrio de Gloss Growth en pantalla.",
+    "information_requirements": [
+      "costo_por_miligramo_o_ml_del_laboratorio"
+    ],
+    "verification_status": "verified",
+    "citations": [
+      22,
+      28
+    ]
+  },
+  {
+    "topic_id": "B2B_036",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "fidelizacion_ltv",
+    "problem": "Los primeros 5 minutos en recepción: el protocolo de bienvenida que condiciona la recompra del paciente.",
+    "value_proposition": "Ofrecer infusión botánica, llamar al paciente por su nombre y puntualidad exacta en la cita elevan la percepción de valor y predisponen a la compra.",
+    "objective": "confianza",
+    "suggested_format": "broll",
+    "funnel_stage": "atencion",
+    "visual_brief": "Recepcionista recibiendo amablemente al paciente en un lobby limpio con aroma corporativo sutil.",
+    "information_requirements": [
+      "manual_de_servicio_al_cliente_en_recepcion"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      30
+    ]
+  },
+  {
+    "topic_id": "B2B_037",
+    "audience": "responsable_negocio",
+    "specialty": "negocio_marketing",
+    "treatment_id": null,
+    "angle": "operaciones_agenda",
+    "problem": "El síndrome del médico esclavo de su consultorio: qué tareas delegar para duplicar la facturación.",
+    "value_proposition": "Delegar confirmaciones, cotizaciones básicas y seguimiento en equipo auxiliar libera al médico para concentrarse 100% en cabina y diagnóstico.",
+    "objective": "educar",
+    "suggested_format": "talking_head",
+    "funnel_stage": "consideracion",
+    "visual_brief": "Matriz de Eisenhower aplicada a la gestión de tiempo de un médico estético o dueño de clínica.",
+    "information_requirements": [
+      "organigrama_del_equipo_clinico"
+    ],
+    "verification_status": "editorial_topic",
+    "citations": [
+      28,
+      30
+    ]
+  }
+]

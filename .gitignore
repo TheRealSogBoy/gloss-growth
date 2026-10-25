@@ -6,3 +6,12 @@ node_modules/
 Thumbs.db
 .DS_Store
 
+# Directorios de trabajo local y previsualización
+Historial versiones/
+VERSION_SELECCIONADA.md
+gloss-flat-assets-v2/
+gloss-web-expansion-preview/
+redesign-v2/
+*-Juan-David-Hurtado.html
+politica-de-privacidad/index-Juan-David-Hurtado.html
+terminos-del-servicio/index-Juan-David-Hurtado.html

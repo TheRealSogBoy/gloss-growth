@@ -1,0 +1,415 @@
+{
+  "archetypes": [
+    {
+      "id": "NEWS",
+      "nombre": "La Gran Noticia",
+      "descripcion": "Comunica una actualización normativa, sanitaria o corporativa real sin transformar conjeturas en titulares sensacionalistas.",
+      "diapositivas_recomendadas": {
+        "min": 5,
+        "max": 7
+      },
+      "estilo_visual_recomendado": "Tipografía sobria, estilo editorial de prensa médica, fondos neutros sin saturación.",
+      "micro_hooks_deslizamiento": [
+        "Desliza para ver a quiénes aplica esta medida",
+        "El detalle normativo que cambia a partir de este mes",
+        "Lo que tu clínica debe verificar hoy mismo"
+      ],
+      "mejores_usos_esteticos": [
+        "Actualizaciones de normatividad sanitaria (INVIMA / REPS)",
+        "Nuevas autorizaciones de aparatología",
+        "Políticas de publicidad médica"
+      ],
+      "secuencia_roles": [
+        {
+          "slide_number": 1,
+          "role": "PORTADA",
+          "proposito": "Titular sobrio: el hecho relevante verificado"
+        },
+        {
+          "slide_number": 2,
+          "role": "SEGUNDO_GANCHO",
+          "proposito": "A quién afecta directamente y por qué debe prestar atención"
+        },
+        {
+          "slide_number": 3,
+          "role": "DESARROLLO",
+          "proposito": "Qué se sabe con total certeza según la fuente oficial"
+        },
+        {
+          "slide_number": 4,
+          "role": "DESARROLLO",
+          "proposito": "Qué cambia en la práctica (condiciones, plazos y alcance)"
+        },
+        {
+          "slide_number": 5,
+          "role": "INSIGHT",
+          "proposito": "Qué aún no aplica o qué mitos han surgido al respecto"
+        },
+        {
+          "slide_number": 6,
+          "role": "CTA",
+          "proposito": "Conclusión, cita de la fuente legal y llamado a guardar/compartir"
+        }
+      ]
+    },
+    {
+      "id": "JOURNAL",
+      "nombre": "Collage / Diario Personal",
+      "descripcion": "Construye un recorrido auténtico con textura humana, documentando la preparación de una jornada de atención o experiencia de spa.",
+      "diapositivas_recomendadas": {
+        "min": 5,
+        "max": 7
+      },
+      "estilo_visual_recomendado": "Fotografía orgánica de cabina, texturas de materiales, paleta cálida, recortes sin artificios digitales.",
+      "micro_hooks_deslizamiento": [
+        "Mira cómo preparamos cada detalle antes de abrir la cabina",
+        "El paso que garantiza el confort del paciente",
+        "El resultado de cuidar cada detalle del ritual"
+      ],
+      "mejores_usos_esteticos": [
+        "Preparación de rituales spa y relajación",
+        "Un día en la clínica estética",
+        "Organización de una jornada de inyectables"
+      ],
+      "secuencia_roles": [
+        {
+          "slide_number": 1,
+          "role": "PORTADA",
+          "proposito": "Frase de observación humana y recorte visual de ambiente"
+        },
+        {
+          "slide_number": 2,
+          "role": "SEGUNDO_GANCHO",
+          "proposito": "Contexto: dónde estamos y qué experiencia se está preparando"
+        },
+        {
+          "slide_number": 3,
+          "role": "DESARROLLO",
+          "proposito": "Momento 1: la selección de aceites, aromas o insumos estériles"
+        },
+        {
+          "slide_number": 4,
+          "role": "DESARROLLO",
+          "proposito": "Momento 2: la ambientación térmica y acústica de la cabina"
+        },
+        {
+          "slide_number": 5,
+          "role": "PRUEBA_O_EJEMPLO",
+          "proposito": "Detalle significativo o aprendizaje del equipo"
+        },
+        {
+          "slide_number": 6,
+          "role": "CTA",
+          "proposito": "Cierre evocador y enlace para reservar la experiencia"
+        }
+      ]
+    },
+    {
+      "id": "CARTOON",
+      "nombre": "Meme Cartoon / Situacional",
+      "descripcion": "Genera reconocimiento inmediato mediante humor situacional respetuoso sobre confusiones habituales del sector.",
+      "diapositivas_recomendadas": {
+        "min": 5,
+        "max": 6
+      },
+      "estilo_visual_recomendado": "Ilustraciones sencillas, viñetas de cómic, contraste cromático limpio, tipografía legible.",
+      "micro_hooks_deslizamiento": [
+        "Lo que imaginabas vs lo que realmente pasa",
+        "La explicación científica detrás del meme",
+        "Cómo evitar este error en tu próxima cita"
+      ],
+      "mejores_usos_esteticos": [
+        "Expectativa vs realidad en cuidado facial",
+        "Dueño de clínica que confunde mensajes con ventas",
+        "El paciente que se exprime un granito antes del evento"
+      ],
+      "secuencia_roles": [
+        {
+          "slide_number": 1,
+          "role": "PORTADA",
+          "proposito": "Situación cotidiana altamente reconocible"
+        },
+        {
+          "slide_number": 2,
+          "role": "SEGUNDO_GANCHO",
+          "proposito": "La expectativa caricaturizada («lo que creías»)"
+        },
+        {
+          "slide_number": 3,
+          "role": "DESARROLLO",
+          "proposito": "El choque con la realidad («lo que en verdad sucede»)"
+        },
+        {
+          "slide_number": 4,
+          "role": "INSIGHT",
+          "proposito": "Explicación técnica o criterio médico que lo resuelve"
+        },
+        {
+          "slide_number": 5,
+          "role": "CTA",
+          "proposito": "Remate educativo y llamado a comentar con quién se identifica"
+        }
+      ]
+    },
+    {
+      "id": "RESOURCE_LIST",
+      "nombre": "Recopilación de Recursos / Herramientas",
+      "descripcion": "Maximiza la utilidad práctica entregando listas accionables, checklists de seguridad o preguntas indispensables para la consulta.",
+      "diapositivas_recomendadas": {
+        "min": 6,
+        "max": 10
+      },
+      "estilo_visual_recomendado": "Diseño estructurado en tarjetas, numeración visible, iconos claros, jerarquía tipográfica impecable.",
+      "micro_hooks_deslizamiento": [
+        "El punto número 3 es el que más olvidan revisar",
+        "Desliza para ver la lista completa con fuentes",
+        "Guarda este recurso para llevarlo a tu cita"
+      ],
+      "mejores_usos_esteticos": [
+        "Preguntas para hacerle a tu médico en valoración",
+        "Checklist de cuidados post-peeling",
+        "Indicadores clave que todo centro debe medir"
+      ],
+      "secuencia_roles": [
+        {
+          "slide_number": 1,
+          "role": "PORTADA",
+          "proposito": "Promesa de utilidad práctica con número específico de elementos"
+        },
+        {
+          "slide_number": 2,
+          "role": "SEGUNDO_GANCHO",
+          "proposito": "El problema recurrente y a quién ayuda exactamente esta guía"
+        },
+        {
+          "slide_number": 3,
+          "role": "DESARROLLO",
+          "proposito": "Recurso / Criterio 1 detallado con aplicación práctica"
+        },
+        {
+          "slide_number": 4,
+          "role": "DESARROLLO",
+          "proposito": "Recurso / Criterio 2 con advertencia común"
+        },
+        {
+          "slide_number": 5,
+          "role": "DESARROLLO",
+          "proposito": "Recurso / Criterio 3 con respaldo normativo o técnico"
+        },
+        {
+          "slide_number": 6,
+          "role": "PRUEBA_O_EJEMPLO",
+          "proposito": "Resumen en formato checklist accionable"
+        },
+        {
+          "slide_number": 7,
+          "role": "CTA",
+          "proposito": "Llamado directo a guardar el carrusel o compartirlo"
+        }
+      ]
+    },
+    {
+      "id": "SPLIT_VERSUS",
+      "nombre": "Versus / Pantalla Dividida",
+      "descripcion": "Ayuda a comparar dos opciones estéticas o tecnológicas sin forzar un \"ganador\" engañoso, delimitando cuándo conviene cada una.",
+      "diapositivas_recomendadas": {
+        "min": 6,
+        "max": 8
+      },
+      "estilo_visual_recomendado": "División vertical u horizontal bicolor, tablas comparativas limpias, elementos contrastados.",
+      "micro_hooks_deslizamiento": [
+        "Mira en qué caso específico gana la opción B",
+        "La diferencia de precio vs la diferencia de duración",
+        "El criterio anatómico para tomar la decisión"
+      ],
+      "mejores_usos_esteticos": [
+        "Láser Diodo vs Luz Pulsada (IPL)",
+        "Toxina Botulínica vs Ácido Hialurónico",
+        "Comprar equipo propio vs Rentar por días"
+      ],
+      "secuencia_roles": [
+        {
+          "slide_number": 1,
+          "role": "PORTADA",
+          "proposito": "Las dos alternativas enfrentadas y el criterio de decisión central"
+        },
+        {
+          "slide_number": 2,
+          "role": "SEGUNDO_GANCHO",
+          "proposito": "Por qué compararlas de forma superficial suele inducir a error"
+        },
+        {
+          "slide_number": 3,
+          "role": "DESARROLLO",
+          "proposito": "Cuándo tiene todo el sentido elegir la Opción A"
+        },
+        {
+          "slide_number": 4,
+          "role": "DESARROLLO",
+          "proposito": "Cuándo la Opción B es la indicación correcta"
+        },
+        {
+          "slide_number": 5,
+          "role": "PRUEBA_O_EJEMPLO",
+          "proposito": "Comparación frente a frente en durabilidad, costo y recuperación"
+        },
+        {
+          "slide_number": 6,
+          "role": "INSIGHT",
+          "proposito": "Criterio definitivo para elegir con tu especialista"
+        },
+        {
+          "slide_number": 7,
+          "role": "CTA",
+          "proposito": "Invitación a solicitar valoración personalizada"
+        }
+      ]
+    },
+    {
+      "id": "INTERACTIVE_TEST",
+      "nombre": "Test Interactivo / Autoevaluación",
+      "descripcion": "Invita a evaluar hábitos, conocimientos o preferencias recreativas, aclarando que no reemplaza un diagnóstico médico.",
+      "diapositivas_recomendadas": {
+        "min": 6,
+        "max": 8
+      },
+      "estilo_visual_recomendado": "Diseño estilo quiz o trivia, botones A/B/C destacados, barras de progreso visual.",
+      "micro_hooks_deslizamiento": [
+        "Suma tus puntos y descubre tu perfil en la lámina final",
+        "¿Respondiste mayormente B? Desliza para ver qué significa",
+        "El error que casi todos cometen en la pregunta 2"
+      ],
+      "mejores_usos_esteticos": [
+        "¿Qué tipo de fotoprotector necesita tu estilo de vida?",
+        "Test de hábitos que dañan tu barrera cutánea",
+        "¿Tu centro está perdiendo dinero en WhatsApp?"
+      ],
+      "secuencia_roles": [
+        {
+          "slide_number": 1,
+          "role": "PORTADA",
+          "proposito": "Pregunta desafiante que invita al reto inmediato"
+        },
+        {
+          "slide_number": 2,
+          "role": "SEGUNDO_GANCHO",
+          "proposito": "Reglas simples del test: responde sinceramente"
+        },
+        {
+          "slide_number": 3,
+          "role": "DESARROLLO",
+          "proposito": "Pregunta 1 con 3 opciones diferenciadas"
+        },
+        {
+          "slide_number": 4,
+          "role": "DESARROLLO",
+          "proposito": "Pregunta 2 enfocada en hábitos o situaciones"
+        },
+        {
+          "slide_number": 5,
+          "role": "DESARROLLO",
+          "proposito": "Pregunta 3 sobre prioridades o decisiones pasadas"
+        },
+        {
+          "slide_number": 6,
+          "role": "INSIGHT",
+          "proposito": "Interpretación de resultados según mayoría de A, B o C"
+        },
+        {
+          "slide_number": 7,
+          "role": "CTA",
+          "proposito": "Llamado a comentar el resultado obtenido o consultar con el experto"
+        }
+      ]
+    },
+    {
+      "id": "TYPES_OF_X",
+      "nombre": "Tipos de X / Clasificación",
+      "descripcion": "Clasifica perfiles, necesidades o tipologías estéticas para que la persona identifique su caso y comprenda su abordaje.",
+      "diapositivas_recomendadas": {
+        "min": 6,
+        "max": 8
+      },
+      "estilo_visual_recomendado": "Tarjetas individuales para cada tipo, ilustraciones o fotos representativas, código de color distintivo.",
+      "micro_hooks_deslizamiento": [
+        "El tipo 3 es el que requiere mayor cuidado médico",
+        "Descubre cuál es tu patrón facial antes de elegir",
+        "Mira cómo se trata cada tipología"
+      ],
+      "mejores_usos_esteticos": [
+        "Los 4 tipos de manchas faciales y cómo diferenciarlas",
+        "Tipos de flacidez corporal y qué tecnología responde mejor",
+        "Perfiles de clínicas según su gestión de agenda"
+      ],
+      "secuencia_roles": [
+        {
+          "slide_number": 1,
+          "role": "PORTADA",
+          "proposito": "Título de la clasificación con el número exacto de tipologías"
+        },
+        {
+          "slide_number": 2,
+          "role": "SEGUNDO_GANCHO",
+          "proposito": "Por qué no todas responden al mismo tratamiento"
+        },
+        {
+          "slide_number": 3,
+          "role": "DESARROLLO",
+          "proposito": "Tipo 1: Características, causa principal y tratamiento idóneo"
+        },
+        {
+          "slide_number": 4,
+          "role": "DESARROLLO",
+          "proposito": "Tipo 2: Características diferenciales y qué evitar"
+        },
+        {
+          "slide_number": 5,
+          "role": "DESARROLLO",
+          "proposito": "Tipo 3: Abordaje combinado recomendado"
+        },
+        {
+          "slide_number": 6,
+          "role": "INSIGHT",
+          "proposito": "Cómo determinar con precisión cuál es tu tipo en consulta"
+        },
+        {
+          "slide_number": 7,
+          "role": "CTA",
+          "proposito": "Llamado a agendar valoración para diseño de protocolo"
+        }
+      ]
+    }
+  ],
+  "slide_roles": [
+    {
+      "role": "PORTADA",
+      "posicion_sugerida": "Slide 1",
+      "funcion": "Detener el scroll con titular intrigante y diseño limpio."
+    },
+    {
+      "role": "SEGUNDO_GANCHO",
+      "posicion_sugerida": "Slide 2",
+      "funcion": "Fijar la atención explicando a quién ayuda y por qué importa."
+    },
+    {
+      "role": "DESARROLLO",
+      "posicion_sugerida": "Slides intermedias",
+      "funcion": "Entregar la carne del contenido, datos y explicaciones paso a paso."
+    },
+    {
+      "role": "PRUEBA_O_EJEMPLO",
+      "posicion_sugerida": "Slide penúltima o de soporte",
+      "funcion": "Aportar evidencia visual, comparativa o checklist sintetizado."
+    },
+    {
+      "role": "INSIGHT",
+      "posicion_sugerida": "Slide de revelación",
+      "funcion": "Conclusión de alto impacto o criterio técnico diferenciador."
+    },
+    {
+      "role": "CTA",
+      "posicion_sugerida": "Slide final",
+      "funcion": "Llamado a la acción: guardar, compartir o agendar valoración."
+    }
+  ]
+}

@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KBSJJ2LSLT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KBSJJ2LSLT');
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1551818823651884');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Simulador de Capacidad Instalada y Ocupación | Centro de Recursos Gloss Growth</title>
+<meta content="Calcula cuántas atenciones mensuales puede realizar tu negocio según profesionales, cabinas y duración, conoce tu tasa de ocupación real y simula el impacto en facturación al optimizar tus horarios." name="description"/>
+<meta content="Gloss Growth" name="author"/>
+<link href="https://glossgrowthhq.com/recursos/capacidad-instalada/" rel="canonical"/>
+<link href="../../brand/symbol-burgundy.svg" rel="icon" type="image/svg+xml"/>
+<meta content="website" property="og:type"/>
+<meta content="https://glossgrowthhq.com/recursos/capacidad-instalada/" property="og:url"/>
+<meta content="Simulador de Capacidad Instalada y Ocupación | Gloss Growth" property="og:title"/>
+<meta content="Conoce la capacidad operativa de tu spa, centro de estética o clínica. Mide tu ocupación actual, espacios disponibles y simula escenarios de ingresos." property="og:description"/>
+<meta content="Gloss Growth" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Simulador de Capacidad Instalada y Ocupación | Gloss Growth" name="twitter:title"/>
+<meta content="Herramienta analítica de capacidad y agenda para el sector estético." name="twitter:description"/>
+
+<link href="../../homepage.css" rel="stylesheet"/>
+<link href="../../expansion.css" rel="stylesheet"/>
+<link href="../../motion.css?v=1" rel="stylesheet"/>
+<link href="../currency-picker.css" rel="stylesheet"/>
+<link href="../shared-storage.css" rel="stylesheet"/>
+<link href="capacidad.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="../../" aria-label="Gloss Growth, inicio">
+      <img src="../../brand/horizontal-burgundy.svg" alt="Gloss Growth" loading="eager" decoding="async">
+    </a>
+    <nav id="main-nav" aria-label="Navegación principal">
+      <a href="../../">Inicio</a>
+      <a href="../../metodo/">Método Gloss</a>
+      <a href="../../servicios/">Servicios y Planes</a>
+      <a href="../../resultados/">Resultados y Casos</a>
+      <a href="../" aria-current="page">Recursos</a>
+      <a href="../../nosotros/">Nosotros</a>
+    </nav>
+    <button class="btn" id="navbarCta" type="button" onclick="openWAModal()">Solicitar diagnóstico <span aria-hidden="true">↗</span></button>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" type="button">Menú <span aria-hidden="true">☰</span></button>
+  </div>
+</header>
+
+<main id="inicio" tabindex="-1">
+  <!-- HERO PRINCIPAL DE LA HERRAMIENTA -->
+  <section class="cap-page-hero">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Migas de pan">
+        <a href="../../">Inicio</a>
+        <span aria-hidden="true">/</span>
+        <a href="../">Recursos</a>
+        <span aria-hidden="true">/</span>
+        <span>Simulador de Capacidad Instalada</span>
+      </nav>
+
+      <p class="eyebrow">Centro de Recursos · Finanzas y Gestión Operativa</p>
+      <h1>Simulador de <em>Capacidad Instalada y Ocupación</em></h1>
+      <p class="lead">Calcula cuántas atenciones mensuales puede realizar tu negocio según profesionales, cabinas y duración, conoce tu tasa de ocupación real y simula el impacto en facturación al optimizar tus horarios.</p>
+
+      <!-- BARRA DE ESCENARIOS DE PRUEBA / PRESETS -->
+      <div class="cap-preset-bar" role="region" aria-label="Cargar escenarios rápidos">
+        <span class="preset-title"><span aria-hidden="true">⚡</span> Cargar ejemplo:</span>
+        <button class="cap-preset-btn" type="button" data-preset="casoA">Caso A: Spa Masaje (2 prof. / 2 cabinas / 6h)</button>
+        <button class="cap-preset-btn" type="button" data-preset="casoB">Caso B: Limitación de profesionales (1 prof. / 2 cabinas)</button>
+        <button class="cap-preset-btn" type="button" data-preset="casoC">Caso C: Limitación de cabina (2 prof. / 1 cabina / 50m)</button>
+        <button class="cap-preset-btn" type="button" data-preset="casoD">Caso D: Masaje en pareja (2 prof. por cita)</button>
+        <button class="cap-preset-btn" type="button" data-preset="casoE">Caso E: Cero atenciones</button>
+        <button class="cap-preset-btn btn-reset" type="button" id="cap-btn-reset">Restablecer valores</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN INTERACTIVA PRINCIPAL -->
+  <section class="section" style="padding-top:28px;">
+    <div class="wrap">
+
+      <!-- BARRA SUPERIOR: SELECTOR DE MODO + MONEDA + ALMACENAMIENTO -->
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:24px; padding-bottom:18px; border-bottom:1px solid var(--cap-border-light);">
+        <div class="cap-mode-nav" role="tablist" aria-label="Modo de simulación">
+          <button class="cap-mode-btn active" id="cap-mode-basic" type="button" role="tab" aria-selected="true">01. Modo Básico</button>
+          <button class="cap-mode-btn" id="cap-mode-advanced" type="button" role="tab" aria-selected="false">02. Modo Avanzado (Multi-recursos y Horarios)</button>
+        </div>
+        <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+          <div id="cap-currency-picker-container"></div>
+          <div id="cap-storage-container"></div>
+        </div>
+      </div>
+
+      <!-- ===================================================================
+           VISTA 1: MODO BÁSICO
+           =================================================================== -->
+      <div id="cap-view-basic">
+        <div class="cap-main-grid">
+          <!-- COLUMNA IZQUIERDA: FORMULARIOS (PASO 1 Y PASO 2) -->
+          <div class="cap-form-column">
+
+            <!-- PASO 1: CÓMO FUNCIONA TU NEGOCIO -->
+            <article class="cap-step-card">
+              <header class="cap-step-header">
+                <span class="cap-step-num">1</span>
+                <div>
+                  <h2>Cuéntanos cómo funciona tu negocio</h2>
+                  <p>Configura profesionales, cabinas, horarios y tiempos de atención.</p>
+                </div>
+              </header>
+
+              <!-- Nombre del Negocio (Opcional) -->
+              <div class="cap-field-group">
+                <label class="cap-label" for="cap-business-name">
+                  Nombre del negocio
+                </label>
+                <div class="cap-input-wrap">
+                  <input class="cap-input" id="cap-business-name" type="text" placeholder="Escribe el nombre de tu clínica o centro estético" maxlength="120">
+                </div>
+                <span class="cap-help-text">Opcional. Identifica tu clínica o centro en los reportes exportados y en el resumen copiado.</span>
+              </div>
+
+              <!-- Campo 1: Profesionales disponibles -->
+              <div class="cap-field-group">
+                <label class="cap-label" for="cap-prof">
+                  ¿Cuántos profesionales atienden este servicio? <span class="req">*</span>
+                </label>
+                <div class="cap-input-wrap">
+                  <input class="cap-input" id="cap-prof" type="number" min="0" max="100" step="1" value="2" required>
+                  <span class="cap-input-unit">profesionales</span>
+                </div>
+                <span class="cap-help-text">Cuenta exclusivamente al personal calificado que realiza este tratamiento (no incluyas recepción ni administración).</span>
+              </div>
+
+              <!-- Campo 2: Cabinas o espacios disponibles -->
+              <div class="cap-field-group">
+                <label class="cap-label" for="cap-cabins">
+                  ¿Cuántas cabinas o espacios puedes utilizar? <span class="req">*</span>
+                </label>
+                <div class="cap-input-wrap">
+                  <input class="cap-input" id="cap-cabins" type="number" min="0" max="100" step="1" value="2" required>
+                  <span class="cap-input-unit">cabinas</span>
+                </div>
+                <div class="cap-checkbox-wrap">
+                  <input id="cap-no-cabin" type="checkbox">
+                  <label for="cap-no-cabin">Este servicio no depende de una cabina o espacio específico (ej. consultoría o valoración libre).</label>
+                </div>
+                <span class="cap-help-text">Espacios físicos realmente equipados y habilitados para prestar este servicio en simultáneo.</span>
+              </div>
+
+              <!-- Fila 2 columnas: Horas y Días -->
+              <div class="cap-field-row-2">
+                <!-- Campo 3: Horas efectivas diarias -->
+                <div class="cap-field-group">
+                  <label class="cap-label" for="cap-hours">
+                    Horas efectivas de atención al día <span class="req">*</span>
+                  </label>
+                  <div class="cap-input-wrap">
+                    <input class="cap-input" id="cap-hours" type="number" min="0.5" max="24" step="0.5" value="6" required>
+                    <span class="cap-input-unit">horas/día</span>
+                  </div>
+                  <span class="cap-help-text">Cuenta únicamente horas disponibles para atender citas (excluye almuerzos, pausas y reuniones).</span>
+                </div>
+
+                <!-- Campo 4: Días de atención al mes -->
+                <div class="cap-field-group">
+                  <label class="cap-label" for="cap-days">
+                    Días de atención al mes <span class="req">*</span>
+                  </label>
+                  <div class="cap-input-wrap">
+                    <input class="cap-input" id="cap-days" type="number" min="1" max="31" step="1" value="22" required>
+                    <span class="cap-input-unit">días/mes</span>
+                  </div>
+                  <span class="cap-help-text">Días efectivos de apertura clínica durante el mes analizado (ej. 22 días para lunes a sábado).</span>
+                </div>
+              </div>
+
+              <!-- Campo 5: Duración de cada cita -->
+              <div class="cap-field-group">
+                <label class="cap-label" for="cap-duration">
+                  ¿Cuántos minutos ocupa una cita completa? <span class="req">*</span>
+                </label>
+                <div class="cap-input-wrap">
+                  <input class="cap-input" id="cap-duration" type="number" min="5" max="600" step="5" value="90" required>
+                  <span class="cap-input-unit">minutos</span>
+                </div>
+                <span class="cap-help-text">Suma la duración del procedimiento más la preparación previa, desinfección y acondicionamiento antes del siguiente paciente.</span>
+              </div>
+
+              <!-- Ajuste opcional: Profesionales necesarios por cita -->
+              <details class="cap-drawer">
+                <summary class="cap-drawer-summary">
+                  <span>⚙️ Ajuste adicional: Profesionales necesarios por atención</span>
+                  <span aria-hidden="true">▾</span>
+                </summary>
+                <div class="cap-drawer-content">
+                  <label class="cap-label" for="cap-req-staff">Profesionales necesarios por cada cita</label>
+                  <div class="cap-input-wrap" style="max-width:200px;">
+                    <input class="cap-input" id="cap-req-staff" type="number" min="1" max="10" step="1" value="1">
+                    <span class="cap-input-unit">por cita</span>
+                  </div>
+                  <span class="cap-help-text">Configura 2 si analizas tratamientos que exigen dos profesionales en simultáneo (ej. masajes en pareja o procedimientos quirúrgicos asistidos).</span>
+                </div>
+              </details>
+            </article>
+
+            <!-- PASO 2: ACTIVIDAD Y VOLUMEN ACTUAL -->
+            <article class="cap-step-card">
+              <header class="cap-step-header">
+                <span class="cap-step-num">2</span>
+                <div>
+                  <h2>¿Cuántas citas estás atendiendo actualmente?</h2>
+                  <p>Introduce tu volumen real de atenciones completadas y tu tarifa promedio.</p>
+                </div>
+              </header>
+
+              <!-- Campo 6: Citas realizadas en el mes -->
+              <div class="cap-field-group">
+                <label class="cap-label" for="cap-attended">
+                  ¿Cuántas citas completaste durante el mes? <span class="req">*</span>
+                </label>
+                <div class="cap-input-wrap">
+                  <input class="cap-input" id="cap-attended" type="number" min="0" max="5000" step="1" value="60" required>
+                  <span class="cap-input-unit">citas realizadas</span>
+                </div>
+                <span class="cap-help-text">Citas efectivamente atendidas y terminadas en el período. No cuentes cancelaciones ni personas que no asistieron.</span>
+              </div>
+
+              <!-- Campo 7: Ingreso promedio por atención -->
+              <div class="cap-field-group">
+                <label class="cap-label" for="cap-revenue">
+                  ¿Cuánto recibe tu negocio por cada atención? <span class="req">*</span>
+                </label>
+                <div class="cap-input-wrap">
+                  <span class="cap-currency-prefix">$</span>
+                  <input class="cap-input input-currency" id="cap-revenue" type="text" inputmode="numeric" value="150.000" required>
+                  <span class="cap-input-unit">COP</span>
+                </div>
+                <span class="cap-help-text">Si analizas un paquete de varias sesiones, introduce el ingreso promedio equivalente por sesión individual (no multipliques el valor total del paquete).</span>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- COLUMNA DERECHA: RESULTADOS PRINCIPALES (PASO 3) -->
+          <div class="cap-results-column">
+
+            <article class="cap-results-card">
+              <header class="cap-step-header">
+                <span class="cap-step-num">3</span>
+                <div>
+                  <h2>Conoce tu capacidad y ocupación</h2>
+                  <p>Balance operativo mensual bajo los supuestos del modelo.</p>
+                </div>
+              </header>
+
+              <!-- ALERTA DE INCONSISTENCIA O ADVERTENCIA -->
+              <div class="cap-alert-box" id="cap-alert-box">
+                <p class="alert-title">⚠️ Inconsistencia detectada en los datos</p>
+                <p class="alert-desc" id="cap-alert-text">Las citas registradas superan la capacidad estimada.</p>
+              </div>
+
+              <!-- 4 KPIS PRINCIPALES DESTACADOS -->
+              <div class="cap-kpi-main-grid">
+                <!-- KPI 1: Capacidad Mensual -->
+                <div class="cap-kpi-hero-box">
+                  <span class="kpi-title">Capacidad mensual estimada</span>
+                  <strong class="kpi-big" id="cap-kpi-capacity">176 citas</strong>
+                  <span class="kpi-sub">Máximo teórico de citas completas</span>
+                </div>
+
+                <!-- KPI 2: Ocupación Actual -->
+                <div class="cap-kpi-hero-box">
+                  <span class="kpi-title">Ocupación actual</span>
+                  <strong class="kpi-big" id="cap-kpi-occupancy">34,1%</strong>
+                  <div class="cap-occupancy-bar-wrap" aria-hidden="true">
+                    <div class="cap-occupancy-bar-fill bar-warning" id="cap-occupancy-bar" style="width: 34%;"></div>
+                  </div>
+                  <span class="kpi-sub">Uso real de tu capacidad teórica</span>
+                </div>
+
+                <!-- KPI 3: Capacidad Disponible -->
+                <div class="cap-kpi-hero-box">
+                  <span class="kpi-title">Capacidad disponible</span>
+                  <strong class="kpi-big" id="cap-kpi-available">116 citas</strong>
+                  <span class="kpi-sub">Espacios de atención no utilizados</span>
+                </div>
+
+                <!-- KPI 4: Facturación Actual -->
+                <div class="cap-kpi-hero-box">
+                  <span class="kpi-title">Facturación actual estimada</span>
+                  <strong class="kpi-big" id="cap-kpi-current-rev">$9.000.000 COP</strong>
+                  <span class="kpi-sub">Ingreso bruto según citas realizadas</span>
+                </div>
+              </div>
+
+              <!-- KPIS SECUNDARIOS (4 CAJAS COMPLEMENTARIAS) -->
+              <div class="cap-kpi-sec-grid">
+                <div class="cap-kpi-sec-item">
+                  <span class="sec-lbl">Facturación a capacidad completa</span>
+                  <strong class="sec-val" id="cap-sec-max-rev">$26.400.000 COP</strong>
+                  <span class="sec-note">Ingreso máximo teórico mensual</span>
+                </div>
+                <div class="cap-kpi-sec-item">
+                  <span class="sec-lbl">Citas por jornada</span>
+                  <strong class="sec-val" id="cap-sec-slots-day">4 citas/jornada</strong>
+                  <span class="sec-note">Por espacio de atención simultáneo</span>
+                </div>
+                <div class="cap-kpi-sec-item">
+                  <span class="sec-lbl">Atenciones simultáneas</span>
+                  <strong class="sec-val" id="cap-sec-simultaneous">2 atenciones</strong>
+                  <span class="sec-note">Límite por personal y cabinas</span>
+                </div>
+                <div class="cap-kpi-sec-item">
+                  <span class="sec-lbl">Horas operativas</span>
+                  <strong class="sec-val" id="cap-sec-hours">264h disp. · 90h ocup.</strong>
+                  <span class="sec-note">Disponibles vs. citas realizadas</span>
+                </div>
+              </div>
+
+              <!-- BOTÓN DIRECTO DE DIAGNÓSTICO -->
+              <button class="btn" style="width:100%" type="button" onclick="openWAModal()">
+                Analizar la capacidad de mi centro con Gloss <span aria-hidden="true">↗</span>
+              </button>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ESCENARIOS DE CRECIMIENTO EN OCUPACIÓN -->
+        <section class="cap-scenarios-section" aria-label="Simulador de Escenarios de Ocupación">
+          <header class="cap-scenarios-head">
+            <p class="eyebrow">Simulador de Escenarios</p>
+            <h3>¿Qué ocurriría si logras aumentar tu tasa de ocupación?</h3>
+            <p>Compara la facturación bruta adicional potencial que podrías generar al ocupar tus espacios vacíos bajo distintos niveles de aprovechamiento.</p>
+          </header>
+
+          <div class="cap-custom-slider-wrap">
+            <label for="cap-custom-slider">Ajusta un porcentaje personalizado de ocupación:</label>
+            <input id="cap-custom-slider" type="range" min="10" max="100" step="5" value="80">
+            <span class="cap-custom-slider-val" id="cap-custom-slider-val">80%</span>
+          </div>
+
+          <div class="cap-scenarios-table-wrap">
+            <table class="cap-scenarios-table">
+              <thead>
+                <tr>
+                  <th scope="col">Nivel de Ocupación</th>
+                  <th scope="col">Citas Objetivo</th>
+                  <th scope="col">Citas Adicionales</th>
+                  <th scope="col">Facturación Estimada</th>
+                  <th scope="col">Facturación Adicional</th>
+                </tr>
+              </thead>
+              <tbody id="cap-scenarios-tbody">
+              </tbody>
+            </table>
+          </div>
+
+          <div class="cap-narrative-box" id="cap-narrative-text">
+          </div>
+        </section>
+
+        <!-- META PERSONALIZADA DE FACTURACIÓN MENSUAL -->
+        <section class="cap-goal-section" aria-label="Meta de Facturación">
+          <div class="cap-goal-grid">
+            <div>
+              <p class="eyebrow" style="color:var(--cap-burgundy);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin:0 0 6px;">Meta de Ventas</p>
+              <h3 style="font-family:var(--font-serif, 'Zodiak', serif);font-size:22px;color:var(--cap-charcoal);margin:0 0 10px;">¿Qué facturación mensual te gustaría alcanzar con este servicio?</h3>
+              <p style="font-size:14px;color:var(--cap-charcoal-muted);margin:0 0 16px;line-height:1.45;">Introduce un objetivo de ingresos brutos. Calcularemos cuántas citas completas necesitas y si tu capacidad actual puede absorberlas sin saturarse.</p>
+
+              <div class="cap-field-group">
+                <label class="cap-label" for="cap-target-revenue">Meta de facturación mensual deseada</label>
+                <div class="cap-input-wrap">
+                  <span class="cap-currency-prefix">$</span>
+                  <input class="cap-input input-currency" id="cap-target-revenue" type="text" inputmode="numeric" placeholder="Ej: 15.000.000">
+                  <span class="cap-input-unit">COP</span>
+                </div>
+                <span class="cap-help-text">Escribe un valor o déjalo vacío si solo deseas analizar ocupación actual.</span>
+              </div>
+            </div>
+
+            <div class="cap-goal-results-box" id="cap-goal-results" style="display:none;">
+              <p class="goal-title">Resultado de Viabilidad Operativa</p>
+              <ul class="goal-list">
+                <li>• Citas completas necesarias: <strong id="cap-goal-needed-apts">0 citas</strong></li>
+                <li>• Citas adicionales frente a las actuales: <strong id="cap-goal-add-apts">+0 citas</strong></li>
+                <li>• Tasa de ocupación requerida: <strong id="cap-goal-req-occ">0%</strong></li>
+              </ul>
+              <p class="goal-feasibility" id="cap-goal-feasibility">
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- INTERPRETACIÓN DETERMINISTA Y REFLEXIÓN ESTRATÉGICA -->
+        <article class="cap-interpretation-card healthy" id="cap-interpretation-card">
+          <span class="cap-interp-badge" id="cap-interp-badge">Análisis Operativo</span>
+          <h3 id="cap-interp-title">Evaluando utilización de capacidad...</h3>
+          
+          <div class="cap-interp-block">
+            <strong>1. Qué indican los números</strong>
+            <span id="cap-interp-fact">—</span>
+          </div>
+          <div class="cap-interp-block">
+            <strong>2. Cuánta capacidad queda disponible</strong>
+            <span id="cap-interp-state">—</span>
+          </div>
+          <div class="cap-interp-block">
+            <strong>3. Qué podría revisar el negocio</strong>
+            <span id="cap-interp-advice">—</span>
+          </div>
+        </article>
+
+        <!-- BARRA DE ACCIONES BÁSICA -->
+        <div class="cap-action-bar">
+          <div>
+            <strong style="color:var(--cap-charcoal);display:block;font-size:14px;">¿Deseas guardar o compartir esta simulación?</strong>
+            <span style="color:var(--cap-charcoal-muted);font-size:13px;">Copia un resumen limpio para tu equipo o descarga un reporte en PDF profesional.</span>
+          </div>
+          <div class="cap-action-btns">
+            <button class="btn btn--outline" id="cap-btn-copy" type="button">Copiar resultados</button>
+            <button class="btn btn--primary" id="cap-btn-pdf" type="button">Descargar reporte PDF</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================================================================
+           VISTA 2: MODO AVANZADO (MULTI-RECURSOS Y HORARIOS)
+           =================================================================== -->
+      <div id="cap-view-advanced" style="display:none;">
+        <div class="cap-main-grid">
+          
+          <!-- COLUMNA IZQUIERDA: CONFIGURACIÓN MULTI-RECURSO -->
+          <div class="cap-form-column">
+
+            <!-- CONFIGURACIÓN GENERAL DEL PERIODO -->
+            <article class="cap-step-card">
+              <header class="cap-step-header">
+                <span class="cap-step-num">A</span>
+                <div>
+                  <h2>Configuración Operativa Avanzada</h2>
+                  <p>Define días hábiles mensuales, granularidad de agenda y porcentaje de ausentismo.</p>
+                </div>
+              </header>
+
+              <div class="cap-field-group">
+                <label class="cap-label" for="cap-adv-business-name">Nombre del negocio</label>
+                <div class="cap-input-wrap">
+                  <input class="cap-input" id="cap-adv-business-name" type="text" placeholder="Escribe el nombre de tu clínica o centro estético" maxlength="120">
+                </div>
+                <span class="cap-help-text">Opcional. Identifica el reporte generado y copiado.</span>
+              </div>
+
+              <div class="cap-field-row-2">
+                <div class="cap-field-group">
+                  <label class="cap-label" for="cap-adv-days">Días operativos al mes</label>
+                  <div class="cap-input-wrap">
+                    <input class="cap-input" id="cap-adv-days" type="number" min="1" max="31" step="1" value="22">
+                    <span class="cap-input-unit">días/mes</span>
+                  </div>
+                </div>
+                <div class="cap-field-group">
+                  <label class="cap-label" for="cap-adv-cancellations">Tasa de cancelación / no-show</label>
+                  <div class="cap-input-wrap">
+                    <input class="cap-input" id="cap-adv-cancellations" type="number" min="0" max="60" step="1" value="10">
+                    <span class="cap-input-unit">% ausentismo</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cap-field-group">
+                <label class="cap-label" for="cap-adv-interval">Intervalo de bloques de agenda</label>
+                <div class="cap-input-wrap">
+                  <select class="cap-input" id="cap-adv-interval">
+                    <option value="15" selected>15 minutos (Preciso)</option>
+                    <option value="30">30 minutos (Estándar)</option>
+                    <option value="60">60 minutos (Bloques completos)</option>
+                  </select>
+                </div>
+                <span class="cap-help-text">Los tiempos de cita y desinfección se discretizan según este intervalo para evitar fracciones imposibles de agendar.</span>
+              </div>
+            </article>
+
+            <!-- 1. TRATAMIENTOS -->
+            <article class="cap-step-card">
+              <header class="cap-step-header">
+                <span class="cap-step-num">1</span>
+                <div>
+                  <h2>Tratamientos y Procedimientos</h2>
+                  <p>Duración clínica, tiempos de preparación/limpieza, tarifas y personal necesario.</p>
+                </div>
+              </header>
+
+              <div id="cap-adv-treatments-container">
+                <!-- Generado dinámicamente -->
+              </div>
+              <button class="cap-btn-add" id="cap-adv-btn-add-treatment" type="button">+ Agregar Tratamiento</button>
+            </article>
+
+            <!-- 2. PROFESIONALES Y HORARIOS -->
+            <article class="cap-step-card">
+              <header class="cap-step-header">
+                <span class="cap-step-num">2</span>
+                <div>
+                  <h2>Profesionales y Horarios Individuales</h2>
+                  <p>Turnos de entrada y salida, descansos de almuerzo y asignación de tratamientos.</p>
+                </div>
+              </header>
+
+              <div id="cap-adv-staff-container">
+                <!-- Generado dinámicamente -->
+              </div>
+              <button class="cap-btn-add" id="cap-adv-btn-add-staff" type="button">+ Agregar Profesional</button>
+            </article>
+
+            <!-- 3. CABINAS / ESPACIOS FÍSICOS -->
+            <article class="cap-step-card">
+              <header class="cap-step-header">
+                <span class="cap-step-num">3</span>
+                <div>
+                  <h2>Cabinas y Espacios de Atención</h2>
+                  <p>Disponibilidad física simultánea para realizar los procedimientos.</p>
+                </div>
+              </header>
+
+              <div id="cap-adv-cabins-container">
+                <!-- Generado dinámicamente -->
+              </div>
+              <button class="cap-btn-add" id="cap-adv-btn-add-cabin" type="button">+ Agregar Cabina</button>
+            </article>
+
+            <!-- 4. APARATOLOGÍA COMPARTIDA -->
+            <article class="cap-step-card">
+              <header class="cap-step-header">
+                <span class="cap-step-num">4</span>
+                <div>
+                  <h2>Equipos y Aparatología Compartida</h2>
+                  <p>Máquinas con unidades físicas limitadas requeridas por uno o varios tratamientos.</p>
+                </div>
+              </header>
+
+              <div id="cap-adv-equipment-container">
+                <!-- Generado dinámicamente -->
+              </div>
+              <button class="cap-btn-add" id="cap-adv-btn-add-equipment" type="button">+ Agregar Equipo Compartido</button>
+            </article>
+
+            <!-- 5. CONTROL DE PAQUETES Y BONOS VENDIDOS -->
+            <article class="cap-step-card">
+              <header class="cap-step-header">
+                <span class="cap-step-num">5</span>
+                <div>
+                  <h2>Compromisos de Paquetes y Bonos Vendidos</h2>
+                  <p>Controla sesiones ya pagadas pendientes de ejecución para no sobrevender la agenda.</p>
+                </div>
+              </header>
+
+              <div class="cap-field-row-2">
+                <div class="cap-field-group">
+                  <label class="cap-label" for="cap-adv-pkg-total">Sesiones contratadas en paquetes</label>
+                  <div class="cap-input-wrap">
+                    <input class="cap-input" id="cap-adv-pkg-total" type="number" min="0" step="1" value="20">
+                    <span class="cap-input-unit">sesiones</span>
+                  </div>
+                </div>
+                <div class="cap-field-group">
+                  <label class="cap-label" for="cap-adv-pkg-completed">Sesiones ya atendidas</label>
+                  <div class="cap-input-wrap">
+                    <input class="cap-input" id="cap-adv-pkg-completed" type="number" min="0" step="1" value="5">
+                    <span class="cap-input-unit">ejecutadas</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cap-field-group">
+                <label class="cap-label" for="cap-adv-pkg-booked">Sesiones pendientes con reserva ya fijada en agenda</label>
+                <div class="cap-input-wrap">
+                  <input class="cap-input" id="cap-adv-pkg-booked" type="number" min="0" step="1" value="3">
+                  <span class="cap-input-unit">en agenda</span>
+                </div>
+                <span class="cap-help-text">Sesiones que aún no se han atendido pero ya ocupan un espacio de cita futuro en el calendario.</span>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- COLUMNA DERECHA: RESULTADOS AVANZADOS -->
+          <div class="cap-results-column">
+
+            <article class="cap-results-card">
+              <header class="cap-step-header">
+                <span class="cap-step-num">B</span>
+                <div>
+                  <h2>Balance Operativo Avanzado</h2>
+                  <p>Simulación integral combinando personal, espacios, equipos y ausentismo.</p>
+                </div>
+              </header>
+
+              <!-- RESTricción / CUELLO DE BOTELLA -->
+              <div class="cap-bottleneck-card" id="cap-adv-bottleneck-card">
+                <span class="cap-bottleneck-title">Restricción Principal de Capacidad</span>
+                <p class="cap-bottleneck-desc" id="cap-adv-bottleneck-desc">Calculando...</p>
+              </div>
+
+              <!-- 4 KPIS HEROICOS -->
+              <div class="cap-kpi-main-grid">
+                <div class="cap-kpi-hero-box">
+                  <span class="kpi-title">Capacidad simultánea diaria</span>
+                  <strong class="kpi-big" id="cap-adv-kpi-daily">0 citas</strong>
+                  <span class="kpi-sub">Por jornada completa</span>
+                </div>
+                <div class="cap-kpi-hero-box">
+                  <span class="kpi-title">Capacidad mensual teórica</span>
+                  <strong class="kpi-big" id="cap-adv-kpi-monthly">0 citas</strong>
+                  <span class="kpi-sub">Al 100% de ocupación</span>
+                </div>
+                <div class="cap-kpi-hero-box">
+                  <span class="kpi-title">Citas efectivas estimadas</span>
+                  <strong class="kpi-big" id="cap-adv-kpi-effective">0 citas</strong>
+                  <span class="kpi-sub" id="cap-adv-kpi-effective-sub">Con 10% ausentismo</span>
+                </div>
+                <div class="cap-kpi-hero-box">
+                  <span class="kpi-title">Facturación potencial máxima</span>
+                  <strong class="kpi-big" id="cap-adv-kpi-revenue">$0</strong>
+                  <span class="kpi-sub">Ingreso bruto mensual</span>
+                </div>
+              </div>
+
+              <!-- DESGLOSE POR TRATAMIENTO -->
+              <div style="margin-top:20px;">
+                <h4 style="font-size:14px; font-weight:700; color:var(--cap-charcoal); margin:0 0 8px;">Rendimiento Operativo por Procedimiento</h4>
+                <div style="overflow-x:auto;">
+                  <table class="cap-adv-table">
+                    <thead>
+                      <tr>
+                        <th>Tratamiento</th>
+                        <th>Duración</th>
+                        <th>Máx. Día</th>
+                        <th>Máx. Mes</th>
+                        <th>Potencial</th>
+                      </tr>
+                    </thead>
+                    <tbody id="cap-adv-table-tbody">
+                      <!-- Llenado dinámico -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- BALANCE DE PAQUETES -->
+              <div style="margin-top:22px; padding:14px; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:6px;">
+                <h4 style="font-size:13px; font-weight:700; color:var(--cap-charcoal); margin:0 0 6px;">Compromisos de Paquetes en Curso</h4>
+                <div id="cap-adv-package-stats" style="font-size:12.5px; color:var(--cap-charcoal-muted); line-height:1.5;">
+                  <!-- Llenado dinámico -->
+                </div>
+              </div>
+
+              <!-- TRANSFERENCIA A APARATOLOGÍA -->
+              <div class="cap-transfer-box">
+                <div class="cap-transfer-info">
+                  <h4>Vincular con Calculadora de Aparatología</h4>
+                  <p>Exporta la demanda mensual simulada del equipo hacia la Calculadora de Inversión para proyectar su amortización y retorno de inversión.</p>
+                </div>
+                <button class="btn btn--outline" id="cap-adv-btn-export-aparatologia" type="button" style="font-size:12px; padding:8px 14px;">
+                  Exportar a Aparatología →
+                </button>
+              </div>
+
+              <div style="margin-top:20px;">
+                <button class="btn" style="width:100%" type="button" onclick="openWAModal()">
+                  Optimizar la agenda de mi clínica con Gloss <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+
+            <!-- ACCIONES MODO AVANZADO -->
+            <div class="cap-action-bar" style="margin-top:20px;">
+              <div>
+                <strong style="color:var(--cap-charcoal);display:block;font-size:14px;">Reporte Multi-recursos</strong>
+                <span style="color:var(--cap-charcoal-muted);font-size:13px;">Exporta un informe consolidado con horarios y cuellos de botella.</span>
+              </div>
+              <div class="cap-action-btns">
+                <button class="btn btn--outline" id="cap-adv-btn-copy" type="button">Copiar reporte avanzado</button>
+                <button class="btn btn--primary" id="cap-adv-btn-pdf" type="button">Descargar reporte PDF</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN FINAL DE CIERRE Y CTA -->
+  <section class="section final-cta" style="padding-top:20px;">
+    <div class="wrap">
+      <p class="eyebrow">De la medición a la ejecución</p>
+      <h2>¿Quieres saber cómo atraer pacientes calificados para cubrir tu capacidad disponible?</h2>
+      <p>Analizamos tus tratamientos estrella, tu ciudad y tus canales actuales de captación para estructurar una estrategia enfocada en citas reales.</p>
+      <button class="btn" type="button" onclick="openWAModal()">Solicitar diagnóstico comercial <span aria-hidden="true">↗</span></button>
+      <img src="../../brand/experiment/wave.webp" alt="" class="final-wave" width="1400" height="387" loading="lazy" decoding="async">
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid footer-grid--expanded">
+      <div>
+        <img src="../../brand/vertical-cream.svg" alt="Gloss Growth" class="footer-logo" loading="lazy" decoding="async">
+        <p>Estrategia y crecimiento<br>para el negocio de la estética.</p>
+      </div>
+      <nav aria-label="Firma y Soluciones">
+        <p class="eyebrow">Firma</p>
+        <a href="../../">Inicio</a>
+        <a href="../../metodo/">Método Gloss</a>
+        <a href="../../servicios/">Servicios y Planes</a>
+        <a href="../../resultados/">Resultados y Casos</a>
+        <a href="../../nosotros/">Nosotros</a>
+      </nav>
+      <nav aria-label="Recursos y Conocimiento">
+        <p class="eyebrow">Recursos</p>
+        <a href="../">Centro de Recursos</a>
+        <a href="../../blog/">Blog Editorial</a>
+        <a href="../investigaciones/">Gloss Insights</a>
+        <a href="../herramientas/">Calculadoras</a>
+        <a href="../plantillas/">Plantillas y Guías</a>
+      </nav>
+      <div class="footer-contact">
+        <p class="eyebrow">Hablemos</p>
+        <a href="https://wa.me/573145904933" target="_blank" rel="noopener noreferrer">WhatsApp · +57 314 590 4933 ↗</a>
+        <a href="https://www.instagram.com/glossgrowthhq/" target="_blank" rel="noopener noreferrer">Instagram · @glossgrowthhq ↗</a>
+        <a href="mailto:glossgrowthhq@gmail.com">glossgrowthhq@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Gloss Growth. Todos los derechos reservados.</span>
+      <div>
+        <a href="../../politica-de-privacidad/">Política de privacidad</a>
+        <a href="../../terminos-del-servicio/">Términos del servicio</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL WHATSAPP -->
+<div aria-hidden="true" aria-labelledby="wa-modal-title" aria-modal="true" class="wa-modal" id="wa-modal" role="dialog">
+  <div class="wa-modal__backdrop" onclick="closeWAModal()"></div>
+  <div class="wa-modal__panel">
+    <button aria-label="Cerrar formulario" class="wa-modal__close" onclick="closeWAModal()">
+      <i data-lucide="x"></i>
+    </button>
+    <div class="wa-modal__header">
+      <div>
+        <h2 class="wa-modal__title" id="wa-modal-title">Solicita tu diagnóstico</h2>
+        <p class="wa-modal__subtitle">Cuéntanos sobre tu negocio. Prepararemos tu mensaje para continuar por WhatsApp.</p>
+      </div>
+    </div>
+    <form class="wa-modal__form" id="waForm" novalidate onsubmit="sendToWhatsApp(event)">
+      <div class="wa-form__group">
+        <label class="wa-form__label" for="wa-nombre"><i aria-hidden="true" data-lucide="user"></i> Tu nombre</label>
+        <input aria-describedby="wa-nombre-error" autocomplete="given-name" class="wa-form__input" id="wa-nombre" maxlength="180" name="nombre" placeholder="Ej: María González" required type="text"/>
+        <p class="wa-form__error" hidden id="wa-nombre-error">Completa este campo para continuar.</p>
+      </div>
+      <div class="wa-form__group">
+        <label class="wa-form__label" for="wa-negocio"><i aria-hidden="true" data-lucide="building-2"></i> Nombre de tu clínica o negocio</label>
+        <input aria-describedby="wa-negocio-error" class="wa-form__input" id="wa-negocio" maxlength="180" name="negocio" placeholder="Ej: Clínica Estética Aurora" required type="text"/>
+        <p class="wa-form__error" hidden id="wa-negocio-error">Completa este campo para continuar.</p>
+      </div>
+      <div class="wa-form__row">
+        <div class="wa-form__group">
+          <label class="wa-form__label" for="wa-trabajadores"><i aria-hidden="true" data-lucide="users"></i> ¿Cuántas personas trabajan ahí?</label>
+          <select aria-describedby="wa-trabajadores-error" class="wa-form__input wa-form__select" id="wa-trabajadores" name="trabajadores" required>
+            <option disabled selected value="">Selecciona...</option>
+            <option value="Solo yo">Solo yo</option>
+            <option value="2 a 5 personas">2 a 5 personas</option>
+            <option value="6 a 15 personas">6 a 15 personas</option>
+            <option value="Más de 15 personas">Más de 15 personas</option>
+          </select>
+          <p class="wa-form__error" hidden id="wa-trabajadores-error">Completa este campo para continuar.</p>
+        </div>
+        <div class="wa-form__group">
+          <label class="wa-form__label" for="wa-ciudad"><i aria-hidden="true" data-lucide="map-pin"></i> Ciudad</label>
+          <input aria-describedby="wa-ciudad-error" class="wa-form__input" id="wa-ciudad" maxlength="120" name="ciudad" placeholder="Ej: Medellín / Cali" required type="text"/>
+          <p class="wa-form__error" hidden id="wa-ciudad-error">Completa este campo para continuar.</p>
+        </div>
+      </div>
+      <div class="wa-form__group">
+        <label class="wa-form__label" for="wa-servicio"><i aria-hidden="true" data-lucide="sparkles"></i> Servicio o tratamiento principal</label>
+        <input aria-describedby="wa-servicio-error" class="wa-form__input" id="wa-servicio" maxlength="200" name="servicio" placeholder="Ej: Armonización facial, aparatología corporal, spa..." required type="text"/>
+        <p class="wa-form__error" hidden id="wa-servicio-error">Completa este campo para continuar.</p>
+      </div>
+      <div class="wa-form__group">
+        <label class="wa-form__label" for="wa-mensaje"><i aria-hidden="true" data-lucide="message-square"></i> ¿Qué te gustaría lograr en los próximos 90 días?</label>
+        <textarea aria-describedby="wa-mensaje-error" class="wa-form__input wa-form__textarea" id="wa-mensaje" maxlength="600" name="mensaje" placeholder="Cuéntanos brevemente tu meta de citas o facturación..." required rows="3"></textarea>
+        <p class="wa-form__error" hidden id="wa-mensaje-error">Completa este campo para continuar.</p>
+      </div>
+      <div class="wa-form__privacy">
+        <label class="wa-form__checkbox-label">
+          <input aria-describedby="wa-privacidad-error" class="wa-form__checkbox" id="wa-privacidad" name="privacidad" required type="checkbox"/>
+          <span>Acepto la <a href="../../politica-de-privacidad/" target="_blank">política de privacidad</a> y el tratamiento de mis datos de contacto para recibir el diagnóstico.</span>
+        </label>
+        <p class="wa-form__error" hidden id="wa-privacidad-error">Debes aceptar la política de privacidad para continuar.</p>
+      </div>
+      <button class="btn btn--primary wa-form__submit" type="submit">Continuar a WhatsApp <span aria-hidden="true">→</span></button>
+    </form>
+  </div>
+</div>
+
+<!-- Notificación flotante de copiado -->
+<div class="cap-toast" id="cap-toast" role="status" aria-live="polite">¡Resumen copiado al portapapeles!</div>
+
+<!-- Scripts -->
+<script defer src="../../vendor/lucide.js"></script>
+<script defer src="../../form.js"></script>
+<script defer src="../../editorial.js?v=motion-1"></script>
+<script defer src="../../navigation.js?v=motion-1"></script>
+<script defer src="../../motion.js?v=1"></script>
+<script src="../../vendor/jspdf.umd.min.js"></script>
+<script src="../currency-picker.js"></script>
+<script src="../shared-storage.js"></script>
+<script src="../report-engine.js"></script>
+<script src="capacidad-engine.js"></script>
+<script src="capacidad-app.js"></script>
+</body>
+</html>

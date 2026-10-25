@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "dataset_name": "Gloss Growth Estudio de Contenido - Biblioteca Editorial Fase 1",
+  "created_at": "2026-10-24T09:31:33.344Z",
+  "description": "Biblioteca técnica y editorial unificada y normalizada para el Estudio de Contenido de Gloss & Growth.",
+  "entities": {
+    "hooks": 200,
+    "hook_families": 16,
+    "narrative_structures": 10,
+    "carousel_structures": 7,
+    "slide_roles": 6,
+    "treatments": 38,
+    "content_topics": 179,
+    "sources": 38,
+    "editorial_rules": 1
+  },
+  "files": [
+    {
+      "file": "data/hooks.json",
+      "records_count": 200,
+      "description": "200 ganchos normalizados con IDs continuos H001-H200, fórmulas originales y taxonomía curada."
+    },
+    {
+      "file": "data/hook-families.json",
+      "records_count": 16,
+      "description": "16 familias editoriales con mecanismos de interés, emociones, requisitos de entrega y aperturas."
+    },
+    {
+      "file": "data/narrative-structures.json",
+      "records_count": 10,
+      "description": "10 estructuras narrativas para video (4 Andrea + 6 Gloss) con pasos detallados y duraciones."
+    },
+    {
+      "file": "data/carousel-structures.json",
+      "records_count": 7,
+      "description": "7 arquetipos de carrusel con contratos funcionales slide a slide y 6 roles narrativos."
+    },
+    {
+      "file": "data/treatments.json",
+      "records_count": 38,
+      "description": "12 fichas clínicas y comerciales exhaustivas de tratamientos del sector estético en Colombia."
+    },
+    {
+      "file": "data/content-topics.json",
+      "records_count": 179,
+      "description": "28 temas y ángulos de contenido mapeados (B2C, B2B, semántica y lagunas con estatus de verificación)."
+    },
+    {
+      "file": "data/editorial-rules.json",
+      "records_count": 1,
+      "description": "Reglas editoriales, tríada audiovisual, políticas orgánicas vs pauta y prohibiciones estrictas."
+    },
+    {
+      "file": "data/sources.json",
+      "records_count": 38,
+      "description": "31 fuentes y referencias normativas, clínicas y de mercado del sector estético."
+    },
+    {
+      "file": "data/manifest.json",
+      "records_count": 1,
+      "description": "Manifiesto de integridad, versionado y conteo de entidades del repositorio."
+    }
+  ],
+  "updated_at": "2026-10-24T09:50:41.549Z"
+}

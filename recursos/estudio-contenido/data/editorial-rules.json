@@ -1,0 +1,147 @@
+{
+  "taxonomy": {
+    "audiences": [
+      "paciente",
+      "responsable_negocio"
+    ],
+    "specialties": [
+      "medicina_estetica",
+      "estetica_facial",
+      "estetica_corporal",
+      "depilacion",
+      "spa_bienestar",
+      "negocio_marketing"
+    ],
+    "objectives": [
+      "educar",
+      "atraer",
+      "confianza",
+      "objecion",
+      "conversion",
+      "interaccion"
+    ],
+    "formats": [
+      "talking_head",
+      "broll",
+      "demostracion",
+      "testimonio",
+      "carrusel",
+      "anuncio"
+    ],
+    "funnel_stages": [
+      "atencion",
+      "consideracion",
+      "decision",
+      "retencion"
+    ],
+    "hook_families": [
+      "NEG",
+      "AUTO",
+      "GAP",
+      "CONTRA",
+      "ENEM",
+      "DEMO",
+      "COMP",
+      "AUT",
+      "PROOF",
+      "UTIL",
+      "STORY",
+      "FOMO",
+      "EXP",
+      "INTER",
+      "EFF",
+      "ASP"
+    ],
+    "verification_statuses": [
+      "editorial_topic",
+      "research_claim",
+      "verification_required",
+      "verified"
+    ]
+  },
+  "colombian_spanish_rules": {
+    "tono_general": "Sobrio, clínico, cercano y pedagógico; rigor financiero en B2B y empatía sin condescendencia en B2C.",
+    "terminologia_permitida": [
+      "cita de valoración",
+      "consulta de valoración",
+      "diagnóstico médico",
+      "procedimiento ambulatorio",
+      "cabina habilitada",
+      "distintivo de habilitación REPS",
+      "registro sanitario INVIMA",
+      "cánula de seguridad",
+      "perfilamiento",
+      "armonización facial",
+      "pesos colombianos (COP)"
+    ],
+    "terminologia_desaconsejada_o_prohibida": [
+      "cirugía sin bisturí (término engañoso)",
+      "bótox en los labios (error anatómico)",
+      "depilación definitiva al 100% (prohibido por la SIC)",
+      "rejuvenece 20 años en 10 minutos (publicidad engañosa)",
+      "elimina toda la grasa sin esfuerzo (infracción políticas de anuncios)"
+    ],
+    "modismos_regionales_a_evitar": [
+      "chulo / mola / guay / pasta (localismos de España)",
+      "lana / naco (localismos de México)",
+      "terminología excesivamente coloquial en momentos de explicación de riesgos médicos"
+    ]
+  },
+  "triad_synchronization_rules": {
+    "definicion": "Sincronización milimétrica entre los tres canales perceptivos en los primeros 2 segundos de video (Reel / Anuncio).",
+    "canales": {
+      "visual": "Acción física, movimiento corporal, primer plano o demostración de instrumento en 0-2s.",
+      "verbal": "Frase hablada con cadencia firme y clara que enuncia la premisa.",
+      "textual": "Texto en pantalla de alta legibilidad colocado en zona segura central (evitando márgenes de interfaz de usuario)."
+    },
+    "patrones_de_sincronia": [
+      {
+        "patron": "Complementario",
+        "descripcion": "El texto complementa lo que se habla; el visual muestra la consecuencia o el objeto."
+      },
+      {
+        "patron": "Pregunta visual + Respuesta verbal",
+        "descripcion": "El texto plantea la duda interrogativa mientras la voz comienza con una negación rotunda."
+      },
+      {
+        "patron": "Contraste / Ironía",
+        "descripcion": "El visual muestra una práctica errónea común mientras el texto y la voz alertan del peligro."
+      },
+      {
+        "patron": "Demostración en vivo + Pregunta abierta",
+        "descripcion": "Se realiza la acción física en cabina mientras la voz interpela directamente al espectador."
+      },
+      {
+        "patron": "Desempaque o acción física inmediata",
+        "descripcion": "Apertura de vial con holograma o encendido de equipo generando sonido estimulante de entrada."
+      }
+    ]
+  },
+  "organic_vs_ads_policies": {
+    "organico": {
+      "enfoque": "Libertad editorial profunda para educar, debatir complicaciones, desmitificar errores y mostrar casos clínicos con consentimiento.",
+      "permite": [
+        "Discusión de complicaciones vasculares",
+        "Uso de términos médicos precisos",
+        "Casos de segundas opiniones"
+      ]
+    },
+    "publicidad_pagada_meta_google": {
+      "enfoque": "Cumplimiento milimétrico de las políticas de Salud Personal y Apariencia Corporal.",
+      "estrictamente_prohibido": [
+        "Interpelar al usuario por sus inseguridades corporales directas",
+        "Fotografías de antes y después con acercamientos extremos a partes del cuerpo",
+        "Promesas de resultados garantizados o curas milagrosas definitivas",
+        "Imágenes de procedimientos cruentos o sangre explícita en cabina"
+      ],
+      "enfoque_obligatorio": "Narrativa centrada en ganancia positiva, bienestar, frescura y condiciones de servicio transparentes."
+    }
+  },
+  "strict_prohibitions": {
+    "prohibicion_bloque_textos_decorativos": "Prohibición absoluta y permanente de insertar bloques decorativos de tres textos o tarjetas de relleno visual en portadas, cabeceras o metadatos de cualquier pantalla del proyecto.",
+    "prohibicion_datos_ficticios": "Prohibido inventar estadísticas porcentuales, estudios clínicos inexistentes o testimonios fabricados sin trazabilidad.",
+    "prohibicion_promesas_medicas": "Prohibido garantizar resultados biológicos exactos; la medicina estética está sujeta a la variabilidad individual de cada organismo.",
+    "prohibicion_intrusismo": "Prohibido promocionar actos médicos invasivos bajo la responsabilidad de personal no facultado (Ley 711 de 2001).",
+    "obligatoriedad_habilitacion": "Toda clínica estética en Colombia debe exhibir su distintivo de habilitación en el REPS bajo la Resolución 3100 de 2019."
+  }
+}

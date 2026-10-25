@@ -1,0 +1,1007 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KBSJJ2LSLT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KBSJJ2LSLT');
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1551818823651884');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Calculadora de Inversión en Aparatología | Centro de Recursos Gloss &amp; Growth</title>
+<meta content="Evalúa cuánto cuesta adquirir un equipo estético, cuánto terminarías pagando en crédito o leasing y cuántas sesiones necesitarías para recuperar la inversión." name="description"/>
+<meta content="Gloss Growth" name="author"/>
+<link href="https://glossgrowthhq.com/recursos/inversion-aparatologia/" rel="canonical"/>
+<link href="../../brand/symbol-burgundy.svg" rel="icon" type="image/svg+xml"/>
+<meta content="website" property="og:type"/>
+<meta content="https://glossgrowthhq.com/recursos/inversion-aparatologia/" property="og:url"/>
+<meta content="Calculadora de Inversión en Aparatología | Gloss Growth" property="og:title"/>
+<meta content="Evalúa adquisición de contado, crédito bancario, leasing o alquiler para equipos estéticos. Modelo financiero sin comisiones comerciales." property="og:description"/>
+<meta content="Gloss Growth" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Calculadora de Inversión en Aparatología | Gloss Growth" name="twitter:title"/>
+<meta content="Modelo financiero y de recuperación para clínicas estéticas, spas y consultorios." name="twitter:description"/>
+
+<link href="../../homepage.css" rel="stylesheet"/>
+<link href="../../expansion.css" rel="stylesheet"/>
+<link href="../../motion.css?v=1" rel="stylesheet"/>
+<link href="../currency-picker.css" rel="stylesheet"/>
+<link href="../shared-storage.css" rel="stylesheet"/>
+<link href="aparatologia.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="../../" aria-label="Gloss Growth, inicio">
+      <img src="../../brand/horizontal-burgundy.svg" alt="Gloss Growth" loading="eager" decoding="async">
+    </a>
+    <nav id="main-nav" aria-label="Navegación principal">
+      <a href="../../">Inicio</a>
+      <a href="../../metodo/">Método</a>
+      <a href="../../servicios/">Servicios</a>
+      <a href="../../resultados/">Resultados</a>
+      <a href="../../nosotros/">Nosotros</a>
+      <a href="../" class="active" aria-current="page">Recursos</a>
+      <a href="../../blog/">Blog</a>
+    </nav>
+    <a class="btn btn--primary btn--sm" href="#contacto" onclick="openWAModal(); return false;">Hablar con nosotros</a>
+  </div>
+</header>
+
+<main id="inicio" tabindex="-1">
+  <section class="ap-hero">
+    <div class="wrap">
+      <nav aria-label="Migas de pan" class="breadcrumb">
+        <a href="../../">Inicio</a>
+        <span aria-hidden="true">/</span>
+        <a href="../">Recursos</a>
+        <span aria-hidden="true">/</span>
+        <a href="../herramientas/">Finanzas y Gestión</a>
+        <span aria-hidden="true">/</span>
+        <span>Inversión en Aparatología</span>
+      </nav>
+
+      <p class="eyebrow">Finanzas y Gestión · Evaluación de Equipamiento</p>
+      <h1>Calculadora de <em>Inversión en Aparatología</em></h1>
+      <p class="lead">Evalúa cuánto cuesta adquirir un equipo estético, cuánto terminarías pagando bajo distintas modalidades (contado, crédito, leasing o alquiler) y cuántas sesiones mensuales necesitas para amortizar la máquina sin tensionar la caja de tu clínica.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:24px;padding-bottom:60px;">
+    <div class="wrap">
+
+      <!-- GESTOR COMPARTIDO DE ANÁLISIS -->
+      <div id="ap-storage-container"></div>
+
+      <!-- SELECTOR MULTIMONEDA -->
+      <div id="ap-currency-picker-container" style="max-width:320px;margin-bottom:20px;"></div>
+
+      <!-- PRESETS DE EJEMPLO -->
+      <div style="background:#FFFFFF;border:1px solid var(--ap-cream-border);border-radius:8px;padding:12px 16px;margin-bottom:24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+        <span style="font-size:12px;font-weight:700;color:var(--ap-burgundy);text-transform:uppercase;letter-spacing:0.04em;">Cargar caso de referencia:</span>
+        <button type="button" class="btn btn--xs btn--outline" data-preset="laser-contado">Láser Diodo (Contado $30M)</button>
+        <button type="button" class="btn btn--xs btn--outline" data-preset="radio-credito">Radiofrecuencia (Crédito $12M)</button>
+        <button type="button" class="btn btn--xs btn--outline" data-preset="hifu-leasing">HIFU 7D (Leasing 24 meses)</button>
+        <button type="button" class="btn btn--xs btn--outline" data-preset="crio-alquiler">Criolipólisis (Alquiler mensual)</button>
+        <button type="button" class="btn btn--xs btn--outline" id="ap-btn-reset" style="margin-left:auto;">Restablecer</button>
+      </div>
+
+      <!-- MODALIDADES DE ADQUISICIÓN -->
+      <div class="ap-modality-nav" role="tablist" aria-label="Modalidades de adquisición">
+        <button type="button" class="ap-tab-btn active" role="tab" id="tab-contado" data-mode="contado" aria-selected="true">
+          1. Compra de contado
+        </button>
+        <button type="button" class="ap-tab-btn" role="tab" id="tab-credito" data-mode="credito" aria-selected="false">
+          2. Crédito bancario
+        </button>
+        <button type="button" class="ap-tab-btn" role="tab" id="tab-proveedor" data-mode="proveedor" aria-selected="false">
+          3. Financiación proveedor
+        </button>
+        <button type="button" class="ap-tab-btn" role="tab" id="tab-leasing" data-mode="leasing" aria-selected="false">
+          4. Leasing financiero
+        </button>
+        <button type="button" class="ap-tab-btn" role="tab" id="tab-alquiler" data-mode="alquiler" aria-selected="false">
+          5. Alquiler / Renting
+        </button>
+        <button type="button" class="ap-tab-btn" role="tab" id="tab-comparador" data-mode="comparador" aria-selected="false">
+          ⚖️ Comparar modalidades
+        </button>
+      </div>
+
+      <div class="ap-layout">
+        <!-- COLUMNA IZQUIERDA: FORMULARIOS -->
+        <div class="ap-form-col">
+          
+          <!-- TARJETA 1: IDENTIFICACIÓN Y ADQUISICIÓN -->
+          <article class="ap-card">
+            <h2 class="ap-card-title">
+              <span>1. Identificación y precio del equipo</span>
+              <span class="ap-badge-import" style="font-size:11px;font-weight:normal;">Paso 1 de 3</span>
+            </h2>
+
+            <div class="ap-form-grid">
+              <div class="ap-field col-span-2">
+                <label class="ap-label" for="ap-business-name">Nombre del negocio</label>
+                <input class="ap-input" id="ap-business-name" type="text" placeholder="Escribe el nombre de tu clínica o centro estético" maxlength="120">
+                <span class="ap-hint">Opcional. Identifica tu establecimiento en los reportes exportados y al copiar.</span>
+              </div>
+
+              <div class="ap-field col-span-2">
+                <label class="ap-label" for="ap-equipment-name">Nombre de la máquina o tecnología</label>
+                <input class="ap-input" id="ap-equipment-name" type="text" value="Láser Diodo Alta Potencia" placeholder="Ej. Láser Diodo, Radiofrecuencia Fraccionada...">
+              </div>
+
+              <div class="ap-field">
+                <label class="ap-label" for="ap-equipment-price">Precio de compra del equipo (<span class="currency-unit-label">COP</span>)</label>
+                <input class="ap-input" id="ap-equipment-price" type="number" min="0" step="100000" value="30000000">
+                <span class="ap-hint">Valor negociado antes de cuota inicial o financiación.</span>
+              </div>
+
+              <div class="ap-field">
+                <label class="ap-label" for="ap-installation-cost">Instalación y puesta en marcha (<span class="currency-unit-label">COP</span>)</label>
+                <input class="ap-input" id="ap-installation-cost" type="number" min="0" step="50000" value="0">
+                <span class="ap-hint">Flete, transporte o adecuación eléctrica.</span>
+              </div>
+
+              <div class="ap-field">
+                <label class="ap-label" for="ap-training-cost">Capacitación inicial del personal (<span class="currency-unit-label">COP</span>)</label>
+                <input class="ap-input" id="ap-training-cost" type="number" min="0" step="50000" value="0">
+                <span class="ap-hint">Si genera desembolso adicional al precio.</span>
+              </div>
+
+              <div class="ap-field">
+                <label class="ap-label" for="ap-useful-life">Vida útil estimada (años)</label>
+                <input class="ap-input" id="ap-useful-life" type="number" min="1" max="20" step="1" value="5">
+                <span class="ap-hint">Horizonte estimado de vigencia tecnológica.</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- TARJETA 2: CONDICIONES DE FINANCIACIÓN SEGÚN MODALIDAD -->
+          <article class="ap-card" id="ap-card-financing">
+            <h2 class="ap-card-title">
+              <span id="ap-financing-card-title">2. Estructura de financiación</span>
+              <span id="ap-financing-mode-badge" style="font-size:12px;font-weight:600;color:var(--ap-burgundy);">Compra de contado</span>
+            </h2>
+
+            <!-- Panel Contado -->
+            <div class="ap-finance-panel" id="panel-contado">
+              <p style="font-size:13px;color:var(--ap-muted);line-height:1.5;margin-top:0;">
+                En la modalidad de <strong>compra de contado</strong> se desembolsa el 100% del valor del equipo más los gastos iniciales de instalación. No se asumen cuotas periódicas, intereses bancarios ni comisiones de endeudamiento.
+              </p>
+              <div style="background:var(--ap-cream);padding:12px 14px;border-radius:6px;border:1px solid var(--ap-cream-border);">
+                <div style="display:flex;justify-content:space-between;font-size:13px;">
+                  <span>Desembolso total inicial:</span>
+                  <strong id="contado-out-total" style="color:var(--ap-burgundy);">$30.000.000 COP</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel Crédito Bancario / Proveedor -->
+            <div class="ap-finance-panel" id="panel-credito" style="display:none;">
+              <div class="ap-form-grid">
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-down-payment">Cuota inicial desembolsada (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="ap-down-payment" type="number" min="0" step="100000" value="6000000">
+                  <span class="ap-hint">Importe abonado con fondos propios.</span>
+                </div>
+
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-loan-term">Plazo de financiación (meses)</label>
+                  <input class="ap-input" id="ap-loan-term" type="number" min="1" max="120" step="1" value="24">
+                  <span class="ap-hint">Número de pagos mensuales.</span>
+                </div>
+
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-interest-rate">Tasa de interés (%)</label>
+                  <input class="ap-input" id="ap-interest-rate" type="number" min="0" max="100" step="0.01" value="1.2">
+                  <span class="ap-hint">Digita 0 si el crédito es sin intereses.</span>
+                </div>
+
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-rate-type">Tipo de tasa</label>
+                  <select class="ap-select" id="ap-rate-type">
+                    <option value="EM" selected>Efectiva Mensual (EM)</option>
+                    <option value="EA">Efectiva Anual (EA)</option>
+                    <option value="NA">Nominal Anual Mes Vencido (NA)</option>
+                  </select>
+                  <span class="ap-hint">Se convertirá rigurosamente a tasa mensual.</span>
+                </div>
+
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-monthly-loan-fees">Seguros y cargos mensuales (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="ap-monthly-loan-fees" type="number" min="0" step="10000" value="0">
+                  <span class="ap-hint">Seguro de vida o aval bancario asociado.</span>
+                </div>
+
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-balloon-payment">Cuota extraordinaria final / Balloon (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="ap-balloon-payment" type="number" min="0" step="100000" value="0">
+                  <span class="ap-hint">Pago final extraordinario pactado, si aplica.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel Leasing -->
+            <div class="ap-finance-panel" id="panel-leasing" style="display:none;">
+              <div class="ap-form-grid">
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-lease-down">Pago inicial o canon inicial (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="ap-lease-down" type="number" min="0" step="100000" value="3000000">
+                </div>
+
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-lease-canon">Canon periódico mensual (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="ap-lease-canon" type="number" min="0" step="50000" value="1500000">
+                </div>
+
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-lease-term">Plazo del contrato (meses)</label>
+                  <input class="ap-input" id="ap-lease-term" type="number" min="6" max="60" step="1" value="24">
+                </div>
+
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-purchase-option">Opción de compra final (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="ap-purchase-option" type="number" min="0" step="100000" value="3000000">
+                  <span class="ap-hint">Valor residual para adquirir el equipo al término.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel Alquiler -->
+            <div class="ap-finance-panel" id="panel-alquiler" style="display:none;">
+              <div class="ap-form-grid">
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-rental-fee">Tarifa de alquiler mensual (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="ap-rental-fee" type="number" min="0" step="50000" value="1500000">
+                </div>
+
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-rental-months">Horizonte de alquiler evaluado (meses)</label>
+                  <input class="ap-input" id="ap-rental-months" type="number" min="1" max="36" step="1" value="12">
+                </div>
+
+                <div class="ap-field col-span-2">
+                  <label class="ap-label" for="ap-security-deposit">Depósito en garantía recuperable (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="ap-security-deposit" type="number" min="0" step="100000" value="3000000">
+                  <span class="ap-hint">Monto retenido que se recupera al finalizar el contrato. Se excluye del gasto definitivo.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- TARJETA 3: OPERACIÓN CLÍNICA Y DEMANDA -->
+          <article class="ap-card">
+            <h2 class="ap-card-title">
+              <span>3. Operación clínica, ingresos y costos</span>
+              <span class="ap-badge-import" style="font-size:11px;font-weight:normal;">Paso 2 de 3</span>
+            </h2>
+
+            <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;">
+              <button type="button" class="btn btn--xs btn--outline" id="btn-import-from-treatment">
+                📥 Importar datos de Rentabilidad
+              </button>
+              <button type="button" class="btn btn--xs btn--outline" id="btn-import-from-capacity">
+                📥 Importar capacidad de mi centro
+              </button>
+            </div>
+
+            <!-- BLOQUE DE CONFIGURACIÓN OPERATIVA IMPORTADA -->
+            <div id="ap-operational-config-card" style="display:none;background:#FAF8F5;border:1px solid #E2D9CE;border-radius:8px;padding:14px;margin-bottom:18px;">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;flex-wrap:wrap;gap:8px;">
+                <div>
+                  <div style="display:flex;align-items:center;gap:6px;">
+                    <span style="font-size:12px;font-weight:bold;color:var(--ap-burgundy);">Capacidad operativa vinculada</span>
+                    <span class="ap-badge" id="ap-op-center-badge" style="font-size:11px;background:#EDE8DF;color:var(--ap-charcoal);padding:2px 8px;border-radius:10px;">—</span>
+                  </div>
+                  <p style="font-size:11px;color:var(--ap-muted);margin:3px 0 0;" id="ap-op-center-summary">—</p>
+                </div>
+                <button type="button" class="btn btn--xs btn--outline" id="btn-unlink-capacity" style="color:#991B1B;border-color:#F87171;">
+                  ✕ Desvincular capacidad
+                </button>
+              </div>
+
+              <div class="ap-form-grid" style="grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));gap:10px;margin-bottom:12px;">
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-op-units" style="font-size:11px;">Unidades de equipo</label>
+                  <input class="ap-input" id="ap-op-units" type="number" min="1" max="10" value="1" style="padding:6px 8px;font-size:13px;">
+                </div>
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-op-duration" style="font-size:11px;">Duración sesión (min)</label>
+                  <input class="ap-input" id="ap-op-duration" type="number" min="15" step="5" value="60" style="padding:6px 8px;font-size:13px;">
+                </div>
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-op-cleanup" style="font-size:11px;">Prep. y limpieza (min)</label>
+                  <input class="ap-input" id="ap-op-cleanup" type="number" min="0" step="5" value="15" style="padding:6px 8px;font-size:13px;">
+                </div>
+                <div class="ap-field">
+                  <label class="ap-label" for="ap-op-staff-count" style="font-size:11px;">Personal por sesión</label>
+                  <input class="ap-input" id="ap-op-staff-count" type="number" min="1" max="5" value="1" style="padding:6px 8px;font-size:13px;">
+                </div>
+              </div>
+
+              <!-- Compatibilidades declaradas por el usuario -->
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;background:#FFFFFF;border:1px solid #E8E2DA;border-radius:6px;padding:10px;">
+                <div>
+                  <label class="ap-label" style="font-size:11px;font-weight:bold;margin-bottom:6px;display:block;">
+                    Profesionales habilitados
+                  </label>
+                  <div id="ap-op-staff-checkboxes" style="display:flex;flex-direction:column;gap:4px;font-size:12px;max-height:120px;overflow-y:auto;">
+                    <!-- Inyectado dinámicamente -->
+                  </div>
+                </div>
+                <div>
+                  <label class="ap-label" style="font-size:11px;font-weight:bold;margin-bottom:6px;display:block;">
+                    Cabinas compatibles
+                  </label>
+                  <div id="ap-op-cabins-checkboxes" style="display:flex;flex-direction:column;gap:4px;font-size:12px;max-height:120px;overflow-y:auto;">
+                    <!-- Inyectado dinámicamente -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Equipamiento auxiliar opcional -->
+              <div id="ap-op-aux-equip-container" style="display:none;margin-top:10px;padding-top:8px;border-top:1px dashed #E2D9CE;">
+                <label class="ap-label" for="ap-op-aux-equip" style="font-size:11px;">Equipo auxiliar complementario (opcional)</label>
+                <select class="ap-select" id="ap-op-aux-equip" style="padding:6px 8px;font-size:12px;">
+                  <option value="">Ninguno (solo utiliza el nuevo equipo)</option>
+                </select>
+                <span class="ap-hint" style="font-size:10px;">Si el tratamiento requiere simultáneamente un equipo existente de tu centro.</span>
+              </div>
+            </div>
+
+            <div class="ap-form-grid">
+              <div class="ap-field col-span-2">
+                <label class="ap-label" for="ap-treatment-name">Tratamiento o procedimiento vinculado</label>
+                <input class="ap-input" id="ap-treatment-name" type="text" value="Sesión Depilación Láser Zona Grande" placeholder="Ej. Depilación cuerpo completo, Radiofrecuencia facial...">
+              </div>
+
+              <div class="ap-field">
+                <label class="ap-label" for="ap-price-session">Precio cobrado por sesión (<span class="currency-unit-label">COP</span>)</label>
+                <input class="ap-input" id="ap-price-session" type="number" min="0" step="5000" value="180000">
+              </div>
+
+              <div class="ap-field">
+                <label class="ap-label" for="ap-cost-session">Costo variable directo por sesión (<span class="currency-unit-label">COP</span>)</label>
+                <input class="ap-input" id="ap-cost-session" type="number" min="0" step="1000" value="80000">
+                <span class="ap-hint">Consumibles, gel, gasas, tips desechables y honorario variable.</span>
+              </div>
+
+              <div class="ap-field">
+                <label class="ap-label" for="ap-monthly-sessions">Sesiones previstas al mes</label>
+                <input class="ap-input" id="ap-monthly-sessions" type="number" min="0" step="1" value="20">
+                <span class="ap-hint">Volumen estimado realista de atenciones.</span>
+              </div>
+
+              <div class="ap-field">
+                <label class="ap-label" for="ap-monthly-maintenance">Mantenimiento mensual del equipo (<span class="currency-unit-label">COP</span>)</label>
+                <input class="ap-input" id="ap-monthly-maintenance" type="number" min="0" step="50000" value="300000">
+                <span class="ap-hint">Póliza técnica, filtros, disparos de lámpara o calibración.</span>
+              </div>
+
+              <div class="ap-field">
+                <label class="ap-label" for="ap-monthly-insurance">Seguros y licencias del equipo (<span class="currency-unit-label">COP</span>)</label>
+                <input class="ap-input" id="ap-monthly-insurance" type="number" min="0" step="20000" value="0">
+              </div>
+
+              <div class="ap-field">
+                <label class="ap-label" for="ap-residual-value">Valor residual esperado al término (<span class="currency-unit-label">COP</span>)</label>
+                <input class="ap-input" id="ap-residual-value" type="number" min="0" step="500000" value="6000000">
+                <span class="ap-hint">Valor estimado de reventa o rescate tecnológico.</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- COLUMNA DERECHA: RESULTADOS, KPIS Y DIAGNÓSTICO -->
+        <div class="ap-results-col">
+          
+          <!-- TARJETA KPIS PRINCIPALES -->
+          <article class="ap-card" style="background:#FAF8F5;border-color:var(--ap-cream-border);">
+            <h2 class="ap-card-title">
+              <span>Resultados Financieros y Operativos</span>
+            </h2>
+
+            <div class="ap-kpi-grid">
+              <div class="ap-kpi-box">
+                <span class="ap-kpi-label">Desembolso Inicial</span>
+                <span class="ap-kpi-val" id="kpi-down-payment">$30.000.000</span>
+                <span class="ap-kpi-sub" id="kpi-down-sub">Pago inicial + instalación</span>
+              </div>
+
+              <div class="ap-kpi-box">
+                <span class="ap-kpi-label">Cuota Mensual</span>
+                <span class="ap-kpi-val" id="kpi-monthly-payment">$0</span>
+                <span class="ap-kpi-sub" id="kpi-monthly-sub">Financiación / canon</span>
+              </div>
+
+              <div class="ap-kpi-box highlight">
+                <span class="ap-kpi-label">Contribución Mensual</span>
+                <span class="ap-kpi-val" id="kpi-monthly-contrib">$2.000.000</span>
+                <span class="ap-kpi-sub" id="kpi-contrib-sub">$100.000 COP/sesión (55,6%)</span>
+              </div>
+
+              <div class="ap-kpi-box highlight">
+                <span class="ap-kpi-label">Flujo Neto Mensual</span>
+                <span class="ap-kpi-val" id="kpi-net-cashflow">$1.700.000</span>
+                <span class="ap-kpi-sub" id="kpi-cashflow-sub">Tras cubrir mantenimiento y deuda</span>
+              </div>
+            </div>
+
+            <!-- KPIs Secundarios -->
+            <div style="background:#FFFFFF;border:1px solid var(--ap-border);border-radius:8px;padding:12px;margin-bottom:16px;">
+              <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #F1F5F9;font-size:12px;">
+                <span style="color:var(--ap-muted);">Sesiones mínimas para cubrir equipo:</span>
+                <strong id="sec-be-fixed">3 sesiones/mes</strong>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #F1F5F9;font-size:12px;">
+                <span style="color:var(--ap-muted);">Sesiones para cubrir equipo + deuda:</span>
+                <strong id="sec-be-finance">3 sesiones/mes</strong>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #F1F5F9;font-size:12px;">
+                <span style="color:var(--ap-muted);">Recuperación inversión total (Payback simple):</span>
+                <strong id="sec-simple-payback" style="color:var(--ap-burgundy);">17,6 meses</strong>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:6px 0;font-size:12px;">
+                <span style="color:var(--ap-muted);">Recuperación capital propio (Equity payback):</span>
+                <strong id="sec-equity-payback" style="color:var(--ap-burgundy);">17,6 meses</strong>
+              </div>
+            </div>
+
+            <!-- TABLA DE SENSIBILIDAD POR DEMANDA -->
+            <h3 style="font-size:13px;font-weight:700;color:var(--ap-charcoal);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.04em;">
+              Sensibilidad por niveles de demanda
+            </h3>
+            <div class="ap-table-wrap">
+              <table class="ap-table">
+                <thead>
+                  <tr>
+                    <th>Escenario</th>
+                    <th>Citas</th>
+                    <th>Facturación</th>
+                    <th>Flujo Neto</th>
+                    <th>Payback</th>
+                  </tr>
+                </thead>
+                <tbody id="ap-demand-tbody">
+                  <!-- Inyectado por JS -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- DIAGNÓSTICO EN TRES PARTES -->
+            <div class="ap-diag-box" id="ap-diag-container">
+              <div class="ap-diag-part">
+                <strong>Hecho cuantitativo:</strong> <span id="diag-hecho">—</span>
+              </div>
+              <div class="ap-diag-part">
+                <strong>Qué significa para el negocio:</strong> <span id="diag-significado">—</span>
+              </div>
+              <div class="ap-diag-part">
+                <strong>Revisión prudente:</strong> <span id="diag-recomendacion">—</span>
+              </div>
+            </div>
+
+            <!-- BOTONES DE EXPORTACIÓN -->
+            <div class="ap-actions">
+              <button type="button" class="btn btn--outline" id="ap-btn-copy" style="flex:1;">
+                Copiar resultados
+              </button>
+              <button type="button" class="btn btn--primary" id="ap-btn-pdf" style="flex:1;">
+                Descargar informe PDF
+              </button>
+            </div>
+          </article>
+
+          <!-- TARJETA: VIABILIDAD OPERATIVA DEL EQUIPO (CAPACIDAD IMPORTADA) -->
+          <article class="ap-card" id="ap-operational-viability-card" style="display:none;background:#FAF8F5;border:1px solid #E2D9CE;border-radius:8px;padding:16px;margin-top:20px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
+              <h3 style="font-size:13px;font-weight:700;color:var(--ap-charcoal);margin:0;text-transform:uppercase;letter-spacing:0.04em;display:flex;align-items:center;gap:6px;">
+                <span>Viabilidad Operativa del Equipo</span>
+              </h3>
+              <span class="ap-badge" id="op-badge-source" style="font-size:11px;background:#EDE8DF;color:var(--ap-burgundy);font-weight:600;padding:2px 8px;border-radius:10px;">Capacidad Vinculada</span>
+            </div>
+
+            <!-- KPIs de Viabilidad Operativa -->
+            <div class="ap-kpi-grid" style="grid-template-columns:repeat(2, 1fr);gap:10px;margin-bottom:14px;">
+              <div class="ap-kpi-box" style="padding:10px;">
+                <span class="ap-kpi-label" style="font-size:10px;">Capacidad programable</span>
+                <span class="ap-kpi-val" id="op-kpi-programmable" style="font-size:16px;color:var(--ap-charcoal);">0 citas/mes</span>
+                <span class="ap-kpi-sub" id="op-kpi-programmable-sub">Con recursos compatibles</span>
+              </div>
+              <div class="ap-kpi-box" style="padding:10px;">
+                <span class="ap-kpi-label" style="font-size:10px;">Demanda mensual prevista</span>
+                <span class="ap-kpi-val" id="op-kpi-demand" style="font-size:16px;color:var(--ap-charcoal);">0 citas/mes</span>
+                <span class="ap-kpi-sub">Ingresada en el formulario</span>
+              </div>
+              <div class="ap-kpi-box highlight" style="padding:10px;grid-column:span 2;">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;">
+                  <div>
+                    <span class="ap-kpi-label" style="font-size:10px;">Sesiones factibles del escenario</span>
+                    <span class="ap-kpi-val" id="op-kpi-feasible" style="font-size:20px;color:var(--ap-burgundy);">0 citas/mes</span>
+                  </div>
+                  <span class="ap-kpi-sub" id="op-kpi-feasible-sub" style="font-size:11px;font-weight:600;">Mínimo(Capacidad, Demanda)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Métricas secundarias: horas y ocupación -->
+            <div style="background:#FFFFFF;border:1px solid var(--ap-border);border-radius:6px;padding:10px;margin-bottom:12px;font-size:12px;">
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #F1F5F9;">
+                <span style="color:var(--ap-muted);">Horas de ocupación requeridas:</span>
+                <strong id="op-metric-hours">0 h/mes</strong>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #F1F5F9;">
+                <span style="color:var(--ap-muted);">Diferencia (demanda vs capacidad):</span>
+                <strong id="op-metric-diff">0 citas</strong>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:4px 0;">
+                <span style="color:var(--ap-muted);">Recurso cuello de botella:</span>
+                <strong id="op-metric-bottleneck" style="color:var(--ap-charcoal);text-align:right;max-width:60%;">—</strong>
+              </div>
+            </div>
+
+            <!-- Alerta de Desplazamiento y Cuello de Botella -->
+            <div id="op-displacement-alert" style="display:none;background:#FEF2F2;border:1px solid #FECACA;border-radius:6px;padding:10px;margin-bottom:12px;font-size:12px;color:#991B1B;line-height:1.4;">
+              <strong id="op-displacement-title" style="display:block;margin-bottom:2px;">⚠️ Alerta de capacidad</strong>
+              <span id="op-displacement-desc">—</span>
+            </div>
+
+            <!-- Botones de Acción sobre Sesiones Factibles -->
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <button type="button" class="btn btn--sm btn--primary" id="btn-apply-feasible" style="width:100%;font-size:12px;padding:8px 12px;">
+                ✓ Utilizar sesiones factibles en mi análisis financiero
+              </button>
+              <button type="button" class="btn btn--sm btn--outline" id="btn-restore-manual" style="width:100%;font-size:12px;padding:8px 12px;display:none;">
+                ↺ Restaurar demanda estimada manual (<span id="op-restore-val">20</span> citas)
+              </button>
+            </div>
+          </article>
+
+          <!-- CRONOGRAMA DE AMORTIZACIÓN (COLAPSIBLE) -->
+          <article class="ap-card" id="ap-card-schedule" style="display:none;">
+            <h3 class="ap-card-title" style="font-size:14px;">
+              <span>Cronograma de Amortización Mensual</span>
+              <span id="sched-total-interest-badge" style="font-size:11px;color:var(--ap-muted);">Intereses: $0 COP</span>
+            </h3>
+            <div class="ap-table-wrap" style="max-height:240px;overflow-y:auto;">
+              <table class="ap-table" id="ap-sched-table">
+                <thead>
+                  <tr>
+                    <th>Mes</th>
+                    <th>Cuota Total</th>
+                    <th>Amortización</th>
+                    <th>Interés</th>
+                    <th>Saldo</th>
+                  </tr>
+                </thead>
+                <tbody id="ap-sched-tbody">
+                  <!-- Inyectado dinámicamente -->
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- VISTA COMPARADOR FINANCIERO DE APARATOLOGÍA -->
+      <div id="ap-comparator-view" style="display:none;margin-top:24px;">
+        
+        <!-- CARD DE CONTROL: MODALIDADES Y HORIZONTE -->
+        <article class="ap-card" style="border-top:3px solid var(--ap-burgundy);">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+            <div>
+              <h2 class="ap-card-title" style="margin-bottom:4px;">
+                <span>Comparador Financiero de Adquisición</span>
+              </h2>
+              <p style="font-size:13px;color:var(--ap-muted);margin:0;max-width:720px;line-height:1.45;">
+                Evalúa simultáneamente hasta 5 formas de incorporar el equipo a tu centro. El modelo calcula los desembolsos, el sobrecosto financiero, el flujo de caja neto mensual y la situación de propiedad bajo un horizonte temporal uniforme.
+              </p>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button type="button" class="btn btn--xs btn--outline" id="comp-btn-select-all">Seleccionar todas</button>
+              <button type="button" class="btn btn--xs btn--outline" id="comp-btn-reset-modes">Restablecer selección</button>
+            </div>
+          </div>
+
+          <!-- SELECTOR DE MODALIDADES (2 A 5) -->
+          <div style="background:#FAF8F5;border:1px solid var(--ap-cream-border);border-radius:8px;padding:14px;margin-bottom:16px;">
+            <label class="ap-label" style="font-size:12px;font-weight:700;margin-bottom:8px;display:block;">
+              1. Modalidades a comparar en pantalla (selecciona entre 2 y 5):
+            </label>
+            <div class="ap-comp-modes-selector" id="comp-modes-selector" style="display:flex;gap:10px;flex-wrap:wrap;">
+              <label class="ap-comp-chip">
+                <input type="checkbox" class="comp-mode-check" value="contado" checked>
+                <span>1. Contado</span>
+              </label>
+              <label class="ap-comp-chip">
+                <input type="checkbox" class="comp-mode-check" value="credito" checked>
+                <span>2. Crédito bancario</span>
+              </label>
+              <label class="ap-comp-chip">
+                <input type="checkbox" class="comp-mode-check" value="proveedor" checked>
+                <span>3. Financiación proveedor</span>
+              </label>
+              <label class="ap-comp-chip">
+                <input type="checkbox" class="comp-mode-check" value="leasing" checked>
+                <span>4. Leasing financiero</span>
+              </label>
+              <label class="ap-comp-chip">
+                <input type="checkbox" class="comp-mode-check" value="alquiler" checked>
+                <span>5. Alquiler / Renting</span>
+              </label>
+            </div>
+            <div id="comp-modes-error" style="display:none;background:#FEF2F2;border:1px solid #FECACA;border-radius:6px;padding:8px 12px;color:#991B1B;font-size:12px;margin-top:10px;">
+              ⚠️ Debes seleccionar al menos dos modalidades para generar la comparativa financiera.
+            </div>
+          </div>
+
+          <!-- SELECTOR DE HORIZONTE UNIFORME -->
+          <div style="background:#FAF8F5;border:1px solid var(--ap-cream-border);border-radius:8px;padding:14px;margin-bottom:16px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+              <div>
+                <label class="ap-label" style="font-size:12px;font-weight:700;margin-bottom:4px;display:block;">
+                  2. Horizonte temporal de evaluación unificada:
+                </label>
+                <p style="font-size:11px;color:var(--ap-muted);margin:0;">
+                  Permite medir el flujo neto acumulado y los desembolsos reales en un mismo período de tiempo.
+                </p>
+              </div>
+              <div class="ap-comp-horizon-pills" id="comp-horizon-pills" style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+                <button type="button" class="btn btn--xs btn--outline comp-hz-btn" data-hz="12">12 meses</button>
+                <button type="button" class="btn btn--xs btn--primary comp-hz-btn active" data-hz="24">24 meses (2 años)</button>
+                <button type="button" class="btn btn--xs btn--outline comp-hz-btn" data-hz="36">36 meses (3 años)</button>
+                <button type="button" class="btn btn--xs btn--outline comp-hz-btn" data-hz="48">48 meses (4 años)</button>
+                <button type="button" class="btn btn--xs btn--outline comp-hz-btn" data-hz="60">60 meses (5 años)</button>
+                <div style="display:flex;align-items:center;gap:4px;margin-left:4px;">
+                  <span style="font-size:11px;color:var(--ap-muted);">Otro:</span>
+                  <input type="number" id="comp-custom-hz" min="1" max="120" placeholder="Meses" style="width:64px;padding:4px 6px;border:1px solid var(--ap-border);border-radius:4px;font-size:12px;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AJUSTE COLAPSIBLE DE CONDICIONES POR MODALIDAD -->
+          <details class="ap-comp-details" style="background:#FFFFFF;border:1px solid var(--ap-cream-border);border-radius:8px;padding:12px 14px;">
+            <summary style="cursor:pointer;font-size:13px;font-weight:700;color:var(--ap-burgundy);user-select:none;display:flex;align-items:center;justify-content:space-between;">
+              <span>⚙️ Ajustar condiciones financieras de cada modalidad</span>
+              <span style="font-size:11px;color:var(--ap-muted);font-weight:normal;">(Clic para desplegar / ocultar)</span>
+            </summary>
+            
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:16px;margin-top:14px;padding-top:14px;border-top:1px dashed var(--ap-cream-border);">
+              
+              <!-- Tarjeta Crédito Bancario -->
+              <div style="background:#FAF8F5;border:1px solid var(--ap-border);border-radius:6px;padding:12px;">
+                <h4 style="margin:0 0 10px;font-size:12px;font-weight:700;color:var(--ap-charcoal);text-transform:uppercase;letter-spacing:0.04em;">
+                  2. Crédito bancario
+                </h4>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Cuota inicial (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="comp-cred-down" type="number" min="0" step="100000" value="6000000" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Plazo del crédito (meses)</label>
+                  <input class="ap-input" id="comp-cred-term" type="number" min="1" max="120" step="1" value="24" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Tasa de interés (%)</label>
+                  <input class="ap-input" id="comp-cred-rate" type="number" min="0" max="100" step="0.01" value="1.2" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Tipo de tasa</label>
+                  <select class="ap-select" id="comp-cred-ratetype" style="padding:4px 8px;font-size:12px;">
+                    <option value="EM" selected>Efectiva Mensual (EM)</option>
+                    <option value="EA">Efectiva Anual (EA)</option>
+                    <option value="NA">Nominal Anual (NA)</option>
+                  </select>
+                </div>
+                <div class="ap-field">
+                  <label class="ap-label" style="font-size:11px;">Cuota extraordinaria final / Balloon</label>
+                  <input class="ap-input" id="comp-cred-balloon" type="number" min="0" step="100000" value="0" style="padding:4px 8px;font-size:12px;">
+                </div>
+              </div>
+
+              <!-- Tarjeta Financiación Proveedor -->
+              <div style="background:#FAF8F5;border:1px solid var(--ap-border);border-radius:6px;padding:12px;">
+                <h4 style="margin:0 0 10px;font-size:12px;font-weight:700;color:var(--ap-charcoal);text-transform:uppercase;letter-spacing:0.04em;">
+                  3. Financiación proveedor
+                </h4>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Cuota inicial (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="comp-prov-down" type="number" min="0" step="100000" value="6000000" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Plazo proveedor (meses)</label>
+                  <input class="ap-input" id="comp-prov-term" type="number" min="1" max="120" step="1" value="12" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Tasa de interés (%)</label>
+                  <input class="ap-input" id="comp-prov-rate" type="number" min="0" max="100" step="0.01" value="0" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Tipo de tasa</label>
+                  <select class="ap-select" id="comp-prov-ratetype" style="padding:4px 8px;font-size:12px;">
+                    <option value="EM" selected>Efectiva Mensual (EM)</option>
+                    <option value="EA">Efectiva Anual (EA)</option>
+                    <option value="NA">Nominal Anual (NA)</option>
+                  </select>
+                </div>
+                <div class="ap-field">
+                  <label class="ap-label" style="font-size:11px;">Cuota extraordinaria final / Balloon</label>
+                  <input class="ap-input" id="comp-prov-balloon" type="number" min="0" step="100000" value="0" style="padding:4px 8px;font-size:12px;">
+                </div>
+              </div>
+
+              <!-- Tarjeta Leasing -->
+              <div style="background:#FAF8F5;border:1px solid var(--ap-border);border-radius:6px;padding:12px;">
+                <h4 style="margin:0 0 10px;font-size:12px;font-weight:700;color:var(--ap-charcoal);text-transform:uppercase;letter-spacing:0.04em;">
+                  4. Leasing financiero
+                </h4>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Canon / pago inicial (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="comp-lease-down" type="number" min="0" step="100000" value="3000000" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Canon periódico mensual (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="comp-lease-canon" type="number" min="0" step="50000" value="1500000" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Plazo contrato (meses)</label>
+                  <input class="ap-input" id="comp-lease-term" type="number" min="6" max="60" step="1" value="24" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Opción de compra final (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="comp-lease-option" type="number" min="0" step="100000" value="3000000" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-top:10px;">
+                  <label style="display:flex;align-items:center;gap:6px;font-size:11px;cursor:pointer;">
+                    <input type="checkbox" id="comp-lease-exercise" checked>
+                    <span>Ejercer opción de compra al término</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Tarjeta Alquiler -->
+              <div style="background:#FAF8F5;border:1px solid var(--ap-border);border-radius:6px;padding:12px;">
+                <h4 style="margin:0 0 10px;font-size:12px;font-weight:700;color:var(--ap-charcoal);text-transform:uppercase;letter-spacing:0.04em;">
+                  5. Alquiler / Renting
+                </h4>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Tarifa mensual (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="comp-rent-fee" type="number" min="0" step="50000" value="1500000" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Horizonte de contrato pactado (meses)</label>
+                  <input class="ap-input" id="comp-rent-term" type="number" min="1" max="60" step="1" value="12" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-bottom:8px;">
+                  <label class="ap-label" style="font-size:11px;">Depósito en garantía recuperable (<span class="currency-unit-label">COP</span>)</label>
+                  <input class="ap-input" id="comp-rent-deposit" type="number" min="0" step="100000" value="3000000" style="padding:4px 8px;font-size:12px;">
+                </div>
+                <div class="ap-field" style="margin-top:10px;">
+                  <label style="display:flex;align-items:center;gap:6px;font-size:11px;cursor:pointer;">
+                    <input type="checkbox" id="comp-rent-maint-included">
+                    <span>Mantenimiento incluido en tarifa</span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+          </details>
+        </article>
+
+        <!-- TARJETAS DE DESTACADOS (HIGHLIGHTS) -->
+        <div class="ap-kpi-grid" id="comp-kpi-grid" style="margin-bottom:24px;">
+          <div class="ap-kpi-box">
+            <span class="ap-kpi-label">Menor Desembolso Inicial</span>
+            <span class="ap-kpi-val" id="comp-hl-initial-val">—</span>
+            <span class="ap-kpi-sub" id="comp-hl-initial-sub">—</span>
+          </div>
+
+          <div class="ap-kpi-box">
+            <span class="ap-kpi-label">Menor Compromiso Mensual</span>
+            <span class="ap-kpi-val" id="comp-hl-monthly-val">—</span>
+            <span class="ap-kpi-sub" id="comp-hl-monthly-sub">—</span>
+          </div>
+
+          <div class="ap-kpi-box highlight">
+            <span class="ap-kpi-label">Menor Desembolso Total (<span class="comp-hz-label">24m</span>)</span>
+            <span class="ap-kpi-val" id="comp-hl-total-val">—</span>
+            <span class="ap-kpi-sub" id="comp-hl-total-sub">—</span>
+          </div>
+
+          <div class="ap-kpi-box highlight">
+            <span class="ap-kpi-label">Mayor Flujo Neto Acumulado (<span class="comp-hz-label">24m</span>)</span>
+            <span class="ap-kpi-val" id="comp-hl-cashflow-val">—</span>
+            <span class="ap-kpi-sub" id="comp-hl-cashflow-sub">—</span>
+          </div>
+        </div>
+
+        <!-- CUADRO COMPARATIVO DETALLADO -->
+        <article class="ap-card" id="ap-comp-table-card">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px;">
+            <h3 class="ap-card-title" style="margin:0;">
+              <span>Cuadro Comparativo Detallado</span>
+            </h3>
+            <span style="font-size:12px;color:var(--ap-muted);">Horizonte unificado: <strong id="comp-table-hz-badge" style="color:var(--ap-burgundy);">24 meses</strong></span>
+          </div>
+
+          <div class="ap-table-wrap">
+            <table class="ap-table" id="ap-comp-table">
+              <thead id="ap-comp-thead">
+                <!-- Inyectado por JS -->
+              </thead>
+              <tbody id="ap-comp-tbody">
+                <!-- Inyectado por JS -->
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- GRÁFICO DE EVOLUCIÓN MENSUAL DEL FLUJO DE CAJA ACUMULADO -->
+        <article class="ap-card" id="ap-comp-chart-card">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
+            <div>
+              <h3 class="ap-card-title" style="margin:0 0 4px;">
+                <span>Evolución Mensual del Flujo de Caja Acumulado</span>
+              </h3>
+              <p style="font-size:12px;color:var(--ap-muted);margin:0;">
+                Muestra la recuperación de la inversión y la acumulación de liquidez mes a mes durante los <span class="comp-hz-label">24</span> meses analizados.
+              </p>
+            </div>
+            <div id="comp-chart-legend" style="display:flex;gap:12px;flex-wrap:wrap;font-size:12px;">
+              <!-- Leyenda inyectada por JS -->
+            </div>
+          </div>
+
+          <div id="comp-chart-container" style="background:#FAF8F5;border:1px solid var(--ap-cream-border);border-radius:8px;padding:16px;min-height:260px;display:flex;align-items:center;justify-content:center;">
+            <!-- SVG renderizado dinámicamente -->
+          </div>
+        </article>
+
+        <!-- DIAGNÓSTICO FINANCIERO Y PRUDENCIA DE DECISIÓN -->
+        <article class="ap-card">
+          <h3 class="ap-card-title" style="margin-bottom:12px;">
+            <span>Diagnóstico Financiero y Criterio de Decisión</span>
+          </h3>
+
+          <div class="ap-diag-box" id="comp-interpretation-box">
+            <div class="ap-diag-part">
+              <strong>1. Barrera de entrada y liquidez inicial:</strong>
+              <span id="comp-diag-desembolso">—</span>
+            </div>
+            <div class="ap-diag-part">
+              <strong>2. Desembolso acumulado en el horizonte:</strong>
+              <span id="comp-diag-pagos">—</span>
+            </div>
+            <div class="ap-diag-part">
+              <strong>3. Generación neta de liquidez:</strong>
+              <span id="comp-diag-caja">—</span>
+            </div>
+            <div class="ap-diag-part">
+              <strong>4. Recomendación financiera prudente:</strong>
+              <span id="comp-diag-prudencia">—</span>
+            </div>
+          </div>
+
+          <!-- BOTONES DE EXPORTACIÓN Y PERSISTENCIA -->
+          <div class="ap-actions" style="margin-top:20px;">
+            <button type="button" class="btn btn--outline" id="comp-btn-copy" style="flex:1;">
+              📋 Copiar comparativa
+            </button>
+            <button type="button" class="btn btn--primary" id="comp-btn-pdf" style="flex:1;">
+              📄 Descargar reporte PDF de la comparativa
+            </button>
+          </div>
+          <div id="comp-feedback-msg" style="display:none;margin-top:10px;padding:8px 12px;border-radius:6px;font-size:12px;text-align:center;"></div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="../../brand/horizontal-burgundy.svg" alt="Gloss Growth" class="footer-logo">
+      <p class="footer-desc">Consultoría y marketing estratégico para clínicas de medicina estética, spas y consultorios.</p>
+    </div>
+    <div class="footer-nav">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="../herramientas/">Rentabilidad por Tratamiento</a></li>
+        <li><a href="../calculadora-publicidad/">ROAS Publicitario</a></li>
+        <li><a href="../capacidad-instalada/">Capacidad Instalada</a></li>
+        <li><a href="./">Inversión en Aparatología</a></li>
+      </ul>
+    </div>
+    <div class="footer-nav">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../../politica-de-privacidad/">Política de Privacidad</a></li>
+        <li><a href="../../terminos-del-servicio/">Términos del Servicio</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© 2026 Gloss &amp; Growth. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- MODAL WHATSAPP DIAGNÓSTICO -->
+<div class="modal-backdrop" id="waModal" role="dialog" aria-modal="true" aria-labelledby="waModalTitle" hidden>
+  <div class="modal-card">
+    <button class="modal-close" type="button" onclick="closeWAModal()" aria-label="Cerrar ventana modal">✕</button>
+    <p class="modal-eyebrow">Asesoría en Rentabilidad y Equipamiento</p>
+    <h3 id="waModalTitle">Hablemos de tus equipos y retorno de inversión</h3>
+    <p class="modal-lead">Cuéntanos sobre tu clínica o spa para evaluar juntos la rentabilidad de tu aparatología y estructurar estrategias comerciales de captación.</p>
+    <form class="modal-form" id="waForm" onsubmit="handleWASubmit(event)">
+      <div class="form-group">
+        <label for="waNombre">Tu nombre</label>
+        <input class="form-input" id="waNombre" name="nombre" type="text" placeholder="Dra. Lina Cruz" required autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="waClinica">Nombre del negocio</label>
+        <input class="form-input" id="waClinica" name="clinica" type="text" placeholder="Escribe el nombre de tu clínica o centro estético" required autocomplete="organization">
+      </div>
+      <div class="form-group">
+        <label for="waTratamiento">Equipo o tratamiento principal</label>
+        <input class="form-input" id="waTratamiento" name="tratamiento" type="text" placeholder="Láser Diodo, Radiofrecuencia, HIFU...">
+      </div>
+      <button class="btn btn--block" id="waSubmitBtn" type="submit">Iniciar conversación en WhatsApp <span aria-hidden="true">↗</span></button>
+    </form>
+  </div>
+</div>
+
+<!-- MODAL SELECCIONAR ANÁLISIS DE CAPACIDAD -->
+<div class="modal-backdrop" id="modal-select-capacity" role="dialog" aria-modal="true" aria-labelledby="modalCapTitle" style="display:none;">
+  <div class="modal-card">
+    <button class="modal-close" type="button" id="btn-close-cap-modal" aria-label="Cerrar modal">✕</button>
+    <p class="modal-eyebrow" style="font-size:11px;font-weight:700;letter-spacing:0.06em;color:var(--ap-burgundy);text-transform:uppercase;margin:0 0 6px;">Simulador de Capacidad Instalada</p>
+    <h3 id="modalCapTitle" style="margin:0 0 10px;font-size:18px;color:var(--ap-charcoal);">Importar capacidad de mi centro</h3>
+    <p style="font-size:13px;color:var(--ap-muted);line-height:1.5;margin-bottom:16px;">
+      Selecciona una simulación de capacidad guardada para evaluar cuántas sesiones de este nuevo equipo pueden programarse con tus recursos, cabinas y horarios reales.
+    </p>
+
+    <!-- Contenedor inyectado dinámicamente -->
+    <div id="modal-capacity-list"></div>
+  </div>
+</div>
+
+<script src="../../navigation.js" defer></script>
+<script src="../../vendor/jspdf.umd.min.js"></script>
+<script src="../currency-picker.js"></script>
+<script src="../shared-storage.js"></script>
+<script src="../report-engine.js"></script>
+<script src="../capacidad-instalada/capacidad-engine.js"></script>
+<script src="aparatologia-engine.js"></script>
+<script src="aparatologia-app.js"></script>
+</body>
+</html>
