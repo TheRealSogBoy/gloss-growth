@@ -52,8 +52,9 @@
       // 5. Inicializar Calendario Editorial (Etapa C)
       initCalendar();
 
-      // 6. Generación inicial por defecto para ganchos (demostración inmediata con biblioteca local)
-      handleGenerate(true);
+      // 6. Configurar Turnstile y presentar propuestas de referencia inicial
+      setupTurnstile();
+      renderInitialReferenceState();
 
       // 7. Verificar hash en URL para activar pestaña directa si aplica
       checkUrlTab();
@@ -577,28 +578,70 @@
   // =========================================================================
   // GESTIÓN: GENERADOR DE GANCHOS (CONEXIÓN GEMINI AI v2.3.1 + BIBLIOTECA LOCAL)
   // =========================================================================
+  // GESTIÓN: TURNSTILE Y CONEXIÓN CON CLOUDFLARE WORKER / GEMINI v2.3.2
+  // =========================================================================
+
+  let turnstileWidgetId = null;
+  let currentTurnstileToken = null;
+
+  function setupTurnstile() {
+    if (typeof window.turnstile !== 'undefined') {
+      try {
+        const container = document.getElementById('ec-turnstile-container');
+        if (container && turnstileWidgetId === null) {
+          turnstileWidgetId = window.turnstile.render(container, {
+            sitekey: '1x00000000000000000000AA', // Cloudflare Turnstile Managed Key
+            theme: 'light',
+            size: 'flexible',
+            callback: function(token) {
+              currentTurnstileToken = token;
+            },
+            'expired-callback': function() {
+              currentTurnstileToken = null;
+            }
+          });
+        }
+      } catch (e) {
+        console.warn('Turnstile init warning:', e);
+      }
+    } else {
+      setTimeout(setupTurnstile, 600);
+    }
+  }
 
   async function handleGenerate(isInitialLoad = false) {
     if (!isInitialized) return;
 
-    // Si es la carga inicial de la página, usamos la biblioteca local para mostrar tarjetas
-    // de demostración inmediatas sin latencia de red.
+    // 1. Carga inicial: presentar estructuras de referencia de la biblioteca local
+    // claramente identificadas como demostración, sin simular ejecución con IA.
     if (isInitialLoad) {
-      return generateWithLocalEngine();
+      renderInitialReferenceState();
+      return;
     }
 
-    // Modo predeterminado: Gemini AI con fallback silencioso a biblioteca local si hay error
+    // 2. Indicador visual de carga en el botón
+    if (dom.btnGenerate) {
+      dom.btnGenerate.disabled = true;
+      dom.btnGenerate.innerHTML = '<span aria-hidden="true">⏳</span> Generando con Gemini AI...';
+    }
+
     try {
-      await handleGenerateGemini('gemini_completo');
+      await handleGenerateGemini();
     } catch (err) {
-      console.warn('Fallo en Gemini AI. Aplicando fallback a biblioteca local:', err);
-      generateWithLocalEngine();
+      console.warn('Gemini AI no completado. Conmutando a biblioteca local:', err);
+      showToast(`⚠️ No fue posible conectar con Gemini AI (${err.message}). Mostrando biblioteca local.`);
+      generateWithLocalEngine(err.message);
+    } finally {
+      if (dom.btnGenerate) {
+        dom.btnGenerate.disabled = false;
+        dom.btnGenerate.innerHTML = '<span aria-hidden="true">✨</span> Generar ganchos con IA';
+      }
     }
   }
 
-  function generateWithLocalEngine() {
+  function generateWithLocalEngine(fallbackError = null) {
     const options = {
-      audience: dom.audience?.value || 'paciente',
+      audience: 'paciente',
       specialty: dom.specialty ? dom.specialty.value : 'todas',
       treatment_id: dom.treatment ? dom.treatment.value : null,
       objective: dom.objective ? dom.objective.value : 'educar',
@@ -606,22 +649,59 @@
       platform: dom.platform ? dom.platform.value : 'instagram_reels',
       intensity: parseInt(dom.intensity ? dom.intensity.value : 3, 10),
       style: dom.style ? dom.style.value : 'Clínico y prudente',
-      count: parseInt(dom.count ? dom.count.value : 8, 10),
+      count: parseInt(dom.count ? dom.count.value : 6, 10),
       available_assets: getSelectedAssets()
     };
 
     try {
       currentBatch = GlossContentEngine.generate(options);
+      currentBatch.metadata.engine = 'local_library';
+      currentBatch.metadata.is_fallback = Boolean(fallbackError);
+      currentBatch.metadata.fallback_reason = fallbackError;
+      currentBatch.metadata.engine_label = fallbackError
+        ? 'Biblioteca Editorial Local (Modo de contingencia por indisponibilidad de API)'
+        : 'Biblioteca Editorial Local Gloss Growth';
+
       renderResults(currentBatch);
-      showToast(`Se generaron ${currentBatch.items.length} propuestas de ganchos (Biblioteca local).`);
+      if (fallbackError) {
+        showToast('Propuestas cargadas desde la Biblioteca Local.');
+      } else {
+        showToast(`Se cargaron ${currentBatch.items.length} propuestas de la biblioteca local.`);
+      }
     } catch (err) {
       console.error('Error al generar ganchos locales:', err);
       showToast('Error en la generación de ganchos.');
     }
   }
 
+  function renderInitialReferenceState() {
+    const options = {
+      audience: 'paciente',
+      specialty: 'todas',
+      treatment_id: dom.treatment?.value || null,
+      objective: 'educar',
+      format: 'todos',
+      platform: 'instagram_reels',
+      intensity: 3,
+      style: 'Clínico y prudente',
+      count: 6,
+      available_assets: getSelectedAssets()
+    };
+
+    try {
+      currentBatch = GlossContentEngine.generate(options);
+      currentBatch.metadata.engine = 'reference_initial';
+      currentBatch.metadata.is_initial = true;
+      currentBatch.metadata.engine_label = 'Estructuras Editoriales de Referencia (Demostración)';
+      renderResults(currentBatch);
+    } catch (err) {
+      console.warn('Aviso en carga inicial:', err);
+    }
+  }
+
   /**
-   * Cliente API centralizado para Cloudflare Worker (Gloss Growth AI / Gemini v2.3.1)
+   * Cliente API centralizado para Cloudflare Worker (Gloss Growth AI / Gemini v2.3.2)
+   * Autenticación pública segura con Turnstile y control de abusos.
    */
   async function callGlossWorkerGenerate(payload) {
     const endpoint = 'https://gloss-growth-ai.santiagokansas890.workers.dev/generate';
@@ -629,101 +709,72 @@
       'Content-Type': 'application/json'
     };
 
-    const devToken = sessionStorage.getItem('gloss_dev_token');
-    if (devToken) {
-      headers['Authorization'] = `Bearer ${devToken}`;
+    if (currentTurnstileToken) {
+      headers['X-Turnstile-Token'] = currentTurnstileToken;
     }
 
     const reqBody = {
       modelo: 'models/gemini-3.1-flash-lite',
       ejecutar_auditoria_semantica: true,
+      cf_turnstile_response: currentTurnstileToken || undefined,
       ...payload
     };
 
-    let response = await fetch(endpoint, {
+    const response = await fetch(endpoint, {
       method: 'POST',
       headers,
       body: JSON.stringify(reqBody)
     });
 
-    if (response.status === 401) {
-      const token = window.prompt(
-        'Gloss Growth AI — Conexión con Gemini (Verificación de Acceso):\n\n' +
-        'Ingresa el token para autorizar la llamada al Worker:\n' +
-        '(Se almacena en tu sesión local para no exponerse públicamente)',
-        ''
-      );
-      if (token && token.trim()) {
-        sessionStorage.setItem('gloss_dev_token', token.trim());
-        headers['Authorization'] = `Bearer ${token.trim()}`;
-        response = await fetch(endpoint, {
-          method: 'POST',
-          headers,
-          body: JSON.stringify(reqBody)
-        });
-      }
-    }
-
     if (!response.ok) {
       const errJson = await response.json().catch(() => ({}));
-      throw new Error(errJson.error || `Error del Worker (HTTP ${response.status})`);
+      throw new Error(errJson.error || `Error del servidor (HTTP ${response.status})`);
     }
 
     const resData = await response.json();
     if (!resData.ok || !resData.resultado) {
-      throw new Error(resData.error || 'Respuesta inválida del Worker');
+      throw new Error(resData.error || 'Respuesta inválida del servidor');
+    }
+
+    // Renovar token Turnstile si está disponible para el siguiente envío
+    if (window.turnstile && turnstileWidgetId !== null) {
+      try {
+        window.turnstile.reset(turnstileWidgetId);
+        currentTurnstileToken = null;
+      } catch {}
     }
 
     return resData;
   }
 
-  async function handleGenerateGemini(mode) {
-    // 1. Extraer datos del tratamiento seleccionado
+  async function handleGenerateGemini() {
     const treatmentSelect = dom.treatment;
     const selectedOption = treatmentSelect?.options[treatmentSelect.selectedIndex];
     const treatmentName = selectedOption ? selectedOption.textContent.trim() : 'Tratamiento estético';
     const objectiveText = dom.objective?.options[dom.objective.selectedIndex]?.textContent.trim() || 'educar';
 
-    const formatoAI = (mode === 'gemini_rapido') ? 'ganchos_rapido' : 'ganchos_completo';
+    const resData = await callGlossWorkerGenerate({
+      formato: 'ganchos_completo',
+      tratamiento: treatmentName,
+      objetivo: objectiveText
+    });
 
-    // 2. Indicador visual de carga
-    if (dom.btnGenerate) {
-      dom.btnGenerate.disabled = true;
-      dom.btnGenerate.innerHTML = '<span aria-hidden="true">⏳</span> Generando con Gemini v2.3.1...';
-    }
+    const geminiBatch = adaptGeminiResultToBatch(resData, treatmentName, 'ganchos_completo');
+    geminiBatch.metadata.engine = 'gemini_ai';
+    geminiBatch.metadata.engine_label = 'Google Gemini AI v2.3.2 (Supervisado por Auditoría en 2 Niveles)';
+    currentBatch = geminiBatch;
+    renderResults(currentBatch);
 
-    try {
-      const resData = await callGlossWorkerGenerate({
-        formato: formatoAI,
-        tratamiento: treatmentName,
-        objetivo: objectiveText
-      });
+    const auditoria = resData.auditoria_editorial || {};
+    const esAprobado = auditoria.aprobada;
+    const reintentos = resData.reintentos_ejecutados || 0;
+    const calif = auditoria.nivel_semantico?.calificacion || 9;
 
-      // 3. Adaptar resultado de Gemini a la estructura de cards del Estudio
-      const geminiBatch = adaptGeminiResultToBatch(resData, treatmentName, formatoAI);
-      currentBatch = geminiBatch;
-      renderResults(currentBatch);
-
-      const auditoria = resData.auditoria_editorial || {};
-      const esAprobado = auditoria.aprobada;
-      const reintentos = resData.reintentos_ejecutados || 0;
-      const calif = auditoria.nivel_semantico?.calificacion || 9;
-
-      showToast(
-        esAprobado
-          ? `✨ 6 ganchos generados con Gemini AI (${calif}/10 · ${reintentos > 0 ? 'Auto-corregido' : 'Directo'}).`
-          : `⚠️ Ganchos generados con observaciones del auditor editorial.`
-      );
-
-    } catch (err) {
-      console.error('Error al generar con Gemini AI:', err);
-      showToast(`Error con Gemini AI: ${err.message}`);
-    } finally {
-      if (dom.btnGenerate) {
-        dom.btnGenerate.disabled = false;
-        dom.btnGenerate.innerHTML = '<span aria-hidden="true">✨</span> Generar ganchos y guías';
-      }
-    }
+    showToast(
+      esAprobado
+        ? `✨ 6 ganchos generados con Gemini AI (${calif}/10 · ${reintentos > 0 ? 'Auto-corregido' : 'Directo'}).`
+        : `⚠️ Ganchos generados con observaciones del auditor editorial.`
+    );
   }
 
   function adaptGeminiResultToBatch(geminiData, treatmentName, formatoAI) {
@@ -819,20 +870,49 @@
 
   function renderResults(batch) {
     if (!batch || !batch.items || !dom.cardsContainer) return;
-    const meta = batch.metadata;
-    if (dom.resultsTitle) dom.resultsTitle.textContent = `${meta.generated_count} propuestas para ${meta.treatment_name}`;
-    if (dom.resultsSubtitle) dom.resultsSubtitle.textContent = `Formato: ${getFormatLabel(meta.format)} · Objetivo: ${getObjectiveLabel(meta.objective)} · Intensidad: Nivel ${meta.intensity}/5`;
+    const meta = batch.metadata || {};
+    const engine = meta.engine || 'local_library';
+    const isAi = engine === 'gemini_ai';
+    const isFallback = meta.is_fallback;
+    const isInitial = meta.is_initial;
+
+    if (dom.resultsTitle) {
+      dom.resultsTitle.textContent = `${meta.generated_count || batch.items.length} propuestas para ${meta.treatment_name || 'tu clínica'}`;
+    }
+
+    if (dom.resultsSubtitle) {
+      dom.resultsSubtitle.textContent = `Formato: ${getFormatLabel(meta.format)} · Objetivo: ${getObjectiveLabel(meta.objective)} · Intensidad: Nivel ${meta.intensity || 3}/5`;
+    }
 
     dom.cardsContainer.innerHTML = '';
+
+    // Render banner explicativo del estado del motor
+    if (isAi) {
+      const banner = document.createElement('div');
+      banner.className = 'ec-status-banner ec-status-banner--ai';
+      banner.innerHTML = `<span aria-hidden="true" style="font-size: 18px;">✨</span><div><strong>Generación con Inteligencia Artificial (Google Gemini v2.3.2):</strong> Propuestas personalizadas para tu procedimiento, validadas con auditoría médica y de estilo en dos niveles.</div>`;
+      dom.cardsContainer.appendChild(banner);
+    } else if (isFallback) {
+      const banner = document.createElement('div');
+      banner.className = 'ec-status-banner ec-status-banner--fallback';
+      banner.innerHTML = `<span aria-hidden="true" style="font-size: 18px;">⚠️</span><div><strong>Modo de contingencia (Biblioteca Local):</strong> No fue posible conectar con Gemini AI (${escapeHtml(meta.fallback_reason || 'Servicio no disponible')}). Se presentan opciones pre-estructuradas de nuestra biblioteca clínica para que continúes trabajando.</div>`;
+      dom.cardsContainer.appendChild(banner);
+    } else if (isInitial) {
+      const banner = document.createElement('div');
+      banner.className = 'ec-status-banner ec-status-banner--reference';
+      banner.innerHTML = `<span aria-hidden="true" style="font-size: 18px;">💡</span><div><strong>Estructuras editoriales de referencia (Demostración):</strong> Estas 6 propuestas son ejemplos de nuestra biblioteca clínica. Haz clic en <strong>"Generar ganchos con IA"</strong> para generar aperturas personalizadas en tiempo real con Gemini v2.3.2.</div>`;
+      dom.cardsContainer.appendChild(banner);
+    }
+
     batch.items.forEach((item, index) => {
-      const card = createCardElement(item, index + 1);
+      const card = createCardElement(item, index + 1, engine);
       dom.cardsContainer.appendChild(card);
     });
 
     if (dom.resultsSection) dom.resultsSection.removeAttribute('hidden');
   }
 
-  function createCardElement(item, displayIndex) {
+  function createCardElement(item, displayIndex, engine = 'local_library') {
     const card = document.createElement('article');
     card.className = 'ec-card';
     card.id = `card-${item.result_id}`;
@@ -841,13 +921,25 @@
     const triad = item.hook_triad || {};
     const isFav = checkIfFavorite(item.result_id);
 
+    let engineBadge = '';
+    if (engine === 'gemini_ai') {
+      engineBadge = `<span class="ec-badge-engine ec-badge-engine--ai" title="Generado en tiempo real con Gemini v2.3.2">✨ Gemini AI</span>`;
+    } else if (engine === 'reference_initial') {
+      engineBadge = `<span class="ec-badge-engine ec-badge-engine--ref" title="Ejemplo de referencia editorial">📖 Referencia</span>`;
+    } else {
+      engineBadge = `<span class="ec-badge-engine ec-badge-engine--local" title="Biblioteca local de contingencia">📚 Biblioteca Local</span>`;
+    }
+
     card.innerHTML = `
       <header class="ec-card-header">
-        <span class="ec-badge-family" title="${fam.mechanism || ''}">
-          <span aria-hidden="true">⚡</span> ${fam.code} · ${fam.name}
-        </span>
+        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <span class="ec-badge-family" title="${fam.mechanism || ''}">
+            <span aria-hidden="true">⚡</span> ${fam.code} · ${fam.name}
+          </span>
+          ${engineBadge}
+        </div>
         <div style="display: flex; align-items: center; gap: 12px;">
-          <span class="ec-badge-intensity">Nivel ${item.intensity}/5</span>
+          <span class="ec-badge-intensity">Nivel ${item.intensity || 3}/5</span>
           <button class="ec-btn-fav ${isFav ? 'is-favorite' : ''}" type="button" aria-label="Guardar en favoritos" title="Guardar en favoritos" data-result-id="${item.result_id}">
             ${isFav ? '♥' : '♡'}
           </button>

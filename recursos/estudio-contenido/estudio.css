@@ -2224,3 +2224,73 @@
   box-shadow: 0 0 0 2px var(--ec-burgundy, #2C0913);
   border-color: var(--ec-burgundy, #2C0913) !important;
 }
+
+/* ==========================================================================
+   BANNERS DE ESTADO DE MOTOR (GEMINI AI VS BIBLIOTECA LOCAL)
+   ========================================================================== */
+
+.ec-status-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+
+.ec-status-banner--ai {
+  background: rgba(44, 9, 19, 0.04);
+  border: 1px solid rgba(44, 9, 19, 0.16);
+  color: var(--ec-burgundy, #2C0913);
+}
+
+.ec-status-banner--fallback {
+  background: #FFF8E6;
+  border: 1px solid #F0C36D;
+  color: #7A5300;
+}
+
+.ec-status-banner--reference {
+  background: #F3F6FA;
+  border: 1px solid #D1DFEC;
+  color: #244B7A;
+}
+
+.ec-badge-engine {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.ec-badge-engine--ai {
+  background: #E8F5E9;
+  color: #1B5E20;
+  border: 1px solid #A5D6A7;
+}
+
+.ec-badge-engine--local {
+  background: #FFF3E0;
+  color: #E65100;
+  border: 1px solid #FFCC80;
+}
+
+.ec-badge-engine--ref {
+  background: #EDE7F6;
+  color: #4A148C;
+  border: 1px solid #D1C4E9;
+}
+
+.ec-turnstile-container {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 0;
+}
