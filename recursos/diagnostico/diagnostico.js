@@ -88,7 +88,7 @@
       dimension: 'conversion',
       dimensionLabel: 'Conversión y WhatsApp',
       title: '¿Qué seguimiento realizas a las personas que mostraron interés pero no agendaron?',
-      desc: 'Entre el 60% y el 70% de las citas de un centro estético provienen del seguimiento a los 3 a 7 días.',
+      desc: 'Gran parte de las decisiones de valoración en medicina estética se consolidan durante los días posteriores al primer contacto, cuando existe un acompañamiento estructurado.',
       options: [
         { text: 'Ninguno. Asumimos que si la persona realmente tiene interés volverá a escribir por iniciativa propia.', score: 1 },
         { text: 'Esporádico; de vez en cuando enviamos una promoción o mensaje masivo a todos los contactos guardados.', score: 2 },
@@ -119,7 +119,7 @@
       desc: 'Una cita perdida sin aviso previo genera un costo fijo no recuperable para el consultorio.',
       options: [
         { text: 'Sufrimos una tasa alta de ausencias y nos enteramos cuando el paciente simplemente no llega.', score: 1 },
-        { text: 'Enviamos un mensaje de confirmación el día anterior, pero igual cancelan entre el 20% y 30% de citas.', score: 2 },
+        { text: 'Enviamos un recordatorio el día anterior, pero seguimos experimentando cancelaciones frecuentes y huecos imprevistos en la agenda.', score: 2 },
         { text: 'Confirmamos en dos momentos (48h y 24h) y cobramos depósito de reserva para procedimientos de ticket alto.', score: 3 },
         { text: 'Protocolo riguroso de confirmación, depósito de valoración y lista de espera activa para reasignar huecos.', score: 4 }
       ]
@@ -390,7 +390,7 @@
       statusColor = '#C2410C';
     } else if (pct < 70) {
       statusLabel = 'Nivel Operativo en Desarrollo con Fugas';
-      statusDesc = 'Tienes bases comerciales funcionales y flujo de personas, pero estás perdiendo entre un 30% y un 50% de pacientes potenciales por falta de protocolos de seguimiento y control de costos.';
+      statusDesc = 'Tienes bases comerciales activas e interés de pacientes, pero existen fugas importantes en la conversión de mensajes y en el aprovechamiento de la capacidad instalada por falta de protocolos continuos.';
       statusColor = '#B45309';
     } else if (pct < 88) {
       statusLabel = 'Nivel Estructurado y Estable';
@@ -474,7 +474,7 @@
         {
           num: '01',
           title: 'Reducir el tiempo de primera respuesta en WhatsApp a menos de 10 minutos',
-          desc: 'Un paciente que consulta por medicina estética suele escribir a 2 o 3 centros simultáneamente. El primer consultorio que responde con empatía y profesionalismo retiene el 70% de las citas.'
+          desc: 'Un paciente interesado en tratamientos estéticos suele consultar varias opciones en la misma jornada. Responder con agilidad, empatía y criterio clínico aumenta de forma decisiva la probabilidad de concretar la valoración.'
         },
         {
           num: '02',
@@ -496,7 +496,7 @@
         {
           num: '02',
           title: 'Cobrar depósito de reserva o anticipo para citas de valoración y procedimientos clave',
-          desc: 'Un depósito de compromiso (incluso simbólico o descontable del tratamiento) reduce el absentismo y las cancelaciones imprevistas del 25% a menos del 7%.'
+          desc: 'Un depósito de reserva deducible del tratamiento formaliza el compromiso del paciente, disminuye sensiblemente las ausencias no justificadas y protege el tiempo asistencial del profesional.'
         },
         {
           num: '03',

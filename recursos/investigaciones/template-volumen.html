@@ -32,31 +32,38 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
 
 <!-- ========================================================================
      PLANTILLA MAESTRA DE PUBLICACIÓN EDITORIAL — GLOSS INSIGHTS
+     Ubicación de destino prevista: 'recursos/investigaciones/volumen-XX/index.html'
+     Profundidad relativa: 3 niveles desde la raíz (../../..)
+     
      Instrucciones de uso:
-     1. Duplica este archivo en una carpeta nueva: 'recursos/investigaciones/volumen-XX/index.html'
-     2. Reemplaza los campos marcados como [SLOT: ...] con los datos del nuevo volumen.
-     3. Agrega la ruta canónica y los metadatos Open Graph correspondientes.
-     4. IMPORTANTE (AGENTS.md): No agregues bloques de 3 textos decorativos en portadas/cabeceras.
+     1. Copia este archivo dentro de 'recursos/investigaciones/volumen-XX/index.html'
+     2. Reemplaza los marcadores [SLOT: ...] con los datos del nuevo volumen.
+     3. Cambia la etiqueta robots de 'noindex, nofollow' a 'index, follow' al publicar oficialmente.
+     4. Agrega la URL canónica y los metadatos Open Graph correspondientes.
+     5. REGLA ESTRICTA (AGENTS.md): No agregar bloques de 3 textos decorativos en portadas/cabeceras.
      ======================================================================== -->
+
+<!-- PROTECCIÓN DE INDEXACIÓN: no indexar la plantilla con marcadores sin sustituir -->
+<meta content="noindex, nofollow" name="robots"/>
 
 <!-- [SLOT: METADATOS SEO] -->
 <title>[TÍTULO DEL ESTUDIO] | Gloss Insights Volumen [XX] · Gloss &amp; Growth</title>
 <meta content="[DESCRIPCIÓN RIGUROSA DEL ESTUDIO: hipótesis, fuentes analizadas y conclusiones principales]." name="description"/>
 <meta content="Gloss Growth" name="author"/>
 <link href="https://glossgrowthhq.com/recursos/investigaciones/volumen-[XX]/" rel="canonical"/>
-<link href="../../brand/symbol-burgundy.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../../brand/symbol-burgundy.svg" rel="icon" type="image/svg+xml"/>
 
 <meta content="article" property="og:type"/>
 <meta content="https://glossgrowthhq.com/recursos/investigaciones/volumen-[XX]/" property="og:url"/>
 <meta content="[TÍTULO DEL ESTUDIO] | Gloss Insights Volumen [XX]" property="og:title"/>
 <meta content="[DESCRIPCIÓN CORTA OPEN GRAPH]" property="og:description"/>
-<meta content="https://glossgrowthhq.com/recursos/investigaciones/volumen-[XX]/volumen-01/cover-volumen-01.png" property="og:image"/>
+<meta content="https://glossgrowthhq.com/recursos/investigaciones/volumen-[XX]/cover-volumen-[XX].png" property="og:image"/>
 <meta content="Gloss Growth" property="og:site_name"/>
 
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="[TÍTULO DEL ESTUDIO] | Gloss Insights Volumen [XX]" name="twitter:title"/>
 <meta content="[DESCRIPCIÓN TWITTER]" name="twitter:description"/>
-<meta content="https://glossgrowthhq.com/recursos/investigaciones/volumen-[XX]/volumen-01/cover-volumen-01.png" name="twitter:image"/>
+<meta content="https://glossgrowthhq.com/recursos/investigaciones/volumen-[XX]/cover-volumen-[XX].png" name="twitter:image"/>
 
 <!-- [SLOT: SCHEMA.ORG RESEARCH REPORT] -->
 <script type="application/ld+json">
@@ -83,10 +90,10 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
 }
 </script>
 
-<link href="../../homepage.css" rel="stylesheet"/>
-<link href="../../expansion.css" rel="stylesheet"/>
-<link href="../../motion.css?v=1" rel="stylesheet"/>
-<link href="investigaciones.css" rel="stylesheet"/>
+<link href="../../../homepage.css" rel="stylesheet"/>
+<link href="../../../expansion.css" rel="stylesheet"/>
+<link href="../../../motion.css?v=1" rel="stylesheet"/>
+<link href="../investigaciones.css" rel="stylesheet"/>
 </head>
 <body class="insights-page">
 <a class="skip-link" href="#estudio">Saltar al contenido del estudio</a>
@@ -94,16 +101,16 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
 <!-- CABECERA GLOBAL DEL SITIO -->
 <header class="site-header">
   <div class="nav-shell">
-    <a class="brand" href="../../" aria-label="Gloss Growth, inicio">
-      <img src="../../brand/horizontal-burgundy.svg" alt="Gloss Growth" loading="eager" decoding="async">
+    <a class="brand" href="../../../" aria-label="Gloss Growth, inicio">
+      <img src="../../../brand/horizontal-burgundy.svg" alt="Gloss Growth" loading="eager" decoding="async">
     </a>
     <nav id="main-nav" aria-label="Navegación principal">
-      <a href="../../">Inicio</a>
-      <a href="../../metodo/">Método Gloss</a>
-      <a href="../../servicios/">Servicios y Planes</a>
-      <a href="../../resultados/">Resultados y Casos</a>
-      <a href="../" aria-current="page">Recursos</a>
-      <a href="../../nosotros/">Nosotros</a>
+      <a href="../../../">Inicio</a>
+      <a href="../../../metodo/">Método Gloss</a>
+      <a href="../../../servicios/">Servicios y Planes</a>
+      <a href="../../../resultados/">Resultados y Casos</a>
+      <a href="../../" aria-current="page">Recursos</a>
+      <a href="../../../nosotros/">Nosotros</a>
     </nav>
     <button class="btn" id="navbarCta" type="button" onclick="openWAModal()">Solicitar diagnóstico <span aria-hidden="true">↗</span></button>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" type="button">Menú <span aria-hidden="true">☰</span></button>
@@ -115,11 +122,11 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
   <section class="insights-hero">
     <div class="wrap">
       <nav class="breadcrumb" aria-label="Migas de pan" style="margin-bottom:20px;">
-        <a href="../../">Inicio</a>
+        <a href="../../../">Inicio</a>
         <span aria-hidden="true">/</span>
         <a href="../../">Recursos</a>
         <span aria-hidden="true">/</span>
-        <a href="./">Gloss Insights</a>
+        <a href="../">Gloss Insights</a>
         <span aria-hidden="true">/</span>
         <span>Volumen [XX]</span>
       </nav>
@@ -136,7 +143,7 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
             [Párrafo introductorio de alto nivel que resume el alcance del volumen, las fuentes de datos primarias analizadas y la tesis central del documento.]
           </p>
           <div class="insights-hero-actions">
-            <a class="btn btn--burgundy" href="volumen-01/Gloss_Insights_Volumen_01.pdf" download>
+            <a class="btn btn--burgundy" href="Gloss_Insights_Volumen_[XX].pdf" download>
               Descargar Informe Completo en PDF ([X.X] MB) <span aria-hidden="true">↓</span>
             </a>
             <a class="btn btn--outline" href="#resumen-ejecutivo">
@@ -147,7 +154,7 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
 
         <div class="insights-hero-aside">
           <div class="insights-cover-frame">
-            <img src="volumen-01/cover-volumen-01.png" alt="Portada oficial de Gloss Insights Volumen [XX]" width="280" height="396" loading="eager" decoding="async">
+            <img src="cover-volumen-[XX].png" alt="Portada oficial de Gloss Insights Volumen [XX]" width="280" height="396" loading="eager" decoding="async">
           </div>
         </div>
       </div>
@@ -172,7 +179,7 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
             </nav>
             <div class="insights-sidebar-cta">
               <p>¿Necesitas evaluar estos indicadores en tu centro?</p>
-              <a class="btn btn--sm w-full" href="../diagnostico/">Diagnóstico Comercial ↗</a>
+              <a class="btn btn--sm w-full" href="../../diagnostico/">Diagnóstico Comercial ↗</a>
             </div>
           </div>
         </aside>
@@ -291,7 +298,7 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
               <h3>Descarga la edición integral en PDF</h3>
               <p>Conserva el documento completo con todos los anexos metodológicos, tablas de datos y gráficos oficiales.</p>
             </div>
-            <a class="btn btn--burgundy" href="volumen-01/Gloss_Insights_Volumen_01.pdf" download>Descargar PDF <span aria-hidden="true">↓</span></a>
+            <a class="btn btn--burgundy" href="Gloss_Insights_Volumen_[XX].pdf" download>Descargar PDF <span aria-hidden="true">↓</span></a>
           </div>
         </article>
       </div>
@@ -304,24 +311,24 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
   <div class="wrap">
     <div class="footer-grid footer-grid--expanded">
       <div>
-        <img src="../../brand/vertical-cream.svg" alt="Gloss Growth" class="footer-logo" loading="lazy" decoding="async">
+        <img src="../../../brand/vertical-cream.svg" alt="Gloss Growth" class="footer-logo" loading="lazy" decoding="async">
         <p>Estrategia y crecimiento<br>para el negocio de la estética.</p>
       </div>
       <nav aria-label="Firma y Soluciones">
         <p class="eyebrow">Firma</p>
-        <a href="../../">Inicio</a>
-        <a href="../../metodo/">Método Gloss</a>
-        <a href="../../servicios/">Servicios y Planes</a>
-        <a href="../../resultados/">Resultados y Casos</a>
-        <a href="../../nosotros/">Nosotros</a>
+        <a href="../../../">Inicio</a>
+        <a href="../../../metodo/">Método Gloss</a>
+        <a href="../../../servicios/">Servicios y Planes</a>
+        <a href="../../../resultados/">Resultados y Casos</a>
+        <a href="../../../nosotros/">Nosotros</a>
       </nav>
       <nav aria-label="Recursos y Conocimiento">
         <p class="eyebrow">Recursos</p>
-        <a href="../" aria-current="page">Centro de Recursos</a>
-        <a href="../../blog/">Blog Editorial</a>
-        <a href="./">Gloss Insights</a>
-        <a href="../herramientas/">Calculadoras</a>
-        <a href="../plantillas/">Plantillas y Guías</a>
+        <a href="../../" aria-current="page">Centro de Recursos</a>
+        <a href="../../../blog/">Blog Editorial</a>
+        <a href="../">Gloss Insights</a>
+        <a href="../../herramientas/">Calculadoras</a>
+        <a href="../../plantillas/">Plantillas y Guías</a>
       </nav>
       <div class="footer-contact">
         <p class="eyebrow">Hablemos</p>
@@ -333,8 +340,8 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
     <div class="footer-bottom">
       <span>© 2026 Gloss Growth. Todos los derechos reservados.</span>
       <div>
-        <a href="../../politica-de-privacidad/">Política de privacidad</a>
-        <a href="../../terminos-del-servicio/">Términos del servicio</a>
+        <a href="../../../politica-de-privacidad/">Política de privacidad</a>
+        <a href="../../../terminos-del-servicio/">Términos del servicio</a>
       </div>
     </div>
   </div>
@@ -405,12 +412,11 @@ src="https://www.facebook.com/tr?id=1551818823651884&ev=PageView&noscript=1"
   </div>
 </div>
 
-<script src="../tracking.js"></script>
-<script defer src="../../vendor/lucide.js"></script>
-<script defer src="../../form.js"></script>
-<script defer src="../../editorial.js?v=motion-1"></script>
-<script defer src="../../navigation.js?v=motion-1"></script>
-<script defer src="../../motion.js?v=1"></script>
+<script src="../../tracking.js"></script>
+<script defer src="../../../vendor/lucide.js"></script>
+<script defer src="../../../form.js"></script>
+<script defer src="../../../editorial.js?v=motion-1"></script>
+<script defer src="../../../navigation.js?v=motion-1"></script>
+<script defer src="../../../motion.js?v=1"></script>
 </body>
 </html>
-

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error('GlossCalcEngine no está cargado.');
     return;
   }
+  const Engine = engine;
 
   // =========================================================================
   // 1. ESTADO GLOBAL DE LA CALCULADORA
@@ -28,6 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modo y pestañas
     btnModePlan: document.getElementById('mode-btn-plan'),
     btnModeReal: document.getElementById('mode-btn-real'),
+    btnModeBreakeven: document.getElementById('mode-btn-breakeven'),
+    panelFormBreakeven: document.getElementById('panel-form-breakeven'),
+    panelResultsBreakeven: document.getElementById('panel-results-breakeven'),
     panelFormPlan: document.getElementById('panel-form-plan'),
     panelFormReal: document.getElementById('panel-form-real'),
 
@@ -36,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btnReset: document.getElementById('btn-reset-values'),
 
     // Inputs Planificar
+    planBusinessName: document.getElementById('plan-business-name'),
     planBusinessType: document.getElementById('plan-business-type'),
     planServiceType: document.getElementById('plan-service-type'),
     planServiceName: document.getElementById('plan-service-name'),
@@ -138,26 +143,36 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   function setMode(mode) {
     currentMode = mode;
-    if (mode === 'plan') {
-      dom.btnModePlan.classList.add('active');
-      dom.btnModePlan.setAttribute('aria-selected', 'true');
-      dom.btnModeReal.classList.remove('active');
-      dom.btnModeReal.setAttribute('aria-selected', 'false');
-      dom.panelFormPlan.style.display = 'block';
-      dom.panelFormReal.style.display = 'none';
-    } else {
-      dom.btnModeReal.classList.add('active');
-      dom.btnModeReal.setAttribute('aria-selected', 'true');
-      dom.btnModePlan.classList.remove('active');
-      dom.btnModePlan.setAttribute('aria-selected', 'false');
-      dom.panelFormPlan.style.display = 'none';
-      dom.panelFormReal.style.display = 'block';
+    const isPlan = mode === 'plan';
+    const isReal = mode === 'real';
+    const isBreakeven = mode === 'breakeven';
+
+    if (dom.btnModePlan) {
+      dom.btnModePlan.classList.toggle('active', isPlan);
+      dom.btnModePlan.setAttribute('aria-selected', isPlan ? 'true' : 'false');
     }
+    if (dom.btnModeReal) {
+      dom.btnModeReal.classList.toggle('active', isReal);
+      dom.btnModeReal.setAttribute('aria-selected', isReal ? 'true' : 'false');
+    }
+    if (dom.btnModeBreakeven) {
+      dom.btnModeBreakeven.classList.toggle('active', isBreakeven);
+      dom.btnModeBreakeven.setAttribute('aria-selected', isBreakeven ? 'true' : 'false');
+    }
+
+    if (dom.panelFormPlan) dom.panelFormPlan.style.display = isPlan ? 'block' : 'none';
+    if (dom.panelFormReal) dom.panelFormReal.style.display = isReal ? 'block' : 'none';
+    if (dom.panelFormBreakeven) dom.panelFormBreakeven.style.display = isBreakeven ? 'block' : 'none';
+
+    if (dom.panelResultsPlan) dom.panelResultsPlan.style.display = (isPlan || isReal) ? 'block' : 'none';
+    if (dom.panelResultsBreakeven) dom.panelResultsBreakeven.style.display = isBreakeven ? 'block' : 'none';
+
     recalculate();
   }
 
-  dom.btnModePlan.addEventListener('click', () => setMode('plan'));
-  dom.btnModeReal.addEventListener('click', () => setMode('real'));
+  if (dom.btnModePlan) dom.btnModePlan.addEventListener('click', () => setMode('plan'));
+  if (dom.btnModeReal) dom.btnModeReal.addEventListener('click', () => setMode('real'));
+  if (dom.btnModeBreakeven) dom.btnModeBreakeven.addEventListener('click', () => setMode('breakeven'));
 
   // =========================================================================
   // 4. MANEJO DE TIPOS DE SERVICIO Y MODALIDADES DE COSTO
@@ -230,10 +245,13 @@ document.addEventListener('DOMContentLoaded', () => {
   function recalculate() {
     if (currentMode === 'plan') {
       calculateAndRenderPlan();
-    } else {
+      calculateAndRenderFixedCosts();
+    } else if (currentMode === 'real') {
       calculateAndRenderReal();
+      calculateAndRenderFixedCosts();
+    } else if (currentMode === 'breakeven') {
+      calculateAndRenderBreakeven();
     }
-    calculateAndRenderFixedCosts();
   }
 
   // -------------------------------------------------------------------------
@@ -598,6 +616,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlPrice = urlParams.get('precio');
     const urlCost = urlParams.get('costo');
     const urlName = urlParams.get('nombre');
+    const urlBusName = urlParams.get('negocio');
+
+    if (urlBusName && dom.planBusinessName) dom.planBusinessName.value = decodeURIComponent(urlBusName);
 
     if (urlPrice !== null && urlCost !== null) {
       dom.planPrice.value = parseNumber(urlPrice);
@@ -621,6 +642,7 @@ document.addEventListener('DOMContentLoaded', () => {
           // Variable cost PURO (sin fijos)
           dom.planVarCostAmount.value = parsed.variableCost || 0;
           if (parsed.name) dom.planServiceName.value = parsed.name;
+          if (parsed.businessName && dom.planBusinessName) dom.planBusinessName.value = parsed.businessName;
           if (parsed.serviceType === 'paquete') {
             dom.planServiceType.value = 'paquete';
             if (parsed.packageSessions) dom.planPackageSessions.value = parsed.packageSessions;
@@ -632,51 +654,90 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================================================
-  // 9. ACCIONES: COPIAR RESUMEN E IMPRIMIR
+  // 9. ACCIONES: COPIAR RESULTADOS Y DESCARGA DIRECTA DE PDF
   // =========================================================================
+  function buildRoasReportPayload() {
+    const bName = dom.planBusinessName ? dom.planBusinessName.value.trim() : '';
+    if (currentMode === 'plan' && lastPlanResult) {
+      const p = lastPlanResult;
+      return {
+        businessName: bName,
+        roas: {
+          isRealMode: false,
+          periodo: dom.planPeriod ? dom.planPeriod.options[dom.planPeriod.selectedIndex].text : 'Mensual',
+          adSpend: p.adSpend,
+          managementFee: p.managementFee,
+          otherCosts: p.otherCosts,
+          inversionTotalMarketing: p.totalMarketing,
+          ticketPrice: p.price,
+          unitVarCost: p.unitCost,
+          margenContribucionPct: p.marginPercent,
+          roasEquilibrio: p.roasBreakevenTotal,
+          facturacionEquilibrio: p.revenueBreakeven,
+          ventasEquilibrio: p.salesBreakeven,
+          roasObjetivo: p.hasTarget ? p.roasTarget : null,
+          facturacionObjetivo: p.hasTarget ? p.revenueTarget : null,
+          ventasObjetivo: p.hasTarget ? p.salesTarget : null,
+          desiredResult: p.desiredResult,
+          capacity: p.capacity,
+          interpretation: p.interpretation,
+          matrixSummary: p.matrixSummary || null
+        }
+      };
+    } else if (currentMode === 'real' && lastRealResult) {
+      const r = lastRealResult;
+      return {
+        businessName: bName,
+        roas: {
+          isRealMode: true,
+          periodo: dom.realPeriod ? dom.realPeriod.options[dom.realPeriod.selectedIndex].text : 'Período evaluado',
+          adSpend: r.adSpend,
+          managementFee: r.managementFee,
+          otherCosts: r.otherCosts,
+          inversionTotalMarketing: r.totalMarketing,
+          ticketPrice: r.revenue,
+          unitVarCost: r.variableCosts,
+          margenContribucionPct: r.marginPercent,
+          roasEquilibrio: r.roasBreakeven,
+          facturacionEquilibrio: r.revenueBreakeven,
+          ventasEquilibrio: r.salesBreakeven || 0,
+          interpretation: r.interpretation
+        }
+      };
+    }
+    return null;
+  }
+
   if (dom.btnCopySummary) {
     dom.btnCopySummary.addEventListener('click', () => {
-      let text = '';
-      if (currentMode === 'plan' && lastPlanResult) {
-        const p = lastPlanResult;
-        text = `GLOSS & GROWTH — ANÁLISIS DE PLANIFICACIÓN PUBLICITARIA\n` +
-          `Servicio: ${p.serviceName} (${p.serviceType})\n` +
-          `Precio de venta: ${engine.formatCOP(p.price)}\n` +
-          `Margen de contribución: ${engine.formatPct(p.marginPercent)} (${engine.formatCOP(p.unitMargin)}/venta)\n` +
-          `Inversión marketing: Anuncios ${engine.formatCOP(p.adSpend)} + Gestión ${engine.formatCOP(p.managementFee)} = Total ${engine.formatCOP(p.totalMarketing)}\n` +
-          `----------------------------------------\n` +
-          `ROAS de equilibrio requerido: ${engine.formatDecimal(p.roasBreakevenTotal)}x\n` +
-          `ROAS solo pauta: ${engine.formatDecimal(p.roasBreakevenPauta)}x\n` +
-          `Facturación de equilibrio: ${engine.formatCOP(p.revenueBreakeven)}\n` +
-          `Ventas necesarias: ${p.salesBreakeven !== null ? p.salesBreakeven + ' ventas' : '—'}\n` +
-          (p.hasTarget ? `Meta deseada: ${engine.formatCOP(p.desiredResult)} -> Facturación obj: ${engine.formatCOP(p.revenueTarget)} (ROAS ${engine.formatDecimal(p.roasTarget)}x)\n` : '') +
-          `Generado en: https://glossgrowthhq.com/recursos/calculadora-publicidad/`;
-      } else if (currentMode === 'real' && lastRealResult) {
-        const r = lastRealResult;
-        text = `GLOSS & GROWTH — EVALUACIÓN DE CAMPAÑA REAL\n` +
-          `Gasto anuncios: ${engine.formatCOP(r.adSpend)} | Gestión: ${engine.formatCOP(r.managementFee)} | Total: ${engine.formatCOP(r.totalMarketing)}\n` +
-          `Ingresos atribuidos: ${engine.formatCOP(r.revenue)}\n` +
-          `Costos variables: ${engine.formatCOP(r.variableCosts)} | Margen generado: ${engine.formatCOP(r.generatedMargin)} (${engine.formatPct(r.marginPercent)})\n` +
-          `----------------------------------------\n` +
-          `ROAS real observado: ${engine.formatDecimal(r.roasReal)}x\n` +
-          `ROAS de equilibrio necesario: ${engine.formatDecimal(r.roasBreakeven)}x\n` +
-          `Resultado financiero tras marketing: ${r.resultAfterMarketing >= 0 ? '+' : ''}${engine.formatCOP(r.resultAfterMarketing)}\n` +
-          `Generado en: https://glossgrowthhq.com/recursos/calculadora-publicidad/`;
+      let payload = buildRoasReportPayload();
+      if (!payload) {
+        recalculate();
+        payload = buildRoasReportPayload();
       }
-
-      navigator.clipboard.writeText(text).then(() => {
-        const orig = dom.btnCopySummary.textContent;
-        dom.btnCopySummary.textContent = '¡Copiado al portapapeles!';
-        setTimeout(() => dom.btnCopySummary.textContent = orig, 2000);
-      }).catch(() => {
-        alert('No se pudo copiar automáticamente. Por favor copia manualmente.');
-      });
+      if (window.GlossReportEngine && payload) {
+        const text = window.GlossReportEngine.generateRoasClipboard(payload);
+        window.GlossReportEngine.copyToClipboard(text, () => {
+          const orig = dom.btnCopySummary.textContent;
+          dom.btnCopySummary.textContent = '¡Resultados copiados al portapapeles!';
+          setTimeout(() => dom.btnCopySummary.textContent = orig, 2200);
+        });
+      }
     });
   }
 
   if (dom.btnPrintPdf) {
     dom.btnPrintPdf.addEventListener('click', () => {
-      window.print();
+      let payload = buildRoasReportPayload();
+      if (!payload) {
+        recalculate();
+        payload = buildRoasReportPayload();
+      }
+      if (window.GlossReportEngine && window.GlossReportEngine.generateRoasPdf && payload) {
+        window.GlossReportEngine.generateRoasPdf(payload);
+      } else {
+        window.print();
+      }
     });
   }
 
@@ -687,7 +748,493 @@ document.addEventListener('DOMContentLoaded', () => {
   updateServiceTypeUI();
   recalculate();
 
+  // =========================================================================
+  // MODULO INTEGRADO: PUNTO DE EQUILIBRIO DEL NEGOCIO
+  // =========================================================================
+
+  let beMarginMode = 'simple'; // 'simple' | 'mix'
+  let lastBreakevenResult = null;
+
+  // Lista inicial de mezcla de tratamientos (Caso J por defecto)
+  let mixTreatments = [
+    { name: 'Tratamiento A (ej. Limpieza)', price: 100000, variableCost: 40000, quantity: 10, sharePct: 33.33 },
+    { name: 'Tratamiento B (ej. Bioestimulador)', price: 200000, variableCost: 100000, quantity: 10, sharePct: 66.67 }
+  ];
+
+  // Alternador de modo de margen (Simple vs Mezcla)
+  const beMarginModeBtns = document.querySelectorAll('[data-be-margin-mode]');
+  beMarginModeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      beMarginModeBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      beMarginMode = btn.dataset.beMarginMode;
+
+      const simplePanel = document.getElementById('be-margin-simple-panel');
+      const mixPanel = document.getElementById('be-margin-mix-panel');
+      if (simplePanel) simplePanel.style.display = beMarginMode === 'simple' ? 'block' : 'none';
+      if (mixPanel) mixPanel.style.display = beMarginMode === 'mix' ? 'block' : 'none';
+
+      recalculate();
+    });
+  });
+
+  // Render dinámico de mezcla de tratamientos
+  function renderMixTreatments() {
+    const container = document.getElementById('be-mix-items-list');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const shareType = document.getElementById('be-mix-share-type')?.value || 'appointments';
+
+    mixTreatments.forEach((t, idx) => {
+      const row = document.createElement('div');
+      row.className = 'mix-item-row';
+      row.style.cssText = 'display:grid;grid-template-columns:2fr 1fr 1fr 80px 32px;gap:8px;align-items:center;background:rgba(0,0,0,0.02);padding:8px 10px;border-radius:6px;border:1px solid rgba(0,0,0,0.06);margin-bottom:8px;';
+      row.innerHTML = `
+        <div>
+          <input class="calc-control mix-name" type="text" value="${t.name}" placeholder="Servicio ${idx + 1}" style="padding:6px 8px;font-size:12px;">
+        </div>
+        <div>
+          <input class="calc-control mix-price" type="number" min="0" step="1000" value="${t.price}" placeholder="PVP" title="Precio medio" style="padding:6px 8px;font-size:12px;">
+        </div>
+        <div>
+          <input class="calc-control mix-cost" type="number" min="0" step="1000" value="${t.variableCost}" placeholder="Costo" title="Costo variable unitario" style="padding:6px 8px;font-size:12px;">
+        </div>
+        <div>
+          <input class="calc-control mix-share" type="number" min="1" step="1" value="${shareType === 'appointments' ? (t.quantity || 10) : (t.sharePct || 50)}" placeholder="${shareType === 'appointments' ? 'Citas' : '%'}" title="${shareType === 'appointments' ? 'Cantidad de citas' : '% de ventas'}" style="padding:6px 6px;font-size:12px;text-align:center;">
+        </div>
+        <div>
+          ${mixTreatments.length > 2 ? `<button type="button" class="btn-remove-mix-item" data-idx="${idx}" style="background:none;border:none;color:#991B1B;cursor:pointer;font-weight:bold;font-size:16px;">×</button>` : ''}
+        </div>
+      `;
+      container.appendChild(row);
+    });
+
+    // Wire events
+    container.querySelectorAll('.mix-name').forEach((inp, idx) => {
+      inp.addEventListener('input', (e) => mixTreatments[idx].name = e.target.value);
+    });
+    container.querySelectorAll('.mix-price').forEach((inp, idx) => {
+      inp.addEventListener('input', (e) => {
+        mixTreatments[idx].price = parseNum(e.target.value);
+        recalculate();
+      });
+    });
+    container.querySelectorAll('.mix-cost').forEach((inp, idx) => {
+      inp.addEventListener('input', (e) => {
+        mixTreatments[idx].variableCost = parseNum(e.target.value);
+        recalculate();
+      });
+    });
+    container.querySelectorAll('.mix-share').forEach((inp, idx) => {
+      inp.addEventListener('input', (e) => {
+        if (shareType === 'appointments') {
+          mixTreatments[idx].quantity = Math.max(1, parseInt(e.target.value, 10) || 1);
+        } else {
+          mixTreatments[idx].sharePct = Math.max(0, parseFloat(e.target.value) || 0);
+        }
+        recalculate();
+      });
+    });
+    container.querySelectorAll('.btn-remove-mix-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const i = parseInt(btn.dataset.idx, 10);
+        if (mixTreatments.length > 2) {
+          mixTreatments.splice(i, 1);
+          renderMixTreatments();
+          recalculate();
+        }
+      });
+    });
+  }
+
+  const btnAddMixItem = document.getElementById('btn-add-mix-item');
+  if (btnAddMixItem) {
+    btnAddMixItem.addEventListener('click', () => {
+      if (mixTreatments.length < 6) {
+        mixTreatments.push({
+          name: 'Servicio adicional ' + (mixTreatments.length + 1),
+          price: 150000,
+          variableCost: 60000,
+          quantity: 10,
+          sharePct: 20
+        });
+        renderMixTreatments();
+        recalculate();
+      } else {
+        alert('Se permite añadir hasta 6 tratamientos en la mezcla inicial.');
+      }
+    });
+  }
+
+  const mixShareTypeEl = document.getElementById('be-mix-share-type');
+  if (mixShareTypeEl) {
+    mixShareTypeEl.addEventListener('change', () => {
+      renderMixTreatments();
+      recalculate();
+    });
+  }
+
+  // Importar datos de la calculadora de tratamientos hacia la mezcla
+  const btnImportTreatmentMix = document.getElementById('btn-import-treatment-mix');
+  if (btnImportTreatmentMix) {
+    btnImportTreatmentMix.addEventListener('click', () => {
+      try {
+        const raw = localStorage.getItem('gloss_treatment_profile');
+        if (raw) {
+          const profile = JSON.parse(raw);
+          if (profile && profile.price > 0 && mixTreatments.length > 0) {
+            mixTreatments[0].name = profile.name || 'Tratamiento Importado';
+            mixTreatments[0].price = profile.price;
+            mixTreatments[0].variableCost = profile.variableCost;
+            renderMixTreatments();
+            recalculate();
+            alert('Tratamiento importado exitosamente como ítem 1 de la mezcla.');
+            return;
+          }
+        }
+      } catch (e) {}
+      alert('Primero analiza un tratamiento en la Calculadora de Tratamientos para poder importarlo.');
+    });
+  }
+
+  function calculateAndRenderBreakeven() {
+    const parse = (id, def = 0) => {
+      const el = document.getElementById(id);
+      return el ? parseNum(el.value) : def;
+    };
+
+    // Gastos fijos
+    const rent = Math.max(0, parse('be-rent', 2000000));
+    const payroll = Math.max(0, parse('be-payroll', 3000000));
+    const utilities = Math.max(0, parse('be-utilities', 500000));
+    const admin = Math.max(0, parse('be-admin', 500000));
+    const software = Math.max(0, parse('be-software', 0));
+    const accounting = Math.max(0, parse('be-accounting', 0));
+    const insurance = Math.max(0, parse('be-insurance', 0));
+    const maintenance = Math.max(0, parse('be-maintenance', 0));
+    const otherFixed = Math.max(0, parse('be-other-fixed', 1000000));
+
+    const totalFixedCosts = rent + payroll + utilities + admin + software + accounting + insurance + maintenance + otherFixed;
+
+    // Costos de marketing
+    const adSpend = Math.max(0, parse('be-ad-spend', 1200000));
+    const agencyFee = Math.max(0, parse('be-agency-fee', 800000));
+    const agencyIncluded = document.getElementById('be-agency-included')?.checked || false;
+    const otherMarketing = Math.max(0, parse('be-other-marketing', 0));
+
+    const effectiveAgency = agencyIncluded ? 0 : agencyFee;
+    const marketingCosts = adSpend + effectiveAgency + otherMarketing;
+    const totalCostsToCover = totalFixedCosts + marketingCosts;
+
+    // Badges en formulario
+    const badgeFixed = document.getElementById('be-total-fixed-badge');
+    const badgeMkt = document.getElementById('be-total-marketing-badge');
+    const badgeTotal = document.getElementById('be-total-costs-badge');
+
+    if (badgeFixed) badgeFixed.textContent = fmtCOP(totalFixedCosts);
+    if (badgeMkt) badgeMkt.textContent = fmtCOP(marketingCosts);
+    if (badgeTotal) badgeTotal.textContent = fmtCOP(totalCostsToCover);
+
+    // Margen
+    let marginPct = 60;
+    if (beMarginMode === 'simple') {
+      marginPct = Math.max(0, Math.min(100, parse('be-global-margin-pct', 60)));
+    } else {
+      const shareType = document.getElementById('be-mix-share-type')?.value || 'appointments';
+      const mixRes = Engine.calculateTreatmentMix(mixTreatments, shareType);
+      marginPct = mixRes.weightedMarginPct;
+      const mixBadge = document.getElementById('be-mix-weighted-badge');
+      if (mixBadge) mixBadge.textContent = fmtPct(marginPct);
+    }
+
+    // Facturación y metas
+    const currentRevenue = Math.max(0, parse('be-current-revenue', 12000000));
+    const targetProfit = Math.max(0, parse('be-target-profit', 3000000));
+    const averageTicket = Math.max(0, parse('be-average-ticket', 150000));
+
+    const fixedBreakdown = {
+      rent,
+      payroll,
+      utilities,
+      admin,
+      software,
+      accounting,
+      insurance,
+      maintenance,
+      other: otherFixed
+    };
+
+    const bRes = Engine.calculateBusinessBreakeven({
+      fixedCosts: totalFixedCosts,
+      adSpend,
+      agencyFee,
+      agencyIncludedInFixed: agencyIncluded,
+      otherMarketing,
+      marginPct,
+      currentRevenue,
+      targetResult: targetProfit,
+      averageTicket,
+      fixedBreakdown
+    });
+
+    const scenarios = Engine.calculateBusinessScenarios(bRes.breakevenRevenue, marginPct, totalCostsToCover, currentRevenue);
+    bRes.scenarios = scenarios;
+
+    // Render KPIs en columna derecha
+    const elBreakevenRev = document.getElementById('be-out-breakeven-revenue');
+    const elTotalCosts = document.getElementById('be-out-total-costs');
+    const elOperatingRes = document.getElementById('be-out-operating-result');
+    const elTargetRev = document.getElementById('be-out-target-revenue');
+    const elAppointments = document.getElementById('be-out-appointments');
+
+    if (elBreakevenRev) elBreakevenRev.textContent = bRes.isValid ? fmtCOP(bRes.breakevenRevenue) : '—';
+    if (elTotalCosts) elTotalCosts.textContent = fmtCOP(bRes.totalCostsToCover);
+    if (elOperatingRes) {
+      if (bRes.isValid) {
+        elOperatingRes.textContent = fmtCOP(bRes.estimatedResult);
+        elOperatingRes.style.color = bRes.estimatedResult < 0 ? '#991B1B' : '#065F46';
+      } else {
+        elOperatingRes.textContent = '—';
+      }
+    }
+    if (elTargetRev) elTargetRev.textContent = bRes.isValid && targetProfit > 0 ? fmtCOP(bRes.targetRevenue) : '—';
+    if (elAppointments) {
+      if (bRes.isValid && bRes.appointmentsBreakeven) {
+        elAppointments.textContent = formatInteger(bRes.appointmentsBreakeven) + ' citas';
+      } else {
+        elAppointments.textContent = '— (indica ticket)';
+      }
+    }
+
+    // Render Tabla de Escenarios
+    const tableBody = document.getElementById('be-scenarios-table-body');
+    if (tableBody && bRes.isValid) {
+      tableBody.innerHTML = '';
+      scenarios.forEach(sc => {
+        const tr = document.createElement('tr');
+        const isB = sc.isBreakeven;
+        const isCur = sc.isCurrent;
+        tr.style.cssText = `border-bottom:1px solid rgba(0,0,0,0.06);${isB ? 'background:rgba(140,37,54,0.06);font-weight:bold;' : (isCur ? 'background:rgba(0,0,0,0.03);font-style:italic;' : '')}`;
+        tr.innerHTML = `
+          <td style="padding:7px 10px;">${sc.label}${isB ? ' ★' : ''}</td>
+          <td style="padding:7px 10px;text-align:right;">${fmtCOP(sc.revenue)}</td>
+          <td style="padding:7px 10px;text-align:right;">${fmtCOP(sc.variableCost)}</td>
+          <td style="padding:7px 10px;text-align:right;">${fmtCOP(sc.contribution)}</td>
+          <td style="padding:7px 10px;text-align:right;${sc.operatingResult < 0 ? 'color:#991B1B;' : 'color:#065F46;'}">${fmtCOP(sc.operatingResult)}</td>
+        `;
+        tableBody.appendChild(tr);
+      });
+    }
+
+    // Diagnóstico
+    const diag = Engine.generateDiagnosis('breakeven', bRes);
+    const diagEl = document.getElementById('be-out-diagnostic');
+    if (diagEl) {
+      diagEl.innerHTML = `
+        <div style="font-size:13px;line-height:1.5;">
+          <strong>Hecho matemático:</strong> ${diag.fact}<br>
+          <strong>Qué significa para el negocio:</strong> ${diag.meaning}<br>
+          <strong>Revisión prudente:</strong> ${diag.recommendation}
+        </div>
+      `;
+    }
+
+    // Guardar para exportación
+    bRes.hecho = diag.fact;
+    bRes.significado = diag.meaning;
+    bRes.recomendacion = diag.recommendation;
+    bRes.interpretacion = `${diag.fact} ${diag.meaning} ${diag.recommendation}`;
+    lastBreakevenResult = bRes;
+  }
+
+  // Event Listeners para inputs de Punto de Equilibrio
+  const beInputIds = [
+    'be-rent',
+    'be-payroll',
+    'be-utilities',
+    'be-admin',
+    'be-software',
+    'be-accounting',
+    'be-insurance',
+    'be-maintenance',
+    'be-other-fixed',
+    'be-ad-spend',
+    'be-agency-fee',
+    'be-agency-included',
+    'be-other-marketing',
+    'be-global-margin-pct',
+    'be-current-revenue',
+    'be-target-profit',
+    'be-average-ticket'
+  ];
+
+  beInputIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('input', recalculate);
+      el.addEventListener('change', recalculate);
+    }
+  });
+
+  // Exportar Punto de Equilibrio del Negocio (Copiar y PDF)
+  const btnCopyBreakeven = document.getElementById('be-btn-copy');
+  const btnPdfBreakeven = document.getElementById('be-btn-pdf');
+
+  if (btnCopyBreakeven) {
+    btnCopyBreakeven.addEventListener('click', () => {
+      if (!lastBreakevenResult) calculateAndRenderBreakeven();
+      const bName = (document.getElementById('be-business-name')?.value || '').trim();
+      if (window.GlossReportEngine && lastBreakevenResult) {
+        const text = window.GlossReportEngine.generateBusinessBreakevenClipboard({
+          businessName: bName,
+          breakeven: lastBreakevenResult
+        });
+        window.GlossReportEngine.copyToClipboard(text, () => {
+          const orig = btnCopyBreakeven.textContent;
+          btnCopyBreakeven.textContent = '¡Resultados copiados!';
+          setTimeout(() => btnCopyBreakeven.textContent = orig, 2200);
+        });
+      }
+    });
+  }
+
+  if (btnPdfBreakeven) {
+    btnPdfBreakeven.addEventListener('click', () => {
+      if (!lastBreakevenResult) calculateAndRenderBreakeven();
+      const bName = (document.getElementById('be-business-name')?.value || '').trim();
+      if (window.GlossReportEngine && lastBreakevenResult) {
+        window.GlossReportEngine.generateBusinessBreakevenPdf({
+          businessName: bName,
+          breakeven: lastBreakevenResult
+        });
+      }
+    });
+  }
+
+  // Cargar preset casoBreakevenG
+  document.querySelectorAll('[data-preset="casoBreakevenG"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      setMode('breakeven');
+      const p = Engine.PRESETS.casoBreakevenG;
+      if (!p) return;
+
+      const setVal = (id, val) => {
+        const el = document.getElementById(id);
+        if (el) el.value = val;
+      };
+
+      setVal('be-business-name', p.businessName);
+      setVal('be-rent', p.rent);
+      setVal('be-payroll', p.fixedPayroll);
+      setVal('be-utilities', p.utilities);
+      setVal('be-admin', p.admin);
+      setVal('be-software', p.software);
+      setVal('be-other-fixed', p.otherFixed);
+      setVal('be-ad-spend', p.adSpend);
+      setVal('be-agency-fee', p.agencyFee);
+      const incEl = document.getElementById('be-agency-included');
+      if (incEl) incEl.checked = p.agencyIncludedInFixed;
+      setVal('be-other-marketing', p.otherMarketing);
+      setVal('be-global-margin-pct', p.marginPct);
+      setVal('be-current-revenue', p.currentRevenue);
+      setVal('be-target-profit', p.targetResult);
+      setVal('be-average-ticket', p.averageTicket);
+
+      recalculate();
+    });
+  });
+
+  renderMixTreatments();
+
+  // INICIALIZACIÓN DE MONEDA Y ALMACENAMIENTO COMPARTIDO
+  const roasCurrContainer = document.getElementById('roas-currency-picker-container');
+  if (window.GlossCurrency && roasCurrContainer) {
+    window.GlossCurrency.initPicker(roasCurrContainer, {
+      id: 'roas-currency-select',
+      onChange: () => {
+        recalculate();
+      }
+    });
+  }
+
+  const roasStorageContainer = document.getElementById('roas-storage-container');
+  if (window.GlossStorage && roasStorageContainer) {
+    roasStorageContainer.innerHTML = window.GlossStorage.renderStorageControlsHtml('roas_publicidad', 'ROAS y Rentabilidad Publicitaria');
+    window.GlossStorage.bindStorageUI(roasStorageContainer, 'roas_publicidad', {
+      getDefaultName: () => (dom.planServiceName?.value || 'Campaña') + ' — ' + new Date().toLocaleDateString('es-CO', { month: 'short', year: 'numeric' }),
+      getInputs: () => ({
+        businessName: dom.planBusinessName?.value || '',
+        serviceName: dom.planServiceName?.value || '',
+        serviceType: dom.planServiceType?.value || 'individual',
+        price: dom.planPrice?.value || '',
+        varCost: dom.planVarCostAmount?.value || '',
+        adSpend: dom.planAdSpend?.value || '',
+        agencyFee: dom.planAgencyFee?.value || '',
+        targetProfit: dom.planTargetProfit?.value || ''
+      }),
+      getMeta: () => ({
+        businessName: dom.planBusinessName?.value || '',
+        currency: window.GlossCurrency ? window.GlossCurrency.getSelectedCurrency() : 'COP'
+      }),
+      onLoad: (analysis) => {
+        if (analysis && analysis.inputs) {
+          const inp = analysis.inputs;
+          if (dom.planBusinessName && inp.businessName !== undefined) dom.planBusinessName.value = inp.businessName;
+          if (dom.planServiceName && inp.serviceName !== undefined) dom.planServiceName.value = inp.serviceName;
+          if (dom.planServiceType && inp.serviceType !== undefined) dom.planServiceType.value = inp.serviceType;
+          if (dom.planPrice && inp.price !== undefined) dom.planPrice.value = inp.price;
+          if (dom.planVarCostAmount && inp.varCost !== undefined) dom.planVarCostAmount.value = inp.varCost;
+          if (dom.planAdSpend && inp.adSpend !== undefined) dom.planAdSpend.value = inp.adSpend;
+          if (dom.planAgencyFee && inp.agencyFee !== undefined) dom.planAgencyFee.value = inp.agencyFee;
+          if (dom.planTargetProfit && inp.targetProfit !== undefined) dom.planTargetProfit.value = inp.targetProfit;
+          recalculate();
+        }
+      }
+    });
+  }
+
+  // Comprobar transferencias preparadas desde Calculadora de Rentabilidad
+  if (window.GlossStorage && window.GlossStorage.consumeTreatmentToRoas) {
+    const staged = window.GlossStorage.consumeTreatmentToRoas();
+    if (staged) {
+      if (dom.planServiceName && staged.serviceName) dom.planServiceName.value = staged.serviceName;
+      if (dom.planPrice && staged.price) dom.planPrice.value = staged.price;
+      if (dom.planVarCostAmount && staged.variableCost) dom.planVarCostAmount.value = staged.variableCost;
+      if (dom.planBusinessName && staged.businessName) dom.planBusinessName.value = staged.businessName;
+      recalculate();
+    }
+  }
+
   function parseNumber(val) {
     return engine.parseNumber(val);
+  }
+  function parseNum(val) {
+    return engine.parseNumber(val);
+  }
+  function fmtCOP(val) {
+    if (window.GlossCurrency && typeof window.GlossCurrency.formatCurrency === 'function') {
+      return window.GlossCurrency.formatCurrency(val);
+    }
+    if (window.GlossReportEngine && typeof window.GlossReportEngine.formatCurrency === 'function') {
+      return window.GlossReportEngine.formatCurrency(val);
+    }
+    return engine.formatCOP(val);
+  }
+  function fmtPct(val) {
+    if (window.GlossReportEngine && typeof window.GlossReportEngine.formatPct === 'function') {
+      return window.GlossReportEngine.formatPct(val);
+    }
+    return engine.formatPct(val);
+  }
+  function formatInteger(val) {
+    if (window.GlossReportEngine && typeof window.GlossReportEngine.formatInteger === 'function') {
+      return window.GlossReportEngine.formatInteger(val);
+    }
+    return Math.round(Number(val) || 0).toLocaleString('es-CO');
   }
 });

@@ -1672,6 +1672,9 @@
   border: 1px solid var(--line);
   padding: clamp(28px, 4vw, 56px);
   max-width: 840px;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .article-prose h2 {
@@ -2093,6 +2096,9 @@
 }
 
 @media (max-width: 600px) {
+  .article-prose {
+    padding: 24px 18px;
+  }
   .page-masthead {
     padding: 36px 0 48px;
   }

@@ -31,9 +31,47 @@
   function parseNumber(val) {
     if (val === null || val === undefined || val === '') return 0;
     if (typeof val === 'number') return Number.isFinite(val) ? val : 0;
-    const clean = String(val).replace(/[^0-9.-]/g, '');
-    const num = parseFloat(clean);
-    return Number.isFinite(num) ? num : 0;
+    let str = String(val).trim();
+    const isNegative = str.startsWith('-') || str.startsWith('−');
+    str = str.replace(/[\$\u20AC\s]/g, '').replace(/COP/gi, '').replace(/[^\d.,]/g, '');
+    if (!str) return 0;
+
+    let n = 0;
+    if ((str.match(/\./g) || []).length > 1) {
+      str = str.replace(/\./g, '').replace(',', '.');
+      n = parseFloat(str);
+    } else if ((str.match(/,/g) || []).length > 1) {
+      str = str.replace(/,/g, '');
+      n = parseFloat(str);
+    } else if (str.includes('.') && str.includes(',')) {
+      const lastDot = str.lastIndexOf('.');
+      const lastComma = str.lastIndexOf(',');
+      if (lastDot > lastComma) {
+        str = str.replace(/,/g, '');
+      } else {
+        str = str.replace(/\./g, '').replace(',', '.');
+      }
+      n = parseFloat(str);
+    } else if (str.includes('.')) {
+      const parts = str.split('.');
+      if (parts[1].length === 3 && parts[0].length >= 1) {
+        str = str.replace(/\./g, '');
+      }
+      n = parseFloat(str);
+    } else if (str.includes(',')) {
+      const parts = str.split(',');
+      if (parts[1].length === 3 && parts[0].length >= 1) {
+        str = str.replace(/,/g, '');
+      } else {
+        str = str.replace(',', '.');
+      }
+      n = parseFloat(str);
+    } else {
+      n = parseFloat(str);
+    }
+
+    if (!Number.isFinite(n)) return 0;
+    return isNegative ? -Math.abs(n) : n;
   }
 
   function formatCOP(val, includeCurrency = true) {
@@ -454,15 +492,191 @@
   }
 
   // =========================================================================
-  // 5. ANÁLISIS AVANZADO: COSTOS FIJOS DEL NEGOCIO COMPLETO
+  // 5. ANÁLISIS AVANZADO: PUNTO DE EQUILIBRIO DEL NEGOCIO Y COSTOS FIJOS
   // =========================================================================
+
+  /**
+   * Calcula el margen global ponderado de una mezcla de tratamientos.
+   * Soporta ponderación por cantidad de atenciones o por porcentaje de ingresos.
+   */
+  function calculateTreatmentMix(treatments, shareType = 'appointments') {
+    let totalRevenue = 0;
+    let totalContribution = 0;
+    let totalUnits = 0;
+
+    if (!Array.isArray(treatments) || treatments.length === 0) {
+      return { totalRevenue: 0, totalContribution: 0, totalUnits: 0, weightedMarginPct: 0 };
+    }
+
+    if (shareType === 'appointments') {
+      treatments.forEach(t => {
+        const q = Math.max(0, parseNumber(t.quantity));
+        const price = Math.max(0, parseNumber(t.price));
+        const cost = Math.max(0, parseNumber(t.variableCost));
+        const rev = price * q;
+        const cont = (price - cost) * q;
+        totalRevenue += rev;
+        totalContribution += cont;
+        totalUnits += q;
+      });
+    } else {
+      // shareType === 'revenue_pct'
+      treatments.forEach(t => {
+        const pct = Math.max(0, parseNumber(t.sharePct)) / 100;
+        const price = Math.max(0, parseNumber(t.price));
+        const cost = Math.max(0, parseNumber(t.variableCost));
+        const marginRatio = price > 0 ? (price - cost) / price : 0;
+        totalContribution += pct * marginRatio;
+        totalRevenue += pct;
+      });
+    }
+
+    const weightedMarginPct = totalRevenue > 0 ? (totalContribution / totalRevenue) * 100 : 0;
+    return {
+      totalRevenue,
+      totalContribution,
+      totalUnits,
+      weightedMarginPct
+    };
+  }
+
+  /**
+   * Calcula el Punto de Equilibrio General del Negocio, resultado operativo
+   * y facturación meta requerida.
+   */
+  function calculateBusinessBreakeven({
+    fixedCosts = 0,
+    adSpend = 0,
+    agencyFee = 0,
+    agencyIncludedInFixed = false,
+    otherMarketing = 0,
+    marginPct = 0,
+    currentRevenue = 0,
+    targetResult = 0,
+    averageTicket = 0,
+    fixedBreakdown = {}
+  }) {
+    const f = Math.max(0, parseNumber(fixedCosts));
+    const ads = Math.max(0, parseNumber(adSpend));
+    const agency = Math.max(0, parseNumber(agencyFee));
+    const otherMkt = Math.max(0, parseNumber(otherMarketing));
+    const effectiveAgency = agencyIncludedInFixed ? 0 : agency;
+    const marketingCosts = ads + effectiveAgency + otherMkt;
+    const totalCostsToCover = f + marketingCosts;
+    const mPct = parseNumber(marginPct);
+    const curRev = Math.max(0, parseNumber(currentRevenue));
+    const targetProf = Math.max(0, parseNumber(targetResult));
+    const ticket = Math.max(0, parseNumber(averageTicket));
+
+    if (mPct <= 0) {
+      return {
+        isValid: false,
+        fixedCosts: f,
+        marketingCosts,
+        totalCostsToCover,
+        marginPct: mPct,
+        currentRevenue: curRev,
+        targetResult: targetProf,
+        message: 'Con margen de contribución del 0% o negativo no existe un punto de equilibrio finito.'
+      };
+    }
+
+    const marginRatio = mPct / 100;
+    const breakevenRevenue = totalCostsToCover / marginRatio;
+
+    // Resultado operativo actual estimado
+    const currentContribution = curRev * marginRatio;
+    const estimatedResult = currentContribution - totalCostsToCover;
+    const diffBreakeven = curRev - breakevenRevenue;
+
+    // Facturación objetivo para meta de ganancia
+    const targetRevenue = (totalCostsToCover + targetProf) / marginRatio;
+    const diffTarget = targetRevenue - curRev;
+
+    // Citas / atenciones estimadas
+    const appointmentsBreakeven = ticket > 0 ? Math.ceil(breakevenRevenue / ticket) : null;
+    const appointmentsTarget = ticket > 0 ? Math.ceil(targetRevenue / ticket) : null;
+    const appointmentsCurrent = ticket > 0 ? Math.round(curRev / ticket) : null;
+
+    return {
+      isValid: true,
+      fixedCosts: f,
+      fixedBreakdown,
+      adSpend: ads,
+      agencyFee: agency,
+      agencyIncludedInFixed,
+      otherMarketing: otherMkt,
+      marketingCosts,
+      totalCostsToCover,
+      marginPct: mPct,
+      marginRatio,
+      breakevenRevenue,
+      currentRevenue: curRev,
+      currentContribution,
+      estimatedResult,
+      diffBreakeven,
+      targetResult: targetProf,
+      targetRevenue,
+      diffTarget,
+      averageTicket: ticket,
+      appointmentsBreakeven,
+      appointmentsTarget,
+      appointmentsCurrent
+    };
+  }
+
+  /**
+   * Genera los escenarios de sensibilidad del negocio (75%, 100%, 125%, 150%, y actual).
+   */
+  function calculateBusinessScenarios(breakevenRevenue, marginPct, totalCostsToCover, currentRevenue = 0) {
+    const marginRatio = marginPct > 0 ? marginPct / 100 : 0;
+    const levels = [
+      { label: '75% del equilibrio', factor: 0.75 },
+      { label: '100% (Punto de Equilibrio)', factor: 1.0, isBreakeven: true },
+      { label: '125% del equilibrio', factor: 1.25 },
+      { label: '150% del equilibrio', factor: 1.50 }
+    ];
+
+    const scenarios = levels.map(lvl => {
+      const rev = breakevenRevenue * lvl.factor;
+      const varCost = rev * (1 - marginRatio);
+      const contribution = rev * marginRatio;
+      const costs = totalCostsToCover;
+      const operatingResult = contribution - costs;
+      return {
+        label: lvl.label,
+        factor: lvl.factor,
+        revenue: rev,
+        variableCost: varCost,
+        contribution,
+        totalCosts: costs,
+        operatingResult,
+        isBreakeven: lvl.isBreakeven
+      };
+    });
+
+    if (currentRevenue > 0) {
+      const curVar = currentRevenue * (1 - marginRatio);
+      const curCont = currentRevenue * marginRatio;
+      const curRes = curCont - totalCostsToCover;
+      scenarios.push({
+        label: 'Escenario actual declarado',
+        factor: breakevenRevenue > 0 ? currentRevenue / breakevenRevenue : 1,
+        revenue: currentRevenue,
+        variableCost: curVar,
+        contribution: curCont,
+        totalCosts: totalCostsToCover,
+        operatingResult: curRes,
+        isCurrent: true
+      });
+    }
+
+    return scenarios;
+  }
 
   /**
    * Calcula el resultado operativo global del negocio sumando dinámicamente
    * cada rubro de costos fijos y combinando ingresos de otros canales.
-   * 
-   * IMPORTANTE: No hardcodear nunca fijos en $10.000 como el error del Excel.
-   * Se recalculan estrictamente a partir de los ítems introducidos.
    */
   function calculateBusinessOperatingResult(params) {
     const campaignMargin = parseNumber(params.campaignMargin);
@@ -622,6 +836,64 @@
       };
     }
 
+    // -----------------------------------------------------------------------
+    // CASO MODO C: PUNTO DE EQUILIBRIO DEL NEGOCIO
+    // -----------------------------------------------------------------------
+    if (mode === 'breakeven') {
+      const b = data;
+      if (!b.isValid) {
+        return {
+          type: 'danger',
+          title: 'Margen de contribución insuficiente',
+          fact: `El margen de contribución declarado es de ${formatPct(b.marginPct)}, lo cual imposibilita calcular un punto de equilibrio finito.`,
+          meaning: 'Si los costos variables igualan o superan la facturación, vender más servicios aumentará las pérdidas operativas del negocio.',
+          recommendation: 'Revisa de inmediato los precios de venta y los costos variables directos antes de comprometer gastos fijos o presupuesto de marketing.'
+        };
+      }
+
+      const diff = b.diffBreakeven;
+      const fmtCur = (v) => formatCOP(v);
+
+      if (b.currentRevenue === 0) {
+        return {
+          type: 'neutral',
+          title: 'Punto de equilibrio del negocio calculado',
+          fact: `Para cubrir ${fmtCur(b.totalCostsToCover)} mensuales entre gastos fijos operativos (${fmtCur(b.fixedCosts)}) y marketing (${fmtCur(b.marketingCosts)}) con un margen de contribución del ${formatPct(b.marginPct)}, tu centro estético requiere facturar un mínimo de ${fmtCur(b.breakevenRevenue)} al mes.`,
+          meaning: 'Este es el volumen de ventas necesario para que la contribución marginal absorba todos los compromisos fijos del período sin incurrir en pérdidas.',
+          recommendation: 'Introduce tu facturación mensual actual en el campo correspondiente para verificar en qué nivel operativo se encuentra tu centro.'
+        };
+      } else if (diff < -500) {
+        return {
+          type: 'danger',
+          title: 'Negocio por debajo del punto de equilibrio',
+          fact: `La facturación actual (${fmtCur(b.currentRevenue)}) se encuentra ${fmtCur(Math.abs(diff))} por debajo del punto de equilibrio (${fmtCur(b.breakevenRevenue)}), generando un déficit operativo estimado de ${fmtCur(Math.abs(b.estimatedResult))}.`,
+          meaning: 'Con los ingresos y costos declarados, la contribución mensual no alcanza para cubrir la totalidad de los gastos fijos y de marketing incluidos.',
+          recommendation: 'Evalúa optimizar la mezcla de tratamientos hacia protocolos de mayor margen, controlar gastos fijos o diseñar promociones que eleven la ocupación sin deteriorar la contribución unitaria.'
+        };
+      } else if (Math.abs(diff) <= 500) {
+        return {
+          type: 'neutral',
+          title: 'Negocio en punto de equilibrio operativo',
+          fact: `La facturación actual (${fmtCur(b.currentRevenue)}) cubre exactamente los gastos fijos y de marketing incluidos (${fmtCur(b.totalCostsToCover)}), dejando un resultado operativo calculado en ${fmtCur(b.estimatedResult)}.`,
+          meaning: 'La facturación estimada cubre aproximadamente los costos variables y gastos considerados. El resultado calculado se encuentra cerca de cero.',
+          recommendation: 'Para generar utilidad empresarial o reservas de reinversión, define una meta de ganancia que determine la facturación adicional requerida.'
+        };
+      } else {
+        const metaText = b.targetResult > 0
+          ? (b.currentRevenue >= b.targetRevenue
+              ? ` Además, ya superas tu meta de ganancia declarada (${fmtCur(b.targetResult)}).`
+              : ` Para alcanzar tu meta deseada de ${fmtCur(b.targetResult)}, el centro necesitaría facturar ${fmtCur(b.targetRevenue)} (faltan ${fmtCur(b.diffTarget)} bajo la estructura actual).`)
+          : '';
+        return {
+          type: 'healthy',
+          title: 'Negocio por encima del punto de equilibrio',
+          fact: `La facturación actual (${fmtCur(b.currentRevenue)}) supera el equilibrio (${fmtCur(b.breakevenRevenue)}) en ${fmtCur(diff)}, generando un resultado operativo positivo estimado de ${fmtCur(b.estimatedResult)} tras cubrir los gastos incluidos.${metaText}`,
+          meaning: 'Los ingresos declarados generan contribución suficiente para cubrir los gastos incluidos y dejan un resultado positivo para la clínica.',
+          recommendation: 'Verifica si tu capacidad instalada (cabinas, profesionales y horarios) permite mantener o expandir este volumen de citas sin saturar la agenda clínica.'
+        };
+      }
+    }
+
     return {
       type: 'neutral',
       title: 'Diagnóstico en espera',
@@ -711,6 +983,24 @@
       desiredResult: 1000000,
       period: 'mensual',
       capacityAvailable: 15
+    },
+    // CASO G — PUNTO DE EQUILIBRIO EMPRESARIAL ($7M fijos / $2M marketing / 60% margen)
+    casoBreakevenG: {
+      businessName: 'Centro Estético Modelo',
+      rent: 2000000,
+      fixedPayroll: 3000000,
+      utilities: 500000,
+      admin: 500000,
+      software: 0,
+      otherFixed: 1000000,
+      adSpend: 1200000,
+      agencyFee: 800000,
+      agencyIncludedInFixed: false,
+      otherMarketing: 0,
+      marginPct: 60,
+      currentRevenue: 12000000,
+      targetResult: 3000000,
+      averageTicket: 150000
     }
   };
 
@@ -726,6 +1016,9 @@
     calculatePlanning,
     generateScenarioMatrix,
     calculateRealResults,
+    calculateBusinessBreakeven,
+    calculateTreatmentMix,
+    calculateBusinessScenarios,
     calculateBusinessOperatingResult,
     generateDiagnosis,
     PRESETS
