@@ -590,7 +590,7 @@
         const container = document.getElementById('ec-turnstile-container');
         if (container && turnstileWidgetId === null) {
           turnstileWidgetId = window.turnstile.render(container, {
-            sitekey: '1x00000000000000000000AA', // Cloudflare Turnstile Managed Key
+            sitekey: '0x4AAAAAAFpIJHODzwu7GpvQ', // Cloudflare Turnstile Managed Key Oficial Gloss Growth
             theme: 'light',
             size: 'flexible',
             callback: function(token) {
@@ -720,31 +720,33 @@
       ...payload
     };
 
-    const response = await fetch(endpoint, {
-      method: 'POST',
-      headers,
-      body: JSON.stringify(reqBody)
-    });
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(reqBody)
+      });
 
-    if (!response.ok) {
-      const errJson = await response.json().catch(() => ({}));
-      throw new Error(errJson.error || `Error del servidor (HTTP ${response.status})`);
+      if (!response.ok) {
+        const errJson = await response.json().catch(() => ({}));
+        throw new Error(errJson.error || `Error del servidor (HTTP ${response.status})`);
+      }
+
+      const resData = await response.json();
+      if (!resData.ok || !resData.resultado) {
+        throw new Error(resData.error || 'Respuesta inválida del servidor');
+      }
+
+      return resData;
+    } finally {
+      // Renovar token Turnstile para el siguiente envío
+      if (window.turnstile && turnstileWidgetId !== null) {
+        try {
+          window.turnstile.reset(turnstileWidgetId);
+          currentTurnstileToken = null;
+        } catch {}
+      }
     }
-
-    const resData = await response.json();
-    if (!resData.ok || !resData.resultado) {
-      throw new Error(resData.error || 'Respuesta inválida del servidor');
-    }
-
-    // Renovar token Turnstile si está disponible para el siguiente envío
-    if (window.turnstile && turnstileWidgetId !== null) {
-      try {
-        window.turnstile.reset(turnstileWidgetId);
-        currentTurnstileToken = null;
-      } catch {}
-    }
-
-    return resData;
   }
 
   async function handleGenerateGemini() {
