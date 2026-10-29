@@ -89,6 +89,108 @@
   margin-bottom: 18px;
 }
 
+/* Selector de Etapa de Negocio */
+.diag-stage-intro-header {
+  margin-bottom: 20px;
+}
+
+.diag-stage-intro-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--text, #1C1917);
+}
+
+.diag-stage-intro-header p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-muted, #57534E);
+  margin: 0;
+}
+
+.diag-stage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  margin: 24px 0 10px;
+}
+
+.diag-stage-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  background: var(--bg-card, #FAF8F5);
+  border: 1.5px solid var(--line, #E7E5E4);
+  border-radius: 10px;
+  padding: 22px 20px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.diag-stage-card:hover {
+  border-color: var(--burgundy, #8C2536);
+  background: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(140, 37, 54, 0.08);
+  transform: translateY(-2px);
+}
+
+.diag-stage-card:focus-visible {
+  outline: 2px solid var(--burgundy, #8C2536);
+  outline-offset: 2px;
+}
+
+.diag-stage-header {
+  margin-bottom: 14px;
+}
+
+.diag-stage-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: #F5EBE6;
+  color: var(--burgundy, #8C2536);
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.diag-stage-title {
+  font-family: var(--font-serif, "Zodiak", serif);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text, #1C1917);
+  margin: 0 0 8px;
+}
+
+.diag-stage-desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted, #57534E);
+  margin: 0;
+}
+
+.diag-stage-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--burgundy, #8C2536);
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line, #E7E5E4);
+}
+
+.diag-stage-card:hover .diag-stage-action {
+  color: #731E2C;
+}
+
 .diag-intro-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -377,6 +479,48 @@
   flex-grow: 1;
 }
 
+.diag-option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex-grow: 1;
+}
+
+.diag-option-title {
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--text, #1C1917);
+  font-weight: 600;
+}
+
+.diag-option-subtext {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-muted, #78716C);
+  font-weight: 400;
+}
+
+.diag-change-stage-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted, #78716C);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.diag-change-stage-btn:hover {
+  color: var(--burgundy, #8C2536);
+  background: #F5EBE6;
+}
+
 .diag-nav-row {
   display: flex;
   justify-content: space-between;
@@ -655,6 +799,178 @@
   font-size: 12px;
   color: var(--text-muted, #78716C);
   font-style: italic;
+  margin: 0;
+}
+
+/* Elementos Definidos y Por Revisar (Recorrido A) */
+.diag-elements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.diag-elements-box {
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.diag-defined-box {
+  background: #F0FDF4;
+  border: 1px solid #BBF7D0;
+}
+
+.diag-defined-box h4 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #166534;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.diag-pending-box {
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+}
+
+.diag-pending-box h4 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #92400E;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.diag-elements-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.diag-defined-box .diag-elements-list {
+  color: #14532D;
+}
+
+.diag-pending-box .diag-elements-list {
+  color: #78350F;
+}
+
+.diag-elements-list li {
+  margin-bottom: 6px;
+}
+
+.diag-elements-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Plan Inicial de Preparación (Recorrido A) */
+.diag-plan-section {
+  margin-bottom: 36px;
+  padding: 24px;
+  background: #FFFFFF;
+  border: 1.5px solid var(--line, #E7E5E4);
+  border-radius: 10px;
+}
+
+.diag-plan-head {
+  margin-bottom: 20px;
+}
+
+.diag-plan-head h3 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--burgundy, #8C2536);
+  margin: 0 0 6px;
+}
+
+.diag-plan-head p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-muted, #57534E);
+  margin: 0;
+}
+
+.diag-plan-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.diag-phase-card {
+  background: var(--bg-card, #FAF8F5);
+  border: 1px solid var(--line, #E7E5E4);
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.diag-phase-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--burgundy, #8C2536);
+  margin: 0 0 10px;
+}
+
+.diag-phase-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text, #1C1917);
+}
+
+.diag-phase-list li {
+  margin-bottom: 6px;
+}
+
+.diag-phase-list li:last-child {
+  margin-bottom: 0;
+}
+
+.diag-plan-disclaimer {
+  margin-top: 18px;
+  padding: 12px 14px;
+  background: #F5F5F4;
+  border-left: 3px solid #A8A29E;
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #57534E;
+}
+
+/* Tarjetas Narrativas (Recorrido B) */
+.diag-narrative-card {
+  padding: 18px 20px;
+  background: var(--bg-card, #FAF8F5);
+  border: 1px solid var(--line, #E7E5E4);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.diag-narrative-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--burgundy, #8C2536);
+  margin: 0 0 6px;
+}
+
+.diag-narrative-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text, #1C1917);
   margin: 0;
 }
 
