@@ -143,6 +143,13 @@
       });
     });
 
+    const elBtnStart = document.getElementById('diag-btn-start');
+    if (elBtnStart) {
+      elBtnStart.addEventListener('click', function () {
+        selectStage('established');
+      });
+    }
+
     if (elBtnChangeStage) {
       elBtnChangeStage.addEventListener('click', returnToStageSelection);
     }

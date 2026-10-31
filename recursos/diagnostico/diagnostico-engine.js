@@ -1270,13 +1270,14 @@
     const hasLowOccupancy = ['menos_25', '25_49'].includes(a.schedule_occupancy);
 
     // Mapeo de nuevas opciones de P15
-    const wantsMoreClients = a.business_priorities.includes('conseguir_clientes');
-    const wantsMoreBookings = a.business_priorities.includes('mas_citas_existentes');
+    const wantsMoreClients = a.business_priorities.includes('conseguir_clientes') || a.business_priorities.includes('mas_consultas');
+    const wantsMoreBookings = a.business_priorities.includes('mas_citas_existentes') || a.business_priorities.includes('convertir_citas');
     const wantsPromoteService = a.business_priorities.includes('promocionar_servicio');
-    const wantsPresence = a.business_priorities.includes('mejorar_presencia');
-    const wantsOccupancy = a.business_priorities.includes('ocupar_horarios');
-    const wantsManagement = a.business_priorities.includes('organizar_gestion');
+    const wantsPresence = a.business_priorities.includes('mejorar_presencia') || a.business_priorities.includes('presencia_digital');
+    const wantsOccupancy = a.business_priorities.includes('ocupar_horarios') || a.business_priorities.includes('aprovechar_horarios');
+    const wantsManagement = a.business_priorities.includes('organizar_gestion') || a.business_priorities.includes('organizar_seguimiento');
     const wantsProfit = a.business_priorities.includes('mejorar_rentabilidad');
+    const wantsAttendance = a.business_priorities.includes('reducir_ausencias');
     const noClearPriority = a.business_priorities.includes('sin_prioridad_clara');
 
     const usesReferrals = a.acquisition_sources.includes('recomendaciones');
@@ -1339,6 +1340,14 @@
         evidence: 'Asistencia declarada: ' + getOptionText(Q, 'booking_attendance', a.booking_attendance) + ' de cada 10 citas agendadas.',
         whyItMatters: 'Una cita vacía de última hora tiene un costo fijo irrecuperable y desaprovecha el tiempo del profesional asignado.'
       };
+    } else if (wantsMoreClients && (hasLowInquiries || hasModInquiries) && !hasHighOccupancy) {
+      primaryOpportunity = {
+        area: 'Revisión de demanda y canales de captación',
+        badge: 'Captación y Visibilidad',
+        explanation: 'Tu volumen de consultas mensuales es reducido (' + getOptionText(Q, 'monthly_inquiries', a.monthly_inquiries) + ') y dispones de margen de agenda. Conviene analizar qué canales tienen capacidad real para aportar nuevos interesados de forma constante.',
+        evidence: 'Consultas mensuales: ' + getOptionText(Q, 'monthly_inquiries', a.monthly_inquiries) + ' · Ocupación semanal: ' + getOptionText(Q, 'schedule_occupancy', a.schedule_occupancy) + ' · Objetivo: Conseguir más consultas.',
+        whyItMatters: 'Atraer un flujo predecible de personas interesadas es el primer paso para ocupar los horarios disponibles en tus ' + t.spaceWord + '.'
+      };
     } else if (wantsOccupancy || hasLowOccupancy) {
       primaryOpportunity = {
         area: 'Aprovechamiento de horarios y capacidad disponible',
@@ -1368,7 +1377,7 @@
     // Nota positiva de recomendación si aplica
     let referralNote = null;
     if (usesReferrals && !activePaidAds) {
-      referralNote = 'Recibir pacientes principalmente por recomendación demuestra que tu servicio tiene respaldo clínico y satisfacción comprobada. Tu base técnica es sólida; no necesitas depender forzosamente de anuncios si no buscas escalar de golpe.';
+      referralNote = 'Recibir recomendaciones como fuente principal demuestra que tu servicio tiene respaldo clínico y satisfacción comprobada. Tu base técnica es sólida; no necesitas depender forzosamente de anuncios si no buscas escalar de golpe.';
     }
 
     // 3 Prioridades Sugeridas
@@ -1410,7 +1419,7 @@
     // Prioridad para asistencia
     if (hasLowAttendance) {
       prioritiesPool.push({
-        id: 'politica_confirmacion_asistencia',
+        id: 'p_asistencia',
         title: 'Formalizar el protocolo de confirmación y anticipos',
         explanation: 'Enviar recordatorios 24 horas antes con confirmación explícita o solicitar un depósito de reserva para tratamientos de alta demanda reduce notablemente las ausencias.',
         concreteAction: 'Implementa confirmación interactiva por WhatsApp un día antes y analiza si los procedimientos más costosos requieren abono para reservar espacio.',
@@ -1517,17 +1526,27 @@
       `Me gustaría coordinar una llamada para analizar estos resultados y ver cómo optimizar mi centro.`
     );
 
+    const rawWaMessage = `Hola Gloss Growth, completé el diagnóstico comercial en su web para mi centro de tipo ${businessSummary.businessTypeLabel.toLowerCase()}.
+• Ocupación semanal: ${businessSummary.occupancyLabel}
+• Área prioritaria identificada: ${primaryTitle}
+
+Me gustaría coordinar una llamada para analizar estos resultados y ver cómo optimizar mi centro.`;
+    const fullWaText = encodeURIComponent(rawWaMessage);
+
     return {
       stage: 'established',
       businessSummary,
+      terminology: t,
+      contradictionCapacidad,
       referralNote,
       primaryOpportunity,
       priorities,
       unmeasuredIndicators,
       relatedTools,
       whatsappPayload: {
-        url: 'https://wa.me/573145904933?text=' + waText,
-        text: waText
+        url: 'https://wa.me/573145904933?text=' + fullWaText,
+        messageText: rawWaMessage,
+        text: fullWaText
       }
     };
   }
