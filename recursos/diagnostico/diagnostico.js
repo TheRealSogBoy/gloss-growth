@@ -139,14 +139,14 @@
     stageButtons.forEach(btn => {
       btn.addEventListener('click', function () {
         const selectedStage = this.getAttribute('data-stage');
-        selectStage(selectedStage);
+        selectStage(selectedStage, true);
       });
     });
 
     const elBtnStart = document.getElementById('diag-btn-start');
     if (elBtnStart) {
       elBtnStart.addEventListener('click', function () {
-        selectStage('established');
+        selectStage('established', true);
       });
     }
 
@@ -173,22 +173,39 @@
       elBtnWhatsApp.addEventListener('click', trackWhatsAppClick);
     }
 
-    loadSavedState();
+    // 1. Detectar si viene una etapa preseleccionada en la URL (?stage=planning|starting|established)
+    let stageFromUrl = null;
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const stageParam = urlParams.get('stage');
+      if (stageParam && ['planning', 'starting', 'established'].includes(stageParam)) {
+        stageFromUrl = stageParam;
+      }
+    } catch (e) {
+      // Ignorar fallos de URLSearchParams
+    }
 
-    // Si había un estado previo en progreso, permitir continuarlo
-    if (currentStage && answers && Object.keys(answers).length > 0) {
-      const questions = Engine.getQuestions(currentStage);
-      if (currentIndex < questions.length) {
-        startQuiz(false);
+    if (stageFromUrl) {
+      // Iniciar directamente la etapa preseleccionada sin repetir pantalla de selección
+      selectStage(stageFromUrl, true);
+    } else {
+      loadSavedState();
+
+      // Si había un estado previo en progreso, permitir continuarlo
+      if (currentStage && answers && Object.keys(answers).length > 0) {
+        const questions = Engine.getQuestions(currentStage);
+        if (currentIndex < questions.length) {
+          startQuiz(false);
+        }
       }
     }
   }
 
-  function selectStage(stage) {
+  function selectStage(stage, resetAnswers) {
     if (!['planning', 'starting', 'established'].includes(stage)) return;
 
-    // Si cambia de etapa, no mezclar respuestas incompatibles
-    if (currentStage !== stage) {
+    // Si cambia de etapa o se solicita reinicio explícito desde URL o selección
+    if (resetAnswers || currentStage !== stage) {
       answers = { business_stage: stage };
       currentIndex = 0;
     }
